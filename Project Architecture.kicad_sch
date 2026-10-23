@@ -314,7 +314,7 @@
 			(color 128 255 128 0.5000)
 		)
 		(uuid "8b0e43a6-50cd-4f3f-ac0a-9081a5f3830a")
-		(property "Sheetname" "EtherCat"
+		(property "Sheetname" "Comms - EtherCat"
 			(at 132.08 180.5809 0)
 			(effects
 				(font
@@ -324,7 +324,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "EtherCat.kicad_sch"
+		(property "Sheetfile" "Comms - EtherCat.kicad_sch"
 			(at 132.08 202.5146 0)
 			(effects
 				(font

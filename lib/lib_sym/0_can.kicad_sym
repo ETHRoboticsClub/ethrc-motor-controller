@@ -54,7 +54,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TJA1051T/3/1J"
+		(property "Manufacturer Part Number" "TJA1051T/3/1J"
 			(at 0 0 0)
 			(effects
 				(font

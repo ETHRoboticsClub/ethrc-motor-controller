@@ -54,7 +54,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "24LC32AT-I/OT"
+		(property "Manufacturer Part Number" "24LC32AT-I/OT"
 			(at 0.508 -17.78 0)
 			(effects
 				(font
@@ -72,7 +72,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "579-24LC32AT-I/OT"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "579-24LC32AT-I/OT"
 			(at 0.508 -20.32 0)
 			(effects
 				(font

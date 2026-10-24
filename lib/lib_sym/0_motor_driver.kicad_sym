@@ -54,7 +54,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "DRV8353RSRGZR"
+		(property "Manufacturer Part Number" "DRV8353RSRGZR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72,7 +72,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-DRV8353RSRGZR"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "595-DRV8353RSRGZR"
 			(at 0 0 0)
 			(effects
 				(font

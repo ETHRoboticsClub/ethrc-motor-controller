@@ -291,7 +291,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ABM8G-25.000MHZ-8-D2X-T"
+		(property "Manufacturer Part Number" "ABM8G-25.000MHZ-8-D2X-T"
 			(at 0 0 0)
 			(effects
 				(font
@@ -309,7 +309,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "815-ABM8G-25-8-D2X-T"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "815-ABM8G-25-8-D2X-T"
 			(at 0 0 0)
 			(effects
 				(font

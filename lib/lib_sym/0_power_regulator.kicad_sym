@@ -54,7 +54,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LM5164DDAT"
+		(property "Manufacturer Part Number" "LM5164DDAT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72,7 +72,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-LM5164DDAT"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "595-LM5164DDAT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -321,7 +330,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TLV62569DBVR"
+		(property "Manufacturer Part Number" "TLV62569DBVR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -339,7 +348,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-TLV62569DBVR"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "595-TLV62569DBVR"
 			(at 0 0 0)
 			(effects
 				(font

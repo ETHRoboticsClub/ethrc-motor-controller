@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C3225X7S2A475K200AB"
+		(property "Manufacturer Part Number" "C3225X7S2A475K200AB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "810-C3225X7S2A475K"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "810-C3225X7S2A475K"
 			(at 0 0 0)
 			(effects
 				(font
@@ -216,7 +225,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "UHE2A101MPD"
+		(property "Manufacturer Part Number" "UHE2A101MPD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -234,7 +243,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "647-UHE2A101MPD"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "647-UHE2A101MPD"
 			(at 0 0 0)
 			(effects
 				(font

@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SMDJ58A-T7"
+		(property "Manufacturer Part Number" "SMDJ58A-T7"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "576-SMDJ58A-T7"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "576-SMDJ58A-T7"
 			(at 0 0 0)
 			(effects
 				(font

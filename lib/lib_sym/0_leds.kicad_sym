@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LTST-C191KGKT"
+		(property "Manufacturer Part Number" "LTST-C191KGKT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -243,7 +243,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LTST-C191KRKT"
+		(property "Manufacturer Part Number" "LTST-C191KRKT"
 			(at 0 0 0)
 			(effects
 				(font

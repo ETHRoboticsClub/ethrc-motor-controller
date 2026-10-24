@@ -55,7 +55,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ISC030N10NM6ATMA1"
+		(property "Manufacturer Part Number" "ISC030N10NM6ATMA1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -73,7 +73,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "726-ISC030N10NM6ATMA"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "726-ISC030N10NM6ATMA"
 			(at 0 0 0)
 			(effects
 				(font

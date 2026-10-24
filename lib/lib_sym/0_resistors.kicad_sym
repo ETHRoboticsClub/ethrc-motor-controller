@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "WSLP25121L000FEA"
+		(property "Manufacturer Part Number" "WSLP25121L000FEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "71-WSLP25121L000FEA"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "71-WSLP25121L000FEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -203,7 +212,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "NCP18XH103F03RB"
+		(property "Manufacturer Part Number" "NCP18XH103F03RB"
 			(at 0 0 0)
 			(effects
 				(font

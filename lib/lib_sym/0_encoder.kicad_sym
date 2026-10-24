@@ -54,7 +54,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AS5047U-HTSM"
+		(property "Manufacturer Part Number" "AS5047U-HTSM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72,7 +72,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "985-AS5047U-HTSM"
+		(property "Supplier 1" "Mouser"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "985-AS5047U-HTSM"
 			(at 0 0 0)
 			(effects
 				(font

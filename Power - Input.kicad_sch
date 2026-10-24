@@ -11,31 +11,36 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
+			(symbol "0_capacitors:CP_100u_100V"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
+			(property "Reference" "C"
+				(at 2.54 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "100u/100V"
+				(at 2.54 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -44,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.mouser.com/datasheet/3/497/1/e_uhe.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -53,7 +58,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Aluminium electrolytic 100 uF 100 V low-impedance, radial 10x25 mm, pin 1 = +"
 				(at 0 0 0)
 				(effects
 					(font
@@ -62,7 +67,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "connector"
+			(property "MPN" "UHE2A101MPD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -71,7 +76,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "Manufacturer" "Nichicon"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,44 +85,77 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_1_1"
+			(property "Mouser" "647-UHE2A101MPD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor electrolytic polarized bulk"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CP_100u_100V_0_1"
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -2.286 0.508)
+					(end 2.286 1.016)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
+					(start -2.286 -0.508)
+					(end 2.286 -1.016)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
+			)
+			(symbol "CP_100u_100V_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
+					(at 0 3.81 270)
+					(length 2.79)
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -133,9 +171,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
+					(at 0 -3.81 90)
+					(length 2.79)
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -153,7 +191,479 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+			(symbol "0_capacitors:C_4u7_100V_1210"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 2.54 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4.7u/100V"
+				(at 2.54 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "MLCC 4.7 uF 100 V X7S 1210 (bus decoupling at the half-bridges)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "C3225X7S2A475K200AB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TDK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "810-C3225X7S2A475K"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor MLCC 100V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_4u7_100V_1210_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_4u7_100V_1210_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.79)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.79)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "0_connectors:XT30PW-M"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -1.27 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "XT30PW-M"
+				(at -1.27 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Amass XT30 male right-angle PCB connector, bus power in/out (not sold by Mouser). Pin numbers follow the KiCad footprint AMASS_XT30PW-M: pad 2 = +, pad 1 = -."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "XT30PW-M"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Amass"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "XT30 power connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XT30PW-M_0_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 5.08 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "XT30PW-M_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "0_tvs_protection:D_TVS_SMDJ58A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SMDJ58A"
+				(at -1.27 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smdj-datasheet?assetguid=2D9772B3-822B-4362-914D-B74E0A706638"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "TVS diode unidirectional 58 V standoff, 93.6 V clamp at 32 A, 3 kW, SMC. Pin 1 = cathode (band)."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "SMDJ58A-T7"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Littelfuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "576-SMDJ58A-T7"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "TVS transient suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_TVS_SMDJ58A_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.778 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_SMDJ58A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -292,168 +802,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
+			(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -577,7 +926,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+			(symbol "power:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -678,7 +1027,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
+			(symbol "power:PWR_FLAG"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -779,7 +1128,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
+			(symbol "power:VBUS"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -907,8 +1256,8 @@
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
-		(at 158.75 13.97 0)
-		(size 72.39 12.7)
+		(at 165.1 13.97 0)
+		(size 90.17 12.7)
 		(margins 4.4999 4.4999 4.4999 4.4999)
 		(stroke
 			(width -0.0001)
@@ -952,1139 +1301,83 @@
 		(uuid "d586e60e-4943-4467-86f4-9aa029321aa2")
 	)
 	(junction
-		(at 92.71 226.06)
+		(at 33.02 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "009da25a-7f7d-411d-848d-dd73fcc03662")
+		(uuid "3717086b-13ee-58db-a96c-f035a519de0c")
 	)
 	(junction
-		(at 243.84 218.44)
+		(at 60.96 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2d018490-5b38-4b40-ba10-765b7c222eac")
+		(uuid "b3e0cc6f-3438-543e-b668-02058ec05f83")
 	)
 	(junction
-		(at 52.07 187.96)
+		(at 46.99 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34b46528-9bfb-4613-af6b-f0674c12b531")
+		(uuid "b7a798c4-86c0-524a-96f6-44df0ad2502c")
 	)
-	(junction
-		(at 110.49 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c113c05-0096-4290-b8e2-3b3e6dda1a90")
-	)
-	(junction
-		(at 53.34 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43921f3a-7360-40de-8533-cb6cb339af66")
-	)
-	(junction
-		(at 243.84 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ae5f302-46d0-4d8a-be74-86c89c793863")
-	)
-	(junction
-		(at 147.32 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e88d170-b357-48a9-bb94-87b42c4447ad")
-	)
-	(junction
-		(at 73.66 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6fbb4459-bbf8-46b1-a618-6fc20bd5741a")
-	)
-	(junction
-		(at 58.42 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7cb3f13a-c334-411c-aef8-9f246e1c125e")
-	)
-	(junction
-		(at 119.38 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82e254a2-1d15-4339-825e-a8a3deb6b8d3")
-	)
-	(junction
-		(at 52.07 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b7aef0ab-9493-4cee-a49d-cf416ace6380")
-	)
-	(junction
-		(at 97.79 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c0bc2197-06c3-4630-882d-8fe2c554fda0")
-	)
-	(junction
-		(at 119.38 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1f8d4e5-aada-4d6d-99c0-5262d3ba748b")
-	)
-	(junction
-		(at 73.66 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c47d84c6-e5a1-4c90-9ea6-d0971f7fabf8")
-	)
-	(junction
-		(at 53.34 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6500150-2391-4884-84f7-75ff119cd7cd")
-	)
-	(junction
-		(at 147.32 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c77f529a-c871-48ed-8f5b-b5d68a0df371")
-	)
-	(junction
-		(at 73.66 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ccbe19a0-f750-4811-8ec5-c4678664036c")
-	)
-	(junction
-		(at 165.1 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cdf65481-c920-497d-9459-274f53d4a001")
-	)
-	(junction
-		(at 128.27 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cfa25160-c38f-46ee-8eca-60431d8916f8")
-	)
-	(junction
-		(at 92.71 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2e1c7f4-43de-452b-ac90-324b982ba8b4")
-	)
-	(junction
-		(at 110.49 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db15d9b8-f72a-4b3d-9334-e2a034a5fc81")
-	)
-	(junction
-		(at 73.66 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0524545-ceb1-45fa-a318-29561de95822")
-	)
-	(junction
-		(at 58.42 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7f8e353-b845-49ef-9f91-4919bb37712c")
-	)
-	(junction
-		(at 266.7 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed1a0017-a608-4c96-a421-4167182473bc")
-	)
-	(junction
-		(at 97.79 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3d35a01-ebd4-40af-b783-2c924dde75c9")
-	)
-	(junction
-		(at 128.27 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f80d4da0-e502-40da-a29f-6041af2c004d")
-	)
-	(junction
-		(at 165.1 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe2af832-8215-4e63-9bb4-9a5630345034")
-	)
-	(wire
-		(pts
-			(xy 92.71 226.06) (xy 110.49 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "007d47ff-0e79-4d3e-884f-0d938f60809e")
-	)
-	(wire
-		(pts
-			(xy 165.1 226.06) (xy 165.1 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02aa92a0-d8d3-4083-8e31-efd8efbad129")
-	)
-	(wire
-		(pts
-			(xy 243.84 203.2) (xy 266.7 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "073b4e01-8b14-4edd-9abe-0efb7648dd5c")
-	)
-	(wire
-		(pts
-			(xy 165.1 240.03) (xy 184.15 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07867d97-36e0-471e-a833-c97073105386")
-	)
-	(wire
-		(pts
-			(xy 49.53 54.61) (xy 58.42 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "086317d9-5e31-4b70-b35c-32742ce0dc4e")
-	)
-	(wire
-		(pts
-			(xy 44.45 240.03) (xy 53.34 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bcea90b-6b62-4cc1-a321-f759a2181afd")
-	)
-	(wire
-		(pts
-			(xy 243.84 199.39) (xy 243.84 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "131350db-8070-4aa0-815a-9666166f9d2a")
-	)
-	(wire
-		(pts
-			(xy 53.34 226.06) (xy 73.66 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18dca5b7-2c87-4cc2-815b-9be8353d2264")
-	)
-	(wire
-		(pts
-			(xy 58.42 120.65) (xy 46.99 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d7fa08f-c07f-4966-87b7-ae2dbbd31a2e")
-	)
-	(wire
-		(pts
-			(xy 266.7 203.2) (xy 266.7 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "204e8378-8f03-4bec-90c8-5283441643f5")
-	)
-	(wire
-		(pts
-			(xy 44.45 220.98) (xy 44.45 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2710bfd9-24e9-44f0-bb05-edc9ee8dd3f8")
-	)
-	(wire
-		(pts
-			(xy 266.7 203.2) (xy 279.4 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31dec2d9-393f-4ae4-8872-da32b6279257")
-	)
-	(wire
-		(pts
-			(xy 58.42 123.19) (xy 46.99 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "358d819d-ef3c-4536-a63e-8a304c6179ad")
-	)
-	(wire
-		(pts
-			(xy 44.45 207.01) (xy 44.45 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a4f070d-8e6b-4222-ab76-43260c0bac59")
-	)
-	(wire
-		(pts
-			(xy 73.66 226.06) (xy 73.66 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e773f49-9896-4a16-830f-60ffa8b1c067")
-	)
-	(wire
-		(pts
-			(xy 165.1 240.03) (xy 165.1 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45b7f8bc-2f5c-4a9e-b493-80ea2db8a3f1")
-	)
-	(wire
-		(pts
-			(xy 52.07 198.12) (xy 52.07 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4618bf7b-b63f-4031-8f1f-8fba0a3e435a")
-	)
-	(wire
-		(pts
-			(xy 119.38 203.2) (xy 138.43 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a47eca2-0c96-4566-be1e-b1e2bc05c453")
-	)
-	(wire
-		(pts
-			(xy 58.42 134.62) (xy 58.42 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b9bb8d6-0390-4ec6-9e9c-a2f8503cca64")
-	)
-	(wire
-		(pts
-			(xy 243.84 203.2) (xy 243.84 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d6c4c93-b8eb-42d5-a46c-d968c0ddffcd")
-	)
-	(wire
-		(pts
-			(xy 119.38 198.12) (xy 119.38 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ff60b2b-9dfa-4472-a4f3-5fa864efcfef")
-	)
-	(wire
-		(pts
-			(xy 46.99 68.58) (xy 58.42 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55b428a2-bf46-4c17-92b9-3901f495bc88")
-	)
-	(wire
-		(pts
-			(xy 138.43 187.96) (xy 138.43 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5951c470-6154-4200-a355-d675d6df0231")
-	)
-	(wire
-		(pts
-			(xy 128.27 226.06) (xy 128.27 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "601fd538-3d85-457f-b4d4-17bc9ecff16f")
-	)
-	(wire
-		(pts
-			(xy 119.38 187.96) (xy 138.43 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63a09848-9e2a-4bce-a1d7-289c019a090d")
-	)
-	(wire
-		(pts
-			(xy 53.34 240.03) (xy 73.66 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6704f001-3bd2-4484-8d09-57ce2f76a487")
-	)
-	(wire
-		(pts
-			(xy 165.1 226.06) (xy 184.15 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a33b98b-eeb0-45e8-8ca1-67af9afcc719")
-	)
-	(wire
-		(pts
-			(xy 44.45 184.15) (xy 44.45 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f8cf0cd-0722-45ad-8a84-1dd1f206153c")
-	)
-	(wire
-		(pts
-			(xy 266.7 218.44) (xy 266.7 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6faa8bb0-5767-42b9-8ebf-82b1e4f4e8e2")
-	)
-	(wire
-		(pts
-			(xy 52.07 203.2) (xy 73.66 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72a36419-2d7e-4a21-8daa-2d4100ef284f")
-	)
-	(wire
-		(pts
-			(xy 119.38 187.96) (xy 119.38 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "730fa901-302e-43f0-b6f7-e303e813a8a2")
-	)
-	(wire
-		(pts
-			(xy 58.42 105.41) (xy 58.42 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75e045b1-14fb-457a-8577-67ea1abb1fd9")
-	)
-	(wire
-		(pts
-			(xy 73.66 240.03) (xy 92.71 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "772d1c17-12e1-4761-aef9-c1cce574c4a7")
-	)
-	(wire
-		(pts
-			(xy 184.15 240.03) (xy 184.15 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79d78e3e-d8f6-4f61-b9ca-b438c52cd24d")
-	)
-	(wire
-		(pts
-			(xy 52.07 187.96) (xy 52.07 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7daded9b-63ef-4c21-838d-4dfb2d32d33f")
-	)
-	(wire
-		(pts
-			(xy 184.15 226.06) (xy 184.15 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e40e2e0-d482-43c4-a961-879cfaa9499d")
-	)
-	(wire
-		(pts
-			(xy 243.84 218.44) (xy 243.84 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8073cfe3-8b73-4867-8258-abde40c359fb")
-	)
-	(wire
-		(pts
-			(xy 58.42 66.04) (xy 46.99 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83c1af8b-da8c-43cc-9272-fd756321a563")
-	)
-	(wire
-		(pts
-			(xy 147.32 240.03) (xy 165.1 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88b0f906-45c4-4416-b8f0-6aee38c1f231")
-	)
-	(wire
-		(pts
-			(xy 128.27 237.49) (xy 128.27 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a327526-6c3a-48fd-a108-9f6438e30f9d")
-	)
-	(wire
-		(pts
-			(xy 52.07 187.96) (xy 73.66 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ecf9b69-6598-4cd8-bf1e-050a611124cd")
-	)
-	(wire
-		(pts
-			(xy 128.27 240.03) (xy 147.32 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95f54cc6-7498-4726-b2fb-eef8f47f8e57")
-	)
-	(wire
-		(pts
-			(xy 53.34 226.06) (xy 53.34 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e013822-2946-47c7-8b55-6f93e1394895")
-	)
-	(wire
-		(pts
-			(xy 92.71 240.03) (xy 110.49 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e13dd62-1839-47c4-b9f2-7d58518979a7")
-	)
-	(wire
-		(pts
-			(xy 73.66 226.06) (xy 92.71 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f10fef1-0bb1-43f5-8236-ce90f4605265")
-	)
-	(wire
-		(pts
-			(xy 147.32 226.06) (xy 147.32 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a168eddb-212e-4205-be8e-1cff1090019b")
-	)
-	(wire
-		(pts
-			(xy 92.71 226.06) (xy 92.71 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a207e801-ec0b-46f1-bee8-faf283bbb633")
-	)
-	(wire
-		(pts
-			(xy 97.79 187.96) (xy 119.38 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a21e097a-a7b3-40ef-8d70-16aa2de049ca")
-	)
-	(wire
-		(pts
-			(xy 58.42 68.58) (xy 58.42 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3d8aa0d-b2cc-4e08-91c5-c2c1d7654976")
-	)
-	(wire
-		(pts
-			(xy 147.32 226.06) (xy 165.1 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a60ed989-65da-422a-8dff-33e60730b551")
-	)
-	(wire
-		(pts
-			(xy 44.45 187.96) (xy 52.07 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a691f85f-3255-47ee-b8c7-6a81afed8a76")
-	)
-	(wire
-		(pts
-			(xy 97.79 198.12) (xy 97.79 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7977e27-231e-4271-807a-08edc876bf2c")
-	)
-	(wire
-		(pts
-			(xy 92.71 237.49) (xy 92.71 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aad90d37-0acb-4cd7-9ada-397e2a3287e3")
-	)
-	(wire
-		(pts
-			(xy 138.43 203.2) (xy 138.43 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1840697-def1-421d-9739-ed73f155dfec")
-	)
-	(wire
-		(pts
-			(xy 44.45 226.06) (xy 53.34 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4549966-c45c-47f2-82ae-ba9b7f26f421")
-	)
-	(wire
-		(pts
-			(xy 53.34 237.49) (xy 53.34 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8b7991d-d3aa-4d42-95c6-4c2768d52695")
-	)
-	(wire
-		(pts
-			(xy 73.66 187.96) (xy 97.79 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8bef4cb-f570-4eee-8320-5b194a68cf21")
-	)
-	(wire
-		(pts
-			(xy 110.49 240.03) (xy 128.27 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b991c678-d59a-467c-8ea3-c328570c1041")
-	)
-	(wire
-		(pts
-			(xy 58.42 50.8) (xy 58.42 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c13f0fe9-a42c-4003-8cd3-87a34bb4307f")
-	)
-	(wire
-		(pts
-			(xy 50.8 81.28) (xy 58.42 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4dd35e0-e240-4b5a-8858-50ce103446d9")
-	)
-	(wire
-		(pts
-			(xy 128.27 226.06) (xy 147.32 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb8dbd0c-afb0-418a-b175-e35b44007aef")
-	)
-	(wire
-		(pts
-			(xy 243.84 218.44) (xy 266.7 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd5f40e5-2221-4698-bc30-4e91b81dc5a5")
-	)
-	(wire
-		(pts
-			(xy 73.66 237.49) (xy 73.66 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d36836b3-204a-4cfb-9690-b726936406d2")
-	)
-	(wire
-		(pts
-			(xy 110.49 226.06) (xy 110.49 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d730647e-826c-4d9b-a588-743f4a1ee9bf")
-	)
-	(wire
-		(pts
-			(xy 110.49 226.06) (xy 128.27 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8dbde9f-1e5e-4375-89ac-1c6c9752ad55")
-	)
-	(wire
-		(pts
-			(xy 49.53 52.07) (xy 49.53 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da107521-a334-4ba3-bfc3-31af0b8edb6d")
-	)
-	(wire
-		(pts
-			(xy 44.45 243.84) (xy 44.45 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd099aa4-d218-4ef2-975c-2c60587582df")
-	)
-	(wire
-		(pts
-			(xy 44.45 203.2) (xy 52.07 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e32bac16-4c0b-4bee-b199-fdd529229d92")
-	)
-	(wire
-		(pts
-			(xy 147.32 237.49) (xy 147.32 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e378a434-d167-4340-bdbc-bbf96da96162")
-	)
-	(wire
-		(pts
-			(xy 73.66 203.2) (xy 97.79 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e41c708a-84cd-435c-857f-012203fa3dcf")
-	)
-	(wire
-		(pts
-			(xy 73.66 187.96) (xy 73.66 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7ffd5af-a51a-427a-8c86-6901d42bac02")
-	)
-	(wire
-		(pts
-			(xy 97.79 187.96) (xy 97.79 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea1e7fa3-f69b-47c4-a28b-46b58cbd2310")
-	)
-	(wire
-		(pts
-			(xy 73.66 198.12) (xy 73.66 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef6040f4-0c3a-4be3-823b-136d54a9fccb")
-	)
-	(wire
-		(pts
-			(xy 97.79 203.2) (xy 119.38 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efc2e96e-f4b9-421c-be07-aff2931e998f")
-	)
-	(wire
-		(pts
-			(xy 50.8 78.74) (xy 50.8 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efc59b1c-9075-418a-94fc-ac9ecae8c640")
-	)
-	(wire
-		(pts
-			(xy 110.49 237.49) (xy 110.49 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3a718a4-fd25-49a1-90db-6bc0dc8187c0")
-	)
 	(wire
 		(pts
-			(xy 58.42 81.28) (xy 58.42 83.82)
+			(xy 33.02 115.57) (xy 46.99 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f45b98ef-bcc0-47fc-9d24-11b2e8dfaac6")
+		(uuid "4cd4e121-d539-59f8-b4c1-c56cd75d9449")
 	)
 	(wire
 		(pts
-			(xy 58.42 54.61) (xy 58.42 66.04)
+			(xy 27.94 115.57) (xy 33.02 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f953e990-3b46-4750-9d1d-dc86b44de264")
+		(uuid "96894ba6-adfd-531e-9e87-d73aa7d488dc")
 	)
 	(wire
 		(pts
-			(xy 243.84 185.42) (xy 243.84 191.77)
+			(xy 60.96 115.57) (xy 74.93 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fbceaf32-295d-414d-a774-47f26dafe453")
+		(uuid "ae333ce1-3376-5f6f-b620-e7c8d63aeec9")
 	)
 	(wire
 		(pts
-			(xy 243.84 214.63) (xy 243.84 218.44)
+			(xy 46.99 115.57) (xy 60.96 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
-		)
-		(uuid "fc10b2a7-8e6e-42c6-97f0-d373d0c4c89f")
-	)
-	(hierarchical_label "VBUS_SENSE"
-		(shape input)
-		(at 279.4 203.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f30eefa3-c28b-413d-af1f-93a5f30fda24")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 243.84 210.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11d28626-8972-4d6d-911c-c25ce51e631e")
-		(property "Reference" "R2"
-			(at 246.38 209.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R"
-			(at 246.38 212.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 242.062 210.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 243.84 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fabb371d-11a3-42f8-bcb6-bca45d8faabf")
-		)
-		(pin "2"
-			(uuid "836dbfd7-5587-47dd-b8d1-419f9b29e265")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 52.07 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13b09f36-8def-42e5-b199-17d153d9880c")
-		(property "Reference" "C1"
-			(at 55.88 192.1509 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u/100V"
-			(at 55.88 194.6909 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.0352 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 52.07 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ee7f9e6-f6a8-4b33-b130-4831b9f716d8")
-		)
-		(pin "2"
-			(uuid "41d098a8-e723-4592-ab8b-eaa6606cbbc4")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C1")
-					(unit 1)
-				)
-			)
 		)
+		(uuid "b8f6be87-f4ad-52bf-b864-2f0199bc54ff")
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 58.42 105.41 0)
+		(at 27.94 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "182486d1-5231-4f50-9d39-452638e31583")
-		(property "Reference" "#PWR03"
-			(at 58.42 109.22 0)
+		(uuid "0a4a4a29-bd5a-5c94-8640-35a7945af36b")
+		(property "Reference" "#PWR051"
+			(at 27.94 115.57 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "VBUS"
-			(at 58.42 100.33 0)
+			(at 27.94 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2092,803 +1385,54 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 105.41 0)
+			(at 27.94 115.57 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 105.41 0)
+			(at 27.94 115.57 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 58.42 105.41 0)
+		(property "Description" ""
+			(at 27.94 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "100e2801-27ec-42dc-b683-008f615a0fba")
+			(uuid "a3dcc6c8-9c63-57a1-b105-c631461f9a82")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR03")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 41.91 68.58 180)
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 46.99 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d737620-5f53-436f-927e-2337182f1529")
-		(property "Reference" "J1"
-			(at 41.91 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 41.91 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 41.91 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 41.91 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "71caf304-5678-4cfb-89a9-dc5a7f67a4a1")
-		)
-		(pin "1"
-			(uuid "39134bd1-529a-466d-8cd0-e750f65d8bf9")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 73.66 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27bcf7aa-b012-4b44-8077-ab3bf09cae3a")
-		(property "Reference" "C7"
-			(at 77.47 232.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u/100V"
-			(at 77.47 234.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.6252 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 73.66 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3d5eef75-1dcb-482f-a896-afe3b1139b8e")
-		)
-		(pin "1"
-			(uuid "f8ebe04b-17fe-4eed-8d6a-e568fbdd845c")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 128.27 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "34ba81fe-e6a5-4bd0-b891-9d13822ffdf5")
-		(property "Reference" "C10"
-			(at 132.08 232.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u/100V"
-			(at 132.08 234.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.2352 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 128.27 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e6b80c52-f53e-4b5f-a44c-24e7766a8d5a")
-		)
-		(pin "1"
-			(uuid "7548c26f-58ec-42af-a47e-8267dfe642ad")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 44.45 207.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "382da961-66f8-42bc-8a0a-78b61ce651a2")
-		(property "Reference" "#PWR06"
-			(at 44.45 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 44.45 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77e0b974-af54-43c2-b6ae-4fd5a9c8923b")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 184.15 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38627f92-235d-4145-b702-fcd573600af3")
-		(property "Reference" "C13"
-			(at 187.96 232.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u/100V"
-			(at 187.96 234.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 185.1152 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 184.15 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e66814d5-97b8-42b1-ac91-864ec800f5a6")
-		)
-		(pin "1"
-			(uuid "dbbaf650-2fe5-42ae-9ba4-756334deb581")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 58.42 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "45cecb03-192f-422b-99ac-1f6209baed22")
-		(property "Reference" "#PWR01"
-			(at 58.42 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 58.42 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 58.42 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "774e0289-c1e5-4115-a35a-974dd8be772b")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 44.45 243.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bc1f26b-5661-4883-89d3-968339269984")
-		(property "Reference" "#PWR08"
-			(at 44.45 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 44.45 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "11cbae8d-a802-4f08-ac96-83dcd61fffae")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 58.42 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4fc49184-d775-4932-a936-85bcf81a672a")
-		(property "Reference" "#PWR02"
-			(at 58.42 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.42 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c0cf0d4-1396-4ba6-81a7-2f225770ae48")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 44.45 220.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5e9448ae-a77a-4786-9cf2-5be7708941f6")
-		(property "Reference" "#PWR07"
-			(at 44.45 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 44.45 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 44.45 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2bb076bb-8a83-4372-96df-9076d07a6269")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 266.7 210.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ed97c00-30c6-4019-b437-dc358ea26f60")
-		(property "Reference" "C14"
-			(at 270.51 209.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C"
-			(at 270.51 212.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.6652 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 266.7 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 266.7 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9b734223-dcd8-41dc-b304-3c0dba17be1d")
-		)
-		(pin "1"
-			(uuid "fc583764-a071-42b0-a689-2343027f0122")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 44.45 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "631f5ce7-bccf-443a-a4e7-d4d92c487223")
-		(property "Reference" "#PWR05"
-			(at 44.45 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 44.45 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 44.45 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7d97dbb7-208e-4a1c-8cff-b6a5de56926f")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 73.66 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67a8e298-971a-4e66-9352-7462edf41108")
+		(uuid "5bf222bb-5bc0-50cf-8107-0e5453f31f41")
 		(property "Reference" "C2"
-			(at 77.47 192.1509 0)
+			(at 48.89 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2896,8 +1440,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u/100V"
-			(at 77.47 194.6909 0)
+		(property "Value" "4.7u/100V"
+			(at 48.89 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2905,38 +1449,64 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 74.6252 198.12 0)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 46.99 119.38 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 73.66 194.31 0)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 46.99 119.38 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
-			(at 73.66 194.31 0)
+		(property "Description" ""
+			(at 46.99 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 46.99 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 46.99 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 46.99 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "cf729626-ec6f-4c33-af0c-f327b7cb1e55")
+			(uuid "1b9fb8dd-6d97-5630-9424-53b412140090")
 		)
 		(pin "2"
-			(uuid "ed117fc2-c674-4737-8a7d-6bb5244396d6")
+			(uuid "78decd8c-7c64-54c9-a9bc-ccf324a43eb2")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -2948,84 +1518,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 49.53 52.07 0)
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 33.02 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77844497-0576-45c0-a5db-677f1688e779")
-		(property "Reference" "#FLG01"
-			(at 49.53 50.165 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 49.53 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 49.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eecc9faa-44f1-4003-88c7-e98f9e5638d3")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 243.84 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c70e538-40f7-4719-b456-c489d588b0b5")
-		(property "Reference" "R1"
-			(at 246.38 194.3099 0)
+		(uuid "d7ece167-1a79-50b9-917e-0b34ce7f2327")
+		(property "Reference" "C1"
+			(at 34.92 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,8 +1535,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 246.38 196.8499 0)
+		(property "Value" "4.7u/100V"
+			(at 34.92 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3042,60 +1544,180 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 242.062 195.58 90)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 33.02 119.38 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 243.84 195.58 0)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 33.02 119.38 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 243.84 195.58 0)
+		(property "Description" ""
+			(at 33.02 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 33.02 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 33.02 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 33.02 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "64286f86-4629-402f-80c5-274c0cd65472")
+			(uuid "77338ecc-a585-5a25-bb03-015bed878273")
 		)
 		(pin "2"
-			(uuid "12c17f1e-faaf-4a16-94b1-369e27d6e5f9")
+			(uuid "28eec594-29cf-5f12-82e8-2247fb659e54")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "R1")
+					(reference "C1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 97.79 194.31 0)
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 74.93 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a8f181a-dadf-4940-9e81-1069e94479ed")
+		(uuid "dcbcf5ff-a9b3-57f3-b896-9bb368108733")
+		(property "Reference" "C4"
+			(at 76.83 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u/100V"
+			(at 76.83 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 74.93 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eaa45d88-1a93-5a6f-bce3-6b9b76208a09")
+		)
+		(pin "2"
+			(uuid "28bd6e00-b49c-51d0-8a90-452094e07f26")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 60.96 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e87fed15-523e-5617-9f9f-564391524b04")
 		(property "Reference" "C3"
-			(at 101.6 193.0399 0)
+			(at 62.86 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3103,8 +1725,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n/100V"
-			(at 101.6 195.5799 0)
+		(property "Value" "4.7u/100V"
+			(at 62.86 121.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3112,38 +1734,64 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 98.7552 198.12 0)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 60.96 119.38 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 97.79 194.31 0)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 60.96 119.38 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 97.79 194.31 0)
+		(property "Description" ""
+			(at 60.96 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 60.96 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 60.96 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 60.96 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "f042647a-e7ee-496b-80a1-28df5e4440ee")
+			(uuid "fb6076f8-5d0c-5b5a-b370-012a8ced886d")
 		)
 		(pin "2"
-			(uuid "d7a565b9-58a5-4321-adb3-05567d59afe3")
+			(uuid "bc1ac66c-93e8-5a2f-9694-50d5005793b7")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -3154,18 +1802,75 @@
 			)
 		)
 	)
+	(junction
+		(at 60.96 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40fd93b8-4fb1-50a5-ac4a-6c3be18234aa")
+	)
+	(junction
+		(at 46.99 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adbec92a-bc27-5454-9ba5-d9a5ae960db2")
+	)
+	(junction
+		(at 33.02 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2bd164f-1a12-5ed8-9b42-10c3e0d384b3")
+	)
+	(wire
+		(pts
+			(xy 46.99 142.24) (xy 60.96 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f145901-3cd1-5376-a62f-bfef1cf5daec")
+	)
+	(wire
+		(pts
+			(xy 33.02 142.24) (xy 46.99 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98d74c0-83b2-5bb0-aa29-4e3ed3ba0578")
+	)
+	(wire
+		(pts
+			(xy 27.94 142.24) (xy 33.02 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad5ee954-0821-58e6-b215-b0d9f2bc5409")
+	)
+	(wire
+		(pts
+			(xy 60.96 142.24) (xy 74.93 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1a9aa1b-a326-5f82-add6-644c68f0465c")
+	)
 	(symbol
-		(lib_id "Device:C")
-		(at 147.32 233.68 0)
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 60.96 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93d991c4-0830-491a-b56c-42a17545b374")
-		(property "Reference" "C11"
-			(at 151.13 232.4099 0)
+		(uuid "1f55d0d1-9c47-5baa-9daa-89574e46e51e")
+		(property "Reference" "C7"
+			(at 62.86 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3174,7 +1879,7 @@
 			)
 		)
 		(property "Value" "4.7u/100V"
-			(at 151.13 234.9499 0)
+			(at 62.86 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3182,38 +1887,571 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 148.2852 237.49 0)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 60.96 138.43 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 147.32 233.68 0)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 60.96 138.43 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 147.32 233.68 0)
+		(property "Description" ""
+			(at 60.96 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "46c316b0-61de-486d-8e23-b1418d64a3f8")
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 60.96 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 60.96 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 60.96 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "cd47c295-e156-47b9-af42-f8edf41ff425")
+			(uuid "e0be80db-cebd-5eb8-8ed2-8bfcd8f91adb")
+		)
+		(pin "2"
+			(uuid "8c530843-a5ff-559b-867c-01d6396c6f57")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 46.99 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "426b6428-37cc-52de-9a0e-c35455e71db9")
+		(property "Reference" "C6"
+			(at 48.89 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u/100V"
+			(at 48.89 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 46.99 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 46.99 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 46.99 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 46.99 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 46.99 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0f5bd90-21dd-5a84-93be-57a94cb1f11b")
+		)
+		(pin "2"
+			(uuid "eefc9185-357c-5635-814e-69cc3a252d97")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 74.93 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e90e318-976c-5122-9454-6a97e6112f61")
+		(property "Reference" "C8"
+			(at 76.83 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u/100V"
+			(at 76.83 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 74.93 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 74.93 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 74.93 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 74.93 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 74.93 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e2c71ad-669a-5c6e-9262-60d374c398fb")
+		)
+		(pin "2"
+			(uuid "fc0a4b1b-74ef-5e51-b598-1c8de814a1a1")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2abbb8f-4391-5507-bc20-04d98833c5e5")
+		(property "Reference" "#PWR054"
+			(at 27.94 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "597e7958-f453-5cda-aa03-3e430456405f")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_capacitors:C_4u7_100V_1210")
+		(at 33.02 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6ad3953-dc58-5768-a64d-4ce3c06e8c50")
+		(property "Reference" "C5"
+			(at 34.92 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u/100V"
+			(at 34.92 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 33.02 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
+			(at 33.02 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C3225X7S2A475K200AB"
+			(at 33.02 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 33.02 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "810-C3225X7S2A475K"
+			(at 33.02 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5755cb93-0fa7-54c1-822d-7f47402c9819")
+		)
+		(pin "2"
+			(uuid "a2707162-af6d-5c52-a5fb-c4f9450e3a2a")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 93.98 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42ee2d42-f68e-517c-bce5-1ba5bce8bf69")
+	)
+	(junction
+		(at 63.5 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4840be8c-1a77-5878-ab9d-aadb1cf5f71c")
+	)
+	(junction
+		(at 33.02 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d39bdc-da44-5519-9e59-2670266e1b48")
+	)
+	(junction
+		(at 48.26 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0bb4d69-5746-503a-9bfa-430c638d5ee8")
+	)
+	(junction
+		(at 78.74 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7af3e12-ce55-5020-85a7-264456965b2d")
+	)
+	(wire
+		(pts
+			(xy 93.98 104.14) (xy 109.22 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "226aef14-5e2b-5367-a2c9-acaeb2ff05aa")
+	)
+	(wire
+		(pts
+			(xy 63.5 104.14) (xy 78.74 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26d9f3ae-9d4d-553d-80ed-1010ca93b7d4")
+	)
+	(wire
+		(pts
+			(xy 27.94 104.14) (xy 33.02 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e0e68f-29ef-577a-b6f8-f49f404176d2")
+	)
+	(wire
+		(pts
+			(xy 33.02 104.14) (xy 48.26 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed5ddd2-4315-5cc5-ab30-788a91ac28b9")
+	)
+	(wire
+		(pts
+			(xy 48.26 104.14) (xy 63.5 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb10188-4fe5-5d48-bedd-dbb3f1784330")
+	)
+	(wire
+		(pts
+			(xy 78.74 104.14) (xy 93.98 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "891405ec-76c3-5f4a-b2fd-882f022a12e4")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 78.74 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "586c785c-5a30-5a56-80ad-516a374f9f0b")
+		(property "Reference" "C11"
+			(at 80.64 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n 100V"
+			(at 80.64 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2559bfa-9845-573a-ba33-fe2df381dc56")
+		)
+		(pin "2"
+			(uuid "ca5111b2-469e-5437-ac32-635f3b376913")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -3226,16 +2464,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 119.38 194.31 0)
+		(at 109.22 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ab3de84-68ca-4679-8f41-7c4125baea98")
-		(property "Reference" "C4"
-			(at 123.19 193.0399 0)
+		(uuid "b15dbc86-882a-5607-9d03-212d9bf4935d")
+		(property "Reference" "C13"
+			(at 111.12 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,8 +2480,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n/100V"
-			(at 123.19 195.5799 0)
+		(property "Value" "100n 100V"
+			(at 111.12 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3252,109 +2489,42 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 120.3452 198.12 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 100.33 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 119.38 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25b52f92-5c3b-4eb4-aaaf-8ebff071293e")
-		)
-		(pin "2"
-			(uuid "2817d556-4de8-42e1-868d-f9e6c3b3fbcd")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 243.84 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a2295b70-dc51-4ff6-9f62-ba8f2ce27e55")
-		(property "Reference" "#PWR010"
-			(at 243.84 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 243.84 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 185.42 0)
+			(at 109.22 100.33 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 243.84 185.42 0)
+		(property "Description" ""
+			(at 109.22 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "ef9ebfbb-4ac8-47be-b2d8-577d144ed0f8")
+			(uuid "5910a9d7-7e79-52a9-ad75-44fbdeb6873d")
+		)
+		(pin "2"
+			(uuid "81777536-aa21-5575-8520-3722659c0c53")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR010")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -3362,16 +2532,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 110.49 233.68 0)
+		(at 93.98 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5bb29bf-9f57-45e3-8996-a8ecec5c8cc8")
-		(property "Reference" "C9"
-			(at 114.3 232.4099 0)
+		(uuid "d6b18f3b-7188-5443-a8e5-9140c5bc3fcd")
+		(property "Reference" "C12"
+			(at 95.88 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,8 +2548,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u/100V"
-			(at 114.3 234.9499 0)
+		(property "Value" "100n 100V"
+			(at 95.88 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,38 +2557,227 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 111.4552 237.49 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 93.98 100.33 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 110.49 233.68 0)
+		(property "Datasheet" ""
+			(at 93.98 100.33 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 233.68 0)
+		(property "Description" ""
+			(at 93.98 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "cf2d5a3a-06d2-4a44-b0c7-55af22477d72")
 		)
 		(pin "1"
-			(uuid "84ba5a27-1738-418b-95fe-b1a2304232a6")
+			(uuid "37b6257f-60aa-54a5-9fc6-1da724479a00")
+		)
+		(pin "2"
+			(uuid "9e1d971b-9325-5ec0-a171-6ab17409b26d")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_capacitors:CP_100u_100V")
+		(at 63.5 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e087a5cb-6abd-510b-bfb3-eb15b5cec8c4")
+		(property "Reference" "C10"
+			(at 66.04 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u/100V"
+			(at 66.04 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/497/1/e_uhe.pdf"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UHE2A101MPD"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nichicon"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "647-UHE2A101MPD"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a43dbbad-6c3c-5320-886a-e34f3cf44ee7")
+		)
+		(pin "2"
+			(uuid "a023514f-7108-5121-b721-1949cf8fbaea")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_capacitors:CP_100u_100V")
+		(at 48.26 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eab63c3a-f7d6-5c64-a5f8-98f10ee1aec8")
+		(property "Reference" "C9"
+			(at 50.8 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u/100V"
+			(at 50.8 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+			(at 48.26 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/497/1/e_uhe.pdf"
+			(at 48.26 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UHE2A101MPD"
+			(at 48.26 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nichicon"
+			(at 48.26 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "647-UHE2A101MPD"
+			(at 48.26 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76db7812-2d70-5945-9067-a7f8f871f16c")
+		)
+		(pin "2"
+			(uuid "866c3302-d03f-5ddc-8939-c9e0bc5e06cb")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -3431,17 +2789,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 92.71 233.68 0)
+		(lib_id "0_tvs_protection:D_TVS_SMDJ58A")
+		(at 33.02 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "abd783c9-f567-4714-83ee-594af0935e37")
-		(property "Reference" "C8"
-			(at 96.52 232.4099 0)
+		(uuid "fb437e8e-3788-5d26-8864-b860f0472248")
+		(property "Reference" "D1"
+			(at 35.56 99.695 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,8 +2806,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u/100V"
-			(at 96.52 234.9499 0)
+		(property "Value" "SMDJ58A"
+			(at 35.56 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,68 +2815,94 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.6752 237.49 0)
+		(property "Footprint" "Diode_SMD:D_SMC"
+			(at 33.02 100.33 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 92.71 233.68 0)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smdj-datasheet?assetguid=2D9772B3-822B-4362-914D-B74E0A706638"
+			(at 33.02 100.33 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 233.68 0)
+		(property "Description" ""
+			(at 33.02 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "d47cc49c-238e-489c-9fb2-6b8f69fceccf")
+		(property "MPN" "SMDJ58A-T7"
+			(at 33.02 100.33 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at 33.02 100.33 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "576-SMDJ58A-T7"
+			(at 33.02 100.33 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "fd5f42f5-10fd-42d2-a7ed-875eaf660e6f")
+			(uuid "8f840dd4-5de4-57b0-8d99-4440256f4f9d")
+		)
+		(pin "2"
+			(uuid "490fd56a-e673-59ad-92b4-7abdd9630c7b")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C8")
+					(reference "D1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 41.91 123.19 180)
+		(lib_id "power:GND")
+		(at 27.94 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad49a678-024d-4a88-9547-b9184d0d9d11")
-		(property "Reference" "J2"
-			(at 41.91 114.3 0)
+		(uuid "ff280495-e55e-5196-a8a2-bf7a571f75bc")
+		(property "Reference" "#PWR050"
+			(at 27.94 104.14 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 41.91 116.84 0)
+		(property "Value" "GND"
+			(at 27.94 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3527,37 +2910,782 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 123.19 0)
+			(at 27.94 104.14 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 41.91 123.19 0)
+		(property "Datasheet" ""
+			(at 27.94 104.14 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 41.91 123.19 0)
+		(property "Description" ""
+			(at 27.94 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbd9587e-54dd-5f58-8512-7f0a4c44fd84")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 33.02 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6aa8b247-790d-5687-9203-c4bcd38115db")
+	)
+	(junction
+		(at 63.5 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73612d88-3b92-57f2-8977-8604200752db")
+	)
+	(junction
+		(at 78.74 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "950fa0bc-e253-552e-a278-e1b76478da89")
+	)
+	(junction
+		(at 93.98 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd101a2f-5afa-5ca1-96ac-466b2a87aa6e")
+	)
+	(junction
+		(at 48.26 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbcfa63b-16db-503b-95d4-089102c48071")
+	)
+	(wire
+		(pts
+			(xy 93.98 96.52) (xy 109.22 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc6086e-8635-53d4-b06e-13fecaba69aa")
+	)
+	(wire
+		(pts
+			(xy 27.94 96.52) (xy 33.02 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3e987a-bb73-5832-a712-da05491dc5e8")
+	)
+	(wire
+		(pts
+			(xy 48.26 96.52) (xy 63.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dc348bc-a1e9-5751-926a-201c529fc192")
+	)
+	(wire
+		(pts
+			(xy 78.74 96.52) (xy 93.98 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f4a7b46-64d4-52f4-bf8a-72cd24c77cb8")
+	)
+	(wire
+		(pts
+			(xy 63.5 96.52) (xy 78.74 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eb23f69-33f1-5db6-b82f-62c708fd662d")
+	)
+	(wire
+		(pts
+			(xy 33.02 96.52) (xy 48.26 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2a970c-aef6-5b9f-a16d-91e7bc42687e")
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 27.94 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b631400-9cf7-5e70-b829-0d87fbdef778")
+		(property "Reference" "#PWR049"
+			(at 27.94 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 27.94 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a98b9a6-ea61-55ff-8e80-2415a2ee00cd")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 33.02 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fa4494e-4e9e-5ee3-9a36-41b76a7705aa")
+	)
+	(junction
+		(at 46.99 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "855d1693-40e2-5793-a318-87c338ee9645")
+	)
+	(junction
+		(at 60.96 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d23573bc-930c-557a-8cb3-77ba7cc593b2")
+	)
+	(wire
+		(pts
+			(xy 60.96 134.62) (xy 74.93 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09ba3c69-3f80-5b2f-a9a9-1165c20ef184")
+	)
+	(wire
+		(pts
+			(xy 27.94 134.62) (xy 33.02 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca40a39-ab47-5022-8c9d-4ae410c05e4f")
+	)
+	(wire
+		(pts
+			(xy 33.02 134.62) (xy 46.99 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d03b04-7bdf-594c-aacc-1df74c0b1edf")
+	)
+	(wire
+		(pts
+			(xy 46.99 134.62) (xy 60.96 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c2253da-8594-5129-8944-6a337675aafc")
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 27.94 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a412709-e5b0-5e77-9948-fad8e01b4e29")
+		(property "Reference" "#PWR053"
+			(at 27.94 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 27.94 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41b60ef0-be72-5342-aa7a-410068a1119a")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 46.99 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "847b8ed3-d0ee-5f3a-8333-02668a0a3c4b")
+	)
+	(junction
+		(at 33.02 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbb330f4-3e0b-5061-8fdd-9711e33744bc")
+	)
+	(junction
+		(at 60.96 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7cf3573-bb40-5de9-945d-1fa5b112a910")
+	)
+	(wire
+		(pts
+			(xy 33.02 123.19) (xy 46.99 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f168cab-f250-5504-9f56-d883decc9773")
+	)
+	(wire
+		(pts
+			(xy 46.99 123.19) (xy 60.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "440a66db-2e74-5639-866e-fee530ffeb52")
+	)
+	(wire
+		(pts
+			(xy 60.96 123.19) (xy 74.93 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ab9c77c-7b82-5f9e-ba8b-e229e78df9a7")
+	)
+	(wire
+		(pts
+			(xy 27.94 123.19) (xy 33.02 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "958a9bef-6a15-569c-82c1-fb5dec9878e6")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9d7dfff-68e8-5585-93b5-9c78bdf7e674")
+		(property "Reference" "#PWR052"
+			(at 27.94 123.19 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 123.19 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 123.19 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c52e72a9-aeae-53ea-92af-a1c96d255972")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 93.98 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb9c9a88-ac41-5583-b20e-39245e19c75e")
+	)
+	(junction
+		(at 104.14 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcbf43dd-a292-5932-8f8a-b9e616deffee")
+	)
+	(wire
+		(pts
+			(xy 93.98 123.19) (xy 104.14 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6df6216f-0eb9-5035-b6a6-d1040edc0c3c")
+	)
+	(wire
+		(pts
+			(xy 104.14 123.19) (xy 109.22 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "901c8f81-c168-5fc1-b40c-366a7ce62123")
+	)
+	(hierarchical_label "VBUS_SENSE"
+		(shape passive)
+		(at 109.22 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c18fc565-c9f0-53d0-9d64-5a331b004c54")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24664e7c-185d-56cd-aa23-e40b9bedd7fa")
+		(property "Reference" "R5"
+			(at 95.88 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.3k"
+			(at 95.88 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 93.98 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec9c5736-087d-5ede-9a2a-65643f43a58c")
+		)
+		(pin "2"
+			(uuid "75967436-f6d1-5aa7-ae74-af5fb786fc89")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 104.14 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44eaa54f-aba6-5d52-85a8-27280c650944")
+		(property "Reference" "C14"
+			(at 106.04 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 106.04 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 104.14 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89064b84-6236-5359-bcbb-14aa7bd50a2b")
+		)
+		(pin "2"
+			(uuid "17a55d03-2196-56d6-a72c-13dc5c4cdbde")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb0ab44f-5ec4-5928-92e1-95735cd19f43")
+		(property "Reference" "R4"
+			(at 95.88 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 95.88 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 93.98 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2fc5e867-4667-58e0-bdb5-a2aabd1a2d1b")
+		)
+		(pin "2"
+			(uuid "3dee4674-87d7-50d9-bf9f-cc82aa670840")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 87.63 53.34) (xy 87.63 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05a102cd-d273-5ce0-9e1f-78660ebc8eed")
+	)
+	(wire
+		(pts
+			(xy 91.44 53.34) (xy 87.63 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c627370d-6715-58cb-ae7b-6f0254e24c84")
+	)
+	(symbol
+		(lib_id "0_connectors:XT30PW-M")
+		(at 96.52 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b397bc3-7719-5134-880d-9979cdba7c54")
+		(property "Reference" "J2"
+			(at 95.25 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT30PW-M"
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+			(at 96.52 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "XT30PW-M"
+			(at 96.52 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Amass"
+			(at 96.52 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
-			(uuid "e77aa911-39e7-4ff0-af41-998d26ee2e39")
+			(uuid "9c0a164c-11f9-5a26-832c-40010958bf4b")
 		)
 		(pin "1"
-			(uuid "c9cf04b2-d711-444c-9796-e79864940007")
+			(uuid "82973a4e-9d16-5aa7-ac16-d68e41c5d9d9")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -3569,207 +3697,612 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 138.43 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aec1191b-ce50-4d9d-8cb8-8cf774d0a867")
-		(property "Reference" "C5"
-			(at 142.24 193.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n/100V"
-			(at 142.24 195.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.3952 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 138.43 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1166f012-42af-4eff-9f65-7a0ea10b97f6")
-		)
-		(pin "2"
-			(uuid "77e66fa7-eb91-4323-b5bc-056c7b476bcc")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 243.84 222.25 0)
+		(at 87.63 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb500da1-0e3f-441c-868d-b7c9f4bbb94f")
-		(property "Reference" "#PWR09"
-			(at 243.84 228.6 0)
+		(uuid "c70d4b0e-a178-5db1-8c22-b5f8980d281a")
+		(property "Reference" "#PWR046"
+			(at 87.63 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
-			(at 243.84 227.33 0)
+			(at 87.63 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 222.25 0)
+			(at 87.63 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 222.25 0)
+			(at 87.63 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 243.84 222.25 0)
+		(property "Description" ""
+			(at 87.63 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "dc3e3b62-ca6b-4768-b97c-a597266f5706")
+			(uuid "ec6aed4a-eba0-5480-8a53-84fd27c63367")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR09")
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 60.96 54.61) (xy 60.96 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44042ee8-55b0-5d03-8b79-b4673465c8d4")
+	)
+	(wire
+		(pts
+			(xy 64.77 54.61) (xy 60.96 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c4c7c6-d572-5f19-ba21-1b41611bc142")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ecf15a4d-3424-5740-8262-567eff88a67b")
+		(property "Reference" "#PWR044"
+			(at 60.96 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a0473bca-7108-59fa-b52d-22186fcfc6de")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 53.34 233.68 0)
+		(lib_id "0_connectors:XT30PW-M")
+		(at 69.85 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf5304c5-bb21-4073-8011-2da0b9108b76")
-		(property "Reference" "C6"
-			(at 57.15 232.4099 0)
+		(uuid "f6d25b59-585e-50ec-bf86-139248ac6729")
+		(property "Reference" "J1"
+			(at 68.58 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "4.7u/100V"
-			(at 57.15 234.9499 0)
+		(property "Value" "XT30PW-M"
+			(at 68.58 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 54.3052 237.49 0)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+			(at 69.85 54.61 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 53.34 233.68 0)
+		(property "Datasheet" ""
+			(at 69.85 54.61 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 53.34 233.68 0)
+		(property "Description" ""
+			(at 69.85 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "MPN" "XT30PW-M"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Amass"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
-			(uuid "c793cde3-6a7b-4857-87d5-592062605755")
+			(uuid "cbbc8b93-81ea-5f20-8e88-aaaf6a4756cf")
 		)
 		(pin "1"
-			(uuid "7cf221f6-8f2b-45af-b287-8179f069fd04")
+			(uuid "2b1421b9-6271-5961-9c4c-5a70479aa14e")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C6")
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 83.82 50.8) (xy 83.82 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44aaaf04-ed7e-5fc5-9851-04b80293258d")
+	)
+	(wire
+		(pts
+			(xy 91.44 50.8) (xy 83.82 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c880d01c-6a55-5505-be02-cfab69c5d078")
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 83.82 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1231e9d-f268-5881-b060-f59e72ae3f29")
+		(property "Reference" "#PWR045"
+			(at 83.82 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 83.82 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ddd96505-21be-5896-acec-ee7992a549db")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 57.15 52.07) (xy 57.15 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89411170-dfcd-5a65-b1ac-39c635c98bbc")
+	)
+	(wire
+		(pts
+			(xy 64.77 52.07) (xy 57.15 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fff15373-0cc3-5abc-a29d-445398e0c37d")
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 57.15 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdb1cb17-8092-563b-96dd-3beff2b17936")
+		(property "Reference" "#PWR043"
+			(at 57.15 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 57.15 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01c4c1de-25e2-5f21-8c4b-fa743e4397ff")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 63.5 78.74) (xy 63.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a17ac7f-d513-560d-9274-874aa0a2ecaf")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 63.5 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "73eec2f2-22d5-5db3-8aeb-12f7a127d6b9")
+		(property "Reference" "#FLG01"
+			(at 63.5 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 63.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bc7801e-7e29-596a-820c-993ca6654145")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 63.5 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "95562841-54f5-5e72-9be6-7e3173e0ff64")
+		(property "Reference" "#PWR047"
+			(at 63.5 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 63.5 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d01612f-6139-55e5-90b7-5da533ab1fd1")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 77.47 81.28) (xy 77.47 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf72b13e-5f41-57d0-9285-f33011326966")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "102c870e-3fa2-5ecc-a136-74258e8c8049")
+		(property "Reference" "#PWR048"
+			(at 77.47 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 81.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98f5cf3b-e13f-5093-bfdd-0962182bfc4a")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -3777,61 +4310,58 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 50.8 78.74 0)
+		(at 77.47 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7ed5c07-25c9-44f4-a955-c61d7bf46dfb")
+		(uuid "513202cc-84bf-5248-af74-49aa49ee9245")
 		(property "Reference" "#FLG02"
-			(at 50.8 76.835 0)
+			(at 77.47 78.74 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 50.8 73.66 0)
+			(at 77.47 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 78.74 0)
+			(at 77.47 78.74 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 50.8 78.74 0)
+		(property "Datasheet" ""
+			(at 77.47 78.74 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 50.8 78.74 0)
+		(property "Description" ""
+			(at 77.47 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "d341a339-8421-4258-a852-6be5775fe55a")
+			(uuid "61b5674e-7b86-5d5e-a574-8ea23e673dde")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -3843,140 +4373,256 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 58.42 134.62 0)
+		(lib_id "power:VBUS")
+		(at 93.98 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e32f5b77-ccca-46fb-ae25-338bf1cc0219")
-		(property "Reference" "#PWR04"
-			(at 58.42 140.97 0)
+		(uuid "0df9f5dd-3494-5643-a5d9-f41377d408af")
+		(property "Reference" "#PWR055"
+			(at 93.98 115.57 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 58.42 139.7 0)
+		(property "Value" "VBUS"
+			(at 93.98 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 134.62 0)
+			(at 93.98 115.57 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 134.62 0)
+			(at 93.98 115.57 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 134.62 0)
+		(property "Description" ""
+			(at 93.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "eacb810c-03e9-40b9-9648-11a802f1d4cb")
+			(uuid "999d3b05-eb2d-587f-bd9b-057affc64ee8")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "#PWR04")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 165.1 233.68 0)
+		(lib_id "power:GND")
+		(at 93.98 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f03bb551-fc2f-4463-ae50-c0110f4b6a3c")
-		(property "Reference" "C12"
-			(at 168.91 232.4099 0)
+		(uuid "89f53521-5235-52ca-a893-b2b9c6a2e4a5")
+		(property "Reference" "#PWR056"
+			(at 93.98 130.81 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "4.7u/100V"
-			(at 168.91 234.9499 0)
+		(property "Value" "GND"
+			(at 93.98 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 166.0652 237.49 0)
+			(at 93.98 130.81 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 165.1 233.68 0)
+		(property "Datasheet" ""
+			(at 93.98 130.81 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 165.1 233.68 0)
+		(property "Description" ""
+			(at 93.98 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "d319b1b7-501a-4af4-b662-5872c241c735")
 		)
 		(pin "1"
-			(uuid "91652d99-4c06-4044-9d0b-b75b3cf042a7")
+			(uuid "a32becd0-fe90-5679-8446-3dec89084a3b")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
-					(reference "C12")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4963f95c-9cb9-59e6-98dd-6656fed7f6ad")
+		(property "Reference" "#PWR057"
+			(at 104.14 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17f84d81-326c-52c1-8d8e-88aa9089aaaa")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/362ca387-937b-4753-8950-0f81802218d2"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "VBUS DAISY CHAIN"
+		(exclude_from_sim no)
+		(at 15.24 34.29 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0485d0fb-9bf1-5fa1-a8e2-7784e45629c0")
+	)
+	(text "Bulk and HF Caps"
+		(exclude_from_sim no)
+		(at 53.086 94.234 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fee71c7-02fa-525a-be46-a32717e0b9f0")
+	)
+	(text "Bus voltage sense (80 V FS)"
+		(exclude_from_sim no)
+		(at 91.44 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5355432-1cfd-5cf6-bf24-169ed8b1c931")
+	)
+	(text_box "LAYOUT NOTE: BUS\n* VBUS/GND as wide pours on 2+ layers, J1 to J2 to the bridge.\n* D1 right at J1.\n* C1-C8: 2-3 per half-bridge; C11-C13: one per leg, on the drain-to-shunt-GND loop."
+		(exclude_from_sim no)
+		(at 132.08 40.64 0)
+		(size 120 21.59)
+		(margins 2.25 2.25 2.25 2.25)
+		(stroke
+			(width 1.5)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "2c21750c-d8da-4c1e-b283-3547411083ad")
 	)
 )

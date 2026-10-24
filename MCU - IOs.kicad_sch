@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "MCU - IOs")
 		(date "2025-01-12")
@@ -11,22 +11,33 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "0_crystals:crystal_24gnd"
+			(symbol "0_crystals:Crystal_25MHz_ABM8G"
 			(pin_names
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at -2.54 4.572 0)
+				(at -2.54 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "25MHz 8pF"
+				(at -2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -35,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" ""
+			(property "Datasheet" "https://www.mouser.com/datasheet/3/184/1/ABM8G.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -44,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Description" "25 MHz crystal, 8 pF load, +/-20 ppm tol, +/-20 ppm stab, -40 to 85 C, 3.2x2.5 mm 4-pad. Pins 1/3 = crystal, 2/4 = case (GND)."
 				(at 0 0 0)
 				(effects
 					(font
@@ -53,7 +64,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "MPN" "ABM8G-25.000MHZ-8-D2X-T"
 				(at 0 0 0)
 				(effects
 					(font
@@ -62,7 +73,34 @@
 					(hide yes)
 				)
 			)
-			(symbol "crystal_24gnd_0_1"
+			(property "Manufacturer" "Abracon"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "815-ABM8G-25-8-D2X-T"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "crystal quartz 25MHz"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_25MHz_ABM8G_0_1"
 				(polyline
 					(pts
 						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
@@ -171,7 +209,7 @@
 					)
 				)
 			)
-			(symbol "crystal_24gnd_1_1"
+			(symbol "Crystal_25MHz_ABM8G_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -247,7 +285,192 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0_mcu:stm32g474ret3"
+			(symbol "0_leds:LED_Green_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Green"
+				(at -1.27 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "LED green 0603. Pin 1 = cathode, pin 2 = anode."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "LTST-C191KGKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Lite-On"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED indicator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Green_0603_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Green_0603_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "0_mcu:stm32g474ret3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1490,6 +1713,495 @@
 			)
 			(embedded_fonts no)
 		)
+			(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+			(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "J. Pieper ADC investigation"
 		(exclude_from_sim no)
@@ -1535,7 +2247,7 @@
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
-		(at 115.57 15.24 0)
+		(at 173.99 13.97 0)
 		(size 72.39 12.7)
 		(margins 4.4999 4.4999 4.4999 4.4999)
 		(stroke
@@ -1556,251 +2268,2942 @@
 		)
 		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
 	)
+	(junction
+		(at 161.29 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "734517e1-57bc-5c64-9762-1e6b9b410297")
+	)
+	(wire
+		(pts
+			(xy 165.1 50.8) (xy 161.29 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b83e29a-00a5-5658-bc99-805d8fb7c487")
+	)
+	(wire
+		(pts
+			(xy 161.29 50.8) (xy 158.75 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c302dbb-5969-5f35-bd0e-1e7268fea6db")
+	)
+	(label "HSE_IN"
+		(at 158.75 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "80dbb872-900a-5f6f-bd18-0d57e816155e")
+	)
 	(symbol
-		(lib_id "0_mcu:stm32g474ret3")
-		(at 59.69 97.79 0)
+		(lib_id "Device:C")
+		(at 161.29 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68cc2045-2435-42b7-a704-9f30ebe0d616")
+		(uuid "4472eb74-155b-5bc1-9957-cb0a23765350")
+		(property "Reference" "C58"
+			(at 159.39 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10p C0G"
+			(at 159.39 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 161.29 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f178ae86-b794-5892-8594-c349998a0359")
+		)
+		(pin "2"
+			(uuid "053523c6-d3af-5a43-b2cb-2d58eda09394")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "C58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_crystals:Crystal_25MHz_ABM8G")
+		(at 168.91 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c410a21-05e2-59ab-99bc-af04a5da3a60")
+		(property "Reference" "Y2"
+			(at 171.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "25MHz 8pF"
+			(at 168.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+			(at 168.91 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/184/1/ABM8G.pdf"
+			(at 168.91 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ABM8G-25.000MHZ-8-D2X-T"
+			(at 168.91 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Abracon"
+			(at 168.91 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "815-ABM8G-25-8-D2X-T"
+			(at 168.91 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86793925-6684-5263-88e7-c0f59b051870")
+		)
+		(pin "3"
+			(uuid "2b599b70-b7b1-5515-b441-819c80584e62")
+		)
+		(pin "2"
+			(uuid "b17ee464-3f4c-51a5-b5ff-62379db907b4")
+		)
+		(pin "4"
+			(uuid "b4889515-3f84-572c-b58e-82928be0f570")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 176.53 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "799db271-997a-5e32-a94b-799cf94d879f")
+	)
+	(wire
+		(pts
+			(xy 176.53 50.8) (xy 179.07 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "435cf7d0-864e-53af-9a17-7d8ec9529a99")
+	)
+	(wire
+		(pts
+			(xy 172.72 50.8) (xy 176.53 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb986da5-1122-50e8-89d0-d618ee38bd58")
+	)
+	(label "HSE_OUT"
+		(at 179.07 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "214b8fa5-a186-5a7c-bd7c-6b43466b8deb")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 176.53 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09463de0-4352-5111-b4bf-9db926f5a308")
+		(property "Reference" "C59"
+			(at 178.43 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10p C0G"
+			(at 178.43 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 176.53 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce29f256-719b-5f42-bbbf-5cf8a90d3f7f")
+		)
+		(pin "2"
+			(uuid "76d7dcd1-de77-5f19-b21d-e81742a7fc61")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "C59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 189.23 86.36) (xy 189.23 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "143a6be9-91d7-53fe-ae2a-3df238f5ef4d")
+	)
+	(hierarchical_label "ESC_IRQ"
+		(shape input)
+		(at 189.23 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "880e43fa-580b-5b46-97cd-d6356e07d9cb")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 189.23 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b932cf20-b348-5cb7-ae80-804148487b86")
+		(property "Reference" "R43"
+			(at 191.13 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 191.13 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 189.23 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04a8c7cb-5890-5332-a0bb-930dbd431c11")
+		)
+		(pin "2"
+			(uuid "d1743dfb-cc12-5256-92c0-9184c4f01b85")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 168.91 111.76) (xy 166.37 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "239258ad-176d-5d3a-88d0-3b2e88a78878")
+	)
+	(label "ESC_SCK_MCU"
+		(at 166.37 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ecb41681-44e8-5c3b-a34a-45159c9830ac")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71d7440f-d98b-59a3-bb21-b30547a24f06")
+		(property "Reference" "R48"
+			(at 172.72 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 172.72 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.72 111.76 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 111.76 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d035b596-051e-571c-b2d9-46a9593911b2")
+		)
+		(pin "2"
+			(uuid "c53e2800-14af-5e87-b959-3a19d78ab9ab")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 156.21 86.36) (xy 156.21 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2943654d-47df-5e33-bcfc-bf16993f206f")
+	)
+	(hierarchical_label "DRV_nFAULT"
+		(shape input)
+		(at 156.21 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9dc23f1e-8c80-556c-b73d-c334e7b8098c")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 156.21 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d123692-b585-55cd-af8f-264e2b180098")
+		(property "Reference" "R40"
+			(at 158.11 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 158.11 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 156.21 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8538190-78dc-53c3-82be-f992ef883eae")
+		)
+		(pin "2"
+			(uuid "8fa9c972-3ca4-5525-8ef8-a9a03c53b1be")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 222.25 86.36) (xy 222.25 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3521c44f-d1bc-5d17-a765-4c08ca34af1a")
+	)
+	(hierarchical_label "SPI2_MISO"
+		(shape input)
+		(at 222.25 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fceb8c0b-fa19-5a1e-b5c5-f0f37c35c815")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 222.25 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e66cf0e0-818d-55e7-aae4-801309fe6638")
+		(property "Reference" "R45"
+			(at 224.15 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 224.15 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 222.25 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66f54cb8-9459-5f5b-a503-d5d2511a3727")
+		)
+		(pin "2"
+			(uuid "a8040743-7561-5fd1-becc-522e0da51bb8")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 168.91 119.38) (xy 166.37 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3feb3b33-c3a1-573e-aa40-b47ab6f863a5")
+	)
+	(label "ESC_MOSI_MCU"
+		(at 166.37 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dfab0b05-07a1-5718-8c58-014faf03e29d")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff45c102-ec04-5803-bf73-3ebe5ad9e443")
+		(property "Reference" "R49"
+			(at 172.72 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 172.72 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.72 119.38 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 119.38 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a946928f-0b5e-5ced-90ec-dd0885dbf923")
+		)
+		(pin "2"
+			(uuid "c6ee2c62-69c4-5332-95d8-b06a87dd2802")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 205.74 86.36) (xy 205.74 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f5e0a9-3143-539d-b8a8-f38c1f452e12")
+	)
+	(hierarchical_label "DRV_nSCS"
+		(shape output)
+		(at 205.74 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "044b80f8-4915-50ba-b57d-8053c7fbcc53")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.74 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d776e145-08cd-5c40-99a9-1ad6e7bbf083")
+		(property "Reference" "R44"
+			(at 207.64 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 207.64 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 205.74 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88010e21-03a8-5336-8ddc-823296a57813")
+		)
+		(pin "2"
+			(uuid "d5a3fbb6-2253-5a67-bfbc-3a3beca11429")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 209.55 49.53) (xy 209.55 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e47389d-0431-59c2-95fe-6288f14ed523")
+	)
+	(label "BOOT0"
+		(at 209.55 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7b66e74-396e-5642-9769-925b7c6b49cd")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 209.55 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1398a820-9d01-5485-81ce-a69900968658")
+		(property "Reference" "R39"
+			(at 211.45 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 211.45 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 209.55 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 209.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "892f86f6-d6f7-5267-a66e-7e5ce5c0a7de")
+		)
+		(pin "2"
+			(uuid "9ad5229d-600e-5120-8138-da48a497a22f")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 255.27 86.36) (xy 255.27 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8246c598-eb3d-59bd-a4c0-e0b92bd5c824")
+	)
+	(hierarchical_label "EXT_CS"
+		(shape bidirectional)
+		(at 255.27 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "972917d1-6a32-5bbd-bacf-0451e3b8d4bc")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 255.27 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f9dcb92-72a7-5d00-b020-f8117e047b8e")
+		(property "Reference" "R47"
+			(at 257.17 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 257.17 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 255.27 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8f636da-fe28-54bc-ae86-5620dda09efc")
+		)
+		(pin "2"
+			(uuid "26d0919c-62d1-5bf2-adb5-3d036d309b7e")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 176.53 111.76) (xy 179.07 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8337d99a-541b-5df0-a421-4435c38e9797")
+	)
+	(hierarchical_label "ESC_SCK"
+		(shape passive)
+		(at 179.07 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9649e755-e956-5c94-8a39-81c5cbae9384")
+	)
+	(wire
+		(pts
+			(xy 172.72 86.36) (xy 172.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d651768e-bbdf-522a-aac7-70270a59cde2")
+	)
+	(hierarchical_label "ENC_CS"
+		(shape output)
+		(at 172.72 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7cf232de-aa3c-5559-ba7b-1a5baaf5008e")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0b830ed-42c1-5a69-9bb8-bd0bb863705d")
+		(property "Reference" "R41"
+			(at 174.62 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 174.62 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.72 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51e57da9-f87a-55ed-986b-63bfbff47584")
+		)
+		(pin "2"
+			(uuid "1c818447-8e06-5d5e-8d15-5f6b53a3e3cf")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 196.85 49.53) (xy 196.85 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e19b8c38-d763-598b-a6c9-b72a90825cb1")
+	)
+	(hierarchical_label "NRST"
+		(shape bidirectional)
+		(at 196.85 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6d017a6-23ca-551b-bb32-0c8ebde7a894")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 196.85 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c82b0276-ff55-5d83-a48f-5eda8da56847")
+		(property "Reference" "C60"
+			(at 198.75 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 198.75 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 196.85 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5fbdd36d-592d-52f3-a421-fef871076bee")
+		)
+		(pin "2"
+			(uuid "dbf3a82d-9a3d-557d-8402-863d7f31a0a6")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "C60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 247.65 48.26) (xy 247.65 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7c0f05c-f070-542f-aece-8887dfb380b5")
+	)
+	(label "LED_STATUS"
+		(at 247.65 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efce04ea-d765-59bd-971f-f43fb46bc357")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 247.65 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29ace4e0-7d77-5aef-85ce-756c3359a9d9")
+		(property "Reference" "R50"
+			(at 249.55 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 249.55 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 247.65 52.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 52.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 247.65 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c9a1504-db22-516b-add0-13b834948171")
+		)
+		(pin "2"
+			(uuid "2c891da3-c11a-5a01-9508-db8d23b569df")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 238.76 86.36) (xy 238.76 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f614fb2a-229a-5eb9-a1fd-e15434011f77")
+	)
+	(hierarchical_label "ESC_CS"
+		(shape output)
+		(at 238.76 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f861ec5d-ffef-5614-ae46-db143c7b9c87")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 238.76 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1420dd77-0d03-55d7-95f6-ff80378d0205")
+		(property "Reference" "R46"
+			(at 240.66 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 240.66 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 238.76 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eeb928ed-bc3c-57a2-a817-be79e3b48b26")
+		)
+		(pin "2"
+			(uuid "ab944482-9db2-5a06-9d23-3d0158a34b14")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 222.25 49.53) (xy 222.25 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd53bcca-4875-5abb-9669-4d7030839d71")
+	)
+	(hierarchical_label "DRV_EN"
+		(shape output)
+		(at 222.25 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e7d115a3-0660-5696-85a7-f42cd92393f4")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 222.25 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "770e93b1-e158-5188-8f3f-0dcb1988f3e9")
+		(property "Reference" "R42"
+			(at 224.15 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 224.15 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 222.25 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f0ef997-360a-5a40-8b77-47430b1aabf8")
+		)
+		(pin "2"
+			(uuid "3eaba998-db41-5cf1-bb1e-fc57719601a2")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 176.53 119.38) (xy 179.07 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fffd9422-c2c1-552a-8965-6d8516ebb63a")
+	)
+	(hierarchical_label "ESC_MOSI"
+		(shape passive)
+		(at 179.07 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c8bda8a-041e-58c0-a96f-48c2126187ad")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 189.23 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "00cf1011-5db9-50c8-beb6-9e70fb1c516d")
+		(property "Reference" "#PWR035"
+			(at 189.23 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 189.23 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97262887-b47e-53e0-8532-b54f9462f57c")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 156.21 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "08d47435-7c6a-5425-bd7c-b8ac3cabfe14")
+		(property "Reference" "#PWR033"
+			(at 156.21 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 156.21 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19d576c1-2230-58b3-af11-ef15aed16bf1")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e6feca3-7cb5-51e1-9a5a-04d4923878a2")
+		(property "Reference" "#PWR028"
+			(at 176.53 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1960fa24-567c-534a-8aa8-30af6933a80d")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 209.55 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b33d254-88ff-5234-b6e5-58759b95b0f2")
+		(property "Reference" "#PWR030"
+			(at 209.55 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 209.55 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1fb8149a-ed3a-5f8a-adc6-57fd7961b75c")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 238.76 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "512aca18-13bf-5e63-830b-b6c99f77a305")
+		(property "Reference" "#PWR038"
+			(at 238.76 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 238.76 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 238.76 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1a211bbe-c958-5c43-96ca-c4f2ed4adea5")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_leds:LED_Green_0603")
+		(at 247.65 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bc502a2-1055-5dd4-b06d-019a7b988ae6")
+		(property "Reference" "D5"
+			(at 243.84 59.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 243.84 61.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 247.65 59.69 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 59.69 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 247.65 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LTST-C191KGKT"
+			(at 247.65 59.69 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Lite-On"
+			(at 247.65 59.69 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d08205ee-2142-5b04-99ef-b2c79b6c2487")
+		)
+		(pin "2"
+			(uuid "1cfcb0bf-8adf-5a5e-8ff4-ea8a535ab6b2")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2be49e90-06fa-54ec-8212-d6a1192f04bd")
+		(property "Reference" "#PWR031"
+			(at 222.25 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9fa6bd38-86f5-5107-af9f-570ed36f0537")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 172.72 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "39279fba-d360-5e90-b05a-38b3980ce945")
+		(property "Reference" "#PWR034"
+			(at 172.72 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 172.72 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b89a2d3b-8153-5e13-9caf-b084020157af")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 222.25 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "41f89e3b-831c-5027-8d19-8eed4ec062b6")
+		(property "Reference" "#PWR037"
+			(at 222.25 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 222.25 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd8c9ab0-8f16-5667-80f0-0d6ea3d47f1f")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3875b10-4ecd-57dd-bc0d-646d7588563b")
+		(property "Reference" "#PWR027"
+			(at 161.29 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5b82d65-017e-5a2f-b6bb-3c608d2ac682")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 247.65 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e509f7e-e01f-5035-baa1-81ffe420b8ef")
+		(property "Reference" "#PWR032"
+			(at 247.65 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 247.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.65 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 247.65 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdb8e14a-2488-5695-8072-8f4472eddbcd")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 168.91 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8dba01e1-3c30-53ae-a692-134f6aa2bff5")
+		(property "Reference" "#PWR025"
+			(at 168.91 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.91 41.91 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8ea963c-55f1-5568-bc06-f366ad0641ea")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 168.91 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4c01e45-0307-54f0-be59-5fc04242e034")
+		(property "Reference" "#PWR026"
+			(at 168.91 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.91 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3253cdc9-c917-547d-b280-20175bb1ef81")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 255.27 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3d8c5e9-83f5-5d79-a2ec-6adbad075e98")
+		(property "Reference" "#PWR039"
+			(at 255.27 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 255.27 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1459d8f-7c59-5606-96d3-d4fd243206c7")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c031a4c9-8b69-5ed6-be4f-4ffb81bc0c2f")
+		(property "Reference" "#PWR029"
+			(at 196.85 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25bdd5d2-3b02-5e60-b93b-496b18092385")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 205.74 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdba7cbb-1af7-5424-932a-15f8a0bcffa7")
+		(property "Reference" "#PWR036"
+			(at 205.74 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 205.74 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 78.74 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a51e9c45-dfe6-5b70-bf3d-f62966dc774c")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Status LED"
+		(exclude_from_sim no)
+		(at 245.11 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ddfa659-fcc2-5e7d-bb84-15b5845ee279")
+	)
+	(text "HSE 25 MHz"
+		(exclude_from_sim no)
+		(at 153.67 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2eb5621c-d3eb-505a-b7b2-138038f40ac7")
+	)
+	(text "Reset / boot / enable"
+		(exclude_from_sim no)
+		(at 194.31 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3abcbd4f-6544-5de8-bff2-be5ed4b13c61")
+	)
+	(text "MCU - STM32G474RET3 (170 MHz, TIM1 PWM, dual ADC, 3x SPI)"
+		(exclude_from_sim no)
+		(at 15.24 34.29 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ccab149-f8ea-526f-874c-a993b95e965d")
+	)
+	(text "SPI1 series resistors (at U1)"
+		(exclude_from_sim no)
+		(at 152.4 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed8f1915-f209-5d0d-8c5d-473e359a2be0")
+	)
+	(text "Pull-ups to +3V3 (chip selects idle high, open-drain lines)"
+		(exclude_from_sim no)
+		(at 153.67 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb5c44d9-4d0f-5e3f-b7db-7add1ae549f5")
+	)
+	(text_box "DESIGN NOTE:\nDRV_EN pull-down keeps the gate driver off during MCU reset"
+		(exclude_from_sim no)
+		(at 152.4 128.27 0)
+		(size 75 15.24)
+		(margins 2 2 2 2)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "25c50b82-614b-4797-913f-f8ca1fc4f6bb")
+	)
+	(text_box "DESIGN NOTE:\nSPI2_MISO 2.2k: DRV8353 SDO is open-drain"
+		(exclude_from_sim no)
+		(at 232.41 128.27 0)
+		(size 75 11.43)
+		(margins 2 2 2 2)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "bf91a826-e77a-4455-8b20-494bbecabd88")
+	)
+	(symbol
+		(lib_id "0_mcu:stm32g474ret3")
+		(at 69.85 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c2e9e22-dbea-4967-a751-788969c02af1")
 		(property "Reference" "U1"
-			(at 59.69 45.72 0)
+			(at 69.85 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 59.69 97.79 0)
+		(property "Value" "STM32G474RET3"
+			(at 69.85 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify right)
 			)
 		)
-		(property "Footprint" "0_pkg_QFP:LQFP64-10x10mm"
-			(at 59.182 148.082 0)
+		(property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm"
+			(at 69.85 95.25 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g474re.pdf"
-			(at 59.182 142.748 0)
+			(at 69.85 95.25 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "STM32G4 Microcontroller"
-			(at 59.944 145.542 0)
+		(property "Description" ""
+			(at 69.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(pin "17"
-			(uuid "bdc054ec-c037-42d6-806b-1b142513ef82")
+		(property "MPN" "STM32G474RET3"
+			(at 69.85 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "39"
-			(uuid "a0d878f9-f707-4627-9556-3a519b7de471")
+		(property "Manufacturer" "STMicroelectronics"
+			(at 69.85 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "6"
-			(uuid "1b600b5a-a8b9-4e3c-9687-5afc4084f8d1")
-		)
-		(pin "4"
-			(uuid "ba3470b4-7cee-4666-b35b-fb13ae85417a")
-		)
-		(pin "7"
-			(uuid "f963ca14-fac8-4135-849c-b00c746ce580")
-		)
-		(pin "58"
-			(uuid "6b41b135-a5a9-418f-8ebd-76eae61c851c")
-		)
-		(pin "20"
-			(uuid "b17859cf-1c70-4e46-bd50-69e380934fe6")
-		)
-		(pin "64"
-			(uuid "b6e7486e-59c4-4c64-a402-816905a41455")
-		)
-		(pin "56"
-			(uuid "61028b08-940d-4c89-a2e2-71b6393bb1f6")
-		)
-		(pin "60"
-			(uuid "c3239768-371d-4a0e-99af-e72fa42e5d96")
-		)
-		(pin "57"
-			(uuid "8ccf16e9-36d0-4605-ba11-f236ec1b52ed")
-		)
-		(pin "34"
-			(uuid "dfbe687c-1a59-4b11-8b7e-e0db3d7824cd")
-		)
-		(pin "36"
-			(uuid "a26949c2-244b-4979-8824-c739aa2d3ef7")
-		)
-		(pin "19"
-			(uuid "fb74c327-3365-4c61-abe5-01014fe7d00e")
-		)
-		(pin "25"
-			(uuid "abec182d-20a4-4abd-b438-892a02415628")
-		)
-		(pin "18"
-			(uuid "6eca34df-375b-4b27-aced-82a7aba27242")
-		)
-		(pin "26"
-			(uuid "103e0416-f8ec-4f7f-b548-358134d3f965")
-		)
-		(pin "55"
-			(uuid "3f461efa-7953-44a2-bccd-d0b95f5dd002")
-		)
-		(pin "27"
-			(uuid "9b5b27a1-750e-4777-aad1-4012556bfca3")
-		)
-		(pin "43"
-			(uuid "0f15d557-7168-44ad-8386-8667ba152d68")
-		)
-		(pin "11"
-			(uuid "070209d1-b948-4f8c-b619-1ea24c2bce69")
-		)
-		(pin "47"
-			(uuid "d241cf7a-5b4b-4289-81dc-a74ba1c5af8b")
-		)
-		(pin "29"
-			(uuid "3d1d6769-d016-4d4e-8cf6-39e201d1e7f0")
-		)
-		(pin "45"
-			(uuid "4144cf06-b685-4ebf-ad0c-7731007276d0")
-		)
-		(pin "31"
-			(uuid "cb57a1e5-dee8-44b7-8583-eb976f3ab580")
-		)
-		(pin "41"
-			(uuid "c8c4cec0-7bd6-414f-b690-a2e9f4c322ee")
-		)
-		(pin "2"
-			(uuid "e4d22aef-3d0c-49b5-a649-004834f67cd6")
-		)
-		(pin "48"
-			(uuid "d0818936-59d4-44f3-a76b-2ee891ba9932")
-		)
-		(pin "14"
-			(uuid "6bc263e9-c5d8-4145-9db1-35c907dea138")
-		)
-		(pin "53"
-			(uuid "20a17f54-849d-4b06-9b5a-bd7f01f60d13")
-		)
-		(pin "40"
-			(uuid "0a3ad74b-ac93-4e3c-bb7a-d1ce3960a728")
-		)
-		(pin "61"
-			(uuid "23354a44-26cf-43a5-a4dc-bc91b7e68b79")
-		)
-		(pin "15"
-			(uuid "675f46f7-5a4d-465d-8e24-03363ff593e1")
+		(property "Mouser" "511-STM32G474RET3"
+			(at 69.85 95.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "20ad3cec-0d9f-4f67-a80e-9222f155f5e2")
+			(uuid "87f72ede-2830-43f5-ac48-862b2a9341d0")
 		)
-		(pin "33"
-			(uuid "e15bf2a6-e17a-4986-9726-8d453b4c395e")
-		)
-		(pin "59"
-			(uuid "ede79c97-557b-4617-a728-c819b673f1a1")
-		)
-		(pin "10"
-			(uuid "dd779eb0-1929-4f71-b959-921ff94c439a")
-		)
-		(pin "44"
-			(uuid "c139dbd2-fa2d-4248-8627-af5681c23a44")
-		)
-		(pin "49"
-			(uuid "0fcb29ae-afce-4534-9af4-03e6758e175e")
-		)
-		(pin "22"
-			(uuid "d1a33dde-a60b-43fd-a2bc-cd833aa7253e")
-		)
-		(pin "32"
-			(uuid "f11193c6-413d-4839-b9a7-6d7807033629")
-		)
-		(pin "54"
-			(uuid "00503195-83bc-44df-8618-49ccf9f8546c")
-		)
-		(pin "42"
-			(uuid "b7c91b7d-ca17-41d7-bedc-297835ce6bc1")
-		)
-		(pin "62"
-			(uuid "d1de7fd3-f0f8-4159-8a5f-57bdf1901ba9")
-		)
-		(pin "28"
-			(uuid "515b2664-42b3-4264-ad39-617d3bac6aeb")
-		)
-		(pin "37"
-			(uuid "b13e0205-59e7-4ac8-9932-6afe3320295b")
-		)
-		(pin "5"
-			(uuid "bfa142bd-78e8-49a1-9d5e-4d9a69079da9")
-		)
-		(pin "16"
-			(uuid "ea07be20-a942-457b-b282-196d9a5d9769")
-		)
-		(pin "35"
-			(uuid "9796d897-a35d-4e04-8f08-aa0781fa7355")
-		)
-		(pin "23"
-			(uuid "cb89ead3-b5ce-414d-9ddf-eb546c62f157")
-		)
-		(pin "52"
-			(uuid "818357eb-e79a-4b60-a708-92314c72e88c")
-		)
-		(pin "51"
-			(uuid "91163a49-ddff-40e5-969a-2557c709ffde")
-		)
-		(pin "9"
-			(uuid "6b220f53-d315-45e8-a4ca-21c347e569bb")
-		)
-		(pin "46"
-			(uuid "f8ce3fb4-7b68-4675-ac8e-5d1bf53a020e")
-		)
-		(pin "30"
-			(uuid "73ffed84-1189-4d7e-a2c6-7a3fd3cbc916")
-		)
-		(pin "21"
-			(uuid "1f977e8e-1e62-4c74-94ab-588c723aadfb")
+		(pin "2"
+			(uuid "e80b3982-b30e-4db9-89e2-0b2d245cd2e6")
 		)
 		(pin "3"
-			(uuid "8d541722-784a-43dc-a563-30d4b92326b9")
+			(uuid "0022f898-9feb-49c9-9398-706c46324bef")
 		)
-		(pin "63"
-			(uuid "d8ffdbd0-1fa5-48fd-99b1-0aabcfd0ba9c")
+		(pin "4"
+			(uuid "494c63b3-d237-40b7-bf32-0d21b78c2959")
 		)
-		(pin "38"
-			(uuid "0bf8290e-98ec-477a-b90f-f0a63e0796f6")
+		(pin "5"
+			(uuid "53f88721-1706-4c41-865c-fb22bebb9d80")
+		)
+		(pin "6"
+			(uuid "6f65f763-0830-45f2-8e98-cc21714f62eb")
+		)
+		(pin "7"
+			(uuid "61f42495-dcbb-47f3-a312-3e768c5e8c36")
 		)
 		(pin "8"
-			(uuid "c87a1cd6-dfb9-44e6-a23e-44fc8e1fe80e")
+			(uuid "82fcfac3-9b44-4d94-960c-c1fdc48eb026")
 		)
-		(pin "13"
-			(uuid "cabb2c0e-242c-4ffc-9e8d-b210c5333ca3")
+		(pin "9"
+			(uuid "5a6c72a0-8bd6-450a-8ee0-b2230172eb00")
+		)
+		(pin "10"
+			(uuid "b6caa70e-209e-495b-9a67-96bed1875f12")
+		)
+		(pin "11"
+			(uuid "af10ac5c-77a0-4c1d-b165-12741c0b3eb0")
 		)
 		(pin "12"
-			(uuid "db825ca6-d9f9-40a1-a8be-15b8936022ee")
+			(uuid "7eeb7c4f-dc33-4b92-bcbb-a9dbbc284de6")
+		)
+		(pin "13"
+			(uuid "b3bb581b-797b-4218-9212-b6b80e1174bf")
+		)
+		(pin "14"
+			(uuid "791d41cc-d9f5-44a7-8385-533aec6f02d7")
+		)
+		(pin "15"
+			(uuid "3889bc5d-5170-4c2a-bb40-40adffc36221")
+		)
+		(pin "16"
+			(uuid "cc8d3b02-d680-43c8-adc2-fef57fb4ae89")
+		)
+		(pin "17"
+			(uuid "a2760c5b-6698-4256-899a-705998dc1861")
+		)
+		(pin "18"
+			(uuid "28550cbf-b324-4bc0-830a-5f3e56fbf6cd")
+		)
+		(pin "19"
+			(uuid "9b5fffdb-411e-4ffd-9109-b215a680d9ad")
+		)
+		(pin "20"
+			(uuid "ccc9995c-101d-4d68-9570-98a45bbb23d7")
+		)
+		(pin "21"
+			(uuid "8ae06b83-992d-489b-a39f-0f24f74acce5")
+		)
+		(pin "22"
+			(uuid "29fec369-2e9b-4a11-a0c4-bfef3b0520c6")
+		)
+		(pin "23"
+			(uuid "9402182a-564d-4b0b-9e57-bf8e60036781")
 		)
 		(pin "24"
-			(uuid "75c3bfa3-b309-467d-8e13-6810e9fd75eb")
+			(uuid "5957bf7d-8e17-4d61-8fa8-9d1f26575c48")
+		)
+		(pin "25"
+			(uuid "91f5df2e-0051-42bc-aeab-07d9d311d1d3")
+		)
+		(pin "26"
+			(uuid "c8dcf360-afa0-4dee-82d1-a8af32ba5243")
+		)
+		(pin "27"
+			(uuid "a28ca81c-74a7-4df7-86d1-2090c3868790")
+		)
+		(pin "28"
+			(uuid "51046850-96fb-4756-b12a-e3d69320cd05")
+		)
+		(pin "29"
+			(uuid "017d74da-a144-4be1-96f8-7bc0e700a584")
+		)
+		(pin "30"
+			(uuid "26b66893-34fc-4f56-b5c0-9751b6d3e11b")
+		)
+		(pin "31"
+			(uuid "8ab5adae-f8b8-47cb-bc69-025da6907c9f")
+		)
+		(pin "32"
+			(uuid "f574c75c-c211-4643-8bb0-a09e5c388f7d")
+		)
+		(pin "33"
+			(uuid "0179ec04-2a06-4e52-9632-736233a4a6f0")
+		)
+		(pin "34"
+			(uuid "eddf7b21-c110-4371-9902-34bd54e61f8b")
+		)
+		(pin "35"
+			(uuid "37049c61-d21b-4141-8133-f1ffa375e598")
+		)
+		(pin "36"
+			(uuid "527c7986-974b-41da-8090-2df0a536cf81")
+		)
+		(pin "37"
+			(uuid "4cae403d-6b6e-4994-ae34-daa397dd5af7")
+		)
+		(pin "38"
+			(uuid "3896c0d5-550f-49ee-8d4a-5841ff67963c")
+		)
+		(pin "39"
+			(uuid "7f2f0818-cafe-413d-9229-c52971f2cebf")
+		)
+		(pin "40"
+			(uuid "11ad501f-6fa6-4764-8268-32f23df6e2ac")
+		)
+		(pin "41"
+			(uuid "2bae4ad4-7868-4a1e-bac9-0a45cd1ee07e")
+		)
+		(pin "42"
+			(uuid "ee41b65f-3418-4e22-92a0-55a4579fb826")
+		)
+		(pin "43"
+			(uuid "c779b041-cf7f-49d4-84b6-ba73a05ce163")
+		)
+		(pin "44"
+			(uuid "059dacf4-0359-4934-8429-91d08103f300")
+		)
+		(pin "45"
+			(uuid "5ec495c7-e2ed-47f8-af3c-e238792bde1e")
+		)
+		(pin "46"
+			(uuid "3a0cbe81-ce9d-43c3-866c-d00689891ab6")
+		)
+		(pin "47"
+			(uuid "05125672-d78e-4100-8b75-82090e53b201")
+		)
+		(pin "48"
+			(uuid "178568ad-d57b-4f84-bade-30bc2068f6b9")
+		)
+		(pin "49"
+			(uuid "b1c144a0-c210-441d-b06e-42fde6248eff")
 		)
 		(pin "50"
-			(uuid "c7e7f8f0-a07d-4349-9775-42f9ef42c6e5")
+			(uuid "041414d2-525b-465a-9568-25d2ce58cfaa")
+		)
+		(pin "51"
+			(uuid "d7be8c6f-2952-4f6a-b054-769cf2da1751")
+		)
+		(pin "52"
+			(uuid "302bd8d9-cbf8-4fa7-83e3-3a368a502dd7")
+		)
+		(pin "53"
+			(uuid "6ac74bc7-8c87-4203-be22-97a4adf465e6")
+		)
+		(pin "54"
+			(uuid "2ae440d6-be01-4598-a91e-7df209ae2f55")
+		)
+		(pin "55"
+			(uuid "1c7f5464-2872-4b0a-9f6e-327dda215b01")
+		)
+		(pin "56"
+			(uuid "4ba705cf-e131-4d16-98d9-72b9a06f528e")
+		)
+		(pin "57"
+			(uuid "6cfde2a5-f718-41ad-a7c1-a0e23d8ac0f2")
+		)
+		(pin "58"
+			(uuid "14ffb480-8cda-41b9-bec8-f0a3788e6f78")
+		)
+		(pin "59"
+			(uuid "75166f39-dcb2-4d5a-82c9-4185a9dc5aeb")
+		)
+		(pin "60"
+			(uuid "6f352260-67d9-4349-be4c-0e834ca7f621")
+		)
+		(pin "61"
+			(uuid "7f68d70b-fad2-4a99-94ae-b8df8616221f")
+		)
+		(pin "62"
+			(uuid "49598869-f551-4bc9-ad82-dc506e7aa5b7")
+		)
+		(pin "63"
+			(uuid "f69f3a98-673a-4392-b5f0-afecaeef42e1")
+		)
+		(pin "64"
+			(uuid "3298e0ac-3c01-416b-81e6-e0bf62487cc8")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -1811,79 +5214,1558 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "0_crystals:crystal_24gnd")
-		(at 133.35 57.15 0)
-		(unit 1)
+	(wire
+		(pts
+			(xy 52.07 49.53) (xy 49.53 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0736966a-7c14-458c-9aac-efd182778ad7")
+	)
+	(hierarchical_label "VSENSE_A"
+		(shape bidirectional)
+		(at 49.53 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "91478a3a-1509-491b-b46b-b25791679e16")
+	)
+	(text "ADC12_IN1"
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe8222e8-0733-4b71-a354-442f6549b886")
-		(property "Reference" "Y1"
-			(at 138.43 53.2698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(at 36.068 49.93 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
 			)
+			(justify right bottom)
 		)
-		(property "Value" "~"
-			(at 133.35 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "08d5ddda-7964-54e9-8e7d-d48d42a95d5e")
+	)
+	(wire
+		(pts
+			(xy 52.07 52.07) (xy 49.53 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f02b89c-6bac-45f5-bc88-68424cd25b88")
+	)
+	(hierarchical_label "VSENSE_B"
+		(shape bidirectional)
+		(at 49.53 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Footprint" ""
-			(at 133.35 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "735c434f-d84c-4823-a59c-14416c713180")
+	)
+	(text "ADC12_IN2"
+		(exclude_from_sim no)
+		(at 36.068 52.47 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
 			)
+			(justify right bottom)
 		)
-		(property "Datasheet" ""
-			(at 133.35 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "4249d9d0-0cae-57e6-b0eb-1aca464a4474")
+	)
+	(wire
+		(pts
+			(xy 52.07 54.61) (xy 49.53 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9825a52f-a388-44d6-801a-eb1ea8d86612")
+	)
+	(hierarchical_label "VSENSE_C"
+		(shape bidirectional)
+		(at 49.53 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Description" ""
-			(at 133.35 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "e4321d02-9caa-4ba3-b5c3-ea72e82785e1")
+	)
+	(text "ADC1_IN3"
+		(exclude_from_sim no)
+		(at 36.068 55.01 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
 			)
+			(justify right bottom)
 		)
-		(pin "3"
-			(uuid "176eba53-4db1-4ba5-83c7-d4ed3c996d65")
+		(uuid "b56cff48-43f4-59f5-b49b-a01f20b9aa5f")
+	)
+	(wire
+		(pts
+			(xy 52.07 57.15) (xy 49.53 57.15)
 		)
-		(pin "4"
-			(uuid "a249d147-0322-4270-ae80-fe1e9bff6c6e")
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(pin "2"
-			(uuid "32cd322c-85f8-4745-8de7-2f4d9160e75e")
-		)
-		(pin "1"
-			(uuid "da2e3051-35af-4e08-be53-07667c5a1b40")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
-					(reference "Y1")
-					(unit 1)
-				)
+		(uuid "4d4eaf65-73c7-4d2d-8d85-b041e90f9353")
+	)
+	(hierarchical_label "TEMP_FET"
+		(shape bidirectional)
+		(at 49.53 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
+		(uuid "ad6ddc5f-44bf-454f-bc38-f5ee84e8c7df")
+	)
+	(text "ADC1_IN4"
+		(exclude_from_sim no)
+		(at 36.068 57.55 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "19f40e7a-eb61-5f04-bbbc-163d1f7caa52")
+	)
+	(wire
+		(pts
+			(xy 52.07 59.69) (xy 49.53 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab6af15f-2e96-4eac-8f3d-871d618108d5")
+	)
+	(hierarchical_label "TEMP_MOTOR"
+		(shape bidirectional)
+		(at 49.53 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8f36d067-39d8-47c2-b70f-64f826ae564d")
+	)
+	(text "ADC2_IN17"
+		(exclude_from_sim no)
+		(at 33.655 60.09 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "5f88c10d-8010-5817-a437-8f0e43e99ece")
+	)
+	(wire
+		(pts
+			(xy 52.07 62.23) (xy 49.53 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e9962d-ee8f-4aec-b7e3-7ef00bec5024")
+	)
+	(hierarchical_label "ESC_SYNC0"
+		(shape bidirectional)
+		(at 49.53 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d486b82b-92d4-4882-a883-aefb84691298")
+	)
+	(text "TIM2_CH1"
+		(exclude_from_sim no)
+		(at 34.8615 62.63 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "669aa301-3364-5724-8bf7-d2cd4018eb4a")
+	)
+	(wire
+		(pts
+			(xy 52.07 64.77) (xy 49.53 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1588acdc-3204-4634-bfab-27aa970d5231")
+	)
+	(hierarchical_label "DRV_nFAULT"
+		(shape input)
+		(at 49.53 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a72a328-5bec-4470-aacf-f94ce850b9f6")
+	)
+	(text "TIM1_BKIN"
+		(exclude_from_sim no)
+		(at 33.655 65.17 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "42bd3d93-4b62-5108-be6f-f86802ff66ad")
+	)
+	(wire
+		(pts
+			(xy 52.07 67.31) (xy 49.53 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37098dd3-c12d-4d62-9840-ac2a2f22b1cc")
+	)
+	(hierarchical_label "PWM_LA"
+		(shape output)
+		(at 49.53 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18d02865-5327-4250-9292-88ca61c716b7")
+	)
+	(text "TIM1_CH1N"
+		(exclude_from_sim no)
+		(at 38.481 67.71 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "f94e8448-1a14-55c6-b0e3-a7c675d98878")
+	)
+	(wire
+		(pts
+			(xy 52.07 69.85) (xy 49.53 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704d86bf-957c-4171-9875-0a3a05c220f5")
+	)
+	(hierarchical_label "PWM_HA"
+		(shape output)
+		(at 49.53 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5da3c4ad-9014-424e-96a2-dbad1611b4fd")
+	)
+	(text "TIM1_CH1"
+		(exclude_from_sim no)
+		(at 38.481 70.25 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd807726-c591-51ba-b653-bc2607d0d67f")
+	)
+	(wire
+		(pts
+			(xy 52.07 72.39) (xy 49.53 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa47ba92-cac5-4207-a9bf-7b2f2549c3a3")
+	)
+	(hierarchical_label "PWM_HB"
+		(shape output)
+		(at 49.53 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b5753ec2-b019-4f77-a577-8850602c7db2")
+	)
+	(text "TIM1_CH2"
+		(exclude_from_sim no)
+		(at 38.481 72.79 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "5da544a2-3560-5119-8c9a-26cf4c0d901f")
+	)
+	(wire
+		(pts
+			(xy 52.07 74.93) (xy 49.53 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc00161-af12-4fc6-8fb8-dcbea66c1448")
+	)
+	(hierarchical_label "PWM_HC"
+		(shape output)
+		(at 49.53 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b5a271b-d228-4025-9e8e-57b83d8e5ba5")
+	)
+	(text "TIM1_CH3"
+		(exclude_from_sim no)
+		(at 38.481 75.33 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "ffeb2977-36c0-5eb7-b15a-b4e4f7f78269")
+	)
+	(wire
+		(pts
+			(xy 52.07 77.47) (xy 49.53 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d813be3d-ac18-40d5-b9da-03d2d723df6d")
+	)
+	(hierarchical_label "CAN_RX"
+		(shape input)
+		(at 49.53 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e6d993d-ba13-47a5-96ea-cc16cd747359")
+	)
+	(text "FDCAN1"
+		(exclude_from_sim no)
+		(at 38.481 77.87 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "3adc1b6c-79eb-5515-89ba-178a19b864a7")
+	)
+	(wire
+		(pts
+			(xy 52.07 80.01) (xy 49.53 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c124f8-534f-45c1-b13d-b5bd6ff9ad33")
+	)
+	(hierarchical_label "CAN_TX"
+		(shape output)
+		(at 49.53 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c5d56ad-3588-45ec-9991-c958e0b3f3ac")
+	)
+	(text "FDCAN1"
+		(exclude_from_sim no)
+		(at 38.481 80.41 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd956b66-60c4-56fd-ae8f-ca25732f6a3f")
+	)
+	(wire
+		(pts
+			(xy 52.07 82.55) (xy 49.53 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0280bc-204b-4029-8f11-eb0ed34be2dc")
+	)
+	(hierarchical_label "SWDIO"
+		(shape bidirectional)
+		(at 49.53 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56dc3e5b-661f-4bfa-9029-7dc6c5bf8032")
+	)
+	(wire
+		(pts
+			(xy 52.07 85.09) (xy 49.53 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23b40158-42f2-4f3f-8ce6-727b21526021")
+	)
+	(hierarchical_label "SWCLK"
+		(shape bidirectional)
+		(at 49.53 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e35bfb11-f6b8-4970-acf5-8816ee7c5b5c")
+	)
+	(wire
+		(pts
+			(xy 52.07 87.63) (xy 49.53 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4be1455e-3505-4399-96b7-3014d962b417")
+	)
+	(hierarchical_label "ESC_CS"
+		(shape output)
+		(at 49.53 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de5d777d-c13c-420a-b287-bc1bd74279fd")
+	)
+	(wire
+		(pts
+			(xy 52.07 93.98) (xy 49.53 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d29e08d2-b18e-4835-8435-2d3db7679cc5")
+	)
+	(hierarchical_label "PWM_LB"
+		(shape output)
+		(at 49.53 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c2497535-803a-44e5-a57c-5b0788cd1bc5")
+	)
+	(text "TIM1_CH2N"
+		(exclude_from_sim no)
+		(at 38.481 94.38 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "85e0d43d-3021-59f9-a811-d149bd0e8dbf")
+	)
+	(wire
+		(pts
+			(xy 52.07 96.52) (xy 49.53 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c6c5c1-59b5-46f8-a0c0-87bd105b41be")
+	)
+	(hierarchical_label "PWM_LC"
+		(shape output)
+		(at 49.53 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a95498c6-df2d-4932-84f1-9a48396e0e91")
+	)
+	(text "TIM1_CH3N"
+		(exclude_from_sim no)
+		(at 38.481 96.92 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "e65b9a30-8f63-514d-b440-5bbe568f1893")
+	)
+	(wire
+		(pts
+			(xy 52.07 99.06) (xy 49.53 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88264e46-34dd-4149-8c66-36a86c96c745")
+	)
+	(hierarchical_label "ESC_IRQ"
+		(shape input)
+		(at 49.53 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "33d212ce-7865-4e5e-95fd-2870ba39c76e")
+	)
+	(wire
+		(pts
+			(xy 52.07 101.6) (xy 49.53 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b5cf52-f416-4cb7-9bfb-427a3c7ad611")
+	)
+	(label "ESC_SCK_MCU"
+		(at 49.53 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7513ffa8-8862-4334-ac26-5ce0b61b3052")
+	)
+	(text "SPI1"
+		(exclude_from_sim no)
+		(at 34.9885 102 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "065752f8-adb3-5c74-aef4-9ba47a5b760d")
+	)
+	(wire
+		(pts
+			(xy 52.07 104.14) (xy 49.53 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22af3bd9-b2b4-4959-af4f-32191bd3014a")
+	)
+	(hierarchical_label "ESC_MISO"
+		(shape bidirectional)
+		(at 49.53 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "420f08d1-5535-49e4-9ac3-d8d6fcdcb397")
+	)
+	(text "SPI1"
+		(exclude_from_sim no)
+		(at 36.068 104.54 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "81efe90f-494d-5b79-a7b6-ee5c9c463791")
+	)
+	(wire
+		(pts
+			(xy 52.07 106.68) (xy 49.53 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ffb222b-66ef-46b4-8848-0a86c2caf9e4")
+	)
+	(label "ESC_MOSI_MCU"
+		(at 49.53 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2839b64a-6cb0-4cdf-a936-f4bd94291342")
+	)
+	(text "SPI1"
+		(exclude_from_sim no)
+		(at 33.782 107.08 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "83259012-466f-59df-989f-f2c13ce91500")
+	)
+	(wire
+		(pts
+			(xy 52.07 109.22) (xy 49.53 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "298d0d67-8851-4b5a-ae6d-98bb11d2f5f7")
+	)
+	(hierarchical_label "EXT_A"
+		(shape bidirectional)
+		(at 49.53 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bdcc2261-6d22-4050-94e9-bbe883ff86a1")
+	)
+	(text "TIM4_CH1"
+		(exclude_from_sim no)
+		(at 39.6875 109.62 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "7b279aaa-f2ae-52a8-963c-864370b88d7b")
+	)
+	(wire
+		(pts
+			(xy 52.07 111.76) (xy 49.53 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f5fea2a-4ece-420b-95b7-f127c14f9374")
+	)
+	(hierarchical_label "EXT_B"
+		(shape bidirectional)
+		(at 49.53 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "509cb392-eb2d-42ef-89b1-e1dc13c6c2c4")
+	)
+	(text "TIM4_CH2"
+		(exclude_from_sim no)
+		(at 39.6875 112.16 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "84050ded-16b2-586b-b935-4087ae723fdf")
+	)
+	(wire
+		(pts
+			(xy 52.07 114.3) (xy 49.53 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c046881-bcd3-441b-8478-aaf7ed8d1bbc")
+	)
+	(label "BOOT0"
+		(at 49.53 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21a09c49-9692-41dc-935b-391fd3cf472f")
+	)
+	(wire
+		(pts
+			(xy 52.07 116.84) (xy 49.53 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e8c9d9c-3cf6-40aa-b456-f4441905c200")
+	)
+	(label "LED_STATUS"
+		(at 49.53 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "117e022a-ba9a-4c45-afaf-9f35e39e85e4")
+	)
+	(wire
+		(pts
+			(xy 52.07 119.38) (xy 49.53 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d13f24ec-fb74-4d8f-bb73-8a35907cecbe")
+	)
+	(hierarchical_label "DBG_TX"
+		(shape bidirectional)
+		(at 49.53 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9df91688-cdb3-4131-b375-7157e1b2b2ad")
+	)
+	(text "USART3"
+		(exclude_from_sim no)
+		(at 38.481 119.78 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ef4a36b-9c7b-53cd-8d07-b8bbe1b7b887")
+	)
+	(wire
+		(pts
+			(xy 52.07 121.92) (xy 49.53 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8c01395-1d86-4de1-b5c0-2c5a067b06e8")
+	)
+	(hierarchical_label "DBG_RX"
+		(shape bidirectional)
+		(at 49.53 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eebeb6d6-8c03-4a64-baf1-5f888582c57a")
+	)
+	(text "USART3"
+		(exclude_from_sim no)
+		(at 38.481 122.32 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "d346dcd5-9487-5fd8-9897-8a6bb841a77b")
+	)
+	(wire
+		(pts
+			(xy 52.07 124.46) (xy 49.53 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6532e264-7abd-4664-a145-351d0c2c6888")
+	)
+	(hierarchical_label "DRV_nSCS"
+		(shape output)
+		(at 49.53 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3b18ee6-66b9-426f-a568-165ce67d0efc")
+	)
+	(wire
+		(pts
+			(xy 52.07 127) (xy 49.53 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87df108-d483-4584-976b-d8a09f53c0d3")
+	)
+	(hierarchical_label "SPI2_SCK"
+		(shape output)
+		(at 49.53 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e9c4bf1-6f43-468b-8ee4-4641fb5a95d6")
+	)
+	(text "SPI2"
+		(exclude_from_sim no)
+		(at 36.068 127.4 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "20768ac6-dfce-500b-81da-2272d42ac9a8")
+	)
+	(wire
+		(pts
+			(xy 52.07 129.54) (xy 49.53 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c2f7e8-e806-4361-9bd3-df8e208aaf97")
+	)
+	(hierarchical_label "SPI2_MISO"
+		(shape input)
+		(at 49.53 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86f4c8f6-483a-43f7-abb1-8203f32c01a9")
+	)
+	(text "SPI2"
+		(exclude_from_sim no)
+		(at 34.8615 129.94 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "9168eec4-9791-5d9a-8ccc-9d30167982b9")
+	)
+	(wire
+		(pts
+			(xy 52.07 132.08) (xy 49.53 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4e9d095-8875-48a9-a078-23e173f3abd1")
+	)
+	(hierarchical_label "SPI2_MOSI"
+		(shape output)
+		(at 49.53 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6bfc593a-0d26-4d37-b339-c6735a750d56")
+	)
+	(text "SPI2"
+		(exclude_from_sim no)
+		(at 34.8615 132.48 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd0542e1-8172-5111-9d6b-45c0b22d5ca4")
+	)
+	(wire
+		(pts
+			(xy 87.63 49.53) (xy 90.17 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaae1dd9-75f9-47bc-b865-06c5caa221c0")
+	)
+	(hierarchical_label "ISENSE_A"
+		(shape bidirectional)
+		(at 90.17 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a11789bb-8db4-4dd9-ab68-94c89658ea88")
+	)
+	(text "ADC12_IN6"
+		(exclude_from_sim no)
+		(at 103.632 49.93 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d01aa3ca-e40f-5bc2-9af9-23ff1eaa6ac8")
+	)
+	(wire
+		(pts
+			(xy 87.63 52.07) (xy 90.17 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a10fe80a-5f5c-473a-88f5-33cf55314a46")
+	)
+	(hierarchical_label "ISENSE_B"
+		(shape bidirectional)
+		(at 90.17 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f9225f8c-dda7-4a7a-9555-4d86ba10fd15")
+	)
+	(text "ADC12_IN7"
+		(exclude_from_sim no)
+		(at 103.632 52.47 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c1e0ca2-bb2e-573d-b871-5489822e2ab9")
+	)
+	(wire
+		(pts
+			(xy 87.63 54.61) (xy 90.17 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baac1581-f42d-4619-944c-717deac110f4")
+	)
+	(hierarchical_label "ISENSE_C"
+		(shape bidirectional)
+		(at 90.17 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "58407b51-9d05-4bea-8bda-909f4c3b4d3f")
+	)
+	(text "ADC12_IN8"
+		(exclude_from_sim no)
+		(at 103.632 55.01 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "62e1dd7e-8439-5abc-9abc-f33fc583adda")
+	)
+	(wire
+		(pts
+			(xy 87.63 57.15) (xy 90.17 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd5fdc86-aeed-4d56-affa-5627931c445f")
+	)
+	(hierarchical_label "VBUS_SENSE"
+		(shape bidirectional)
+		(at 90.17 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f48d2bf3-5160-4218-9ed8-17c77dc067a4")
+	)
+	(text "ADC12_IN9"
+		(exclude_from_sim no)
+		(at 106.045 57.55 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb8d9b5a-702e-5226-8852-dbc6241bca8e")
+	)
+	(wire
+		(pts
+			(xy 87.63 59.69) (xy 90.17 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5dcdee9-5a26-4750-8afe-2c330abe111e")
+	)
+	(hierarchical_label "ENC_CS"
+		(shape output)
+		(at 90.17 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ce9180d-4be8-428b-ac6d-06bbe4874015")
+	)
+	(wire
+		(pts
+			(xy 87.63 62.23) (xy 90.17 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bb68f64-138a-40f2-874b-d5e3c43fb046")
+	)
+	(hierarchical_label "DRV_EN"
+		(shape output)
+		(at 90.17 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac45208a-0850-4e54-b648-09ce03d62bb2")
+	)
+	(wire
+		(pts
+			(xy 87.63 64.77) (xy 90.17 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bcd7a19-1739-41f5-8744-53104c829f33")
+	)
+	(hierarchical_label "HALL_A"
+		(shape bidirectional)
+		(at 90.17 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74611697-fdcd-499e-ad03-78b608d16efb")
+	)
+	(text "TIM3_CH1"
+		(exclude_from_sim no)
+		(at 101.219 65.17 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec22ea30-d79f-549c-b39b-a359036bcedf")
+	)
+	(wire
+		(pts
+			(xy 87.63 67.31) (xy 90.17 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db38304-e8a1-4eef-a36f-a370fa88e107")
+	)
+	(hierarchical_label "HALL_B"
+		(shape bidirectional)
+		(at 90.17 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "870500e7-814c-4390-80a1-d58bfaf2ef7e")
+	)
+	(text "TIM3_CH2"
+		(exclude_from_sim no)
+		(at 101.219 67.71 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea5decdd-92ee-51e2-b74c-384971814d0e")
+	)
+	(wire
+		(pts
+			(xy 87.63 69.85) (xy 90.17 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d4b7d3-4cc9-41ba-8a41-118e244428d3")
+	)
+	(hierarchical_label "HALL_C"
+		(shape bidirectional)
+		(at 90.17 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "64625192-91a5-40c5-9998-295ace178dd8")
+	)
+	(text "TIM3_CH3"
+		(exclude_from_sim no)
+		(at 101.219 70.25 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd8292bf-6224-548b-aa6a-b2badaeb04a6")
+	)
+	(wire
+		(pts
+			(xy 87.63 72.39) (xy 90.17 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65488a29-2eac-41e5-8a97-9f8106676cc9")
+	)
+	(hierarchical_label "EXT_Z"
+		(shape bidirectional)
+		(at 90.17 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ae5c0e4-a5d1-49de-b1b5-43199e6819f1")
+	)
+	(wire
+		(pts
+			(xy 87.63 74.93) (xy 90.17 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82269fe1-c1aa-4f0c-a96c-eadc0f8f5cf0")
+	)
+	(hierarchical_label "EXT_SCK"
+		(shape bidirectional)
+		(at 90.17 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b7a440b8-1236-4f7d-85a3-c85d613b5117")
+	)
+	(text "SPI3"
+		(exclude_from_sim no)
+		(at 102.4255 75.33 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "823263df-16e5-511c-ad2e-e31236f948fd")
+	)
+	(wire
+		(pts
+			(xy 87.63 77.47) (xy 90.17 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99858b82-4e05-4206-97ed-531318957373")
+	)
+	(hierarchical_label "EXT_MISO"
+		(shape bidirectional)
+		(at 90.17 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d5dd0e3-3691-4bc1-8784-a6a64c485a7a")
+	)
+	(text "SPI3"
+		(exclude_from_sim no)
+		(at 103.632 77.87 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "196f8a64-f7ee-5e8e-9c33-bea47e82d0c8")
+	)
+	(wire
+		(pts
+			(xy 87.63 80.01) (xy 90.17 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7484d4e8-3c4d-4061-a4ee-9a8bf4de1823")
+	)
+	(hierarchical_label "EXT_MOSI"
+		(shape bidirectional)
+		(at 90.17 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fd7e4ffc-8068-4130-a7b2-17236ef42117")
+	)
+	(text "SPI3"
+		(exclude_from_sim no)
+		(at 103.632 80.41 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "02f6f7a5-1c71-5586-a644-ec356096548b")
+	)
+	(wire
+		(pts
+			(xy 87.63 82.55) (xy 90.17 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57199be6-7d9e-4cee-878c-4246cd19c376")
+	)
+	(hierarchical_label "ESC_RST#"
+		(shape bidirectional)
+		(at 90.17 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8e21f4b9-4621-4475-b04d-e7d51a4d4a60")
+	)
+	(text "open-drain"
+		(exclude_from_sim no)
+		(at 103.632 82.95 0)
+		(effects
+			(font
+				(size 1 1)
+				(italic yes)
+				(color 0 0 0 0.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bec7c96e-e725-59a1-b989-11099c8747ee")
+	)
+	(wire
+		(pts
+			(xy 87.63 85.09) (xy 90.17 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "617a5c66-aa83-4df0-85ec-ddf24e2d42ee")
+	)
+	(hierarchical_label "CAN_S"
+		(shape output)
+		(at 90.17 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ef9fc96-f3ea-4cef-91ed-b61251c7cce0")
+	)
+	(wire
+		(pts
+			(xy 87.63 87.63) (xy 90.17 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5700ca3-54c4-4bb3-a16c-9483beb9e2b3")
+	)
+	(hierarchical_label "ESC_SYNC1"
+		(shape bidirectional)
+		(at 90.17 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "48ee45f7-a54c-4636-85c5-98cb7f11f169")
+	)
+	(wire
+		(pts
+			(xy 87.63 93.98) (xy 90.17 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd40f5a-9c5c-4a5b-9fee-fe5b72ca944e")
+	)
+	(hierarchical_label "EXT_CS"
+		(shape bidirectional)
+		(at 90.17 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e062675a-4652-463d-827e-fea6a26861de")
+	)
+	(wire
+		(pts
+			(xy 87.63 101.6) (xy 90.17 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e82e6e4-20c3-44b7-9d13-7f3ec1081d51")
+	)
+	(label "HSE_OUT"
+		(at 90.17 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "143024e3-d754-42a9-af23-5e74d4b638ef")
+	)
+	(wire
+		(pts
+			(xy 87.63 104.14) (xy 90.17 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adcdb3ae-0138-4c1c-9a12-79901ec62fdc")
+	)
+	(label "HSE_IN"
+		(at 90.17 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7896ad33-c39b-4b48-b598-f148abcaf17b")
+	)
+	(wire
+		(pts
+			(xy 87.63 111.76) (xy 90.17 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af70b6a-71e8-462e-886d-2d563fb0f1d4")
+	)
+	(hierarchical_label "NRST"
+		(shape bidirectional)
+		(at 90.17 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5835ba1-88e7-4a77-8e83-a2df98c5c206")
 	)
 )

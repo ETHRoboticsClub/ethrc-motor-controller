@@ -350,11 +350,11 @@
 		)
 		(property "Supplier 1" "Mouser"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "673-H1102NL"
@@ -924,11 +924,11 @@
 		)
 		(property "Supplier 1" "Mouser"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "306-SM04BGHSTBLFSN"
@@ -1128,11 +1128,11 @@
 		)
 		(property "Supplier 1" "Mouser"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "306-SM06BGHSTBLFSN"
@@ -1368,11 +1368,11 @@
 		)
 		(property "Supplier 1" "Mouser"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "306-SM10BGHSTBLFSN"
@@ -1678,7 +1678,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "XT30 power connector"
+		(property "Supplier 1" "LCSC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1687,22 +1687,22 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" "LCSC"
-			(at 0 0 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Supplier Part Number 1" "C431092"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "XT30 power connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "XT30PW-M_0_1"
@@ -1813,44 +1813,44 @@
 		)
 		(property "Manufacturer" "Amass"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "XT60PW-F"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier 1" "LCSC"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "C428722"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(symbol "XT60PW-F_0_0"
 			(rectangle
-				(start -5.08 5.08)
-				(end 5.08 -7.62)
+				(start -10.16 5.08)
+				(end 3.81 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1860,7 +1860,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 1.27 0)
+				(at -15.24 1.27 0)
 				(length 5.08)
 				(name "P"
 					(effects
@@ -1878,7 +1878,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -2.54 0)
+				(at -15.24 -2.54 0)
 				(length 5.08)
 				(name "N"
 					(effects
@@ -1903,7 +1903,7 @@
 				(name "SHIELD"
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -1921,7 +1921,7 @@
 				(name "SHIELD"
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -1991,44 +1991,44 @@
 		)
 		(property "Manufacturer" "Amass"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "XT60PW-M"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier 1" "LCSC"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "C98732"
 			(at 0 0 0)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(symbol "XT60PW-M_0_0"
 			(rectangle
-				(start -5.08 5.08)
-				(end 5.08 -7.62)
+				(start -10.16 5.08)
+				(end 3.81 -7.62)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -2038,7 +2038,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 1.27 0)
+				(at -15.24 1.27 0)
 				(length 5.08)
 				(name "P"
 					(effects
@@ -2056,7 +2056,7 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 -2.54 0)
+				(at -15.24 -2.54 0)
 				(length 5.08)
 				(name "N"
 					(effects
@@ -2081,7 +2081,7 @@
 				(name "SHIELD"
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -2099,7 +2099,7 @@
 				(name "SHIELD"
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.762 0.762)
 						)
 					)
 				)

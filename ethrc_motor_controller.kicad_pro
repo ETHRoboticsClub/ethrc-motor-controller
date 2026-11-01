@@ -699,6 +699,15 @@
       "/Project Architecture/Motor - Three Phase Inverter/PHC": [
         "High Power"
       ],
+      "/Project Architecture/Motor - Three Phase Inverter/SA+": [
+        "High Power"
+      ],
+      "/Project Architecture/Motor - Three Phase Inverter/SB+": [
+        "High Power"
+      ],
+      "/Project Architecture/Motor - Three Phase Inverter/SC+": [
+        "High Power"
+      ],
       "/Project Architecture/Motor - Three Phase Inverter/SRC_LS_A": [
         "High Power"
       ],
@@ -965,10 +974,6 @@
     [
       "53d648ad-cd13-432d-b12e-87552c9f2ba6",
       "Motor - Three Phase Inverter"
-    ],
-    [
-      "a749d94e-545f-48ca-82d6-db1831d0df68",
-      "Sensing - Current"
     ],
     [
       "05846b92-80d7-42c2-843a-928b65380eec",

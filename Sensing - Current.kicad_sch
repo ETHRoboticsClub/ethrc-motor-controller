@@ -378,7 +378,7 @@
 	)
 	(text "Current-sense RC filters (place at PC0-PC2)"
 		(exclude_from_sim no)
-		(at 25.4 41.91 0)
+		(at 0 -54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -412,26 +412,26 @@
 		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
 	)
 	(junction
-		(at 49.53 60.96)
+		(at 24.13 -35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1666ae3f-c880-5f62-a324-9725aad81c01")
 	)
 	(junction
-		(at 49.53 46.99)
+		(at 24.13 -49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c28da3cb-0ceb-5eda-a8dc-0831cb9b2571")
 	)
 	(junction
-		(at 49.53 74.93)
+		(at 24.13 -21.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc9c6ef6-077d-5526-9270-a7e29e6b48a3")
 	)
 	(wire
 		(pts
-			(xy 49.53 46.99) (xy 54.61 46.99)
+			(xy 24.13 -49.53) (xy 29.21 -49.53)
 		)
 		(stroke
 			(width 0)
@@ -441,7 +441,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 60.96) (xy 34.29 60.96)
+			(xy 11.43 -35.56) (xy 8.89 -35.56)
 		)
 		(stroke
 			(width 0)
@@ -451,7 +451,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 74.93) (xy 49.53 74.93)
+			(xy 19.05 -21.59) (xy 24.13 -21.59)
 		)
 		(stroke
 			(width 0)
@@ -461,7 +461,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 60.96) (xy 49.53 60.96)
+			(xy 19.05 -35.56) (xy 24.13 -35.56)
 		)
 		(stroke
 			(width 0)
@@ -471,7 +471,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 46.99) (xy 34.29 46.99)
+			(xy 11.43 -49.53) (xy 8.89 -49.53)
 		)
 		(stroke
 			(width 0)
@@ -481,7 +481,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 46.99) (xy 49.53 46.99)
+			(xy 19.05 -49.53) (xy 24.13 -49.53)
 		)
 		(stroke
 			(width 0)
@@ -491,7 +491,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 60.96) (xy 54.61 60.96)
+			(xy 24.13 -35.56) (xy 29.21 -35.56)
 		)
 		(stroke
 			(width 0)
@@ -501,7 +501,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 74.93) (xy 54.61 74.93)
+			(xy 24.13 -21.59) (xy 29.21 -21.59)
 		)
 		(stroke
 			(width 0)
@@ -511,7 +511,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 74.93) (xy 34.29 74.93)
+			(xy 11.43 -21.59) (xy 8.89 -21.59)
 		)
 		(stroke
 			(width 0)
@@ -521,7 +521,7 @@
 	)
 	(hierarchical_label "ISENSE_A"
 		(shape passive)
-		(at 54.61 46.99 0)
+		(at 29.21 -49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -532,7 +532,7 @@
 	)
 	(hierarchical_label "ISENSE_C"
 		(shape passive)
-		(at 54.61 74.93 0)
+		(at 29.21 -21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -543,7 +543,7 @@
 	)
 	(hierarchical_label "DRV_SOB"
 		(shape passive)
-		(at 34.29 60.96 180)
+		(at 8.89 -35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -554,7 +554,7 @@
 	)
 	(hierarchical_label "ISENSE_B"
 		(shape passive)
-		(at 54.61 60.96 0)
+		(at 29.21 -35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -565,7 +565,7 @@
 	)
 	(hierarchical_label "DRV_SOC"
 		(shape passive)
-		(at 34.29 74.93 180)
+		(at 8.89 -21.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -576,7 +576,7 @@
 	)
 	(hierarchical_label "DRV_SOA"
 		(shape passive)
-		(at 34.29 46.99 180)
+		(at 8.89 -49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -587,7 +587,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 40.64 74.93 90)
+		(at 15.24 -21.59 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -595,7 +595,7 @@
 		(dnp no)
 		(uuid "13dd70a6-7c51-561c-a718-fc0179c018b7")
 		(property "Reference" "R14"
-			(at 40.64 72.39 90)
+			(at 15.24 -24.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -603,7 +603,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 40.64 77.47 90)
+			(at 15.24 -19.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -611,7 +611,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 40.64 74.93 90)
+			(at 15.24 -21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -620,7 +620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 74.93 90)
+			(at 15.24 -21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -629,7 +629,7 @@
 			)
 		)
 		(property "Description" "Thick film resistor 100Ω ±1% 0402"
-			(at 40.64 74.93 0)
+			(at 15.24 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -638,7 +638,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 40.64 74.93 0)
+			(at 15.24 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -647,7 +647,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-07100RL"
-			(at 40.64 74.93 0)
+			(at 15.24 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -656,7 +656,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 40.64 74.93 0)
+			(at 15.24 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -665,7 +665,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "603-RC0402FR-07100RL"
-			(at 40.64 74.93 0)
+			(at 15.24 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -674,7 +674,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 40.64 74.93 90)
+			(at 15.24 -21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -683,7 +683,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 40.64 74.93 90)
+			(at 15.24 -21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -692,7 +692,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 40.64 74.93 90)
+			(at 15.24 -21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -701,7 +701,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 40.64 74.93 90)
+			(at 15.24 -21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -726,7 +726,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 49.53 50.8 0)
+		(at 24.13 -45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -734,7 +734,7 @@
 		(dnp no)
 		(uuid "258d5bfe-cf6d-571c-a025-9a94dfae2f41")
 		(property "Reference" "C61"
-			(at 51.43 50.165 0)
+			(at 26.03 -46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -743,7 +743,7 @@
 			)
 		)
 		(property "Value" "1n C0G"
-			(at 51.43 52.705 0)
+			(at 26.03 -43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -752,7 +752,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -761,7 +761,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -770,7 +770,7 @@
 			)
 		)
 		(property "Description" "MLCC 1 nF 50 V C0G ±5% 0402"
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -779,7 +779,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,7 +788,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C102JB5NNNC"
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -797,7 +797,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -806,7 +806,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C102JB5NNNC"
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -815,7 +815,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -824,7 +824,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -833,7 +833,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -842,7 +842,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 49.53 50.8 0)
+			(at 24.13 -45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,7 +867,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 68.58 0)
+		(at 24.13 -27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -875,7 +875,7 @@
 		(dnp no)
 		(uuid "2a26f65c-853e-5e0b-b45f-0effb94d5ae2")
 		(property "Reference" "#PWR041"
-			(at 49.53 68.58 0)
+			(at 24.13 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 72.39 0)
+			(at 24.13 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +892,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 68.58 0)
+			(at 24.13 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -901,7 +901,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 68.58 0)
+			(at 24.13 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -910,7 +910,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 49.53 68.58 0)
+			(at 24.13 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -932,7 +932,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 49.53 64.77 0)
+		(at 24.13 -31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -940,7 +940,7 @@
 		(dnp no)
 		(uuid "3a3e8f74-1947-5428-a402-08e7129f5932")
 		(property "Reference" "C62"
-			(at 51.43 64.135 0)
+			(at 26.03 -32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -949,7 +949,7 @@
 			)
 		)
 		(property "Value" "1n C0G"
-			(at 51.43 66.675 0)
+			(at 26.03 -29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -958,7 +958,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,7 +967,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -976,7 +976,7 @@
 			)
 		)
 		(property "Description" "MLCC 1 nF 50 V C0G ±5% 0402"
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -985,7 +985,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -994,7 +994,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C102JB5NNNC"
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1003,7 +1003,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1012,7 +1012,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C102JB5NNNC"
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,7 +1021,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1030,7 +1030,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1039,7 +1039,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1048,7 +1048,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 49.53 64.77 0)
+			(at 24.13 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1073,7 +1073,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 40.64 60.96 90)
+		(at 15.24 -35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1081,7 +1081,7 @@
 		(dnp no)
 		(uuid "465ec4ef-81fe-58ad-aa7c-f490dd12f103")
 		(property "Reference" "R13"
-			(at 40.64 58.42 90)
+			(at 15.24 -38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1089,7 +1089,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 40.64 63.5 90)
+			(at 15.24 -33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1097,7 +1097,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 40.64 60.96 90)
+			(at 15.24 -35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1106,7 +1106,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 60.96 90)
+			(at 15.24 -35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1115,7 +1115,7 @@
 			)
 		)
 		(property "Description" "Thick film resistor 100Ω ±1% 0402"
-			(at 40.64 60.96 0)
+			(at 15.24 -35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1124,7 +1124,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 40.64 60.96 0)
+			(at 15.24 -35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1133,7 +1133,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-07100RL"
-			(at 40.64 60.96 0)
+			(at 15.24 -35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1142,7 +1142,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 40.64 60.96 0)
+			(at 15.24 -35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1151,7 +1151,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "603-RC0402FR-07100RL"
-			(at 40.64 60.96 0)
+			(at 15.24 -35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1160,7 +1160,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 40.64 60.96 90)
+			(at 15.24 -35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1169,7 +1169,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 40.64 60.96 90)
+			(at 15.24 -35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1178,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 40.64 60.96 90)
+			(at 15.24 -35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1187,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 40.64 60.96 90)
+			(at 15.24 -35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1212,7 +1212,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 40.64 46.99 90)
+		(at 15.24 -49.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1220,7 +1220,7 @@
 		(dnp no)
 		(uuid "89927fc2-3bc9-5939-84eb-488de187b2be")
 		(property "Reference" "R12"
-			(at 40.64 44.45 90)
+			(at 15.24 -52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,7 +1228,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 40.64 49.53 90)
+			(at 15.24 -46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1236,7 +1236,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 40.64 46.99 90)
+			(at 15.24 -49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,7 +1245,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 46.99 90)
+			(at 15.24 -49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1254,7 +1254,7 @@
 			)
 		)
 		(property "Description" "Thick film resistor 100Ω ±1% 0402"
-			(at 40.64 46.99 0)
+			(at 15.24 -49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1263,7 +1263,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 40.64 46.99 0)
+			(at 15.24 -49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1272,7 +1272,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-07100RL"
-			(at 40.64 46.99 0)
+			(at 15.24 -49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1281,7 +1281,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 40.64 46.99 0)
+			(at 15.24 -49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1290,7 +1290,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "603-RC0402FR-07100RL"
-			(at 40.64 46.99 0)
+			(at 15.24 -49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1299,7 +1299,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 40.64 46.99 90)
+			(at 15.24 -49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1308,7 +1308,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 40.64 46.99 90)
+			(at 15.24 -49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,7 +1317,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 40.64 46.99 90)
+			(at 15.24 -49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1326,7 +1326,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 40.64 46.99 90)
+			(at 15.24 -49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1351,7 +1351,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 82.55 0)
+		(at 24.13 -13.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1359,7 +1359,7 @@
 		(dnp no)
 		(uuid "8d53db53-36bb-5f72-b1e2-1d5ded437a1d")
 		(property "Reference" "#PWR042"
-			(at 49.53 82.55 0)
+			(at 24.13 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1368,7 +1368,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 86.36 0)
+			(at 24.13 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1376,7 +1376,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 82.55 0)
+			(at 24.13 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1385,7 +1385,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 82.55 0)
+			(at 24.13 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1394,7 +1394,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 49.53 82.55 0)
+			(at 24.13 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1416,7 +1416,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 49.53 78.74 0)
+		(at 24.13 -17.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1424,7 +1424,7 @@
 		(dnp no)
 		(uuid "aa645e2e-d9d5-51aa-be5d-ab8ddf24b38c")
 		(property "Reference" "C63"
-			(at 51.43 78.105 0)
+			(at 26.03 -18.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1433,7 +1433,7 @@
 			)
 		)
 		(property "Value" "1n C0G"
-			(at 51.43 80.645 0)
+			(at 26.03 -15.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1442,7 +1442,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1451,7 +1451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1460,7 +1460,7 @@
 			)
 		)
 		(property "Description" "MLCC 1 nF 50 V C0G ±5% 0402"
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1469,7 +1469,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,7 +1478,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C102JB5NNNC"
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,7 +1487,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1496,7 +1496,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C102JB5NNNC"
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1505,7 +1505,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1514,7 +1514,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1523,7 +1523,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1532,7 +1532,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 49.53 78.74 0)
+			(at 24.13 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1557,7 +1557,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 54.61 0)
+		(at 24.13 -41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1565,7 +1565,7 @@
 		(dnp no)
 		(uuid "d8e63497-f400-5a66-b060-f62bcd5b58f9")
 		(property "Reference" "#PWR040"
-			(at 49.53 54.61 0)
+			(at 24.13 -41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1574,7 +1574,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 58.42 0)
+			(at 24.13 -38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1582,7 +1582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 54.61 0)
+			(at 24.13 -41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1591,7 +1591,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 54.61 0)
+			(at 24.13 -41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1600,7 +1600,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 49.53 54.61 0)
+			(at 24.13 -41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

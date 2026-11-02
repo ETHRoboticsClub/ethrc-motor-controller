@@ -528,14 +528,14 @@ definitions:
 
   # Metadata ===================================================================
 
-  PROJECT_NAME: Chienpanzé
-  BOARD_NAME: Λmulet Motion Controller
+  PROJECT_NAME: BLDC Motor Controller
+  BOARD_NAME: ETHRC Motor Controller
 
-  COMPANY: EPFL Xplore Research
-  DESIGNER: Vincent Nguyen
+  COMPANY: ETH Robotics Club
+  DESIGNER: Masiar Etemadi
 
-  LOGO: 'Logos/amulet_logo_small_light.png'
-  GIT_URL: 'https://github.com/nguyen-v/amulet_controller_kibot'
+  LOGO: 'Logos/ethrc_logo.png'
+  GIT_URL: 'https://github.com/ETHRoboticsClub/ethrc-motor-controller'
 
   # Preflight ==================================================================
 

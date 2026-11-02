@@ -1795,7 +1795,7 @@
 			)
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
 					(page "20")
 				)
@@ -1836,7 +1836,7 @@
 			)
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
 					(page "2")
 				)
@@ -1877,7 +1877,7 @@
 			)
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
 					(page "21")
 				)
@@ -1918,7 +1918,7 @@
 			)
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
 					(page "3")
 				)

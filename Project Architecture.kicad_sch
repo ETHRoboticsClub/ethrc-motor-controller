@@ -2513,7 +2513,7 @@
 			(uuid "f57a9f4d-efae-4eab-8bb9-af53a4ebe2cc")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "10")
 				)
@@ -2567,7 +2567,7 @@
 			(uuid "bb1f3f22-1516-447c-a2d0-81c1c3786694")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "11")
 				)
@@ -2635,7 +2635,7 @@
 			(uuid "523ba303-db75-4b22-8808-30a91b557f54")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "13")
 				)
@@ -2754,7 +2754,7 @@
 			(uuid "73020087-d96b-421a-9358-66797b73d0e2")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "8")
 				)
@@ -2795,7 +2795,7 @@
 			)
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "4")
 				)
@@ -2850,7 +2850,7 @@
 			(uuid "bb946204-492a-47d4-8864-d6c1999e8d1a")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "7")
 				)
@@ -2917,7 +2917,7 @@
 			(uuid "8e8d8af8-998f-48c0-80f1-9c23a9b76373")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "16")
 				)
@@ -2984,7 +2984,7 @@
 			(uuid "7bdcbdf7-3bd3-4f00-ae51-e29a1835d649")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "14")
 				)
@@ -3064,7 +3064,7 @@
 			(uuid "e887a9bb-5575-4817-88f2-a7bc625ed21c")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "15")
 				)
@@ -3131,7 +3131,7 @@
 			(uuid "db5ab538-5418-4219-ae95-3ba4a336c7a0")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "17")
 				)
@@ -3242,7 +3242,7 @@
 			(uuid "c269b2e3-e536-432e-a875-f77ff5ca6caf")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "6")
 				)
@@ -3283,7 +3283,7 @@
 			)
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "19")
 				)
@@ -3428,7 +3428,7 @@
 			(uuid "9a95cfbd-79c4-45a9-a8ce-bd8b736f1df3")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "18")
 				)
@@ -3677,7 +3677,7 @@
 			(uuid "a4803ea8-0bbf-4584-82cc-0a1f7f293b26")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "5")
 				)
@@ -3771,7 +3771,7 @@
 			(uuid "af30b40c-f32c-45f5-ad15-70b28b4952ea")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "12")
 				)

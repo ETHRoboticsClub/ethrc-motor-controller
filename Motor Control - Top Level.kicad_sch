@@ -7314,7 +7314,7 @@
 			(uuid "aaf35aff-85a9-4637-b603-4ba048563124")
 		)
 		(instances
-			(project "amulet_controller"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(page "9")
 				)

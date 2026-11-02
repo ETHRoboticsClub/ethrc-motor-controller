@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "6ad902c2-420d-4e4b-b124-fe2562d43c09")
 	(paper "A4")
 	(title_block
@@ -13,7 +13,9 @@
 	(lib_symbols
 		(symbol "0_connectors:Conn_01x02_Mounting"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -81,7 +83,7 @@
 			(symbol "Conn_01x02_Mounting_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy 3.81 -5.08)
+						(xy -1.27 2.54) (xy 3.81 2.54)
 					)
 					(stroke
 						(width 0)
@@ -93,7 +95,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy 3.81 2.54)
+						(xy -1.27 -5.08) (xy 3.81 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -106,14 +108,14 @@
 			)
 			(symbol "Conn_01x02_Mounting_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 3.81 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -128,14 +130,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 3.81 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -211,10 +213,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "0_diode:SMBJ51CD-M3/H"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -273,10 +280,10 @@
 			(symbol "SMBJ51CD-M3/H_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -297,10 +304,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -346,6 +353,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "0_power_symbols:CHASSIS"
 			(power)
@@ -411,18 +419,6 @@
 			(symbol "CHASSIS_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
 					)
 					(stroke
@@ -439,6 +435,18 @@
 					)
 					(stroke
 						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -497,7 +505,8 @@
 			(symbol "CHASSIS_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "CHASSIS"
 						(effects
 							(font
@@ -514,10 +523,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "SMBJ51CD-M3/H_1"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -576,10 +590,10 @@
 			(symbol "SMBJ51CD-M3/H_1_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -600,10 +614,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -649,6 +663,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -728,7 +743,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -745,7 +761,204 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 78.74 52.07)
+		(end 215.9 135.89)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3a5ab838-31f4-40b0-a864-5845876cb8ea)
+	)
+	(rectangle
+		(start 146.05 69.85)
+		(end 176.53 85.09)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e21541c7-d6d9-422e-8a24-22c9bf2a722a)
+	)
+	(text_box "DESIGN NOTE:\nDo not exceed absolute maximum ratings! Maximum input voltage is 44V (10S)."
+		(exclude_from_sim no)
+		(at 101.6 107.95 0)
+		(size 30.48 12.7)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "3187d174-1f57-48a1-8c4f-c3e96c33391c")
+	)
+	(text_box "DESIGN NOTE:\nDo not hot-plug when powered!"
+		(exclude_from_sim no)
+		(at 82.55 107.95 0)
+		(size 16.51 12.7)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "9cf58e9c-bf4f-45b1-9376-1a1959f12d12")
+	)
+	(text_box "LAYOUT NOTE:\nPlace TVS diodes near input power connectors."
+		(exclude_from_sim no)
+		(at 139.7 96.52 0)
+		(size 26.67 8.89)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "a866e451-cb60-495b-b2ff-a62f5e9a5164")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 100.33 16.51 0)
+		(size 96.52 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "bdb3257a-6093-4863-a56f-f876bb0ef3ef")
+	)
+	(text_box "DESIGN NOTE:\nIt's best to power the controller through the male connector to always have a female connector at the end of the chain.\n"
+		(exclude_from_sim no)
+		(at 173.99 107.95 0)
+		(size 35.56 12.7)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c20892d6-5080-4c3c-a6c2-62d91e1609d1")
+	)
+	(text_box "Power Connectors, TVS Diodes"
+		(exclude_from_sim no)
+		(at 80.01 124.46 0)
+		(size 134.62 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "c93787f1-33a5-4092-8e39-57a3f6f75401")
+	)
+	(text_box "LAYOUT NOTE:\nKeep sufficient clearance between power nets according to IPC-2221/IEC60664-1"
+		(exclude_from_sim no)
+		(at 139.7 107.95 0)
+		(size 26.67 12.7)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "fd496f31-b168-4103-81f4-28eb88502f0c")
 	)
 	(junction
 		(at 149.86 64.77)
@@ -1055,32 +1268,6 @@
 			(type default)
 		)
 		(uuid "fc406da0-0c52-4fc0-9e5a-12130709adc1")
-	)
-	(rectangle
-		(start 78.74 52.07)
-		(end 215.9 135.89)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3a5ab838-31f4-40b0-a864-5845876cb8ea)
-	)
-	(rectangle
-		(start 146.05 69.85)
-		(end 176.53 85.09)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid e21541c7-d6d9-422e-8a24-22c9bf2a722a)
 	)
 	(image
 		(at 92.71 66.04)
@@ -7289,173 +7476,9 @@
 			"oOM4jrNRXAIdx3GcjeIS6DiO42yU/wADxR0hpImf3QAAAABJRU5ErkJggg=="
 		)
 	)
-	(text_box "DESIGN NOTE:\nDo not exceed absolute maximum ratings! Maximum input voltage is 44V (10S)."
-		(exclude_from_sim no)
-		(at 101.6 107.95 0)
-		(size 30.48 12.7)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "3187d174-1f57-48a1-8c4f-c3e96c33391c")
-	)
-	(text_box "DESIGN NOTE:\nDo not hot-plug when powered!"
-		(exclude_from_sim no)
-		(at 82.55 107.95 0)
-		(size 16.51 12.7)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "9cf58e9c-bf4f-45b1-9376-1a1959f12d12")
-	)
-	(text_box "LAYOUT NOTE:\nPlace TVS diodes near input power connectors."
-		(exclude_from_sim no)
-		(at 139.7 96.52 0)
-		(size 26.67 8.89)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "a866e451-cb60-495b-b2ff-a62f5e9a5164")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 100.33 16.51 0)
-		(size 96.52 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "bdb3257a-6093-4863-a56f-f876bb0ef3ef")
-	)
-	(text_box "DESIGN NOTE:\nIt's best to power the controller through the male connector to always have a female connector at the end of the chain.\n"
-		(exclude_from_sim no)
-		(at 173.99 107.95 0)
-		(size 35.56 12.7)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c20892d6-5080-4c3c-a6c2-62d91e1609d1")
-	)
-	(text_box "Power Connectors, TVS Diodes"
-		(exclude_from_sim no)
-		(at 80.01 124.46 0)
-		(size 134.62 9.525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "c93787f1-33a5-4092-8e39-57a3f6f75401")
-	)
-	(text_box "LAYOUT NOTE:\nKeep sufficient clearance between power nets according to IPC-2221/IEC60664-1"
-		(exclude_from_sim no)
-		(at 139.7 107.95 0)
-		(size 26.67 12.7)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "fd496f31-b168-4103-81f4-28eb88502f0c")
-	)
 	(hierarchical_label "+VBAT"
 		(shape output)
 		(at 180.34 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -7555,13 +7578,9 @@
 			(uuid "2b10c580-b1de-4924-ba0e-000748738739")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "#PWR097")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
-					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -7630,13 +7649,9 @@
 			(uuid "f75558c0-8097-48f8-95b8-95b97041a485")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "#PWR096")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
-					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -7705,13 +7720,9 @@
 			(uuid "fe7a4a17-10c5-46e9-b297-228cacc89d82")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "#PWR025")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
-					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -7781,7 +7792,7 @@
 			(uuid "7830a497-d4aa-4b9f-af5c-6152924a40f2")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "#PWR024")
 					(unit 1)
@@ -7908,7 +7919,7 @@
 			(uuid "e75975c5-7001-45e0-b896-d20bc4a403ca")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "J2")
 					(unit 1)
@@ -8022,7 +8033,7 @@
 			(uuid "01842b42-9279-4954-b631-7e5e1acb492b")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "D1")
 					(unit 1)
@@ -8135,7 +8146,7 @@
 			(uuid "7e80f00c-8159-49f1-9b92-9f5614866b28")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "D2")
 					(unit 1)
@@ -8262,7 +8273,7 @@
 			(uuid "b2c4e4a9-4802-45b7-8643-31c4cb8adb30")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "J1")
 					(unit 1)

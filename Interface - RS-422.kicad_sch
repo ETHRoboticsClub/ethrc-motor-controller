@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
@@ -90,80 +90,9 @@
 				)
 			)
 			(symbol "SN65HVD35DR_1_1"
-				(circle
-					(center -0.762 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -4.191 2.54) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -5.08) (xy -4.191 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -7.62) (xy 5.715 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.889 -2.54) (xy 5.715 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 7.62) (xy 5.715 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.048 2.54) (xy 5.715 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -199,7 +128,77 @@
 				)
 				(polyline
 					(pts
+						(xy -2.54 -5.08) (xy -4.191 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -2.413 -5.08) (xy -2.413 -1.27) (xy 2.667 -4.826) (xy -2.413 -8.89) (xy -2.413 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.762 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -7.62) (xy 5.715 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.381 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.889 -2.54) (xy 5.715 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 7.62) (xy 5.715 7.62)
 					)
 					(stroke
 						(width 0.254)
@@ -222,7 +221,7 @@
 					)
 				)
 				(circle
-					(center 0.381 -2.54)
+					(center 2.54 2.54)
 					(radius 0.508)
 					(stroke
 						(width 0.254)
@@ -232,9 +231,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy 3.048 2.54) (xy 5.715 2.54)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -261,89 +261,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 -2.54 180)
+				(pin no_connect line
+					(at -10.16 10.16 0)
 					(length 2.54)
-					(name "Z"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -1.27 20.32 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 1.27 20.32 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -424,6 +352,24 @@
 					)
 				)
 				(pin power_in line
+					(at -1.27 20.32 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at -1.27 -17.78 90)
 					(length 2.54)
 					(name "GND"
@@ -434,6 +380,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 1.27 20.32 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -459,17 +423,53 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 10.16 0)
+				(pin input line
+					(at 10.16 7.62 180)
 					(length 2.54)
-					(name "NC"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "Z"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -496,11 +496,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -570,10 +575,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -582,10 +587,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -631,6 +636,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -708,7 +714,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -720,7 +726,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -734,7 +740,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -751,6 +758,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -830,7 +838,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -847,7 +856,139 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 82.55 41.91)
+		(end 217.17 130.81)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f8d2ae4c-c0f9-4388-aa8f-69ed2f57389d)
+	)
+	(text_box "LAYOUT NOTE:\nPlace close to RS-422 connector."
+		(exclude_from_sim no)
+		(at 182.88 110.49 0)
+		(size 29.21 11.43)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "2062fa26-3463-481c-9bda-d9e69d4e3d15")
+	)
+	(text_box "DESIGN NOTE:\nRS-422 through UART is used mostly for absolute position sensors (e.g. Aksim-2, SSI protocol)"
+		(exclude_from_sim no)
+		(at 86.36 96.52 0)
+		(size 31.75 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "42017d90-04c3-455c-8e8e-9b068242d17e")
+	)
+	(text_box "DESIGN NOTE:\n100-ohm termination in Interconnects sheet."
+		(exclude_from_sim no)
+		(at 86.36 110.49 0)
+		(size 31.75 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "aaf6c798-9e22-4514-9f2c-fa1877fc0545")
+	)
+	(text_box "3.3-V Full-Duplex RS-422 Interface"
+		(exclude_from_sim no)
+		(at 83.82 119.38 0)
+		(size 132.08 8.89)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "c0a3a25c-2ad5-4f4a-8242-6059205fc2ad")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 78.74 16.51 0)
+		(size 137.16 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "c735f9ec-0378-4258-b9f8-5758c1a63810")
 	)
 	(junction
 		(at 146.05 104.14)
@@ -1359,135 +1500,8 @@
 		)
 		(uuid "f5b80b4f-e6c0-4605-852a-c613ae9566fd")
 	)
-	(rectangle
-		(start 82.55 41.91)
-		(end 217.17 130.81)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid f8d2ae4c-c0f9-4388-aa8f-69ed2f57389d)
-	)
-	(text_box "LAYOUT NOTE:\nPlace close to RS-422 connector."
-		(exclude_from_sim no)
-		(at 182.88 110.49 0)
-		(size 29.21 11.43)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "2062fa26-3463-481c-9bda-d9e69d4e3d15")
-	)
-	(text_box "DESIGN NOTE:\nRS-422 through UART is used mostly for absolute position sensors (e.g. Aksim-2, SSI protocol)"
-		(exclude_from_sim no)
-		(at 86.36 96.52 0)
-		(size 31.75 11.43)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "42017d90-04c3-455c-8e8e-9b068242d17e")
-	)
-	(text_box "DESIGN NOTE:\n100-ohm termination in Interconnects sheet."
-		(exclude_from_sim no)
-		(at 86.36 110.49 0)
-		(size 31.75 11.43)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "aaf6c798-9e22-4514-9f2c-fa1877fc0545")
-	)
-	(text_box "3.3-V Full-Duplex RS-422 Interface"
-		(exclude_from_sim no)
-		(at 83.82 119.38 0)
-		(size 132.08 8.89)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "c0a3a25c-2ad5-4f4a-8242-6059205fc2ad")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 78.74 16.51 0)
-		(size 137.16 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "c735f9ec-0378-4258-b9f8-5758c1a63810")
-	)
 	(label "RS422_~{RE}"
 		(at 179.07 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1499,7 +1513,6 @@
 	)
 	(label "RS422_D-"
 		(at 124.46 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1511,7 +1524,6 @@
 	)
 	(label "RS422_D+"
 		(at 124.46 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1523,7 +1535,6 @@
 	)
 	(label "RS422_R+"
 		(at 124.46 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1535,7 +1546,6 @@
 	)
 	(label "AUX1_E"
 		(at 179.07 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1547,7 +1557,6 @@
 	)
 	(label "AUX1_D"
 		(at 179.07 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1559,7 +1568,6 @@
 	)
 	(label "RS422_DE"
 		(at 179.07 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1571,7 +1579,6 @@
 	)
 	(label "RS422_R-"
 		(at 124.46 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1584,7 +1591,6 @@
 	(hierarchical_label "{RS422}"
 		(shape bidirectional)
 		(at 109.22 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1598,7 +1604,6 @@
 	(hierarchical_label "{AUX1}"
 		(shape bidirectional)
 		(at 190.5 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1612,7 +1617,6 @@
 	(hierarchical_label "{RS422_TTL}"
 		(shape bidirectional)
 		(at 190.5 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1686,7 +1690,7 @@
 			(uuid "73c4e0f3-a4d4-45d2-b8e0-f0732813c4cc")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a62105fd-dfaf-4ee0-a401-8aa0e7120758"
 					(reference "#PWR054")
 					(unit 1)
@@ -1799,7 +1803,7 @@
 			(uuid "f488072c-0b40-4bc7-8101-c397c39d569d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a62105fd-dfaf-4ee0-a401-8aa0e7120758"
 					(reference "C107")
 					(unit 1)
@@ -1871,7 +1875,7 @@
 			(uuid "da1888d4-20cf-4dd7-8f0a-e433e143dbf7")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a62105fd-dfaf-4ee0-a401-8aa0e7120758"
 					(reference "#PWR052")
 					(unit 1)
@@ -1943,7 +1947,7 @@
 			(uuid "4f3a52d6-03bd-40f4-b352-3c344c014aeb")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a62105fd-dfaf-4ee0-a401-8aa0e7120758"
 					(reference "#PWR053")
 					(unit 1)
@@ -2092,7 +2096,7 @@
 			(uuid "87094105-3ba0-48af-b37d-5fff7703123b")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a62105fd-dfaf-4ee0-a401-8aa0e7120758"
 					(reference "U9")
 					(unit 1)

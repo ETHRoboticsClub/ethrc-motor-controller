@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A3")
 	(title_block
@@ -80,196 +80,16 @@
 					)
 				)
 				(pin passive line
-					(at -17.78 77.47 0)
+					(at -17.78 90.17 0)
 					(length 2.54)
-					(name "CPL"
+					(name "VCP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 49.53 180)
-					(length 2.54)
-					(name "SNA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 26.67 180)
-					(length 2.54)
-					(name "SNB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 29.21 180)
-					(length 2.54)
-					(name "SPB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 34.29 180)
-					(length 2.54)
-					(name "GLB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 36.83 180)
-					(length 2.54)
-					(name "SHB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 39.37 180)
-					(length 2.54)
-					(name "GHB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 16.51 180)
-					(length 2.54)
-					(name "GHC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 13.97 180)
-					(length 2.54)
-					(name "SHC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 11.43 180)
-					(length 2.54)
-					(name "GLC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 6.35 180)
-					(length 2.54)
-					(name "SPC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -295,17 +115,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 17.78 3.81 180)
+				(pin passive line
+					(at -17.78 77.47 0)
 					(length 2.54)
-					(name "SNC"
+					(name "CPL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "20"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -313,107 +133,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at -17.78 -1.27 0)
+				(pin passive line
+					(at -17.78 69.85 0)
 					(length 2.54)
-					(name "SOC"
+					(name "VGLS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.78 1.27 0)
-					(length 2.54)
-					(name "SOB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.78 3.81 0)
-					(length 2.54)
-					(name "SOA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -17.78 17.78 0)
-					(length 2.54)
-					(name "VREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -5.08 -21.59 90)
-					(length 2.54)
-					(name "AGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -17.78 -6.35 0)
-					(length 2.54)
-					(name "nFAULT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
+					(number "40"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -475,24 +205,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 97.79 270)
-					(length 2.54)
-					(name "VM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -17.78 49.53 0)
 					(length 2.54)
@@ -504,24 +216,6 @@
 						)
 					)
 					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -11.43 0)
-					(length 2.54)
-					(name "ENABLE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -637,17 +331,143 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 17.78 85.09 180)
+				(pin power_in line
+					(at -17.78 17.78 0)
 					(length 2.54)
-					(name "DVDD"
+					(name "VREF"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "38"
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 3.81 0)
+					(length 2.54)
+					(name "SOA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 1.27 0)
+					(length 2.54)
+					(name "SOB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.78 -1.27 0)
+					(length 2.54)
+					(name "SOC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -17.78 -6.35 0)
+					(length 2.54)
+					(name "nFAULT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -11.43 0)
+					(length 2.54)
+					(name "ENABLE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -21.59 90)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 97.79 270)
+					(length 2.54)
+					(name "VM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -673,42 +493,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at 17.78 90.17 180)
-					(length 2.54)
-					(name "VDRAIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -17.78 69.85 0)
-					(length 2.54)
-					(name "VGLS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 5.08 -21.59 90)
 					(length 2.54)
@@ -727,17 +511,35 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -17.78 90.17 0)
+				(pin input line
+					(at 17.78 90.17 180)
 					(length 2.54)
-					(name "VCP"
+					(name "VDRAIN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 17.78 85.09 180)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -817,7 +619,206 @@
 						)
 					)
 				)
+				(pin input line
+					(at 17.78 49.53 180)
+					(length 2.54)
+					(name "SNA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 39.37 180)
+					(length 2.54)
+					(name "GHB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 36.83 180)
+					(length 2.54)
+					(name "SHB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 34.29 180)
+					(length 2.54)
+					(name "GLB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 29.21 180)
+					(length 2.54)
+					(name "SPB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 26.67 180)
+					(length 2.54)
+					(name "SNB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 16.51 180)
+					(length 2.54)
+					(name "GHC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 13.97 180)
+					(length 2.54)
+					(name "SHC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 11.43 180)
+					(length 2.54)
+					(name "GLC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 6.35 180)
+					(length 2.54)
+					(name "SPC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 3.81 180)
+					(length 2.54)
+					(name "SNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "0_power_symbols:+A3V3"
 			(power)
@@ -895,7 +896,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -907,7 +908,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -921,7 +922,8 @@
 			(symbol "+A3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+A3V3"
 						(effects
 							(font
@@ -938,6 +940,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "0_power_symbols:+VBAT"
 			(power)
@@ -1015,7 +1018,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1027,7 +1030,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1041,7 +1044,8 @@
 			(symbol "+VBAT_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+VBAT"
 						(effects
 							(font
@@ -1058,11 +1062,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1160,9 +1169,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1235,7 +1247,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1247,7 +1259,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1296,11 +1308,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1370,10 +1387,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -1382,10 +1399,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -1431,9 +1448,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1552,6 +1572,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -1629,7 +1650,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1641,7 +1662,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1655,7 +1676,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1672,6 +1694,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1751,7 +1774,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1768,7 +1792,338 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 321.31 53.34)
+		(end 369.57 217.17)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0f02a61e-3459-4849-bc8d-e2c232c73628)
+	)
+	(rectangle
+		(start 168.91 149.86)
+		(end 176.53 160.02)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 256d1294-f10e-4b29-9ec8-a07a26108273)
+	)
+	(rectangle
+		(start 52.07 53.34)
+		(end 207.01 217.17)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3cc1a614-4bb3-45e1-b953-32d90d3f8169)
+	)
+	(rectangle
+		(start 213.36 53.34)
+		(end 314.96 217.17)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 96ef6fea-cb1b-46b4-af21-c28da946fd43)
+	)
+	(text "Page 9"
+		(exclude_from_sim no)
+		(at 279.4 170.18 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 30 50 1)
+			)
+			(justify right bottom)
+			(href "#9")
+		)
+		(uuid "f53282ed-db85-407c-b7bb-ad5ba99c70f5")
+	)
+	(text_box "DESIGN NOTE:\n3x PWM mode."
+		(exclude_from_sim no)
+		(at 62.23 147.32 0)
+		(size 19.05 7.62)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "083d10fa-17ff-4fc4-b603-3a69d924fad5")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 128.27 20.32 0)
+		(size 162.56 12.7)
+		(margins 5.9999 5.9999 5.9999 5.9999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 8 8)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "09a99c5e-00ea-4c43-8eaf-9b01322b61f1")
+	)
+	(text_box "LAYOUT NOTE:\nGate drive traces should be short and wide. \nEnsure good return paths for GH (return in SH) and GL (return in GND)."
+		(exclude_from_sim no)
+		(at 170.18 172.72 0)
+		(size 33.02 15.24)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "0e28e1da-aa47-4e84-9a60-93a1917a1894")
+	)
+	(text_box "Test Points"
+		(exclude_from_sim no)
+		(at 322.58 205.74 0)
+		(size 45.72 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "686d42ff-1d60-461e-8c06-6d23a181db4c")
+	)
+	(text_box "LAYOUT NOTE:\nRoute sense traces as a differential pair. Route away from digital signals."
+		(exclude_from_sim no)
+		(at 170.18 191.77 0)
+		(size 33.02 11.43)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "6e2fced3-5d34-41dd-acb0-ab4e09d08d47")
+	)
+	(text_box "DESIGN NOTE:\nSingle supply mode:\nVDRAIN = VM"
+		(exclude_from_sim no)
+		(at 176.53 63.5 0)
+		(size 19.05 8.89)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c5ea7e8c-47ab-43c3-b000-caecf31713c0")
+	)
+	(text_box "Gate Drive"
+		(exclude_from_sim no)
+		(at 327.66 106.68 0)
+		(size 33.02 6.985)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c620d7ed-2126-4934-9451-835104e68231")
+	)
+	(text_box "LAYOUT NOTE:\nRoute current sense traces away from digital signals.\nEnsure good return paths."
+		(exclude_from_sim no)
+		(at 93.98 173.99 0)
+		(size 26.67 11.43)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "d61e42a2-551d-475c-aa81-2988bf7d4731")
+	)
+	(text_box "Three-Phase Inverter"
+		(exclude_from_sim no)
+		(at 215.9 205.74 0)
+		(size 96.52 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "ee879a8c-bd28-475a-958e-ea2426555be3")
+	)
+	(text_box "100-V Three-Phase Smart Gate Driver"
+		(exclude_from_sim no)
+		(at 53.34 205.74 0)
+		(size 152.4 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "f2b7c51c-10b4-4da7-93f9-60e297bb56de")
+	)
+	(text_box "Kelvin Sense"
+		(exclude_from_sim no)
+		(at 327.66 142.24 0)
+		(size 27.94 6.985)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f95ffe5d-abf5-4e35-b9c6-3eb7ef5b8a28")
 	)
 	(junction
 		(at 105.41 73.66)
@@ -3163,328 +3518,8 @@
 		)
 		(uuid "fcf6bc55-5ce5-43b3-9570-7efd0125111a")
 	)
-	(rectangle
-		(start 321.31 53.34)
-		(end 369.57 217.17)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0f02a61e-3459-4849-bc8d-e2c232c73628)
-	)
-	(rectangle
-		(start 168.91 149.86)
-		(end 176.53 160.02)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 256d1294-f10e-4b29-9ec8-a07a26108273)
-	)
-	(rectangle
-		(start 52.07 53.34)
-		(end 207.01 217.17)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3cc1a614-4bb3-45e1-b953-32d90d3f8169)
-	)
-	(rectangle
-		(start 213.36 53.34)
-		(end 314.96 217.17)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 96ef6fea-cb1b-46b4-af21-c28da946fd43)
-	)
-	(text_box "DESIGN NOTE:\n3x PWM mode."
-		(exclude_from_sim no)
-		(at 62.23 147.32 0)
-		(size 19.05 7.62)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "083d10fa-17ff-4fc4-b603-3a69d924fad5")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 128.27 20.32 0)
-		(size 162.56 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 8 8)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "09a99c5e-00ea-4c43-8eaf-9b01322b61f1")
-	)
-	(text_box "LAYOUT NOTE:\nGate drive traces should be short and wide. \nEnsure good return paths for GH (return in SH) and GL (return in GND)."
-		(exclude_from_sim no)
-		(at 170.18 172.72 0)
-		(size 33.02 15.24)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "0e28e1da-aa47-4e84-9a60-93a1917a1894")
-	)
-	(text_box "Test Points"
-		(exclude_from_sim no)
-		(at 322.58 205.74 0)
-		(size 45.72 9.525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "686d42ff-1d60-461e-8c06-6d23a181db4c")
-	)
-	(text_box "LAYOUT NOTE:\nRoute sense traces as a differential pair. Route away from digital signals."
-		(exclude_from_sim no)
-		(at 170.18 191.77 0)
-		(size 33.02 11.43)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "6e2fced3-5d34-41dd-acb0-ab4e09d08d47")
-	)
-	(text_box "DESIGN NOTE:\nSingle supply mode:\nVDRAIN = VM"
-		(exclude_from_sim no)
-		(at 176.53 63.5 0)
-		(size 19.05 8.89)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c5ea7e8c-47ab-43c3-b000-caecf31713c0")
-	)
-	(text_box "Gate Drive"
-		(exclude_from_sim no)
-		(at 327.66 106.68 0)
-		(size 33.02 6.985)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c620d7ed-2126-4934-9451-835104e68231")
-	)
-	(text_box "LAYOUT NOTE:\nRoute current sense traces away from digital signals.\nEnsure good return paths."
-		(exclude_from_sim no)
-		(at 93.98 173.99 0)
-		(size 26.67 11.43)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "d61e42a2-551d-475c-aa81-2988bf7d4731")
-	)
-	(text_box "Three-Phase Inverter"
-		(exclude_from_sim no)
-		(at 215.9 205.74 0)
-		(size 96.52 9.525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "ee879a8c-bd28-475a-958e-ea2426555be3")
-	)
-	(text_box "100-V Three-Phase Smart Gate Driver"
-		(exclude_from_sim no)
-		(at 53.34 205.74 0)
-		(size 152.4 9.525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "f2b7c51c-10b4-4da7-93f9-60e297bb56de")
-	)
-	(text_box "Kelvin Sense"
-		(exclude_from_sim no)
-		(at 327.66 142.24 0)
-		(size 27.94 6.985)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "f95ffe5d-abf5-4e35-b9c6-3eb7ef5b8a28")
-	)
-	(text "Page 9"
-		(exclude_from_sim no)
-		(at 279.4 170.18 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 100 30 50 1)
-			)
-			(justify right bottom)
-			(href "#9")
-		)
-		(uuid "f53282ed-db85-407c-b7bb-ad5ba99c70f5")
-	)
 	(label "SHB"
 		(at 330.2 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3496,7 +3531,6 @@
 	)
 	(label "DRV_MOSI"
 		(at 85.09 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3508,7 +3542,6 @@
 	)
 	(label "SB_P"
 		(at 170.18 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3520,7 +3553,6 @@
 	)
 	(label "PWM_PHASEA"
 		(at 85.09 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3532,7 +3564,6 @@
 	)
 	(label "SHA"
 		(at 170.18 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3544,7 +3575,6 @@
 	)
 	(label "SOA"
 		(at 85.09 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3556,7 +3586,6 @@
 	)
 	(label "DRV_CS"
 		(at 85.09 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3568,7 +3597,6 @@
 	)
 	(label "GLB"
 		(at 330.2 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3580,7 +3608,6 @@
 	)
 	(label "GLA"
 		(at 170.18 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3592,7 +3619,6 @@
 	)
 	(label "PWM_PHASEB"
 		(at 85.09 133.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3604,7 +3630,6 @@
 	)
 	(label "GLC"
 		(at 170.18 158.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3616,7 +3641,6 @@
 	)
 	(label "SB_N"
 		(at 170.18 143.51 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3628,7 +3652,6 @@
 	)
 	(label "GLB"
 		(at 170.18 135.89 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3640,7 +3663,6 @@
 	)
 	(label "GHC"
 		(at 170.18 153.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3652,7 +3674,6 @@
 	)
 	(label "SB_P"
 		(at 330.2 158.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3664,7 +3685,6 @@
 	)
 	(label "CPL"
 		(at 133.35 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3676,7 +3696,6 @@
 	)
 	(label "DVDD"
 		(at 168.91 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3688,7 +3707,6 @@
 	)
 	(label "SA_P"
 		(at 170.18 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3700,7 +3718,6 @@
 	)
 	(label "SA_N"
 		(at 330.2 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3712,7 +3729,6 @@
 	)
 	(label "CPH"
 		(at 133.35 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3724,7 +3740,6 @@
 	)
 	(label "GHB"
 		(at 330.2 125.73 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3736,7 +3751,6 @@
 	)
 	(label "SC_N"
 		(at 330.2 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3748,7 +3762,6 @@
 	)
 	(label "SC_P"
 		(at 170.18 163.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3760,7 +3773,6 @@
 	)
 	(label "SA_P"
 		(at 330.2 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3772,7 +3784,6 @@
 	)
 	(label "GHA"
 		(at 330.2 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3784,7 +3795,6 @@
 	)
 	(label "VGLS"
 		(at 133.35 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3796,7 +3806,6 @@
 	)
 	(label "DRV_MISO"
 		(at 85.09 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3808,7 +3817,6 @@
 	)
 	(label "SA_N"
 		(at 170.18 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3820,7 +3828,6 @@
 	)
 	(label "SOC"
 		(at 85.09 171.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3832,7 +3839,6 @@
 	)
 	(label "PWM_PHASEC"
 		(at 85.09 135.89 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3844,7 +3850,6 @@
 	)
 	(label "SOB"
 		(at 85.09 168.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3856,7 +3861,6 @@
 	)
 	(label "GLA"
 		(at 330.2 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3868,7 +3872,6 @@
 	)
 	(label "SHC"
 		(at 170.18 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3880,7 +3883,6 @@
 	)
 	(label "SHA"
 		(at 330.2 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3892,7 +3894,6 @@
 	)
 	(label "GHA"
 		(at 170.18 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3904,7 +3905,6 @@
 	)
 	(label "VCP"
 		(at 133.35 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3916,7 +3916,6 @@
 	)
 	(label "GHC"
 		(at 330.2 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3928,7 +3927,6 @@
 	)
 	(label "SHB"
 		(at 170.18 133.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3940,7 +3938,6 @@
 	)
 	(label "SC_N"
 		(at 170.18 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3952,7 +3949,6 @@
 	)
 	(label "SB_N"
 		(at 330.2 161.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3964,7 +3960,6 @@
 	)
 	(label "DRV_SCLK"
 		(at 85.09 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3976,7 +3971,6 @@
 	)
 	(label "GLC"
 		(at 330.2 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -3988,7 +3982,6 @@
 	)
 	(label "SHC"
 		(at 330.2 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4000,7 +3993,6 @@
 	)
 	(label "SC_P"
 		(at 330.2 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4012,7 +4004,6 @@
 	)
 	(label "GHB"
 		(at 170.18 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4025,7 +4016,6 @@
 	(hierarchical_label "MOTOR_HIZ"
 		(shape input)
 		(at 73.66 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4038,7 +4028,6 @@
 	(hierarchical_label "{PWM_PHASE}"
 		(shape input)
 		(at 73.66 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4052,7 +4041,6 @@
 	(hierarchical_label "MOTOR_ENABLE"
 		(shape input)
 		(at 73.66 196.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4065,7 +4053,6 @@
 	(hierarchical_label "{DRV_SPI}"
 		(shape bidirectional)
 		(at 73.66 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4079,7 +4066,6 @@
 	(hierarchical_label "MOTOR_FAULT"
 		(shape output)
 		(at 73.66 191.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4092,7 +4078,6 @@
 	(hierarchical_label "{CURRENT_SENSE}"
 		(shape output)
 		(at 73.66 160.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4166,13 +4151,9 @@
 			(uuid "643ee309-34d1-4ab6-84c2-8bbbfab5a179")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP63")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4241,7 +4222,7 @@
 			(uuid "471d23a2-8e6a-4fcd-8079-9fb75dc77bff")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR032")
 					(unit 1)
@@ -4312,13 +4293,9 @@
 			(uuid "b715acb3-fb4e-468a-ba10-a0f86a28b000")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP69")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4387,7 +4364,7 @@
 			(uuid "54447cc2-6105-4ee5-b7e2-71c58be25e65")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR027")
 					(unit 1)
@@ -4500,7 +4477,7 @@
 			(uuid "af991217-2e74-494d-8358-d453fc3ea3d4")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C90")
 					(unit 1)
@@ -4571,13 +4548,9 @@
 			(uuid "2d94c5a5-1837-45ab-ae5a-262de52100b9")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP72")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -4646,7 +4619,7 @@
 			(uuid "c631a8ae-59a0-4f94-8f87-572b7dabce2b")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR030")
 					(unit 1)
@@ -4759,7 +4732,7 @@
 			(uuid "b636ef01-76aa-4862-b9db-0e7f30d43bee")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C92")
 					(unit 1)
@@ -4872,7 +4845,7 @@
 			(uuid "82f4035d-9b48-4a94-8539-c8b9ca69428d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C93")
 					(unit 1)
@@ -4944,7 +4917,7 @@
 			(uuid "5b6d5116-e864-4bd1-baa1-2f8e1b630d6d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR033")
 					(unit 1)
@@ -5016,7 +4989,7 @@
 			(uuid "be3608be-9b99-4f0c-910c-df5510887599")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR031")
 					(unit 1)
@@ -5129,7 +5102,7 @@
 			(uuid "ce17b32f-0f89-450e-9258-e9026dd11d9d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C89")
 					(unit 1)
@@ -5200,13 +5173,9 @@
 			(uuid "3ab22584-18fb-4cd2-8eeb-87269c535b09")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP73")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -5316,7 +5285,7 @@
 			(uuid "12e251ec-e679-4102-ae3e-4b5b748c8e67")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C94")
 					(unit 1)
@@ -5429,7 +5398,7 @@
 			(uuid "9b4787c6-dcb8-4e24-925c-f647a00e1532")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "R8")
 					(unit 1)
@@ -5500,13 +5469,9 @@
 			(uuid "246e69dc-8d79-40b2-9d77-0f4e83000f3a")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP66")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -5617,7 +5582,7 @@
 			(uuid "84e1a59e-9c9f-4263-84e0-a62260aa8449")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C88")
 					(unit 1)
@@ -5688,7 +5653,7 @@
 			(uuid "73c5abf7-7020-4626-b4b7-8270c64e1b86")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR028")
 					(unit 1)
@@ -5801,7 +5766,7 @@
 			(uuid "d77b2513-73dc-4bf4-85aa-d02fc37d10fb")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "C91")
 					(unit 1)
@@ -5873,7 +5838,7 @@
 			(uuid "8c384b23-41df-4871-b4b1-4fc85cd92a7f")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR034")
 					(unit 1)
@@ -5944,13 +5909,9 @@
 			(uuid "c701a156-54f2-411d-94f3-0ed267fb28c7")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP65")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6019,13 +5980,9 @@
 			(uuid "38543b5f-4e5a-4512-bdff-f8da5a74e135")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP60")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6094,13 +6051,9 @@
 			(uuid "43a6f0d7-f729-4830-9831-2b8b1ff73807")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP71")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6327,7 +6280,7 @@
 			(uuid "0efbde56-cf30-4564-b6a8-7d0c9e06e9de")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "U6")
 					(unit 1)
@@ -6397,7 +6350,7 @@
 			(uuid "344b6684-8688-458f-98b6-d2febbe3d5c0")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR026")
 					(unit 1)
@@ -6468,13 +6421,9 @@
 			(uuid "f9feffb1-e1fd-4ead-91e4-457f02d54015")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP62")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6543,13 +6492,9 @@
 			(uuid "04373156-300c-445f-8b76-6db345a8e379")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP68")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6660,7 +6605,7 @@
 			(uuid "dc163ba4-5273-4541-b859-2304aa291294")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "R9")
 					(unit 1)
@@ -6731,13 +6676,9 @@
 			(uuid "cfeb5a2f-ea3b-4463-ba93-fe9211a6ac57")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP59")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6806,13 +6747,9 @@
 			(uuid "823b9066-42a9-452e-b0e9-da443cec033e")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP70")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6882,7 +6819,7 @@
 			(uuid "026b41cb-51e6-4a41-911f-df484d5e128e")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "#PWR029")
 					(unit 1)
@@ -6953,13 +6890,9 @@
 			(uuid "c41355ee-16c5-43b4-9e8a-30b7f9257587")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP64")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -7028,13 +6961,9 @@
 			(uuid "d2ab4ef7-8db1-427b-8b40-9d4368e15fdc")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP67")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -7103,13 +7032,9 @@
 			(uuid "e520c502-0d11-42c3-b47e-9ef7469983a4")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3"
 					(reference "TP61")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -7118,6 +7043,10 @@
 	(sheet
 		(at 243.84 104.14)
 		(size 36.83 67.31)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -7150,6 +7079,7 @@
 		)
 		(pin "GATE_HS_C" input
 			(at 243.84 153.67 180)
+			(uuid "4a8613c0-bde4-4dcd-a858-e66c1d390c89")
 			(effects
 				(font
 					(face "Arial")
@@ -7157,10 +7087,10 @@
 				)
 				(justify left)
 			)
-			(uuid "4a8613c0-bde4-4dcd-a858-e66c1d390c89")
 		)
 		(pin "SRC_HS_C" output
 			(at 243.84 156.21 180)
+			(uuid "d0b0da3f-4aaf-4606-8fb0-8db6273aece4")
 			(effects
 				(font
 					(face "Arial")
@@ -7168,10 +7098,10 @@
 				)
 				(justify left)
 			)
-			(uuid "d0b0da3f-4aaf-4606-8fb0-8db6273aece4")
 		)
 		(pin "GATE_LS_C" input
 			(at 243.84 158.75 180)
+			(uuid "fa407cb1-124a-4855-8d17-544ae49d270a")
 			(effects
 				(font
 					(face "Arial")
@@ -7179,10 +7109,10 @@
 				)
 				(justify left)
 			)
-			(uuid "fa407cb1-124a-4855-8d17-544ae49d270a")
 		)
 		(pin "SHUNT_P_C" output
 			(at 243.84 163.83 180)
+			(uuid "ffebd2ea-a254-46fc-8c44-4dd36414f6ab")
 			(effects
 				(font
 					(face "Arial")
@@ -7190,10 +7120,10 @@
 				)
 				(justify left)
 			)
-			(uuid "ffebd2ea-a254-46fc-8c44-4dd36414f6ab")
 		)
 		(pin "SHUNT_N_C" output
 			(at 243.84 166.37 180)
+			(uuid "1e44b73e-7b2c-49ad-b7de-b92732cb7a88")
 			(effects
 				(font
 					(face "Arial")
@@ -7201,10 +7131,10 @@
 				)
 				(justify left)
 			)
-			(uuid "1e44b73e-7b2c-49ad-b7de-b92732cb7a88")
 		)
 		(pin "SRC_HS_B" output
 			(at 243.84 133.35 180)
+			(uuid "6ec1341d-56cc-4c99-a059-c210e390e748")
 			(effects
 				(font
 					(face "Arial")
@@ -7212,10 +7142,10 @@
 				)
 				(justify left)
 			)
-			(uuid "6ec1341d-56cc-4c99-a059-c210e390e748")
 		)
 		(pin "SHUNT_P_B" output
 			(at 243.84 140.97 180)
+			(uuid "c5d3d133-ef93-4d16-a8c6-c2c7d95aa000")
 			(effects
 				(font
 					(face "Arial")
@@ -7223,10 +7153,10 @@
 				)
 				(justify left)
 			)
-			(uuid "c5d3d133-ef93-4d16-a8c6-c2c7d95aa000")
 		)
 		(pin "SHUNT_N_B" output
 			(at 243.84 143.51 180)
+			(uuid "3ef48bcc-9da0-4aa5-a0bc-5f7154c49d8c")
 			(effects
 				(font
 					(face "Arial")
@@ -7234,10 +7164,10 @@
 				)
 				(justify left)
 			)
-			(uuid "3ef48bcc-9da0-4aa5-a0bc-5f7154c49d8c")
 		)
 		(pin "GATE_HS_B" input
 			(at 243.84 130.81 180)
+			(uuid "a98cd38b-5c17-4893-82be-e19b966aa741")
 			(effects
 				(font
 					(face "Arial")
@@ -7245,10 +7175,10 @@
 				)
 				(justify left)
 			)
-			(uuid "a98cd38b-5c17-4893-82be-e19b966aa741")
 		)
 		(pin "SRC_HS_A" output
 			(at 243.84 110.49 180)
+			(uuid "99b39ff0-fd16-40a5-9c15-3d3362bec087")
 			(effects
 				(font
 					(face "Arial")
@@ -7256,10 +7186,10 @@
 				)
 				(justify left)
 			)
-			(uuid "99b39ff0-fd16-40a5-9c15-3d3362bec087")
 		)
 		(pin "GATE_LS_A" input
 			(at 243.84 113.03 180)
+			(uuid "26d157ec-8281-45ca-b0b4-304d195a7d45")
 			(effects
 				(font
 					(face "Arial")
@@ -7267,10 +7197,10 @@
 				)
 				(justify left)
 			)
-			(uuid "26d157ec-8281-45ca-b0b4-304d195a7d45")
 		)
 		(pin "GATE_HS_A" input
 			(at 243.84 107.95 180)
+			(uuid "7cd72280-e051-4d72-a19f-f55a3ba64144")
 			(effects
 				(font
 					(face "Arial")
@@ -7278,10 +7208,10 @@
 				)
 				(justify left)
 			)
-			(uuid "7cd72280-e051-4d72-a19f-f55a3ba64144")
 		)
 		(pin "SHUNT_P_A" output
 			(at 243.84 118.11 180)
+			(uuid "d54e8497-f952-4e1e-adb4-c1aec0613cbf")
 			(effects
 				(font
 					(face "Arial")
@@ -7289,10 +7219,10 @@
 				)
 				(justify left)
 			)
-			(uuid "d54e8497-f952-4e1e-adb4-c1aec0613cbf")
 		)
 		(pin "SHUNT_N_A" output
 			(at 243.84 120.65 180)
+			(uuid "5f122255-9f01-463a-a6cc-4a7f8d01a415")
 			(effects
 				(font
 					(face "Arial")
@@ -7300,10 +7230,10 @@
 				)
 				(justify left)
 			)
-			(uuid "5f122255-9f01-463a-a6cc-4a7f8d01a415")
 		)
 		(pin "GATE_LS_B" input
 			(at 243.84 135.89 180)
+			(uuid "aaf35aff-85a9-4637-b603-4ba048563124")
 			(effects
 				(font
 					(face "Arial")
@@ -7311,7 +7241,6 @@
 				)
 				(justify left)
 			)
-			(uuid "aaf35aff-85a9-4637-b603-4ba048563124")
 		)
 		(instances
 			(project "ethrc_motor_controller"

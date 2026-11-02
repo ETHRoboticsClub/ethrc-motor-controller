@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
@@ -12,7 +12,9 @@
 	)
 	(lib_symbols
 		(symbol "0_transistor_fet:PMV90ENER"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -96,115 +98,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -3.81) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -3.81) (xy 2.54 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -2.54 0) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -3.81) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -240,10 +134,94 @@
 				)
 				(polyline
 					(pts
+						(xy -2.54 -3.81) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.81) (xy 2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -2.032 -1.778) (xy -2.159 -1.905) (xy -2.921 -1.905) (xy -3.048 -2.032)
 					)
 					(stroke
 						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -266,6 +244,74 @@
 					(pts
 						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -3.81) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -3.81)
+					(radius 0.254)
 					(stroke
 						(width 0)
 						(type default)
@@ -298,50 +344,6 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -3.81)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
 			(symbol "PMV90ENER_1_1"
 				(pin input line
@@ -355,24 +357,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -6.35 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -398,12 +382,35 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -6.35 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -471,10 +478,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -495,7 +514,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -507,22 +526,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -568,11 +575,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -690,6 +702,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
@@ -767,7 +780,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -779,7 +792,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -793,7 +806,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+5V"
 						(effects
 							(font
@@ -810,6 +824,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -889,7 +904,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -906,7 +922,140 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 146.05 77.47)
+		(end 153.67 87.63)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0763aa0c-267f-4c1d-81c8-01b2e2b05d15)
+	)
+	(rectangle
+		(start 71.12 40.64)
+		(end 222.25 140.97)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 14d96656-cdb9-4f57-a818-681c7e2a833d)
+	)
+	(rectangle
+		(start 194.31 77.47)
+		(end 201.93 87.63)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 66947a53-0b1e-4615-ba12-dc16ec99eda8)
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 80.01 16.51 0)
+		(size 137.16 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "2875c24f-b49b-40db-896a-7ff502597cf9")
+	)
+	(text_box "DESIGN NOTE:\nWe aim for a luminosity of 1000 mcd.\n\nLED_DBG (YELLOW) Vf = 2 V\n1000 mcd @ 30 mA\nR = (5V - 2V)/30mA = 100 Ohm\nP = (5V - 2V)×30mA = 90 mW\n\nLED_PWR (GREEN) Vf = 3 V\n1550 mcd @ 25 mA\n1000 mcd @ 13 mA\nR = (5V - 3V)/13mA = 150 Ohm\nP = (5V - 3V)×13mA = 26 mW"
+		(exclude_from_sim no)
+		(at 110.49 57.15 0)
+		(size 33.02 31.75)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "30d8c572-02ef-4628-9a55-9f2c8715df18")
+	)
+	(text_box "DESIGN NOTE:\nUse low viewing angle, high mcd LEDs to avoid light bleeding onto adjacent light pipes."
+		(exclude_from_sim no)
+		(at 167.64 72.39 0)
+		(size 22.86 12.7)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "4fb612c8-6eec-4189-acf7-df33a3056ce5")
+	)
+	(text_box "LED Indicators"
+		(exclude_from_sim no)
+		(at 72.39 132.08 0)
+		(size 148.59 6.985)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "f01ba379-9105-4652-b44a-bbef48b12568")
 	)
 	(junction
 		(at 176.53 109.22)
@@ -1308,45 +1457,6 @@
 		)
 		(uuid "ff01a8e3-a24d-4486-a5d5-6812b2feb49b")
 	)
-	(rectangle
-		(start 146.05 77.47)
-		(end 153.67 87.63)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0763aa0c-267f-4c1d-81c8-01b2e2b05d15)
-	)
-	(rectangle
-		(start 71.12 40.64)
-		(end 222.25 140.97)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 14d96656-cdb9-4f57-a818-681c7e2a833d)
-	)
-	(rectangle
-		(start 194.31 77.47)
-		(end 201.93 87.63)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 66947a53-0b1e-4615-ba12-dc16ec99eda8)
-	)
 	(image
 		(at 91.44 69.85)
 		(scale 0.147821)
@@ -1746,98 +1856,8 @@
 			"SmfVDgAApft/JusEPzUX1XcAAAAASUVORK5CYII="
 		)
 	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 80.01 16.51 0)
-		(size 137.16 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "2875c24f-b49b-40db-896a-7ff502597cf9")
-	)
-	(text_box "DESIGN NOTE:\nWe aim for a luminosity of 1000 mcd.\n\nLED_DBG (YELLOW) Vf = 2 V\n1000 mcd @ 30 mA\nR = (5V - 2V)/30mA = 100 Ohm\nP = (5V - 2V)×30mA = 90 mW\n\nLED_PWR (GREEN) Vf = 3 V\n1550 mcd @ 25 mA\n1000 mcd @ 13 mA\nR = (5V - 3V)/13mA = 150 Ohm\nP = (5V - 3V)×13mA = 26 mW"
-		(exclude_from_sim no)
-		(at 110.49 57.15 0)
-		(size 33.02 31.75)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "30d8c572-02ef-4628-9a55-9f2c8715df18")
-	)
-	(text_box "DESIGN NOTE:\nUse low viewing angle, high mcd LEDs to avoid light bleeding onto adjacent light pipes."
-		(exclude_from_sim no)
-		(at 167.64 72.39 0)
-		(size 22.86 12.7)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "4fb612c8-6eec-4189-acf7-df33a3056ce5")
-	)
-	(text_box "LED Indicators"
-		(exclude_from_sim no)
-		(at 72.39 132.08 0)
-		(size 148.59 6.985)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "f01ba379-9105-4652-b44a-bbef48b12568")
-	)
 	(label "LED_DBG_A"
 		(at 149.86 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1849,7 +1869,6 @@
 	)
 	(label "LED_DBG_K"
 		(at 149.86 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1861,7 +1880,6 @@
 	)
 	(label "LED_DBG"
 		(at 106.68 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1873,7 +1891,6 @@
 	)
 	(label "LED_PWR_K"
 		(at 198.12 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1885,7 +1902,6 @@
 	)
 	(label "PWR_G"
 		(at 185.42 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1897,7 +1913,6 @@
 	)
 	(label "DBG_G"
 		(at 137.16 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1909,7 +1924,6 @@
 	)
 	(label "LED_PWR_A"
 		(at 198.12 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1921,7 +1935,6 @@
 	)
 	(label "LED_PWR"
 		(at 106.68 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1934,7 +1947,6 @@
 	(hierarchical_label "{LED}"
 		(shape input)
 		(at 93.98 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2056,12 +2068,8 @@
 			(uuid "3e848545-3840-436d-b02d-42e8a644df56")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
-					(reference "Q7")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a6cb2049-0230-448a-abe7-a100286c1c6c"
 					(reference "Q7")
 					(unit 1)
 				)
@@ -2170,13 +2178,9 @@
 			(uuid "343f4ff5-68e8-45ad-9940-0a2a18fdcfda")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "R22")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d359abe5-ae6a-4888-8140-3e6566d20c15"
-					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -2246,7 +2250,7 @@
 			(uuid "7465ce27-d564-44cb-8902-3ef6c0221ee8")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "#PWR040")
 					(unit 1)
@@ -2365,13 +2369,9 @@
 			(uuid "2bceb45a-58e1-4d64-8ced-3bc58f406bc7")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "Q8")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/a6cb2049-0230-448a-abe7-a100286c1c6c"
-					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -2482,7 +2482,7 @@
 			(uuid "861a552c-f802-410d-a932-d38d27fe9ae3")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "R26")
 					(unit 1)
@@ -2553,7 +2553,7 @@
 			(uuid "9a07e285-e346-4e2d-a90b-925c64c2cb75")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "#PWR041")
 					(unit 1)
@@ -2571,7 +2571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b5a02b4-2ce7-493e-b5ad-f4311b5d8144")
-		(property "Reference" "R18"
+		(property "Reference" "R21"
 			(at 130.81 101.6 0)
 			(effects
 				(font
@@ -2666,11 +2666,7 @@
 			(uuid "3a232e23-0925-4beb-abff-d3aa9d66cb1a")
 		)
 		(instances
-			(project "pcb2blender_tmp"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/07dcaf51-abc9-470d-8bd8-30b1c54b6fbd"
-					(reference "R18")
-					(unit 1)
-				)
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "R21")
 					(unit 1)
@@ -2742,7 +2738,7 @@
 			(uuid "b05dc8e4-c7f1-4a8d-ac2d-5ca1de645372")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "#PWR039")
 					(unit 1)
@@ -2854,7 +2850,7 @@
 			(uuid "e40e31df-a90d-4869-95cc-6576c382c3aa")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "D13")
 					(unit 1)
@@ -2964,13 +2960,9 @@
 			(uuid "5c315460-726d-4800-b141-5730f7aa37bf")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "R25")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d359abe5-ae6a-4888-8140-3e6566d20c15"
-					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -2986,7 +2978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5954a67-c3b9-4dac-a567-1977b0c670d4")
-		(property "Reference" "R18"
+		(property "Reference" "R24"
 			(at 179.07 101.6 0)
 			(effects
 				(font
@@ -3081,11 +3073,7 @@
 			(uuid "16eea938-27b4-442b-add0-2728fe583dc9")
 		)
 		(instances
-			(project "pcb2blender_tmp"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/07dcaf51-abc9-470d-8bd8-30b1c54b6fbd"
-					(reference "R18")
-					(unit 1)
-				)
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "R24")
 					(unit 1)
@@ -3197,7 +3185,7 @@
 			(uuid "2bd39a6c-fe63-457f-99a9-86faff753b7c")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "D12")
 					(unit 1)
@@ -3309,13 +3297,9 @@
 			(uuid "e419f7dd-34fb-414b-b3e1-45dbb1b99f20")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/37954a46-d14f-4062-b94e-09ed11854078"
 					(reference "R23")
-					(unit 1)
-				)
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d359abe5-ae6a-4888-8140-3e6566d20c15"
-					(reference "R30")
 					(unit 1)
 				)
 			)

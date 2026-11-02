@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
@@ -99,6 +99,60 @@
 						)
 					)
 				)
+				(pin output line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at -2.54 -10.16 90)
 					(length 2.54)
@@ -135,53 +189,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at -12.7 2.54 0)
+				(pin passive line
+					(at 2.54 -10.16 90)
 					(length 2.54)
-					(name "RXD"
+					(name "PAD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 10.16 270)
-					(length 2.54)
-					(name "VIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -207,35 +225,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 -5.08 0)
+				(pin bidirectional line
+					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "S"
+					(name "CANL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -10.16 90)
-					(length 2.54)
-					(name "PAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -244,11 +244,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -318,10 +323,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -330,10 +335,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -379,9 +384,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -500,6 +508,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -577,7 +586,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -589,7 +598,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -603,7 +612,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -620,6 +630,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
@@ -697,7 +708,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -709,7 +720,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -723,7 +734,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+5V"
 						(effects
 							(font
@@ -740,6 +752,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -819,7 +832,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -836,7 +850,177 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 83.82 49.53)
+		(end 218.44 138.43)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4445c2ec-23de-4b5f-b1f1-64d5425c75cf)
+	)
+	(rectangle
+		(start 125.73 101.6)
+		(end 133.35 109.22)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c4828628-d73b-43cf-b6b7-d19c7abb5cee)
+	)
+	(text_box "LAYOUT NOTE:\nPlace close to FD-CAN connector if possible to reduce stub length."
+		(exclude_from_sim no)
+		(at 184.15 101.6 0)
+		(size 29.21 11.43)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "494f1169-5ca6-49f0-a739-cc3645339763")
+	)
+	(text_box "LAYOUT NOTE:\nWe decided to route it further away to minimize risk of ground lift on the RX/TX lines due to high currents."
+		(exclude_from_sim no)
+		(at 184.15 115.57 0)
+		(size 29.21 12.7)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "995d2d97-7358-4651-8dfd-15614eb249e0")
+	)
+	(text_box "DESIGN NOTE:\n120-ohm termination in Interconnects sheet."
+		(exclude_from_sim no)
+		(at 87.63 115.57 0)
+		(size 31.75 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "cdb50ca7-bbc6-40b2-8d49-1793d523c00e")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 80.01 16.51 0)
+		(size 137.16 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "d389c860-4f15-41a3-8c62-6412267cbe6c")
+	)
+	(text_box "Fault Protected FD-CAN Transceiver"
+		(exclude_from_sim no)
+		(at 85.09 127 0)
+		(size 132.08 8.89)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "d7537cdc-344b-4860-b1fe-29bccfe051ee")
+	)
+	(text_box "DESIGN NOTE:\nSilent mode disabled."
+		(exclude_from_sim no)
+		(at 87.63 101.6 0)
+		(size 31.75 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e6d9b032-3be0-48bb-a469-46124126d0e3")
 	)
 	(junction
 		(at 134.62 67.31)
@@ -1229,172 +1413,8 @@
 		)
 		(uuid "fa2f20f9-c48b-493c-9374-cb7fb89141c7")
 	)
-	(rectangle
-		(start 83.82 49.53)
-		(end 218.44 138.43)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4445c2ec-23de-4b5f-b1f1-64d5425c75cf)
-	)
-	(rectangle
-		(start 125.73 101.6)
-		(end 133.35 109.22)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid c4828628-d73b-43cf-b6b7-d19c7abb5cee)
-	)
-	(text_box "LAYOUT NOTE:\nPlace close to FD-CAN connector if possible to reduce stub length."
-		(exclude_from_sim no)
-		(at 184.15 101.6 0)
-		(size 29.21 11.43)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "494f1169-5ca6-49f0-a739-cc3645339763")
-	)
-	(text_box "LAYOUT NOTE:\nWe decided to route it further away to minimize risk of ground lift on the RX/TX lines due to high currents."
-		(exclude_from_sim no)
-		(at 184.15 115.57 0)
-		(size 29.21 12.7)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "995d2d97-7358-4651-8dfd-15614eb249e0")
-	)
-	(text_box "DESIGN NOTE:\n120-ohm termination in Interconnects sheet."
-		(exclude_from_sim no)
-		(at 87.63 115.57 0)
-		(size 31.75 11.43)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "cdb50ca7-bbc6-40b2-8d49-1793d523c00e")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 80.01 16.51 0)
-		(size 137.16 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "d389c860-4f15-41a3-8c62-6412267cbe6c")
-	)
-	(text_box "Fault Protected FD-CAN Transceiver"
-		(exclude_from_sim no)
-		(at 85.09 127 0)
-		(size 132.08 8.89)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "d7537cdc-344b-4860-b1fe-29bccfe051ee")
-	)
-	(text_box "DESIGN NOTE:\nSilent mode disabled."
-		(exclude_from_sim no)
-		(at 87.63 101.6 0)
-		(size 31.75 11.43)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "e6d9b032-3be0-48bb-a469-46124126d0e3")
-	)
 	(label "FDCAN_TX"
 		(at 128.27 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1406,7 +1426,6 @@
 	)
 	(label "FDCAN_S"
 		(at 137.16 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1418,7 +1437,6 @@
 	)
 	(label "FDCAN_P"
 		(at 176.53 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1430,7 +1448,6 @@
 	)
 	(label "FDCAN_RX"
 		(at 128.27 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1442,7 +1459,6 @@
 	)
 	(label "FDCAN_N"
 		(at 176.53 97.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1455,7 +1471,6 @@
 	(hierarchical_label "{FDCAN_TTL}"
 		(shape bidirectional)
 		(at 118.11 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1469,7 +1484,6 @@
 	(hierarchical_label "{FDCAN}"
 		(shape bidirectional)
 		(at 186.69 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -1605,7 +1619,7 @@
 			(uuid "da51262f-067a-493f-8ee5-e218e269bfd0")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "U10")
 					(unit 1)
@@ -1676,7 +1690,7 @@
 			(uuid "394030b1-3d3a-4ac3-abbb-facc52ad67eb")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "#PWR056")
 					(unit 1)
@@ -1748,7 +1762,7 @@
 			(uuid "9421a88f-ef89-4542-9e09-71ba942649c2")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "#PWR055")
 					(unit 1)
@@ -1819,7 +1833,7 @@
 			(uuid "c81fa75c-2d51-4802-b09d-ea016212e779")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "#PWR057")
 					(unit 1)
@@ -1892,7 +1906,7 @@
 			(uuid "af70e141-3f9a-4998-9e51-8244fb2a8c9c")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "#PWR059")
 					(unit 1)
@@ -2004,7 +2018,7 @@
 			(uuid "895b2094-56f4-49fe-95fd-3b6e9069a038")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "C109")
 					(unit 1)
@@ -2075,7 +2089,7 @@
 			(uuid "15276f3a-af8b-47e5-ac31-6bc623d9e821")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "#PWR058")
 					(unit 1)
@@ -2188,7 +2202,7 @@
 			(uuid "d97d0e1a-e874-4ce9-8de1-6c0f3e768cc4")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "C108")
 					(unit 1)
@@ -2301,7 +2315,7 @@
 			(uuid "0b29fdf5-9276-4afd-8e27-b50192500a46")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "R33")
 					(unit 1)

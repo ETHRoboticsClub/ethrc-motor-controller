@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
@@ -88,18 +88,6 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -2.794 0)
-					(mid 0 -2.7819)
-					(end 2.794 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -2.794 0) (xy -3.302 -0.508)
@@ -118,6 +106,54 @@
 					)
 					(stroke
 						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0.254 0.254) (xy -0.254 -0.254) (xy -1.27 0.762) (xy -1.016 1.016) (xy -0.762 1.27)
+						(xy -0.635 1.143)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 2.794 0)
+					(mid 0 -2.7819)
+					(end -2.794 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.032)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.254) (xy 1.27 -0.762) (xy 0.762 -1.27) (xy -0.254 -0.254)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -148,42 +184,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.254 0.254) (xy 1.27 -0.762) (xy 0.762 -1.27) (xy -0.254 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0.254 0.254) (xy -0.254 -0.254) (xy -1.27 0.762) (xy -1.016 1.016) (xy -0.762 1.27)
-						(xy -0.635 1.143)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 2.032)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin input line
 					(at -12.7 7.62 0)
 					(length 2.54)
@@ -195,96 +195,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "U"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -1.27 12.7 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 1.27 12.7 270)
-					(length 2.54)
-					(name "VDD3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "I/PWM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -364,17 +274,53 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 5.08 180)
+				(pin power_in line
+					(at -1.27 12.7 270)
 					(length 2.54)
-					(name "B"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 1.27 12.7 270)
+					(length 2.54)
+					(name "VDD3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -401,16 +347,52 @@
 					)
 				)
 				(pin output line
-					(at 12.7 -7.62 180)
+					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "W/PWM"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "I/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "U"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -436,10 +418,31 @@
 						)
 					)
 				)
+				(pin output line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "W/PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -512,7 +515,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -524,7 +527,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -573,11 +576,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -647,10 +655,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -659,10 +667,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -708,11 +716,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -830,6 +843,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Sensor_Magnetic:AS5048B"
 			(exclude_from_sim no)
@@ -910,18 +924,6 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -2.794 0)
-					(mid 0 -2.7819)
-					(end 2.794 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -2.794 0) (xy -3.302 -0.508)
@@ -938,6 +940,18 @@
 					(pts
 						(xy -2.794 0) (xy -2.286 -0.508)
 					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.794 0)
+					(mid 0 -2.7819)
+					(end -2.794 0)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -974,18 +988,6 @@
 			(symbol "AS5048B_1_1"
 				(polyline
 					(pts
-						(xy 0.254 0.254) (xy 1.27 -0.762) (xy 0.762 -1.27) (xy -0.254 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -0.762 1.27) (xy 0.254 0.254) (xy -0.254 -0.254) (xy -1.27 0.762) (xy -1.016 1.016) (xy -0.762 1.27)
 						(xy -0.635 1.143)
 					)
@@ -1008,125 +1010,29 @@
 						(type none)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 0.254 0.254) (xy 1.27 -0.762) (xy 0.762 -1.27) (xy -0.254 -0.254)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
 					)
-				)
-				(pin passive line
-					(at 5.08 -12.7 90)
-					(length 2.54)
-					(name "TEST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name "VDD5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 12.7 270)
-					(length 2.54)
-					(name "VDD3V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "PWM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
 				(pin input line
-					(at -12.7 2.54 0)
+					(at -12.7 7.62 0)
 					(length 2.54)
-					(name "SCL"
+					(name "A1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1153,16 +1059,34 @@
 					)
 				)
 				(pin input line
-					(at -12.7 7.62 0)
+					(at -12.7 2.54 0)
 					(length 2.54)
-					(name "A1"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1206,6 +1130,24 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 12.7 270)
+					(length 2.54)
+					(name "VDD3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at -2.54 -12.7 90)
 					(length 2.54)
@@ -1217,6 +1159,24 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VDD5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1260,7 +1220,62 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 5.08 -12.7 90)
+					(length 2.54)
+					(name "TEST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -1338,7 +1353,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1350,7 +1365,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1364,7 +1379,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1381,6 +1397,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1460,7 +1477,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1477,12 +1495,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1573,7 +1596,273 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 152.4 57.15)
+		(end 266.7 133.35)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0f6f3483-8f48-4c5b-a3c3-d492cb8e261a)
+	)
+	(rectangle
+		(start 30.48 57.15)
+		(end 144.78 133.35)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 25468a39-694f-4afd-838d-deff3c266863)
+	)
+	(rectangle
+		(start 71.12 62.23)
+		(end 78.74 71.12)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 2c0f6b9c-98b1-465c-9f90-d4cbde192318)
+	)
+	(rectangle
+		(start 198.12 62.23)
+		(end 205.74 71.12)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6a479b66-4632-492b-a06a-2604abc027e6)
+	)
+	(text_box "DESIGN NOTE:\nVDD = VDD3V3 = 3.3 V for 3V3 operation"
+		(exclude_from_sim no)
+		(at 234.95 62.23 0)
+		(size 22.86 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "240703e9-4e26-4647-86da-cbf7ec9e4522")
+	)
+	(text_box "DESIGN NOTE:\nThe encoder for disambiguation cannot be used to estimate backlash!"
+		(exclude_from_sim no)
+		(at 154.94 95.25 0)
+		(size 16.51 15.24)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "50f86a90-7af0-4b3c-b24d-b79a8c917e8a")
+	)
+	(text_box "14-Bit On-Axis Magnetic Rotary Position Sensor (disambiguation)"
+		(exclude_from_sim no)
+		(at 153.67 121.92 0)
+		(size 111.76 8.89)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "52c9493a-7325-4ded-89d3-a1d4839283ac")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 80.01 16.51 0)
+		(size 137.16 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "5f511d41-855c-45e4-97c1-f98489adeb1f")
+	)
+	(text_box "DESIGN NOTE:\nVDD = VDD3V3 = 3.3 V for 3V3 operation"
+		(exclude_from_sim no)
+		(at 91.44 68.58 0)
+		(size 22.86 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "766fdca9-31be-48d6-95d6-1af98650fe63")
+	)
+	(text_box "LAYOUT NOTE:\nPlace commutation encoder at the center of the board. \nRight now it is quite close to current-carrying traces but the chip should be immune to stray magnetic fields."
+		(exclude_from_sim no)
+		(at 99.06 101.6 0)
+		(size 35.56 17.78)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "782b7052-f0af-4edb-adf3-32d97486b168")
+	)
+	(text_box "DESIGN NOTE:\nAS5047P senses magnet mounted on planetary sun gear, for commutation.\nAS5048B senses magnet mounted on shaft with same reduction factor as planetary gearbox for disambiguation."
+		(exclude_from_sim no)
+		(at 30.48 137.16 0)
+		(size 49.53 13.97)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "7e93b180-b4f0-4611-9d56-48728b9dc0a8")
+	)
+	(text_box "14-Bit On-Axis Magnetic Rotary Position Sensor (commutation)"
+		(exclude_from_sim no)
+		(at 31.75 120.65 0)
+		(size 111.76 10.16)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "8a654888-88a0-48ea-912b-e3d473cbbac0")
+	)
+	(text_box "LAYOUT NOTE:\nEncoder for disambiguation must be mechanically placed according to actuator CAD and magnet placement. "
+		(exclude_from_sim no)
+		(at 228.6 105.41 0)
+		(size 29.21 13.97)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "8f76d795-6e37-46b5-ae8c-44b7a8ad27cd")
 	)
 	(junction
 		(at 207.01 68.58)
@@ -2293,265 +2582,8 @@
 		)
 		(uuid "f4d9ee63-45ed-4d04-a9f3-733caa3152c1")
 	)
-	(rectangle
-		(start 152.4 57.15)
-		(end 266.7 133.35)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0f6f3483-8f48-4c5b-a3c3-d492cb8e261a)
-	)
-	(rectangle
-		(start 30.48 57.15)
-		(end 144.78 133.35)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 25468a39-694f-4afd-838d-deff3c266863)
-	)
-	(rectangle
-		(start 71.12 62.23)
-		(end 78.74 71.12)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 2c0f6b9c-98b1-465c-9f90-d4cbde192318)
-	)
-	(rectangle
-		(start 198.12 62.23)
-		(end 205.74 71.12)
-		(stroke
-			(width 0)
-			(type dot)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6a479b66-4632-492b-a06a-2604abc027e6)
-	)
-	(text_box "DESIGN NOTE:\nVDD = VDD3V3 = 3.3 V for 3V3 operation"
-		(exclude_from_sim no)
-		(at 234.95 62.23 0)
-		(size 22.86 11.43)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 255 165 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "240703e9-4e26-4647-86da-cbf7ec9e4522")
-	)
-	(text_box "DESIGN NOTE:\nThe encoder for disambiguation cannot be used to estimate backlash!"
-		(exclude_from_sim no)
-		(at 154.94 95.25 0)
-		(size 16.51 15.24)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 250 236 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "50f86a90-7af0-4b3c-b24d-b79a8c917e8a")
-	)
-	(text_box "14-Bit On-Axis Magnetic Rotary Position Sensor (disambiguation)"
-		(exclude_from_sim no)
-		(at 153.67 121.92 0)
-		(size 111.76 8.89)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "52c9493a-7325-4ded-89d3-a1d4839283ac")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 80.01 16.51 0)
-		(size 137.16 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "5f511d41-855c-45e4-97c1-f98489adeb1f")
-	)
-	(text_box "DESIGN NOTE:\nVDD = VDD3V3 = 3.3 V for 3V3 operation"
-		(exclude_from_sim no)
-		(at 91.44 68.58 0)
-		(size 22.86 11.43)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 255 165 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "766fdca9-31be-48d6-95d6-1af98650fe63")
-	)
-	(text_box "LAYOUT NOTE:\nPlace commutation encoder at the center of the board. \nRight now it is quite close to current-carrying traces but the chip should be immune to stray magnetic fields."
-		(exclude_from_sim no)
-		(at 99.06 101.6 0)
-		(size 35.56 17.78)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "782b7052-f0af-4edb-adf3-32d97486b168")
-	)
-	(text_box "DESIGN NOTE:\nAS5047P senses magnet mounted on planetary sun gear, for commutation.\nAS5048B senses magnet mounted on shaft with same reduction factor as planetary gearbox for disambiguation."
-		(exclude_from_sim no)
-		(at 30.48 137.16 0)
-		(size 49.53 13.97)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "7e93b180-b4f0-4611-9d56-48728b9dc0a8")
-	)
-	(text_box "14-Bit On-Axis Magnetic Rotary Position Sensor (commutation)"
-		(exclude_from_sim no)
-		(at 31.75 120.65 0)
-		(size 111.76 10.16)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "8a654888-88a0-48ea-912b-e3d473cbbac0")
-	)
-	(text_box "LAYOUT NOTE:\nEncoder for disambiguation must be mechanically placed according to actuator CAD and magnet placement. "
-		(exclude_from_sim no)
-		(at 228.6 105.41 0)
-		(size 29.21 13.97)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "8f76d795-6e37-46b5-ae8c-44b7a8ad27cd")
-	)
 	(label "AUX2_C"
 		(at 240.03 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2563,7 +2595,6 @@
 	)
 	(label "AUX1_C"
 		(at 114.3 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2575,7 +2606,6 @@
 	)
 	(label "AUX2_B"
 		(at 240.03 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2587,7 +2617,6 @@
 	)
 	(label "AUX1_A"
 		(at 114.3 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2599,7 +2628,6 @@
 	)
 	(label "POS_SENSOR_CS"
 		(at 114.3 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2611,7 +2639,6 @@
 	)
 	(label "COMM_VDD"
 		(at 80.01 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2623,7 +2650,6 @@
 	)
 	(label "AUX1_B"
 		(at 114.3 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2635,7 +2661,6 @@
 	)
 	(label "DIS_VDD3V"
 		(at 207.01 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2648,7 +2673,6 @@
 	(hierarchical_label "{AUX1}"
 		(shape bidirectional)
 		(at 125.73 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2662,7 +2686,6 @@
 	(hierarchical_label "{AUX2}"
 		(shape bidirectional)
 		(at 251.46 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -2778,7 +2801,7 @@
 			(uuid "df25d959-c81c-4a95-95b2-f8c8f369da31")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "C104")
 					(unit 1)
@@ -2889,7 +2912,7 @@
 			(uuid "0c7fe17d-eacf-4800-b911-5ed132dc3e64")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "R31")
 					(unit 1)
@@ -3001,7 +3024,7 @@
 			(uuid "90ac858b-f90f-4dbd-a9f0-f4a72d3e4b14")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "C106")
 					(unit 1)
@@ -3072,7 +3095,7 @@
 			(uuid "4a0e562b-32db-4400-9d29-fc024b429356")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR047")
 					(unit 1)
@@ -3144,7 +3167,7 @@
 			(uuid "b17df90c-ca67-4b47-830d-0956e023bea2")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#FLG010")
 					(unit 1)
@@ -3216,7 +3239,7 @@
 			(uuid "419d2625-3202-4f75-bd20-3a4bb008b7e5")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR048")
 					(unit 1)
@@ -3365,7 +3388,7 @@
 			(uuid "5a89dccd-23d3-470c-922c-f27999612816")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "U7")
 					(unit 1)
@@ -3437,7 +3460,7 @@
 			(uuid "411c3190-753e-46f8-918a-4734051d8376")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR050")
 					(unit 1)
@@ -3586,7 +3609,7 @@
 			(uuid "a9c759c8-07f9-478a-9ca7-f5beada3a19f")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "U8")
 					(unit 1)
@@ -3697,7 +3720,7 @@
 			(uuid "83c86b3b-a7e7-4d94-8cd0-a5e4302f822e")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "R32")
 					(unit 1)
@@ -3768,7 +3791,7 @@
 			(uuid "a4f17c37-0080-4559-a3c9-01146dad945d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR049")
 					(unit 1)
@@ -3840,7 +3863,7 @@
 			(uuid "f8e28cb6-a538-47a5-8dd8-82677f161a9e")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR051")
 					(unit 1)
@@ -3912,7 +3935,7 @@
 			(uuid "45bfe4eb-a936-43b3-bfe1-caf809478229")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#FLG09")
 					(unit 1)
@@ -4025,7 +4048,7 @@
 			(uuid "f92b913f-9e2f-441e-a873-06d21999985e")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "C105")
 					(unit 1)

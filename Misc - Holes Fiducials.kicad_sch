@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
@@ -75,18 +75,6 @@
 			(symbol "CHASSIS_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
 					)
 					(stroke
@@ -103,6 +91,18 @@
 					)
 					(stroke
 						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -161,7 +161,8 @@
 			(symbol "CHASSIS_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "CHASSIS"
 						(effects
 							(font
@@ -178,11 +179,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -252,10 +258,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -264,10 +270,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -313,11 +319,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -435,6 +446,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:Fiducial"
 			(exclude_from_sim no)
@@ -514,11 +526,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -616,6 +633,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -695,7 +713,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -712,12 +731,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -808,7 +832,199 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 57.15 50.8)
+		(end 191.77 139.7)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 82ae8423-861f-411a-a576-47afbe0c084e)
+	)
+	(rectangle
+		(start 196.85 50.8)
+		(end 238.76 139.7)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c43bbf9f-5608-4e8e-a85d-9703774f034f)
+	)
+	(text_box "Front"
+		(exclude_from_sim no)
+		(at 198.12 55.88 0)
+		(size 39.37 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify bottom)
+		)
+		(uuid "1d5b5447-d118-43c6-8e07-181e73a087b1")
+	)
+	(text_box "Back"
+		(exclude_from_sim no)
+		(at 198.12 83.82 0)
+		(size 39.37 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify bottom)
+		)
+		(uuid "675351b1-efd8-4338-b2dd-fe81908e1bcf")
+	)
+	(text_box "DESIGN NOTE:\n0-Ohm resistor provides low-impedance bond between chassis and signal GND. Be aware of ground loops through cable shield."
+		(exclude_from_sim no)
+		(at 127 113.03 0)
+		(size 34.29 12.7)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "6a246a01-23fc-4f1c-baf7-56a4e92e2a9d")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 78.74 16.51 0)
+		(size 137.16 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "6f6adca3-38fb-4548-991f-a67c696d3893")
+	)
+	(text_box "Fiducial Markers"
+		(exclude_from_sim no)
+		(at 198.12 128.27 0)
+		(size 39.37 8.89)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "9ef95005-5fe5-4dd8-807e-dabd6e8b6331")
+	)
+	(text_box "Mounting Holes and Chassis Connection"
+		(exclude_from_sim no)
+		(at 58.42 128.27 0)
+		(size 132.08 8.89)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "a72e32ee-68db-4ba6-b711-30c77c532aaa")
+	)
+	(text_box "DESIGN NOTE:\nOptional RC filter for chassis grounding. Capacitors offer multi-point low-impedance connections at high-frequencies."
+		(exclude_from_sim no)
+		(at 91.44 113.03 0)
+		(size 33.02 12.7)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "b0698c83-9d53-44ab-9c35-f058c0324aa4")
 	)
 	(junction
 		(at 110.49 86.36)
@@ -1200,190 +1416,6 @@
 		)
 		(uuid "ea9e97f7-a3eb-4ac8-a083-694c71ae9070")
 	)
-	(rectangle
-		(start 57.15 50.8)
-		(end 191.77 139.7)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 82ae8423-861f-411a-a576-47afbe0c084e)
-	)
-	(rectangle
-		(start 196.85 50.8)
-		(end 238.76 139.7)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid c43bbf9f-5608-4e8e-a85d-9703774f034f)
-	)
-	(text_box "Front"
-		(exclude_from_sim no)
-		(at 198.12 55.88 0)
-		(size 39.37 9.525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "1d5b5447-d118-43c6-8e07-181e73a087b1")
-	)
-	(text_box "Back"
-		(exclude_from_sim no)
-		(at 198.12 83.82 0)
-		(size 39.37 9.525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "675351b1-efd8-4338-b2dd-fe81908e1bcf")
-	)
-	(text_box "DESIGN NOTE:\n0-Ohm resistor provides low-impedance bond between chassis and signal GND. Be aware of ground loops through cable shield."
-		(exclude_from_sim no)
-		(at 127 113.03 0)
-		(size 34.29 12.7)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 250 236 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "6a246a01-23fc-4f1c-baf7-56a4e92e2a9d")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 78.74 16.51 0)
-		(size 137.16 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "6f6adca3-38fb-4548-991f-a67c696d3893")
-	)
-	(text_box "Fiducial Markers"
-		(exclude_from_sim no)
-		(at 198.12 128.27 0)
-		(size 39.37 8.89)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "9ef95005-5fe5-4dd8-807e-dabd6e8b6331")
-	)
-	(text_box "Mounting Holes and Chassis Connection"
-		(exclude_from_sim no)
-		(at 58.42 128.27 0)
-		(size 132.08 8.89)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "a72e32ee-68db-4ba6-b711-30c77c532aaa")
-	)
-	(text_box "DESIGN NOTE:\nOptional RC filter for chassis grounding. Capacitors offer multi-point low-impedance connections at high-frequencies."
-		(exclude_from_sim no)
-		(at 91.44 113.03 0)
-		(size 33.02 12.7)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 255 165 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "b0698c83-9d53-44ab-9c35-f058c0324aa4")
-	)
 	(symbol
 		(lib_id "power:GND")
 		(at 99.06 101.6 0)
@@ -1447,7 +1479,7 @@
 			(uuid "b4c1181e-e87e-49cc-96e6-bfce7fdf2b8b")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#PWR091")
 					(unit 1)
@@ -1560,7 +1592,7 @@
 			(uuid "cfdee5ff-8322-4c01-8509-34faf6a9db6b")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "C130")
 					(unit 1)
@@ -1628,7 +1660,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM2")
 					(unit 1)
@@ -1696,7 +1728,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM5")
 					(unit 1)
@@ -1809,7 +1841,7 @@
 			(uuid "505ad2f5-8084-4907-abfd-077c02252d3d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "R54")
 					(unit 1)
@@ -1881,7 +1913,7 @@
 			(uuid "5f437a36-fc3d-4eee-9ecc-e96d05a1f060")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "H1")
 					(unit 1)
@@ -1899,7 +1931,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b04810d-5775-4395-a967-9d7394e5cd73")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG011"
 			(at 110.49 84.455 0)
 			(effects
 				(font
@@ -1953,11 +1985,7 @@
 			(uuid "7eb31e5b-1e0a-4dfc-8c23-5de3edcf20b9")
 		)
 		(instances
-			(project "pcb2blender_tmp"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c"
-					(reference "#FLG01")
-					(unit 1)
-				)
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#FLG011")
 					(unit 1)
@@ -2028,7 +2056,7 @@
 			(uuid "4922c199-a11a-4505-9648-3738a4ab21ef")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#PWR090")
 					(unit 1)
@@ -2099,7 +2127,7 @@
 			(uuid "79a658f9-1b5b-44fc-994d-0b3ed679827d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#PWR092")
 					(unit 1)
@@ -2212,7 +2240,7 @@
 			(uuid "cce31ccb-98c8-4de8-bce2-6ccf879f53e8")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "C132")
 					(unit 1)
@@ -2280,7 +2308,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM3")
 					(unit 1)
@@ -2351,7 +2379,7 @@
 			(uuid "39c86b06-30e3-49cb-9409-93a35f90ece3")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#PWR094")
 					(unit 1)
@@ -2422,7 +2450,7 @@
 			(uuid "378d8403-6ab5-449c-97b1-611049a026fd")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#PWR095")
 					(unit 1)
@@ -2535,7 +2563,7 @@
 			(uuid "aa6f4933-76d0-4330-899a-5f600c520c1d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "R53")
 					(unit 1)
@@ -2648,7 +2676,7 @@
 			(uuid "b8d2b0eb-d7c0-4469-a56b-bf936a4843fb")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "R52")
 					(unit 1)
@@ -2761,7 +2789,7 @@
 			(uuid "5caaeabd-1989-4de0-b29a-90cd3a84cd2d")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "C131")
 					(unit 1)
@@ -2832,7 +2860,7 @@
 			(uuid "9fd4e9a0-0d06-4323-b470-bb5267f624c2")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "#PWR093")
 					(unit 1)
@@ -2904,7 +2932,7 @@
 			(uuid "72953a50-489f-4178-9f38-da2d280c654b")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "H2")
 					(unit 1)
@@ -2972,7 +3000,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM1")
 					(unit 1)
@@ -3040,7 +3068,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM4")
 					(unit 1)
@@ -3112,7 +3140,7 @@
 			(uuid "1c79def5-ba48-44b9-a5e9-b08c50641432")
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "H3")
 					(unit 1)
@@ -3180,7 +3208,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM6")
 					(unit 1)

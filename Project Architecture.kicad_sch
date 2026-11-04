@@ -1011,7 +1011,7 @@
 	)
 	(text "Page 17"
 		(exclude_from_sim no)
-		(at 180.34 236.22 0)
+		(at 180.594 212.344 0)
 		(effects
 			(font
 				(face "Times New Roman")
@@ -1128,21 +1128,6 @@
 			(href "#5")
 		)
 		(uuid "c54c21a6-b82f-4883-adfa-9cf31abe82f0")
-	)
-	(text "Page 15"
-		(exclude_from_sim no)
-		(at 180.34 195.58 0)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(bold yes)
-				(color 80 40 80 1)
-			)
-			(justify right bottom)
-			(href "#15")
-		)
-		(uuid "dd3cc739-707f-415d-82ed-67f2ae0c4c62")
 	)
 	(text_box "Power"
 		(exclude_from_sim no)
@@ -1312,44 +1297,16 @@
 		(uuid "aeb5df8e-2a20-445a-af56-8da8d962089f")
 	)
 	(junction
-		(at 194.31 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ed02927-deae-4358-9f12-440b0a6e0b09")
-	)
-	(junction
 		(at 140.97 52.07)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "1df1f19e-a28a-42cd-a5a6-9816ef39e3e3")
 	)
 	(junction
-		(at 190.5 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "221efa36-e07a-4d09-8cf4-d424051e2273")
-	)
-	(junction
-		(at 186.69 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4dfb1d97-0774-472d-9a6f-32ea741bf24f")
-	)
-	(junction
 		(at 144.78 52.07)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "66edaba9-3be3-4e36-89d4-182ba600573e")
-	)
-	(bus
-		(pts
-			(xy 194.31 151.13) (xy 194.31 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04b35fd7-64f3-4152-8b40-7073e170b7f3")
 	)
 	(wire
 		(pts
@@ -1371,16 +1328,6 @@
 		)
 		(uuid "0a28924a-c170-4ccf-99a0-0ee6a261c931")
 	)
-	(bus
-		(pts
-			(xy 186.69 151.13) (xy 194.31 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e774cbb-8f8f-4735-9145-7d2937d1f8ff")
-	)
 	(polyline
 		(pts
 			(xy 124.46 104.14) (xy 124.46 76.2)
@@ -1400,16 +1347,6 @@
 			(type default)
 		)
 		(uuid "0fa284cd-04c7-45e6-8f90-083057efdd56")
-	)
-	(bus
-		(pts
-			(xy 186.69 151.13) (xy 186.69 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11cd929d-916b-426f-a9fa-319db8ad3c5a")
 	)
 	(polyline
 		(pts
@@ -1451,16 +1388,6 @@
 		)
 		(uuid "21168725-5182-44b6-bf91-a842cc570e7f")
 	)
-	(bus
-		(pts
-			(xy 190.5 154.94) (xy 200.66 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21f56912-fa8a-40cf-ab23-4fd758b3849f")
-	)
 	(wire
 		(pts
 			(xy 186.69 49.53) (xy 186.69 50.8)
@@ -1471,6 +1398,16 @@
 		)
 		(uuid "27031da7-a8a8-478f-9ee9-9136f9797232")
 	)
+	(bus
+		(pts
+			(xy 181.61 226.06) (xy 200.66 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27635149-da59-4406-b82f-ec9d21149f2a")
+	)
 	(polyline
 		(pts
 			(xy 297.18 217.17) (xy 297.18 226.06)
@@ -1480,16 +1417,6 @@
 			(type default)
 		)
 		(uuid "2c17ad62-60ec-4b57-9a4d-0749195aa8a4")
-	)
-	(bus
-		(pts
-			(xy 181.61 151.13) (xy 186.69 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fe8974f-fade-43ec-a499-617f0a7f46af")
 	)
 	(wire
 		(pts
@@ -1521,16 +1448,6 @@
 		)
 		(uuid "3820d3e7-6662-490f-ae4c-7e52ba83f687")
 	)
-	(bus
-		(pts
-			(xy 146.05 185.42) (xy 149.86 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3835aaf3-004d-47d5-b0c7-715c85def4d6")
-	)
 	(wire
 		(pts
 			(xy 194.31 49.53) (xy 194.31 55.88)
@@ -1560,16 +1477,6 @@
 			(type default)
 		)
 		(uuid "41454d3c-5482-404f-a105-e2df381e5d77")
-	)
-	(bus
-		(pts
-			(xy 146.05 163.83) (xy 146.05 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "481e18a8-3920-418e-8a17-ed2c731224d4")
 	)
 	(polyline
 		(pts
@@ -1651,16 +1558,6 @@
 		)
 		(uuid "655f93e1-0fd2-4d49-8190-12d644006e9a")
 	)
-	(bus
-		(pts
-			(xy 190.5 124.46) (xy 181.61 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fe9ee5f-93ec-4c9c-855d-8bc74395dc62")
-	)
 	(wire
 		(pts
 			(xy 181.61 78.74) (xy 200.66 78.74)
@@ -1701,16 +1598,6 @@
 		)
 		(uuid "7d39a7b0-9467-48e7-8e0d-5c40f992311c")
 	)
-	(bus
-		(pts
-			(xy 194.31 151.13) (xy 200.66 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "852fec8c-9d50-4572-a75d-2bacc1e06da7")
-	)
 	(wire
 		(pts
 			(xy 138.43 92.71) (xy 138.43 99.06)
@@ -1720,16 +1607,6 @@
 			(type default)
 		)
 		(uuid "8806d51b-0f90-4f72-b7ea-f326de0044ee")
-	)
-	(bus
-		(pts
-			(xy 181.61 154.94) (xy 190.5 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "886e9afa-2f2b-4469-94a0-0850f9f10535")
 	)
 	(bus
 		(pts
@@ -1783,7 +1660,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 210.82) (xy 149.86 210.82)
+			(xy 143.51 187.96) (xy 149.86 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1801,25 +1678,25 @@
 		)
 		(uuid "aaa14a41-4440-4400-bb4c-7eff84980e8a")
 	)
-	(bus
-		(pts
-			(xy 190.5 154.94) (xy 190.5 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acc7e5ee-55f2-4642-a1b8-37b1cc7bebe5")
-	)
 	(wire
 		(pts
-			(xy 138.43 156.21) (xy 138.43 228.6)
+			(xy 138.43 156.21) (xy 138.43 205.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acf856bd-627d-4474-bbdf-53460d1f8aa0")
+	)
+	(bus
+		(pts
+			(xy 181.61 229.87) (xy 200.66 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aedba50b-352d-4561-a967-6d58537857f2")
 	)
 	(bus
 		(pts
@@ -1830,16 +1707,6 @@
 			(type default)
 		)
 		(uuid "afab18d2-2c2b-4c9b-b65c-01eaabb291f9")
-	)
-	(bus
-		(pts
-			(xy 149.86 163.83) (xy 146.05 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3d6dc0a-5006-41d7-91d8-c59f81eaf22b")
 	)
 	(wire
 		(pts
@@ -1871,19 +1738,9 @@
 		)
 		(uuid "bc3ca3bb-b0bb-4415-9aba-da48baac9faf")
 	)
-	(bus
-		(pts
-			(xy 181.61 189.23) (xy 200.66 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bccb3fe6-e51b-48e8-952b-e9eef65132ee")
-	)
 	(wire
 		(pts
-			(xy 138.43 228.6) (xy 149.86 228.6)
+			(xy 138.43 205.74) (xy 149.86 205.74)
 		)
 		(stroke
 			(width 0)
@@ -1893,23 +1750,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 228.6) (xy 200.66 228.6)
+			(xy 181.61 205.74) (xy 200.66 205.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c4c0bdea-6057-49a0-ba49-d3b443512dea")
-	)
-	(bus
-		(pts
-			(xy 181.61 185.42) (xy 194.31 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6460597-ab0b-4f86-b367-b7e8b8379f81")
 	)
 	(wire
 		(pts
@@ -1933,7 +1780,7 @@
 	)
 	(bus
 		(pts
-			(xy 181.61 210.82) (xy 200.66 210.82)
+			(xy 181.61 187.96) (xy 200.66 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1943,7 +1790,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 160.02) (xy 143.51 210.82)
+			(xy 143.51 160.02) (xy 143.51 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1960,16 +1807,6 @@
 			(type default)
 		)
 		(uuid "d371530d-085d-4123-a3d7-9808a0ff50bb")
-	)
-	(bus
-		(pts
-			(xy 186.69 128.27) (xy 181.61 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8b4b927-ce38-4b4d-8b82-9d897d23f647")
 	)
 	(wire
 		(pts
@@ -2860,6 +2697,71 @@
 		)
 	)
 	(sheet
+		(at 149.86 181.61)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 150 255 0.5020)
+		)
+		(uuid "95bf33d9-762c-4d08-af8b-3fad797ffaca")
+		(property "Sheetname" "Interface - FD-CAN"
+			(at 149.86 180.5809 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interface - FD-CAN.kicad_sch"
+			(at 149.86 194.8946 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{FDCAN_TTL}" bidirectional
+			(at 181.61 187.96 0)
+			(uuid "2810ac52-6301-4da7-a893-10b1e6c7e699")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{FDCAN}" bidirectional
+			(at 149.86 187.96 180)
+			(uuid "adaf4427-96ec-414d-8893-f084f348373b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 149.86 120.65)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
@@ -2896,32 +2798,6 @@
 				(justify left top)
 			)
 		)
-		(pin "{AUX1}" bidirectional
-			(at 181.61 128.27 0)
-			(uuid "614bed47-955a-456e-adfa-311ece93fda5")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify right)
-			)
-		)
-		(pin "{AUX2}" bidirectional
-			(at 181.61 124.46 0)
-			(uuid "7bdcbdf7-3bd3-4f00-ae51-e29a1835d649")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
@@ -2931,156 +2807,7 @@
 		)
 	)
 	(sheet
-		(at 149.86 204.47)
-		(size 31.75 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 150 255 0.5020)
-		)
-		(uuid "95bf33d9-762c-4d08-af8b-3fad797ffaca")
-		(property "Sheetname" "Interface - FD-CAN"
-			(at 149.86 203.4409 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Interface - FD-CAN.kicad_sch"
-			(at 149.86 217.7546 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "{FDCAN_TTL}" bidirectional
-			(at 181.61 210.82 0)
-			(uuid "2810ac52-6301-4da7-a893-10b1e6c7e699")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "{FDCAN}" bidirectional
-			(at 149.86 210.82 180)
-			(uuid "adaf4427-96ec-414d-8893-f084f348373b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
-					(page "16")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 149.86 181.61)
-		(size 31.75 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 150 255 0.5000)
-		)
-		(uuid "a62105fd-dfaf-4ee0-a401-8aa0e7120758")
-		(property "Sheetname" "Interface - RS-422"
-			(at 149.86 180.5809 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Interface - RS-422.kicad_sch"
-			(at 149.86 197.4346 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "{RS422_TTL}" bidirectional
-			(at 181.61 189.23 0)
-			(uuid "4719323a-faa3-4cf7-951c-0363aeef827c")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify right)
-			)
-		)
-		(pin "{RS422}" bidirectional
-			(at 149.86 185.42 180)
-			(uuid "9cfe4f90-ad17-4d2d-9533-0a8676053b44")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(pin "{AUX1}" bidirectional
-			(at 181.61 185.42 0)
-			(uuid "e887a9bb-5575-4817-88f2-a7bc625ed21c")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
-					(page "15")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 149.86 224.79)
+		(at 149.86 201.93)
 		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3096,7 +2823,7 @@
 		)
 		(uuid "a6cb2049-0230-448a-abe7-a100286c1c6c")
 		(property "Sheetname" "Interface - Fan Control"
-			(at 149.86 223.7609 0)
+			(at 149.86 200.9009 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -3107,7 +2834,7 @@
 			)
 		)
 		(property "Sheetfile" "Interface - Fan Control.kicad_sch"
-			(at 149.86 238.0746 0)
+			(at 149.86 215.2146 0)
 			(effects
 				(font
 					(face "Arial")
@@ -3117,7 +2844,7 @@
 			)
 		)
 		(pin "FAN_CTRL" input
-			(at 181.61 228.6 0)
+			(at 181.61 205.74 0)
 			(uuid "92f1d028-5a1e-49f6-ae4c-b141767e7b23")
 			(effects
 				(font
@@ -3130,7 +2857,7 @@
 			)
 		)
 		(pin "FAN_SW" output
-			(at 149.86 228.6 180)
+			(at 149.86 205.74 180)
 			(uuid "db5ab538-5418-4219-ae95-3ba4a336c7a0")
 			(effects
 				(font
@@ -3311,7 +3038,7 @@
 		)
 	)
 	(sheet
-		(at 149.86 247.65)
+		(at 149.86 223.52)
 		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3327,7 +3054,7 @@
 		)
 		(uuid "d342497d-cef2-493b-b20b-1b91b7d9cc9b")
 		(property "Sheetname" "Comms - EtherCat"
-			(at 149.86 246.6209 0)
+			(at 149.86 222.4909 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -3338,13 +3065,33 @@
 			)
 		)
 		(property "Sheetfile" "Comms - EtherCat.kicad_sch"
-			(at 149.86 260.9346 0)
+			(at 149.86 236.8046 0)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{ESC_CTRL}" bidirectional
+			(at 181.61 226.06 0)
+			(uuid "4c3e0423-c249-4361-80e1-2da5620f04ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{ESC_SPI}" bidirectional
+			(at 181.61 229.87 0)
+			(uuid "5246bf9d-8f8c-42dd-939a-d7709cfa0241")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -3418,32 +3165,6 @@
 				(justify left)
 			)
 		)
-		(pin "{AUX2}" bidirectional
-			(at 181.61 154.94 0)
-			(uuid "364a416e-6d33-4204-856e-f7af2931ba39")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify right)
-			)
-		)
-		(pin "{AUX1}" bidirectional
-			(at 181.61 151.13 0)
-			(uuid "5159e240-57c2-4580-a92f-182cd1c81065")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify right)
-			)
-		)
 		(pin "{SWD}" bidirectional
 			(at 181.61 147.32 0)
 			(uuid "9a2d31fa-c129-4e77-93f7-9e02a1f5d820")
@@ -3455,19 +3176,6 @@
 					(bold yes)
 				)
 				(justify right)
-			)
-		)
-		(pin "{RS422}" bidirectional
-			(at 149.86 163.83 180)
-			(uuid "22a60e71-f9f6-44f1-8ca8-1e4fb3b59a66")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
 			)
 		)
 		(pin "FAN_SW" input
@@ -3536,19 +3244,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "{RS422_TTL}" bidirectional
-			(at 200.66 189.23 180)
-			(uuid "d3e5966c-68f2-4caa-8bf9-788e162e0261")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
 			)
 		)
 		(pin "{SWD}" bidirectional
@@ -3668,34 +3363,8 @@
 				(justify right)
 			)
 		)
-		(pin "{AUX1}" bidirectional
-			(at 200.66 151.13 180)
-			(uuid "44698f03-dda4-4ae8-b8d4-9414bbb917cc")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(pin "{AUX2}" bidirectional
-			(at 200.66 154.94 180)
-			(uuid "892384af-24cd-4afa-8d4e-c50af62e6707")
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
 		(pin "{FDCAN_TTL}" bidirectional
-			(at 200.66 210.82 180)
+			(at 200.66 187.96 180)
 			(uuid "b67f91be-f9ed-4302-b693-96197188311e")
 			(effects
 				(font
@@ -3734,7 +3403,7 @@
 			)
 		)
 		(pin "FAN_CTRL" output
-			(at 200.66 228.6 180)
+			(at 200.66 205.74 180)
 			(uuid "a4803ea8-0bbf-4584-82cc-0a1f7f293b26")
 			(effects
 				(font
@@ -3742,6 +3411,26 @@
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "{ESC_CTRL}" bidirectional
+			(at 200.66 226.06 180)
+			(uuid "425aa203-cbfe-45f0-8490-2dbf376dd59d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{ESC_SPI}" bidirectional
+			(at 200.66 229.87 180)
+			(uuid "3158ebc0-b058-47a3-bc81-a623368bb026")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify left)
 			)

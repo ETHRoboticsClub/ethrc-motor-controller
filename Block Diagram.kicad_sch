@@ -12,8 +12,8 @@
 	)
 	(lib_symbols)
 	(rectangle
-		(start 331.47 237.49)
-		(end 402.59 238.252)
+		(start 16.51 280.67)
+		(end 87.63 281.432)
 		(stroke
 			(width 0)
 			(type default)
@@ -26,8 +26,8 @@
 		(uuid 8956a1c0-282a-4b1e-927b-8bc74278d14f)
 	)
 	(rectangle
-		(start 331.47 204.47)
-		(end 402.59 205.232)
+		(start 16.51 247.65)
+		(end 87.63 248.412)
 		(stroke
 			(width 0)
 			(type default)
@@ -41,7 +41,7 @@
 	)
 	(text_box "Peak current:"
 		(exclude_from_sim no)
-		(at 332.74 220.98 0)
+		(at 17.78 264.16 0)
 		(size 41.91 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -65,7 +65,7 @@
 	)
 	(text_box "Continuous current:"
 		(exclude_from_sim no)
-		(at 332.74 213.36 0)
+		(at 17.78 256.54 0)
 		(size 43.18 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -89,7 +89,7 @@
 	)
 	(text_box "Input voltage:"
 		(exclude_from_sim no)
-		(at 332.74 205.74 0)
+		(at 17.78 248.92 0)
 		(size 41.91 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -113,7 +113,7 @@
 	)
 	(text_box "20-60 kHz"
 		(exclude_from_sim no)
-		(at 378.46 228.6 0)
+		(at 63.5 271.78 0)
 		(size 24.13 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -135,7 +135,7 @@
 	)
 	(text_box "25 A"
 		(exclude_from_sim no)
-		(at 378.46 213.36 0)
+		(at 63.5 256.54 0)
 		(size 24.13 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -180,7 +180,7 @@
 	)
 	(text_box "Target specifications:"
 		(exclude_from_sim no)
-		(at 328.93 196.85 0)
+		(at 13.97 240.03 0)
 		(size 73.66 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -204,7 +204,7 @@
 	)
 	(text_box "65 A"
 		(exclude_from_sim no)
-		(at 378.46 220.98 0)
+		(at 63.5 264.16 0)
 		(size 24.13 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -226,7 +226,7 @@
 	)
 	(text_box "36-60 V"
 		(exclude_from_sim no)
-		(at 378.46 205.74 0)
+		(at 63.5 248.92 0)
 		(size 24.13 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -248,7 +248,7 @@
 	)
 	(text_box "Switching frequency:"
 		(exclude_from_sim no)
-		(at 332.74 228.6 0)
+		(at 17.78 271.78 0)
 		(size 44.45 7.62)
 		(margins 2.2859 2.2859 2.2859 2.2859)
 		(stroke
@@ -271,8 +271,8 @@
 		(uuid "f73ecd5d-28d4-4dc6-ad8d-2c156959b733")
 	)
 	(image
-		(at 168.91 129.54)
-		(scale 0.84)
+		(at 200.66 137.16)
+		(scale 0.965789)
 		(uuid "d027c6d4-de99-4314-b315-5c67f89042f5")
 		(data "iVBORw0KGgoAAAANSUhEUgAAENEAAAnUCAMAAAAOR7d2AAAAIGNIUk0AAHomAACAhAAA+gAAAIDo"
 			"AAB1MAAA6mAAADqYAAAXcJy6UTwAAAEgUExURf///9hAG+RXE+hZDOlfE/KRUe2mb/fIl/7Xp/PO"

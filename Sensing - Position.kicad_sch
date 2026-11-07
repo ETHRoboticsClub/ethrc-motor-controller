@@ -4515,7 +4515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 93.472 111.76 90)
 			(effects
 				(font
@@ -4657,7 +4657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 101.092 111.76 90)
 			(effects
 				(font
@@ -5293,7 +5293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal"
 			(at 166.37 120.65 0)
 			(effects
 				(font
@@ -5311,7 +5311,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05 with mounting pin"
+		(property "Description" "Connector Header Surface Mount, Right Angle 5 position 0.049\" (1.25mm), JST GH latching"
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SM05B-GHS-TB"
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "455-SM05B-GHS-TBCT-ND"
 			(at 166.37 120.65 0)
 			(effects
 				(font
@@ -5974,7 +6010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 108.712 111.76 90)
 			(effects
 				(font

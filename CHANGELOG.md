@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+### Added
+
+-   High-side P-FET reverse-polarity protection (Q10 SUM70101EL, R83/R84 gate divider, D23 15 V gate clamp) between the XT60 pass-through bus VBAT_IN and +VBAT.
+-   1 µF low-ESR capacitor on the LAN9253 VDDCR pin (DS00003421B §4.1.1).
+-   LMR38020 symbol, DDA0008B footprint with 8 thermal vias, and SUM70101EL symbol, footprint and 3D model.
+-   Description, manufacturer and supplier part numbers for the EtherCAT and 5 V buck parts.
+
+### Changed
+
+-   5 V buck from LMR51625 (60 V) to LMR38020SDDAR (80 V) at 400 kHz, with a 40.2 k / 10 k feedback divider.
+-   Input TVS from bidirectional SMBJ60CA to CHASSIS to unidirectional SMBJ60A to GND on the protected +VBAT.
+-   EtherCAT PHY terminations R59-R66 to 0402 and all EtherCAT capacitors to the project footprint library.
+-   R43 bus-sense resistor from 0402 to 0805 (working voltage at 58.8 V).
+-   CI variant to DRAFT while the PCB layout restarts.
+
+### Fixed
+
+-   DRV8353 SDI on PC12 (SPI3_MOSI) instead of PC13.
+-   HALL_B/HALL_C moved off PB8-BOOT0 to PA11/PA12.
+-   Resistor/capacitor footprint mix-ups (R8, R9, R10, R13, R14, R15, R48, R59, R78, R79, C18, C20, C47) and the missing J16 Hall connector footprint.
+
 ## [1.1.1] - 2025-01-18
 
 ### Fixed

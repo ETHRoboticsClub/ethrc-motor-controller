@@ -9498,7 +9498,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 270.51 149.86 90)
 			(effects
 				(font
@@ -13404,7 +13404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 270.51 144.78 90)
 			(effects
 				(font

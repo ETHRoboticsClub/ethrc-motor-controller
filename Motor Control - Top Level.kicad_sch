@@ -457,7 +457,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 0 97.79 270)
 					(length 2.54)
 					(name "VM"
@@ -511,7 +511,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 17.78 90.17 180)
 					(length 2.54)
 					(name "VDRAIN"
@@ -3540,7 +3540,7 @@
 		)
 		(uuid "04ed801d-23c6-4b72-bd5c-a5493a455aeb")
 	)
-	(label "SB_P"
+	(label "SB+"
 		(at 170.18 140.97 0)
 		(effects
 			(font
@@ -3639,7 +3639,7 @@
 		)
 		(uuid "30e34ae2-1ae8-4688-b001-b7754579d0fd")
 	)
-	(label "SB_N"
+	(label "SB-"
 		(at 170.18 143.51 0)
 		(effects
 			(font
@@ -3672,7 +3672,7 @@
 		)
 		(uuid "49903bd0-4fe5-409e-9640-9c17858247f4")
 	)
-	(label "SB_P"
+	(label "SB+"
 		(at 330.2 158.75 0)
 		(effects
 			(font
@@ -3694,7 +3694,7 @@
 		)
 		(uuid "5bc72ad1-28d9-4973-b061-2ddd993095ef")
 	)
-	(label "SA_P"
+	(label "SA+"
 		(at 170.18 118.11 0)
 		(effects
 			(font
@@ -3705,7 +3705,7 @@
 		)
 		(uuid "7a727a52-a283-4f45-9ab6-04860c3d4539")
 	)
-	(label "SA_N"
+	(label "SA-"
 		(at 330.2 154.94 0)
 		(effects
 			(font
@@ -3738,7 +3738,7 @@
 		)
 		(uuid "88aa57aa-8053-4967-a185-dd41c1ac6da5")
 	)
-	(label "SC_N"
+	(label "SC-"
 		(at 330.2 167.64 0)
 		(effects
 			(font
@@ -3749,7 +3749,7 @@
 		)
 		(uuid "8fda3c6c-8bc1-4b4f-9152-c4d887c1401a")
 	)
-	(label "SC_P"
+	(label "SC+"
 		(at 170.18 163.83 0)
 		(effects
 			(font
@@ -3760,7 +3760,7 @@
 		)
 		(uuid "908574ea-fbe0-4b56-a540-5e051318aee8")
 	)
-	(label "SA_P"
+	(label "SA+"
 		(at 330.2 152.4 0)
 		(effects
 			(font
@@ -3815,7 +3815,7 @@
 		)
 		(uuid "ba890cd3-eae2-4187-964d-5f333f8a434e")
 	)
-	(label "SA_N"
+	(label "SA-"
 		(at 170.18 120.65 0)
 		(effects
 			(font
@@ -3936,7 +3936,7 @@
 		)
 		(uuid "e77ef9e3-156f-41cd-8a33-108eb9360964")
 	)
-	(label "SC_N"
+	(label "SC-"
 		(at 170.18 166.37 0)
 		(effects
 			(font
@@ -3947,7 +3947,7 @@
 		)
 		(uuid "f1025390-d67c-4acb-8a03-204962dca798")
 	)
-	(label "SB_N"
+	(label "SB-"
 		(at 330.2 161.29 0)
 		(effects
 			(font
@@ -3991,7 +3991,7 @@
 		)
 		(uuid "fc4ad165-9676-4e59-b37c-fa0cf82addc7")
 	)
-	(label "SC_P"
+	(label "SC+"
 		(at 330.2 165.1 0)
 		(effects
 			(font
@@ -6108,7 +6108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DRV835xF 100-V Three-Phase Smart Gate Driver"
+		(property "Description" "100-V Three-Phase Smart Gate Driver"
 			(at 151.13 170.18 0)
 			(effects
 				(font

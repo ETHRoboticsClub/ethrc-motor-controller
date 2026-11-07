@@ -376,6 +376,16 @@
 	)
 	(bus
 		(pts
+			(xy 181.61 128.27) (xy 200.66 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32085d1-5ead-4cd0-a422-71cb9fbc068c")
+	)
+	(bus
+		(pts
 			(xy 237.49 118.11) (xy 248.92 118.11)
 		)
 		(stroke
@@ -873,6 +883,16 @@
 				(justify right)
 			)
 		)
+		(pin "{HALL}" output
+			(at 181.61 128.27 0)
+			(uuid "a000bf6c-a63b-422a-84bd-876c9aa05ce8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
@@ -1310,6 +1330,16 @@
 		(pin "{ENC_SPI}" bidirectional
 			(at 200.66 124.46 180)
 			(uuid "dfe96a83-59c8-47e0-9b1e-0859934cf7ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{HALL}" input
+			(at 200.66 128.27 180)
+			(uuid "04583f17-3282-4259-b98e-c0e970997909")
 			(effects
 				(font
 					(size 1.27 1.27)

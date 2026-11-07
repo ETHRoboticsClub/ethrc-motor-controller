@@ -2804,16 +2804,16 @@
 		(uuid "01ad915d-7779-4eb9-9a9a-79322be0e38b")
 	)
 	(junction
+		(at 151.13 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fad916e-71b7-43fe-ad45-505619178713")
+	)
+	(junction
 		(at 153.67 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28139e89-cde0-4e3b-b8bf-1da523ccbec5")
-	)
-	(junction
-		(at 151.13 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "31d74082-b308-4a9e-b591-873f43bdcf6d")
 	)
 	(junction
 		(at 109.22 125.73)
@@ -3064,6 +3064,16 @@
 			(type default)
 		)
 		(uuid "15022a6f-d50e-45af-a5f9-441f95f38299")
+	)
+	(wire
+		(pts
+			(xy 151.13 125.73) (xy 161.29 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1577ddd3-2750-484b-b04c-c128fd72b290")
 	)
 	(bus
 		(pts
@@ -3395,16 +3405,6 @@
 		)
 		(uuid "7810e0d0-052d-4dda-9ca6-aab2ae44d4f4")
 	)
-	(wire
-		(pts
-			(xy 151.13 123.19) (xy 151.13 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "792d65a9-aef3-40e2-8724-e7698ad9fe49")
-	)
 	(bus
 		(pts
 			(xy 81.28 127) (xy 81.28 123.19)
@@ -3567,7 +3567,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 125.73) (xy 161.29 125.73)
+			(xy 134.62 125.73) (xy 151.13 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3624,16 +3624,6 @@
 			(type default)
 		)
 		(uuid "adaea3b5-0bf0-41f4-bc1d-0d31e39fdfa8")
-	)
-	(wire
-		(pts
-			(xy 153.67 123.19) (xy 151.13 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0538bc5-917f-4e52-a2c0-d7567b4e9978")
 	)
 	(wire
 		(pts
@@ -3857,7 +3847,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 123.19) (xy 151.13 123.19)
+			(xy 125.73 123.19) (xy 153.67 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3874,6 +3864,16 @@
 			(type default)
 		)
 		(uuid "dcf894a7-b0ab-433d-b014-dc4a9de78c80")
+	)
+	(wire
+		(pts
+			(xy 151.13 125.73) (xy 151.13 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de18481a-60a8-4bc7-a96d-e6deecc39833")
 	)
 	(wire
 		(pts
@@ -4506,7 +4506,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 96.52 113.03 0)
 			(effects
 				(font
@@ -4946,7 +4946,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 110.49 113.03 0)
 			(effects
 				(font
@@ -6034,7 +6034,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 104.14 113.03 0)
 			(effects
 				(font

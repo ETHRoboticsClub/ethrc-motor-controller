@@ -1908,7 +1908,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "R_Small_1"
+		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1920,19 +1920,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
+				(at 0.762 0.508 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1980,7 +1982,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Small_1_0_1"
+			(symbol "R_Small_0_1"
 				(rectangle
 					(start -0.762 1.778)
 					(end 0.762 -1.778)
@@ -1993,7 +1995,7 @@
 					)
 				)
 			)
-			(symbol "R_Small_1_1_1"
+			(symbol "R_Small_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
@@ -3439,7 +3441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0_connectors:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
 			(at 236.22 88.9 0)
 			(effects
 				(font
@@ -3705,7 +3707,6 @@
 		)
 	)
 	(symbol
-		(lib_name "R_Small_1")
 		(lib_id "Device:R_Small")
 		(at 44.45 97.79 90)
 		(unit 1)
@@ -3713,24 +3714,76 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "87f60236-2855-48ec-b521-f6c2196110d6")
+		(uuid "91a877a3-c687-4a5c-9a1d-5f1fce5f7311")
 		(property "Reference" "R45"
-			(at 44.45 94.488 90)
+			(at 44.45 94.742 90)
 			(effects
 				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 44.45 96.012 90)
-			(effects
-				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Value" "22R 1%"
+			(at 44.958 96.266 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
+			(at 44.45 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 44.45 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
+			(at 44.45 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 44.45 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "P22.0LCT-ND"
+			(at 44.45 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
 			(at 44.45 97.79 0)
 			(effects
 				(font
@@ -3739,16 +3792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 44.45 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
+		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
 			(at 44.45 97.79 0)
 			(effects
 				(font
@@ -3758,10 +3802,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "193b9fa3-9d6d-4c73-b050-165179c09539")
+			(uuid "731e4647-3f6f-4403-809f-d4d5fcb54099")
 		)
 		(pin "2"
-			(uuid "61977d44-60ae-4ae0-a7f7-cf0f671de054")
+			(uuid "12ddaf24-7e9a-4c9a-af33-e7f20055f0d6")
 		)
 		(instances
 			(project "ethrc_motor_controller"

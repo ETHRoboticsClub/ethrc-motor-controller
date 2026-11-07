@@ -993,7 +993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c0f4cf3-7299-437c-a1fd-db960ca8fcc8")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR046"
 			(at 149.86 49.53 0)
 			(effects
 				(font
@@ -1048,7 +1048,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/07dcaf51-abc9-470d-8bd8-30b1c54b6fbd"
-					(reference "#PWR037")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -1064,7 +1064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5bb148f-6eda-4513-9f69-071474254a45")
-		(property "Reference" "R20"
+		(property "Reference" "R34"
 			(at 152.4 72.39 0)
 			(effects
 				(font
@@ -1161,7 +1161,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/07dcaf51-abc9-470d-8bd8-30b1c54b6fbd"
-					(reference "R20")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -1177,7 +1177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ced1203b-aaf0-400b-beaa-0fb6959c4285")
-		(property "Reference" "R19"
+		(property "Reference" "R33"
 			(at 152.4 54.61 0)
 			(effects
 				(font
@@ -1274,7 +1274,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/07dcaf51-abc9-470d-8bd8-30b1c54b6fbd"
-					(reference "R19")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -1290,7 +1290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e306e902-eb5a-490f-8b72-6e88f2232623")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR047"
 			(at 149.86 87.63 0)
 			(effects
 				(font
@@ -1346,7 +1346,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/07dcaf51-abc9-470d-8bd8-30b1c54b6fbd"
-					(reference "#PWR038")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)

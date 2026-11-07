@@ -7215,16 +7215,6 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 165.1) (xy 367.03 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f475d17f-43d5-4bd6-a458-9f50b2b9d68c")
-	)
-	(wire
-		(pts
 			(xy 254 48.26) (xy 274.32 48.26)
 		)
 		(stroke
@@ -7282,16 +7272,6 @@
 			(type default)
 		)
 		(uuid "f789e2f9-fdda-4bac-92d5-8faf66e93a6b")
-	)
-	(wire
-		(pts
-			(xy 351.79 167.64) (xy 367.03 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8b6d819-f6be-44a5-9a07-24810b463942")
 	)
 	(bus
 		(pts
@@ -7855,17 +7835,6 @@
 		)
 		(uuid "587101fe-0270-44a9-bf75-b35857cd7d1a")
 	)
-	(label "RS422_DE"
-		(at 351.79 167.64 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "595e4276-6fbd-4ddf-849f-00062cb6e7ee")
-	)
 	(label "SOC"
 		(at 194.31 147.32 180)
 		(effects
@@ -8415,17 +8384,6 @@
 			(justify left bottom)
 		)
 		(uuid "b630bdb8-1426-4fc9-b74b-562da8c40580")
-	)
-	(label "RS422_~{RE}"
-		(at 351.79 165.1 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "b6756346-6787-4260-834e-586cb657b040")
 	)
 	(label "ENC_MISO"
 		(at 276.86 147.32 0)
@@ -9213,77 +9171,6 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
 					(reference "TP16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 367.03 167.64 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d282df7-c8a4-43d6-95b4-a404f4192d3a")
-		(property "Reference" "TP30"
-			(at 372.11 167.64 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RS422_DE"
-			(at 379.73 167.64 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 172.72 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 367.03 172.72 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 367.03 167.64 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca065ed3-ec95-4fc4-8811-e45cb7bd71ce")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP30")
 					(unit 1)
 				)
 			)
@@ -12496,77 +12383,6 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
 					(reference "TP35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 367.03 165.1 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5e0db42-a6a9-4d5d-b56e-bb2c7673f25b")
-		(property "Reference" "TP29"
-			(at 372.11 165.1 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RS422_RE"
-			(at 379.73 165.1 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 170.18 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 367.03 170.18 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 367.03 165.1 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a11afda4-60ab-437a-96ca-4ebed5ab7416")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
-					(reference "TP29")
 					(unit 1)
 				)
 			)

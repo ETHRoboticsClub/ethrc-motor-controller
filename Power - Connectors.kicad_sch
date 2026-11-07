@@ -355,6 +355,128 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "0_power_symbols:+VBAT"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+VBAT"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+VBAT\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+VBAT_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+VBAT_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+VBAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "0_power_symbols:CHASSIS"
 			(power)
 			(pin_names
@@ -765,19 +887,6 @@
 		)
 	)
 	(rectangle
-		(start 78.74 52.07)
-		(end 215.9 135.89)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3a5ab838-31f4-40b0-a864-5845876cb8ea)
-	)
-	(rectangle
 		(start 146.05 69.85)
 		(end 176.53 85.09)
 		(stroke
@@ -790,7 +899,7 @@
 		)
 		(uuid e21541c7-d6d9-422e-8a24-22c9bf2a722a)
 	)
-	(text_box "DESIGN NOTE:\nDo not exceed absolute maximum ratings! Maximum input voltage is 44V (10S)."
+	(text_box "DESIGN NOTE:\nDo not exceed absolute maximum ratings! Maximum input voltage is 48V (13S)."
 		(exclude_from_sim no)
 		(at 101.6 107.95 0)
 		(size 30.48 12.7)
@@ -1030,16 +1139,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 62.23) (xy 180.34 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "209b50e5-2c5f-411b-a537-0912f30e2db8")
-	)
-	(wire
-		(pts
 			(xy 106.68 55.88) (xy 106.68 54.61)
 		)
 		(stroke
@@ -1138,16 +1237,6 @@
 			(type default)
 		)
 		(uuid "73da4e35-2369-4d36-889d-18bead19cf58")
-	)
-	(wire
-		(pts
-			(xy 179.07 62.23) (xy 179.07 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "929cc84e-04a1-4257-9211-25a360281b67")
 	)
 	(wire
 		(pts
@@ -1268,6 +1357,16 @@
 			(type default)
 		)
 		(uuid "fc406da0-0c52-4fc0-9e5a-12130709adc1")
+	)
+	(wire
+		(pts
+			(xy 179.07 60.96) (xy 179.07 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feed4d6f-b0e7-4f29-8565-5299bd5ee7ea")
 	)
 	(image
 		(at 92.71 66.04)
@@ -7476,45 +7575,6 @@
 			"oOM4jrNRXAIdx3GcjeIS6DiO42yU/wADxR0hpImf3QAAAABJRU5ErkJggg=="
 		)
 	)
-	(hierarchical_label "+VBAT"
-		(shape output)
-		(at 180.34 62.23 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "da450079-292c-4c14-a357-8e2e4229f4cf")
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 167.64 64.77 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a957e7a2-c9cc-49a2-8550-d5c251799db9")
-		(property "Netclass" "High Power"
-			(at 167.64 59.69 0)
-			(show_name yes)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-					(italic yes)
-					(color 162 22 34 1)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "0_power_symbols:CHASSIS")
 		(at 106.68 55.88 0)
@@ -7525,7 +7585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b2ec2b6-1223-4de8-82e8-32d96d7b944c")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR030"
 			(at 106.68 60.96 0)
 			(effects
 				(font
@@ -7580,7 +7640,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#PWR097")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -7596,7 +7656,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "378a6176-c85e-42c5-966c-3ff59a518131")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR031"
 			(at 106.68 83.82 0)
 			(effects
 				(font
@@ -7651,7 +7711,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#PWR096")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -7667,7 +7727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44460e22-da46-410e-a134-4a8945e791bf")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR034"
 			(at 179.07 97.79 0)
 			(effects
 				(font
@@ -7722,7 +7782,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#PWR025")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7738,7 +7798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50ff8d7c-eb64-4069-90a5-1ec8093eaa96")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR032"
 			(at 135.89 99.06 0)
 			(effects
 				(font
@@ -7794,7 +7854,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#PWR024")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7809,7 +7869,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "53bfc0c2-92ff-488e-b6c3-fb04674d1419")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 110.49 90.17 0)
 			(effects
 				(font
@@ -7921,7 +7981,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7938,7 +7998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67e45989-15eb-48c1-b245-83d03f80b556")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 152.4 76.2 90)
 			(effects
 				(font
@@ -8035,7 +8095,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8051,7 +8111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c4aac40-3189-4812-9594-9c74389d6048")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 175.26 76.2 90)
 			(effects
 				(font
@@ -8148,7 +8208,72 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "D2")
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_symbols:+VBAT")
+		(at 179.07 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8115e88c-2ddb-4e93-86b5-32ecc6301a74")
+		(property "Reference" "#PWR033"
+			(at 179.07 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VBAT"
+			(at 179.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VBAT\""
+			(at 179.07 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c94424cf-14d1-471f-b35a-bd4dd2b50d77")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -8163,7 +8288,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a7d6a6a-c539-4492-9323-3804a565cd6b")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 110.49 67.31 0)
 			(effects
 				(font
@@ -8275,7 +8400,7 @@
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)

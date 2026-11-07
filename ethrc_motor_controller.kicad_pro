@@ -870,11 +870,11 @@
       },
       {
         "netclass": "CAN Bus",
-        "pattern": "/Project Architecture/Interface - FD-CAN/FDCAN_P"
+        "pattern": "/Project Architecture/Interface - FD-CAN/FDCAN+"
       },
       {
         "netclass": "CAN Bus",
-        "pattern": "/Project Architecture/Interface - FD-CAN/FDCAN_N"
+        "pattern": "/Project Architecture/Interface - FD-CAN/FDCAN-"
       },
       {
         "netclass": "Kelvin Diff Pair",
@@ -1118,6 +1118,114 @@
           "label": "Config",
           "name": "Config",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CREATOR",
+          "name": "CREATOR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser",
+          "name": "Mouser",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Supplier Part Number",
+          "name": "Supplier Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VERIFIER",
+          "name": "VERIFIER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1225,16 +1333,16 @@
       "Sensing - Position"
     ],
     [
+      "d342497d-cef2-493b-b20b-1b91b7d9cc9b",
+      "Comms - EtherCat"
+    ],
+    [
       "95bf33d9-762c-4d08-af8b-3fad797ffaca",
-      "Interface - FD-CAN"
+      "Comms - FD-CAN"
     ],
     [
-      "a6cb2049-0230-448a-abe7-a100286c1c6c",
-      "Interface - Fan Control"
-    ],
-    [
-      "d359abe5-ae6a-4888-8140-3e6566d20c15",
-      "Interface - Interconnects"
+      "a3170e9c-67f1-489f-b9d1-10bbcf2409fd",
+      "Fan Control"
     ],
     [
       "c35a2394-f5db-4d2b-a6ba-34798059bc1f",
@@ -1247,10 +1355,6 @@
     [
       "e7c91631-be85-488a-af7a-f2a810f3fbfe",
       "Revision History"
-    ],
-    [
-      "d342497d-cef2-493b-b20b-1b91b7d9cc9b",
-      "Comms - EtherCat"
     ]
   ],
   "text_variables": {

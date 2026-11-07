@@ -25,6 +25,9 @@
 	(bus_alias "DRV_SPI"
 		(members "DRV_SCLK" "DRV_MISO" "DRV_MOSI" "DRV_CS")
 	)
+	(bus_alias "ENC_SPI"
+		(members "ENC_SCLK" "ENC_MISO" "ENC_MOSI" "ENC_BRD_CS" "ENC_EXT_CS")
+	)
 	(bus_alias "FDCAN"
 		(members "FDCAN_P" "FDCAN_N")
 	)

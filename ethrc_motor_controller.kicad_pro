@@ -693,15 +693,15 @@
       "+5V": "rgb(199, 70, 104)",
       "+A3V3": "rgb(255, 236, 45)",
       "+VBAT": "rgb(225, 70, 255)",
-      "/Project Architecture/Interface - FD-CAN/FDCAN_N": "rgb(28, 84, 255)",
-      "/Project Architecture/Interface - FD-CAN/FDCAN_P": "rgb(28, 84, 255)",
-      "/Project Architecture/Interface - FD-CAN/FDCAN_RX": "rgb(28, 84, 255)",
-      "/Project Architecture/Interface - FD-CAN/FDCAN_S": "rgb(28, 84, 255)",
-      "/Project Architecture/Interface - FD-CAN/FDCAN_TX": "rgb(28, 84, 255)",
-      "/Project Architecture/Interface - Fan Control/FAN_GATE": "rgb(31, 202, 0)",
-      "/Project Architecture/Interface - Fan Control/FAN_OUT": "rgb(31, 202, 0)",
-      "/Project Architecture/Interface - Fan Control/FAN_SW": "rgb(31, 202, 0)",
-      "/Project Architecture/Interface - Fan Control/FAN_~{IN}": "rgb(31, 202, 0)",
+      "/Project Architecture/Comms - FD-CAN/FDCAN_N": "rgb(28, 84, 255)",
+      "/Project Architecture/Comms - FD-CAN/FDCAN_P": "rgb(28, 84, 255)",
+      "/Project Architecture/Comms - FD-CAN/FDCAN_RX": "rgb(28, 84, 255)",
+      "/Project Architecture/Comms - FD-CAN/FDCAN_S": "rgb(28, 84, 255)",
+      "/Project Architecture/Comms - FD-CAN/FDCAN_TX": "rgb(28, 84, 255)",
+      "/Project Architecture/Fan Control/FAN_GATE": "rgb(31, 202, 0)",
+      "/Project Architecture/Fan Control/FAN_OUT": "rgb(31, 202, 0)",
+      "/Project Architecture/Fan Control/FAN_SW": "rgb(31, 202, 0)",
+      "/Project Architecture/Fan Control/FAN_~{IN}": "rgb(31, 202, 0)",
       "/Project Architecture/Interface - Interconnects/AUX1P_A": "rgb(165, 255, 0)",
       "/Project Architecture/Interface - Interconnects/AUX1P_B": "rgb(165, 255, 0)",
       "/Project Architecture/Interface - Interconnects/AUX1P_C": "rgb(165, 255, 0)",
@@ -870,11 +870,11 @@
       },
       {
         "netclass": "CAN Bus",
-        "pattern": "/Project Architecture/Interface - FD-CAN/FDCAN+"
+        "pattern": "/Project Architecture/Comms - FD-CAN/FDCAN+"
       },
       {
         "netclass": "CAN Bus",
-        "pattern": "/Project Architecture/Interface - FD-CAN/FDCAN-"
+        "pattern": "/Project Architecture/Comms - FD-CAN/FDCAN-"
       },
       {
         "netclass": "Kelvin Diff Pair",
@@ -998,7 +998,7 @@
       },
       {
         "netclass": "GND",
-        "pattern": "/Project Architecture/Interface - Fan Control/FAN_SW"
+        "pattern": "/Project Architecture/Fan Control/FAN_SW"
       },
       {
         "netclass": "Power 5V",
@@ -1389,13 +1389,13 @@
     "SHEET_NAME_13": "Sensing - Battery",
     "SHEET_NAME_14": "Sensing - Position",
     "SHEET_NAME_15": "Comms - EtherCat",
-    "SHEET_NAME_16": "Interface - FD-CAN",
-    "SHEET_NAME_17": "Interface - Fan Control",
-    "SHEET_NAME_18": "Interface - Interconnects",
-    "SHEET_NAME_19": "Misc - Holes, Fiducials",
+    "SHEET_NAME_16": "Comms - FD-CAN",
+    "SHEET_NAME_17": "Fan Control",
+    "SHEET_NAME_18": "Misc - Holes, Fiducials",
+    "SHEET_NAME_19": "Power - Sequencing",
     "SHEET_NAME_2": "Block Diagram",
-    "SHEET_NAME_20": "Power - Sequencing",
-    "SHEET_NAME_21": "Revision History",
+    "SHEET_NAME_20": "Revision History",
+    "SHEET_NAME_21": "......................................",
     "SHEET_NAME_22": "......................................",
     "SHEET_NAME_23": "......................................",
     "SHEET_NAME_24": "......................................",

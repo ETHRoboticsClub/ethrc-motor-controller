@@ -4287,7 +4287,7 @@
 		)
 		(uuid "75383ae4-5660-48a4-ab16-cdbc338d46bf")
 	)
-	(text "+1V2_ESC (internal regulator): VDDCR 6 1u low-ESR + 470p; 24, 38, 56, 59 100n each"
+	(text "+1V2_ESC (internal regulator): C161 1u low-ESR (DS00003421B 4.1.1) at VDDCR pin 6; 24, 38, 56, 59 100n each"
 		(exclude_from_sim no)
 		(at 139.954 237.998 0)
 		(effects
@@ -4556,6 +4556,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c507c28-f3c4-442f-8319-9acbb58f21d0")
+	)
+	(junction
+		(at 194.31 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cb9888a-d38f-4415-a94c-d7967ac2e85b")
 	)
 	(junction
 		(at 152.4 193.04)
@@ -4832,6 +4838,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9816a301-c372-44b1-8375-c4d678f18cba")
+	)
+	(junction
+		(at 194.31 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "981cf8c1-98ef-4e56-ae43-ba3df4c906fb")
 	)
 	(junction
 		(at 148.59 220.98)
@@ -5665,6 +5677,16 @@
 			(type default)
 		)
 		(uuid "227bc644-f182-4c39-93e9-cb0ab81a8728")
+	)
+	(wire
+		(pts
+			(xy 194.31 220.98) (xy 205.74 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22d3ceb1-ebbb-4ce1-952a-9cc25381a1dc")
 	)
 	(wire
 		(pts
@@ -6738,6 +6760,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 233.68) (xy 205.74 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77142067-b474-4438-9873-e22b295aba7c")
+	)
+	(wire
+		(pts
 			(xy 135.89 78.74) (xy 135.89 81.28)
 		)
 		(stroke
@@ -7275,6 +7307,16 @@
 			(type default)
 		)
 		(uuid "95ef1545-4d30-4d23-8407-23f06291e2fa")
+	)
+	(wire
+		(pts
+			(xy 205.74 231.14) (xy 205.74 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9605473c-a367-4545-99cd-80100fe75f00")
 	)
 	(wire
 		(pts
@@ -8135,6 +8177,16 @@
 			(type default)
 		)
 		(uuid "d2fb51c8-79d2-4b25-99f7-67e742707aac")
+	)
+	(wire
+		(pts
+			(xy 205.74 220.98) (xy 205.74 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d32d61c8-31b3-4068-b446-f60ec453ccef")
 	)
 	(wire
 		(pts
@@ -9311,7 +9363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 194.31 227.33 0)
 			(effects
 				(font
@@ -9329,7 +9381,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 194.31 227.33 0)
 			(effects
 				(font
@@ -9583,7 +9635,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 148.59 227.33 0)
 			(effects
 				(font
@@ -9601,7 +9653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 148.59 227.33 0)
 			(effects
 				(font
@@ -9789,7 +9841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 186.69 200.66 0)
 			(effects
 				(font
@@ -9807,7 +9859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 186.69 200.66 0)
 			(effects
 				(font
@@ -9931,7 +9983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
 			(at 73.152 257.81 90)
 			(effects
 				(font
@@ -9949,7 +10001,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Thick Film"
+			(at 74.93 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 74.93 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
+			(at 74.93 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 74.93 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 74.93 257.81 0)
 			(effects
 				(font
@@ -10018,7 +10106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2/3-Port EtherCAT Slave Controller with 2 Integrated 10/100 Ethernet PHYs, SPI/SQI/HBI, 64-VQFN (9x9) EP"
 			(at 190.5 116.84 0)
 			(effects
 				(font
@@ -10036,7 +10124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Microchip"
+		(property "Manufacturer" "Microchip Technology"
 			(at 190.5 116.84 0)
 			(effects
 				(font
@@ -10330,7 +10418,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 152.4 200.66 0)
 			(effects
 				(font
@@ -10348,7 +10436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 152.4 200.66 0)
 			(effects
 				(font
@@ -10555,7 +10643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 10kΩ ±1% 0402"
+		(property "Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Thick Film"
 			(at 251.46 142.24 0)
 			(effects
 				(font
@@ -10564,7 +10652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 251.46 142.24 0)
 			(effects
 				(font
@@ -10573,7 +10661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0710KL"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
 			(at 251.46 142.24 0)
 			(effects
 				(font
@@ -10591,7 +10679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0710KL"
+		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 251.46 142.24 0)
 			(effects
 				(font
@@ -10696,7 +10784,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 317.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 317.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 317.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 317.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 317.5 186.69 0)
 			(effects
 				(font
@@ -10765,7 +10889,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.022 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric) Automotive AEC-Q200"
+			(at 346.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 346.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GCM155R71H223KA55D"
+			(at 346.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 346.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "81-GCM155R71H223KA5D"
 			(at 346.71 90.17 0)
 			(effects
 				(font
@@ -11031,7 +11191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 12.1kΩ ±1% 0402"
+		(property "Description" "12.1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 138.43 149.86 0)
 			(effects
 				(font
@@ -11040,7 +11200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 138.43 149.86 0)
 			(effects
 				(font
@@ -11049,7 +11209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0712K1L"
+		(property "Manufacturer Part Number" "ERJ-3EKF1212V"
 			(at 138.43 149.86 0)
 			(effects
 				(font
@@ -11067,7 +11227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0712K1L"
+		(property "Supplier Part Number 1" "667-ERJ-3EKF1212V"
 			(at 138.43 149.86 0)
 			(effects
 				(font
@@ -11154,7 +11314,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 335.28 152.4 0)
 			(effects
 				(font
@@ -11172,7 +11332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 335.28 152.4 0)
 			(effects
 				(font
@@ -11181,7 +11341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 335.28 152.4 0)
 			(effects
 				(font
@@ -11190,7 +11350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 335.28 152.4 0)
 			(effects
 				(font
@@ -11208,7 +11368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 335.28 152.4 0)
 			(effects
 				(font
@@ -11360,7 +11520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 102.87 157.48 0)
 			(effects
 				(font
@@ -11378,7 +11538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 102.87 157.48 0)
 			(effects
 				(font
@@ -11519,7 +11679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 1kΩ ±1% 0402"
+		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 130.81 149.86 0)
 			(effects
 				(font
@@ -11528,7 +11688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 130.81 149.86 0)
 			(effects
 				(font
@@ -11537,7 +11697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-071KL"
+		(property "Manufacturer Part Number" "ERJ-3EKF1001V"
 			(at 130.81 149.86 0)
 			(effects
 				(font
@@ -11555,7 +11715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-071KL"
+		(property "Supplier Part Number 1" "667-ERJ-3EKF1001V"
 			(at 130.81 149.86 0)
 			(effects
 				(font
@@ -11660,7 +11820,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.022 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric) Automotive AEC-Q200"
+			(at 346.71 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 346.71 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GCM155R71H223KA55D"
+			(at 346.71 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 346.71 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "81-GCM155R71H223KA5D"
 			(at 346.71 186.69 0)
 			(effects
 				(font
@@ -11729,7 +11925,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 336.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 336.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 336.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 336.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 336.55 90.17 0)
 			(effects
 				(font
@@ -11863,7 +12095,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "330 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 400.05 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 400.05 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ERJ-3EKF3300V"
+			(at 400.05 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 400.05 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "667-ERJ-3EKF3300V"
 			(at 400.05 54.61 0)
 			(effects
 				(font
@@ -11933,7 +12201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 1kΩ ±1% 0402"
+		(property "Description" "2.2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 104.14 264.16 0)
 			(effects
 				(font
@@ -11942,7 +12210,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 104.14 264.16 0)
 			(effects
 				(font
@@ -11951,7 +12219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-071KL"
+		(property "Manufacturer Part Number" "ERJ-3EKF2201V"
 			(at 104.14 264.16 0)
 			(effects
 				(font
@@ -11969,7 +12237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-071KL"
+		(property "Supplier Part Number 1" "667-ERJ-3EKF2201V"
 			(at 104.14 264.16 0)
 			(effects
 				(font
@@ -12056,7 +12324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 163.83 200.66 0)
 			(effects
 				(font
@@ -12074,7 +12342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 163.83 200.66 0)
 			(effects
 				(font
@@ -12197,7 +12465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 130.81 105.41 0)
 			(effects
 				(font
@@ -12215,7 +12483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 130.81 105.41 0)
 			(effects
 				(font
@@ -12357,7 +12625,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Thick Film"
+			(at 88.9 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 88.9 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
+			(at 88.9 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 88.9 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 88.9 264.16 0)
 			(effects
 				(font
@@ -12408,7 +12712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 323.85 152.4 0)
 			(effects
 				(font
@@ -12426,7 +12730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 323.85 152.4 0)
 			(effects
 				(font
@@ -12435,7 +12739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 323.85 152.4 0)
 			(effects
 				(font
@@ -12444,7 +12748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 323.85 152.4 0)
 			(effects
 				(font
@@ -12462,7 +12766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 323.85 152.4 0)
 			(effects
 				(font
@@ -12549,7 +12853,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 300.99 152.4 0)
 			(effects
 				(font
@@ -12567,7 +12871,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 300.99 152.4 0)
 			(effects
 				(font
@@ -12576,7 +12880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 300.99 152.4 0)
 			(effects
 				(font
@@ -12585,7 +12889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 300.99 152.4 0)
 			(effects
 				(font
@@ -12603,7 +12907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 300.99 152.4 0)
 			(effects
 				(font
@@ -12708,7 +13012,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 307.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 307.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 307.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 307.34 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 307.34 90.17 0)
 			(effects
 				(font
@@ -12777,7 +13117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1 Port RJ45 MagJack Connector Through Hole 10/100 Base-T, AutoMDIX, with LEDs"
 			(at 365.76 187.96 0)
 			(effects
 				(font
@@ -12786,153 +13126,39 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "TRP Connector B.V."
-			(at 366.014 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "14.97mm"
-			(at 366.014 258.826 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" "ASHISH"
-			(at 365.76 265.176 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 365.76 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 366.014 261.112 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/2250065-1/TRP+Connector/view-part/?ref=eda"
-			(at 365.506 232.918 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 366.268 244.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "5"
-			(at 365.506 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Manufacturer" "Pulse Electronics"
 			(at 365.76 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/2250065-1/TRP+Connector/view-part/?ref=snap"
-			(at 367.792 237.49 0)
+		(property "Manufacturer Part Number" "J0011D21BNL"
+			(at 365.76 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MP" "2250065-1"
-			(at 366.268 250.698 0)
+		(property "Supplier 1" "Mouser"
+			(at 365.76 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4617400&manufacturer=TRP Connector B.V.&part_name=2250065-1&search_term=j0011d01bnl"
-			(at 365.506 230.124 0)
+		(property "Supplier Part Number 1" "673-J0011D21BNL"
+			(at 365.76 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "1 Port RJ45 Through Hole 10/100 Base-TX, AutoMDIX"
-			(at 367.03 241.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 365.76 263.398 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Bel Fuse"
-			(at 365.76 267.208 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -13029,7 +13255,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 326.39 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 326.39 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 326.39 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 326.39 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 326.39 90.17 0)
 			(effects
 				(font
@@ -13146,7 +13408,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 175.26 200.66 0)
 			(effects
 				(font
@@ -13164,7 +13426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 175.26 200.66 0)
 			(effects
 				(font
@@ -13418,7 +13680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_capacitor_smd:C_0603_1608_DensityHigh"
 			(at 120.65 105.41 0)
 			(effects
 				(font
@@ -13436,7 +13698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 1 µF 25 V X7R ±10% 0603"
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
 			(at 120.65 105.41 0)
 			(effects
 				(font
@@ -13577,7 +13839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Green 571nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 104.14 254 0)
 			(effects
 				(font
@@ -13718,7 +13980,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 22.86 203.2 0)
 			(effects
 				(font
@@ -13923,7 +14185,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Thick Film"
+			(at 41.91 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 41.91 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
+			(at 41.91 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 41.91 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 41.91 208.28 0)
 			(effects
 				(font
@@ -13992,7 +14290,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "330 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 400.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 400.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ERJ-3EKF3300V"
+			(at 400.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 400.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "667-ERJ-3EKF3300V"
 			(at 400.05 151.13 0)
 			(effects
 				(font
@@ -14239,7 +14573,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 257.81 200.66 0)
 			(effects
 				(font
@@ -14257,7 +14591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 257.81 200.66 0)
 			(effects
 				(font
@@ -14398,7 +14732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 1kΩ ±1% 0402"
+		(property "Description" "2.2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 64.77 257.81 0)
 			(effects
 				(font
@@ -14407,7 +14741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 64.77 257.81 0)
 			(effects
 				(font
@@ -14416,7 +14750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-071KL"
+		(property "Manufacturer Part Number" "ERJ-3EKF2201V"
 			(at 64.77 257.81 0)
 			(effects
 				(font
@@ -14434,7 +14768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-071KL"
+		(property "Supplier Part Number 1" "667-ERJ-3EKF2201V"
 			(at 64.77 257.81 0)
 			(effects
 				(font
@@ -14539,7 +14873,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 326.39 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 326.39 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 326.39 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 326.39 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 326.39 186.69 0)
 			(effects
 				(font
@@ -14608,7 +14978,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 307.34 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 307.34 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 307.34 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 307.34 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 307.34 186.69 0)
 			(effects
 				(font
@@ -14659,7 +15065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 182.88 227.33 0)
 			(effects
 				(font
@@ -14677,7 +15083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 182.88 227.33 0)
 			(effects
 				(font
@@ -14817,7 +15223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "25 MHz ±20ppm Crystal 8pF 60 Ohms 4-SMD, No Lead (3.2 x 2.5 mm)"
 			(at 66.04 109.22 0)
 			(effects
 				(font
@@ -14964,7 +15370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 4.7kΩ ±1% 0402"
+		(property "Description" "2.2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 101.6 195.58 0)
 			(effects
 				(font
@@ -14973,7 +15379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 101.6 195.58 0)
 			(effects
 				(font
@@ -14982,7 +15388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-074K7L"
+		(property "Manufacturer Part Number" "ERJ-3EKF2201V"
 			(at 101.6 195.58 0)
 			(effects
 				(font
@@ -15000,7 +15406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-074K7L"
+		(property "Supplier Part Number 1" "667-ERJ-3EKF2201V"
 			(at 101.6 195.58 0)
 			(effects
 				(font
@@ -15087,7 +15493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 312.42 152.4 0)
 			(effects
 				(font
@@ -15105,7 +15511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 312.42 152.4 0)
 			(effects
 				(font
@@ -15114,7 +15520,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 312.42 152.4 0)
 			(effects
 				(font
@@ -15123,7 +15529,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 312.42 152.4 0)
 			(effects
 				(font
@@ -15141,7 +15547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 312.42 152.4 0)
 			(effects
 				(font
@@ -15228,7 +15634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_capacitor_smd:C_0603_1608_DensityHigh"
 			(at 142.24 200.66 0)
 			(effects
 				(font
@@ -15246,7 +15652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 1 µF 25 V X7R ±10% 0603"
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
 			(at 142.24 200.66 0)
 			(effects
 				(font
@@ -15369,7 +15775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 171.45 227.33 0)
 			(effects
 				(font
@@ -15387,7 +15793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 171.45 227.33 0)
 			(effects
 				(font
@@ -15510,7 +15916,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 335.28 50.8 0)
 			(effects
 				(font
@@ -15528,7 +15934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 335.28 50.8 0)
 			(effects
 				(font
@@ -15537,7 +15943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 335.28 50.8 0)
 			(effects
 				(font
@@ -15546,7 +15952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 335.28 50.8 0)
 			(effects
 				(font
@@ -15564,7 +15970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 335.28 50.8 0)
 			(effects
 				(font
@@ -16024,7 +16430,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 323.85 50.8 0)
 			(effects
 				(font
@@ -16042,7 +16448,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 323.85 50.8 0)
 			(effects
 				(font
@@ -16051,7 +16457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 323.85 50.8 0)
 			(effects
 				(font
@@ -16060,7 +16466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 323.85 50.8 0)
 			(effects
 				(font
@@ -16078,7 +16484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 323.85 50.8 0)
 			(effects
 				(font
@@ -16296,7 +16702,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 312.42 50.8 0)
 			(effects
 				(font
@@ -16314,7 +16720,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 312.42 50.8 0)
 			(effects
 				(font
@@ -16323,7 +16729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 312.42 50.8 0)
 			(effects
 				(font
@@ -16332,7 +16738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 312.42 50.8 0)
 			(effects
 				(font
@@ -16350,7 +16756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 312.42 50.8 0)
 			(effects
 				(font
@@ -16455,7 +16861,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 317.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 317.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 317.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 317.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 317.5 90.17 0)
 			(effects
 				(font
@@ -16524,7 +16966,43 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 336.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 336.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 336.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 336.55 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
 			(at 336.55 186.69 0)
 			(effects
 				(font
@@ -16575,7 +17053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 300.99 50.8 0)
 			(effects
 				(font
@@ -16593,7 +17071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 49.9Ω ±1% 0402"
+		(property "Description" "49.9 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 300.99 50.8 0)
 			(effects
 				(font
@@ -16602,7 +17080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 300.99 50.8 0)
 			(effects
 				(font
@@ -16611,7 +17089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0749R9L"
+		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
 			(at 300.99 50.8 0)
 			(effects
 				(font
@@ -16629,7 +17107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0749R9L"
+		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
 			(at 300.99 50.8 0)
 			(effects
 				(font
@@ -16800,7 +17278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 10kΩ ±1% 0402"
+		(property "Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Thick Film"
 			(at 93.98 148.59 0)
 			(effects
 				(font
@@ -16809,7 +17287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 93.98 148.59 0)
 			(effects
 				(font
@@ -16818,7 +17296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0710KL"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
 			(at 93.98 148.59 0)
 			(effects
 				(font
@@ -16836,7 +17314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0710KL"
+		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 93.98 148.59 0)
 			(effects
 				(font
@@ -17120,7 +17598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 198.12 200.66 0)
 			(effects
 				(font
@@ -17138,7 +17616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 198.12 200.66 0)
 			(effects
 				(font
@@ -17261,7 +17739,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 160.02 227.33 0)
 			(effects
 				(font
@@ -17279,7 +17757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 160.02 227.33 0)
 			(effects
 				(font
@@ -17420,7 +17898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1 Port RJ45 MagJack Connector Through Hole 10/100 Base-T, AutoMDIX, with LEDs"
 			(at 365.76 90.17 0)
 			(effects
 				(font
@@ -17429,153 +17907,39 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "TRP Connector B.V."
-			(at 366.014 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "14.97mm"
-			(at 366.014 161.036 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" "ASHISH"
-			(at 365.76 167.386 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 365.76 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 366.014 163.322 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/2250065-1/TRP+Connector/view-part/?ref=eda"
-			(at 365.506 135.128 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 366.268 147.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "5"
-			(at 365.506 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
+		(property "Manufacturer" "Pulse Electronics"
 			(at 365.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/2250065-1/TRP+Connector/view-part/?ref=snap"
-			(at 367.792 139.7 0)
+		(property "Manufacturer Part Number" "J0011D21BNL"
+			(at 365.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MP" "2250065-1"
-			(at 366.268 152.908 0)
+		(property "Supplier 1" "Mouser"
+			(at 365.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4617400&manufacturer=TRP Connector B.V.&part_name=2250065-1&search_term=j0011d01bnl"
-			(at 365.506 132.334 0)
+		(property "Supplier Part Number 1" "673-J0011D21BNL"
+			(at 365.76 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "1 Port RJ45 Through Hole 10/100 Base-TX, AutoMDIX"
-			(at 367.03 143.256 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 365.76 165.608 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Bel Fuse"
-			(at 365.76 169.418 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -17672,7 +18036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "EEPROM Memory IC 32Kbit I2C 400 kHz 900 ns SOT-23-5"
 			(at 62.23 208.28 0)
 			(effects
 				(font
@@ -17690,7 +18054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Microchip"
+		(property "Manufacturer" "Microchip Technology"
 			(at 62.23 208.28 0)
 			(effects
 				(font
@@ -17804,7 +18168,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 246.38 200.66 0)
 			(effects
 				(font
@@ -17822,7 +18186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 246.38 200.66 0)
 			(effects
 				(font
@@ -17945,7 +18309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 234.95 200.66 0)
 			(effects
 				(font
@@ -17963,7 +18327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 234.95 200.66 0)
 			(effects
 				(font
@@ -18086,7 +18450,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 58.42 113.03 0)
 			(effects
 				(font
@@ -18104,7 +18468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 10 pF 50 V C0G ±5% 0402"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
 			(at 58.42 113.03 0)
 			(effects
 				(font
@@ -18267,6 +18631,147 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 205.74 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f34a338e-fc56-45f7-a6a9-c94a602f0ab2")
+		(property "Reference" "C161"
+			(at 207.64 226.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 207.64 229.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0603_1608_DensityHigh"
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL10B105KA8NNNC"
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL10B105KA8NNNC"
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" ""
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" ""
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" ""
+			(at 205.74 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ba0b203-4e79-4a9e-aa6b-5533d42c9298")
+		)
+		(pin "2"
+			(uuid "f584164a-4cc5-47a9-aa7a-88df169db8dd")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "C161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 209.55 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18292,7 +18797,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 209.55 200.66 0)
 			(effects
 				(font
@@ -18310,7 +18815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 209.55 200.66 0)
 			(effects
 				(font
@@ -18451,7 +18956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 10kΩ ±1% 0402"
+		(property "Description" "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Thick Film"
 			(at 260.35 142.24 0)
 			(effects
 				(font
@@ -18460,7 +18965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Vishay"
 			(at 260.35 142.24 0)
 			(effects
 				(font
@@ -18469,7 +18974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-0710KL"
+		(property "Manufacturer Part Number" "CRCW060310K0FKEA"
 			(at 260.35 142.24 0)
 			(effects
 				(font
@@ -18487,7 +18992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0710KL"
+		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 260.35 142.24 0)
 			(effects
 				(font
@@ -18658,7 +19163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 4.7kΩ ±1% 0402"
+		(property "Description" "2.2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
 			(at 90.17 195.58 0)
 			(effects
 				(font
@@ -18667,7 +19172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Yageo"
+		(property "Manufacturer" "Panasonic"
 			(at 90.17 195.58 0)
 			(effects
 				(font
@@ -18676,7 +19181,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "RC0402FR-074K7L"
+		(property "Manufacturer Part Number" "ERJ-3EKF2201V"
 			(at 90.17 195.58 0)
 			(effects
 				(font
@@ -18694,7 +19199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "603-RC0402FR-074K7L"
+		(property "Supplier Part Number 1" "667-ERJ-3EKF2201V"
 			(at 90.17 195.58 0)
 			(effects
 				(font
@@ -18781,7 +19286,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 73.66 113.03 0)
 			(effects
 				(font
@@ -18799,7 +19304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MLCC 10 pF 50 V C0G ±5% 0402"
+		(property "Description" "10 pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
 			(at 73.66 113.03 0)
 			(effects
 				(font
@@ -18938,7 +19443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "600 Ohms @ 100 MHz 1 Power, Signal Line Ferrite Bead 0603 (1608 Metric) 1.3A 150mOhm"
 			(at 125.73 66.04 0)
 			(effects
 				(font
@@ -18956,7 +19461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Murata Electronics"
 			(at 125.73 66.04 90)
 			(effects
 				(font
@@ -19079,7 +19584,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Red 631nm LED Indication - Discrete 2V 0603 (1608 Metric)"
 			(at 64.77 267.97 0)
 			(effects
 				(font

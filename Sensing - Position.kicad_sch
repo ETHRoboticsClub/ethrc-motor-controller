@@ -2703,7 +2703,7 @@
 	)
 	(text_box "External 14-Bit On-Axis Magnetic Rotary Position Sensor (disambiguation)"
 		(exclude_from_sim no)
-		(at 144.78 96.52 0)
+		(at 176.53 96.52 0)
 		(size 114.3 8.89)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -2816,12 +2816,6 @@
 		(uuid "28139e89-cde0-4e3b-b8bf-1da523ccbec5")
 	)
 	(junction
-		(at 109.22 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32fcbb6a-dfe0-454e-9815-abc3ffb4f541")
-	)
-	(junction
 		(at 102.87 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2892,6 +2886,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b06dd86f-458f-429b-a19b-58ae1474ec19")
+	)
+	(junction
+		(at 110.49 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b73218ac-d6b5-4c23-975c-f6081cb8c4ee")
 	)
 	(junction
 		(at 55.88 85.09)
@@ -3287,13 +3287,23 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 115.57) (xy 109.22 125.73)
+			(xy 110.49 115.57) (xy 110.49 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "55269f57-c925-47fd-93f0-414e4eaaa9a9")
+	)
+	(wire
+		(pts
+			(xy 110.49 125.73) (xy 134.62 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b760b7e-be35-4f5c-9b3a-ace644045f6a")
 	)
 	(wire
 		(pts
@@ -3547,7 +3557,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 125.73) (xy 109.22 125.73)
+			(xy 83.82 125.73) (xy 110.49 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3727,7 +3737,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 105.41) (xy 109.22 107.95)
+			(xy 110.49 105.41) (xy 110.49 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3857,7 +3867,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 105.41) (xy 109.22 105.41)
+			(xy 102.87 105.41) (xy 110.49 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3884,16 +3894,6 @@
 			(type default)
 		)
 		(uuid "e8b8cf1e-d0c5-4fd0-b44f-d89b5fe09afb")
-	)
-	(wire
-		(pts
-			(xy 109.22 125.73) (xy 134.62 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed792379-8a22-4ebc-922e-3e82409436f6")
 	)
 	(bus
 		(pts
@@ -4515,7 +4515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 93.472 111.76 90)
 			(effects
 				(font
@@ -4631,6 +4631,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 102.87 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4178a7a3-0a42-4a27-9051-4d329eb497e8")
+		(property "Reference" "R13"
+			(at 104.14 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 104.14 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 101.092 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 102.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "077fcc67-06a4-4f5d-9aeb-cce10d290d85")
+		)
+		(pin "2"
+			(uuid "57c00622-98e8-4ac8-8f65-b7c5dd36d15b")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 132.08 46.99 0)
 		(mirror y)
@@ -4698,75 +4767,6 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 134.62 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "495bbe8f-b5de-41aa-8479-6b89625a5f32")
-		(property "Reference" "C22"
-			(at 128.524 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1n"
-			(at 128.524 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.5852 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 134.62 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8ddede12-a7bc-45a3-a32e-8a02b6545013")
-		)
-		(pin "1"
-			(uuid "e9be7123-ea19-45e4-9f01-19abe165fac2")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
-					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -4923,75 +4923,6 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 109.22 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5b0e9073-7732-4550-9583-d6e704d96609")
-		(property "Reference" "R78"
-			(at 110.49 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 110.49 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.442 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 109.22 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cfb83ba7-813f-4064-993f-6cd5d635b7ba")
-		)
-		(pin "2"
-			(uuid "ae8ba65e-255b-464f-ae7a-1bfe43a2632b")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
-					(reference "R78")
 					(unit 1)
 				)
 			)
@@ -5683,7 +5614,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a1e7c165-608c-4009-b5d5-09acd7ce1e01")
+		(uuid "a5f6db5f-bf2c-4a86-a078-9f5fe394a6f6")
 		(property "Reference" "C19"
 			(at 119.634 132.08 0)
 			(effects
@@ -5702,7 +5633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 126.6952 137.16 0)
 			(effects
 				(font
@@ -5730,10 +5661,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "e1fd158c-6ac4-4460-8d15-eed40ea3f7b9")
+			(uuid "d0485b93-1c7f-4824-8d5c-f0342bc21c48")
 		)
 		(pin "1"
-			(uuid "aca9df6c-371c-4118-ae36-c1508b8a8163")
+			(uuid "d608498d-5670-496a-bf86-147e9eefdce5")
 		)
 		(instances
 			(project "ethrc_motor_controller"
@@ -5974,7 +5905,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 116.5352 137.16 0)
 			(effects
 				(font
@@ -6018,15 +5949,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 102.87 111.76 0)
+		(at 110.49 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e401f7b7-42cc-45da-8744-c12c414ddb29")
-		(property "Reference" "R13"
-			(at 104.14 110.49 0)
+		(uuid "daeb039d-8dd9-46d9-a452-359428e19479")
+		(property "Reference" "R78"
+			(at 111.76 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6035,7 +5966,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 104.14 113.03 0)
+			(at 111.76 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,8 +5974,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 101.092 111.76 90)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 108.712 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6053,7 +5984,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 111.76 0)
+			(at 110.49 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6062,7 +5993,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 102.87 111.76 0)
+			(at 110.49 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6071,15 +6002,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "96662221-23e1-4fd5-83b4-b462e2e0442e")
+			(uuid "63265dbb-8fef-4e6d-9ed9-4207849ea540")
 		)
 		(pin "2"
-			(uuid "4e060556-52c7-45db-b049-7eeadc6e883b")
+			(uuid "ba94220b-1252-4af9-afc9-d0d35569699f")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
-					(reference "R13")
+					(reference "R78")
 					(unit 1)
 				)
 			)
@@ -6146,6 +6077,75 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 134.62 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1bca700-dbe0-4397-9968-0058a11c3a51")
+		(property "Reference" "C22"
+			(at 128.524 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 128.524 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 135.5852 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 134.62 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0bf2cec5-b855-4b22-a3f9-d7181e8e0cda")
+		)
+		(pin "1"
+			(uuid "44eea220-e25f-4f80-9924-b3fcc73bdd26")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec"
+					(reference "C22")
 					(unit 1)
 				)
 			)

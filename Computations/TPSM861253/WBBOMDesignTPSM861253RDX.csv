@@ -1,0 +1,8 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Cin,Kemet,C0805C106K8PACTU,1,0.03,6.75,Cap: 10 µF  Total Derated Cap: 4.4 µF  VDC: 10 V  ESR: 3 mΩ  Package: 0805  
+U1,Texas Instruments,TPSM861253RDX,1,0.57,21.5,
+Cout,MuRata,GRM188R60J226MEA0D,1,0.04,4.68,Cap: 22 µF  Total Derated Cap: 7.9 µF  VDC: 6.3 V  ESR: 1 mΩ  Package: 0603  
+Cinx,AVX,08053C104KAT2A,1,0.01,6.75,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 25 V  ESR: 280 mΩ  Package: 0805  
+Renb,Vishay-Dale,CRCW040210K0FKED,1,0.01,3,Resistance: 10 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Rent,Vishay-Dale,CRCW040215K8FKED,1,0.01,3,Resistance: 15.8 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Cen,MuRata,GRM155R71C103KA01D,1,0.01,3,Cap: 10 nF  Total Derated Cap: 10 nF  VDC: 16 V  ESR: 1 mΩ  Package: 0402  

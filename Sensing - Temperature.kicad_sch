@@ -6,12 +6,304 @@
 	(paper "A4")
 	(title_block
 		(title "Sensing - Temperature")
-		(date "2025-01-12")
+		(date "2024-04-13")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "0_esd_protection:BAT41KFILM"
+		(symbol "0_power_symbols:+A3V3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+A3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+A3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+A3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+A3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+A3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "0_power_symbols:CHASSIS"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "CHASSIS"
+				(at 0 -3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "chassis ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CHASSIS_0_1"
+				(polyline
+					(pts
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CHASSIS_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "CHASSIS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "BAT41KFILM_1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -38,7 +330,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "0_diode_smd:D_SOD-523"
 				(at 0 -4.445 0)
 				(effects
 					(font
@@ -48,7 +340,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
-				(at 1.016 -7.112 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -57,7 +349,7 @@
 				)
 			)
 			(property "Description" "100V 1A Schottky Diode, SOD-523-2"
-				(at 1.016 -7.112 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -83,7 +375,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BAT41KFILM_0_1"
+			(symbol "BAT41KFILM_1_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -121,7 +413,7 @@
 					)
 				)
 			)
-			(symbol "BAT41KFILM_1_1"
+			(symbol "BAT41KFILM_1_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -161,285 +453,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0_power_symbols:+3V3A"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3V3A"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3A\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3V3A_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3A_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+3V3A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "0_resistors:NTC_10k_0603"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TH"
-				(at 2.54 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "10k NTC"
-				(at 2.54 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "NTC thermistor 10 kOhm 1 % at 25 C, B25/50 = 3380 K, 0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "NCP18XH103F03RB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Murata"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "thermistor NTC temperature"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NTC_10k_0603_0_1"
-				(polyline
-					(pts
-						(xy -1.778 -2.286) (xy -1.778 -1.778) (xy 1.778 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "t"
-					(at 2.286 1.27 0)
-					(effects
-						(font
-							(size 1 1)
-						)
-					)
-				)
-			)
-			(symbol "NTC_10k_0603_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "Conn_01x02_Mounting_1"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -448,15 +462,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 2.54 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x02_Mounting"
+				(at 15.24 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -481,7 +495,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row with mounting pin"
 				(at 0 0 0)
 				(effects
 					(font
@@ -508,10 +522,36 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_1_1"
+			(symbol "Conn_01x02_Mounting_1_0_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy 3.81 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_01x02_Mounting_1_1_1"
 				(rectangle
 					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(end 3.81 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -571,6 +611,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 6.35 270)
+					(length 3.81)
+					(name "MP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -8.89 90)
+					(length 3.81)
+					(name "MP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -844,14 +920,267 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
-			(power)
+		(symbol "Device:Thermistor_NTC"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
 				(offset 0)
-				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TH"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Thermistor_NTC"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "thermistor NTC resistor sensor RTD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Thermistor_NTC_0_1"
+				(arc
+					(start -3.175 2.413)
+					(mid -3.0506 2.3165)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.048 2.794)
+					(mid -2.9736 2.9736)
+					(end -2.794 3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 3.048)
+					(mid -2.6144 2.9736)
+					(end -2.54 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 2.54)
+					(mid -2.9736 2.6144)
+					(end -3.048 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 1.905)
+					(mid -2.9736 1.9794)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 2.159)
+					(mid -2.6144 1.9794)
+					(end -2.794 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.159 2.794)
+					(mid -2.434 2.5608)
+					(end -2.794 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.159) (xy -2.54 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.683) (xy -2.54 -1.397) (xy -2.794 -2.159) (xy -2.286 -2.159) (xy -2.54 -1.397) (xy -2.54 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy -1.778 1.524) (xy 1.778 -1.524) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.397) (xy -1.778 -3.683) (xy -2.032 -2.921) (xy -1.524 -2.921) (xy -1.778 -3.683)
+						(xy -1.778 -3.429)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Thermistor_NTC_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -927,7 +1256,8 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -946,34 +1276,109 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Motor Coil Temperature"
-		(exclude_from_sim no)
-		(at 147.828 98.044 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-			)
-			(justify left bottom)
+	(rectangle
+		(start 78.74 76.2)
+		(end 83.82 87.63)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
 		)
-		(uuid "178fec54-0bd9-4239-997d-ff7041313f2e")
+		(fill
+			(type none)
+		)
+		(uuid 0a9b2f59-0a6e-44d7-aabb-2936a634c45a)
 	)
-	(text "FET temperature"
+	(rectangle
+		(start 193.04 76.2)
+		(end 198.12 86.36)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9c2effc5-1110-488a-bef2-6e1febdf0435)
+	)
+	(text_box "LAYOUT NOTE:\nNTCs must be placed close and thermally coupled to relevant heat source. Route away from noisy traces."
 		(exclude_from_sim no)
-		(at 143.764 40.386 0)
+		(at 22.86 74.93 0)
+		(size 29.21 13.97)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
+				(face "Arial")
 				(size 1.27 1.27)
+				(thickness 0.4)
 				(bold yes)
+				(color 0 0 255 1)
 			)
-			(justify left bottom)
+			(justify left top)
 		)
-		(uuid "996a1832-6c52-5464-8561-f94695f1cfb1")
+		(uuid "1c05cb80-d89c-4f46-9835-6ccdb3dc3ce3")
+	)
+	(text_box "MOSFETs Temperature Sensing"
+		(exclude_from_sim no)
+		(at 38.1 108.585 0)
+		(size 69.85 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "257b383a-7794-4204-83f8-21e6970fb7df")
+	)
+	(text_box "Motor Temperature Sensing"
+		(exclude_from_sim no)
+		(at 162.56 109.855 0)
+		(size 69.85 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "3f624626-95f7-4298-b5a0-a0276a944051")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
-		(at 82.55 15.24 0)
-		(size 132.08 12.7)
+		(at 80.01 16.51 0)
+		(size 137.16 12.7)
 		(margins 4.4999 4.4999 4.4999 4.4999)
 		(stroke
 			(width -0.0001)
@@ -991,1042 +1396,777 @@
 				(color 162 22 34 1)
 			)
 		)
-		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
+		(uuid "4f72d39d-aee5-47a6-8746-d4263a64205b")
+	)
+	(text_box "DESIGN NOTE:\nIdeally connect thermistor with nominal B-Constant 4050-4099K"
+		(exclude_from_sim no)
+		(at 160.02 76.2 0)
+		(size 22.86 10.16)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "63875f20-d7e5-49a4-a17a-fc1b1a524532")
+	)
+	(text_box "DESIGN NOTE:\nDiodes protect against over-voltage."
+		(exclude_from_sim no)
+		(at 87.63 49.53 0)
+		(size 33.02 7.62)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c299bf0a-d3d4-4b6a-9c33-eaca6157678b")
+	)
+	(text_box "DESIGN NOTE:\nNominal B-Constant 4050-4099K"
+		(exclude_from_sim no)
+		(at 22.86 92.71 0)
+		(size 29.21 7.62)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "cf66624e-9925-423f-82c0-70c3dc82e276")
+	)
+	(text_box "DESIGN NOTE:\nResistor chosen for a 10k 3950K motor thermistor. See make_thermistor_table.py in the firmware repository for more details."
+		(exclude_from_sim no)
+		(at 154.94 44.45 0)
+		(size 29.21 15.24)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "fa0cda5d-be51-40ac-8587-4741c6a6cde8")
 	)
 	(junction
-		(at 140.97 102.87)
+		(at 175.26 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1411bfa1-f453-4a85-b67c-788040b64451")
+		(uuid "17324702-85d1-4e76-a81a-028ed8d5df8b")
 	)
 	(junction
-		(at 161.29 67.31)
+		(at 213.36 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "16136f7e-5259-5b9b-8951-5a40954c2679")
+		(uuid "2e271e52-50cd-4ee8-b5d5-22fb6776a7a6")
 	)
 	(junction
-		(at 140.97 67.31)
+		(at 209.55 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1b8c64c3-7434-5817-8c7f-81342b18b289")
+		(uuid "36a31d89-0fa2-4864-81b0-e1a67016527b")
 	)
 	(junction
-		(at 123.19 132.08)
+		(at 195.58 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2908831e-1793-47b5-b695-1688fef8d4ab")
+		(uuid "496438d2-4ef3-4763-ad6c-c89c48a77685")
 	)
 	(junction
-		(at 170.18 67.31)
+		(at 81.28 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "29a6b6c7-a8a7-4a2f-9605-3ac01e59893b")
+		(uuid "7a68898c-1ae0-48c1-9f43-00a35b86ae59")
 	)
 	(junction
-		(at 140.97 52.07)
+		(at 58.42 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "69eaf7b3-0372-4bfa-9a71-f025d380bdfe")
+		(uuid "7c369a62-3ff9-4541-8fe9-c124e88fd58a")
 	)
 	(junction
-		(at 140.97 120.65)
+		(at 58.42 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6c2d2a81-e1b1-547f-879e-f7f6d3c59ab6")
+		(uuid "ba75c2e3-1f66-403e-a5f5-02880c85429c")
 	)
 	(junction
-		(at 171.45 120.65)
+		(at 58.42 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d065bbe3-7cf6-4871-813e-808275609034")
+		(uuid "c897474f-12db-4a87-a2ba-3f4f468755d4")
 	)
 	(junction
-		(at 140.97 80.01)
+		(at 195.58 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e4fff5cc-c9b4-4f63-b912-f7de35d95786")
+		(uuid "e0431680-392d-4cf4-8a09-be3aef80fe02")
 	)
 	(junction
-		(at 160.02 120.65)
+		(at 72.39 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f5be07a4-b3aa-5282-975d-b9929fbd5886")
+		(uuid "f069b5bd-9846-425d-97fd-81c601476dd5")
+	)
+	(junction
+		(at 195.58 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5a278f1-30f4-4f8f-aad7-5d1fa3558db2")
 	)
 	(bus_entry
-		(at 241.3 81.28)
+		(at 250.19 90.17)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1979a7fe-899c-4a38-9a65-fb4cb1c17f2d")
+		(uuid "5f4e4f84-4331-4155-a0d1-d9c82a06bfb6")
 	)
 	(bus_entry
-		(at 241.3 77.47)
+		(at 250.19 92.71)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c1676f9e-0c8f-46e8-9ea0-82f2719f529b")
+		(uuid "b65665b6-06db-48bc-8d89-054a391be50e")
 	)
 	(wire
 		(pts
-			(xy 161.29 80.01) (xy 161.29 74.93)
+			(xy 58.42 66.04) (xy 81.28 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07f7a9c9-3fac-43ff-9ad9-115c685eb3d2")
+		(uuid "26f3aa98-f5a2-41e0-8229-afc4c608cdda")
 	)
 	(wire
 		(pts
-			(xy 171.45 102.87) (xy 171.45 109.22)
+			(xy 58.42 105.41) (xy 72.39 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "245b3755-c2f6-4050-99b6-a5887bd5a7ed")
+		(uuid "35b431d2-1bcf-442d-98dc-0eac80212ef0")
 	)
 	(wire
 		(pts
-			(xy 140.97 101.6) (xy 140.97 102.87)
+			(xy 124.46 90.17) (xy 124.46 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24866fb3-c55b-40d5-a9fc-975c805ea8e1")
+		(uuid "39c762d1-681f-4514-a9b7-fa09ef758dbb")
 	)
 	(wire
 		(pts
-			(xy 161.29 67.31) (xy 170.18 67.31)
+			(xy 58.42 66.04) (xy 58.42 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2cd20308-4797-5a6c-85c0-ef9efa75b8cf")
+		(uuid "45210ca2-3fab-4aae-9fe7-e02e9ccb853e")
 	)
 	(wire
 		(pts
-			(xy 160.02 120.65) (xy 171.45 120.65)
+			(xy 58.42 90.17) (xy 58.42 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3104a469-4903-5440-827e-84e6c9626bbc")
+		(uuid "4a57d443-9da2-47ee-b738-bc752d4443ad")
 	)
 	(wire
 		(pts
-			(xy 171.45 120.65) (xy 187.96 120.65)
+			(xy 81.28 66.04) (xy 81.28 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c75efa4-6608-432c-b4a9-5a205cdfac81")
+		(uuid "4a71fe4e-9531-4c87-83fe-82e01fbf49a7")
 	)
 	(wire
 		(pts
-			(xy 227.33 81.28) (xy 241.3 81.28)
+			(xy 195.58 85.09) (xy 195.58 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "44654527-f2e1-4154-9830-518ae49bab0c")
+		(uuid "4ba56fb9-079c-47e0-845f-477317ca2ed7")
+	)
+	(wire
+		(pts
+			(xy 170.18 106.68) (xy 170.18 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cb094db-5490-46e7-a3c9-8027efd76201")
+	)
+	(wire
+		(pts
+			(xy 58.42 101.6) (xy 58.42 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c98b037-fda4-46a0-b097-c780fdff6c39")
+	)
+	(wire
+		(pts
+			(xy 58.42 107.95) (xy 58.42 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6d7b33-3c26-471d-88c6-ec081e57c891")
+	)
+	(wire
+		(pts
+			(xy 72.39 90.17) (xy 81.28 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61af5c6a-7525-4277-b28f-2869a230fdb2")
+	)
+	(wire
+		(pts
+			(xy 195.58 105.41) (xy 195.58 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d4482f8-f104-4e33-af36-332a6510e9aa")
+	)
+	(wire
+		(pts
+			(xy 209.55 101.6) (xy 209.55 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e063caa-eb88-4027-b800-46618c1b1f59")
+	)
+	(wire
+		(pts
+			(xy 72.39 90.17) (xy 72.39 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c31289d-afae-477d-ac39-c7a3a4e395af")
 	)
 	(bus
 		(pts
-			(xy 243.84 72.39) (xy 245.11 71.12)
+			(xy 255.27 83.82) (xy 261.62 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45318a2f-24e7-4964-a3a8-97e9cfcbbcb6")
+		(uuid "7e310ff8-6121-4dc2-a973-7a344d75c326")
 	)
 	(wire
 		(pts
-			(xy 123.19 132.08) (xy 123.19 135.89)
+			(xy 81.28 90.17) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67b98b8a-f8e1-469c-9c82-a8f363c2886b")
+		(uuid "834ba08a-7066-4557-b410-1edf4960e41c")
 	)
 	(wire
 		(pts
-			(xy 140.97 83.82) (xy 140.97 80.01)
+			(xy 229.87 92.71) (xy 229.87 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67d022bd-45b9-4caf-8109-b72036ae292a")
+		(uuid "85d944cd-d803-495b-9224-e6b116f1669b")
 	)
 	(wire
 		(pts
-			(xy 140.97 120.65) (xy 146.05 120.65)
+			(xy 195.58 73.66) (xy 213.36 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68033566-b4ed-594b-9287-337c9f305152")
+		(uuid "8a2d444c-ae4d-4163-a515-fe6ec12a8f8c")
 	)
 	(wire
 		(pts
-			(xy 140.97 80.01) (xy 140.97 78.74)
+			(xy 195.58 90.17) (xy 195.58 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "704be998-ba5f-423c-9885-6d08b44c556f")
+		(uuid "8a504b86-2d7a-4464-a00b-c98f0adaf6fc")
+	)
+	(polyline
+		(pts
+			(xy 87.63 57.15) (xy 83.82 76.2)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(uuid "8abeef15-f25d-44ad-956a-db8a97b19d41")
 	)
 	(wire
 		(pts
-			(xy 140.97 80.01) (xy 161.29 80.01)
+			(xy 58.42 82.55) (xy 58.42 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71ef007d-a8fd-44dc-94a2-63720e4b8d7b")
+		(uuid "8ffcd586-6d84-4cc4-9e87-e2710d5ce83b")
 	)
 	(wire
 		(pts
-			(xy 140.97 52.07) (xy 170.18 52.07)
+			(xy 81.28 85.09) (xy 81.28 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75de345d-3978-47b1-84a5-84c1413a8f12")
+		(uuid "98eebb08-ce8f-4cdc-b06f-312bdbf570f6")
 	)
 	(wire
 		(pts
-			(xy 119.38 123.19) (xy 123.19 123.19)
+			(xy 195.58 99.06) (xy 195.58 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "799e574b-a365-4b9f-9cc2-86972617b440")
-	)
-	(wire
-		(pts
-			(xy 160.02 128.27) (xy 160.02 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83f9c9f1-e18b-4f2d-b088-87653485e245")
-	)
-	(wire
-		(pts
-			(xy 170.18 52.07) (xy 170.18 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dc448f1-d756-47fc-b47c-1f93afbc49b3")
+		(uuid "991683a5-c92a-4601-b158-639cc1d3f1d1")
 	)
 	(bus
 		(pts
-			(xy 243.84 74.93) (xy 243.84 72.39)
+			(xy 252.73 87.63) (xy 252.73 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9549b79d-1d0d-4afc-95e5-a5ba0a7f1d77")
+		(uuid "9a98efbb-13c1-446f-a88b-f87f0d991ddb")
 	)
 	(wire
 		(pts
-			(xy 119.38 120.65) (xy 140.97 120.65)
+			(xy 195.58 105.41) (xy 209.55 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af09a191-2026-47b4-9902-027b1e187c9a")
+		(uuid "9f492f20-1ec5-4a94-a0b0-964a11796f59")
 	)
 	(wire
 		(pts
-			(xy 140.97 71.12) (xy 140.97 67.31)
+			(xy 175.26 105.41) (xy 175.26 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af520f09-b988-492b-b945-d7c70d963f35")
+		(uuid "a633de43-76f8-434c-a056-80bdbfdc39f0")
 	)
 	(wire
 		(pts
-			(xy 123.19 132.08) (xy 160.02 132.08)
+			(xy 124.46 121.92) (xy 229.87 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af8628c1-f65d-4654-a28b-0c14404b93ac")
+		(uuid "a879396b-424d-498b-aced-d396270f3872")
 	)
 	(wire
 		(pts
-			(xy 140.97 48.26) (xy 140.97 52.07)
+			(xy 195.58 90.17) (xy 209.55 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b242556a-d67c-4c96-9ba0-d9d2ec500b5f")
+		(uuid "ac517f0d-ccc6-428a-b609-0e415f2cb723")
 	)
 	(wire
 		(pts
-			(xy 171.45 116.84) (xy 171.45 120.65)
+			(xy 195.58 99.06) (xy 181.61 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b43dccb7-e4f4-4915-b552-8b4345850edf")
+		(uuid "acd34c80-dd62-4d26-b1c2-f6dd0ce49c99")
 	)
 	(bus
 		(pts
-			(xy 243.84 74.93) (xy 243.84 78.74)
+			(xy 252.73 90.17) (xy 252.73 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b8ab01b8-530b-499d-83fd-05dcf11a70ec")
+		(uuid "ae6b343c-c7b7-4449-b1fd-266383156c67")
 	)
 	(wire
 		(pts
-			(xy 140.97 102.87) (xy 140.97 106.68)
+			(xy 229.87 92.71) (xy 250.19 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c0476652-2170-43fe-b886-4d488f23f3c6")
+		(uuid "afbf3929-7875-4c16-9996-cc6e067ca59f")
 	)
 	(wire
 		(pts
-			(xy 140.97 67.31) (xy 161.29 67.31)
+			(xy 175.26 87.63) (xy 175.26 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca3b73d8-ebda-5a05-b361-4a05fc84a26e")
+		(uuid "b512e08d-be0e-4797-9c8e-27aa10a34045")
 	)
 	(wire
 		(pts
-			(xy 140.97 52.07) (xy 140.97 55.88)
+			(xy 195.58 73.66) (xy 195.58 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cae4fb67-c114-4e0f-b192-28b0553c6ca5")
+		(uuid "b626afac-7812-4798-904b-5dfcab2eeffd")
 	)
 	(wire
 		(pts
-			(xy 153.67 120.65) (xy 160.02 120.65)
+			(xy 181.61 96.52) (xy 195.58 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ced82244-64a5-5cba-927a-1a9331804cce")
+		(uuid "b6876764-375a-4f13-8eed-9f153bc041af")
 	)
 	(wire
 		(pts
-			(xy 170.18 62.23) (xy 170.18 67.31)
+			(xy 213.36 87.63) (xy 213.36 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d5eabd95-1030-4616-879c-36939446950e")
+		(uuid "b977bf10-93e1-4044-8a98-26b02c8775cf")
+	)
+	(wire
+		(pts
+			(xy 209.55 90.17) (xy 213.36 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9d3953b-4ade-4510-b2c4-e9ca55c193bc")
+	)
+	(wire
+		(pts
+			(xy 195.58 69.85) (xy 195.58 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb2a0529-5f87-492c-82c2-d3509b69a61e")
+	)
+	(wire
+		(pts
+			(xy 58.42 90.17) (xy 72.39 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd53fcc7-2a12-4be0-9f4e-02ccf2ba36c8")
+	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 58.42 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdf49aad-f994-47b2-9a15-8d149e603a4a")
+	)
+	(wire
+		(pts
+			(xy 175.26 106.68) (xy 175.26 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdbd8197-a6f5-4ded-ad70-54da92fd7817")
 	)
 	(bus
 		(pts
-			(xy 245.11 71.12) (xy 251.46 71.12)
+			(xy 252.73 86.36) (xy 255.27 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d7106870-76f5-4d7a-9806-76133ed75a5a")
+		(uuid "d20cd3ae-e7b2-4623-b049-786d59b8d5d9")
+	)
+	(polyline
+		(pts
+			(xy 193.04 76.2) (xy 184.15 59.69)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+			(color 255 0 0 1)
+		)
+		(uuid "d67c7c87-a44f-4449-ba96-b36a063ebc47")
 	)
 	(wire
 		(pts
-			(xy 140.97 102.87) (xy 171.45 102.87)
+			(xy 209.55 90.17) (xy 209.55 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da174b32-8746-447b-83c9-e2824189444d")
+		(uuid "dae0fd97-4302-43dd-8f1b-a0094dcaad95")
 	)
 	(wire
 		(pts
-			(xy 140.97 63.5) (xy 140.97 67.31)
+			(xy 175.26 106.68) (xy 170.18 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e3e61312-5819-4d57-b81f-51594e78997f")
+		(uuid "dbacc8d2-13b1-4a16-ad67-274a4c48f9fd")
 	)
 	(wire
 		(pts
-			(xy 140.97 114.3) (xy 140.97 120.65)
+			(xy 72.39 101.6) (xy 72.39 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ea9615bc-1911-476e-bb79-ae89ff57b62b")
+		(uuid "dd4e941e-8f74-4885-a2d6-26b9f1609504")
 	)
 	(wire
 		(pts
-			(xy 227.33 77.47) (xy 241.3 77.47)
+			(xy 213.36 90.17) (xy 250.19 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eadab3b4-4084-4e6e-b3ee-6aee139e00cb")
+		(uuid "ddfd6ecd-8691-4dfb-81fb-c33e41821900")
 	)
 	(wire
 		(pts
-			(xy 170.18 67.31) (xy 185.42 67.31)
+			(xy 213.36 73.66) (xy 213.36 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ecd45bee-7204-4f00-adbe-7d31a567ef55")
+		(uuid "e5aff6ad-f3af-4219-aa9e-1211b09e0df9")
+	)
+	(bus
+		(pts
+			(xy 252.73 86.36) (xy 252.73 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69afbdc-dd87-4b49-a89a-0b2af5afe01f")
 	)
 	(wire
 		(pts
-			(xy 123.19 123.19) (xy 123.19 132.08)
+			(xy 170.18 87.63) (xy 175.26 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc5ae2f2-ded8-468f-832a-3c0518097f30")
+		(uuid "f69e12d7-6feb-4d22-b1ab-136f840d6a4a")
 	)
-	(label "TEMP_FET"
-		(at 185.42 67.31 180)
+	(label "SENSE_TEMP_FET"
+		(at 229.87 92.71 0)
 		(effects
 			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "27d3c8d0-711f-4b93-85fd-948af9729472")
-	)
-	(label "TEMP_MOTOR"
-		(at 187.96 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "50b2a53e-f6ab-4773-ab78-abe27b26dc36")
-	)
-	(label "TEMP_FET"
-		(at 227.33 77.47 0)
-		(effects
-			(font
+				(face "Arial")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "57014735-e2c3-4094-92c8-f9e699ad54f9")
+		(uuid "48f5483d-e2ed-4387-bd63-9dd8c5d74c1e")
 	)
-	(label "TEMP_MOTOR"
-		(at 227.33 81.28 0)
+	(label "SENSE_TEMP_MOT"
+		(at 229.87 90.17 0)
 		(effects
 			(font
+				(face "Arial")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "bd93e942-24c7-4c73-8609-5a4d37c3ade3")
+		(uuid "e674cb80-b9af-4346-91e6-ef3fbc4ea556")
 	)
-	(hierarchical_label "{TEMP}"
+	(hierarchical_label "{SENSE_TEMP}"
 		(shape output)
-		(at 251.46 71.12 0)
+		(at 261.62 83.82 0)
 		(effects
 			(font
+				(face "Arial")
 				(size 1.27 1.27)
+				(bold yes)
 			)
 			(justify left)
 		)
-		(uuid "ca3cb719-488b-42cf-8135-31077f338f81")
+		(uuid "32c62d42-6628-43b0-a6b6-bac824697708")
 	)
 	(symbol
-		(lib_id "0_esd_protection:BAT41KFILM")
-		(at 171.45 113.03 270)
+		(lib_id "0_power_symbols:+A3V3")
+		(at 195.58 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0a0ee7ad-3bf2-40b7-93d0-d0ea91b57334")
-		(property "Reference" "D16"
-			(at 173.99 111.4424 90)
+		(uuid "1235a705-5de1-4905-a390-831c36a17b9c")
+		(property "Reference" "#PWR054"
+			(at 195.58 73.66 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "BAT41KFILM"
-			(at 173.99 113.9824 90)
+		(property "Value" "+A3V3"
+			(at 195.58 64.77 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 167.005 113.03 0)
+			(at 195.58 69.85 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
-			(at 164.338 114.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
-			(at 164.338 114.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bd62b75e-bf34-4287-a2b2-2e420809a0ed")
-		)
-		(pin "2"
-			(uuid "a5a31278-e418-4e1c-a8ec-20ae0da5fbbe")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "D16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 149.86 120.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0f762a83-5e1e-5116-bf6d-ff3a453bcbc0")
-		(property "Reference" "R58"
-			(at 149.86 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 149.86 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 149.86 120.65 90)
-			(effects
-				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 120.65 90)
+			(at 195.58 69.85 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thick film resistor 1kΩ ±1% 0402"
-			(at 149.86 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 149.86 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "RC0402FR-071KL"
-			(at 149.86 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 149.86 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "603-RC0402FR-071KL"
-			(at 149.86 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 149.86 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 149.86 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 149.86 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 149.86 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a3af012-3870-5922-a77e-78f551e98cd3")
-		)
-		(pin "2"
-			(uuid "54fa0f5a-e29f-5288-93ce-319ce96718a7")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "R58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "0_power_symbols:+3V3A")
-		(at 140.97 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "1098136c-d10d-529e-87a0-9fed21f3e9ea")
-		(property "Reference" "#PWR104"
-			(at 140.97 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3A"
-			(at 140.97 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 48.26 0)
-			(effects
-				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 140.97 48.26 0)
+			(at 195.58 69.85 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "a3288c85-2e8d-5641-a89c-da5ad717a312")
+			(uuid "6a21446b-e5e3-4f00-8647-0fe6f9a67f2a")
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "#PWR104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "0_power_symbols:+3V3A")
-		(at 140.97 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "365b6d82-cdd0-55f9-9cd4-9a22d70fc463")
-		(property "Reference" "#PWR258"
-			(at 140.97 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3A"
-			(at 140.97 98.044 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8439ca7b-9001-56d4-aa29-d533ce5f8346")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "#PWR258")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 140.97 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5a8630b6-6914-5bf2-a47d-196346680461")
-		(property "Reference" "R29"
-			(at 142.87 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k 1%"
-			(at 142.87 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thick film resistor 10kΩ ±1% 0402"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "RC0402FR-0710KL"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0710KL"
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 140.97 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e35b43b6-8475-5061-9125-28a1c4e6238f")
-		)
-		(pin "2"
-			(uuid "e60eaebf-4bb2-5a68-b352-a97f4cdeb87c")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "0_esd_protection:BAT41KFILM")
-		(at 170.18 58.42 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6226fcc7-6eb2-4753-9b5d-cfa7d31db316")
-		(property "Reference" "D15"
-			(at 172.72 56.8324 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT41KFILM"
-			(at 172.72 59.3724 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.735 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
-			(at 163.068 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
-			(at 163.068 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58e1cc2f-77d5-43ff-8982-9683a2ffce00")
-		)
-		(pin "2"
-			(uuid "488d2499-8e4f-49f4-880a-c44596231b6e")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "D15")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -2034,562 +2174,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "81de1f66-6913-45dc-a07a-eea489705588")
-		(property "Reference" "#PWR024"
-			(at 123.19 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.19 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab2ae5b1-a7ce-4acc-9169-dc854d7a39ad")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 140.97 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "994429df-3e6e-5e16-8494-e1d532bf139e")
-		(property "Reference" "#PWR105"
-			(at 140.97 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 140.97 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0c47c9f-1d47-5812-99ea-4f0577c497b3")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "#PWR105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 140.97 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9b6154fb-c437-53e8-8172-e640d3a09675")
-		(property "Reference" "R57"
-			(at 142.87 109.855 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k 1%"
-			(at 142.87 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thick film resistor 10kΩ ±1% 0402"
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "RC0402FR-0710KL"
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "603-RC0402FR-0710KL"
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 140.97 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fd72c045-5d3f-5dcb-b925-7d84501e5ad8")
-		)
-		(pin "2"
-			(uuid "1bf599ac-c2e7-570e-96ce-8ca221df2ccc")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 161.29 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9dc79570-58bb-5e16-ad51-6d6361d7527f")
-		(property "Reference" "C35"
-			(at 163.19 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 163.19 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL05B104KO5NNNC"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "187-CL05B104KO5NNNC"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dd3e0cbf-7138-5bb1-a45f-39eb3f8aca7e")
-		)
-		(pin "2"
-			(uuid "794e8ffe-61b0-5fc5-8687-a54950305875")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "C35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "0_resistors:NTC_10k_0603")
-		(at 140.97 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b3db7736-1e5c-5662-b5ba-f3f54f762258")
-		(property "Reference" "RT1"
-			(at 142.87 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k NTC"
-			(at 142.87 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=NCP18XH103F03RB"
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "NCP18XH103F03RB"
-			(at -262.89 -25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata"
-			(at -262.89 -25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "81-NCP18XH103F03RB"
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 140.97 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a45251d-2ccb-5c0e-aa05-40de0ae606d0")
-		)
-		(pin "2"
-			(uuid "81bff51c-1aad-57f8-93e9-323dd660e68d")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "RT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 114.3 120.65 0)
+		(at 195.58 107.95 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2597,60 +2182,248 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e84334a5-a0e8-41c2-8056-60916bbab689")
-		(property "Reference" "J10"
-			(at 114.3 114.3 0)
+		(uuid "28b0c90a-bb2e-4322-bdb5-82a8b2bf16e2")
+		(property "Reference" "#PWR055"
+			(at 195.58 114.3 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.58 113.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 107.95 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 107.95 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 107.95 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f3d31bd-a96b-4662-9d27-81ab86383a32")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "497e78eb-af49-4163-8f7c-4d168071b284")
+		(property "Reference" "R41"
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 60.96 80.01 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
+			(at 56.642 78.74 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "YAG1233CT-ND"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 58.42 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 114.3 116.84 0)
+		(property "Manufacturer Part Number" "RT0402FRE0710KL"
+			(at 58.42 78.74 0)
 			(effects
 				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75c8b1cc-323f-4d16-b48c-f7a6ce8ebfc0")
+		)
+		(pin "2"
+			(uuid "b387192b-4474-4714-a50c-b2856fd680de")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_symbols:CHASSIS")
+		(at 175.26 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c46f6fd-ebd8-4bb2-976e-35b56858e288")
+		(property "Reference" "#PWR053"
+			(at 175.26 113.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "CHASSIS"
+			(at 175.133 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 120.65 0)
+			(at 175.26 109.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 114.3 120.65 0)
+		(property "Datasheet" ""
+			(at 175.26 109.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 114.3 120.65 0)
+		(property "Description" ""
+			(at 175.26 107.95 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "0cb5dacf-1f23-49ca-934c-cc15cedfbdde")
 		)
 		(pin "1"
-			(uuid "91e9d48d-d6b4-4d58-955a-cf0965e3c66c")
+			(uuid "cdf3e09f-4da6-4964-8148-eaed5ed8448c")
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "J10")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -2658,33 +2431,86 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 160.02 124.46 0)
+		(at 72.39 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e924c39a-fbe6-5cdf-bed2-b2d7e27a9c19")
-		(property "Reference" "C70"
-			(at 161.92 123.825 0)
+		(fields_autoplaced yes)
+		(uuid "88a61af7-8101-4037-9d34-ac9fe6194ece")
+		(property "Reference" "C110"
+			(at 76.2 96.52 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 161.92 126.365 0)
+		(property "Value" "100n X7R 50V"
+			(at 76.2 99.06 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 160.02 124.46 0)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 73.3552 101.6 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
+			(at 72.39 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
+			(at 72.39 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 72.39 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "490-14514-1-ND"
+			(at 72.39 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 72.39 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,89 +2518,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MLCC 100 nF 16 V X7R ±10% 0402"
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL05B104KO5NNNC"
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "187-CL05B104KO5NNNC"
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 160.02 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 160.02 124.46 0)
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
+			(at 72.39 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2783,15 +2528,843 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f0ebf09-58a8-5106-aced-626e89c5ae0c")
+			(uuid "340d72f3-9b94-4866-b8bb-840763f9345d")
 		)
 		(pin "2"
-			(uuid "6f1cd5db-07e4-59ed-b294-12efcd822632")
+			(uuid "b8aa477e-e81d-4e2b-9712-a5ec31b5ed9a")
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/4c7c1eb6-b6d4-4671-8a88-d43b0370c785"
-					(reference "C70")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "C110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "BAT41KFILM_1")
+		(lib_id "0_diode:BAT41KFILM")
+		(at 213.36 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8adef83d-2ca1-48e5-9eba-0750a4aecbbc")
+		(property "Reference" "D16"
+			(at 215.9 85.09 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT41KFILM"
+			(at 215.9 82.55 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_diode_smd:D_SOD-523"
+			(at 208.915 83.82 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+			(at 213.36 83.82 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+			(at 213.36 83.82 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 213.36 83.82 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "497-5556-1-ND"
+			(at 213.36 83.82 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 213.36 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BAT41KFILM"
+			(at 213.36 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92cea13d-27c0-4c95-82a8-a813884212b8")
+		)
+		(pin "2"
+			(uuid "13f48363-0480-405e-beac-86e028dc80d6")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 58.42 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3975f29-f9c1-46ab-8c58-0bfa37444bca")
+		(property "Reference" "#PWR052"
+			(at 58.42 114.3 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 113.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 107.95 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 107.95 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 107.95 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15326b89-bae6-402e-98a8-09b928a7cdb2")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x02_Mounting_1")
+		(lib_id "0_connectors:Conn_01x02_Mounting")
+		(at 176.53 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5e60a97-5bfa-4a31-9769-d8453c732874")
+		(property "Reference" "J7"
+			(at 168.91 91.44 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S2B-PH-SM4-TB"
+			(at 168.91 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_connectors:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Surface Mount, Right Angle 2 position 0.079\" (2.00mm)"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "455-S2B-PH-SM4-TBCT-ND"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "S2B-PH-SM4-TB"
+			(at 176.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "417044c5-77bd-4f06-8430-89825bc4e87e")
+		)
+		(pin "2"
+			(uuid "8c13dd84-16b6-4c4b-9e88-032db3bf60b1")
+		)
+		(pin "MP1"
+			(uuid "17ec79c2-6150-4a0d-aba5-1a5dcce8c8fc")
+		)
+		(pin "MP2"
+			(uuid "bd740490-7e39-4717-8efc-b7838bce3582")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195.58 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b87d0081-3f8d-4f6b-8f5d-b38c5ab08aa0")
+		(property "Reference" "R42"
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 198.12 82.55 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
+			(at 193.802 81.28 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "YAG1233CT-ND"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RT0402FRE0710KL"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa39aab6-7fe2-4159-aa80-3a671244d069")
+		)
+		(pin "2"
+			(uuid "47acdb4f-a1db-451d-a11e-b839c9c41004")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "BAT41KFILM_1")
+		(lib_id "0_diode:BAT41KFILM")
+		(at 81.28 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be6daf0d-e9fe-44ba-8908-d9f03f7bf45a")
+		(property "Reference" "D15"
+			(at 83.82 82.55 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT41KFILM"
+			(at 83.82 80.01 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_diode_smd:D_SOD-523"
+			(at 76.835 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "497-5556-1-ND"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "BAT41KFILM"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36a64a98-8d14-41ac-9274-39baeaac9bdd")
+		)
+		(pin "2"
+			(uuid "46d49e80-fc36-4c8c-9311-2857d3d5be0c")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Thermistor_NTC")
+		(at 58.42 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6e3386e-133b-4fba-9d37-088094ed2c4c")
+		(property "Reference" "TH1"
+			(at 61.595 96.8375 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47k 1% NTC"
+			(at 61.595 99.3775 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
+			(at 58.42 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/thermistor/r01e.ashx"
+			(at 58.42 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NTC Thermistor 47k 4050K 0402 (1005 Metric)"
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "490-4802-1-ND"
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "NCP15WB473F03RC"
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9d81673-3d35-44d1-8624-e31f75d00832")
+		)
+		(pin "2"
+			(uuid "a005f504-3e76-475b-b81b-fb540ee3c46a")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "TH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_symbols:+A3V3")
+		(at 58.42 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd65d27a-28e9-4c35-bbe0-8162c3906fd3")
+		(property "Reference" "#PWR051"
+			(at 58.42 63.5 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+A3V3"
+			(at 58.42 54.61 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 59.69 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6af4e0a-3cfb-4d64-93a8-8d7c0f08fe03")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 209.55 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e28dc364-fb72-4a30-8cbc-eab96ab76bf7")
+		(property "Reference" "C111"
+			(at 213.36 96.52 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n X7R 50V"
+			(at 213.36 99.06 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 210.5152 101.6 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
+			(at 209.55 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
+			(at 209.55 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 209.55 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "490-14514-1-ND"
+			(at 209.55 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 209.55 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
+			(at 209.55 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "196eb7ca-dda3-4f6f-8880-74c056712e42")
+		)
+		(pin "2"
+			(uuid "eed5174f-362d-49ea-a89f-22c50b2279b0")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/fa34585c-cea0-4980-9405-23c394490fcf"
+					(reference "C111")
 					(unit 1)
 				)
 			)

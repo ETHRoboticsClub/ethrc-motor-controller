@@ -25,7 +25,7 @@ outputs:
     force_stackup_colors: true
     orthographic: true
     transparent_background: true
-    transparent_background_color: '@KEY_COLOR@'
+    transparent_background_color: '#00FF00'
     transparent_background_fuzz: 40
 
 ...
@@ -42,4 +42,3 @@ definitions:
   ZOOM: 0
   HEIGHT: 2000
   WIDTH: 2000
-  KEY_COLOR: '#00FF00'

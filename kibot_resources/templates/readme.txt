@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-  <img alt="Logo" width="33%" src="Logos/dummy_logo.svg">
+  <img alt="Logo" width="33%" src="Logos/amulet_logo.svg">
 </p>
 
 <h1 align="center">${BOARD_NAME}</h1>
@@ -10,8 +10,10 @@
   </a>
 </p>
 
+ΛMULET is a high-power brushless motor controller, compatible with the [moteus firmware](https://github.com/mjbots/moteus). It was specifically designed to be integrated in [EPFL Xplore](https://github.com/EPFLXplore)'s Legged Robot actuators.
+
 <p align="center" width="100%">
-    <img src="Images/dummy_image.png">
+    <img src="Images/amulet_front.png">
 </p>
 
 ***
@@ -26,8 +28,18 @@
 
 ## SPECIFICATIONS
 
-| Parameter | Value | 
+| Parameter | ΛMULET V1.0 | 
 | --- | --- |
+| Voltage Input | 12-44V |
+| Peak Electrical Power | TBD |
+| Mass | TBD |
+| Peak Phase Current | 100A |
+| Communication | 5Mbps CAN-FD |
+| Cooling | 12V Fan |
+| Positioning | 2x Onboard 14-bit Encoders |
+| Control rate | 15-30kHz |
+| PWM Switching Rate | 15-60kHz |
+| MCU | STM32G474 |
 | Dimensions | ${bb_w_mm} × ${bb_h_mm} mm |
 
 ***
@@ -36,6 +48,7 @@
 
     .
     ├─ Computations       # Misc calculations
+    ├─ DXF_SVG            # Vector graphics
     ├─ HTML               # HTML files for generated webpage
     ├─ Images             # Pictures and renders
     │
@@ -69,3 +82,31 @@
     │  └─ Testpoints      # Testpoints tables      
     │
     └─ Variants           # Outputs for assembly variants
+
+***
+
+## FIRMWARE
+
+[Associated firmware](https://github.com/EPFLXplore/XRE_moteus/tree/amulet) is forked from the [moteus](https://github.com/mjbots/moteus) repository.
+
+***
+
+## CREDITS
+
+Schematic is hugely inspired by the moteus controllers designed by Josh Pieper. They were modified to meet our own specifications, and to follow what I personally consider good layout practices.
+
+***
+
+## PHOTOS
+
+<p align="center" width="100%">
+    <img src="./Images/amulet_stack.png">
+</p>
+
+<p align="center" width="100%">
+    <img src="./Images/amulet_connector.png">
+</p>
+
+<p align="center" width="100%">
+    <img src="./Images/amulet_back.png">
+</p>

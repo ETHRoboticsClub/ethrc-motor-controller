@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Power - Sequencing")
-		(date "2025-01-12")
+		(date "2024-03-12")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
@@ -686,7 +686,7 @@
 		)
 		(uuid "1013f434-6a63-4228-8d39-5e75ca888b6f")
 	)
-	(text_box "? - ? ± ??%"
+	(text_box "3.3V ± 0.5%"
 		(exclude_from_sim no)
 		(at 55.88 84.963 0)
 		(size 20.32 7.62)
@@ -836,7 +836,7 @@
 		)
 		(uuid "288b5377-4e86-405e-bd20-a9e364c04dba")
 	)
-	(text_box "+V??"
+	(text_box "+12V"
 		(exclude_from_sim no)
 		(at 15.24 62.103 0)
 		(size 16.51 7.62)
@@ -902,7 +902,7 @@
 		)
 		(uuid "3010b19b-c99d-4b77-bf14-7f71b9f36a3e")
 	)
-	(text_box "??"
+	(text_box "LP2992"
 		(exclude_from_sim no)
 		(at 31.75 84.963 0)
 		(size 24.13 7.62)
@@ -925,7 +925,7 @@
 		)
 		(uuid "34a00741-5aa3-425e-8d2f-36fe2780fcc3")
 	)
-	(text_box "??"
+	(text_box "LMR36006"
 		(exclude_from_sim no)
 		(at 31.75 62.103 0)
 		(size 24.13 7.62)
@@ -1015,6 +1015,29 @@
 		)
 		(uuid "45440644-b7a1-4eca-8e5e-a9c7c9e4e343")
 	)
+	(text_box "DESIGN NOTE:\nPower sequencing graph measured experimentally."
+		(exclude_from_sim no)
+		(at 15.6464 104.0384 0)
+		(size 33.02 10.16)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "4ac0baf9-aca1-4b83-b09b-72705a83d55a")
+	)
 	(text_box "6"
 		(exclude_from_sim no)
 		(at 122.9106 130.7846 0)
@@ -1036,7 +1059,7 @@
 		)
 		(uuid "52a74200-5717-4af9-b5e4-1d404429f3c6")
 	)
-	(text_box "+V??"
+	(text_box "+3V3"
 		(exclude_from_sim no)
 		(at 15.24 77.343 0)
 		(size 16.51 7.62)
@@ -1209,7 +1232,7 @@
 		)
 		(uuid "69d7b4c2-c118-4b95-bd3b-473104ff316a")
 	)
-	(text_box "+V??"
+	(text_box "+5V"
 		(exclude_from_sim no)
 		(at 15.24 69.723 0)
 		(size 16.51 7.62)
@@ -1231,6 +1254,29 @@
 			)
 		)
 		(uuid "7c5e60ac-aa6c-44e8-8493-c0a9e5ff3009")
+	)
+	(text_box "DESIGN NOTE:\nStart-up time of 12V rail depends on +VBAT charging time, which itself depends on the precharge circuit."
+		(exclude_from_sim no)
+		(at 15.6464 118.0084 0)
+		(size 33.02 11.43)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 250 236 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "7d8aa74f-1183-45a7-bbb1-1f6b8b6a6cdd")
 	)
 	(text_box "14"
 		(exclude_from_sim no)
@@ -1319,7 +1365,7 @@
 		)
 		(uuid "80f76b8d-52cb-49fe-9647-9cd8137cf5f3")
 	)
-	(text_box "??"
+	(text_box "TPS62172"
 		(exclude_from_sim no)
 		(at 31.75 77.343 0)
 		(size 24.13 7.62)
@@ -1406,7 +1452,7 @@
 		)
 		(uuid "9334e207-a5ef-405d-9255-7532e4d805ec")
 	)
-	(text_box "??"
+	(text_box "LMR36506"
 		(exclude_from_sim no)
 		(at 31.75 69.723 0)
 		(size 24.13 7.62)
@@ -1450,7 +1496,7 @@
 		)
 		(uuid "9dba9cf1-c429-45db-bb2a-868858aa5986")
 	)
-	(text_box "??"
+	(text_box "BATTERY"
 		(exclude_from_sim no)
 		(at 31.75 54.483 0)
 		(size 24.13 7.62)
@@ -1473,7 +1519,7 @@
 		)
 		(uuid "a5a86ae4-3ea7-4429-8374-6853dbf3865c")
 	)
-	(text_box "? - ? ± ??%"
+	(text_box "5V ± 1.5%"
 		(exclude_from_sim no)
 		(at 55.88 69.723 0)
 		(size 20.32 7.62)
@@ -1496,7 +1542,7 @@
 		)
 		(uuid "aaf3a0b7-a131-4476-bccc-dd7373144909")
 	)
-	(text_box "? - ? ± ??%"
+	(text_box "3.3V ± 3%"
 		(exclude_from_sim no)
 		(at 55.88 77.343 0)
 		(size 20.32 7.62)
@@ -1519,7 +1565,7 @@
 		)
 		(uuid "ad3a5f07-5d67-4bdd-85a5-3e529605405c")
 	)
-	(text_box "+V??"
+	(text_box "+A3V3"
 		(exclude_from_sim no)
 		(at 15.24 84.963 0)
 		(size 16.51 7.62)
@@ -1542,7 +1588,7 @@
 		)
 		(uuid "b149cc82-24c2-4523-8290-e7d9f9f6c81a")
 	)
-	(text_box "+V??"
+	(text_box "+VBAT"
 		(exclude_from_sim no)
 		(at 15.24 54.483 0)
 		(size 16.51 7.62)
@@ -1694,7 +1740,7 @@
 		)
 		(uuid "de143e59-1a42-4ff5-b077-1a340a241706")
 	)
-	(text_box "? - ? ± ??%"
+	(text_box "12V ± 1.5%"
 		(exclude_from_sim no)
 		(at 55.88 62.103 0)
 		(size 20.32 7.62)
@@ -1759,7 +1805,7 @@
 		)
 		(uuid "f741b4d6-7a0b-439e-b8a6-601ff596837c")
 	)
-	(text_box "? - ? ± ??%"
+	(text_box "12 - 44V"
 		(exclude_from_sim no)
 		(at 55.88 54.483 0)
 		(size 20.32 7.62)

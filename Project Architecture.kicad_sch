@@ -2,43 +2,198 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "07236397-3ba4-47af-9809-3faac3a2aa49")
+	(uuid "43756dca-f8f6-4179-bbe2-5af9585c666d")
 	(paper "A3")
 	(title_block
 		(title "Project Architecture")
-		(date "2025-01-12")
+		(date "2023-12-22")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
 	(lib_symbols)
-	(text_box "LAYOUT NOTE: GENERAL PCB LAYOUT\n1. Stack-up: 4 layers. L1 parts + power, L2 solid GND (no splits), L3 power pours (VBUS, +5V, +3V3), L4 signals. 2 oz outer copper for the bridge.\n2. One GND net. Keep the bridge return (J1/J2, bulk caps, shunts) in its own area of the plane and join logic GND to it near U4/the shunts, not across the bridge current path.\n3. VBUS, PHASE_x and shunt GND: short, wide pours on several layers, many vias, no necking.\n4. Switch nodes (VM_SW, 5V_SW, 3V3_SW, PHASE_x): minimal copper; no analog traces next to or under them.\n5. ISENSE, VSENSE, VBUS_SENSE, NTC: route away from SW/phase copper; RC caps at the MCU pins.\n6. EtherCAT pairs 100 ohm diff; T1/T2 isolation gap kept clear.\n7. Mark XT30 polarity on silk (+ = pad 2 in the KiCad footprint); check against the part before ordering.\n8. Add test pads: SWD, UART, +VM, +5V, +3V3, +3V3A, ISENSE_A/B/C, GND."
+	(text "Page 17"
 		(exclude_from_sim no)
-		(at 15.24 190.5 0)
-		(size 200 39.37)
-		(margins 2.25 2.25 2.25 2.25)
-		(stroke
-			(width 1.5)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
+		(at 267.462 61.722 0)
 		(effects
 			(font
-				(face "Arial")
-				(size 2 2)
-				(thickness 0.4)
+				(face "Times New Roman")
+				(size 2.54 2.54)
 				(bold yes)
-				(color 0 0 255 1)
+				(color 80 40 80 1)
 			)
-			(justify left top)
+			(justify left bottom)
+			(href "#17")
 		)
-		(uuid "9103dfe8-844f-4bd1-bcf5-9ae3587e6a23")
+		(uuid "3461de0e-bfe1-4444-bc61-5ceaf9f0aebe")
+	)
+	(text "Page 13"
+		(exclude_from_sim no)
+		(at 180.34 85.09 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 60 60 120 1)
+			)
+			(justify right bottom)
+			(href "#13")
+		)
+		(uuid "45ffc8e2-516f-41cf-9274-df5ba4358636")
+	)
+	(text "Page 12"
+		(exclude_from_sim no)
+		(at 180.34 111.76 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 60 60 120 1)
+			)
+			(justify right bottom)
+			(href "#12")
+		)
+		(uuid "50581b8a-c0a6-486f-b29e-ecc0d5c948c8")
+	)
+	(text "Page 10"
+		(exclude_from_sim no)
+		(at 288.29 181.61 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 120 80 40 1)
+			)
+			(justify right bottom)
+			(href "#10")
+		)
+		(uuid "6199b38b-bd85-4ab3-bb65-2e7d96b327de")
+	)
+	(text "Page 7"
+		(exclude_from_sim no)
+		(at 133.35 66.04 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#7")
+		)
+		(uuid "6201a6d2-04a8-4213-a6b8-761d32000674")
+	)
+	(text "Pages 8, 9"
+		(exclude_from_sim no)
+		(at 288.29 142.24 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 30 50 1)
+			)
+			(justify right bottom)
+			(href "#8")
+		)
+		(uuid "7060330e-3bed-4a1b-b19a-f8b0cdfcb79d")
+	)
+	(text "Page 11"
+		(exclude_from_sim no)
+		(at 288.29 161.29 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 120 80 40 1)
+			)
+			(justify right bottom)
+			(href "#11")
+		)
+		(uuid "72668aa7-0c75-488d-8920-ba23aa0c8db0")
+	)
+	(text "Page 6"
+		(exclude_from_sim no)
+		(at 180.34 66.04 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#6")
+		)
+		(uuid "920730cc-45d5-4cf0-9f69-5035c63aa3ca")
+	)
+	(text "Page 14"
+		(exclude_from_sim no)
+		(at 180.34 134.62 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 80 40 80 1)
+			)
+			(justify right bottom)
+			(href "#14")
+		)
+		(uuid "944c5477-fc68-434c-a1d4-46e2deb2f253")
+	)
+	(text "Page 4"
+		(exclude_from_sim no)
+		(at 236.22 66.04 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 20 60 40 1)
+			)
+			(justify right bottom)
+			(href "#4")
+		)
+		(uuid "978bb74e-ca07-4b21-b2dc-19b812f717e9")
+	)
+	(text "Page 19"
+		(exclude_from_sim no)
+		(at 288.29 212.09 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 35 35 35 1)
+			)
+			(justify right bottom)
+			(href "#19")
+		)
+		(uuid "b607eddf-c6ba-4f1f-82a1-0bd4f1df4814")
+	)
+	(text "Page 5"
+		(exclude_from_sim no)
+		(at 236.982 212.598 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 20 60 40 1)
+			)
+			(justify right bottom)
+			(href "#5")
+		)
+		(uuid "c54c21a6-b82f-4883-adfa-9cf31abe82f0")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
-		(at 144.78 21.59 0)
+		(at 144.78 20.32 0)
 		(size 130.81 12.7)
 		(margins 5.9999 5.9999 5.9999 5.9999)
 		(stroke
@@ -57,711 +212,191 @@
 				(color 162 22 34 1)
 			)
 		)
-		(uuid "f4789478-c68e-4cee-9edd-5d11b744f94d")
+		(uuid "7fa5cc40-6c97-487c-9cc7-412504f68533")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 43.18) (xy 73.66 43.18)
+			(xy 181.61 171.45) (xy 200.66 171.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "02d47b0d-d816-4c64-b64a-46e3a9891987")
+		(uuid "27635149-da59-4406-b82f-ec9d21149f2a")
 	)
 	(wire
 		(pts
-			(xy 71.12 111.76) (xy 73.66 111.76)
+			(xy 237.49 177.8) (xy 248.92 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "17d0d0ce-04fd-480f-b469-6603104f4488")
+		(uuid "318e7465-6778-4f02-bc6b-82f639652600")
 	)
 	(wire
 		(pts
-			(xy 303.53 175.26) (xy 300.99 175.26)
+			(xy 241.3 54.61) (xy 248.92 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f14ef83-76ba-4650-8f38-77f746408993")
+		(uuid "51c9632f-070e-4870-8ee5-be3a029b61f4")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 152.4) (xy 73.66 152.4)
+			(xy 237.49 86.36) (xy 248.92 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4af40fed-d5f1-4711-80d7-e2d3cc2f1345")
+		(uuid "5c2d9cf4-733d-4dd4-88d1-0b24e2e54d23")
 	)
 	(wire
 		(pts
-			(xy 71.12 165.1) (xy 73.66 165.1)
+			(xy 241.3 54.61) (xy 241.3 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e767d9d-c5ed-443d-a1e0-3d8d8c217fa5")
+		(uuid "5f5f67b0-793e-43b0-9711-87cfcaf81dc2")
 	)
 	(wire
 		(pts
-			(xy 71.12 134.62) (xy 73.66 134.62)
+			(xy 237.49 111.76) (xy 248.92 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c0f2381-d943-4916-8856-a33d3fa4b7b6")
+		(uuid "655f93e1-0fd2-4d49-8190-12d644006e9a")
 	)
 	(wire
 		(pts
-			(xy 71.12 149.86) (xy 73.66 149.86)
+			(xy 181.61 78.74) (xy 200.66 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5ed55b60-ad5a-48bc-b15e-647f3d709a57")
+		(uuid "73aca0e6-a3a5-4094-b4d4-65f37c4e05e9")
 	)
 	(wire
 		(pts
-			(xy 303.53 210.82) (xy 300.99 210.82)
+			(xy 237.49 99.06) (xy 248.92 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f1a49ad-4ce7-4e1a-818f-1c079d5a92fd")
+		(uuid "77fa60fc-8b71-4dea-86f5-e72261336ac8")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 157.48) (xy 73.66 157.48)
+			(xy 237.49 105.41) (xy 248.92 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "72447ee0-545f-499e-b24d-f9766d5c51d9")
+		(uuid "89e2848f-14b3-4f91-80e6-35525ffa97ef")
 	)
 	(wire
 		(pts
-			(xy 71.12 167.64) (xy 73.66 167.64)
+			(xy 237.49 78.74) (xy 241.3 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7a48248c-0a7d-4eb6-b51a-ecd956252520")
+		(uuid "9139bd59-6f91-4b95-b657-3e7e368984c1")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 144.78) (xy 73.66 144.78)
+			(xy 181.61 99.06) (xy 200.66 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7dce2cc0-b9b0-4675-907b-1804134e0f9b")
+		(uuid "91fee118-4c51-4690-aee2-e7aca90dd2ae")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 147.32) (xy 73.66 147.32)
+			(xy 181.61 175.26) (xy 200.66 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80175971-8018-40a2-a3aa-b8e3d151000e")
+		(uuid "aedba50b-352d-4561-a967-6d58537857f2")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 114.3) (xy 73.66 114.3)
+			(xy 237.49 157.48) (xy 248.92 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a749427-788f-46a1-ad1b-cfb9ccab9aac")
+		(uuid "afab18d2-2c2b-4c9b-b65c-01eaabb291f9")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 303.53 187.96) (xy 300.99 187.96)
+			(xy 181.61 153.67) (xy 200.66 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b3b9c3a-c6b3-404c-bcf4-1640e8cdb845")
+		(uuid "c9fdf592-5530-47d5-b472-f7c47dcff1ee")
 	)
 	(wire
 		(pts
-			(xy 71.12 162.56) (xy 73.66 162.56)
+			(xy 237.49 132.08) (xy 248.92 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "925b6d06-f2d9-40af-b5f8-e6ab124f1629")
+		(uuid "d371530d-085d-4123-a3d7-9808a0ff50bb")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 132.08) (xy 73.66 132.08)
+			(xy 181.61 124.46) (xy 200.66 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9672308a-f001-4138-8700-2d03bc832280")
+		(uuid "e27c6eb2-c225-432b-8059-0661f73e736e")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 303.53 193.04) (xy 300.99 193.04)
+			(xy 181.61 128.27) (xy 200.66 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "970d5c0d-9af5-48fd-b198-c3fdcd1dce08")
+		(uuid "f32085d1-5ead-4cd0-a422-71cb9fbc068c")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 71.12 154.94) (xy 73.66 154.94)
+			(xy 237.49 118.11) (xy 248.92 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99c25a56-a9d9-45fc-973f-67e358f449ba")
-	)
-	(wire
-		(pts
-			(xy 303.53 226.06) (xy 300.99 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c473230-8f68-483b-9473-d11d87fc5bd9")
-	)
-	(wire
-		(pts
-			(xy 303.53 218.44) (xy 300.99 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4d9ea83-b30d-4156-ae73-c48b4b2f22d7")
-	)
-	(wire
-		(pts
-			(xy 71.12 142.24) (xy 73.66 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac1914ea-14f0-4c65-b9d5-a98c6cbd83a9")
-	)
-	(wire
-		(pts
-			(xy 303.53 177.8) (xy 300.99 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb01c1a7-d311-49f4-b2fc-376a7f538457")
-	)
-	(wire
-		(pts
-			(xy 71.12 116.84) (xy 73.66 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdd33b39-16dd-46e0-9bfc-812d578b990c")
-	)
-	(wire
-		(pts
-			(xy 303.53 190.5) (xy 300.99 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c399e593-0f65-4557-9472-17ad913faba7")
-	)
-	(wire
-		(pts
-			(xy 71.12 139.7) (xy 73.66 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0612393-d5e9-413d-9a67-0a34734f4861")
-	)
-	(wire
-		(pts
-			(xy 303.53 180.34) (xy 300.99 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2dba91f-3a1c-44f4-a5c5-ebccd2a31886")
-	)
-	(wire
-		(pts
-			(xy 71.12 137.16) (xy 73.66 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d47ad3d8-3caf-48ae-b3c2-5eb251565f0f")
-	)
-	(wire
-		(pts
-			(xy 303.53 208.28) (xy 300.99 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4ff1034-86ed-4bde-a4a1-f51b9b4a1d7d")
-	)
-	(wire
-		(pts
-			(xy 303.53 223.52) (xy 300.99 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5ed31a8-a9ca-4a52-9a72-fa15703721a0")
-	)
-	(wire
-		(pts
-			(xy 303.53 182.88) (xy 300.99 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e14abd60-d49b-4235-8d78-c7f37fe8c1ed")
-	)
-	(wire
-		(pts
-			(xy 71.12 160.02) (xy 73.66 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2458c29-1300-4985-8f0a-b58d377ff938")
-	)
-	(wire
-		(pts
-			(xy 303.53 185.42) (xy 300.99 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e248f390-cf0f-47f6-a9e0-a46400a9edcd")
-	)
-	(wire
-		(pts
-			(xy 303.53 213.36) (xy 300.99 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e53132ff-54ad-4887-89d5-9fe2b51e219b")
-	)
-	(wire
-		(pts
-			(xy 303.53 215.9) (xy 300.99 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eac4fdd3-7b70-4a0b-8fc1-97f58082fb48")
-	)
-	(wire
-		(pts
-			(xy 303.53 220.98) (xy 300.99 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f121a00e-26cf-4ef6-8a45-daa68451c705")
-	)
-	(label "CAN_S"
-		(at 300.99 210.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "00c9002b-5c4b-4db3-9720-db3004b82e2f")
-	)
-	(label "HALL_B"
-		(at 73.66 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "10853917-f5f5-4f86-8faa-8dead65de093")
-	)
-	(label "EXT_A"
-		(at 73.66 144.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "14a6bf87-6ebb-44fe-9ea9-db0e67605048")
-	)
-	(label "TEMP_FET"
-		(at 73.66 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a1db7ce-44f4-4d21-a620-83a31b3a7825")
-	)
-	(label "ESC_MISO"
-		(at 300.99 180.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2182f21f-0f0a-4cf6-9b6d-27291c44c6ad")
-	)
-	(label "EXT_MOSI"
-		(at 73.66 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2727bf57-b030-410b-8221-d419d954c217")
-	)
-	(label "EXT_Z"
-		(at 73.66 160.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "386e817b-100c-4aea-9641-012215156b37")
-	)
-	(label "ESC_CS"
-		(at 300.99 175.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "387be65c-17ad-47aa-836b-8d2899abe09f")
-	)
-	(label "ESC_SCK"
-		(at 300.99 187.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "415aacb8-45ee-48e2-b017-5576a58bba81")
-	)
-	(label "EXT_B"
-		(at 73.66 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "46ff1993-d398-4b98-984b-db190812928b")
-	)
-	(label "ESC_IRQ"
-		(at 300.99 177.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4c2e8929-d733-4303-97c1-6fc0b470d98f")
-	)
-	(label "EXT_MISO"
-		(at 73.66 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ea8136b-9bc8-4983-9089-d0719786cdc3")
-	)
-	(label "SWCLK"
-		(at 300.99 223.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "53540464-93c2-43b2-a4fb-9eab07830718")
-	)
-	(label "HALL_A"
-		(at 73.66 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "621b139a-9d42-4528-a2e6-374fe117f417")
-	)
-	(label "MOTOR_NTC"
-		(at 73.66 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72445b00-b840-48ea-98c5-d3c2a77de9a5")
-	)
-	(label "NRST"
-		(at 300.99 220.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "750e0882-cc20-4328-b527-a543d797696a")
-	)
-	(label "CAN_TX"
-		(at 300.99 213.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7547bdc4-092e-43ae-a76b-31f0e37493ae")
-	)
-	(label "EXT_CS"
-		(at 73.66 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75c30403-ee2d-4bbe-a50b-b342187aec96")
-	)
-	(label "SPI2_MOSI"
-		(at 73.66 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7b64e1e6-d899-44e9-b9c0-2614fd7c4162")
-	)
-	(label "MOTOR_NTC"
-		(at 73.66 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "804bd3fc-e33f-4800-aaa3-9abee9fff024")
-	)
-	(label "ENC_CS"
-		(at 73.66 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8fd0da9d-58f4-429d-8248-79f459346a5e")
-	)
-	(label "ESC_MOSI"
-		(at 300.99 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "92535a78-0394-4c9f-a733-df947361dabc")
-	)
-	(label "ESC_SYNC0"
-		(at 300.99 190.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "99b4f6e8-b7e2-4df1-9abd-4b9af2285e49")
-	)
-	(label "ESC_RST#"
-		(at 300.99 185.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a1f2db7f-b1be-4baa-bd8c-37633e10d4eb")
-	)
-	(label "DBG_RX"
-		(at 300.99 215.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "aa15d9f2-7401-487e-8d65-14bb302a091c")
-	)
-	(label "HALL_C"
-		(at 73.66 167.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ad5275e8-5908-4110-b595-23301a40acee")
-	)
-	(label "EXT_SCK"
-		(at 73.66 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5822e55-a753-4a8c-9119-f366633e1ada")
-	)
-	(label "TEMP_MOTOR"
-		(at 73.66 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c59ce171-659c-4b37-80b9-6d75f2a75f33")
-	)
-	(label "VBUS_SENSE"
-		(at 73.66 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c7af10c6-755e-4cad-abae-a207a22cf956")
-	)
-	(label "DBG_TX"
-		(at 300.99 218.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d4c7cd00-1729-41e9-9f94-3a61f071b6a8")
-	)
-	(label "SPI2_SCK"
-		(at 73.66 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e71a5ead-fe0d-4e9a-8c4a-5545ddec7d84")
-	)
-	(label "CAN_RX"
-		(at 300.99 208.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e9f6cfcf-f3ea-4a55-909d-7d6f29e4939c")
-	)
-	(label "SWDIO"
-		(at 300.99 226.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ea1432a8-586e-4c30-bf0b-f8f5bc9a0fd5")
-	)
-	(label "ESC_SYNC1"
-		(at 300.99 193.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "efefb34d-69b8-4647-829c-58b89df5ec51")
-	)
-	(label "SPI2_MISO"
-		(at 73.66 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f831d2bc-bceb-4550-b77e-79c59cd29f3a")
+		(uuid "fd7ba6f0-c53e-40c0-a7f7-84df97f0d5a0")
 	)
 	(sheet
-		(at 30.48 129.54)
-		(size 40.64 40.64)
+		(at 248.92 172.72)
+		(size 40.64 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -772,21 +407,22 @@
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5000)
+			(color 255 255 150 0.5000)
 		)
-		(uuid "05846b92-80d7-42c2-843a-928b65380eec")
-		(property "Sheetname" "Sensing - Position"
-			(at 30.48 128.5109 0)
+		(uuid "07dcaf51-abc9-470d-8bd8-30b1c54b6fbd")
+		(property "Sheetname" "Misc - Board Version, DAC"
+			(at 248.92 171.6909 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sensing - Position.kicad_sch"
-			(at 30.48 170.7646 0)
+		(property "Sheetfile" "Misc - Board Version DAC.kicad_sch"
+			(at 248.92 183.4646 0)
 			(effects
 				(font
 					(face "Arial")
@@ -795,167 +431,269 @@
 				(justify left top)
 			)
 		)
-		(pin "SPI2_MISO" output
-			(at 71.12 132.08 0)
-			(uuid "ad92eb67-9a66-4470-9696-ce1e3aa072e9")
+		(pin "BOARD_VERSION" output
+			(at 248.92 177.8 180)
+			(uuid "f57a9f4d-efae-4eab-8bb9-af53a4ebe2cc")
 			(effects
 				(font
+					(face "Arial")
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(pin "SPI2_MOSI" input
-			(at 71.12 134.62 0)
-			(uuid "79aa9f03-9154-495c-bb9b-6ba835b3e420")
-			(effects
-				(font
-					(size 1.27 1.27)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "10")
 				)
-				(justify right)
 			)
 		)
-		(pin "SPI2_SCK" input
-			(at 71.12 137.16 0)
-			(uuid "05116780-fa3b-4bbb-94fb-0b1b8a4753f6")
+	)
+	(sheet
+		(at 248.92 152.4)
+		(size 40.64 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 150 0.5000)
+		)
+		(uuid "37954a46-d14f-4062-b94e-09ed11854078")
+		(property "Sheetname" "User - LED Indicators"
+			(at 248.92 151.3709 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
 				)
-				(justify right)
+				(justify left bottom)
 			)
 		)
-		(pin "MOTOR_NTC" passive
-			(at 71.12 139.7 0)
-			(uuid "3116af01-c484-409a-86f1-66226081b44a")
+		(property "Sheetfile" "User - LED Indicators.kicad_sch"
+			(at 248.92 163.1446 0)
 			(effects
 				(font
+					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
 			)
 		)
-		(pin "ENC_CS" input
-			(at 71.12 142.24 0)
-			(uuid "b6760de0-6349-47c4-aadc-3e25b86ca64e")
+		(pin "{LED}" input
+			(at 248.92 157.48 180)
+			(uuid "bb1f3f22-1516-447c-a2d0-81c1c3786694")
 			(effects
 				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 74.93)
+		(size 31.75 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 128 255 255 0.5000)
+		)
+		(uuid "5af28e14-08f4-4265-bd51-d6e5daa4b8a2")
+		(property "Sheetname" "Sensing - Battery"
+			(at 149.86 73.9009 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensing - Battery.kicad_sch"
+			(at 149.86 86.9446 0)
+			(effects
+				(font
+					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left top)
 			)
 		)
-		(pin "EXT_A" passive
-			(at 71.12 144.78 0)
-			(uuid "150e0ec1-6f7b-4aa7-92f4-5a246b80851b")
+		(pin "SENSE_VBAT" output
+			(at 181.61 78.74 0)
+			(uuid "523ba303-db75-4b22-8808-30a91b557f54")
 			(effects
 				(font
+					(face "Arial")
 					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EXT_B" passive
-			(at 71.12 147.32 0)
-			(uuid "0ef93746-cf49-4e51-8411-886bc494d85c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EXT_CS" passive
-			(at 71.12 149.86 0)
-			(uuid "d4f2e4ce-a953-4887-b57b-730c8e360bf2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EXT_MISO" passive
-			(at 71.12 152.4 0)
-			(uuid "7945c1ec-7b1a-4642-9a48-d2d17dd6e4d1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EXT_MOSI" passive
-			(at 71.12 154.94 0)
-			(uuid "a844e199-d6c0-498e-bfc9-25d20a6b1e67")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EXT_SCK" passive
-			(at 71.12 157.48 0)
-			(uuid "f367a5dc-884a-4fed-8305-7695e2e05313")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EXT_Z" passive
-			(at 71.12 160.02 0)
-			(uuid "95eda333-c7e5-4f50-be36-fca2cc34e58a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "HALL_A" passive
-			(at 71.12 162.56 0)
-			(uuid "ef857dfc-4287-4fea-a9ae-684154431b6c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "HALL_B" passive
-			(at 71.12 165.1 0)
-			(uuid "12624c39-cee3-4eaf-bd89-1a53a9c00793")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "HALL_C" passive
-			(at 71.12 167.64 0)
-			(uuid "f66470c2-1a38-4c9d-a833-24d2b7223316")
-			(effects
-				(font
-					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 				(justify right)
 			)
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "12")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "13")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 160.02 40.64)
-		(size 45.72 10.16)
+		(at 248.92 74.93)
+		(size 40.64 68.58)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 128 128 0.5000)
+		)
+		(uuid "5bcbc7e4-0942-415e-ab04-e1cd42538fc3")
+		(property "Sheetname" "Motor Control - Top Level"
+			(at 248.92 73.9009 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Motor Control - Top Level.kicad_sch"
+			(at 248.92 144.0946 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "MOTOR_FAULT" output
+			(at 248.92 132.08 180)
+			(uuid "1a2235b7-2328-421b-a56f-c66bfe4a568b")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR_HIZ" input
+			(at 248.92 111.76 180)
+			(uuid "e91478e2-7374-4678-8cea-20ac1b227bfb")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "{DRV_SPI}" bidirectional
+			(at 248.92 118.11 180)
+			(uuid "f9dfdf49-4b45-42ba-90a3-fd1b69739b2c")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR_ENABLE" input
+			(at 248.92 99.06 180)
+			(uuid "fb79e3eb-b9cc-4c4b-9d86-d567d3dab4ec")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "{PWM_PHASE}" input
+			(at 248.92 105.41 180)
+			(uuid "40f6181f-d972-4e82-b40c-b2396b5bafb2")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "{CURRENT_SENSE}" output
+			(at 248.92 86.36 180)
+			(uuid "73020087-d96b-421a-9358-66797b73d0e2")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 200.66 46.99)
+		(size 36.83 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -968,11 +706,12 @@
 		(fill
 			(color 128 255 128 0.5000)
 		)
-		(uuid "155c1cbd-5d9f-4803-bd62-0e5659338683")
+		(uuid "7d5a1283-086b-46b0-8df7-a9850521fb5e")
 		(property "Sheetname" "MCU - Power"
-			(at 160.02 39.6109 0)
+			(at 200.66 45.9609 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
@@ -980,7 +719,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU - Power.kicad_sch"
-			(at 160.02 51.3846 0)
+			(at 200.66 67.8946 0)
 			(effects
 				(font
 					(face "Arial")
@@ -991,69 +730,15 @@
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 40.64)
-		(size 40.64 10.16)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 128 255 128 0.5000)
-		)
-		(uuid "362ca387-937b-4753-8950-0f81802218d2")
-		(property "Sheetname" "Power - Input"
-			(at 30.48 39.6109 0)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Power - Input.kicad_sch"
-			(at 30.48 51.3846 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VBUS_SENSE" passive
-			(at 71.12 43.18 0)
-			(uuid "61cbda13-d45b-4fe6-bf61-b259b09c7c1f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "4")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 303.53 205.74)
-		(size 40.64 22.86)
+		(at 102.87 46.99)
+		(size 31.75 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1064,21 +749,22 @@
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5000)
+			(color 255 200 0 0.5000)
 		)
-		(uuid "39c2cdec-8c24-4e72-9060-f6c5a6a69851")
-		(property "Sheetname" "Comms - Debug"
-			(at 303.53 204.7109 0)
+		(uuid "957e9462-5e63-4479-b30f-86013896ffc2")
+		(property "Sheetname" "Power - Connectors"
+			(at 102.87 45.9609 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Comms - Debug.kicad_sch"
-			(at 303.53 229.1846 0)
+		(property "Sheetfile" "Power - Connectors.kicad_sch"
+			(at 102.87 67.8946 0)
 			(effects
 				(font
 					(face "Arial")
@@ -1087,97 +773,137 @@
 				(justify left top)
 			)
 		)
-		(pin "CAN_RX" output
-			(at 303.53 208.28 180)
-			(uuid "f5f03b5a-0d80-443f-9b53-762cac28c880")
-			(effects
-				(font
-					(size 1.27 1.27)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "7")
 				)
-				(justify left)
 			)
 		)
-		(pin "CAN_S" input
-			(at 303.53 210.82 180)
-			(uuid "4b9b9b0e-ca0e-4810-bf48-4806846c1058")
+	)
+	(sheet
+		(at 149.86 147.32)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 150 255 0.5020)
+		)
+		(uuid "95bf33d9-762c-4d08-af8b-3fad797ffaca")
+		(property "Sheetname" "Comms - FD-CAN"
+			(at 149.86 146.2909 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
-		(pin "CAN_TX" input
-			(at 303.53 213.36 180)
-			(uuid "ceb611bd-7e4e-48b9-adf5-4a51533c3885")
+		(property "Sheetfile" "Comms - FD-CAN.kicad_sch"
+			(at 149.86 160.6046 0)
 			(effects
 				(font
+					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 			)
 		)
-		(pin "DBG_RX" passive
-			(at 303.53 215.9 180)
-			(uuid "e9f2a5aa-8e45-4a61-b847-2efb6c3d8801")
+		(pin "{FDCAN_TTL}" bidirectional
+			(at 181.61 153.67 0)
+			(uuid "2810ac52-6301-4da7-a893-10b1e6c7e699")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-			)
-		)
-		(pin "DBG_TX" passive
-			(at 303.53 218.44 180)
-			(uuid "1a0e0339-e082-45f7-ad35-d1777e98b638")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "NRST" passive
-			(at 303.53 220.98 180)
-			(uuid "df6295e4-a2c8-4200-bca7-bda10ff56bd1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SWCLK" passive
-			(at 303.53 223.52 180)
-			(uuid "fc7f8535-e646-4699-bdfc-bb43d14b71e7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SWDIO" passive
-			(at 303.53 226.06 180)
-			(uuid "a87d16a1-1baf-4a1b-bf70-6adf5dadf8b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 120.65)
+		(size 31.75 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 128 255 255 0.5020)
+		)
+		(uuid "9d5dddd8-2f86-4eaa-a196-d6c612b385ec")
+		(property "Sheetname" "Sensing - Position"
+			(at 149.86 119.6209 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensing - Position.kicad_sch"
+			(at 149.86 136.4746 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{ENC_SPI}" bidirectional
+			(at 181.61 124.46 0)
+			(uuid "718e8a2b-9c4c-4397-954f-8f7c0eacd205")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{HALL}" output
+			(at 181.61 128.27 0)
+			(uuid "a000bf6c-a63b-422a-84bd-876c9aa05ce8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
 					(page "14")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 30.48 109.22)
-		(size 40.64 10.16)
+		(at 248.92 50.8)
+		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1188,21 +914,22 @@
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5000)
+			(color 255 128 128 0.5020)
 		)
-		(uuid "4c7c1eb6-b6d4-4671-8a88-d43b0370c785")
-		(property "Sheetname" "Sensing - Temperature"
-			(at 30.48 108.1909 0)
+		(uuid "a3170e9c-67f1-489f-b9d1-10bbcf2409fd")
+		(property "Sheetname" "Fan Control"
+			(at 248.92 49.7709 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sensing - Temperature.kicad_sch"
-			(at 30.48 119.9646 0)
+		(property "Sheetfile" "Fan Control.kicad_sch"
+			(at 248.92 64.0846 0)
 			(effects
 				(font
 					(face "Arial")
@@ -1211,195 +938,30 @@
 				(justify left top)
 			)
 		)
-		(pin "MOTOR_NTC" passive
-			(at 71.12 111.76 0)
-			(uuid "47bb57f9-578b-48ce-85a3-7b546620ccdf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "TEMP_FET" passive
-			(at 71.12 114.3 0)
-			(uuid "984fc0b9-4289-4d7b-ad2e-98df7d807fdc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "TEMP_MOTOR" passive
-			(at 71.12 116.84 0)
-			(uuid "0f63c505-cdc0-4efc-a118-8d61c76e4a9f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "13")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 303.53 121.92)
-		(size 40.64 40.64)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 128 255 128 0.5000)
-		)
-		(uuid "53d648ad-cd13-432d-b12e-87552c9f2ba6")
-		(property "Sheetname" "Motor - Three Phase Inverter"
-			(at 303.53 120.8909 0)
-			(effects
-				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Motor - Three Phase Inverter.kicad_sch"
-			(at 303.53 163.1446 0)
+		(pin "FAN_CTRL" input
+			(at 248.92 54.61 180)
+			(uuid "12123189-d2bc-4d86-a145-713976d9111c")
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VSENSE_A" output
-			(at 303.53 127 180)
-			(uuid "9ae93057-167c-4103-ae5a-5f3fe82e3a2c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VSENSE_C" output
-			(at 303.53 130.81 180)
-			(uuid "c2aabe27-5a02-4778-8fee-1d69f7f17ebb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VSENSE_B" output
-			(at 303.53 134.62 180)
-			(uuid "82b93986-a470-49eb-b017-a699a56b3f3a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "{MOTOR}" bidirectional
-			(at 344.17 135.89 0)
-			(uuid "7f44a4f0-7811-43df-a205-9c0a9191820d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 303.53 40.64)
-		(size 40.64 71.12)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 128 255 128 0.5000)
-		)
-		(uuid "82ec7059-97db-42c4-b2df-1d4a01335a34")
-		(property "Sheetname" "Motor - Gate Driver"
-			(at 303.53 39.6109 0)
-			(effects
-				(font
-					(size 1.905 1.905)
+					(thickness 0.254)
 					(bold yes)
 				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Motor - Gate Driver.kicad_sch"
-			(at 303.53 112.3446 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "{GATE_DRV}" bidirectional
-			(at 303.53 76.2 180)
-			(uuid "589f0078-de28-42b7-9a8b-4ba2776b1778")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(justify left)
-			)
-		)
-		(pin "{MOTOR}" bidirectional
-			(at 344.17 76.2 0)
-			(uuid "5bdcab44-fac0-4215-97d6-a9533d128a13")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "9")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "17")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 303.53 172.72)
-		(size 40.64 22.86)
+		(at 149.86 46.99)
+		(size 31.75 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1410,137 +972,14 @@
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5000)
+			(color 255 200 0 0.5000)
 		)
-		(uuid "8b0e43a6-50cd-4f3f-ac0a-9081a5f3830a")
-		(property "Sheetname" "Comms - EtherCat"
-			(at 303.53 171.6909 0)
+		(uuid "a7a72571-5668-47fa-9b3e-b97c6816a3b6")
+		(property "Sheetname" "Power - Generation"
+			(at 149.86 45.9609 0)
 			(effects
 				(font
-					(size 1.905 1.905)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Comms - EtherCat.kicad_sch"
-			(at 303.53 196.1646 0)
-			(effects
-				(font
-					(face "Arial")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "ESC_CS" input
-			(at 303.53 175.26 180)
-			(uuid "08623ece-4437-41f5-a6fa-c0f791313b71")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_IRQ" output
-			(at 303.53 177.8 180)
-			(uuid "45892265-6340-4a42-bcce-9b6309be5f21")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_MISO" passive
-			(at 303.53 180.34 180)
-			(uuid "db668428-a727-4c8c-87e4-a37612ae26bb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_MOSI" bidirectional
-			(at 303.53 182.88 180)
-			(uuid "e6a64a04-0641-4a6b-a665-504891cb7259")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_RST#" bidirectional
-			(at 303.53 185.42 180)
-			(uuid "9425e787-ddb4-4211-9d3a-92ef541a620e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_SCK" input
-			(at 303.53 187.96 180)
-			(uuid "85bcb658-b1b5-4149-9ad1-cddfdb4ee5f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_SYNC0" bidirectional
-			(at 303.53 190.5 180)
-			(uuid "4268152e-d0d2-4b81-a8c0-b0f3fc8e62dc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESC_SYNC1" bidirectional
-			(at 303.53 193.04 180)
-			(uuid "d95ebdf7-b27f-41d9-af49-9b9f74d41d4d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 60.96)
-		(size 40.64 10.16)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 128 255 128 0.5000)
-		)
-		(uuid "b95b2317-c379-421b-9e00-8c46aad85d2e")
-		(property "Sheetname" "Power - Regulators"
-			(at 30.48 59.9309 0)
-			(effects
-				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
@@ -1548,7 +987,7 @@
 			)
 		)
 		(property "Sheetfile" "Power - Generation.kicad_sch"
-			(at 30.48 71.7046 0)
+			(at 149.86 67.8946 0)
 			(effects
 				(font
 					(face "Arial")
@@ -1559,15 +998,125 @@
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "5")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "6")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 160.02 63.5)
-		(size 45.72 81.28)
+		(at 248.92 193.04)
+		(size 40.64 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.1200)
+		)
+		(uuid "c35a2394-f5db-4d2b-a6ba-34798059bc1f")
+		(property "Sheetname" "Misc - Holes, Fiducials"
+			(at 248.92 192.0109 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Misc - Holes Fiducials.kicad_sch"
+			(at 248.92 213.9446 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 168.91)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 150 255 0.5020)
+		)
+		(uuid "d342497d-cef2-493b-b20b-1b91b7d9cc9b")
+		(property "Sheetname" "Comms - EtherCat"
+			(at 149.86 167.8809 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.905 1.905)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Comms - EtherCat.kicad_sch"
+			(at 149.86 182.1946 0)
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{ESC_CTRL}" bidirectional
+			(at 181.61 171.45 0)
+			(uuid "4c3e0423-c249-4361-80e1-2da5620f04ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{ESC_SPI}" bidirectional
+			(at 181.61 175.26 0)
+			(uuid "5246bf9d-8f8c-42dd-939a-d7709cfa0241")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 200.66 74.93)
+		(size 36.83 138.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1580,11 +1129,12 @@
 		(fill
 			(color 128 255 128 0.5000)
 		)
-		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
+		(uuid "e6015f1e-cbce-46f4-85e1-3d5463a17dc1")
 		(property "Sheetname" "MCU - IOs"
-			(at 160.02 62.4709 0)
+			(at 200.66 73.9009 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
@@ -1592,7 +1142,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU - IOs.kicad_sch"
-			(at 160.02 145.3646 0)
+			(at 200.66 213.9446 0)
 			(effects
 				(font
 					(face "Arial")
@@ -1601,9 +1151,165 @@
 				(justify left top)
 			)
 		)
-		(pin "VBUS_SENSE" bidirectional
-			(at 160.02 66.04 180)
-			(uuid "dc62b338-cfc9-4fdc-b68f-85f6a071cdcc")
+		(pin "{LED}" output
+			(at 237.49 157.48 0)
+			(uuid "11860b66-7c44-42e0-ac15-f8972f412e0d")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "BOARD_VERSION" input
+			(at 237.49 177.8 0)
+			(uuid "5c179a03-77d5-4825-9e52-7fb1f6d17a81")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTOR_FAULT" input
+			(at 237.49 132.08 0)
+			(uuid "f847c390-d610-4adb-89c4-c4d0d687c4f5")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTOR_ENABLE" output
+			(at 237.49 99.06 0)
+			(uuid "3470ea88-eb6c-4f81-a6df-d99eed0179b6")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTOR_HIZ" output
+			(at 237.49 111.76 0)
+			(uuid "6a50f8f6-4c47-440a-90d5-4937fee2d393")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "{CURRENT_SENSE}" input
+			(at 237.49 86.36 0)
+			(uuid "a47d1641-9942-482c-97dc-40f3547118a7")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "{PWM_PHASE}" output
+			(at 237.49 105.41 0)
+			(uuid "598e9c48-8cef-47f7-9447-5f4ba4a436b8")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "{DRV_SPI}" bidirectional
+			(at 237.49 118.11 0)
+			(uuid "14c88226-6610-4430-af9d-9b4bfcfd2221")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "{FDCAN_TTL}" bidirectional
+			(at 200.66 153.67 180)
+			(uuid "b67f91be-f9ed-4302-b693-96197188311e")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "{SENSE_TEMP}" input
+			(at 200.66 99.06 180)
+			(uuid "b4746f6a-44ad-4a64-80a9-2fd93fdcb6f9")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "SENSE_VBAT" input
+			(at 200.66 78.74 180)
+			(uuid "b3190bbb-ef2b-49f1-9d9c-4dbb469fa835")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(pin "FAN_CTRL" output
+			(at 237.49 78.74 0)
+			(uuid "a4803ea8-0bbf-4584-82cc-0a1f7f293b26")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(pin "{ESC_CTRL}" bidirectional
+			(at 200.66 171.45 180)
+			(uuid "425aa203-cbfe-45f0-8490-2dbf376dd59d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1611,9 +1317,9 @@
 				(justify left)
 			)
 		)
-		(pin "TEMP_FET" bidirectional
-			(at 160.02 76.2 180)
-			(uuid "7160232f-3ebb-4934-b3ea-a36063f03230")
+		(pin "{ESC_SPI}" bidirectional
+			(at 200.66 175.26 180)
+			(uuid "3158ebc0-b058-47a3-bc81-a623368bb026")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,9 +1327,19 @@
 				(justify left)
 			)
 		)
-		(pin "TEMP_MOTOR" bidirectional
-			(at 160.02 78.74 180)
-			(uuid "09c9f51f-ecb7-4db5-af92-ad83608d234a")
+		(pin "{ENC_SPI}" bidirectional
+			(at 200.66 124.46 180)
+			(uuid "dfe96a83-59c8-47e0-9b1e-0859934cf7ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{HALL}" input
+			(at 200.66 128.27 180)
+			(uuid "04583f17-3282-4259-b98e-c0e970997909")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,15 +1349,15 @@
 		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "6")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "5")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 160.02 157.48)
-		(size 45.72 10.16)
+		(at 149.86 93.98)
+		(size 31.75 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1652,21 +1368,22 @@
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5000)
+			(color 128 255 255 0.5000)
 		)
-		(uuid "f77cddee-47cc-476e-9e5b-8e61f0653b9f")
-		(property "Sheetname" "Mechanical"
-			(at 160.02 156.4509 0)
+		(uuid "fa34585c-cea0-4980-9405-23c394490fcf")
+		(property "Sheetname" "Sensing - Temperature"
+			(at 149.86 92.9509 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.905 1.905)
 					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Mechanical.kicad_sch"
-			(at 160.02 168.2246 0)
+		(property "Sheetfile" "Sensing - Temperature.kicad_sch"
+			(at 149.86 113.6146 0)
 			(effects
 				(font
 					(face "Arial")
@@ -1675,10 +1392,23 @@
 				(justify left top)
 			)
 		)
+		(pin "{SENSE_TEMP}" output
+			(at 181.61 99.06 0)
+			(uuid "af30b40c-f32c-45f5-ad15-70b28b4952ea")
+			(effects
+				(font
+					(face "Arial")
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ethrc_motor_controller"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "16")
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
+					(page "12")
 				)
 			)
 		)

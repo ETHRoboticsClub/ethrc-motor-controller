@@ -1,5 +1,5 @@
 # KiBot configuration file for KDT_Hierarchical Template
-# KiCad 9.0
+# KiCad 8.0
 
 kibot:
   version: 1
@@ -33,20 +33,27 @@ variants:
     exclude_filter: '_null'
 
   # Assembly variants (are executed with the same flags as RELEASED)
+  
+  - name: 'NO_XT60'
+    comment: 'Without XT60'
+    type: kibom
+    file_id: _(NO_XT60)
+    variant: NO_XT60
+    exclude_filter: '_null'
+  
+  - name: 'NO_SNUBBER'
+    comment: 'Without snubbers'
+    type: kibom
+    file_id: _(NO_SNUBBER)
+    variant: NO_SNUBBER
+    exclude_filter: '_null'
 
-  # - name: 'EXAMPLE'
-  #   comment: 'Example'
-  #   type: kibom
-  #   file_id: _(EXAMPLE)
-  #   variant: EXAMPLE
-  #   exclude_filter: '_null'
-
-  # - name: 'NONE'
-  #   comment: 'None'
-  #   type: kibom
-  #   file_id: _(NONE)
-  #   variant: NONE
-  #   exclude_filter: '_null'
+  - name: 'NONE'
+    comment: 'Without snubbers and XT60'
+    type: kibom
+    file_id: _(NONE)
+    variant: NONE
+    exclude_filter: '_null'
 
 groups:
 
@@ -61,20 +68,7 @@ groups:
       - @MD_README_OUTPUT@
       # - @HTML_KICANVAS_OUTPUT@ # Very experimental, we exclude it for now
       - @HTML_KIRI_OUTPUT@
-      - @HTML_NAV_RES_OUTPUT@
-
-  - name: all_group_k9
-    outputs:
-      - @NETLIST_OUTPUT@
-      - bom
-      - 3d
-      - fab_k9
-      - assembly
-      - @PDF_SCHEMATIC_OUTPUT@
-      - @MD_README_OUTPUT@
-      # - @HTML_KICANVAS_OUTPUT@ # Very experimental, we exclude it for now
-      - @HTML_KIRI_OUTPUT@
-      - @HTML_NAV_RES_OUTPUT@
+      # - @HTML_NAV_RES_OUTPUT@
 
   - name: draft_group
     outputs:
@@ -87,17 +81,6 @@ groups:
     outputs:
       - tables
       - @GERBER_OUTPUT@
-      - @EXCELLON_DRILL_OUTPUT@
-      # - @DXF_DRILL_MAP_OUTPUT@
-      - @PDF_DRILL_MAP_OUTPUT@
-      - @PDF_FABRICATION_OUTPUT@
-      - @ZIP_COMPRESS_FAB_OUTPUT@
-
-  - name: fab_k9
-    outputs:
-      - tables
-      - @GERBER_OUTPUT@
-      - @ODB_OUTPUT@
       - @EXCELLON_DRILL_OUTPUT@
       # - @DXF_DRILL_MAP_OUTPUT@
       - @PDF_DRILL_MAP_OUTPUT@
@@ -182,14 +165,14 @@ import:
       NAME: @FILT_TP_TOP_ONLY@
       COMMENT: Select only top testpoints
       EXCLUDE_BOTTOM: true
-      EXCLUDE_REFS: "@EXCLUDE_REFS@"
+      EXCLUDE_REFS: @EXCLUDE_REFS@
 
   - file: kibot_filt_testpoints.yaml
     definitions:
       NAME: @FILT_TP_BOTTOM_ONLY@
       COMMENT: Select only bottom testpoints
       EXCLUDE_TOP: true
-      EXCLUDE_REFS: "@EXCLUDE_REFS@"
+      EXCLUDE_REFS: @EXCLUDE_REFS@
 
   # Preflights =================================================================
 
@@ -253,13 +236,6 @@ import:
       COMMENT: Gerbers in GBR format
       DIR: @GERBERS_DIR@
       PLOT_REFS: @PLOT_REFS@
-
-  # ODB++ ----------------------------------------------------------------------
-  - file: kibot_out_odb.yaml
-    definitions:
-      NAME: @ODB_OUTPUT@
-      COMMENT: ODB++ in ZIP format
-      DIR: @FABRICATION_DIR@
 
   # Drill files
   - file: kibot_out_excellon_drill.yaml
@@ -410,7 +386,6 @@ import:
       DIR: @IMAGES_DIR@
       SUFFIX: top
       VIEW: top
-      KEY_COLOR: '@KEY_COLOR@'
 
   - file: kibot_out_png_3d_viewer.yaml
     definitions:
@@ -419,7 +394,6 @@ import:
       DIR: @IMAGES_DIR@
       SUFFIX: bottom
       VIEW: bottom
-      KEY_COLOR: '@KEY_COLOR@'
 
   - file: kibot_out_png_3d_viewer.yaml
     definitions:
@@ -432,7 +406,6 @@ import:
       ROTATE_Y: @3D_VIEWER_ROT_Y@
       ROTATE_Z: @3D_VIEWER_ROT_Z@
       ZOOM: @3D_VIEWER_ZOOM@
-      KEY_COLOR: '@KEY_COLOR@'
 
   - file: kibot_out_png_3d_viewer.yaml
     definitions:
@@ -445,7 +418,6 @@ import:
       ROTATE_Y: @3D_VIEWER_ROT_Y@
       ROTATE_Z: -@3D_VIEWER_ROT_Z@
       ZOOM: @3D_VIEWER_ZOOM@
-      KEY_COLOR: '@KEY_COLOR@'
 
   # STEP file ------------------------------------------------------------------
   - file: kibot_out_step.yaml
@@ -467,7 +439,6 @@ import:
       COMMENT: Schematic in PDF format
       COLOR_THEME: @COLOR_THEME@
       DIR: @SCHEMATIC_DIR@
-      DEFAULT_FONT: 'Times New Roman'
 
   # Fabrication Document in PDF format
   - file: kibot_out_pdf_fabrication.yaml
@@ -541,14 +512,14 @@ import:
       OUTPUT_NAME: README
       TEMPLATE: @REPORT_TEMPLATE_DIR@/readme.txt
 
-  - file: kibot_out_navigate_results.yaml
-    definitions:
-      NAME: @HTML_NAV_RES_OUTPUT@
-      COMMENT: Results webpage in HTML format
-      DIR: HTML
-      TITLE: @BOARD_NAME@
-      LOGO: @LOGO@
-      LOGO_URL: @GIT_URL@
+  # - file: kibot_out_navigate_results.yaml
+  #   definitions:
+  #     NAME: @HTML_NAV_RES_OUTPUT@
+  #     COMMENT: Results webpage in HTML format
+  #     DIR: HTML
+  #     TITLE: @BOARD_NAME@
+  #     LOGO: @LOGO@
+  #     LOGO_URL: @GIT_URL@
 
 # ==============================================================================
 
@@ -584,7 +555,7 @@ definitions:
 
   # Gerber parameters ==========================================================
 
-  PLOT_REFS: true # reference designators
+  PLOT_REFS: false
 
   # Schematic parameters =======================================================
 
@@ -592,18 +563,6 @@ definitions:
   SHEET_WKS: ${KIPRJMOD}/Templates/KDT_Template_PCB_GIT_A4.kicad_wks
   FAB_SCALING: 1
   ASSEMBLY_SCALING: 1
-
-  # References to exclude from testpoint highlighting ==========================
-  
-  EXCLUDE_REFS: '[MB*]' # for components on the PCB but not on the schematic
-
-  # 3D Viewer rotations (in steps) =============================================
-
-  3D_VIEWER_ROT_X: 2
-  3D_VIEWER_ROT_Y: -1
-  3D_VIEWER_ROT_Z: 1
-  3D_VIEWER_ZOOM: -1
-  KEY_COLOR: '#00FF00' # Background color to remove. Use a color different from your PCB
 
   # Output directories =========================================================
 
@@ -625,6 +584,17 @@ definitions:
   RESOURCES_DIR: kibot_resources
   REPORT_TEMPLATE_DIR: '@RESOURCES_DIR@/templates'
   SCRIPTS_DIR: '@RESOURCES_DIR@/scripts'
+
+  # References to exclude from testpoint highlighting
+  
+  EXCLUDE_REFS: '[MB*]'
+
+  # 3D Viewer rotations (in steps) =============================================
+
+  3D_VIEWER_ROT_X: 2
+  3D_VIEWER_ROT_Y: -1
+  3D_VIEWER_ROT_Z: 1
+  3D_VIEWER_ZOOM: -1
 
   # Layer names. Should match user-defined names in the PCB.  ==================
 
@@ -654,7 +624,6 @@ definitions:
   NETLIST_OUTPUT: netlist
 
   GERBER_OUTPUT: gbr_gerbers
-  ODB_OUTPUT: zip_odb
   EXCELLON_DRILL_OUTPUT: drl_excellon
   PDF_DRILL_MAP_OUTPUT: pdf_drill_map
   DXF_DRILL_MAP_OUTPUT: dxf_drill_map

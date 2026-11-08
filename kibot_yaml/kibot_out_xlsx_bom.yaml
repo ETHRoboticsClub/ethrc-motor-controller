@@ -33,29 +33,21 @@ outputs:
 
     columns:
       - "Row"
-      - "Description"
-      - "Part"
+      - "Quantity Per PCB"
       - "References"
       - "Value"
-      - "Footprint"
-      - field: "Quantity Per PCB"
-        name: "Quantity per PCB"
       - "Datasheet"
-      - "Supplier 1"
-      - "Supplier Part Number 1"
+      - "Footprint"
+      - "Description"
       - "manf"
       - "manf#"
-      # - "arrow#"
-      # - "digikey#"
-      # - "farnell#"
-      # - "mouser#"
-      # - "newark#"
-      # - "rs#"
-      # - "tme#"
+      - "Supplier 1"
+      - "Supplier Part Number 1"
+
 ...
 definitions:
   NAME: xlsx_costs_bom
   COMMENT: Costs Bill of Materials in XLSX format
   DIR: Manufacturing/Assembly
-  KICOST_CONFIG: ''
+  KICOST_CONFIG: kibot_yaml/kicost_config_local.yaml
   FILT_PRE_TRANSFORM: field_rename

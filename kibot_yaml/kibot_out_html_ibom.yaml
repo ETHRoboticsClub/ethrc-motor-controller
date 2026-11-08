@@ -20,7 +20,6 @@ outputs:
     exclude_filter: '@EXCLUDE_FILTER@'
     hide_excluded: true
     forced_name: '@TITLE@'
-    mark_when_checked: 'Placed'
 
 ...
 definitions:

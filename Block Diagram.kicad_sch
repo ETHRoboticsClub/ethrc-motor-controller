@@ -6,33 +6,154 @@
 	(paper "A3")
 	(title_block
 		(title "Block Diagram")
-		(date "2025-01-12")
+		(date "2024-04-13")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
 	(lib_symbols)
-	(text_box "Target specifications (Rev A, all boards on the 48 V bus; rationale in the Obsidian requirements page):\n- Input voltage: 48 V nominal (13S LiPo, 42–54.6 V), operating 36–60 V; all bus parts rated ≥ 100 V; HW overvoltage trip 65 V\n- Continuous phase current: 25 A (RO100 Lite rated 20 A + 25 %), with heatsink + fan at ≤ 50 °C ambient\n- Peak phase current: 65 A for 3 s (RO100 Lite peak 62 A); HW overcurrent trip 80 A; current sense range ±80 A\n- Switching frequency: 40 kHz default, 20–60 kHz configurable; current loop at PWM rate\n- Max electrical frequency: ≥ 2 kHz (RO80 KV105 no-load: 5040 rpm × 21 pole pairs = 1.76 kHz)\n- Supported motors: 24–48 V rated, 2.85–20 A cont., 14–21 pole pairs, 0.12–1.7 Ω, 103–580 µH line (RO40 / RO80 / RO100)\n- Position feedback: sensored drive; 3× Hall input required (commutation), plus encoder input for FOC/position and motor NTC input\n- Fieldbus: EtherCAT, 2 ports (IN/OUT), 1 kHz cycle baseline (4 kHz capable), Distributed Clocks\n- Logic rails: 5 V ≤ 400 mA, 3.3 V ≤ 600 mA, regulators ≤ 70 % load; ambient −20…50 °C"
-		(exclude_from_sim no)
-		(at 13.97 244.475 0)
-		(size 205.74 36.83)
-		(margins 2 2 2 2)
+	(rectangle
+		(start 16.51 280.67)
+		(end 87.63 281.432)
 		(stroke
-			(width 1)
-			(type solid)
-			(color 200 200 200 1)
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 1)
+		)
+		(uuid 8956a1c0-282a-4b1e-927b-8bc74278d14f)
+	)
+	(rectangle
+		(start 16.51 247.65)
+		(end 87.63 248.412)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 1)
+		)
+		(uuid d631d51a-2515-45dc-a2c0-e57c4fee46cd)
+	)
+	(text_box "Peak current:"
+		(exclude_from_sim no)
+		(at 17.78 264.16 0)
+		(size 41.91 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
 		)
 		(fill
 			(type none)
 		)
 		(effects
 			(font
-				(face "Arial")
-				(size 2 2)
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(thickness 0.4572)
+				(bold yes)
 				(color 0 0 0 1)
 			)
 			(justify left top)
 		)
-		(uuid "240dc5cd-18a1-4404-a900-193b862b525a")
+		(uuid "094af17b-7d27-428a-ac7d-32c4461d72c7")
+	)
+	(text_box "Continuous current:"
+		(exclude_from_sim no)
+		(at 17.78 256.54 0)
+		(size 43.18 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(thickness 0.4572)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "16ff5c12-a59a-498f-9a58-8440cea84b9d")
+	)
+	(text_box "Input voltage:"
+		(exclude_from_sim no)
+		(at 17.78 248.92 0)
+		(size 41.91 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(thickness 0.4572)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "347e7e61-7c93-449c-8c65-b1d74937394e")
+	)
+	(text_box "20-60 kHz"
+		(exclude_from_sim no)
+		(at 63.5 271.78 0)
+		(size 24.13 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "37354c60-dbdb-4aa1-a2b0-e6db1fd7a12e")
+	)
+	(text_box "25 A"
+		(exclude_from_sim no)
+		(at 63.5 256.54 0)
+		(size 24.13 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "3d9a8928-04fd-4c32-8894-e3210045027d")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -57,9 +178,101 @@
 		)
 		(uuid "73b2b29c-2473-4e80-be0b-4f57c6856c3e")
 	)
+	(text_box "Target specifications:"
+		(exclude_from_sim no)
+		(at 13.97 240.03 0)
+		(size 73.66 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(thickness 0.4572)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "874bfc99-fafe-40d4-b7af-9ddb98b61eea")
+	)
+	(text_box "65 A"
+		(exclude_from_sim no)
+		(at 63.5 264.16 0)
+		(size 24.13 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "8d13c5b4-c5e0-49ad-8e30-5a14333c15f4")
+	)
+	(text_box "36-60 V"
+		(exclude_from_sim no)
+		(at 63.5 248.92 0)
+		(size 24.13 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "aa388299-5267-444a-a70f-fbbbf3a9efdc")
+	)
+	(text_box "Switching frequency:"
+		(exclude_from_sim no)
+		(at 17.78 271.78 0)
+		(size 44.45 7.62)
+		(margins 2.2859 2.2859 2.2859 2.2859)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 3.048 3.048)
+				(thickness 0.4572)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "f73ecd5d-28d4-4dc6-ad8d-2c156959b733")
+	)
 	(image
-		(at 210.82 135.89)
-		(scale 0.959698)
+		(at 200.66 137.16)
+		(scale 0.965789)
 		(uuid "d027c6d4-de99-4314-b315-5c67f89042f5")
 		(data "iVBORw0KGgoAAAANSUhEUgAAENEAAAnUCAMAAAAOR7d2AAAAIGNIUk0AAHomAACAhAAA+gAAAIDo"
 			"AAB1MAAA6mAAADqYAAAXcJy6UTwAAAEgUExURf///9hAG+RXE+hZDOlfE/KRUe2mb/fIl/7Xp/PO"

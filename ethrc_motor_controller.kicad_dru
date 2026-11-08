@@ -18,6 +18,12 @@
 (layer inner)
 (condition "A.Type == 'track'"))
 
+# EtherCAT pairs: 0.15 mm width / 0.25 mm gap = 100 ohm differential on the outer layers.
+# Placed after the 0.2 mm rules because later rules take priority.
+(rule "ECAT diff pair track width"
+(constraint track_width (min 0.15mm))
+(condition "A.NetClass == 'ECAT Diff Pair'"))
+
 # ------------------------------------------------------------------------------------------------------
 
 # Drill/hole size - listed here to maintain order of rule application. Must not override rule set in Via hole/diameter size below.

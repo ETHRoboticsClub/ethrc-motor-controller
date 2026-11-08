@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/work/ethrc_motor_controller.kicad_sch</source>
-    <date>2026-11-07T23:20:45+0000</date>
+    <source>/github/workspace/ethrc_motor_controller.kicad_sch</source>
+    <date>Date1</date>
     <tool>Eeschema 9.0.7+1</tool>
     <textvar name="ASSEMBLY_NOTES"/>
     <textvar name="BOARD_NAME">ETHRC Motor Controller</textvar>
     <textvar name="COMPANY">ETH Robotics Club</textvar>
     <textvar name="DESIGNER">Masiar Etemadi</textvar>
     <textvar name="FABRICATION_NOTES"/>
-    <textvar name="GIT_HASH_PCB">5f4aed2</textvar>
+    <textvar name="GIT_HASH_PCB">341cb1e</textvar>
     <textvar name="GIT_HASH_SCH">1a83c5d</textvar>
     <textvar name="GIT_URL">https://github.com/ETHRoboticsClub/ethrc-motor-controller</textvar>
     <textvar name="PROJECT_NAME">BLDC Motor Controller</textvar>
@@ -123,54 +123,54 @@ Fixed
     <textvar name="RELEASE_TITLE_1.1.0">Version 1.1.0 - 2024-04-13</textvar>
     <textvar name="RELEASE_TITLE_1.1.1">Version 1.1.1 - 2025-01-18</textvar>
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="REVISION">1.1.1+ (Unreleased)</textvar>
+    <textvar name="REVISION">+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
-    <textvar name="SHEET_NAME_10">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_11">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_12">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_13">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_14">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_15">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_16">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_17">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_18">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_19">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_2">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_20">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_21">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_22">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_23">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_24">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_25">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_26">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_27">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_28">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_29">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_3">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_30">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_31">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_32">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_33">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_34">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_35">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_36">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_37">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_38">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_39">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_4">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_40">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_5">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_6">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_7">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_8">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_9">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_10">Misc - Board Version, DAC</textvar>
+    <textvar name="SHEET_NAME_11">User - LED Indicators</textvar>
+    <textvar name="SHEET_NAME_12">Sensing - Temperature</textvar>
+    <textvar name="SHEET_NAME_13">Sensing - Battery</textvar>
+    <textvar name="SHEET_NAME_14">Sensing - Position</textvar>
+    <textvar name="SHEET_NAME_15">Comms - EtherCat</textvar>
+    <textvar name="SHEET_NAME_16">Comms - FD-CAN</textvar>
+    <textvar name="SHEET_NAME_17">Fan Control</textvar>
+    <textvar name="SHEET_NAME_18">Misc - Holes, Fiducials</textvar>
+    <textvar name="SHEET_NAME_19">Power - Sequencing</textvar>
+    <textvar name="SHEET_NAME_2">Block Diagram</textvar>
+    <textvar name="SHEET_NAME_20">Revision History</textvar>
+    <textvar name="SHEET_NAME_21">......................................</textvar>
+    <textvar name="SHEET_NAME_22">......................................</textvar>
+    <textvar name="SHEET_NAME_23">......................................</textvar>
+    <textvar name="SHEET_NAME_24">......................................</textvar>
+    <textvar name="SHEET_NAME_25">......................................</textvar>
+    <textvar name="SHEET_NAME_26">......................................</textvar>
+    <textvar name="SHEET_NAME_27">......................................</textvar>
+    <textvar name="SHEET_NAME_28">......................................</textvar>
+    <textvar name="SHEET_NAME_29">......................................</textvar>
+    <textvar name="SHEET_NAME_3">Project Architecture</textvar>
+    <textvar name="SHEET_NAME_30">......................................</textvar>
+    <textvar name="SHEET_NAME_31">......................................</textvar>
+    <textvar name="SHEET_NAME_32">......................................</textvar>
+    <textvar name="SHEET_NAME_33">......................................</textvar>
+    <textvar name="SHEET_NAME_34">......................................</textvar>
+    <textvar name="SHEET_NAME_35">......................................</textvar>
+    <textvar name="SHEET_NAME_36">......................................</textvar>
+    <textvar name="SHEET_NAME_37">......................................</textvar>
+    <textvar name="SHEET_NAME_38">......................................</textvar>
+    <textvar name="SHEET_NAME_39">......................................</textvar>
+    <textvar name="SHEET_NAME_4">MCU - Power</textvar>
+    <textvar name="SHEET_NAME_40">......................................</textvar>
+    <textvar name="SHEET_NAME_5">MCU - IOs</textvar>
+    <textvar name="SHEET_NAME_6">Power - Generation</textvar>
+    <textvar name="SHEET_NAME_7">Power - Connectors</textvar>
+    <textvar name="SHEET_NAME_8">Motor Control - Top Level</textvar>
+    <textvar name="SHEET_NAME_9">Motor Control - Inverter</textvar>
     <textvar name="VARIANT">DRAFT</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Cover Page</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-04-13</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>ethrc_motor_controller.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -187,8 +187,8 @@ Fixed
       <title_block>
         <title>Block Diagram</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-04-13</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Block Diagram.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -205,8 +205,8 @@ Fixed
       <title_block>
         <title>Project Architecture</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-12-22</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Project Architecture.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -223,8 +223,8 @@ Fixed
       <title_block>
         <title>MCU - Power</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-12-18</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>MCU - Power.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -241,8 +241,8 @@ Fixed
       <title_block>
         <title>MCU - I/Os</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-12-20</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>MCU - IOs.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -259,8 +259,8 @@ Fixed
       <title_block>
         <title>Power - Generation</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-04-13</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Power - Generation.kicad_sch</source>
         <comment number="1" value="(+12V (600 mA): Fan power)"/>
         <comment number="2" value="+5V (600 mA): Gate Driver, LEDs"/>
@@ -277,8 +277,8 @@ Fixed
       <title_block>
         <title>Power - Connectors</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-12-31</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Power - Connectors.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -295,8 +295,8 @@ Fixed
       <title_block>
         <title>Motor Control - Top Level</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-12-20</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Motor Control - Top Level.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -313,8 +313,8 @@ Fixed
       <title_block>
         <title>Motor Control - Inverter</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-01-25</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Motor Control - Inverter.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -331,8 +331,8 @@ Fixed
       <title_block>
         <title>Misc - Board Version, DAC</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-04-13</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Misc - Board Version DAC.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -349,8 +349,8 @@ Fixed
       <title_block>
         <title>User - LED Indicators</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-12-19</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>User - LED Indicators.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -367,8 +367,8 @@ Fixed
       <title_block>
         <title>Sensing - Temperature</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-04-13</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Sensing - Temperature.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -385,8 +385,8 @@ Fixed
       <title_block>
         <title>Sensing - Battery</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-10-14</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Sensing - Battery.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -403,8 +403,8 @@ Fixed
       <title_block>
         <title>Sensing - Position</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-10-14</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Sensing - Position.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -421,8 +421,8 @@ Fixed
       <title_block>
         <title>Comms - EtherCat</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2025-01-12</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Comms - EtherCat.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -439,8 +439,8 @@ Fixed
       <title_block>
         <title>Interface - FD-CAN</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-10-15</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Comms - FD-CAN.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -457,8 +457,8 @@ Fixed
       <title_block>
         <title>Interface - Fan Control</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-11-19</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Fan Control.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -475,8 +475,8 @@ Fixed
       <title_block>
         <title>Misc - Holes, Fiducials</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2023-10-22</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Misc - Holes Fiducials.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -493,8 +493,8 @@ Fixed
       <title_block>
         <title>Power - Sequencing</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-03-12</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Power - Sequencing.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -511,8 +511,8 @@ Fixed
       <title_block>
         <title>Revision History</title>
         <company>ETH Robotics Club</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>2024-01-03</date>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
         <source>Revision History.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -11269,46 +11269,46 @@ Fixed
   </libparts>
   <libraries>
     <library logical="0_connectors">
-      <uri>/work/lib/lib_sym/0_connectors.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_connectors.kicad_sym</uri>
     </library>
     <library logical="0_crystals">
-      <uri>/work/lib/lib_sym/0_crystals.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_crystals.kicad_sym</uri>
     </library>
     <library logical="0_ethercat">
-      <uri>/work/lib/lib_sym/0_ethercat.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_ethercat.kicad_sym</uri>
     </library>
     <library logical="0_gate_driver">
-      <uri>/work/lib/lib_sym/0_gate_driver.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_gate_driver.kicad_sym</uri>
     </library>
     <library logical="0_interface_can">
-      <uri>/work/lib/lib_sym/0_interface_can.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_interface_can.kicad_sym</uri>
     </library>
     <library logical="0_leds">
-      <uri>/work/lib/lib_sym/0_leds.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_leds.kicad_sym</uri>
     </library>
     <library logical="0_linear_regulator">
-      <uri>/work/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
     </library>
     <library logical="0_mcu">
-      <uri>/work/lib/lib_sym/0_mcu.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_mcu.kicad_sym</uri>
     </library>
     <library logical="0_memory">
-      <uri>/work/lib/lib_sym/0_memory.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_memory.kicad_sym</uri>
     </library>
     <library logical="0_motor_driver">
-      <uri>/work/lib/lib_sym/0_motor_driver.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_motor_driver.kicad_sym</uri>
     </library>
     <library logical="0_power_protection">
-      <uri>/work/lib/lib_sym/0_power_protection.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_power_protection.kicad_sym</uri>
     </library>
     <library logical="0_sensor">
-      <uri>/work/lib/lib_sym/0_sensor.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_sensor.kicad_sym</uri>
     </library>
     <library logical="0_switching_regulator">
-      <uri>/work/lib/lib_sym/0_switching_regulator.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_switching_regulator.kicad_sym</uri>
     </library>
     <library logical="0_transistor_fet">
-      <uri>/work/lib/lib_sym/0_transistor_fet.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_transistor_fet.kicad_sym</uri>
     </library>
     <library logical="Connector">
       <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>

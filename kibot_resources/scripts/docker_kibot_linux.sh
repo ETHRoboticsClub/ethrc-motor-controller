@@ -14,7 +14,7 @@ docker run --rm -it \
     --volume="/etc/shadow:/etc/shadow:ro" \
     --volume="/home/$USER_NAME:/home/$USER_NAME:rw" \
     --entrypoint /bin/bash \
-    ghcr.io/inti-cmnb/kicad8_auto_full:dev -c "
+    ghcr.io/inti-cmnb/kicad9_auto_full:dev -c "
     if ! id $USER_NAME &>/dev/null; then
         echo \"Creating user $USER_NAME ($USER_ID:$GROUP_ID)...\"
         useradd -u $USER_ID -g $GROUP_ID -d /home/$USER_NAME -m $USER_NAME

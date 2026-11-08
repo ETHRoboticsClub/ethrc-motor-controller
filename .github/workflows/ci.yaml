@@ -129,7 +129,7 @@ jobs:
 
       - name: Generate notes (Skipped for DRAFT variant)
         if: ${{ env.kibot_variant != 'DRAFT' }}
-        uses: INTI-CMNB/KiBot@v2_dk8
+        uses: INTI-CMNB/KiBot@v2_dk9
         with:
           targets: notes
           skip: all
@@ -137,7 +137,7 @@ jobs:
           config: ${{ env.kibot_config }}
 
       - name: Generate outputs
-        uses: INTI-CMNB/KiBot@v2_dk8
+        uses: INTI-CMNB/KiBot@v2_dk9
         with:
           additional_args: ${{ env.additional_args }}
           variant: ${{ env.kibot_variant }}

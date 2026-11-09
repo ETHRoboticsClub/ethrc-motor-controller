@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-  <img alt="Logo" width="33%" src="Logos/amulet_logo.svg">
+  <img alt="Logo" width="33%" src="Logos/ethrc_logo_black.svg">
 </p>
 
 <h1 align="center">ETHRC Motor Controller</h1>
@@ -8,12 +8,6 @@
   <a href="https://github.com/ETHRoboticsClub/ethrc-motor-controller/actions/workflows/ci.yaml">
     <img alt="CI Badge" src="https://github.com/ETHRoboticsClub/ethrc-motor-controller/actions/workflows/ci.yaml/badge.svg?branch=">
   </a>
-</p>
-
-ΛMULET is a high-power brushless motor controller, compatible with the [moteus firmware](https://github.com/mjbots/moteus). It was specifically designed to be integrated in [EPFL Xplore](https://github.com/EPFLXplore)'s Legged Robot actuators.
-
-<p align="center" width="100%">
-    <img src="Images/amulet_front.png">
 </p>
 
 ***
@@ -28,17 +22,17 @@
 
 ## SPECIFICATIONS
 
-| Parameter | ΛMULET V1.0 | 
+| Parameter | ETHRC Motor Controller v1.0| 
 | --- | --- |
-| Voltage Input | 12-44V |
+| Voltage Input | 33 - 58.8V |
 | Peak Electrical Power | TBD |
 | Mass | TBD |
-| Peak Phase Current | 100A |
-| Communication | 5Mbps CAN-FD |
-| Cooling | 12V Fan |
-| Positioning | 2x Onboard 14-bit Encoders |
-| Control rate | 15-30kHz |
-| PWM Switching Rate | 15-60kHz |
+| Peak Phase Current | TBD |
+| Communication | EtherCat, 5Mbps CAN-FD and SWD interface |
+| Cooling | TBD|
+| Positioning | 1x Onboard 14-bit Encoder and one external encoder |
+| Control rate | TBD |
+| PWM Switching Rate | TBD |
 | MCU | STM32G474 |
 | Dimensions | 88.0 × 88.0 mm |
 
@@ -87,26 +81,12 @@
 
 ## FIRMWARE
 
-[Associated firmware](https://github.com/EPFLXplore/XRE_moteus/tree/amulet) is forked from the [moteus](https://github.com/mjbots/moteus) repository.
 
 ***
 
 ## CREDITS
 
-Schematic is hugely inspired by the moteus controllers designed by Josh Pieper. They were modified to meet our own specifications, and to follow what I personally consider good layout practices.
-
+Schematic is largely inspired by the moteus controllers designed by Josh Pieper and amulet motion controller designed by Vincent Nguyen. They were modified to meet our own specifications. The CI/CD workflow and the templates for this KiCad 9.0 project was forked from https://github.com/nguyen-v/KDT_Hierarchical_KiBot created by Vincent Nguyen.
 ***
 
 ## PHOTOS
-
-<p align="center" width="100%">
-    <img src="./Images/amulet_stack.png">
-</p>
-
-<p align="center" width="100%">
-    <img src="./Images/amulet_connector.png">
-</p>
-
-<p align="center" width="100%">
-    <img src="./Images/amulet_back.png">
-</p>

@@ -1,0 +1,28 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.7+1*%
+%TF.CreationDate,Date%
+%TF.ProjectId,ethrc_motor_controller,65746872-635f-46d6-9f74-6f725f636f6e,+ (Unreleased)*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X194000000Y-100000000D02*
+G75*
+G02*
+X106000000Y-100000000I-44000000J0D01*
+G01*
+X106000000Y-100000000D02*
+G75*
+G02*
+X194000000Y-100000000I44000000J0D01*
+G01*
+M02*

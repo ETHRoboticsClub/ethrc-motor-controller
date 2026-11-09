@@ -2,11 +2,11 @@
   <img alt="Logo" width="33%" src="Logos/amulet_logo.svg">
 </p>
 
-<h1 align="center">Λmulet Motion Controller</h1>
+<h1 align="center">ETHRC Motor Controller</h1>
 
 <p align="center" width="100%">
-  <a href="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml">
-    <img alt="CI Badge" src="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=">
+  <a href="https://github.com/ETHRoboticsClub/ethrc-motor-controller/actions/workflows/ci.yaml">
+    <img alt="CI Badge" src="https://github.com/ETHRoboticsClub/ethrc-motor-controller/actions/workflows/ci.yaml/badge.svg?branch=">
   </a>
 </p>
 
@@ -19,9 +19,9 @@
 ***
 
 <p align="center">
-  <img alt="3D Top Angled" src="Images/amulet_controller-angled_top.png" width="45%">
+  <img alt="3D Top Angled" src="Images/ethrc_motor_controller-angled_top.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="3D Bottom Angled" src="Images/amulet_controller-angled_bottom.png" width="45%">
+  <img alt="3D Bottom Angled" src="Images/ethrc_motor_controller-angled_bottom.png" width="45%">
 </p>
 
 ***
@@ -40,7 +40,7 @@
 | Control rate | 15-30kHz |
 | PWM Switching Rate | 15-60kHz |
 | MCU | STM32G474 |
-| Dimensions | 69.67 × 76.7 mm |
+| Dimensions | 88.0 × 88.0 mm |
 
 ***
 

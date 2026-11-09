@@ -4,12 +4,77 @@
     <source>/github/workspace/ethrc_motor_controller.kicad_sch</source>
     <date>Date1</date>
     <tool>Eeschema 9.0.7+1</tool>
-    <textvar name="ASSEMBLY_NOTES"/>
+    <textvar name="ASSEMBLY_NOTES">ASSEMBLY NOTES (UNLESS OTHERWISE SPECIFIED)
+
+1)	DO NOT POPULATE PARTS ARE MARKED WITH A RED CROSS.
+
+2)	DO NOT POPULATE PARTS ARE NOT PRESENT IN THE BOM.
+
+3)	IF CONFLICTING INFORMATION IS FOUND BETWEEN THE ASSEMBLY
+	FILE AND BOM, BOM SHOULD BE USED AS THE MAIN SOURCE.
+
+4)	CONFORMAL COATING IS NOT REQUIRED.
+
+5)	DOT IDENTIFIES PIN #1 LOCATION AND DEVICE ORIENTATION
+	WHEN VIEWED FROM THE TOP.</textvar>
     <textvar name="BOARD_NAME">ETHRC Motor Controller</textvar>
     <textvar name="COMPANY">ETH Robotics Club</textvar>
     <textvar name="DESIGNER">Masiar Etemadi</textvar>
-    <textvar name="FABRICATION_NOTES"/>
-    <textvar name="GIT_HASH_PCB">341cb1e</textvar>
+    <textvar name="FABRICATION_NOTES">FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)
+
+1)	FABRICATE PER IPC-6012A CLASS 2.
+
+2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH
+	"Edge_Cuts.GBR" SUFFIX.
+
+	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS
+	DRAWING FOR REFERENCE ONLY.
+
+3)	SEE SEPARATE DRILL FILES WITH ".DRL" SUFFIX 
+	FOR HOLE LOCATIONS.
+
+	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING 
+	FOR REFERENCE ONLY.
+
+4)	SURFACE FINISH: IMMERSION GOLD
+
+5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL 
+	BE LPI, COLOR GREEN.
+
+6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER 
+	STACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.
+
+7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS 
+	SOLDERMASK OPENED IN GERBER.
+
+8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS 
+	AND Pb FREE FOR MANUFACTURING
+
+9)	PCB MATERIAL REQUIREMENTS:
+
+	A.	FLAMMABILITY RATING MUST MEET OR EXCEED 
+		UL94V-0 REQUIREMENTS.
+	B.	Tg 170 C OR EQUIVALENT.
+	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, 
+		HALOGEN FREE AND APPROVED BY ETH ROBOTICS CLUB.
+
+10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:
+
+	BOARD SIZE				88.000 × 88.000 mm
+	BOARD THICKNESS		1.535 mm
+	TRACE WIDTH			N/A mm
+	TRACE TO TRACE		0.200 mm
+	MIN. HOLE (PTH)			0.250 mm
+	MIN. HOLE (NPTH)		1.000 mm
+	ANNULAR RING			0.150 mm
+	COPPER TO HOLE		0.254 mm
+	COPPER TO EDGE		0.250 mm
+	HOLE TO HOLE			0.254 mm
+
+11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
+
+12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
+    <textvar name="GIT_HASH_PCB">c77e227</textvar>
     <textvar name="GIT_HASH_SCH">1a83c5d</textvar>
     <textvar name="GIT_URL">https://github.com/ETHRoboticsClub/ethrc-motor-controller</textvar>
     <textvar name="PROJECT_NAME">BLDC Motor Controller</textvar>
@@ -115,8 +180,8 @@ Fixed
 
 -   Replace non-stocked components.</textvar>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="RELEASE_DATE">08-Nov-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-11-08</textvar>
+    <textvar name="RELEASE_DATE">09-Nov-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-11-09</textvar>
     <textvar name="RELEASE_TITLE_1.0.0">Version 1.0.0 - 2023-12-12</textvar>
     <textvar name="RELEASE_TITLE_1.0.1">Version 1.0.1 - 2024-01-25</textvar>
     <textvar name="RELEASE_TITLE_1.0.2">Version 1.0.2 - 2024-03-12</textvar>
@@ -164,7 +229,7 @@ Fixed
     <textvar name="SHEET_NAME_7">Power - Connectors</textvar>
     <textvar name="SHEET_NAME_8">Motor Control - Top Level</textvar>
     <textvar name="SHEET_NAME_9">Motor Control - Inverter</textvar>
-    <textvar name="VARIANT">DRAFT</textvar>
+    <textvar name="VARIANT">PRELIMINARY</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Cover Page</title>
@@ -1020,31 +1085,24 @@ Fixed
       <sheetpath names="/Project Architecture/MCU - IOs/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/"/>
       <tstamps>6c5bb99b-2a13-448d-8529-08bd87133e7a</tstamps>
     </comp>
-    <comp ref="J1">
-      <value>SM05B-GHS-TB</value>
-      <footprint>0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</footprint>
-      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
-      <description>Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</description>
+    <comp ref="J15">
+      <value>Conn_ARM_SWD_TagConnect_TC2030-NL</value>
+      <footprint>Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</footprint>
+      <datasheet>https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</datasheet>
+      <description>Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</description>
       <fields>
-        <field name="Supplier 1">Digikey</field>
-        <field name="Supplier Part Number 1">455-SM05B-GHS-TBCT-ND</field>
-        <field name="Manufacturer">JST Sales America Inc.</field>
-        <field name="Manufacturer Part Number">SM05B-GHS-TB</field>
-        <field name="Footprint">0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</field>
-        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
-        <field name="Description">Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</field>
+        <field name="Footprint">Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
+        <field name="Datasheet">https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</field>
+        <field name="Description">Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</field>
       </fields>
-      <libsource lib="0_connectors" part="Conn_01x05_Mounting" description="Generic connector, single row, 01x05 with mounting pin"/>
-      <property name="Supplier 1" value="Digikey"/>
-      <property name="Supplier Part Number 1" value="455-SM05B-GHS-TBCT-ND"/>
-      <property name="Manufacturer" value="JST Sales America Inc."/>
-      <property name="Manufacturer Part Number" value="SM05B-GHS-TB"/>
+      <libsource lib="Connector" part="Conn_ARM_SWD_TagConnect_TC2030-NL" description="Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"/>
       <property name="Sheetname" value="MCU - IOs"/>
       <property name="Sheetfile" value="MCU - IOs.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="Cortex Debug Connector ARM SWD JTAG"/>
+      <property name="ki_fp_filters" value="*TC2030*"/>
       <sheetpath names="/Project Architecture/MCU - IOs/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/"/>
-      <tstamps>aea182f6-9112-473d-96e1-39529e8abdad</tstamps>
+      <tstamps>7d91ebbe-b982-410a-8a62-718e806ca41d</tstamps>
     </comp>
     <comp ref="R1">
       <value>22R 1%</value>
@@ -6045,106 +6103,208 @@ Fixed
       <tstamps>12543098-c6d2-44b7-96fa-07759c55b1f2</tstamps>
     </comp>
     <comp ref="Q1">
-      <value>IPT020N10N5ATMA1</value>
-      <footprint>0_transistor_fet:PG-HSOF-8-1_INF</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</datasheet>
+      <value>FDMT80080DC</value>
+      <footprint>0_transistor_fet:FDMT80040DC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</datasheet>
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
       <fields>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Supplier Part Number 1">FDMT80080DCCT-ND</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Manufacturer Part Number">FDMT80080DC</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
       </fields>
-      <libsource lib="" part="IPT020N10N5ATMA1_1" description=""/>
+      <libsource lib="" part="FDMT80080DC_2" description="Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"/>
+      <property name="Supplier Part Number 1" value="FDMT80080DCCT-ND"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Manufacturer Part Number" value="FDMT80080DC"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="512-FDMT80080DC"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"/>
+      <property name="Manufacturer_Name" value="onsemi"/>
+      <property name="Manufacturer_Part_Number" value="FDMT80080DC"/>
       <property name="Sheetname" value="Motor Control - Inverter"/>
       <property name="Sheetfile" value="Motor Control - Inverter.kicad_sch"/>
-      <property name="ki_keywords" value="IPT020N10N5ATMA1"/>
-      <property name="ki_fp_filters" value="PG-HSOF-8-1_INF"/>
       <sheetpath names="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/4a9c9b06-3536-46ef-a76d-6cac03a1fe38/"/>
-      <tstamps>bff28903-bce5-434a-842c-8294365eea11</tstamps>
+      <tstamps>342f59ee-e677-449e-87b4-44a0a1e0caf0</tstamps>
     </comp>
     <comp ref="Q2">
-      <value>IPT020N10N5ATMA1</value>
-      <footprint>0_transistor_fet:PG-HSOF-8-1_INF</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</datasheet>
+      <value>FDMT80080DC</value>
+      <footprint>0_transistor_fet:FDMT80040DC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</datasheet>
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
       <fields>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Supplier Part Number 1">FDMT80080DCCT-ND</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Manufacturer Part Number">FDMT80080DC</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
       </fields>
-      <libsource lib="" part="IPT020N10N5ATMA1_1" description=""/>
+      <libsource lib="0_transistor_fet" part="FDMT80080DC" description="Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"/>
+      <property name="Supplier Part Number 1" value="FDMT80080DCCT-ND"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Manufacturer Part Number" value="FDMT80080DC"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="512-FDMT80080DC"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"/>
+      <property name="Manufacturer_Name" value="onsemi"/>
+      <property name="Manufacturer_Part_Number" value="FDMT80080DC"/>
       <property name="Sheetname" value="Motor Control - Inverter"/>
       <property name="Sheetfile" value="Motor Control - Inverter.kicad_sch"/>
-      <property name="ki_keywords" value="IPT020N10N5ATMA1"/>
-      <property name="ki_fp_filters" value="PG-HSOF-8-1_INF"/>
       <sheetpath names="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/4a9c9b06-3536-46ef-a76d-6cac03a1fe38/"/>
-      <tstamps>ae71f8e0-7c1e-4878-a86a-0e32c7f906bf</tstamps>
+      <tstamps>12aff68a-ff5f-478a-a617-8ad70a8d8822</tstamps>
     </comp>
     <comp ref="Q3">
-      <value>IPT020N10N5ATMA1</value>
-      <footprint>0_transistor_fet:PG-HSOF-8-1_INF</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</datasheet>
+      <value>FDMT80080DC</value>
+      <footprint>0_transistor_fet:FDMT80040DC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</datasheet>
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
       <fields>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Supplier Part Number 1">FDMT80080DCCT-ND</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Manufacturer Part Number">FDMT80080DC</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
       </fields>
-      <libsource lib="" part="IPT020N10N5ATMA1_1" description=""/>
+      <libsource lib="0_transistor_fet" part="FDMT80080DC" description="Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"/>
+      <property name="Supplier Part Number 1" value="FDMT80080DCCT-ND"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Manufacturer Part Number" value="FDMT80080DC"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="512-FDMT80080DC"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"/>
+      <property name="Manufacturer_Name" value="onsemi"/>
+      <property name="Manufacturer_Part_Number" value="FDMT80080DC"/>
       <property name="Sheetname" value="Motor Control - Inverter"/>
       <property name="Sheetfile" value="Motor Control - Inverter.kicad_sch"/>
-      <property name="ki_keywords" value="IPT020N10N5ATMA1"/>
-      <property name="ki_fp_filters" value="PG-HSOF-8-1_INF"/>
       <sheetpath names="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/4a9c9b06-3536-46ef-a76d-6cac03a1fe38/"/>
-      <tstamps>23130ba9-4b2d-423a-b764-a30af6f47585</tstamps>
+      <tstamps>bf30717e-7df2-494d-a1c0-5d5a944eefd1</tstamps>
     </comp>
     <comp ref="Q4">
-      <value>IPT020N10N5ATMA1</value>
-      <footprint>0_transistor_fet:PG-HSOF-8-1_INF</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</datasheet>
+      <value>FDMT80080DC</value>
+      <footprint>0_transistor_fet:FDMT80040DC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</datasheet>
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
       <fields>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Supplier Part Number 1">FDMT80080DCCT-ND</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Manufacturer Part Number">FDMT80080DC</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
       </fields>
-      <libsource lib="" part="IPT020N10N5ATMA1_1" description=""/>
+      <libsource lib="0_transistor_fet" part="FDMT80080DC" description="Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"/>
+      <property name="Supplier Part Number 1" value="FDMT80080DCCT-ND"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Manufacturer Part Number" value="FDMT80080DC"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="512-FDMT80080DC"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"/>
+      <property name="Manufacturer_Name" value="onsemi"/>
+      <property name="Manufacturer_Part_Number" value="FDMT80080DC"/>
       <property name="Sheetname" value="Motor Control - Inverter"/>
       <property name="Sheetfile" value="Motor Control - Inverter.kicad_sch"/>
-      <property name="ki_keywords" value="IPT020N10N5ATMA1"/>
-      <property name="ki_fp_filters" value="PG-HSOF-8-1_INF"/>
       <sheetpath names="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/4a9c9b06-3536-46ef-a76d-6cac03a1fe38/"/>
-      <tstamps>9aba2ef8-5fea-4684-93a2-14442ef22a5f</tstamps>
+      <tstamps>18f9d4c1-d226-4835-9378-16070206d2da</tstamps>
     </comp>
     <comp ref="Q5">
-      <value>IPT020N10N5ATMA1</value>
-      <footprint>0_transistor_fet:PG-HSOF-8-1_INF</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</datasheet>
+      <value>FDMT80080DC</value>
+      <footprint>0_transistor_fet:FDMT80040DC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</datasheet>
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
       <fields>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Supplier Part Number 1">FDMT80080DCCT-ND</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Manufacturer Part Number">FDMT80080DC</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
       </fields>
-      <libsource lib="" part="IPT020N10N5ATMA1_1" description=""/>
+      <libsource lib="0_transistor_fet" part="FDMT80080DC" description="Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"/>
+      <property name="Supplier Part Number 1" value="FDMT80080DCCT-ND"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Manufacturer Part Number" value="FDMT80080DC"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="512-FDMT80080DC"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"/>
+      <property name="Manufacturer_Name" value="onsemi"/>
+      <property name="Manufacturer_Part_Number" value="FDMT80080DC"/>
       <property name="Sheetname" value="Motor Control - Inverter"/>
       <property name="Sheetfile" value="Motor Control - Inverter.kicad_sch"/>
-      <property name="ki_keywords" value="IPT020N10N5ATMA1"/>
-      <property name="ki_fp_filters" value="PG-HSOF-8-1_INF"/>
       <sheetpath names="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/4a9c9b06-3536-46ef-a76d-6cac03a1fe38/"/>
-      <tstamps>98cbe4dc-3197-4eee-8053-8bc4f1531e2a</tstamps>
+      <tstamps>e435f479-a3af-4eca-bd73-38842cfe1457</tstamps>
     </comp>
-    <comp ref="Q6">
-      <value>IPT020N10N5ATMA1</value>
-      <footprint>0_transistor_fet:PG-HSOF-8-1_INF</footprint>
-      <datasheet>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</datasheet>
+    <comp ref="Q11">
+      <value>FDMT80080DC</value>
+      <footprint>0_transistor_fet:FDMT80040DC</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</datasheet>
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
       <fields>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Supplier Part Number 1">FDMT80080DCCT-ND</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="Manufacturer Part Number">FDMT80080DC</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
       </fields>
-      <libsource lib="" part="IPT020N10N5ATMA1_1" description=""/>
+      <libsource lib="" part="FDMT80080DC_1" description="Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"/>
+      <property name="Supplier Part Number 1" value="FDMT80080DCCT-ND"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="Manufacturer Part Number" value="FDMT80080DC"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="512-FDMT80080DC"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"/>
+      <property name="Manufacturer_Name" value="onsemi"/>
+      <property name="Manufacturer_Part_Number" value="FDMT80080DC"/>
       <property name="Sheetname" value="Motor Control - Inverter"/>
       <property name="Sheetfile" value="Motor Control - Inverter.kicad_sch"/>
-      <property name="ki_keywords" value="IPT020N10N5ATMA1"/>
-      <property name="ki_fp_filters" value="PG-HSOF-8-1_INF"/>
       <sheetpath names="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/4a9c9b06-3536-46ef-a76d-6cac03a1fe38/"/>
-      <tstamps>64806bcd-996e-450c-92fb-83a710bca403</tstamps>
+      <tstamps>293934da-b224-4639-9b4e-89c09faf6bf9</tstamps>
     </comp>
     <comp ref="R18">
       <value>7R5 1% 1/2W</value>
@@ -6966,7 +7126,7 @@ Fixed
     </comp>
     <comp ref="J7">
       <value>S2B-PH-SM4-TB</value>
-      <footprint>0_connectors:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</footprint>
+      <footprint>0_connectors:JST_B2B-PH-SM4-TB</footprint>
       <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
       <description>Connector Header Surface Mount, Right Angle 2 position 0.079" (2.00mm)</description>
       <fields>
@@ -6974,7 +7134,7 @@ Fixed
         <field name="Supplier Part Number 1">455-S2B-PH-SM4-TBCT-ND</field>
         <field name="Manufacturer">JST Sales America Inc.</field>
         <field name="Manufacturer Part Number">S2B-PH-SM4-TB</field>
-        <field name="Footprint">0_connectors:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</field>
+        <field name="Footprint">0_connectors:JST_B2B-PH-SM4-TB</field>
         <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
         <field name="Description">Connector Header Surface Mount, Right Angle 2 position 0.079" (2.00mm)</field>
       </fields>
@@ -8123,6 +8283,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8150,6 +8311,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8177,6 +8339,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8204,6 +8367,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8231,6 +8395,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8258,6 +8423,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8285,6 +8451,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8312,6 +8479,7 @@ Fixed
       <property name="Supplier Part Number 1" value="187-CL05C100JB5NNNC"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="exclude_from_board"/>
       <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
@@ -8339,7 +8507,6 @@ Fixed
       <property name="Supplier Part Number 1" value="81-GCM155R71H223KA5D"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
@@ -8366,11 +8533,78 @@ Fixed
       <property name="Supplier Part Number 1" value="81-GCM155R71H223KA5D"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
       <tstamps>3b1ea687-9d33-4518-985b-8de9d983ac69</tstamps>
+    </comp>
+    <comp ref="C155">
+      <value>1n X7R 2kV</value>
+      <footprint>0_capacitor_smd:C_1808_4520Metric</footprint>
+      <datasheet>https://yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD</datasheet>
+      <description>1000 pF ±10% 2000V (2kV) Ceramic Capacitor X7R 1808 (4520 Metric)</description>
+      <fields>
+        <field name="Manufacturer">KEMET</field>
+        <field name="Manufacturer Part Number">C1808C102KGRACTU</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">399-C1808C102KGRACTUCT-ND</field>
+        <field name="Config"/>
+        <field name="MPN"/>
+        <field name="Mouser"/>
+        <field name="Supplier Part Number"/>
+        <field name="Footprint">0_capacitor_smd:C_1808_4520Metric</field>
+        <field name="Datasheet">https://yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD</field>
+        <field name="Description">1000 pF ±10% 2000V (2kV) Ceramic Capacitor X7R 1808 (4520 Metric)</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="Manufacturer Part Number" value="C1808C102KGRACTU"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="399-C1808C102KGRACTUCT-ND"/>
+      <property name="Config" value=""/>
+      <property name="MPN" value=""/>
+      <property name="Mouser" value=""/>
+      <property name="Supplier Part Number" value=""/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>e8e622d2-d5d1-4164-9dc3-7d6a9d99e1d7</tstamps>
+    </comp>
+    <comp ref="C156">
+      <value>1n X7R 2kV</value>
+      <footprint>0_capacitor_smd:C_1808_4520Metric</footprint>
+      <datasheet>https://yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD</datasheet>
+      <description>1000 pF ±10% 2000V (2kV) Ceramic Capacitor X7R 1808 (4520 Metric)</description>
+      <fields>
+        <field name="Manufacturer">KEMET</field>
+        <field name="Manufacturer Part Number">C1808C102KGRACTU</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">399-C1808C102KGRACTUCT-ND</field>
+        <field name="Config"/>
+        <field name="MPN"/>
+        <field name="Mouser"/>
+        <field name="Supplier Part Number"/>
+        <field name="Footprint">0_capacitor_smd:C_1808_4520Metric</field>
+        <field name="Datasheet">https://yageogroup.com/content/datasheet/asset/file/KEM_C1010_X7R_HV_SMD</field>
+        <field name="Description">1000 pF ±10% 2000V (2kV) Ceramic Capacitor X7R 1808 (4520 Metric)</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="Manufacturer Part Number" value="C1808C102KGRACTU"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="399-C1808C102KGRACTUCT-ND"/>
+      <property name="Config" value=""/>
+      <property name="MPN" value=""/>
+      <property name="Mouser" value=""/>
+      <property name="Supplier Part Number" value=""/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>7bc9f49d-86d3-424f-83f4-44e5f66f0d76</tstamps>
     </comp>
     <comp ref="C161">
       <value>1u</value>
@@ -8469,6 +8703,70 @@ Fixed
       <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
       <tstamps>72053675-544a-5e95-8300-a6bb03ea2e9f</tstamps>
     </comp>
+    <comp ref="D24">
+      <value>Green</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Green 571nm LED Indication - Discrete 2V 0603 (1608 Metric)</description>
+      <fields>
+        <field name="Manufacturer Part Number">LTST-C191KGKT</field>
+        <field name="Manufacturer">Lite-On</field>
+        <field name="Supplier 1">Mouser</field>
+        <field name="Supplier Part Number 1">859-LTST-C191KGKT</field>
+        <field name="Config"/>
+        <field name="MPN"/>
+        <field name="Mouser"/>
+        <field name="Supplier Part Number"/>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Green 571nm LED Indication - Discrete 2V 0603 (1608 Metric)</field>
+      </fields>
+      <libsource lib="0_leds" part="LED_Green_0603" description="LED green 0603. Pin 1 = cathode, pin 2 = anode."/>
+      <property name="Manufacturer Part Number" value="LTST-C191KGKT"/>
+      <property name="Manufacturer" value="Lite-On"/>
+      <property name="Supplier 1" value="Mouser"/>
+      <property name="Supplier Part Number 1" value="859-LTST-C191KGKT"/>
+      <property name="Config" value=""/>
+      <property name="MPN" value=""/>
+      <property name="Mouser" value=""/>
+      <property name="Supplier Part Number" value=""/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="LED indicator"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>94340c60-6ca8-42f8-8c5e-516c99557e93</tstamps>
+    </comp>
+    <comp ref="D25">
+      <value>Green</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Green 571nm LED Indication - Discrete 2V 0603 (1608 Metric)</description>
+      <fields>
+        <field name="Manufacturer Part Number">LTST-C191KGKT</field>
+        <field name="Manufacturer">Lite-On</field>
+        <field name="Supplier 1">Mouser</field>
+        <field name="Supplier Part Number 1">859-LTST-C191KGKT</field>
+        <field name="Config"/>
+        <field name="MPN"/>
+        <field name="Mouser"/>
+        <field name="Supplier Part Number"/>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Green 571nm LED Indication - Discrete 2V 0603 (1608 Metric)</field>
+      </fields>
+      <libsource lib="0_leds" part="LED_Green_0603" description="LED green 0603. Pin 1 = cathode, pin 2 = anode."/>
+      <property name="Manufacturer Part Number" value="LTST-C191KGKT"/>
+      <property name="Manufacturer" value="Lite-On"/>
+      <property name="Supplier 1" value="Mouser"/>
+      <property name="Supplier Part Number 1" value="859-LTST-C191KGKT"/>
+      <property name="Config" value=""/>
+      <property name="MPN" value=""/>
+      <property name="Mouser" value=""/>
+      <property name="Supplier Part Number" value=""/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="LED indicator"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>c3f1bec6-7db2-49b1-9b52-085c0af622d7</tstamps>
+    </comp>
     <comp ref="FB5">
       <value>600R@100MHz</value>
       <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
@@ -8503,48 +8801,54 @@ Fixed
       <tstamps>ff0fcf43-2f46-5e28-8ac6-c7074dc127b7</tstamps>
     </comp>
     <comp ref="J9">
-      <value>J0011D21BNL</value>
-      <footprint>0_connectors:J0011D21BNL</footprint>
-      <description>1 Port RJ45 MagJack Connector Through Hole 10/100 Base-T, AutoMDIX, with LEDs</description>
+      <value>SM05B-GHS-TB</value>
+      <footprint>0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
+      <description>Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</description>
       <fields>
-        <field name="Manufacturer">Pulse Electronics</field>
-        <field name="Manufacturer Part Number">J0011D21BNL</field>
-        <field name="Supplier 1">Mouser</field>
-        <field name="Supplier Part Number 1">673-J0011D21BNL</field>
-        <field name="Footprint">0_connectors:J0011D21BNL</field>
-        <field name="Datasheet"/>
-        <field name="Description">1 Port RJ45 MagJack Connector Through Hole 10/100 Base-T, AutoMDIX, with LEDs</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">455-SM05B-GHS-TBCT-ND</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+        <field name="Manufacturer Part Number">SM05B-GHS-TB</field>
+        <field name="Footprint">0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
+        <field name="Description">Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</field>
       </fields>
-      <libsource lib="0_connectors" part="J0011D21BNL" description=""/>
-      <property name="Manufacturer" value="Pulse Electronics"/>
-      <property name="Manufacturer Part Number" value="J0011D21BNL"/>
-      <property name="Supplier 1" value="Mouser"/>
-      <property name="Supplier Part Number 1" value="673-J0011D21BNL"/>
+      <libsource lib="0_connectors" part="Conn_01x05_Mounting" description="Generic connector, single row, 01x05 with mounting pin"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="455-SM05B-GHS-TBCT-ND"/>
+      <property name="Manufacturer" value="JST Sales America Inc."/>
+      <property name="Manufacturer Part Number" value="SM05B-GHS-TB"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
       <tstamps>e47048e7-a50b-4b72-a1f3-a1d749c6b03f</tstamps>
     </comp>
     <comp ref="J10">
-      <value>J0011D21BNL</value>
-      <footprint>0_connectors:J0011D21BNL</footprint>
-      <description>1 Port RJ45 MagJack Connector Through Hole 10/100 Base-T, AutoMDIX, with LEDs</description>
+      <value>SM05B-GHS-TB</value>
+      <footprint>0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</datasheet>
+      <description>Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</description>
       <fields>
-        <field name="Manufacturer">Pulse Electronics</field>
-        <field name="Manufacturer Part Number">J0011D21BNL</field>
-        <field name="Supplier 1">Mouser</field>
-        <field name="Supplier Part Number 1">673-J0011D21BNL</field>
-        <field name="Footprint">0_connectors:J0011D21BNL</field>
-        <field name="Datasheet"/>
-        <field name="Description">1 Port RJ45 MagJack Connector Through Hole 10/100 Base-T, AutoMDIX, with LEDs</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">455-SM05B-GHS-TBCT-ND</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+        <field name="Manufacturer Part Number">SM05B-GHS-TB</field>
+        <field name="Footprint">0_connectors:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</field>
+        <field name="Description">Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</field>
       </fields>
-      <libsource lib="0_connectors" part="J0011D21BNL" description=""/>
-      <property name="Manufacturer" value="Pulse Electronics"/>
-      <property name="Manufacturer Part Number" value="J0011D21BNL"/>
-      <property name="Supplier 1" value="Mouser"/>
-      <property name="Supplier Part Number 1" value="673-J0011D21BNL"/>
+      <libsource lib="0_connectors" part="Conn_01x05_Mounting" description="Generic connector, single row, 01x05 with mounting pin"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="455-SM05B-GHS-TBCT-ND"/>
+      <property name="Manufacturer" value="JST Sales America Inc."/>
+      <property name="Manufacturer Part Number" value="SM05B-GHS-TB"/>
       <property name="Sheetname" value="Comms - EtherCat"/>
       <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
       <tstamps>55ec5896-0809-4bd8-8d1a-0a686b5b19e5</tstamps>
     </comp>
@@ -9265,6 +9569,160 @@ Fixed
       <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
       <tstamps>7b78463e-8478-4a39-9d06-7a1c4b3fd3fa</tstamps>
     </comp>
+    <comp ref="R85">
+      <value>75 1%</value>
+      <footprint>0_resistor_smd:R_0603_1608_DensityHigh</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
+      <description>75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</description>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Manufacturer Part Number">ERJ-3EKF75R0V</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">P75.0HCT-ND</field>
+        <field name="Footprint">0_resistor_smd:R_0603_1608_DensityHigh</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
+        <field name="Description">75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="Manufacturer Part Number" value="ERJ-3EKF75R0V"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="P75.0HCT-ND"/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>24694110-21c3-43c3-8cee-9d2bf1f8feea</tstamps>
+    </comp>
+    <comp ref="R86">
+      <value>75 1%</value>
+      <footprint>0_resistor_smd:R_0603_1608_DensityHigh</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
+      <description>75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</description>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Manufacturer Part Number">ERJ-3EKF75R0V</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">P75.0HCT-ND</field>
+        <field name="Footprint">0_resistor_smd:R_0603_1608_DensityHigh</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
+        <field name="Description">75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="Manufacturer Part Number" value="ERJ-3EKF75R0V"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="P75.0HCT-ND"/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>205996e2-b515-4994-8cbc-fcef384b0b87</tstamps>
+    </comp>
+    <comp ref="R87">
+      <value>75 1%</value>
+      <footprint>0_resistor_smd:R_0603_1608_DensityHigh</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
+      <description>75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</description>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Manufacturer Part Number">ERJ-3EKF75R0V</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">P75.0HCT-ND</field>
+        <field name="Footprint">0_resistor_smd:R_0603_1608_DensityHigh</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
+        <field name="Description">75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="Manufacturer Part Number" value="ERJ-3EKF75R0V"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="P75.0HCT-ND"/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>76230be8-8fa2-450b-b900-ef0f556983ea</tstamps>
+    </comp>
+    <comp ref="R88">
+      <value>75 1%</value>
+      <footprint>0_resistor_smd:R_0603_1608_DensityHigh</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
+      <description>75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</description>
+      <fields>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="Manufacturer Part Number">ERJ-3EKF75R0V</field>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">P75.0HCT-ND</field>
+        <field name="Footprint">0_resistor_smd:R_0603_1608_DensityHigh</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
+        <field name="Description">75 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Manufacturer" value="Panasonic"/>
+      <property name="Manufacturer Part Number" value="ERJ-3EKF75R0V"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="P75.0HCT-ND"/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>95ff9f25-346e-406d-90a7-eecd6e8e1410</tstamps>
+    </comp>
+    <comp ref="T1">
+      <value>H1102NL</value>
+      <footprint>0_connectors:Transformer_Pulse_H1100NL</footprint>
+      <datasheet>https://yageogroup.com/download/datasheet/H1102NL</datasheet>
+      <description>10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC.</description>
+      <fields>
+        <field name="Manufacturer Part Number">H1102NL</field>
+        <field name="Manufacturer">Pulse Electronics</field>
+        <field name="Supplier 1">Mouser</field>
+        <field name="Supplier Part Number 1">673-H1102NL</field>
+        <field name="Footprint">0_connectors:Transformer_Pulse_H1100NL</field>
+        <field name="Datasheet">https://yageogroup.com/download/datasheet/H1102NL</field>
+        <field name="Description">10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC.</field>
+      </fields>
+      <libsource lib="0_connectors_ethrc" part="H1102NL" description="10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC."/>
+      <property name="Manufacturer Part Number" value="H1102NL"/>
+      <property name="Manufacturer" value="Pulse Electronics"/>
+      <property name="Supplier 1" value="Mouser"/>
+      <property name="Supplier Part Number 1" value="673-H1102NL"/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="Ethernet magnetics transformer"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>0d6fcb29-d050-41f2-ba77-f014a5dfc118</tstamps>
+    </comp>
+    <comp ref="T2">
+      <value>H1102NL</value>
+      <footprint>0_connectors:Transformer_Pulse_H1100NL</footprint>
+      <datasheet>https://yageogroup.com/download/datasheet/H1102NL</datasheet>
+      <description>10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC.</description>
+      <fields>
+        <field name="Manufacturer Part Number">H1102NL</field>
+        <field name="Manufacturer">Pulse Electronics</field>
+        <field name="Supplier 1">Mouser</field>
+        <field name="Supplier Part Number 1">673-H1102NL</field>
+        <field name="Footprint">0_connectors:Transformer_Pulse_H1100NL</field>
+        <field name="Datasheet">https://yageogroup.com/download/datasheet/H1102NL</field>
+        <field name="Description">10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC.</field>
+      </fields>
+      <libsource lib="0_connectors_ethrc" part="H1102NL" description="10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC."/>
+      <property name="Manufacturer Part Number" value="H1102NL"/>
+      <property name="Manufacturer" value="Pulse Electronics"/>
+      <property name="Supplier 1" value="Mouser"/>
+      <property name="Supplier Part Number 1" value="673-H1102NL"/>
+      <property name="Sheetname" value="Comms - EtherCat"/>
+      <property name="Sheetfile" value="Comms - EtherCat.kicad_sch"/>
+      <property name="ki_keywords" value="Ethernet magnetics transformer"/>
+      <sheetpath names="/Project Architecture/Comms - EtherCat/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b/"/>
+      <tstamps>db49ddb9-0655-4d91-a8c4-e8d8ab91dacb</tstamps>
+    </comp>
     <comp ref="U8">
       <value>24LC32AT-I/OT</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
@@ -9300,7 +9758,7 @@ Fixed
     </comp>
     <comp ref="U9">
       <value>LAN9253-V/R4X</value>
-      <footprint>Package_DFN_QFN:VQFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm_ThermalVias</footprint>
+      <footprint>0_package_DFN_QFN:QFN64_R4X_MCH</footprint>
       <datasheet>https://www.mouser.com/datasheet/3/282/1/LAN9253_Data_Sheet_DS00003421.pdf</datasheet>
       <description>2/3-Port EtherCAT Slave Controller with 2 Integrated 10/100 Ethernet PHYs, SPI/SQI/HBI, 64-VQFN (9x9) EP</description>
       <fields>
@@ -9312,7 +9770,7 @@ Fixed
         <field name="MPN"/>
         <field name="Mouser"/>
         <field name="Supplier Part Number"/>
-        <field name="Footprint">Package_DFN_QFN:VQFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm_ThermalVias</field>
+        <field name="Footprint">0_package_DFN_QFN:QFN64_R4X_MCH</field>
         <field name="Datasheet">https://www.mouser.com/datasheet/3/282/1/LAN9253_Data_Sheet_DS00003421.pdf</field>
         <field name="Description">2/3-Port EtherCAT Slave Controller with 2 Integrated 10/100 Ethernet PHYs, SPI/SQI/HBI, 64-VQFN (9x9) EP</field>
       </fields>
@@ -9904,6 +10362,32 @@ Fixed
       <sheetpath names="/Project Architecture/Fan Control/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/a3170e9c-67f1-489f-b9d1-10bbcf2409fd/"/>
       <tstamps>adf2080e-debc-4cee-a58e-501516191c29</tstamps>
     </comp>
+    <comp ref="C114">
+      <value>1n X7R 1kV</value>
+      <footprint>0_capacitor_smd:C_0603_1608_DensityHigh</footprint>
+      <datasheet>https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867</datasheet>
+      <description>1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)</description>
+      <fields>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">399-12306-1-ND</field>
+        <field name="Manufacturer">KEMET</field>
+        <field name="Manufacturer Part Number">C0603V102KDRAC7867</field>
+        <field name="Footprint">0_capacitor_smd:C_0603_1608_DensityHigh</field>
+        <field name="Datasheet">https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867</field>
+        <field name="Description">1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="399-12306-1-ND"/>
+      <property name="Manufacturer" value="KEMET"/>
+      <property name="Manufacturer Part Number" value="C0603V102KDRAC7867"/>
+      <property name="Sheetname" value="Misc - Holes, Fiducials"/>
+      <property name="Sheetfile" value="Misc - Holes Fiducials.kicad_sch"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Misc - Holes, Fiducials/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f/"/>
+      <tstamps>2377bd3e-76e9-4352-858b-712a142a5eff</tstamps>
+    </comp>
     <comp ref="C152">
       <value>1n X7R 1kV</value>
       <footprint>0_capacitor_smd:C_0603_1608_DensityHigh</footprint>
@@ -10144,6 +10628,24 @@ Fixed
       <sheetpath names="/Project Architecture/Misc - Holes, Fiducials/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f/"/>
       <tstamps>ee8acd0c-9945-4277-bcc2-dbaecf67e0a7</tstamps>
     </comp>
+    <comp ref="H4">
+      <value>M3</value>
+      <footprint>0_pad:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">0_pad:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Misc - Holes, Fiducials"/>
+      <property name="Sheetfile" value="Misc - Holes Fiducials.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Misc - Holes, Fiducials/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f/"/>
+      <tstamps>dd5af6c8-e91d-44c8-89d4-62614696299f</tstamps>
+    </comp>
     <comp ref="R73">
       <value>0R</value>
       <footprint>0_resistor_smd:R_0603_1608_DensityHigh</footprint>
@@ -10226,6 +10728,34 @@ Fixed
       <sheetpath names="/Project Architecture/Misc - Holes, Fiducials/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f/"/>
       <tstamps>23594b87-582c-4cc7-ab62-820b8cc12ad0</tstamps>
     </comp>
+    <comp ref="R76">
+      <value>0R</value>
+      <footprint>0_resistor_smd:R_0603_1608_DensityHigh</footprint>
+      <datasheet>https://www.vishay.com/docs/20043/crcwhpe3.pdf</datasheet>
+      <description>0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</description>
+      <fields>
+        <field name="Supplier 1">Digikey</field>
+        <field name="Supplier Part Number 1">541-0.0SBCT-ND</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Manufacturer Part Number">CRCW06030000Z0EAHP</field>
+        <field name="Footprint">0_resistor_smd:R_0603_1608_DensityHigh</field>
+        <field name="Datasheet">https://www.vishay.com/docs/20043/crcwhpe3.pdf</field>
+        <field name="Description">0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Supplier 1" value="Digikey"/>
+      <property name="Supplier Part Number 1" value="541-0.0SBCT-ND"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Manufacturer Part Number" value="CRCW06030000Z0EAHP"/>
+      <property name="Sheetname" value="Misc - Holes, Fiducials"/>
+      <property name="Sheetfile" value="Misc - Holes Fiducials.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Misc - Holes, Fiducials/" tstamps="/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f/"/>
+      <tstamps>842fdc64-dfd3-4bb5-9946-99f935b93202</tstamps>
+    </comp>
   </components>
   <libparts>
     <libpart lib="" part="BAT41KFILM_1">
@@ -10266,17 +10796,20 @@ Fixed
         <pin num="MP2" name="MP2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="" part="IPT020N10N5ATMA1_1">
-      <docs>https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</docs>
-      <footprints>
-        <fp>PG-HSOF-8-1_INF</fp>
-      </footprints>
+    <libpart lib="" part="FDMT80080DC_1">
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
+      <docs>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</docs>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">IPT020N10N5ATMA1</field>
-        <field name="Footprint">0_transistor_fet:PG-HSOF-8-1_INF</field>
-        <field name="Datasheet">https://www.infineon.com/dgdl/Infineon-IPT020N10N5-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016ac02955ee32f4</field>
-        <field name="Description"/>
+        <field name="Value">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
       </fields>
       <pins>
         <pin num="1" name="" type="unspecified"/>
@@ -10287,7 +10820,32 @@ Fixed
         <pin num="6" name="" type="unspecified"/>
         <pin num="7" name="" type="unspecified"/>
         <pin num="8" name="" type="unspecified"/>
-        <pin num="9" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="FDMT80080DC_2">
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
+      <docs>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="unspecified"/>
+        <pin num="2" name="" type="unspecified"/>
+        <pin num="3" name="" type="unspecified"/>
+        <pin num="4" name="" type="unspecified"/>
+        <pin num="5" name="" type="unspecified"/>
+        <pin num="6" name="" type="unspecified"/>
+        <pin num="7" name="" type="unspecified"/>
+        <pin num="8" name="" type="unspecified"/>
       </pins>
     </libpart>
     <libpart lib="" part="SW_DPDT_x2_1">
@@ -10379,45 +10937,6 @@ Fixed
         <pin num="MP2" name="MP2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="0_connectors" part="J0011D21BNL">
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">J0011D21BNL</field>
-        <field name="Footprint">0_connectors:J0011D21BNL</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-        <field name="MF">TRP Connector B.V.</field>
-        <field name="MAXIMUM_PACKAGE_HEIGHT">14.97mm</field>
-        <field name="CREATOR">ASHISH</field>
-        <field name="Price">None</field>
-        <field name="Package">None</field>
-        <field name="Check_prices">https://www.snapeda.com/parts/2250065-1/TRP+Connector/view-part/?ref=eda</field>
-        <field name="STANDARD">Manufacturer Recommendations</field>
-        <field name="PARTREV">5</field>
-        <field name="VERIFIER"/>
-        <field name="SnapEDA_Link">https://www.snapeda.com/parts/2250065-1/TRP+Connector/view-part/?ref=snap</field>
-        <field name="MP">2250065-1</field>
-        <field name="Purchase-URL">https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4617400&amp;manufacturer=TRP Connector B.V.&amp;part_name=2250065-1&amp;search_term=j0011d01bnl</field>
-        <field name="Description_1">1 Port RJ45 Through Hole 10/100 Base-TX, AutoMDIX</field>
-        <field name="Availability">In Stock</field>
-        <field name="MANUFACTURER">Bel Fuse</field>
-      </fields>
-      <pins>
-        <pin num="1" name="TD+" type="passive"/>
-        <pin num="2" name="TD-" type="passive"/>
-        <pin num="3" name="RD+" type="passive"/>
-        <pin num="4" name="TCT" type="passive"/>
-        <pin num="5" name="RCT" type="passive"/>
-        <pin num="6" name="RD-" type="passive"/>
-        <pin num="8" name="GND" type="power_in"/>
-        <pin num="9" name="" type="passive"/>
-        <pin num="10" name="" type="passive"/>
-        <pin num="11" name="" type="passive"/>
-        <pin num="12" name="" type="passive"/>
-        <pin num="SH1" name="SHIELD" type="passive"/>
-        <pin num="SH2" name="SHIELD" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="0_connectors" part="Solder Pad">
       <description>Solder Pad</description>
       <docs>~</docs>
@@ -10434,6 +10953,39 @@ Fixed
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="0_connectors_ethrc" part="H1102NL">
+      <description>10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC.</description>
+      <docs>https://www.mouser.com/datasheet/3/203/1/H1102NL.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">H1102NL</field>
+        <field name="Footprint">Transformer_SMD:Transformer_Pulse_H1100NL</field>
+        <field name="Datasheet">https://www.mouser.com/datasheet/3/203/1/H1102NL.pdf</field>
+        <field name="Description">10/100BASE-TX single-port LAN transformer 1:1, chokes on cable side, 16-pin SMD. Pins 4, 5, 12, 13 NC.</field>
+        <field name="Manufacturer Part Number">H1102NL</field>
+        <field name="Manufacturer">Pulse Electronics</field>
+        <field name="Supplier 1">Mouser</field>
+        <field name="Supplier Part Number 1">673-H1102NL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TD+" type="passive"/>
+        <pin num="2" name="TCT" type="passive"/>
+        <pin num="3" name="TD-" type="passive"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="RD+" type="passive"/>
+        <pin num="7" name="RCT" type="passive"/>
+        <pin num="8" name="RD-" type="passive"/>
+        <pin num="9" name="RX-" type="passive"/>
+        <pin num="10" name="RXCT" type="passive"/>
+        <pin num="11" name="RX+" type="passive"/>
+        <pin num="12" name="NC" type="no_connect"/>
+        <pin num="13" name="NC" type="no_connect"/>
+        <pin num="14" name="TX-" type="passive"/>
+        <pin num="15" name="TXCT" type="passive"/>
+        <pin num="16" name="TX+" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="0_crystals" part="Crystal_25MHz_ABM8G">
@@ -10963,6 +11515,32 @@ Fixed
         <pin num="7" name="VOS" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="0_transistor_fet" part="FDMT80080DC">
+      <description>Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</description>
+      <docs>https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FDMT80080DC</field>
+        <field name="Footprint">0_transistor_fet:FDMT80040DC</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf</field>
+        <field name="Description">Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant</field>
+        <field name="Height"/>
+        <field name="Mouser Part Number">512-FDMT80080DC</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D</field>
+        <field name="Manufacturer_Name">onsemi</field>
+        <field name="Manufacturer_Part_Number">FDMT80080DC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="unspecified"/>
+        <pin num="2" name="" type="unspecified"/>
+        <pin num="3" name="" type="unspecified"/>
+        <pin num="4" name="" type="unspecified"/>
+        <pin num="5" name="" type="unspecified"/>
+        <pin num="6" name="" type="unspecified"/>
+        <pin num="7" name="" type="unspecified"/>
+        <pin num="8" name="" type="unspecified"/>
+      </pins>
+    </libpart>
     <libpart lib="0_transistor_fet" part="PMV90ENER">
       <description>N-Channel 30 V 3A (Ta) 460mW (Ta) Surface Mount TO-236AB</description>
       <docs>https://assets.nexperia.com/documents/data-sheet/PMV90ENE.pdf</docs>
@@ -11001,6 +11579,28 @@ Fixed
         <pin num="1" name="G" type="passive"/>
         <pin num="2" name="D" type="passive"/>
         <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_ARM_SWD_TagConnect_TC2030-NL">
+      <description>Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</description>
+      <docs>https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</docs>
+      <footprints>
+        <fp>*TC2030*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J15</field>
+        <field name="Value">Conn_ARM_SWD_TagConnect_TC2030-NL</field>
+        <field name="Footprint">Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
+        <field name="Datasheet">https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</field>
+        <field name="Description">Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="SWDIO" type="bidirectional"/>
+        <pin num="3" name="~{RESET}" type="open_collector"/>
+        <pin num="4" name="SWCLK" type="output"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="SWO" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="TestPoint">
@@ -11271,6 +11871,9 @@ Fixed
     <library logical="0_connectors">
       <uri>/github/workspace/lib/lib_sym/0_connectors.kicad_sym</uri>
     </library>
+    <library logical="0_connectors_ethrc">
+      <uri>/github/workspace/lib/lib_sym/0_connectors_ethrc.kicad_sym</uri>
+    </library>
     <library logical="0_crystals">
       <uri>/github/workspace/lib/lib_sym/0_crystals.kicad_sym</uri>
     </library>
@@ -11358,7 +11961,7 @@ Fixed
       <node ref="C9" pin="1" pintype="passive"/>
       <node ref="D19" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="FB5" pin="2" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J15" pin="1" pinfunction="VCC" pintype="power_in"/>
       <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="R13" pin="1" pintype="passive"/>
@@ -11397,10 +12000,6 @@ Fixed
       <node ref="C144" pin="1" pintype="passive"/>
       <node ref="C145" pin="1" pintype="passive"/>
       <node ref="FB5" pin="1" pintype="passive"/>
-      <node ref="J10" pin="4" pinfunction="TCT" pintype="passive"/>
-      <node ref="J10" pin="5" pinfunction="RCT" pintype="passive"/>
-      <node ref="J9" pin="4" pinfunction="TCT" pintype="passive"/>
-      <node ref="J9" pin="5" pinfunction="RCT" pintype="passive"/>
       <node ref="R59" pin="1" pintype="passive"/>
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="R61" pin="1" pintype="passive"/>
@@ -11409,6 +12008,10 @@ Fixed
       <node ref="R64" pin="1" pintype="passive"/>
       <node ref="R65" pin="1" pintype="passive"/>
       <node ref="R66" pin="1" pintype="passive"/>
+      <node ref="T1" pin="2" pinfunction="TCT" pintype="passive"/>
+      <node ref="T1" pin="7" pinfunction="RCT" pintype="passive"/>
+      <node ref="T2" pin="2" pinfunction="TCT" pintype="passive"/>
+      <node ref="T2" pin="7" pinfunction="RCT" pintype="passive"/>
       <node ref="U9" pin="51" pinfunction="VDD33TXRX1" pintype="power_in"/>
       <node ref="U9" pin="58" pinfunction="VDD33BIAS" pintype="power_in"/>
       <node ref="U9" pin="64" pinfunction="VDD33TXRX2" pintype="power_in"/>
@@ -11524,10 +12127,19 @@ Fixed
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D23" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="FB3" pin="1" pintype="passive"/>
-      <node ref="Q1" pin="9" pintype="passive"/>
       <node ref="Q10" pin="3" pinfunction="S" pintype="passive"/>
-      <node ref="Q3" pin="9" pintype="passive"/>
-      <node ref="Q5" pin="9" pintype="passive"/>
+      <node ref="Q11" pin="5" pintype="unspecified"/>
+      <node ref="Q11" pin="6" pintype="unspecified"/>
+      <node ref="Q11" pin="7" pintype="unspecified"/>
+      <node ref="Q11" pin="8" pintype="unspecified"/>
+      <node ref="Q2" pin="5" pintype="unspecified"/>
+      <node ref="Q2" pin="6" pintype="unspecified"/>
+      <node ref="Q2" pin="7" pintype="unspecified"/>
+      <node ref="Q2" pin="8" pintype="unspecified"/>
+      <node ref="Q4" pin="5" pintype="unspecified"/>
+      <node ref="Q4" pin="6" pintype="unspecified"/>
+      <node ref="Q4" pin="7" pintype="unspecified"/>
+      <node ref="Q4" pin="8" pintype="unspecified"/>
       <node ref="R21" pin="2" pintype="passive"/>
       <node ref="R26" pin="2" pintype="passive"/>
       <node ref="R31" pin="2" pintype="passive"/>
@@ -11542,167 +12154,199 @@ Fixed
       <node ref="U6" pin="3" pinfunction="VM" pintype="passive"/>
       <node ref="U6" pin="4" pinfunction="VDRAIN" pintype="passive"/>
     </net>
-    <net code="8" name="/Project Architecture/Comms - EtherCat/ECAT_P0_RX+" class="Default">
+    <net code="8" name="/Project Architecture/Comms - EtherCat/ECAT_P0_CBL_RX+" class="Default">
+      <node ref="J9" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="T1" pin="11" pinfunction="RX+" pintype="passive"/>
+    </net>
+    <net code="9" name="/Project Architecture/Comms - EtherCat/ECAT_P0_CBL_RX-" class="Default">
+      <node ref="J9" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="T1" pin="9" pinfunction="RX-" pintype="passive"/>
+    </net>
+    <net code="10" name="/Project Architecture/Comms - EtherCat/ECAT_P0_CBL_TX+" class="Default">
+      <node ref="J9" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="T1" pin="16" pinfunction="TX+" pintype="passive"/>
+    </net>
+    <net code="11" name="/Project Architecture/Comms - EtherCat/ECAT_P0_CBL_TX-" class="Default">
+      <node ref="J9" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="T1" pin="14" pinfunction="TX-" pintype="passive"/>
+    </net>
+    <net code="12" name="/Project Architecture/Comms - EtherCat/ECAT_P0_RX+" class="Default">
       <node ref="C140" pin="1" pintype="passive"/>
-      <node ref="J9" pin="3" pinfunction="RD+" pintype="passive"/>
       <node ref="R63" pin="2" pintype="passive"/>
+      <node ref="T1" pin="6" pinfunction="RD+" pintype="passive"/>
       <node ref="U9" pin="55" pinfunction="RXPA" pintype="bidirectional"/>
     </net>
-    <net code="9" name="/Project Architecture/Comms - EtherCat/ECAT_P0_RX-" class="Default">
+    <net code="13" name="/Project Architecture/Comms - EtherCat/ECAT_P0_RX-" class="Default">
       <node ref="C142" pin="1" pintype="passive"/>
-      <node ref="J9" pin="6" pinfunction="RD-" pintype="passive"/>
       <node ref="R65" pin="2" pintype="passive"/>
+      <node ref="T1" pin="8" pinfunction="RD-" pintype="passive"/>
       <node ref="U9" pin="54" pinfunction="RXNA" pintype="bidirectional"/>
     </net>
-    <net code="10" name="/Project Architecture/Comms - EtherCat/ECAT_P0_TX+" class="Default">
+    <net code="14" name="/Project Architecture/Comms - EtherCat/ECAT_P0_TX+" class="Default">
       <node ref="C136" pin="1" pintype="passive"/>
-      <node ref="J9" pin="1" pinfunction="TD+" pintype="passive"/>
       <node ref="R59" pin="2" pintype="passive"/>
+      <node ref="T1" pin="1" pinfunction="TD+" pintype="passive"/>
       <node ref="U9" pin="53" pinfunction="TXPA" pintype="bidirectional"/>
     </net>
-    <net code="11" name="/Project Architecture/Comms - EtherCat/ECAT_P0_TX-" class="Default">
+    <net code="15" name="/Project Architecture/Comms - EtherCat/ECAT_P0_TX-" class="Default">
       <node ref="C138" pin="1" pintype="passive"/>
-      <node ref="J9" pin="2" pinfunction="TD-" pintype="passive"/>
       <node ref="R61" pin="2" pintype="passive"/>
+      <node ref="T1" pin="3" pinfunction="TD-" pintype="passive"/>
       <node ref="U9" pin="52" pinfunction="TXNA" pintype="bidirectional"/>
     </net>
-    <net code="12" name="/Project Architecture/Comms - EtherCat/ECAT_P1_RX+" class="Default">
+    <net code="16" name="/Project Architecture/Comms - EtherCat/ECAT_P1_CBL_RX+" class="Default">
+      <node ref="J10" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="T2" pin="11" pinfunction="RX+" pintype="passive"/>
+    </net>
+    <net code="17" name="/Project Architecture/Comms - EtherCat/ECAT_P1_CBL_RX-" class="Default">
+      <node ref="J10" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="T2" pin="9" pinfunction="RX-" pintype="passive"/>
+    </net>
+    <net code="18" name="/Project Architecture/Comms - EtherCat/ECAT_P1_CBL_TX+" class="Default">
+      <node ref="J10" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="T2" pin="16" pinfunction="TX+" pintype="passive"/>
+    </net>
+    <net code="19" name="/Project Architecture/Comms - EtherCat/ECAT_P1_CBL_TX-" class="Default">
+      <node ref="J10" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="T2" pin="14" pinfunction="TX-" pintype="passive"/>
+    </net>
+    <net code="20" name="/Project Architecture/Comms - EtherCat/ECAT_P1_RX+" class="Default">
       <node ref="C141" pin="1" pintype="passive"/>
-      <node ref="J10" pin="3" pinfunction="RD+" pintype="passive"/>
       <node ref="R64" pin="2" pintype="passive"/>
+      <node ref="T2" pin="6" pinfunction="RD+" pintype="passive"/>
       <node ref="U9" pin="60" pinfunction="RXPB" pintype="bidirectional"/>
     </net>
-    <net code="13" name="/Project Architecture/Comms - EtherCat/ECAT_P1_RX-" class="Default">
+    <net code="21" name="/Project Architecture/Comms - EtherCat/ECAT_P1_RX-" class="Default">
       <node ref="C143" pin="1" pintype="passive"/>
-      <node ref="J10" pin="6" pinfunction="RD-" pintype="passive"/>
       <node ref="R66" pin="2" pintype="passive"/>
+      <node ref="T2" pin="8" pinfunction="RD-" pintype="passive"/>
       <node ref="U9" pin="61" pinfunction="RXNB" pintype="bidirectional"/>
     </net>
-    <net code="14" name="/Project Architecture/Comms - EtherCat/ECAT_P1_TX+" class="Default">
+    <net code="22" name="/Project Architecture/Comms - EtherCat/ECAT_P1_TX+" class="Default">
       <node ref="C137" pin="1" pintype="passive"/>
-      <node ref="J10" pin="1" pinfunction="TD+" pintype="passive"/>
       <node ref="R60" pin="2" pintype="passive"/>
+      <node ref="T2" pin="1" pinfunction="TD+" pintype="passive"/>
       <node ref="U9" pin="62" pinfunction="TXPB" pintype="bidirectional"/>
     </net>
-    <net code="15" name="/Project Architecture/Comms - EtherCat/ECAT_P1_TX-" class="Default">
+    <net code="23" name="/Project Architecture/Comms - EtherCat/ECAT_P1_TX-" class="Default">
       <node ref="C139" pin="1" pintype="passive"/>
-      <node ref="J10" pin="2" pinfunction="TD-" pintype="passive"/>
       <node ref="R62" pin="2" pintype="passive"/>
+      <node ref="T2" pin="3" pinfunction="TD-" pintype="passive"/>
       <node ref="U9" pin="63" pinfunction="TXNB" pintype="bidirectional"/>
     </net>
-    <net code="16" name="/Project Architecture/Comms - EtherCat/EE_SCL" class="Default">
+    <net code="24" name="/Project Architecture/Comms - EtherCat/EE_SCL" class="Default">
       <node ref="R50" pin="2" pintype="passive"/>
       <node ref="U8" pin="1" pinfunction="SCL" pintype="input"/>
       <node ref="U9" pin="43" pinfunction="EESCL/EE_EMUL2" pintype="bidirectional"/>
     </net>
-    <net code="17" name="/Project Architecture/Comms - EtherCat/EE_SDA" class="Default">
+    <net code="25" name="/Project Architecture/Comms - EtherCat/EE_SDA" class="Default">
       <node ref="R52" pin="2" pintype="passive"/>
       <node ref="U8" pin="3" pinfunction="SDA" pintype="bidirectional"/>
       <node ref="U9" pin="42" pinfunction="EESDA/EE_EMUL1" pintype="bidirectional"/>
     </net>
-    <net code="18" name="/Project Architecture/Comms - EtherCat/ESC_CLK25" class="Default">
+    <net code="26" name="/Project Architecture/Comms - EtherCat/ESC_CLK25" class="Default">
       <node ref="R54" pin="1" pintype="passive"/>
       <node ref="U9" pin="8" pinfunction="CLK_25/XTAL_MODE" pintype="bidirectional"/>
     </net>
-    <net code="19" name="/Project Architecture/Comms - EtherCat/ESC_CS" class="Default">
+    <net code="27" name="/Project Architecture/Comms - EtherCat/ESC_CS" class="Default">
       <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="34" pinfunction="PB12" pintype="bidirectional"/>
       <node ref="U9" pin="50" pinfunction="SCS#" pintype="input"/>
     </net>
-    <net code="20" name="/Project Architecture/Comms - EtherCat/ESC_ERR" class="Default">
+    <net code="28" name="/Project Architecture/Comms - EtherCat/ESC_ERR" class="Default">
       <node ref="R47" pin="1" pintype="passive"/>
       <node ref="R48" pin="1" pintype="passive"/>
       <node ref="U9" pin="9" pinfunction="ERRLED/100FD_B" pintype="bidirectional"/>
     </net>
-    <net code="21" name="/Project Architecture/Comms - EtherCat/ESC_IRQ" class="Default">
+    <net code="29" name="/Project Architecture/Comms - EtherCat/ESC_IRQ" class="Default">
       <node ref="TP22" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="41" pinfunction="PC9" pintype="bidirectional"/>
       <node ref="U9" pin="44" pinfunction="IRQ" pintype="output"/>
     </net>
-    <net code="22" name="/Project Architecture/Comms - EtherCat/ESC_LINK0" class="Default">
+    <net code="30" name="/Project Architecture/Comms - EtherCat/ESC_LINK0" class="Default">
       <node ref="R58" pin="1" pintype="passive"/>
       <node ref="R67" pin="1" pintype="passive"/>
       <node ref="U9" pin="48" pinfunction="LINKACTLED0/CHIP_MODE0" pintype="bidirectional"/>
     </net>
-    <net code="23" name="/Project Architecture/Comms - EtherCat/ESC_LINK1" class="Default">
+    <net code="31" name="/Project Architecture/Comms - EtherCat/ESC_LINK1" class="Default">
       <node ref="R57" pin="1" pintype="passive"/>
       <node ref="R68" pin="1" pintype="passive"/>
       <node ref="U9" pin="46" pinfunction="LINKACTLED1/CHIP_MODE1" pintype="bidirectional"/>
     </net>
-    <net code="24" name="/Project Architecture/Comms - EtherCat/ESC_MISO" class="Default">
+    <net code="32" name="/Project Architecture/Comms - EtherCat/ESC_MISO" class="Default">
       <node ref="R56" pin="2" pintype="passive"/>
       <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="36" pinfunction="PB14" pintype="bidirectional"/>
     </net>
-    <net code="25" name="/Project Architecture/Comms - EtherCat/ESC_MISO_ESC" class="Default">
+    <net code="33" name="/Project Architecture/Comms - EtherCat/ESC_MISO_ESC" class="Default">
       <node ref="R56" pin="1" pintype="passive"/>
       <node ref="U9" pin="13" pinfunction="SO/SIO1" pintype="tri_state"/>
     </net>
-    <net code="26" name="/Project Architecture/Comms - EtherCat/ESC_MOSI" class="Default">
+    <net code="34" name="/Project Architecture/Comms - EtherCat/ESC_MOSI" class="Default">
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="17" pinfunction="SI/SIO0" pintype="bidirectional"/>
     </net>
-    <net code="27" name="/Project Architecture/Comms - EtherCat/ESC_OSCVDD12" class="Default">
+    <net code="35" name="/Project Architecture/Comms - EtherCat/ESC_OSCVDD12" class="Default">
       <node ref="C119" pin="1" pintype="passive"/>
       <node ref="C120" pin="1" pintype="passive"/>
       <node ref="U9" pin="3" pinfunction="OSCVDD12" pintype="power_out"/>
     </net>
-    <net code="28" name="/Project Architecture/Comms - EtherCat/ESC_RBIAS" class="Default">
+    <net code="36" name="/Project Architecture/Comms - EtherCat/ESC_RBIAS" class="Default">
       <node ref="R55" pin="1" pintype="passive"/>
       <node ref="U9" pin="57" pinfunction="RBIAS" pintype="passive"/>
     </net>
-    <net code="29" name="/Project Architecture/Comms - EtherCat/ESC_RST" class="Default">
+    <net code="37" name="/Project Architecture/Comms - EtherCat/ESC_RST" class="Default">
       <node ref="C118" pin="1" pintype="passive"/>
       <node ref="R51" pin="2" pintype="passive"/>
       <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="44" pinfunction="PA10" pintype="bidirectional"/>
       <node ref="U9" pin="11" pinfunction="RST#" pintype="bidirectional"/>
     </net>
-    <net code="30" name="/Project Architecture/Comms - EtherCat/ESC_RUN" class="Default">
+    <net code="38" name="/Project Architecture/Comms - EtherCat/ESC_RUN" class="Default">
       <node ref="R49" pin="1" pintype="passive"/>
       <node ref="R53" pin="2" pintype="passive"/>
       <node ref="U9" pin="45" pinfunction="RUNLED/E2PSIZE" pintype="bidirectional"/>
     </net>
-    <net code="31" name="/Project Architecture/Comms - EtherCat/ESC_SCLK" class="Default">
+    <net code="39" name="/Project Architecture/Comms - EtherCat/ESC_SCLK" class="Default">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="19" pinfunction="SCK" pintype="input"/>
     </net>
-    <net code="32" name="/Project Architecture/Comms - EtherCat/ESC_SYNC0" class="Default">
+    <net code="40" name="/Project Architecture/Comms - EtherCat/ESC_SYNC0" class="Default">
       <node ref="TP23" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="39" pinfunction="PC7" pintype="bidirectional"/>
       <node ref="U9" pin="34" pinfunction="SYNC0/LATCH0" pintype="bidirectional"/>
     </net>
-    <net code="33" name="/Project Architecture/Comms - EtherCat/ESC_SYNC1" class="Default">
+    <net code="41" name="/Project Architecture/Comms - EtherCat/ESC_SYNC1" class="Default">
       <node ref="TP75" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="40" pinfunction="PC8" pintype="bidirectional"/>
       <node ref="U9" pin="18" pinfunction="SYNC1/LATCH1" pintype="bidirectional"/>
     </net>
-    <net code="34" name="/Project Architecture/Comms - EtherCat/ESC_XI" class="Default">
+    <net code="42" name="/Project Architecture/Comms - EtherCat/ESC_XI" class="Default">
       <node ref="C117" pin="1" pintype="passive"/>
       <node ref="U9" pin="1" pinfunction="OSCI" pintype="input"/>
       <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
     </net>
-    <net code="35" name="/Project Architecture/Comms - EtherCat/ESC_XO" class="Default">
+    <net code="43" name="/Project Architecture/Comms - EtherCat/ESC_XO" class="Default">
       <node ref="C116" pin="1" pintype="passive"/>
       <node ref="U9" pin="2" pinfunction="OSCO" pintype="output"/>
       <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="38" name="/Project Architecture/Comms - FD-CAN/CAN_TERM_B" class="Default">
+    <net code="46" name="/Project Architecture/Comms - FD-CAN/CAN_TERM_B" class="Default">
       <node ref="R71" pin="2" pintype="passive"/>
       <node ref="SW1" pin="4" pinfunction="A" pintype="passive"/>
     </net>
-    <net code="39" name="/Project Architecture/Comms - FD-CAN/CAN_TERM_MID" class="Default">
+    <net code="47" name="/Project Architecture/Comms - FD-CAN/CAN_TERM_MID" class="Default">
       <node ref="C148" pin="1" pintype="passive"/>
       <node ref="R70" pin="2" pintype="passive"/>
       <node ref="R71" pin="1" pintype="passive"/>
     </net>
-    <net code="40" name="/Project Architecture/Comms - FD-CAN/CAN_TERM_T" class="Default">
+    <net code="48" name="/Project Architecture/Comms - FD-CAN/CAN_TERM_T" class="Default">
       <node ref="R70" pin="1" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="A" pintype="passive"/>
     </net>
-    <net code="41" name="/Project Architecture/Comms - FD-CAN/FDCAN+" class="Default">
+    <net code="49" name="/Project Architecture/Comms - FD-CAN/FDCAN+" class="Default">
       <node ref="D20" pin="1" pinfunction="K1" pintype="passive"/>
       <node ref="D21" pin="1" pinfunction="K1" pintype="passive"/>
       <node ref="J11" pin="3" pinfunction="Pin_3" pintype="passive"/>
@@ -11711,7 +12355,7 @@ Fixed
       <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
       <node ref="U10" pin="7" pinfunction="CANH" pintype="bidirectional"/>
     </net>
-    <net code="42" name="/Project Architecture/Comms - FD-CAN/FDCAN-" class="Default">
+    <net code="50" name="/Project Architecture/Comms - FD-CAN/FDCAN-" class="Default">
       <node ref="D20" pin="2" pinfunction="K2" pintype="passive"/>
       <node ref="D21" pin="2" pinfunction="K2" pintype="passive"/>
       <node ref="J11" pin="2" pinfunction="Pin_2" pintype="passive"/>
@@ -11720,83 +12364,83 @@ Fixed
       <node ref="SW1" pin="5" pinfunction="B" pintype="passive"/>
       <node ref="U10" pin="6" pinfunction="CANL" pintype="bidirectional"/>
     </net>
-    <net code="43" name="/Project Architecture/Comms - FD-CAN/FDCAN_RX" class="Default">
+    <net code="51" name="/Project Architecture/Comms - FD-CAN/FDCAN_RX" class="Default">
       <node ref="TP33" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="58" pinfunction="PB5" pintype="bidirectional"/>
       <node ref="U10" pin="4" pinfunction="RXD" pintype="output"/>
     </net>
-    <net code="44" name="/Project Architecture/Comms - FD-CAN/FDCAN_S" class="Default">
+    <net code="52" name="/Project Architecture/Comms - FD-CAN/FDCAN_S" class="Default">
       <node ref="R69" pin="1" pintype="passive"/>
       <node ref="U10" pin="8" pinfunction="S" pintype="input"/>
     </net>
-    <net code="45" name="/Project Architecture/Comms - FD-CAN/FDCAN_TX" class="Default">
+    <net code="53" name="/Project Architecture/Comms - FD-CAN/FDCAN_TX" class="Default">
       <node ref="TP34" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="59" pinfunction="PB6" pintype="bidirectional"/>
       <node ref="U10" pin="1" pinfunction="TXD" pintype="input"/>
     </net>
-    <net code="47" name="/Project Architecture/Fan Control/FAN_GATE" class="Default">
+    <net code="55" name="/Project Architecture/Fan Control/FAN_GATE" class="Default">
       <node ref="Q9" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R72" pin="2" pintype="passive"/>
     </net>
-    <net code="48" name="/Project Architecture/Fan Control/FAN_OUT" class="Default">
+    <net code="56" name="/Project Architecture/Fan Control/FAN_OUT" class="Default">
       <node ref="R72" pin="1" pintype="passive"/>
       <node ref="U11" pin="4" pinfunction="OUT" pintype="output"/>
     </net>
-    <net code="49" name="/Project Architecture/Fan Control/FAN_SW" class="Default">
+    <net code="57" name="/Project Architecture/Fan Control/FAN_SW" class="Default">
       <node ref="J14" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="Q9" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP74" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="50" name="/Project Architecture/Fan Control/FAN_~{IN}" class="Default">
+    <net code="58" name="/Project Architecture/Fan Control/FAN_~{IN}" class="Default">
       <node ref="U11" pin="1" pinfunction="~{IN}" pintype="input+no_connect"/>
     </net>
-    <net code="51" name="/Project Architecture/MCU - IOs/BOARD_VERSION" class="Default">
+    <net code="59" name="/Project Architecture/MCU - IOs/BOARD_VERSION" class="Default">
       <node ref="R33" pin="2" pintype="passive"/>
       <node ref="R34" pin="1" pintype="passive"/>
       <node ref="U1" pin="18" pinfunction="PA4" pintype="bidirectional"/>
     </net>
-    <net code="52" name="/Project Architecture/MCU - IOs/DRV_CS" class="Default">
+    <net code="60" name="/Project Architecture/MCU - IOs/DRV_CS" class="Default">
       <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="24" pinfunction="PB0" pintype="bidirectional"/>
       <node ref="U6" pin="30" pinfunction="nSCS" pintype="input"/>
     </net>
-    <net code="53" name="/Project Architecture/MCU - IOs/DRV_MISO" class="Default">
+    <net code="61" name="/Project Architecture/MCU - IOs/DRV_MISO" class="Default">
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="53" pinfunction="PC11" pintype="bidirectional"/>
       <node ref="U6" pin="27" pinfunction="SDO" pintype="open_collector"/>
     </net>
-    <net code="54" name="/Project Architecture/MCU - IOs/DRV_MOSI" class="Default">
-      <node ref="R2" pin="2" pintype="passive"/>
+    <net code="62" name="/Project Architecture/MCU - IOs/DRV_MOSI" class="Default">
+      <node ref="R2" pin="1" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="28" pinfunction="SDI" pintype="input"/>
     </net>
-    <net code="55" name="/Project Architecture/MCU - IOs/DRV_MOSI_MCU" class="Default">
-      <node ref="R2" pin="1" pintype="passive"/>
+    <net code="63" name="/Project Architecture/MCU - IOs/DRV_MOSI_MCU" class="Default">
+      <node ref="R2" pin="2" pintype="passive"/>
       <node ref="U1" pin="54" pinfunction="PC12" pintype="bidirectional"/>
     </net>
-    <net code="56" name="/Project Architecture/MCU - IOs/DRV_SCLK" class="Default">
-      <node ref="R1" pin="2" pintype="passive"/>
+    <net code="64" name="/Project Architecture/MCU - IOs/DRV_SCLK" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="29" pinfunction="SCLK" pintype="input"/>
     </net>
-    <net code="57" name="/Project Architecture/MCU - IOs/DRV_SCLK_MCU" class="Default">
-      <node ref="R1" pin="1" pintype="passive"/>
+    <net code="65" name="/Project Architecture/MCU - IOs/DRV_SCLK_MCU" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U1" pin="52" pinfunction="PC10" pintype="bidirectional"/>
     </net>
-    <net code="58" name="/Project Architecture/MCU - IOs/ENC_BRD_CS" class="Default">
+    <net code="66" name="/Project Architecture/MCU - IOs/ENC_BRD_CS" class="Default">
       <node ref="TP27" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="26" pinfunction="PB2" pintype="bidirectional"/>
       <node ref="U7" pin="5" pinfunction="CS" pintype="unspecified"/>
     </net>
-    <net code="59" name="/Project Architecture/MCU - IOs/ENC_EXT_CS" class="Default">
+    <net code="67" name="/Project Architecture/MCU - IOs/ENC_EXT_CS" class="Default">
       <node ref="D17" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D17" pin="10" pinfunction="K" pintype="passive"/>
       <node ref="J8" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="TP28" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="51" pinfunction="PA15" pintype="bidirectional"/>
     </net>
-    <net code="60" name="/Project Architecture/MCU - IOs/ENC_MISO" class="Default">
+    <net code="68" name="/Project Architecture/MCU - IOs/ENC_MISO" class="Default">
       <node ref="D17" pin="4" pinfunction="K" pintype="passive"/>
       <node ref="D17" pin="7" pinfunction="K" pintype="passive"/>
       <node ref="J8" pin="4" pinfunction="Pin_4" pintype="passive"/>
@@ -11804,7 +12448,7 @@ Fixed
       <node ref="TP25" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="57" pinfunction="PB4" pintype="bidirectional"/>
     </net>
-    <net code="61" name="/Project Architecture/MCU - IOs/ENC_MOSI" class="Default">
+    <net code="69" name="/Project Architecture/MCU - IOs/ENC_MOSI" class="Default">
       <node ref="D17" pin="2" pinfunction="K" pintype="passive"/>
       <node ref="D17" pin="9" pinfunction="K" pintype="passive"/>
       <node ref="J8" pin="5" pinfunction="Pin_5" pintype="passive"/>
@@ -11812,11 +12456,11 @@ Fixed
       <node ref="TP26" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="4" pinfunction="MOSI" pintype="input"/>
     </net>
-    <net code="62" name="/Project Architecture/MCU - IOs/ENC_MOSI_MCU" class="Default">
+    <net code="70" name="/Project Architecture/MCU - IOs/ENC_MOSI_MCU" class="Default">
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="PA7" pintype="bidirectional"/>
     </net>
-    <net code="63" name="/Project Architecture/MCU - IOs/ENC_SCLK" class="Default">
+    <net code="71" name="/Project Architecture/MCU - IOs/ENC_SCLK" class="Default">
       <node ref="D17" pin="5" pinfunction="K" pintype="passive"/>
       <node ref="D17" pin="6" pinfunction="K" pintype="passive"/>
       <node ref="J8" pin="3" pinfunction="Pin_3" pintype="passive"/>
@@ -11824,39 +12468,39 @@ Fixed
       <node ref="TP24" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="12" pinfunction="SCLK" pintype="unspecified"/>
     </net>
-    <net code="64" name="/Project Architecture/MCU - IOs/ENC_SCLK_MCU" class="Default">
+    <net code="72" name="/Project Architecture/MCU - IOs/ENC_SCLK_MCU" class="Default">
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="U1" pin="19" pinfunction="PA5" pintype="bidirectional"/>
     </net>
-    <net code="65" name="/Project Architecture/MCU - IOs/ESC_MOSI_MCU" class="Default">
+    <net code="73" name="/Project Architecture/MCU - IOs/ESC_MOSI_MCU" class="Default">
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="37" pinfunction="PB15" pintype="bidirectional"/>
     </net>
-    <net code="66" name="/Project Architecture/MCU - IOs/ESC_SCLK_MCU" class="Default">
+    <net code="74" name="/Project Architecture/MCU - IOs/ESC_SCLK_MCU" class="Default">
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="35" pinfunction="PB13" pintype="bidirectional"/>
     </net>
-    <net code="67" name="/Project Architecture/MCU - IOs/FAN_CTRL" class="Default">
+    <net code="75" name="/Project Architecture/MCU - IOs/FAN_CTRL" class="Default">
       <node ref="TP35" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="55" pinfunction="PD2" pintype="bidirectional"/>
       <node ref="U11" pin="3" pinfunction="IN" pintype="input"/>
     </net>
-    <net code="68" name="/Project Architecture/MCU - IOs/FILTER_SOA" class="Default">
+    <net code="76" name="/Project Architecture/MCU - IOs/FILTER_SOA" class="Default">
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U1" pin="17" pinfunction="PA3" pintype="bidirectional"/>
     </net>
-    <net code="69" name="/Project Architecture/MCU - IOs/FILTER_SOB" class="Default">
+    <net code="77" name="/Project Architecture/MCU - IOs/FILTER_SOB" class="Default">
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="U1" pin="20" pinfunction="PA6" pintype="bidirectional"/>
     </net>
-    <net code="70" name="/Project Architecture/MCU - IOs/FILTER_SOC" class="Default">
+    <net code="78" name="/Project Architecture/MCU - IOs/FILTER_SOC" class="Default">
       <node ref="C16" pin="1" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="U1" pin="25" pinfunction="PB1" pintype="bidirectional"/>
     </net>
-    <net code="71" name="/Project Architecture/MCU - IOs/HALL_A" class="Default">
+    <net code="79" name="/Project Architecture/MCU - IOs/HALL_A" class="Default">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="D22" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D22" pin="10" pinfunction="K" pintype="passive"/>
@@ -11864,7 +12508,7 @@ Fixed
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="U1" pin="60" pinfunction="PB7" pintype="bidirectional"/>
     </net>
-    <net code="72" name="/Project Architecture/MCU - IOs/HALL_B" class="Default">
+    <net code="80" name="/Project Architecture/MCU - IOs/HALL_B" class="Default">
       <node ref="C19" pin="1" pintype="passive"/>
       <node ref="D22" pin="2" pinfunction="K" pintype="passive"/>
       <node ref="D22" pin="9" pinfunction="K" pintype="passive"/>
@@ -11872,7 +12516,7 @@ Fixed
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U1" pin="45" pinfunction="PA11" pintype="bidirectional"/>
     </net>
-    <net code="73" name="/Project Architecture/MCU - IOs/HALL_C" class="Default">
+    <net code="81" name="/Project Architecture/MCU - IOs/HALL_C" class="Default">
       <node ref="C22" pin="1" pintype="passive"/>
       <node ref="D22" pin="4" pinfunction="K" pintype="passive"/>
       <node ref="D22" pin="7" pinfunction="K" pintype="passive"/>
@@ -11880,72 +12524,72 @@ Fixed
       <node ref="R78" pin="2" pintype="passive"/>
       <node ref="U1" pin="46" pinfunction="PA12" pintype="bidirectional"/>
     </net>
-    <net code="74" name="/Project Architecture/MCU - IOs/LED_DBG" class="Default">
+    <net code="82" name="/Project Architecture/MCU - IOs/LED_DBG" class="Default">
       <node ref="R35" pin="1" pintype="passive"/>
       <node ref="R36" pin="1" pintype="passive"/>
       <node ref="TP31" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="30" pinfunction="PB10" pintype="bidirectional"/>
     </net>
-    <net code="75" name="/Project Architecture/MCU - IOs/LED_PWR" class="Default">
+    <net code="83" name="/Project Architecture/MCU - IOs/LED_PWR" class="Default">
       <node ref="R38" pin="1" pintype="passive"/>
       <node ref="R39" pin="1" pintype="passive"/>
       <node ref="TP32" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="38" pinfunction="PC6" pintype="bidirectional"/>
     </net>
-    <net code="76" name="/Project Architecture/MCU - IOs/MOTOR_ENABLE" class="Default">
+    <net code="84" name="/Project Architecture/MCU - IOs/MOTOR_ENABLE" class="Default">
       <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="PC14" pintype="bidirectional"/>
       <node ref="U6" pin="31" pinfunction="ENABLE" pintype="input"/>
     </net>
-    <net code="77" name="/Project Architecture/MCU - IOs/MOTOR_FAULT" class="Default">
+    <net code="85" name="/Project Architecture/MCU - IOs/MOTOR_FAULT" class="Default">
       <node ref="R16" pin="2" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="PC0" pintype="bidirectional"/>
       <node ref="U6" pin="26" pinfunction="nFAULT" pintype="open_collector"/>
     </net>
-    <net code="78" name="/Project Architecture/MCU - IOs/MOTOR_HIZ" class="Default">
+    <net code="86" name="/Project Architecture/MCU - IOs/MOTOR_HIZ" class="Default">
       <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="PC15" pintype="bidirectional"/>
       <node ref="U6" pin="33" pinfunction="INLA" pintype="input"/>
       <node ref="U6" pin="35" pinfunction="INLB" pintype="input"/>
       <node ref="U6" pin="37" pinfunction="INLC" pintype="input"/>
     </net>
-    <net code="79" name="/Project Architecture/MCU - IOs/NRST" class="Default">
+    <net code="87" name="/Project Architecture/MCU - IOs/NRST" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D1" pin="10" pinfunction="K" pintype="passive"/>
-      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J15" pin="3" pinfunction="~{RESET}" pintype="open_collector"/>
       <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="PG10" pintype="bidirectional"/>
     </net>
-    <net code="80" name="/Project Architecture/MCU - IOs/PC1" class="Default">
+    <net code="88" name="/Project Architecture/MCU - IOs/PC1" class="Default">
       <node ref="U1" pin="9" pinfunction="PC1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="81" name="/Project Architecture/MCU - IOs/PC2" class="Default">
+    <net code="89" name="/Project Architecture/MCU - IOs/PC2" class="Default">
       <node ref="U1" pin="10" pinfunction="PC2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="82" name="/Project Architecture/MCU - IOs/PC3" class="Default">
+    <net code="90" name="/Project Architecture/MCU - IOs/PC3" class="Default">
       <node ref="U1" pin="11" pinfunction="PC3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="83" name="/Project Architecture/MCU - IOs/PC5" class="Default">
+    <net code="91" name="/Project Architecture/MCU - IOs/PC5" class="Default">
       <node ref="U1" pin="23" pinfunction="PC5" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="84" name="/Project Architecture/MCU - IOs/PWM_PHASEA" class="Default">
+    <net code="92" name="/Project Architecture/MCU - IOs/PWM_PHASEA" class="Default">
       <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="14" pinfunction="PA2" pintype="bidirectional"/>
       <node ref="U6" pin="32" pinfunction="INHA" pintype="input"/>
     </net>
-    <net code="85" name="/Project Architecture/MCU - IOs/PWM_PHASEB" class="Default">
+    <net code="93" name="/Project Architecture/MCU - IOs/PWM_PHASEB" class="Default">
       <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="PA1" pintype="bidirectional"/>
       <node ref="U6" pin="34" pinfunction="INHB" pintype="input"/>
     </net>
-    <net code="86" name="/Project Architecture/MCU - IOs/PWM_PHASEC" class="Default">
+    <net code="94" name="/Project Architecture/MCU - IOs/PWM_PHASEC" class="Default">
       <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="PA0" pintype="bidirectional"/>
       <node ref="U6" pin="36" pinfunction="INHC" pintype="input"/>
     </net>
-    <net code="87" name="/Project Architecture/MCU - IOs/SENSE_TEMP_FET" class="Default">
+    <net code="95" name="/Project Architecture/MCU - IOs/SENSE_TEMP_FET" class="Default">
       <node ref="C110" pin="1" pintype="passive"/>
       <node ref="D15" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R41" pin="2" pintype="passive"/>
@@ -11953,7 +12597,7 @@ Fixed
       <node ref="TP37" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="33" pinfunction="PB11" pintype="bidirectional"/>
     </net>
-    <net code="88" name="/Project Architecture/MCU - IOs/SENSE_TEMP_MOT" class="Default">
+    <net code="96" name="/Project Architecture/MCU - IOs/SENSE_TEMP_MOT" class="Default">
       <node ref="C111" pin="1" pintype="passive"/>
       <node ref="D16" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -11961,43 +12605,43 @@ Fixed
       <node ref="TP36" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="42" pinfunction="PA8" pintype="bidirectional"/>
     </net>
-    <net code="89" name="/Project Architecture/MCU - IOs/SENSE_VBAT" class="Default">
+    <net code="97" name="/Project Architecture/MCU - IOs/SENSE_VBAT" class="Default">
       <node ref="C112" pin="1" pintype="passive"/>
       <node ref="R43" pin="2" pintype="passive"/>
       <node ref="R44" pin="1" pintype="passive"/>
       <node ref="TP38" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="43" pinfunction="PA9" pintype="bidirectional"/>
     </net>
-    <net code="90" name="/Project Architecture/MCU - IOs/SOA" class="Default">
+    <net code="98" name="/Project Architecture/MCU - IOs/SOA" class="Default">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="23" pinfunction="SOA" pintype="output"/>
     </net>
-    <net code="91" name="/Project Architecture/MCU - IOs/SOB" class="Default">
+    <net code="99" name="/Project Architecture/MCU - IOs/SOB" class="Default">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="22" pinfunction="SOB" pintype="output"/>
     </net>
-    <net code="92" name="/Project Architecture/MCU - IOs/SOC" class="Default">
+    <net code="100" name="/Project Architecture/MCU - IOs/SOC" class="Default">
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="21" pinfunction="SOC" pintype="output"/>
     </net>
-    <net code="93" name="/Project Architecture/MCU - IOs/SWCLK" class="Default">
+    <net code="101" name="/Project Architecture/MCU - IOs/SWCLK" class="Default">
       <node ref="D1" pin="4" pinfunction="K" pintype="passive"/>
       <node ref="D1" pin="7" pinfunction="K" pintype="passive"/>
-      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J15" pin="4" pinfunction="SWCLK" pintype="output"/>
       <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="50" pinfunction="PA14" pintype="bidirectional"/>
     </net>
-    <net code="94" name="/Project Architecture/MCU - IOs/SWDIO" class="Default">
+    <net code="102" name="/Project Architecture/MCU - IOs/SWDIO" class="Default">
       <node ref="D1" pin="5" pinfunction="K" pintype="passive"/>
       <node ref="D1" pin="6" pinfunction="K" pintype="passive"/>
-      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J15" pin="2" pinfunction="SWDIO" pintype="bidirectional"/>
       <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="49" pinfunction="PA13" pintype="bidirectional"/>
     </net>
-    <net code="102" name="/Project Architecture/MCU - Power/F_A3V3" class="Default">
+    <net code="110" name="/Project Architecture/MCU - Power/F_A3V3" class="Default">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
@@ -12006,268 +12650,253 @@ Fixed
       <node ref="U1" pin="28" pinfunction="VREF+" pintype="input"/>
       <node ref="U1" pin="29" pinfunction="VDDA" pintype="power_in"/>
     </net>
-    <net code="103" name="/Project Architecture/Motor Control - Top Level/CPH" class="Default">
+    <net code="111" name="/Project Architecture/Motor Control - Top Level/CPH" class="Default">
       <node ref="C94" pin="1" pintype="passive"/>
       <node ref="U6" pin="2" pinfunction="CPH" pintype="passive"/>
     </net>
-    <net code="104" name="/Project Architecture/Motor Control - Top Level/CPL" class="Default">
+    <net code="112" name="/Project Architecture/Motor Control - Top Level/CPL" class="Default">
       <node ref="C94" pin="2" pintype="passive"/>
       <node ref="U6" pin="1" pinfunction="CPL" pintype="passive"/>
     </net>
-    <net code="105" name="/Project Architecture/Motor Control - Top Level/DVDD" class="Default">
+    <net code="113" name="/Project Architecture/Motor Control - Top Level/DVDD" class="Default">
       <node ref="C97" pin="1" pintype="passive"/>
       <node ref="U6" pin="38" pinfunction="DVDD" pintype="power_out"/>
     </net>
-    <net code="106" name="/Project Architecture/Motor Control - Top Level/GHA" class="Default">
+    <net code="114" name="/Project Architecture/Motor Control - Top Level/GHA" class="Default">
       <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
       <node ref="TP59" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="6" pinfunction="GHA" pintype="output"/>
     </net>
-    <net code="107" name="/Project Architecture/Motor Control - Top Level/GHB" class="Default">
+    <net code="115" name="/Project Architecture/Motor Control - Top Level/GHB" class="Default">
       <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R24" pin="1" pintype="passive"/>
       <node ref="TP62" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="15" pinfunction="GHB" pintype="output"/>
     </net>
-    <net code="108" name="/Project Architecture/Motor Control - Top Level/GHC" class="Default">
+    <net code="116" name="/Project Architecture/Motor Control - Top Level/GHC" class="Default">
       <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R29" pin="1" pintype="passive"/>
       <node ref="TP65" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="16" pinfunction="GHC" pintype="output"/>
     </net>
-    <net code="109" name="/Project Architecture/Motor Control - Top Level/GLA" class="Default">
+    <net code="117" name="/Project Architecture/Motor Control - Top Level/GLA" class="Default">
       <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
       <node ref="TP60" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="8" pinfunction="GLA" pintype="output"/>
     </net>
-    <net code="110" name="/Project Architecture/Motor Control - Top Level/GLB" class="Default">
+    <net code="118" name="/Project Architecture/Motor Control - Top Level/GLB" class="Default">
       <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R23" pin="1" pintype="passive"/>
       <node ref="TP63" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="13" pinfunction="GLB" pintype="output"/>
     </net>
-    <net code="111" name="/Project Architecture/Motor Control - Top Level/GLC" class="Default">
+    <net code="119" name="/Project Architecture/Motor Control - Top Level/GLC" class="Default">
       <node ref="D10" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
       <node ref="TP66" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="18" pinfunction="GLC" pintype="output"/>
     </net>
-    <net code="112" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GHA" class="Default">
+    <net code="120" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GHA" class="Default">
       <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="Q1" pin="1" pintype="unspecified"/>
+      <node ref="Q11" pin="1" pintype="unspecified"/>
       <node ref="R18" pin="1" pintype="passive"/>
     </net>
-    <net code="113" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GHB" class="Default">
+    <net code="121" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GHB" class="Default">
       <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="Q3" pin="1" pintype="unspecified"/>
+      <node ref="Q2" pin="1" pintype="unspecified"/>
       <node ref="R24" pin="2" pintype="passive"/>
     </net>
-    <net code="114" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GHC" class="Default">
+    <net code="122" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GHC" class="Default">
       <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="Q5" pin="1" pintype="unspecified"/>
+      <node ref="Q4" pin="1" pintype="unspecified"/>
       <node ref="R29" pin="2" pintype="passive"/>
     </net>
-    <net code="115" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GLA" class="Default">
+    <net code="123" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GLA" class="Default">
       <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="Q2" pin="1" pintype="unspecified"/>
+      <node ref="Q1" pin="1" pintype="unspecified"/>
       <node ref="R19" pin="2" pintype="passive"/>
     </net>
-    <net code="116" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GLB" class="Default">
+    <net code="124" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GLB" class="Default">
       <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="Q4" pin="1" pintype="unspecified"/>
+      <node ref="Q3" pin="1" pintype="unspecified"/>
       <node ref="R23" pin="2" pintype="passive"/>
     </net>
-    <net code="117" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GLC" class="Default">
+    <net code="125" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_GLC" class="Default">
       <node ref="D10" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D12" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="Q6" pin="1" pintype="unspecified"/>
+      <node ref="Q5" pin="1" pintype="unspecified"/>
       <node ref="R28" pin="2" pintype="passive"/>
     </net>
-    <net code="118" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/PHA" class="Default">
+    <net code="126" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/PHA" class="Default">
       <node ref="C98" pin="1" pintype="passive"/>
       <node ref="C99" pin="2" pintype="passive"/>
       <node ref="J4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="NT4" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="Q1" pin="2" pintype="unspecified"/>
-      <node ref="Q1" pin="3" pintype="unspecified"/>
-      <node ref="Q1" pin="4" pintype="unspecified"/>
       <node ref="Q1" pin="5" pintype="unspecified"/>
       <node ref="Q1" pin="6" pintype="unspecified"/>
       <node ref="Q1" pin="7" pintype="unspecified"/>
       <node ref="Q1" pin="8" pintype="unspecified"/>
-      <node ref="Q2" pin="9" pintype="passive"/>
+      <node ref="Q11" pin="2" pintype="unspecified"/>
+      <node ref="Q11" pin="3" pintype="unspecified"/>
+      <node ref="Q11" pin="4" pintype="unspecified"/>
     </net>
-    <net code="119" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/PHB" class="Default">
+    <net code="127" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/PHB" class="Default">
       <node ref="C102" pin="1" pintype="passive"/>
       <node ref="C103" pin="2" pintype="passive"/>
       <node ref="J5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="NT8" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="Q3" pin="2" pintype="unspecified"/>
-      <node ref="Q3" pin="3" pintype="unspecified"/>
-      <node ref="Q3" pin="4" pintype="unspecified"/>
+      <node ref="Q2" pin="2" pintype="unspecified"/>
+      <node ref="Q2" pin="3" pintype="unspecified"/>
+      <node ref="Q2" pin="4" pintype="unspecified"/>
       <node ref="Q3" pin="5" pintype="unspecified"/>
       <node ref="Q3" pin="6" pintype="unspecified"/>
       <node ref="Q3" pin="7" pintype="unspecified"/>
       <node ref="Q3" pin="8" pintype="unspecified"/>
-      <node ref="Q4" pin="9" pintype="passive"/>
     </net>
-    <net code="120" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/PHC" class="Default">
+    <net code="128" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/PHC" class="Default">
       <node ref="C106" pin="1" pintype="passive"/>
       <node ref="C107" pin="2" pintype="passive"/>
       <node ref="J6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="NT11" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="Q5" pin="2" pintype="unspecified"/>
-      <node ref="Q5" pin="3" pintype="unspecified"/>
-      <node ref="Q5" pin="4" pintype="unspecified"/>
+      <node ref="Q4" pin="2" pintype="unspecified"/>
+      <node ref="Q4" pin="3" pintype="unspecified"/>
+      <node ref="Q4" pin="4" pintype="unspecified"/>
       <node ref="Q5" pin="5" pintype="unspecified"/>
       <node ref="Q5" pin="6" pintype="unspecified"/>
       <node ref="Q5" pin="7" pintype="unspecified"/>
       <node ref="Q5" pin="8" pintype="unspecified"/>
-      <node ref="Q6" pin="9" pintype="passive"/>
     </net>
-    <net code="121" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBH_A" class="Default">
+    <net code="129" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBH_A" class="Default">
       <node ref="C98" pin="2" pintype="passive"/>
       <node ref="R21" pin="1" pintype="passive"/>
     </net>
-    <net code="122" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBH_B" class="Default">
+    <net code="130" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBH_B" class="Default">
       <node ref="C102" pin="2" pintype="passive"/>
       <node ref="R26" pin="1" pintype="passive"/>
     </net>
-    <net code="123" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBH_C" class="Default">
+    <net code="131" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBH_C" class="Default">
       <node ref="C106" pin="2" pintype="passive"/>
       <node ref="R31" pin="1" pintype="passive"/>
     </net>
-    <net code="124" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBL_A" class="Default">
+    <net code="132" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBL_A" class="Default">
       <node ref="C99" pin="1" pintype="passive"/>
       <node ref="R22" pin="2" pintype="passive"/>
     </net>
-    <net code="125" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBL_B" class="Default">
+    <net code="133" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBL_B" class="Default">
       <node ref="C103" pin="1" pintype="passive"/>
       <node ref="R27" pin="2" pintype="passive"/>
     </net>
-    <net code="126" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBL_C" class="Default">
+    <net code="134" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SNUBL_C" class="Default">
       <node ref="C107" pin="1" pintype="passive"/>
       <node ref="R32" pin="2" pintype="passive"/>
     </net>
-    <net code="127" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_A" class="Default">
+    <net code="135" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_A" class="Default">
       <node ref="C100" pin="2" pintype="passive"/>
       <node ref="NT3" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="Q2" pin="2" pintype="unspecified"/>
-      <node ref="Q2" pin="3" pintype="unspecified"/>
-      <node ref="Q2" pin="4" pintype="unspecified"/>
-      <node ref="Q2" pin="5" pintype="unspecified"/>
-      <node ref="Q2" pin="6" pintype="unspecified"/>
-      <node ref="Q2" pin="7" pintype="unspecified"/>
-      <node ref="Q2" pin="8" pintype="unspecified"/>
+      <node ref="Q1" pin="2" pintype="unspecified"/>
+      <node ref="Q1" pin="3" pintype="unspecified"/>
+      <node ref="Q1" pin="4" pintype="unspecified"/>
       <node ref="R20" pin="2" pintype="passive"/>
       <node ref="R22" pin="1" pintype="passive"/>
     </net>
-    <net code="128" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_B" class="Default">
+    <net code="136" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_B" class="Default">
       <node ref="C104" pin="2" pintype="passive"/>
       <node ref="NT6" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="Q4" pin="2" pintype="unspecified"/>
-      <node ref="Q4" pin="3" pintype="unspecified"/>
-      <node ref="Q4" pin="4" pintype="unspecified"/>
-      <node ref="Q4" pin="5" pintype="unspecified"/>
-      <node ref="Q4" pin="6" pintype="unspecified"/>
-      <node ref="Q4" pin="7" pintype="unspecified"/>
-      <node ref="Q4" pin="8" pintype="unspecified"/>
+      <node ref="Q3" pin="2" pintype="unspecified"/>
+      <node ref="Q3" pin="3" pintype="unspecified"/>
+      <node ref="Q3" pin="4" pintype="unspecified"/>
       <node ref="R25" pin="2" pintype="passive"/>
       <node ref="R27" pin="1" pintype="passive"/>
     </net>
-    <net code="129" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_C" class="Default">
+    <net code="137" name="/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_C" class="Default">
       <node ref="C108" pin="2" pintype="passive"/>
       <node ref="NT9" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="Q6" pin="2" pintype="unspecified"/>
-      <node ref="Q6" pin="3" pintype="unspecified"/>
-      <node ref="Q6" pin="4" pintype="unspecified"/>
-      <node ref="Q6" pin="5" pintype="unspecified"/>
-      <node ref="Q6" pin="6" pintype="unspecified"/>
-      <node ref="Q6" pin="7" pintype="unspecified"/>
-      <node ref="Q6" pin="8" pintype="unspecified"/>
+      <node ref="Q5" pin="2" pintype="unspecified"/>
+      <node ref="Q5" pin="3" pintype="unspecified"/>
+      <node ref="Q5" pin="4" pintype="unspecified"/>
       <node ref="R30" pin="2" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
     </net>
-    <net code="130" name="/Project Architecture/Motor Control - Top Level/SA+" class="Default">
+    <net code="138" name="/Project Architecture/Motor Control - Top Level/SA+" class="Default">
       <node ref="NT3" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="TP68" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="9" pinfunction="SPA" pintype="input"/>
     </net>
-    <net code="131" name="/Project Architecture/Motor Control - Top Level/SA-" class="Default">
+    <net code="139" name="/Project Architecture/Motor Control - Top Level/SA-" class="Default">
       <node ref="NT5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP69" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="10" pinfunction="SNA" pintype="input"/>
     </net>
-    <net code="132" name="/Project Architecture/Motor Control - Top Level/SB+" class="Default">
+    <net code="140" name="/Project Architecture/Motor Control - Top Level/SB+" class="Default">
       <node ref="NT6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP70" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="12" pinfunction="SPB" pintype="input"/>
     </net>
-    <net code="133" name="/Project Architecture/Motor Control - Top Level/SB-" class="Default">
+    <net code="141" name="/Project Architecture/Motor Control - Top Level/SB-" class="Default">
       <node ref="NT7" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP71" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="11" pinfunction="SNB" pintype="input"/>
     </net>
-    <net code="134" name="/Project Architecture/Motor Control - Top Level/SC+" class="Default">
+    <net code="142" name="/Project Architecture/Motor Control - Top Level/SC+" class="Default">
       <node ref="NT9" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP72" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="19" pinfunction="SPC" pintype="input"/>
     </net>
-    <net code="135" name="/Project Architecture/Motor Control - Top Level/SC-" class="Default">
+    <net code="143" name="/Project Architecture/Motor Control - Top Level/SC-" class="Default">
       <node ref="NT10" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP73" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="20" pinfunction="SNC" pintype="input"/>
     </net>
-    <net code="136" name="/Project Architecture/Motor Control - Top Level/SHA" class="Default">
+    <net code="144" name="/Project Architecture/Motor Control - Top Level/SHA" class="Default">
       <node ref="NT4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP61" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="7" pinfunction="SHA" pintype="input"/>
     </net>
-    <net code="137" name="/Project Architecture/Motor Control - Top Level/SHB" class="Default">
+    <net code="145" name="/Project Architecture/Motor Control - Top Level/SHB" class="Default">
       <node ref="NT8" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP64" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="14" pinfunction="SHB" pintype="input"/>
     </net>
-    <net code="138" name="/Project Architecture/Motor Control - Top Level/SHC" class="Default">
+    <net code="146" name="/Project Architecture/Motor Control - Top Level/SHC" class="Default">
       <node ref="NT11" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP67" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="17" pinfunction="SHC" pintype="input"/>
     </net>
-    <net code="139" name="/Project Architecture/Motor Control - Top Level/VCP" class="Default">
+    <net code="147" name="/Project Architecture/Motor Control - Top Level/VCP" class="Default">
       <node ref="C91" pin="2" pintype="passive"/>
       <node ref="U6" pin="5" pinfunction="VCP" pintype="passive"/>
     </net>
-    <net code="140" name="/Project Architecture/Motor Control - Top Level/VGLS" class="Default">
+    <net code="148" name="/Project Architecture/Motor Control - Top Level/VGLS" class="Default">
       <node ref="C96" pin="1" pintype="passive"/>
       <node ref="U6" pin="40" pinfunction="VGLS" pintype="passive"/>
     </net>
-    <net code="141" name="/Project Architecture/Power - Connectors/VBAT_IN" class="Default">
+    <net code="149" name="/Project Architecture/Power - Connectors/VBAT_IN" class="Default">
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="Q10" pin="2" pinfunction="D" pintype="passive"/>
     </net>
-    <net code="142" name="/Project Architecture/Power - Generation/ADJ_A3V3" class="Default">
+    <net code="150" name="/Project Architecture/Power - Generation/ADJ_A3V3" class="Default">
       <node ref="C79" pin="1" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="ADJ" pintype="input"/>
     </net>
-    <net code="143" name="/Project Architecture/Power - Generation/BOOT_12V" class="Default">
+    <net code="151" name="/Project Architecture/Power - Generation/BOOT_12V" class="Default">
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="U3" pin="4" pinfunction="BOOT" pintype="passive"/>
     </net>
-    <net code="144" name="/Project Architecture/Power - Generation/FB_12V" class="Default">
+    <net code="152" name="/Project Architecture/Power - Generation/FB_12V" class="Default">
       <node ref="NT2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="145" name="/Project Architecture/Power - Generation/FB_DIV_12V" class="Default">
+    <net code="153" name="/Project Architecture/Power - Generation/FB_DIV_12V" class="Default">
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U3" pin="7" pinfunction="FB" pintype="input"/>
     </net>
-    <net code="146" name="/Project Architecture/Power - Generation/F_VIN_3V3" class="Default">
+    <net code="154" name="/Project Architecture/Power - Generation/F_VIN_3V3" class="Default">
       <node ref="C51" pin="1" pintype="passive"/>
       <node ref="C58" pin="1" pintype="passive"/>
       <node ref="FB4" pin="2" pintype="passive"/>
@@ -12275,7 +12904,7 @@ Fixed
       <node ref="TP44" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="VIN" pintype="input"/>
     </net>
-    <net code="147" name="/Project Architecture/Power - Generation/F_VIN_12V" class="Default">
+    <net code="155" name="/Project Architecture/Power - Generation/F_VIN_12V" class="Default">
       <node ref="C20" pin="1" pintype="passive"/>
       <node ref="C21" pin="1" pintype="passive"/>
       <node ref="C23" pin="1" pintype="passive"/>
@@ -12287,56 +12916,59 @@ Fixed
       <node ref="U3" pin="2" pinfunction="VIN" pintype="power_in"/>
       <node ref="U3" pin="9" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="148" name="/Project Architecture/Power - Generation/PG_12V" class="Default">
+    <net code="156" name="/Project Architecture/Power - Generation/PG_12V" class="Default">
       <node ref="U3" pin="8" pinfunction="PG" pintype="open_collector+no_connect"/>
     </net>
-    <net code="149" name="/Project Architecture/Power - Generation/SW_5V" class="Default">
+    <net code="157" name="/Project Architecture/Power - Generation/SW_5V" class="Default">
       <node ref="C31" pin="2" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="SW" pintype="passive"/>
     </net>
-    <net code="150" name="/Project Architecture/Power - Generation/SW_12V" class="Default">
+    <net code="158" name="/Project Architecture/Power - Generation/SW_12V" class="Default">
       <node ref="C30" pin="1" pintype="passive"/>
       <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="12" pinfunction="SW" pintype="power_out"/>
       <node ref="U3" pin="3" pinfunction="NC" pintype="passive"/>
     </net>
-    <net code="151" name="/Project Architecture/Power - Generation/VCC_12V" class="Default">
+    <net code="159" name="/Project Architecture/Power - Generation/VCC_12V" class="Default">
       <node ref="C28" pin="1" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="VCC" pintype="passive"/>
     </net>
-    <net code="152" name="/Project Architecture/Sensing - Position/ENC_MISO_IC" class="Default">
+    <net code="160" name="/Project Architecture/Sensing - Position/ENC_MISO_IC" class="Default">
       <node ref="R45" pin="2" pintype="passive"/>
       <node ref="U7" pin="7" pinfunction="MISO" pintype="output"/>
     </net>
-    <net code="153" name="/Project Architecture/User - LED Indicators/DBG_G" class="Default">
+    <net code="161" name="/Project Architecture/User - LED Indicators/DBG_G" class="Default">
       <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R36" pin="2" pintype="passive"/>
     </net>
-    <net code="154" name="/Project Architecture/User - LED Indicators/LED_DBG_A" class="Default">
+    <net code="162" name="/Project Architecture/User - LED Indicators/LED_DBG_A" class="Default">
       <node ref="D13" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R37" pin="1" pintype="passive"/>
     </net>
-    <net code="155" name="/Project Architecture/User - LED Indicators/LED_DBG_K" class="Default">
+    <net code="163" name="/Project Architecture/User - LED Indicators/LED_DBG_K" class="Default">
       <node ref="D13" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="Q7" pin="3" pinfunction="D" pintype="passive"/>
     </net>
-    <net code="156" name="/Project Architecture/User - LED Indicators/LED_PWR_A" class="Default">
+    <net code="164" name="/Project Architecture/User - LED Indicators/LED_PWR_A" class="Default">
       <node ref="D14" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R40" pin="2" pintype="passive"/>
     </net>
-    <net code="157" name="/Project Architecture/User - LED Indicators/LED_PWR_K" class="Default">
+    <net code="165" name="/Project Architecture/User - LED Indicators/LED_PWR_K" class="Default">
       <node ref="D14" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="Q8" pin="3" pinfunction="D" pintype="passive"/>
     </net>
-    <net code="158" name="/Project Architecture/User - LED Indicators/PWR_G" class="Default">
+    <net code="166" name="/Project Architecture/User - LED Indicators/PWR_G" class="Default">
       <node ref="Q8" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R39" pin="2" pintype="passive"/>
     </net>
-    <net code="159" name="CHASSIS" class="Default">
+    <net code="167" name="CHASSIS" class="Default">
+      <node ref="C114" pin="1" pintype="passive"/>
       <node ref="C152" pin="1" pintype="passive"/>
       <node ref="C153" pin="1" pintype="passive"/>
       <node ref="C154" pin="1" pintype="passive"/>
+      <node ref="C155" pin="2" pintype="passive"/>
+      <node ref="C156" pin="2" pintype="passive"/>
       <node ref="D17" pin="3" pinfunction="A" pintype="passive"/>
       <node ref="D17" pin="8" pinfunction="A" pintype="passive"/>
       <node ref="D20" pin="3" pinfunction="CC" pintype="passive"/>
@@ -12346,10 +12978,10 @@ Fixed
       <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
       <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
       <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
-      <node ref="J1" pin="MP1" pinfunction="MP1" pintype="passive"/>
-      <node ref="J1" pin="MP2" pinfunction="MP2" pintype="passive"/>
-      <node ref="J10" pin="SH1" pinfunction="SHIELD" pintype="passive"/>
-      <node ref="J10" pin="SH2" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J10" pin="MP1" pinfunction="MP1" pintype="passive"/>
+      <node ref="J10" pin="MP2" pinfunction="MP2" pintype="passive"/>
       <node ref="J14" pin="MP1" pinfunction="MP1" pintype="passive"/>
       <node ref="J14" pin="MP2" pinfunction="MP2" pintype="passive"/>
       <node ref="J16" pin="MP1" pinfunction="MP1" pintype="passive"/>
@@ -12360,13 +12992,15 @@ Fixed
       <node ref="J7" pin="MP2" pinfunction="MP2" pintype="passive"/>
       <node ref="J8" pin="MP1" pinfunction="MP1" pintype="passive"/>
       <node ref="J8" pin="MP2" pinfunction="MP2" pintype="passive"/>
-      <node ref="J9" pin="SH1" pinfunction="SHIELD" pintype="passive"/>
-      <node ref="J9" pin="SH2" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J9" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J9" pin="MP1" pinfunction="MP1" pintype="passive"/>
+      <node ref="J9" pin="MP2" pinfunction="MP2" pintype="passive"/>
       <node ref="R73" pin="1" pintype="passive"/>
       <node ref="R74" pin="1" pintype="passive"/>
       <node ref="R75" pin="1" pintype="passive"/>
+      <node ref="R76" pin="1" pintype="passive"/>
     </net>
-    <net code="160" name="GND" class="Default">
+    <net code="168" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C101" pin="2" pintype="passive"/>
@@ -12377,6 +13011,7 @@ Fixed
       <node ref="C111" pin="2" pintype="passive"/>
       <node ref="C112" pin="2" pintype="passive"/>
       <node ref="C113" pin="2" pintype="passive"/>
+      <node ref="C114" pin="2" pintype="passive"/>
       <node ref="C115" pin="1" pintype="passive"/>
       <node ref="C116" pin="2" pintype="passive"/>
       <node ref="C117" pin="2" pintype="passive"/>
@@ -12515,21 +13150,19 @@ Fixed
       <node ref="D12" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D18" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D24" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D25" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
-      <node ref="J10" pin="10" pintype="passive"/>
-      <node ref="J10" pin="8" pinfunction="GND" pintype="power_in"/>
       <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J12" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J15" pin="5" pinfunction="GND" pintype="power_in"/>
       <node ref="J16" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="J9" pin="10" pintype="passive"/>
-      <node ref="J9" pin="8" pinfunction="GND" pintype="power_in"/>
       <node ref="NT10" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="NT5" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="NT7" pin="2" pinfunction="2" pintype="passive"/>
@@ -12555,6 +13188,7 @@ Fixed
       <node ref="R73" pin="2" pintype="passive"/>
       <node ref="R74" pin="2" pintype="passive"/>
       <node ref="R75" pin="2" pintype="passive"/>
+      <node ref="R76" pin="2" pintype="passive"/>
       <node ref="R79" pin="2" pintype="passive"/>
       <node ref="R82" pin="2" pintype="passive"/>
       <node ref="R84" pin="2" pintype="passive"/>
@@ -12593,202 +13227,243 @@ Fixed
       <node ref="Y1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="Y1" pin="4" pinfunction="4" pintype="passive"/>
     </net>
-    <net code="161" name="Net-(D18-A)" class="Default">
+    <net code="169" name="Net-(C155-Pad1)" class="Default">
+      <node ref="C155" pin="1" pintype="passive"/>
+      <node ref="R85" pin="2" pintype="passive"/>
+      <node ref="R86" pin="2" pintype="passive"/>
+    </net>
+    <net code="170" name="Net-(C156-Pad1)" class="Default">
+      <node ref="C156" pin="1" pintype="passive"/>
+      <node ref="R87" pin="2" pintype="passive"/>
+      <node ref="R88" pin="2" pintype="passive"/>
+    </net>
+    <net code="171" name="Net-(D18-A)" class="Default">
       <node ref="D18" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R47" pin="2" pintype="passive"/>
     </net>
-    <net code="162" name="Net-(D19-K)" class="Default">
+    <net code="172" name="Net-(D19-K)" class="Default">
       <node ref="D19" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R53" pin="1" pintype="passive"/>
     </net>
-    <net code="163" name="Net-(D23-A)" class="Default">
+    <net code="173" name="Net-(D23-A)" class="Default">
       <node ref="D23" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="Q10" pin="1" pinfunction="G" pintype="passive"/>
       <node ref="R83" pin="2" pintype="passive"/>
       <node ref="R84" pin="1" pintype="passive"/>
     </net>
-    <net code="164" name="Net-(J9-Pad9)" class="Default">
-      <node ref="J9" pin="9" pintype="passive"/>
+    <net code="174" name="Net-(D24-A)" class="Default">
+      <node ref="D24" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R67" pin="2" pintype="passive"/>
     </net>
-    <net code="165" name="Net-(J10-Pad9)" class="Default">
-      <node ref="J10" pin="9" pintype="passive"/>
+    <net code="175" name="Net-(D25-A)" class="Default">
+      <node ref="D25" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R68" pin="2" pintype="passive"/>
     </net>
-    <net code="166" name="Net-(U2-BOOT)" class="Default">
+    <net code="176" name="Net-(T1-RXCT)" class="Default">
+      <node ref="R86" pin="1" pintype="passive"/>
+      <node ref="T1" pin="10" pinfunction="RXCT" pintype="passive"/>
+    </net>
+    <net code="177" name="Net-(T1-TXCT)" class="Default">
+      <node ref="R85" pin="1" pintype="passive"/>
+      <node ref="T1" pin="15" pinfunction="TXCT" pintype="passive"/>
+    </net>
+    <net code="178" name="Net-(T2-RXCT)" class="Default">
+      <node ref="R88" pin="1" pintype="passive"/>
+      <node ref="T2" pin="10" pinfunction="RXCT" pintype="passive"/>
+    </net>
+    <net code="179" name="Net-(T2-TXCT)" class="Default">
+      <node ref="R87" pin="1" pintype="passive"/>
+      <node ref="T2" pin="15" pinfunction="TXCT" pintype="passive"/>
+    </net>
+    <net code="180" name="Net-(U2-BOOT)" class="Default">
       <node ref="C31" pin="1" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="BOOT" pintype="passive"/>
     </net>
-    <net code="167" name="Net-(U2-FB)" class="Default">
+    <net code="181" name="Net-(U2-FB)" class="Default">
       <node ref="R81" pin="2" pintype="passive"/>
       <node ref="R82" pin="1" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="FB" pintype="passive"/>
     </net>
-    <net code="168" name="Net-(U2-PG)" class="Default">
+    <net code="182" name="Net-(U2-PG)" class="Default">
       <node ref="R80" pin="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="PG" pintype="passive"/>
     </net>
-    <net code="169" name="Net-(U2-RT/SYNC)" class="Default">
+    <net code="183" name="Net-(U2-RT/SYNC)" class="Default">
       <node ref="R79" pin="1" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="RT/SYNC" pintype="passive"/>
     </net>
-    <net code="170" name="Net-(U5-EN)" class="Default">
+    <net code="184" name="Net-(U5-EN)" class="Default">
       <node ref="C69" pin="1" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
       <node ref="U5" pin="6" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="171" name="Net-(U8-WP)" class="Default">
+    <net code="185" name="Net-(U8-WP)" class="Default">
       <node ref="R46" pin="2" pintype="passive"/>
       <node ref="U8" pin="5" pinfunction="WP" pintype="input"/>
     </net>
-    <net code="172" name="unconnected-(D1-K-Pad2)" class="Default">
+    <net code="186" name="unconnected-(D1-K-Pad2)" class="Default">
       <node ref="D1" pin="2" pinfunction="K" pintype="passive+no_connect"/>
       <node ref="D1" pin="9" pinfunction="K" pintype="passive+no_connect"/>
     </net>
-    <net code="173" name="unconnected-(D22-K-Pad5)" class="Default">
+    <net code="187" name="unconnected-(D22-K-Pad5)" class="Default">
       <node ref="D22" pin="5" pinfunction="K" pintype="passive+no_connect"/>
       <node ref="D22" pin="6" pinfunction="K" pintype="passive+no_connect"/>
     </net>
-    <net code="174" name="unconnected-(J2-PadMP1)" class="Default">
+    <net code="188" name="unconnected-(J2-PadMP1)" class="Default">
       <node ref="J2" pin="MP1" pinfunction="MP1" pintype="passive+no_connect"/>
     </net>
-    <net code="175" name="unconnected-(J3-PadMP1)" class="Default">
+    <net code="189" name="unconnected-(J3-PadMP1)" class="Default">
       <node ref="J3" pin="MP1" pinfunction="MP1" pintype="passive+no_connect"/>
     </net>
-    <net code="176" name="unconnected-(J9-Pad11)" class="Default">
-      <node ref="J9" pin="11" pintype="passive+no_connect"/>
+    <net code="190" name="unconnected-(J15-SWO-Pad6)" class="Default">
+      <node ref="J15" pin="6" pinfunction="SWO" pintype="input+no_connect"/>
     </net>
-    <net code="177" name="unconnected-(J9-Pad12)" class="Default">
-      <node ref="J9" pin="12" pintype="passive+no_connect"/>
-    </net>
-    <net code="178" name="unconnected-(J10-Pad11)" class="Default">
-      <node ref="J10" pin="11" pintype="passive+no_connect"/>
-    </net>
-    <net code="179" name="unconnected-(J10-Pad12)" class="Default">
-      <node ref="J10" pin="12" pintype="passive+no_connect"/>
-    </net>
-    <net code="180" name="unconnected-(SW1A-C-Pad3)" class="Default">
+    <net code="191" name="unconnected-(SW1A-C-Pad3)" class="Default">
       <node ref="SW1" pin="3" pinfunction="C" pintype="passive+no_connect"/>
     </net>
-    <net code="181" name="unconnected-(SW1B-C-Pad6)" class="Default">
+    <net code="192" name="unconnected-(SW1B-C-Pad6)" class="Default">
       <node ref="SW1" pin="6" pinfunction="C" pintype="passive+no_connect"/>
     </net>
-    <net code="182" name="unconnected-(U1B-PB3-Pad56)" class="Default">
+    <net code="193" name="unconnected-(T1-NC-Pad4)" class="Default">
+      <node ref="T1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="194" name="unconnected-(T1-NC-Pad5)" class="Default">
+      <node ref="T1" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="195" name="unconnected-(T1-NC-Pad12)" class="Default">
+      <node ref="T1" pin="12" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="196" name="unconnected-(T1-NC-Pad13)" class="Default">
+      <node ref="T1" pin="13" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="197" name="unconnected-(T2-NC-Pad4)" class="Default">
+      <node ref="T2" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="198" name="unconnected-(T2-NC-Pad5)" class="Default">
+      <node ref="T2" pin="5" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="199" name="unconnected-(T2-NC-Pad12)" class="Default">
+      <node ref="T2" pin="12" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="200" name="unconnected-(T2-NC-Pad13)" class="Default">
+      <node ref="T2" pin="13" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="201" name="unconnected-(U1B-PB3-Pad56)" class="Default">
       <node ref="U1" pin="56" pinfunction="PB3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="183" name="unconnected-(U1B-PB8-Pad61)" class="Default">
+    <net code="202" name="unconnected-(U1B-PB8-Pad61)" class="Default">
       <node ref="U1" pin="61" pinfunction="PB8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="184" name="unconnected-(U1B-PB9-Pad62)" class="Default">
+    <net code="203" name="unconnected-(U1B-PB9-Pad62)" class="Default">
       <node ref="U1" pin="62" pinfunction="PB9" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="185" name="unconnected-(U1B-PC4-Pad22)" class="Default">
+    <net code="204" name="unconnected-(U1B-PC4-Pad22)" class="Default">
       <node ref="U1" pin="22" pinfunction="PC4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="186" name="unconnected-(U1B-PC13-Pad2)" class="Default">
+    <net code="205" name="unconnected-(U1B-PC13-Pad2)" class="Default">
       <node ref="U1" pin="2" pinfunction="PC13" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="187" name="unconnected-(U1B-PF0-Pad5)" class="Default">
+    <net code="206" name="unconnected-(U1B-PF0-Pad5)" class="Default">
       <node ref="U1" pin="5" pinfunction="PF0" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="188" name="unconnected-(U1B-PF1-Pad6)" class="Default">
+    <net code="207" name="unconnected-(U1B-PF1-Pad6)" class="Default">
       <node ref="U1" pin="6" pinfunction="PF1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="189" name="unconnected-(U5-PG-Pad5)" class="Default">
+    <net code="208" name="unconnected-(U5-PG-Pad5)" class="Default">
       <node ref="U5" pin="5" pinfunction="PG" pintype="output+no_connect"/>
     </net>
-    <net code="190" name="unconnected-(U5-SW-Pad2)" class="Default">
+    <net code="209" name="unconnected-(U5-SW-Pad2)" class="Default">
       <node ref="U5" pin="2" pinfunction="SW" pintype="no_connect"/>
     </net>
-    <net code="191" name="unconnected-(U7-A-Pad2)" class="Default">
+    <net code="210" name="unconnected-(U7-A-Pad2)" class="Default">
       <node ref="U7" pin="2" pinfunction="A" pintype="output+no_connect"/>
     </net>
-    <net code="192" name="unconnected-(U7-B-Pad6)" class="Default">
+    <net code="211" name="unconnected-(U7-B-Pad6)" class="Default">
       <node ref="U7" pin="6" pinfunction="B" pintype="output+no_connect"/>
     </net>
-    <net code="193" name="unconnected-(U7-MGH-Pad16)" class="Default">
+    <net code="212" name="unconnected-(U7-MGH-Pad16)" class="Default">
       <node ref="U7" pin="16" pinfunction="MGH" pintype="output+no_connect"/>
     </net>
-    <net code="194" name="unconnected-(U7-MGL-Pad11)" class="Default">
+    <net code="213" name="unconnected-(U7-MGL-Pad11)" class="Default">
       <node ref="U7" pin="11" pinfunction="MGL" pintype="output+no_connect"/>
     </net>
-    <net code="195" name="unconnected-(U7-NC-Pad14)" class="Default">
+    <net code="214" name="unconnected-(U7-NC-Pad14)" class="Default">
       <node ref="U7" pin="14" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="196" name="unconnected-(U7-PWM-Pad9)" class="Default">
+    <net code="215" name="unconnected-(U7-PWM-Pad9)" class="Default">
       <node ref="U7" pin="9" pinfunction="PWM" pintype="output+no_connect"/>
     </net>
-    <net code="197" name="unconnected-(U7-SSCK-Pad15)" class="Default">
+    <net code="216" name="unconnected-(U7-SSCK-Pad15)" class="Default">
       <node ref="U7" pin="15" pinfunction="SSCK" pintype="unspecified+no_connect"/>
     </net>
-    <net code="198" name="unconnected-(U7-SSD-Pad1)" class="Default">
+    <net code="217" name="unconnected-(U7-SSD-Pad1)" class="Default">
       <node ref="U7" pin="1" pinfunction="SSD" pintype="output+no_connect"/>
     </net>
-    <net code="199" name="unconnected-(U7-TEST-Pad10)" class="Default">
+    <net code="218" name="unconnected-(U7-TEST-Pad10)" class="Default">
       <node ref="U7" pin="10" pinfunction="TEST" pintype="unspecified+no_connect"/>
     </net>
-    <net code="200" name="unconnected-(U7-Z-Pad3)" class="Default">
+    <net code="219" name="unconnected-(U7-Z-Pad3)" class="Default">
       <node ref="U7" pin="3" pinfunction="Z" pintype="output+no_connect"/>
     </net>
-    <net code="201" name="unconnected-(U9-A0/D15-Pad33)" class="Default">
+    <net code="220" name="unconnected-(U9-A0/D15-Pad33)" class="Default">
       <node ref="U9" pin="33" pinfunction="A0/D15" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="202" name="unconnected-(U9-A1-Pad25)" class="Default">
+    <net code="221" name="unconnected-(U9-A1-Pad25)" class="Default">
       <node ref="U9" pin="25" pinfunction="A1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="203" name="unconnected-(U9-A2/LINKACTLED2-Pad29)" class="Default">
+    <net code="222" name="unconnected-(U9-A2/LINKACTLED2-Pad29)" class="Default">
       <node ref="U9" pin="29" pinfunction="A2/LINKACTLED2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="204" name="unconnected-(U9-A3-Pad26)" class="Default">
+    <net code="223" name="unconnected-(U9-A3-Pad26)" class="Default">
       <node ref="U9" pin="26" pinfunction="A3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="205" name="unconnected-(U9-A4-Pad27)" class="Default">
+    <net code="224" name="unconnected-(U9-A4-Pad27)" class="Default">
       <node ref="U9" pin="27" pinfunction="A4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="206" name="unconnected-(U9-CS-Pad28)" class="Default">
+    <net code="225" name="unconnected-(U9-CS-Pad28)" class="Default">
       <node ref="U9" pin="28" pinfunction="CS" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="207" name="unconnected-(U9-D2/SIO2-Pad12)" class="Default">
+    <net code="226" name="unconnected-(U9-D2/SIO2-Pad12)" class="Default">
       <node ref="U9" pin="12" pinfunction="D2/SIO2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="208" name="unconnected-(U9-D3/SIO3-Pad35)" class="Default">
+    <net code="227" name="unconnected-(U9-D3/SIO3-Pad35)" class="Default">
       <node ref="U9" pin="35" pinfunction="D3/SIO3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="209" name="unconnected-(U9-D4-Pad49)" class="Default">
+    <net code="228" name="unconnected-(U9-D4-Pad49)" class="Default">
       <node ref="U9" pin="49" pinfunction="D4" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="210" name="unconnected-(U9-D6-Pad36)" class="Default">
+    <net code="229" name="unconnected-(U9-D6-Pad36)" class="Default">
       <node ref="U9" pin="36" pinfunction="D6" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="211" name="unconnected-(U9-D7-Pad39)" class="Default">
+    <net code="230" name="unconnected-(U9-D7-Pad39)" class="Default">
       <node ref="U9" pin="39" pinfunction="D7" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="212" name="unconnected-(U9-D8-Pad40)" class="Default">
+    <net code="231" name="unconnected-(U9-D8-Pad40)" class="Default">
       <node ref="U9" pin="40" pinfunction="D8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="213" name="unconnected-(U9-D10-Pad23)" class="Default">
+    <net code="232" name="unconnected-(U9-D10-Pad23)" class="Default">
       <node ref="U9" pin="23" pinfunction="D10" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="214" name="unconnected-(U9-D11-Pad22)" class="Default">
+    <net code="233" name="unconnected-(U9-D11-Pad22)" class="Default">
       <node ref="U9" pin="22" pinfunction="D11" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="215" name="unconnected-(U9-D12-Pad21)" class="Default">
+    <net code="234" name="unconnected-(U9-D12-Pad21)" class="Default">
       <node ref="U9" pin="21" pinfunction="D12" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="216" name="unconnected-(U9-D13/TX_SHIFT0-Pad16)" class="Default">
+    <net code="235" name="unconnected-(U9-D13/TX_SHIFT0-Pad16)" class="Default">
       <node ref="U9" pin="16" pinfunction="D13/TX_SHIFT0" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="217" name="unconnected-(U9-D14/TX_SHIFT1-Pad15)" class="Default">
+    <net code="236" name="unconnected-(U9-D14/TX_SHIFT1-Pad15)" class="Default">
       <node ref="U9" pin="15" pinfunction="D14/TX_SHIFT1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="218" name="unconnected-(U9-RD-Pad31)" class="Default">
+    <net code="237" name="unconnected-(U9-RD-Pad31)" class="Default">
       <node ref="U9" pin="31" pinfunction="RD" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="219" name="unconnected-(U9-WAIT_ACK/LATCH0-Pad10)" class="Default">
+    <net code="238" name="unconnected-(U9-WAIT_ACK/LATCH0-Pad10)" class="Default">
       <node ref="U9" pin="10" pinfunction="WAIT_ACK/LATCH0" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="220" name="unconnected-(U9-WR-Pad30)" class="Default">
+    <net code="239" name="unconnected-(U9-WR-Pad30)" class="Default">
       <node ref="U9" pin="30" pinfunction="WR" pintype="bidirectional+no_connect"/>
     </net>
   </nets>

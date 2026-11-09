@@ -2528,6 +2528,24 @@
 				)
 			)
 			(pin passive line
+				(at -12.7 5.08 0)
+				(length 5.08)
+				(name "NC"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 11.43 -15.24 90)
 				(length 5.08)
 				(name "SHIELD"

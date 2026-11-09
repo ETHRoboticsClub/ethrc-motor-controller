@@ -1039,6 +1039,12 @@
 		(uuid "34ccfe2e-dab2-46c8-b22e-9d3bf08425df")
 	)
 	(junction
+		(at 118.11 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a6757b0-b08c-4c97-9ff9-2cb43bdd0e22")
+	)
+	(junction
 		(at 78.74 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1063,6 +1069,12 @@
 		(uuid "65426912-09cd-440f-b7f5-5a8afb2e90fa")
 	)
 	(junction
+		(at 114.3 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71a4ef25-0e3d-443d-8890-745c872d432c")
+	)
+	(junction
 		(at 82.55 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1073,6 +1085,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9731c369-b1b4-4f7c-8972-075e7bc97c0e")
+	)
+	(junction
+		(at 134.62 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "997d5b04-b00e-4129-b3c6-ebde0418f88c")
 	)
 	(junction
 		(at 121.92 86.36)
@@ -1088,6 +1106,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 76.2) (xy 106.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "068cf12c-ca53-4d5a-a535-6e6934463c42")
+	)
+	(wire
+		(pts
 			(xy 78.74 86.36) (xy 82.55 86.36)
 		)
 		(stroke
@@ -1095,6 +1123,16 @@
 			(type default)
 		)
 		(uuid "0823791f-c5e2-4a35-85c8-6175d5f3c299")
+	)
+	(wire
+		(pts
+			(xy 118.11 72.39) (xy 134.62 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a789ccf-2cc1-4de8-a1f3-2e6eb5330bd5")
 	)
 	(wire
 		(pts
@@ -1125,6 +1163,16 @@
 			(type default)
 		)
 		(uuid "1cd6e6bc-498a-4e6b-a72d-4b1306b4756f")
+	)
+	(wire
+		(pts
+			(xy 118.11 60.96) (xy 118.11 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f79114e-4d7b-4c3b-8266-4971eecd8e9c")
 	)
 	(wire
 		(pts
@@ -1298,6 +1346,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 60.96) (xy 118.11 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83424a45-4b34-4b71-a234-7218e76cddb1")
+	)
+	(wire
+		(pts
 			(xy 121.92 97.79) (xy 138.43 97.79)
 		)
 		(stroke
@@ -1318,6 +1376,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 60.96) (xy 134.62 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9797194b-3989-490e-8b1d-21e3f7cebcaa")
+	)
+	(wire
+		(pts
 			(xy 179.07 97.79) (xy 179.07 93.98)
 		)
 		(stroke
@@ -1335,6 +1403,16 @@
 			(type default)
 		)
 		(uuid "a943c666-7918-4f78-9690-3bfb0e2d1882")
+	)
+	(wire
+		(pts
+			(xy 134.62 72.39) (xy 134.62 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaefd846-018d-41ec-b6a3-99037906dad0")
 	)
 	(wire
 		(pts
@@ -1408,6 +1486,26 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 58.42) (xy 114.3 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06a6a1a-ada8-4a7e-bfdb-ad0a3ecec079")
+	)
+	(wire
+		(pts
+			(xy 106.68 60.96) (xy 114.3 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e626451b-1077-48d6-a6f9-d297f45d5909")
+	)
+	(wire
+		(pts
 			(xy 71.12 101.6) (xy 71.12 86.36)
 		)
 		(stroke
@@ -1415,6 +1513,36 @@
 			(type default)
 		)
 		(uuid "ea9e97f7-a3eb-4ac8-a083-694c71ae9070")
+	)
+	(wire
+		(pts
+			(xy 134.62 72.39) (xy 134.62 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efa55517-126b-4985-b1e4-3c12d7733935")
+	)
+	(wire
+		(pts
+			(xy 118.11 60.96) (xy 134.62 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc6134d4-9252-429e-bef4-3e3d0b61fdb0")
+	)
+	(wire
+		(pts
+			(xy 118.11 68.58) (xy 118.11 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd50a996-fde6-46a9-b5b1-35a58a622c09")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1737,6 +1865,77 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 134.62 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e510874-942c-4e7a-ae84-a22cddc3d573")
+		(property "Reference" "#PWR034"
+			(at 134.62 82.55 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6bf5b9d-a92a-4818-880b-6f646bee1608")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 179.07 91.44 0)
 		(unit 1)
@@ -1844,6 +2043,119 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "R75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 118.11 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2377bd3e-76e9-4352-858b-712a142a5eff")
+		(property "Reference" "C114"
+			(at 120.65 64.7763 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n X7R 1kV"
+			(at 120.65 67.3163 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0603_1608_DensityHigh"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "399-12306-1-ND"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "C0603V102KDRAC7867"
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b101586c-12ab-430c-abdb-468b3f4a87f5")
+		)
+		(pin "2"
+			(uuid "fb95239b-8366-4814-bcde-97fe755f2bfa")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
+					(reference "C114")
 					(unit 1)
 				)
 			)
@@ -2388,6 +2700,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 134.62 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "842fdc64-dfd3-4bb5-9946-99f935b93202")
+		(property "Reference" "R76"
+			(at 137.16 64.77 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 137.16 67.31 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "541-0.0SBCT-ND"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW06030000Z0EAHP"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc6ec129-2560-401d-9248-5530decfa14c")
+		)
+		(pin "2"
+			(uuid "7271810b-09a3-486a-8734-6674e476d019")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
+					(reference "R76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 179.07 101.6 0)
 		(unit 1)
@@ -2566,6 +2991,77 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "R74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_symbols:CHASSIS")
+		(at 106.68 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a90402b4-bddd-4eed-873c-a67b5e7e1fcf")
+		(property "Reference" "#PWR033"
+			(at 106.68 81.28 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "CHASSIS"
+			(at 106.553 80.01 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 76.2 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5407a9b-e048-441f-88eb-6f68856239c8")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3003,6 +3499,78 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
 					(reference "FM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 114.3 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd5af6c8-e91d-44c8-89d4-62614696299f")
+		(property "Reference" "H4"
+			(at 116.84 53.34 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 116.84 55.88 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_pad:MountingHole_3.2mm_M3_Pad_Via"
+			(at 114.3 55.88 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 55.88 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 55.88 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b3995e5-fbf9-4980-8b2e-d2c3563d2d07")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
+					(reference "H4")
 					(unit 1)
 				)
 			)

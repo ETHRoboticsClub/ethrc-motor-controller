@@ -1152,6 +1152,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 149.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 149.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1070247c-f603-4ac2-84cf-ab5614ca1df0")
 		)
@@ -1257,6 +1275,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RT0402FRE07100KL"
+			(at 149.86 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 149.86 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 149.86 55.88 0)
 			(effects
 				(font

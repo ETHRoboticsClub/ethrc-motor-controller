@@ -4294,6 +4294,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "14"
 			(uuid "c023992c-03ed-455b-95f2-acf554722222")
 		)
@@ -4473,6 +4491,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 125.73 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 125.73 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a4714b47-c262-4d16-87ab-ac077e436ff8")
 		)
@@ -4534,6 +4570,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 95.25 111.76 0)
 			(effects
 				(font
@@ -4676,6 +4730,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 102.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 102.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 102.87 111.76 0)
 			(effects
 				(font
@@ -4887,6 +4959,24 @@
 			)
 		)
 		(property "Description" ".25 mm pitch, wire-to- board connector with a secure locking function, single row, 01x06 with mounting pin"
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 237.49 63.5 0)
 			(effects
 				(font
@@ -5159,6 +5249,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 179.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 179.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "cd491057-1a01-415b-a75a-50288a356656")
 		)
@@ -5348,6 +5456,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "455-SM05B-GHS-TBCT-ND"
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 166.37 120.65 0)
 			(effects
 				(font
@@ -5554,6 +5680,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 45.72 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 45.72 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "731e4647-3f6f-4403-809f-d4d5fcb54099")
 		)
@@ -5696,6 +5840,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 125.73 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 125.73 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d0485b93-1c7f-4824-8d5c-f0342bc21c48")
 		)
@@ -5801,6 +5963,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "PESD4USB5B-TBSX"
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 152.4 133.35 0)
 			(effects
 				(font
@@ -5968,6 +6148,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 115.57 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 115.57 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "336100ff-a286-49ec-809c-b65c51ee3a9e")
 		)
@@ -6029,6 +6227,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 110.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 110.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 110.49 111.76 0)
 			(effects
 				(font
@@ -6164,6 +6380,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 134.62 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 134.62 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 134.62 133.35 0)
 			(effects
 				(font

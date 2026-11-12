@@ -11,6 +11,226 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
+		(symbol "0_connectors:Conn_01x03_Mounting"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 3.81 4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row with mounting pin"
+				(at -0.254 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Mounting_0_1"
+				(polyline
+					(pts
+						(xy -2.54 3.81) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_01x03_Mounting_1_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -2.54 1.397)
+					(end -1.27 1.143)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -1.143)
+					(end -1.27 -1.397)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -3.683)
+					(end -1.27 -3.937)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -6.35 1.27 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -1.27 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -3.81 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "0_interface_can:TCAN1051HGVDRBRQ1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -741,6 +961,226 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Conn_01x03_Mounting_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 3.81 4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row with mounting pin"
+				(at -0.254 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Mounting_1_0_1"
+				(polyline
+					(pts
+						(xy -2.54 3.81) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -6.35) (xy 2.54 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_01x03_Mounting_1_1_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -2.54 1.397)
+					(end -1.27 1.143)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -1.143)
+					(end -1.27 -1.397)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -3.683)
+					(end -1.27 -3.937)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -6.35 1.27 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -1.27 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -3.81 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2169,8 +2609,8 @@
 		(uuid c4828628-d73b-43cf-b6b7-d19c7abb5cee)
 	)
 	(rectangle
-		(start 257.175 53.975)
-		(end 233.68 69.85)
+		(start 257.175 42.545)
+		(end 233.68 58.42)
 		(stroke
 			(width 0)
 			(type dot)
@@ -2208,7 +2648,7 @@
 	)
 	(text_box "DESIGN NOTE:\nOnly connect GND if connected device does not share ground!"
 		(exclude_from_sim no)
-		(at 262.89 97.79 0)
+		(at 203.2 124.46 0)
 		(size 19.05 12.7)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -2233,7 +2673,7 @@
 	)
 	(text_box "LAYOUT NOTE:\nFD-CAN should be routed as a 120-ohm differential pair."
 		(exclude_from_sim no)
-		(at 256.54 83.82 0)
+		(at 173.99 124.46 0)
 		(size 25.4 11.43)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -2361,6 +2801,12 @@
 		(uuid "1eb9df66-79bf-4d65-b10a-e948f19e5147")
 	)
 	(junction
+		(at 250.19 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "566d5713-563a-4674-907b-a9536893a34c")
+	)
+	(junction
 		(at 120.65 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2371,6 +2817,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7efeb617-0c74-46de-821f-ccf76701f4ac")
+	)
+	(junction
+		(at 250.19 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80404598-b3ed-49cb-8929-117a112ff6a6")
 	)
 	(junction
 		(at 186.69 105.41)
@@ -2478,7 +2930,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 63.5) (xy 237.49 80.01)
+			(xy 237.49 52.07) (xy 237.49 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2548,7 +3000,17 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 99.06) (xy 233.68 99.06)
+			(xy 260.35 107.95) (xy 260.35 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "125ee09b-9b75-476a-82c4-cb3ad86aaeb0")
+	)
+	(wire
+		(pts
+			(xy 243.84 119.38) (xy 233.68 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2588,7 +3050,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 96.52) (xy 236.22 83.82)
+			(xy 236.22 116.84) (xy 236.22 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2628,7 +3090,17 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 60.96) (xy 234.95 77.47)
+			(xy 250.19 129.54) (xy 250.19 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d0a24a2-de6d-4fc2-903a-d1b817227d83")
+	)
+	(wire
+		(pts
+			(xy 234.95 49.53) (xy 234.95 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2696,6 +3168,16 @@
 		)
 		(uuid "49738a6c-67e5-4b42-a8cc-c42e2fd5c172")
 	)
+	(wire
+		(pts
+			(xy 250.19 129.54) (xy 260.35 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a42cd0-963f-4f41-a7cc-7cadf0b8bb94")
+	)
 	(bus
 		(pts
 			(xy 76.2 82.55) (xy 76.2 83.82)
@@ -2708,7 +3190,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 60.96) (xy 243.84 60.96)
+			(xy 234.95 49.53) (xy 243.84 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2725,6 +3207,16 @@
 			(type default)
 		)
 		(uuid "5c784268-eab9-442b-9be4-02e90efd85fa")
+	)
+	(wire
+		(pts
+			(xy 250.19 128.27) (xy 250.19 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d4528f3-0c9e-41c0-8502-744556b8555c")
 	)
 	(wire
 		(pts
@@ -2768,13 +3260,23 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 66.04) (xy 240.03 66.04)
+			(xy 243.84 54.61) (xy 240.03 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6872e5ad-b1be-4b41-908d-197fc040f96b")
+	)
+	(wire
+		(pts
+			(xy 250.19 71.12) (xy 250.19 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c08706c-ee32-4ccb-ab1b-d01cb6a280b1")
 	)
 	(wire
 		(pts
@@ -2828,6 +3330,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 90.17) (xy 260.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fa84d3d-3c06-42d3-9835-9536772bc387")
+	)
+	(wire
+		(pts
 			(xy 105.41 63.5) (xy 105.41 81.28)
 		)
 		(stroke
@@ -2838,7 +3350,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 66.04) (xy 240.03 82.55)
+			(xy 240.03 54.61) (xy 240.03 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2858,7 +3370,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 63.5) (xy 243.84 63.5)
+			(xy 237.49 52.07) (xy 243.84 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2959,7 +3471,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 101.6) (xy 238.76 111.76)
+			(xy 238.76 121.92) (xy 238.76 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3009,6 +3521,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 110.49) (xy 250.19 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad761339-f223-4602-beed-def3a217d25c")
+	)
+	(wire
+		(pts
 			(xy 165.1 102.87) (xy 170.18 102.87)
 		)
 		(stroke
@@ -3047,6 +3569,16 @@
 		)
 		(uuid "b5d9bdec-ee1c-471a-8809-8dfc958c18c5")
 	)
+	(wire
+		(pts
+			(xy 250.19 68.58) (xy 260.35 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7689063-06c1-4cc1-a2e1-01f0192f59bc")
+	)
 	(bus
 		(pts
 			(xy 76.2 86.36) (xy 76.2 87.63)
@@ -3079,7 +3611,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 99.06) (xy 233.68 86.36)
+			(xy 233.68 119.38) (xy 233.68 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3199,6 +3731,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 88.9) (xy 250.19 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e166b04e-29fb-4d11-80b5-4f3086ffd1f7")
+	)
+	(wire
+		(pts
 			(xy 190.5 80.01) (xy 190.5 105.41)
 		)
 		(stroke
@@ -3229,7 +3771,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 96.52) (xy 236.22 96.52)
+			(xy 243.84 116.84) (xy 236.22 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3246,6 +3788,16 @@
 			(type default)
 		)
 		(uuid "ef6f1cac-aaa6-403c-9b9b-ec599ca260b6")
+	)
+	(wire
+		(pts
+			(xy 250.19 90.17) (xy 250.19 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f131ab54-a790-4789-9f37-8bcff55aec5c")
 	)
 	(wire
 		(pts
@@ -3280,7 +3832,7 @@
 	)
 	(polyline
 		(pts
-			(xy 230.505 66.04) (xy 233.68 69.85)
+			(xy 230.505 54.61) (xy 233.68 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3291,7 +3843,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 101.6) (xy 238.76 101.6)
+			(xy 243.84 121.92) (xy 238.76 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3311,6 +3863,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 107.95) (xy 260.35 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f801d06f-2130-4013-8d75-e9aef878fa7c")
+	)
+	(wire
+		(pts
 			(xy 85.09 63.5) (xy 100.33 63.5)
 		)
 		(stroke
@@ -3318,6 +3880,16 @@
 			(type default)
 		)
 		(uuid "fa2f20f9-c48b-493c-9374-cb7fb89141c7")
+	)
+	(wire
+		(pts
+			(xy 260.35 68.58) (xy 260.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa916cb1-9787-4184-9601-eee20dbe0b73")
 	)
 	(wire
 		(pts
@@ -3529,6 +4101,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 149.86 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 149.86 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "396bb2cd-26ac-415d-86bd-529ee6790758")
 		)
@@ -3643,6 +4233,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 165.1 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 165.1 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1abf4f47-a4d0-42e9-b0c9-900863a3449e")
 		)
@@ -3653,6 +4261,72 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "R71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_symbols:CHASSIS")
+		(at 250.19 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17c42a1c-24f8-4f4a-92c9-ee448851e6a4")
+		(property "Reference" "#PWR010"
+			(at 250.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "CHASSIS"
+			(at 250.063 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
+			(at 250.19 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6881164-1d82-49e2-83b0-0ce43c144f75")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3747,6 +4421,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "TCAN1051HGVDRBRQ1"
+			(at 102.87 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 102.87 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 102.87 91.44 0)
 			(effects
 				(font
@@ -3865,6 +4557,140 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x03_Mounting_1")
+		(lib_id "0_connectors:Conn_01x03_Mounting")
+		(at 250.19 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27e25aa5-2dd6-4bc3-aef6-315a6190901e")
+		(property "Reference" "J1"
+			(at 254 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Mounting"
+			(at 254 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_connectors:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal"
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.ch/datasheet/3/1070/1/eGH.pdf"
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row with mounting pin"
+			(at 249.936 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SM03B-GHS-TB(LF)(SN) "
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" " 306-SM03BGHSTBLFSN "
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2470ff6-5978-4850-9385-574c40bc2980")
+		)
+		(pin "3"
+			(uuid "08c3bd84-bd40-4586-8af5-d23615641796")
+		)
+		(pin "S2"
+			(uuid "825d4cd5-b9ca-4b37-ab24-93632a3e3fad")
+		)
+		(pin "S2"
+			(uuid "9c8a6c95-0f9a-4535-be7a-6b7670e4135e")
+		)
+		(pin "1"
+			(uuid "19bd3185-21eb-459c-a8fc-05b6af30ee95")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 85.09 60.96 0)
 		(unit 1)
@@ -3937,7 +4763,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 238.76 111.76 0)
+		(at 238.76 132.08 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3947,7 +4773,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e4f26e1-3483-46da-a1d0-060086d912a3")
 		(property "Reference" "#PWR0102"
-			(at 238.76 118.11 0)
+			(at 238.76 138.43 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -3957,7 +4783,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 238.76 116.84 0)
+			(at 238.76 137.16 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -3967,7 +4793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 111.76 0)
+			(at 238.76 132.08 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -3977,7 +4803,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 111.76 0)
+			(at 238.76 132.08 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -3987,7 +4813,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.76 111.76 0)
+			(at 238.76 132.08 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4168,6 +4994,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "PESD2CANFD24V-UX"
+			(at 200.66 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 200.66 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 200.66 95.885 0)
 			(effects
 				(font
@@ -4362,6 +5206,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 226.06 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 226.06 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e2913870-5a76-4418-a524-810504d1562e")
 		)
@@ -4452,17 +5314,83 @@
 		)
 	)
 	(symbol
+		(lib_id "0_power_symbols:CHASSIS")
+		(at 250.19 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a9ffca3-766a-4e09-bb4c-7a23d7489f7d")
+		(property "Reference" "#PWR0117"
+			(at 250.19 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "CHASSIS"
+			(at 250.063 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
+			(at 250.19 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c2a223f-e6eb-4f32-83b6-cbf4e1f5e849")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 248.92 63.5 0)
+		(at 248.92 52.07 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "6201b179-629b-4bd5-b944-ad85ae11a3f9")
 		(property "Reference" "J11"
-			(at 248.92 54.61 0)
+			(at 248.92 43.18 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4471,7 +5399,7 @@
 			)
 		)
 		(property "Value" "PTH 01x03 2.54mm"
-			(at 248.92 57.15 0)
+			(at 248.92 45.72 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4480,7 +5408,7 @@
 			)
 		)
 		(property "Footprint" "0_connectors:PTH_1x03_P2.54mm"
-			(at 248.92 63.5 0)
+			(at 248.92 52.07 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4490,7 +5418,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 63.5 0)
+			(at 248.92 52.07 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4500,10 +5428,28 @@
 			)
 		)
 		(property "Description" ""
-			(at 248.92 63.5 0)
+			(at 248.92 52.07 0)
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 248.92 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 248.92 52.07 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -4522,120 +5468,6 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 248.92 80.01 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69de6dec-1b6e-4324-85ce-54761015d6b4")
-		(property "Reference" "J12"
-			(at 248.92 71.12 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Nano-Fit 1x03"
-			(at 248.92 73.66 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0_connectors:1054301203"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 3 position 0.098\" (2.50mm)"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Digikey"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "WM26098CT-ND"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "1054301203"
-			(at 248.92 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bd844760-40be-4802-80f1-084b9e127940")
-		)
-		(pin "2"
-			(uuid "b338e5fc-49cf-4093-b7dd-53ca34bdbab8")
-		)
-		(pin "3"
-			(uuid "87ef9266-2446-4c9b-8000-138a5566d580")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
-					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -4813,6 +5645,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 165.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 165.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "066137df-f367-405b-8413-863299a651ab")
 		)
@@ -4925,6 +5775,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 120.65 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 120.65 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0d4dc7ed-584c-4f3c-bf64-6a7fb7a47b98")
 		)
@@ -4935,120 +5803,6 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "C147")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 248.92 99.06 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "993acb34-0bc9-446c-be72-e565cfa4cc73")
-		(property "Reference" "J13"
-			(at 248.92 90.17 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Nano-Fit 1x03"
-			(at 248.92 92.71 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0_connectors:1054301203"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 3 position 0.098\" (2.50mm)"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Digikey"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "WM26098CT-ND"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "1054301203"
-			(at 248.92 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "118f385d-34c1-4453-b56f-c1bdc98c3f85")
-		)
-		(pin "2"
-			(uuid "a465c79a-4aa6-479a-8d69-c78151ccb055")
-		)
-		(pin "3"
-			(uuid "2b961091-7f3d-42d5-96b9-1c854509d469")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
-					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -5214,6 +5968,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CAS-220TA"
+			(at 175.26 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 175.26 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 175.26 82.55 0)
 			(effects
 				(font
@@ -5416,6 +6188,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 175.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 175.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2d999b13-513a-4f5f-889c-1b05b22a2b67")
 		)
@@ -5541,6 +6331,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b669796f-ed74-4f84-bfa0-88c1e1b8bdd8")
 		)
@@ -5654,6 +6462,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 80.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 80.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8351656b-7127-496d-b304-347306fdfda8")
 		)
@@ -5664,6 +6490,139 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
 					(reference "R69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_connectors:Conn_01x03_Mounting")
+		(at 250.19 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb99ba1f-da44-4b5d-a331-068b1388f700")
+		(property "Reference" "J12"
+			(at 254 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Mounting"
+			(at 254 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_connectors:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal"
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.ch/datasheet/3/1070/1/eGH.pdf"
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row with mounting pin"
+			(at 249.936 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SM03B-GHS-TB(LF)(SN) "
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" " 306-SM03BGHSTBLFSN "
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 250.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3abac1aa-11d1-4fd1-9505-c178f7246574")
+		)
+		(pin "3"
+			(uuid "a2227094-0411-4c0c-aea0-92d5a7947b28")
+		)
+		(pin "S2"
+			(uuid "5cb140a1-e047-4b57-8bb5-82c2e96c7ce5")
+		)
+		(pin "S2"
+			(uuid "11493702-9994-4e03-b948-7554d1a82b9f")
+		)
+		(pin "1"
+			(uuid "19beb75e-5e33-423c-ad3b-1478f34662fd")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/95bf33d9-762c-4d08-af8b-3fad797ffaca"
+					(reference "J12")
 					(unit 1)
 				)
 			)

@@ -7329,6 +7329,17 @@
 		)
 		(uuid "2ccc7624-424a-449c-b3e6-3ab6726389a4")
 	)
+	(label "LED_DBG"
+		(at 105.41 146.05 180)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2df1d1e1-92bf-44f8-aecf-49b59d233833")
+	)
 	(label "ESC_CS"
 		(at 351.79 124.46 0)
 		(effects
@@ -7536,6 +7547,17 @@
 			(justify left bottom)
 		)
 		(uuid "48b8ffb2-7252-4112-9a0f-884a806cd195")
+	)
+	(label "SENSE_TEMP_FET"
+		(at 105.41 151.13 180)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4b8eb398-be0b-4239-8496-c20c827f489d")
 	)
 	(label "DRV_CS"
 		(at 105.41 120.65 180)
@@ -7766,17 +7788,6 @@
 		)
 		(uuid "789606da-f084-480e-8afa-28a080d2f911")
 	)
-	(label "ESC_CS"
-		(at 105.41 151.13 180)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "78f90ff6-0cd1-4ea6-8466-a4363fe75e53")
-	)
 	(label "ESC_IRQ"
 		(at 35.56 143.51 0)
 		(effects
@@ -7995,6 +8006,17 @@
 		)
 		(uuid "9bfa0ca8-e749-4282-bffb-2303ac16b2cf")
 	)
+	(label "ESC_CS"
+		(at 105.41 148.59 180)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9cbbc4fa-585f-4adb-b2e7-5f6c76feb459")
+	)
 	(label "BOARD_VERSION"
 		(at 105.41 90.17 180)
 		(effects
@@ -8071,17 +8093,6 @@
 			(justify left bottom)
 		)
 		(uuid "a5554a27-436e-411f-ac8f-421a91f53261")
-	)
-	(label "LED_DBG"
-		(at 105.41 146.05 180)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a596cdec-68f7-4cff-aea0-4867865320ce")
 	)
 	(label "DRV_SCLK"
 		(at 351.79 59.69 0)
@@ -8400,17 +8411,6 @@
 			(justify left bottom)
 		)
 		(uuid "e49cc6d4-533b-4359-873d-fd00520d1d26")
-	)
-	(label "SENSE_TEMP_FET"
-		(at 105.41 148.59 180)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e567b474-6ac4-403a-a4fa-cbfc11255b24")
 	)
 	(label "MOTOR_FAULT"
 		(at 351.79 55.88 0)
@@ -8776,7 +8776,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "026b9afd-4852-4658-a8a4-63989c6aceda")
 		(property "Reference" "TP28"
@@ -8829,6 +8829,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cba975ae-af56-4e54-ad84-69771b047301")
 		)
@@ -8847,7 +8865,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "085e54a9-d536-4e52-82e3-82995ed82503")
 		(property "Reference" "TP31"
@@ -8900,6 +8918,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 180.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 180.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f096a54e-3f8b-45db-87f2-c61959d4d8e0")
 		)
@@ -8918,7 +8954,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "0bde66e0-d790-415c-8f90-9234a8e7cc6e")
 		(property "Reference" "TP16"
@@ -8966,6 +9002,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 101.6 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9060,7 +9114,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "1fd17c38-5e9a-4b32-8ec2-4d86c8af25b1")
 		(property "Reference" "TP7"
@@ -9108,6 +9162,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 67.31 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9249,6 +9321,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 270.51 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 270.51 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "612f299f-6bb7-4e4e-95b7-1ed81d52a4d6")
 		)
@@ -9362,6 +9452,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 167.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 167.64 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f80f85ea-ea1f-4458-a86c-b4b2ffb82c7d")
 		)
@@ -9383,7 +9491,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "24c04260-8f54-46d3-a645-fd1e8bf0760c")
 		(property "Reference" "TP18"
@@ -9431,6 +9539,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 116.84 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9544,6 +9670,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 173.99 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 173.99 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b31f8cc9-f360-4747-b272-6cdc4023fd5b")
 		)
@@ -9565,7 +9709,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "2722c3e9-5fd8-4df0-aeba-de1ed58565a4")
 		(property "Reference" "TP17"
@@ -9613,6 +9757,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 114.3 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9708,7 +9870,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "2d3c7d51-9f46-482e-a634-78e0935b22d0")
 		(property "Reference" "TP37"
@@ -9761,6 +9923,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 226.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 226.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2cbaf6bf-d1b7-4143-b71a-a04554d7460a")
 		)
@@ -9779,7 +9959,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "399f09b9-7935-4305-8146-de24cd26bee2")
 		(property "Reference" "TP32"
@@ -9832,6 +10012,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 182.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "86f574dd-8f91-4182-8643-1b1488e0d7cb")
 		)
@@ -9850,7 +10048,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "3b826b40-af03-4718-bfce-a8c0e0e6d57a")
 		(property "Reference" "TP25"
@@ -9903,6 +10101,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f04bd962-88ae-4a2c-a7a2-1175116d9f56")
 		)
@@ -9921,7 +10137,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "3c83e0c9-700d-4e35-a9cb-b74ffb49eff8")
 		(property "Reference" "TP15"
@@ -9974,6 +10190,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba9d48e8-03fc-4b10-901d-cd5a037e502c")
 		)
@@ -9992,7 +10226,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "4288249c-6f74-4e6a-97ed-19869354dc73")
 		(property "Reference" "TP34"
@@ -10045,6 +10279,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 198.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c64cf5e3-af23-492a-8713-3796a62cc0be")
 		)
@@ -10063,7 +10315,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "440378de-77e8-4639-9d27-bf6319715899")
 		(property "Reference" "TP11"
@@ -10116,6 +10368,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "33be3980-1959-4b8f-9213-1c3f40b1aa2a")
 		)
@@ -10134,7 +10404,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "4a3c14e5-38a5-46c7-bac5-feab9e341b05")
 		(property "Reference" "TP12"
@@ -10187,6 +10457,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd0df092-fd0d-426f-ae26-de3255ad040d")
 		)
@@ -10205,7 +10493,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "4d3bf48b-4040-4ee9-b686-d001fb3d0f4e")
 		(property "Reference" "TP36"
@@ -10258,6 +10546,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0e603f97-8997-4395-a358-4bf0829e2113")
 		)
@@ -10276,7 +10582,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "54884e88-9e67-4ed9-bbb1-7404c849cc9d")
 		(property "Reference" "TP9"
@@ -10329,6 +10635,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "61a74213-47ab-479f-9c43-bac194987826")
 		)
@@ -10347,7 +10671,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "5740377c-a518-4def-b6ef-ad608ea72514")
 		(property "Reference" "TP5"
@@ -10400,6 +10724,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b6a4b971-6316-4c1e-8ec4-bac91729b75b")
 		)
@@ -10418,7 +10760,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "57bbd4c9-7e60-4fe4-96ef-4ff685a97c12")
 		(property "Reference" "TP13"
@@ -10471,6 +10813,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ba9ed8f-4fdb-4e30-b11e-432e1e67f395")
 		)
@@ -10489,7 +10849,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "5b77d966-9211-4fbb-aedd-61b0dac912c8")
 		(property "Reference" "TP1"
@@ -10537,6 +10897,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 50.8 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10630,7 +11008,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "66d4bd0c-0586-4770-9957-ce04c6ab9aad")
 		(property "Reference" "TP24"
@@ -10678,6 +11056,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 142.24 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10794,6 +11190,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 170.18 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 170.18 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1d466f08-da50-4ca2-bf2c-a52940c66c88")
 		)
@@ -10839,7 +11253,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "7b00321e-30cd-451f-8924-99557ec96c2b")
 		(property "Reference" "TP8"
@@ -10887,6 +11301,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 71.12 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10951,6 +11383,24 @@
 			)
 		)
 		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
+			(at 210.82 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 210.82 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 210.82 205.74 0)
 			(effects
 				(font
@@ -11083,6 +11533,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 224.79 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 224.79 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a75a5e2-73f9-4c4a-9bf5-9053fb2ec151")
 		)
@@ -11193,6 +11661,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 182.88 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 182.88 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c62a89e8-a242-4ad5-9989-241dfae6ad50")
 		)
@@ -11296,6 +11782,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
+			(at 172.72 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 172.72 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 172.72 151.13 0)
 			(effects
 				(font
@@ -11415,6 +11919,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 173.99 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 173.99 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9fbd97be-7124-40ef-9e7f-01373f86fd87")
 		)
@@ -11436,7 +11958,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "8de87029-5b4d-4791-80ee-bc7d81826715")
 		(property "Reference" "TP27"
@@ -11484,6 +12006,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 149.86 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11580,7 +12120,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "93e97a94-6d80-477e-95c9-4528dbd65eed")
 		(property "Reference" "TP75"
@@ -11628,6 +12168,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 132.08 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11733,6 +12291,24 @@
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
 			(at 171.45 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 171.45 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 171.45 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11850,6 +12426,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 182.88 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 182.88 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb790766-7d4e-4f57-afde-3aca074cc5aa")
 		)
@@ -11871,7 +12465,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "a2a7c783-ad68-44b6-b376-b50d6a15414d")
 		(property "Reference" "TP26"
@@ -11924,6 +12518,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ec7190c0-21d5-4368-9a6c-e575d70016ce")
 		)
@@ -11942,7 +12554,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "a3593bea-838e-440d-94b2-ea89ca9e1484")
 		(property "Reference" "TP3"
@@ -11995,6 +12607,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9359eee-93d1-4645-9c47-07d0320646cc")
 		)
@@ -12013,7 +12643,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "af500184-61d8-45ee-9dec-f72f760cc469")
 		(property "Reference" "TP35"
@@ -12066,6 +12696,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ab392720-72da-4691-a1ce-d56a849d4ce3")
 		)
@@ -12084,7 +12732,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "b916a5d2-f1b8-42b3-882a-82ffd356b6be")
 		(property "Reference" "TP2"
@@ -12137,6 +12785,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "575e327c-d370-4376-b956-82343c168b0b")
 		)
@@ -12155,7 +12821,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "ba6f9ba7-b221-4c56-964a-0c925abf64ee")
 		(property "Reference" "TP23"
@@ -12208,6 +12874,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e19267b0-9187-439b-a361-f9ee0220a652")
 		)
@@ -12226,7 +12910,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "bb90df68-a1e5-4188-8bd0-eb12125eab4a")
 		(property "Reference" "TP33"
@@ -12274,6 +12958,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 195.58 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12389,6 +13091,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 177.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 177.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "abdc5a4f-ee8a-43fb-b701-5111cbb2ff95")
 		)
@@ -12410,7 +13130,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "c91051b3-9f71-438b-923b-9aa8c9996fbb")
 		(property "Reference" "TP19"
@@ -12458,6 +13178,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 119.38 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12563,6 +13301,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "STM32G474RET3"
+			(at 68.58 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 68.58 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 68.58 113.03 0)
 			(effects
 				(font
@@ -12778,7 +13534,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "d428bfd1-0390-40e4-9505-86d9941b623e")
 		(property "Reference" "TP10"
@@ -12831,6 +13587,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "799501a7-302a-4dd9-818e-4157200cbdd8")
 		)
@@ -12849,7 +13623,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "d4d813a4-45ee-46db-b35d-70330e8963ee")
 		(property "Reference" "TP6"
@@ -12897,6 +13671,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 64.77 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13038,6 +13830,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 270.51 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 270.51 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "201b85cc-fbb8-4436-8a6d-285ae3b27b42")
 		)
@@ -13148,6 +13958,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 171.45 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 171.45 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "01c13f63-6b21-4b64-8077-5ce84586b6e2")
 		)
@@ -13169,7 +13997,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "de674c67-6ec4-4559-a09d-344d780548c5")
 		(property "Reference" "TP22"
@@ -13222,6 +14050,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fa7ffd18-3fb3-4143-8c8c-a6715001b5bb")
 		)
@@ -13240,7 +14086,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "e0036e31-c59e-470f-acb8-c67949530a78")
 		(property "Reference" "TP14"
@@ -13293,6 +14139,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c051d11-dc29-480a-9e58-7f8f17ba899a")
 		)
@@ -13311,7 +14175,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "e32b3804-b466-4b56-9f2c-ce6ca335a1aa")
 		(property "Reference" "TP20"
@@ -13359,6 +14223,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 121.92 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13475,6 +14357,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 196.85 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 196.85 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b385bf9f-f4cd-48fa-bfdd-7d5d4c6eabb1")
 		)
@@ -13496,7 +14396,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "e6f94f1c-25d7-4344-8025-e32be78a0cdd")
 		(property "Reference" "TP38"
@@ -13544,6 +14444,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 228.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 228.6 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13656,6 +14574,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 182.88 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 182.88 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "69f10b18-bced-4308-967e-a96699c2768f")
 		)
@@ -13677,7 +14613,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "f0a65f34-950b-4b99-960b-6a6faecab9f6")
 		(property "Reference" "TP21"
@@ -13730,6 +14666,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7c094926-7c84-44d2-a27d-72cab45015e0")
 		)
@@ -13748,7 +14702,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "f72a0652-d5f6-4cd4-b78c-e7396c6628c5")
 		(property "Reference" "TP4"
@@ -13796,6 +14750,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 59.69 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)

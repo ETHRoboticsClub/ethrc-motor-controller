@@ -2058,6 +2058,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bb0178b9-cda8-4fec-a0fc-0b7a0b29ab16")
 		)
@@ -2164,6 +2182,24 @@
 		)
 		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 134.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 134.62 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 134.62 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2359,6 +2395,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 195.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d2b4a9a4-e415-452c-bda1-4df736e34f13")
 		)
@@ -2467,6 +2521,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RCS0402150RFKED"
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 198.12 67.31 0)
 			(effects
 				(font
@@ -2659,6 +2731,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 128.27 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 128.27 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12de91b6-1ff8-4613-8f3b-f71701bfadfc")
 		)
@@ -2843,6 +2933,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 198.12 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 198.12 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f32bec60-4642-4e0e-a7a5-887b9d597b9f")
 		)
@@ -2946,6 +3054,24 @@
 		)
 		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 182.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 182.88 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 182.88 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,6 +3192,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 176.53 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 176.53 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5b974b8c-afbd-4d4a-8bfb-d87476eb1639")
 		)
@@ -3178,6 +3322,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 149.86 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 149.86 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d4fc2ba-4684-47e5-975f-2e787790fbb7")
 		)
@@ -3282,6 +3444,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RCS0402100RFKED"
+			(at 149.86 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 149.86 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 149.86 67.31 0)
 			(effects
 				(font

@@ -8,6 +8,7 @@
 -   1 µF low-ESR capacitor on the LAN9253 VDDCR pin (DS00003421B §4.1.1).
 -   LMR38020 symbol, DDA0008B footprint with 8 thermal vias, and SUM70101EL symbol, footprint and 3D model.
 -   Description, manufacturer and supplier part numbers for the EtherCAT and 5 V buck parts.
+-   FDMS86163P symbol (onsemi pinout: S 1-3, G 4, D 5-8 + pad 9) and 3D model.
 
 ### Changed
 
@@ -16,6 +17,11 @@
 -   EtherCAT PHY terminations R59-R66 to 0402 and all EtherCAT capacitors to the project footprint library.
 -   R43 bus-sense resistor from 0402 to 0805 (working voltage at 58.8 V).
 -   CI variant to DRAFT while the PCB layout restarts.
+-   Reverse-polarity P-FET from one SUM70101EL (D2PAK) to two FDMS86163P (Power 56, Q10 and Q12) in parallel on a shared gate net, sized for 7 A RMS bus current and placed on the bottom side.
+-   FD-CAN connectors from 2 × Molex Nano-Fit (J12, J13) and a 2.54 mm header (J11) to 2 × JST-GH 3-pin (J1, J12): 1 CAN_H, 2 CAN_L, 3 GND, shield to CHASSIS.
+-   ESC_CS and SENSE_TEMP_FET swapped between PB11 and PB12.
+-   JST connector mounting pins renamed MP1/MP2 to S1/S2.
+-   Test points TP1-TP75 excluded from the board for the placement.
 
 ### Fixed
 

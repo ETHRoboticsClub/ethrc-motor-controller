@@ -1713,6 +1713,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 82.55 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 82.55 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4a24eb71-9d59-449f-8191-889bbae59723")
 		)
@@ -1787,6 +1805,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 210.82 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 210.82 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
@@ -1850,6 +1886,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 223.52 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 223.52 74.93 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2033,6 +2087,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "923b8a58-f525-4b3f-a605-87afd6044f1c")
 		)
@@ -2146,6 +2218,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b101586c-12ab-430c-abdb-468b3f4a87f5")
 		)
@@ -2216,6 +2306,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 78.74 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 78.74 81.28 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2545,6 +2653,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 162.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 162.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e53addd9-f899-4347-9c58-d4574b8a74e9")
 		)
@@ -2614,6 +2740,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 217.17 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 217.17 74.93 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2789,6 +2933,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CRCW06030000Z0EAHP"
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 134.62 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 134.62 66.04 0)
 			(effects
 				(font
@@ -2981,6 +3143,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 138.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 138.43 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f02e413b-9ab9-49ba-ba32-6375248728af")
 		)
@@ -3165,6 +3345,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12e057e7-50b6-4197-ad23-e71e99de38a2")
 		)
@@ -3270,6 +3468,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "C0603V102KDRAC7867"
+			(at 121.92 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 121.92 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 121.92 91.44 0)
 			(effects
 				(font
@@ -3424,6 +3640,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "72953a50-489f-4178-9f38-da2d280c654b")
 		)
@@ -3495,6 +3729,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 210.82 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 210.82 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
@@ -3559,6 +3811,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 114.3 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 114.3 55.88 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3635,6 +3905,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/c35a2394-f5db-4d2b-a6ba-34798059bc1f"
@@ -3699,6 +3987,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 158.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 158.75 81.28 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3770,6 +4076,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 223.52 102.87 0)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)

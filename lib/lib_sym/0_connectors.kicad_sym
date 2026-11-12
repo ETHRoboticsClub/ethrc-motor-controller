@@ -170,14 +170,14 @@
 			(pin passive line
 				(at 1.27 6.35 270)
 				(length 3.81)
-				(name "MP1"
+				(name "S1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "MP1"
+				(number "S1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -188,14 +188,14 @@
 			(pin passive line
 				(at 1.27 -8.89 90)
 				(length 3.81)
-				(name "MP2"
+				(name "S2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "MP2"
+				(number "S2"
 					(effects
 						(font
 							(size 1.27 1.27)

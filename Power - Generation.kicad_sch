@@ -17323,6 +17323,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 119.38 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 119.38 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "86aa7915-4b80-41e9-8c9d-c6fe167e00b8")
 		)
@@ -17435,6 +17453,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 336.55 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 336.55 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "176ac5ae-5894-4962-95d6-b35a50b907ac")
 		)
@@ -17538,6 +17574,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "LP2992IM5-3.3/NOPB"
+			(at 339.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 339.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 339.09 116.84 0)
 			(effects
 				(font
@@ -17667,6 +17721,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 295.91 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 295.91 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9c15abc6-cc56-4f26-9215-73d3edade1dd")
 		)
@@ -17779,6 +17851,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 377.19 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 377.19 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "613ee2fd-7d45-494c-b39f-99a90ea5a534")
 		)
@@ -17883,6 +17973,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 316.23 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 316.23 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 316.23 200.66 0)
 			(effects
 				(font
@@ -18066,6 +18174,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 326.39 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 326.39 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 326.39 217.17 0)
 			(effects
 				(font
@@ -18258,6 +18384,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 255.27 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 255.27 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "34d51900-1812-4928-bad8-5a83a3b29db2")
 		)
@@ -18328,6 +18472,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 299.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 299.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3f535125-021a-4390-838f-430681cdcbfe")
 		)
@@ -18390,6 +18552,24 @@
 			)
 		)
 		(property "Description" "40.2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Thick Film"
+			(at 198.12 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 198.12 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 198.12 60.96 0)
 			(effects
 				(font
@@ -18511,6 +18691,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 208.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 208.28 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f9114e47-aa80-43ed-957c-178b0ca6df17")
 		)
@@ -18532,7 +18730,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "22ed7811-cfe6-49b9-9ea2-ac5d58c2e74b")
 		(property "Reference" "TP39"
@@ -18580,6 +18778,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 185.42 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -18694,6 +18910,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 148.59 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 148.59 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0051a6a-ba87-4178-a4a2-baf3efbfc842")
 		)
@@ -18756,6 +18990,24 @@
 			)
 		)
 		(property "Description" "47 µF ±10% 10V Ceramic Capacitor X5R 1206 (3216 Metric)"
+			(at 210.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 210.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 210.82 66.04 0)
 			(effects
 				(font
@@ -18876,6 +19128,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 234.95 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 234.95 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5c7dd9cd-f6d8-4667-b176-df56055fbcf3")
 		)
@@ -18988,6 +19258,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 387.35 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 387.35 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff5636bd-78f2-4e8e-9eb7-a3bc523aec85")
 		)
@@ -19092,6 +19380,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 245.11 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 245.11 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 245.11 200.66 0)
 			(effects
 				(font
@@ -19284,6 +19590,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 346.71 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 346.71 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0adbca9f-b4b4-4adc-9d55-358ba504f89f")
 		)
@@ -19396,6 +19720,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 336.55 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 336.55 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6cdba8c2-74c4-49e1-9d60-03acb88515e8")
 		)
@@ -19458,6 +19800,24 @@
 			)
 		)
 		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 0805 (2012 Metric)"
+			(at 101.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 101.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 101.6 66.04 0)
 			(effects
 				(font
@@ -19578,6 +19938,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 346.71 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 346.71 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "98de8c9b-6ebb-49d9-ab25-a394eafd44aa")
 		)
@@ -19599,7 +19977,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "3c8ca30c-dac5-445f-a75d-38e088df8d8e")
 		(property "Reference" "TP56"
@@ -19647,6 +20025,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 265.43 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -19753,6 +20149,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 295.91 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 295.91 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 295.91 217.17 0)
 			(effects
 				(font
@@ -19871,6 +20285,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 278.13 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 278.13 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7fa79e0d-1505-46cf-af80-2d84db5569db")
 		)
@@ -19938,6 +20370,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 166.37 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 166.37 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f92ef049-2bf0-4cde-9624-a9ca5b3aa0a5")
 		)
@@ -19959,7 +20409,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "448e25a2-8bcf-4a2d-8a95-866a32b792b5")
 		(property "Reference" "TP46"
@@ -20007,6 +20457,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 228.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 228.6 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -20121,6 +20589,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 265.43 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 265.43 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0de1633-23d9-4c71-a7aa-d18712ccb84e")
 		)
@@ -20225,6 +20711,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 234.95 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 234.95 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 234.95 200.66 0)
 			(effects
 				(font
@@ -20411,6 +20915,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 377.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 377.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "758f004d-2e0a-46db-98ac-ffff611e1c5c")
 		)
@@ -20432,7 +20954,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "4755bde1-05d3-403a-8c0a-488d4d4abfc7")
 		(property "Reference" "TP53"
@@ -20480,6 +21002,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 257.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 257.81 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -20661,6 +21201,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 172.72 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 172.72 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9967b23c-8269-4a60-a5ec-427b28b9319d")
 		)
@@ -20753,6 +21311,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 285.75 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 285.75 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 285.75 66.04 0)
 			(effects
 				(font
@@ -20930,6 +21506,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 326.39 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 326.39 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 326.39 184.15 0)
 			(effects
 				(font
@@ -21117,6 +21711,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 361.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 361.95 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7dcd6a4-85d7-4466-aa66-4436e133f2a3")
 		)
@@ -21138,7 +21750,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "55949992-a506-4df5-a46a-2f5edd7c1687")
 		(property "Reference" "TP58"
@@ -21186,6 +21798,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 270.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 270.51 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -21300,6 +21930,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 356.87 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 356.87 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0e777ca-c58a-4635-8580-e7cd108571f0")
 		)
@@ -21321,7 +21969,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "5bfe51c9-41b9-4e26-b3a0-54182e128c81")
 		(property "Reference" "TP52"
@@ -21369,6 +22017,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 255.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 255.27 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -21513,6 +22179,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 118.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0babd05-c491-4be9-bcd9-c066b9ba91dd")
 		)
@@ -21617,6 +22301,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 285.75 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 285.75 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 285.75 184.15 0)
 			(effects
 				(font
@@ -21737,6 +22439,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 346.71 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 346.71 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28cda18a-2801-4613-af5d-ea07951bc7e2")
 		)
@@ -21799,6 +22519,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 313.69 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 313.69 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 313.69 63.5 0)
 			(effects
 				(font
@@ -21911,6 +22649,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CGA4J1X7R2A225K125AC"
+			(at 72.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 72.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 72.39 127 0)
 			(effects
 				(font
@@ -22032,6 +22788,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 208.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 208.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2322c172-b8a4-4ad3-b663-5a3d0db686d7")
 		)
@@ -22136,6 +22910,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 367.03 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 367.03 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 367.03 200.66 0)
 			(effects
 				(font
@@ -22256,6 +23048,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 57.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 57.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dbdd708a-3794-4111-a8f4-f33b85ed710c")
 		)
@@ -22277,7 +23087,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "71bd7dcf-4cea-4fc8-a49a-f265ec421c8d")
 		(property "Reference" "TP55"
@@ -22325,6 +23135,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 262.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 262.89 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -22431,6 +23259,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 326.39 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 326.39 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 326.39 200.66 0)
 			(effects
 				(font
@@ -22551,6 +23397,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 285.75 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 285.75 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "94a40ba6-94a5-4e85-9a89-0709d16bf356")
 		)
@@ -22655,6 +23519,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 105.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -22802,6 +23684,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 181.61 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 181.61 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb08ace3-12c7-415e-b38c-3c637b0d8d1f")
 		)
@@ -22905,6 +23805,24 @@
 		)
 		(property "Manufacturer Part Number" "742792096"
 			(at 64.77 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 64.77 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 64.77 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23098,6 +24016,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 124.46 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 124.46 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "8975d90f-a6ea-4db1-a2ba-b03386ba12fd")
 		)
@@ -23140,7 +24076,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "8242572f-6382-4a6e-950d-e1920f4dfe9e")
 		(property "Reference" "TP51"
@@ -23193,6 +24129,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 195.58 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aafaa01b-df19-4982-9c7c-2f0eaab046cd")
 		)
@@ -23211,7 +24165,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "83cbb9b6-c5db-404a-a45c-467336926fb5")
 		(property "Reference" "TP57"
@@ -23259,6 +24213,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 267.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 267.97 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -23373,6 +24345,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 245.11 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 245.11 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "08332ad6-76be-486b-bf1f-dd2a5d102e33")
 		)
@@ -23394,7 +24384,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "897d5c79-6b30-423f-b4d3-845a589ce1cf")
 		(property "Reference" "TP54"
@@ -23442,6 +24432,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 260.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 260.35 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -23505,6 +24513,24 @@
 			)
 		)
 		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 1210 (3225 Metric)"
+			(at 91.44 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 91.44 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -23712,6 +24738,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 347.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 347.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6fa4d79e-dddd-4c4b-8703-42cb1b812808")
 		)
@@ -23839,6 +24883,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0bc50215-13e6-4b5e-a73c-70f791d90de6")
 		)
@@ -23901,6 +24963,24 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Thick Film"
+			(at 198.12 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 198.12 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 198.12 74.93 0)
 			(effects
 				(font
@@ -24021,6 +25101,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 223.52 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 223.52 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1eed4766-35a4-4850-b251-25b89403572c")
 		)
@@ -24090,6 +25188,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 71.12 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 71.12 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "337a5bd2-87de-4c95-8c78-4696dc6586ce")
 		)
@@ -24111,7 +25227,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "98287c2f-d368-4763-9ba2-f0b035d22339")
 		(property "Reference" "TP40"
@@ -24159,6 +25275,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 187.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 187.96 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -24303,6 +25437,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 381 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 381 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "36009e0c-fe19-498c-8466-dce39f1e8a88")
 		)
@@ -24407,6 +25559,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 265.43 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 265.43 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 265.43 200.66 0)
 			(effects
 				(font
@@ -24527,6 +25697,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 255.27 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 255.27 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "acaa1f51-08fb-41fa-b9fb-a96679b98546")
 		)
@@ -24631,6 +25819,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "TMK107AB7105KAHT"
+			(at 311.15 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 311.15 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 311.15 128.27 0)
 			(effects
 				(font
@@ -24751,6 +25957,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 275.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 275.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "68483d59-b20a-4429-a01c-b283d1ca9e47")
 		)
@@ -24772,7 +25996,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "a107fae8-257e-4bf6-b76a-6abae13049d6")
 		(property "Reference" "TP47"
@@ -24820,6 +26044,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 231.14 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -25006,6 +26248,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 367.03 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 367.03 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3df605bb-13a8-4131-820b-2ca0f17f3541")
 		)
@@ -25027,7 +26287,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "a3b97989-17d4-422a-9749-89cd6d096976")
 		(property "Reference" "TP43"
@@ -25080,6 +26340,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 195.58 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "58bd598e-5c43-4558-a437-4146f15fd982")
 		)
@@ -25098,7 +26376,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "a3c22932-3875-4c89-9383-9fa471be6103")
 		(property "Reference" "TP49"
@@ -25146,6 +26424,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 236.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 236.22 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -25260,6 +26556,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 285.75 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 285.75 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eb965587-3f1e-406b-902f-69a2d36045ce")
 		)
@@ -25353,7 +26667,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "af39376f-96a7-4741-bf40-b91e1925e90f")
 		(property "Reference" "TP50"
@@ -25401,6 +26715,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 238.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 238.76 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -25507,6 +26839,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 234.95 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 234.95 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 234.95 217.17 0)
 			(effects
 				(font
@@ -25627,6 +26977,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 269.24 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 269.24 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "293e7bbe-3973-4c2e-b933-d6fe0f823b9b")
 		)
@@ -25648,7 +27016,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "b3840a28-29f6-446b-a82c-911d97437018")
 		(property "Reference" "TP44"
@@ -25696,6 +27064,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 213.36 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -25802,6 +27188,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 306.07 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 306.07 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 306.07 217.17 0)
 			(effects
 				(font
@@ -25922,6 +27326,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 194.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4b7ca0ae-d6f2-415f-a085-12105faf8cc7")
 		)
@@ -25984,6 +27406,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 330.2 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 330.2 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 330.2 76.2 0)
 			(effects
 				(font
@@ -26169,6 +27609,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 387.35 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 387.35 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba3f64e6-ae51-4971-b8f2-e1787512a711")
 		)
@@ -26231,6 +27689,24 @@
 			)
 		)
 		(property "Description" "47 µF ±10% 10V Ceramic Capacitor X5R 1206 (3216 Metric)"
+			(at 222.25 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 222.25 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 222.25 66.04 0)
 			(effects
 				(font
@@ -26351,6 +27827,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 201.93 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 201.93 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3cd7e727-23b5-4925-b0bf-859d53bb3cc5")
 		)
@@ -26455,6 +27949,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 356.87 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 356.87 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 356.87 200.66 0)
 			(effects
 				(font
@@ -26575,6 +28087,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 134.62 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 134.62 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "11f8bcd6-dd70-434f-9d30-3372a3978049")
 		)
@@ -26649,6 +28179,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 208.28 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 208.28 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "46b0ce96-c6e8-4966-a9eb-142e040d19d2")
 		)
@@ -26670,7 +28218,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "c3dcd737-fc06-4b2a-9a74-2fa75e34ed03")
 		(property "Reference" "TP45"
@@ -26723,6 +28271,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 195.58 226.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 226.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8852d4a3-96d1-4147-835b-a0e33a0cfec9")
 		)
@@ -26741,7 +28307,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "c816a7df-d285-4f8e-8fe6-f18afa74e79c")
 		(property "Reference" "TP48"
@@ -26789,6 +28355,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 233.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 233.68 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -26861,6 +28445,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 313.69 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 313.69 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e28bd5a5-e798-402d-9cb1-d260112b9702")
 		)
@@ -26922,6 +28524,24 @@
 			)
 		)
 		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7R 1210 (3225 Metric)"
+			(at 81.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 81.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 81.28 66.04 0)
 			(effects
 				(font
@@ -27042,6 +28662,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 356.87 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 356.87 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c4f6748-7d85-486d-ac96-d7b768d4d945")
 		)
@@ -27146,6 +28784,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 275.59 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 275.59 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 275.59 217.17 0)
 			(effects
 				(font
@@ -27266,6 +28922,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 316.23 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 316.23 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9910e952-a2b6-42a5-92b6-82f515a96009")
 		)
@@ -27370,6 +29044,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 316.23 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 316.23 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 316.23 184.15 0)
 			(effects
 				(font
@@ -27769,6 +29461,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 90.17 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 90.17 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "795f1161-35cf-414c-99ee-f685a9abc3cd")
 		)
@@ -27881,6 +29591,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 336.55 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 336.55 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eb3a2763-e552-4170-9a3e-8b123673d80d")
 		)
@@ -27948,6 +29676,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 165.1 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 165.1 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b747de05-43c3-45f2-9137-1f691376c918")
 		)
@@ -27969,7 +29715,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "ea7d3559-dd02-4a24-8c02-0a63360f8289")
 		(property "Reference" "TP41"
@@ -28017,6 +29763,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 190.5 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -28123,6 +29887,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 255.27 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 255.27 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 255.27 200.66 0)
 			(effects
 				(font
@@ -28243,6 +30025,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 306.07 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 306.07 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5ce92d90-b27c-4cd5-a9ae-150fbdc9d915")
 		)
@@ -28264,7 +30064,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "ec74472f-aef9-4aed-b50f-4578acf2534c")
 		(property "Reference" "TP42"
@@ -28312,6 +30112,24 @@
 			(effects
 				(font
 					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 195.58 208.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 195.58 208.28 90)
+			(effects
+				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -28418,6 +30236,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 275.59 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 275.59 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 275.59 200.66 0)
 			(effects
 				(font
@@ -28538,6 +30374,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 265.43 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 265.43 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "11620db3-c6e8-4faa-b308-428aac4ba9e5")
 		)
@@ -28642,6 +30496,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 245.11 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 245.11 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 245.11 217.17 0)
 			(effects
 				(font
@@ -28829,6 +30701,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 377.19 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 377.19 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "63cb5653-f381-4598-866d-7779d04c3802")
 		)
@@ -29006,6 +30896,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 378.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 378.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45345c9d-19cb-442b-9466-f8b6609d2145")
 		)
@@ -29110,6 +31018,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
+			(at 295.91 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 295.91 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 295.91 200.66 0)
 			(effects
 				(font
@@ -29230,6 +31156,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 306.07 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 306.07 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "05f85f9f-f734-453d-9506-edf046978aaf")
 		)
@@ -29342,6 +31286,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 387.35 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 387.35 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "62437377-1963-47ba-acd2-90d0729d0250")
 		)
@@ -29446,6 +31408,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CGA6M3X7R1E156M200AB"
+			(at 238.76 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 238.76 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 238.76 127 0)
 			(effects
 				(font

@@ -794,6 +794,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 134.62 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 134.62 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a633692-3197-4b8d-9596-728251684343")
 		)
@@ -899,6 +917,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
+			(at 151.13 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 151.13 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 151.13 78.74 0)
 			(effects
 				(font
@@ -1150,6 +1186,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-6ENF1003V"
+			(at 134.62 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 134.62 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 134.62 63.5 0)
 			(effects
 				(font

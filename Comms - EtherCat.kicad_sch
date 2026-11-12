@@ -10693,6 +10693,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 177.8 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 177.8 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f9f20f95-c4aa-4527-a285-065a5f28f4b3")
 		)
@@ -10964,6 +10982,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 133.35 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 133.35 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5890fe81-3306-5793-ab0c-8d5f732149f7")
 		)
@@ -11170,6 +11206,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 166.37 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 166.37 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0b1bd47e-5b15-5a74-95e7-ff7222865aad")
 		)
@@ -11268,6 +11322,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
+			(at 73.66 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 73.66 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 73.66 254 0)
 			(effects
 				(font
@@ -11409,6 +11481,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 168.91 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 168.91 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 168.91 91.44 0)
 			(effects
 				(font
@@ -11747,6 +11837,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 132.08 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 132.08 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "73c6a16c-b2d1-5ae2-921f-775a317d1888")
 		)
@@ -11844,6 +11952,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "673-H1102NL"
+			(at 345.44 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 345.44 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 345.44 78.74 0)
 			(effects
 				(font
@@ -12101,6 +12227,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 231.14 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 231.14 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b475ca70-db41-5103-9953-96099f54c265")
 		)
@@ -12207,6 +12351,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 297.18 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 297.18 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3463a8b3-b929-4461-b1f2-b58b5efcd6c8")
 		)
@@ -12304,6 +12466,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "81-GCM155R71H223KA5D"
+			(at 326.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 326.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 326.39 88.9 0)
 			(effects
 				(font
@@ -12548,6 +12728,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 363.22 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 363.22 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "030fd522-6358-4bbe-813e-a2843fba0d8a")
 		)
@@ -12719,6 +12917,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 369.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 369.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3bdb3001-c745-4f7a-9134-cdd89fd088ae")
 		)
@@ -12860,6 +13076,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 118.11 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 118.11 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a0cfaf5-73b8-5bbc-ab57-d10e0ea1a850")
 		)
@@ -12993,6 +13227,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 314.96 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 314.96 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 314.96 151.13 0)
 			(effects
 				(font
@@ -13207,6 +13459,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 82.55 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 82.55 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e86da65f-3058-4eb7-a85a-ac84ce7a4aba")
 		)
@@ -13348,6 +13618,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "69f3a69f-49e0-5d6c-85f0-57d03cf50564")
 		)
@@ -13453,6 +13741,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 326.39 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 326.39 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b3f10ba-4d1e-430e-8212-2b3a703e9d95")
 		)
@@ -13550,6 +13856,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 316.23 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 316.23 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 316.23 88.9 0)
 			(effects
 				(font
@@ -13728,6 +14052,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 368.3 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 368.3 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cbfac5e2-1143-4858-8ac0-3637f2c221d3")
 		)
@@ -13862,6 +14204,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 102.87 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 102.87 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 102.87 260.35 0)
 			(effects
 				(font
@@ -14011,6 +14371,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 143.51 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 143.51 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "752085a7-cf46-5c8c-bb67-4ab89b9aa026")
 		)
@@ -14152,6 +14530,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 110.49 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 110.49 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "23f9125e-8626-579c-bba8-c9cac0ba1f11")
 		)
@@ -14250,6 +14646,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
+			(at 87.63 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 87.63 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 87.63 260.35 0)
 			(effects
 				(font
@@ -14399,6 +14813,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 303.53 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 303.53 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8150e16f-8812-5235-b03a-7429757981fd")
 		)
@@ -14540,6 +14972,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 280.67 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 280.67 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2b2880a7-397d-511a-9c80-a467730c09fb")
 		)
@@ -14637,6 +15087,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 287.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 287.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 287.02 88.9 0)
 			(effects
 				(font
@@ -14758,6 +15226,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 388.62 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 388.62 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bfa8f678-e776-4db1-8ce1-b796fd2a99da")
 		)
@@ -14870,6 +15356,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 306.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 306.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 306.07 88.9 0)
 			(effects
 				(font
@@ -15077,6 +15581,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 154.94 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 154.94 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 154.94 199.39 0)
 			(effects
 				(font
@@ -15357,6 +15879,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 100.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 100.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bd2657cc-78ed-55ed-bef0-f306e2089f54")
 		)
@@ -15498,6 +16038,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 102.87 250.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 102.87 250.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00ef7b97-a464-527b-ac4e-a719d7307123")
 		)
@@ -15631,6 +16189,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 21.59 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 21.59 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 21.59 203.2 0)
 			(effects
 				(font
@@ -15810,6 +16386,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 368.3 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 368.3 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9701cacc-474b-4d72-9bb3-bc546b4a521f")
 		)
@@ -15906,6 +16500,24 @@
 		)
 		(property "Supplier Part Number 1" "71-CRCW0603-10K-E3"
 			(at 40.64 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 40.64 208.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 40.64 208.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16010,6 +16622,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "667-ERJ-3EKF3300V"
+			(at 368.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 368.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 368.3 134.62 0)
 			(effects
 				(font
@@ -16151,6 +16781,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 363.22 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 363.22 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 363.22 199.39 0)
 			(effects
 				(font
@@ -16496,6 +17144,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 237.49 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 237.49 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8222998b-820a-563f-9ea7-5da04367fb0e")
 		)
@@ -16637,6 +17303,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 63.5 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 63.5 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e2b0602c-61b1-56e9-bf9e-f9aef1755c68")
 		)
@@ -16734,6 +17418,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 306.07 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 306.07 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 306.07 185.42 0)
 			(effects
 				(font
@@ -16883,6 +17585,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 368.3 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 368.3 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d6b5798-24b7-45da-8259-186705f560dd")
 		)
@@ -16988,6 +17708,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 363.22 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 363.22 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6ed7547b-7e39-4f71-b852-707fc416f5c6")
 		)
@@ -17085,6 +17823,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 287.02 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 287.02 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 287.02 185.42 0)
 			(effects
 				(font
@@ -17234,6 +17990,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 167.64 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 167.64 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "303506bc-20cc-5d3b-b03c-ee59e1232b9a")
 		)
@@ -17366,6 +18140,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 45.72 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 45.72 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 45.72 107.95 0)
 			(effects
 				(font
@@ -17521,6 +18313,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 100.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 100.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8e42036-7e3a-5936-9c1f-22a85f708ecc")
 		)
@@ -17654,6 +18464,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 292.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 292.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 292.1 151.13 0)
 			(effects
 				(font
@@ -17803,6 +18631,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 121.92 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 121.92 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e3337e16-a841-598a-9b4c-f4c32083e22a")
 		)
@@ -17944,6 +18790,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 156.21 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 156.21 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "125f159b-7920-5a65-b626-39462869954b")
 		)
@@ -18077,6 +18941,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 314.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 314.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 314.96 49.53 0)
 			(effects
 				(font
@@ -18254,6 +19136,24 @@
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
 			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 223.52 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 223.52 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18599,6 +19499,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 303.53 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 303.53 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eb17679f-2dad-5949-9e85-6455ca38715b")
 		)
@@ -18871,6 +19789,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 292.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 292.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8034268f-ee16-5a25-a553-cd7f9db18112")
 		)
@@ -18976,6 +19912,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 297.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 297.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4785f25e-ae64-45ff-bedd-05dcbc2b47f6")
 		)
@@ -19073,6 +20027,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 316.23 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 316.23 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 316.23 185.42 0)
 			(effects
 				(font
@@ -19214,6 +20186,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 280.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 280.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 280.67 49.53 0)
 			(effects
 				(font
@@ -19429,6 +20419,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 368.3 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 368.3 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4f2255fa-677f-46e6-a37d-44615152f60e")
 		)
@@ -19563,6 +20571,24 @@
 		)
 		(property "Supplier Part Number" ""
 			(at 73.66 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 73.66 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 73.66 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19872,6 +20898,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 345.44 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 345.44 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "954daa74-0193-43e7-9930-98201f97f2aa")
 		)
@@ -20055,6 +21099,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 177.8 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 177.8 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0412055-c1e2-5ab5-87b5-69b3913373ec")
 		)
@@ -20196,6 +21258,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 144.78 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 144.78 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba6c3750-c828-56a7-9bf4-1026b140da4e")
 		)
@@ -20301,6 +21381,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "SM05B-GHS-TB"
+			(at 388.62 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 388.62 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 388.62 73.66 0)
 			(effects
 				(font
@@ -20465,6 +21563,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 60.96 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 60.96 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "eb98e681-962c-5b17-abba-d50a44e9f084")
 		)
@@ -20615,6 +21731,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 226.06 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 226.06 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "633a1658-8514-52c9-8dbb-b5a1238e0250")
 		)
@@ -20748,6 +21882,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 214.63 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 214.63 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 214.63 199.39 0)
 			(effects
 				(font
@@ -20897,6 +22049,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 363.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 363.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1ffd42f3-ccbe-4548-8f2e-cc4aecfd25ed")
 		)
@@ -21030,6 +22200,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 38.1 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 38.1 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 38.1 111.76 0)
 			(effects
 				(font
@@ -21244,6 +22432,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 123.19 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 123.19 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ba0b203-4e79-4a9e-aa6b-5533d42c9298")
 		)
@@ -21385,6 +22591,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 189.23 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 189.23 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "90750a67-789a-55a8-96a0-b78d74a48d22")
 		)
@@ -21518,6 +22742,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 240.03 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 240.03 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 240.03 140.97 0)
 			(effects
 				(font
@@ -21733,6 +22975,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 88.9 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 88.9 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7698408f-c5f2-595c-bde0-8c7f27e4060d")
 		)
@@ -21866,6 +23126,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 53.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 53.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 53.34 111.76 0)
 			(effects
 				(font
@@ -22013,6 +23291,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 105.41 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 105.41 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f5ef76b-7760-5d95-899e-015d96b8c400")
 		)
@@ -22146,6 +23442,24 @@
 			)
 		)
 		(property "Supplier Part Number" ""
+			(at 63.5 264.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 63.5 264.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 63.5 264.16 90)
 			(effects
 				(font

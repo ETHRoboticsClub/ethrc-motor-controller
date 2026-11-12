@@ -507,7 +507,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "0_transistor_fet:SUM70101EL-GE3"
+		(symbol "0_transistor_fet:FDMS86163P"
 			(pin_names
 				(hide yes)
 			)
@@ -523,7 +523,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "SUM70101EL-GE3"
+			(property "Value" "FDMS86163P"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -532,7 +532,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "0_transistor_fet:SUM70101ELGE3"
+			(property "Footprint" "0_transistor_fet:FDMS1D4N03S"
 				(at 11.43 -98.73 0)
 				(effects
 					(font
@@ -542,7 +542,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SUM70101EL-GE3/7566837"
+			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdms86163p-d.pdf"
 				(at 11.43 -198.73 0)
 				(effects
 					(font
@@ -552,7 +552,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "P-Channel 100 V 120A (Tc) 375W (Tc) Surface Mount TO-263 (D2PAK)"
+			(property "Description" "P-Channel MOSFET -100 V -50 A (Tc), RDS(on) 22 mOhm max at VGS -10 V, Power 56 (PQFN8 5x6)"
 				(at 2.794 -17.526 0)
 				(effects
 					(font
@@ -561,57 +561,43 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "5.08"
-				(at 11.43 -398.73 0)
+			(property "Manufacturer" "onsemi"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "78-SUM70101EL-GE3"
-				(at 11.43 -498.73 0)
+			(property "Manufacturer Part Number" "FDMS86163P"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SUM70101EL-GE3?qs=5aG0NVq1C4zasQAaApdAUg%3D%3D"
-				(at 11.43 -598.73 0)
+			(property "Supplier 1" "LCSC"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Vishay"
-				(at 11.43 -698.73 0)
+			(property "Supplier Part Number 1" "C469176"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "SUM70101EL-GE3"
-				(at 11.43 -798.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "SUM70101EL-GE3_1_1"
+			(symbol "FDMS86163P_1_1"
 				(polyline
 					(pts
 						(xy -5.08 -1.27) (xy -2.54 -1.27)
@@ -765,7 +751,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -783,6 +769,119 @@
 							)
 						)
 					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 8.89 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 8.89 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 8.89 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 8.89 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "2"
 						(effects
 							(font
@@ -794,6 +893,7 @@
 				(pin passive line
 					(at 0 -6.35 90)
 					(length 2.54)
+					(hide yes)
 					(name "S"
 						(effects
 							(font
@@ -1585,10 +1685,22 @@
 		(uuid "1db11dff-f5a8-4988-ad6d-26fb183af420")
 	)
 	(junction
+		(at 144.78 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "295b5ec9-3b00-4b26-8bd6-41b0368e40e2")
+	)
+	(junction
 		(at 168.91 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30ab8686-8252-4051-a94a-9024e2616d9f")
+	)
+	(junction
+		(at 167.64 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e0c7efe-f81c-4d81-8a02-7216bf2632be")
 	)
 	(junction
 		(at 181.61 64.77)
@@ -1619,6 +1731,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8823261-63e6-4d9d-b04a-3eeb9d15dffa")
+	)
+	(junction
+		(at 158.75 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb1ee7c3-3b8b-4423-8878-ff0b68de0cd4")
 	)
 	(junction
 		(at 201.93 64.77)
@@ -1666,6 +1784,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 74.93) (xy 158.75 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "119bd566-1db5-46b9-8b0e-c7258e187a97")
+	)
+	(wire
+		(pts
 			(xy 81.28 77.47) (xy 81.28 81.28)
 		)
 		(stroke
@@ -1683,16 +1811,6 @@
 			(type default)
 		)
 		(uuid "18244111-1126-448c-bdc9-c7eea24e33fb")
-	)
-	(wire
-		(pts
-			(xy 163.83 64.77) (xy 168.91 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a9a71e8-c9eb-4b23-b1e9-671c54c7b2fd")
 	)
 	(wire
 		(pts
@@ -1716,6 +1834,36 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 49.53) (xy 158.75 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24077b99-31e1-4acc-9578-dff0eb34eb88")
+	)
+	(wire
+		(pts
+			(xy 158.75 52.07) (xy 161.29 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "262c4bf2-044a-4dc8-a0a6-c97c8d80d798")
+	)
+	(wire
+		(pts
+			(xy 161.29 52.07) (xy 161.29 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cafa9cc-9a28-472e-9431-603e45381f20")
+	)
+	(wire
+		(pts
 			(xy 73.66 54.61) (xy 81.28 54.61)
 		)
 		(stroke
@@ -1736,7 +1884,17 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 64.77) (xy 148.59 64.77)
+			(xy 167.64 41.91) (xy 163.83 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c58bf15-f9ea-4738-b0ee-ff3bfde30828")
+	)
+	(wire
+		(pts
+			(xy 102.87 64.77) (xy 144.78 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1766,7 +1924,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 72.39) (xy 158.75 91.44)
+			(xy 158.75 72.39) (xy 158.75 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1783,6 +1941,16 @@
 			(type default)
 		)
 		(uuid "56e94051-c434-42cb-a36b-dbc234418911")
+	)
+	(wire
+		(pts
+			(xy 168.91 64.77) (xy 181.61 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f21a6c4-6404-4d83-ba13-5e46e8fcb876")
 	)
 	(wire
 		(pts
@@ -1836,6 +2004,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 41.91) (xy 148.59 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "821f4d13-f474-4b64-93d9-3c5d74ef064b")
+	)
+	(wire
+		(pts
 			(xy 181.61 64.77) (xy 181.61 77.47)
 		)
 		(stroke
@@ -1843,6 +2021,16 @@
 			(type default)
 		)
 		(uuid "8e5af2f2-9e06-44dd-8bba-f1564ed61e76")
+	)
+	(wire
+		(pts
+			(xy 144.78 64.77) (xy 148.59 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d8d8ac-17aa-4c5d-9aa8-7613737ae4ba")
 	)
 	(wire
 		(pts
@@ -1856,13 +2044,13 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 64.77) (xy 181.61 64.77)
+			(xy 144.78 41.91) (xy 144.78 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9951d503-5a9f-4f96-88ef-043bef37be8f")
+		(uuid "9eb91b56-235a-40c5-909d-2f2c7496caa4")
 	)
 	(wire
 		(pts
@@ -1876,6 +2064,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 74.93) (xy 158.75 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5dc8f6e-80c7-461e-91bd-ff5d116fbf3f")
+	)
+	(wire
+		(pts
 			(xy 168.91 91.44) (xy 168.91 93.98)
 		)
 		(stroke
@@ -1883,6 +2081,16 @@
 			(type default)
 		)
 		(uuid "a7a8995f-3511-4130-b602-7fe21d7e10ca")
+	)
+	(wire
+		(pts
+			(xy 167.64 41.91) (xy 167.64 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef7e4e6-d22d-48ab-9a16-8ac9d9e76db1")
 	)
 	(wire
 		(pts
@@ -1903,6 +2111,16 @@
 			(type default)
 		)
 		(uuid "b26a5e35-f164-4152-903b-4c5bb900bebb")
+	)
+	(wire
+		(pts
+			(xy 163.83 64.77) (xy 167.64 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f3a6fb-42c6-4c4f-8655-0697cb452009")
 	)
 	(wire
 		(pts
@@ -2003,6 +2221,16 @@
 			(type default)
 		)
 		(uuid "fb799c8c-12dc-4152-a410-1f777b85cf3b")
+	)
+	(wire
+		(pts
+			(xy 168.91 64.77) (xy 167.64 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf50766-6115-491b-bcec-84995872d588")
 	)
 	(image
 		(at 59.69 66.04)
@@ -8212,7 +8440,7 @@
 		)
 	)
 	(label "VBAT_IN"
-		(at 138.43 64.77 0)
+		(at 121.92 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8222,7 +8450,7 @@
 		(uuid "98ba1cb8-b4e7-4ed0-9f13-f778ca417cf4")
 	)
 	(label "VBAT_OUT"
-		(at 163.83 64.77 0)
+		(at 175.26 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8384,6 +8612,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "667-ERJ-3EKF1003V"
+			(at 168.91 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 168.91 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 168.91 81.28 0)
 			(effects
 				(font
@@ -8563,6 +8809,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 196.85 81.28 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 196.85 81.28 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "797d3611-e039-484d-96a3-00d66b6c87b2")
 		)
@@ -8727,6 +8991,24 @@
 			)
 		)
 		(property "Supplier Part Number 1" "667-ERJ-6ENF2203V"
+			(at 168.91 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 168.91 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 168.91 97.79 0)
 			(effects
 				(font
@@ -8999,6 +9281,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 82.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 82.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c3035d0e-d891-4e8d-85c5-741fa0cdc4d6")
 		)
@@ -9015,6 +9315,151 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_transistor_fet:FDMS86163P")
+		(at 157.48 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "746215a3-acd2-48e2-8452-6573bbc5c890")
+		(property "Reference" "Q12"
+			(at 156.21 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FDMS86163P"
+			(at 156.21 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "0_transistor_fet:FDMS1D4N03S"
+			(at 256.21 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdms86163p-d.pdf"
+			(at 356.21 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-Channel MOSFET -100 V -50 A (Tc), RDS(on) 22 mOhm max at VGS -10 V, Power 56 (PQFN8 5x6)"
+			(at 175.006 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 157.48 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 157.48 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "onsemi"
+			(at 157.48 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "FDMS86163P"
+			(at 157.48 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 157.48 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "512-FDMS86163P "
+			(at 157.48 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e139ed8-6013-49d0-a409-8c2335afead9")
+		)
+		(pin "2"
+			(uuid "631b28b5-8c0d-4f71-9ad4-3aa2332c2f66")
+		)
+		(pin "3"
+			(uuid "a2bb8ad0-b532-44e0-b6f6-1982af7f49b6")
+		)
+		(pin "4"
+			(uuid "0999e6e9-161a-4ec1-8914-e501e163a0b3")
+		)
+		(pin "5"
+			(uuid "25c43543-451d-4ee9-8872-bada2e63ab6f")
+		)
+		(pin "6"
+			(uuid "f1bab390-0b9e-4777-b7a0-53139331add5")
+		)
+		(pin "7"
+			(uuid "7b52931b-1c24-4c0e-98bb-62883f225af5")
+		)
+		(pin "8"
+			(uuid "13358b9e-2c0d-4a86-82d5-b66d2cbab6e9")
+		)
+		(pin "9"
+			(uuid "bca068b9-b6d5-4a13-b1d6-2b758db2b690")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
+					(reference "Q12")
 					(unit 1)
 				)
 			)
@@ -9118,6 +9563,24 @@
 			)
 		)
 		(property "Manufacturer Part Number" "XT60PW-F"
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
 			(at 82.55 67.31 0)
 			(effects
 				(font
@@ -9237,6 +9700,24 @@
 				(hide yes)
 			)
 		)
+		(property "CREATOR" ""
+			(at 181.61 81.28 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 181.61 81.28 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cc665a3f-7741-4422-9f3e-e9b4adde2423")
 		)
@@ -9319,7 +9800,7 @@
 		)
 	)
 	(symbol
-		(lib_id "0_transistor_fet:SUM70101EL-GE3")
+		(lib_id "0_transistor_fet:FDMS86163P")
 		(at 157.48 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9336,7 +9817,7 @@
 				)
 			)
 		)
-		(property "Value" "SUM70101EL-GE3"
+		(property "Value" "FDMS86163P"
 			(at 156.21 59.69 90)
 			(effects
 				(font
@@ -9344,7 +9825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0_transistor_fet:SUM70101ELGE3"
+		(property "Footprint" "0_transistor_fet:FDMS1D4N03S"
 			(at 256.21 53.34 0)
 			(effects
 				(font
@@ -9354,7 +9835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/vishay-siliconix/SUM70101EL-GE3/7566837"
+		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdms86163p-d.pdf"
 			(at 356.21 53.34 0)
 			(effects
 				(font
@@ -9364,7 +9845,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "P-Channel 100 V 120A (Tc) 375W (Tc) Surface Mount TO-263 (D2PAK)"
+		(property "Description" "P-Channel MOSFET -100 V -50 A (Tc), RDS(on) 22 mOhm max at VGS -10 V, Power 56 (PQFN8 5x6)"
 			(at 175.006 61.976 0)
 			(effects
 				(font
@@ -9373,64 +9854,86 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "5.08"
-			(at 556.21 53.34 0)
+		(property "CREATOR" ""
+			(at 157.48 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "78-SUM70101EL-GE3"
-			(at 656.21 53.34 0)
+		(property "VERIFIER" ""
+			(at 157.48 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/SUM70101EL-GE3?qs=5aG0NVq1C4zasQAaApdAUg%3D%3D"
-			(at 756.21 53.34 0)
+		(property "Manufacturer" "onsemi"
+			(at 157.48 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
-			(at 856.21 53.34 0)
+		(property "Manufacturer Part Number" "FDMS86163P"
+			(at 157.48 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SUM70101EL-GE3"
-			(at 956.21 53.34 0)
+		(property "Supplier 1" "Mouser"
+			(at 157.48 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "5302489d-2f0f-4369-a3ef-367838e7c42a")
+		(property "Supplier Part Number 1" "512-FDMS86163P "
+			(at 157.48 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "81369fc2-33b9-4008-b8e8-cca1f56557c7")
+			(uuid "ee779672-ad27-42ca-94ff-40fcace5fcb9")
 		)
 		(pin "2"
-			(uuid "321e9c4c-74ee-494f-baa6-67eabd3d40bc")
+			(uuid "64df7a99-61a8-49ee-961b-51907618d1af")
+		)
+		(pin "3"
+			(uuid "ed4731bb-247f-45b3-9f5b-391eae54f2d8")
+		)
+		(pin "4"
+			(uuid "8749f7be-86a5-4905-af7a-9b53ef461491")
+		)
+		(pin "5"
+			(uuid "9da31340-646c-4887-9142-d221fd40bf34")
+		)
+		(pin "6"
+			(uuid "c762d4e5-5a77-43c7-bceb-5343f84ef2c6")
+		)
+		(pin "7"
+			(uuid "9065e0fe-57bf-485a-a112-f20c8e3fae0c")
+		)
+		(pin "8"
+			(uuid "451a69c1-14cb-408c-a130-b306dc625f56")
+		)
+		(pin "9"
+			(uuid "e6990d18-a5f4-4679-a97d-a1b1df6aafdf")
 		)
 		(instances
 			(project "ethrc_motor_controller"

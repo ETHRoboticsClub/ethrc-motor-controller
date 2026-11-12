@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-  <img alt="Logo" width="33%" src="Logos/ethrc_logo_black.svg">
+  <img alt="Logo" width="33%" src="Logos/ethrc_logo_black.png">
 </p>
 
 <h1 align="center">ETHRC Motor Controller</h1>

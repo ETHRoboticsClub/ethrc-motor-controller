@@ -1,4 +1,4 @@
-_local_|2026-11-09|root|Local changes not committed|False|True
+_local_|2026-11-12|root|Local changes not committed|False|True
+7671eb7|2026-11-12|Masiar Etemadi|[PCB] Move the reverse-polarity circuit to the bottom, place the JST-GH CAN connectors, and remove the test points, with the new Power 56 and SM03B footprints and 3D models.|False|True
+38a2ad6|2026-11-12|Masiar Etemadi|[Schematic] Replace Q10 with two parallel FDMS86163P, move FD-CAN to two JST-GH 3-pin connectors, swap ESC_CS and SENSE_TEMP_FET on PB11/PB12, and exclude the test points from the board.|True|False
 c77e227|2026-11-09|Masiar Etemadi|[PCB] Start layout on the Ø88 outline with new footprints and 3D models, and set the CI variant to PRELIMINARY.|True|True
-341cb1e|2026-11-08|Masiar Etemadi|[PCB] Set the PCBWay 6-layer stackup and the ECAT differential pair netclass, and add the DDA0008E footprint variants.|False|True
-5f4aed2|2026-11-08|Masiar Etemadi|[PCB] Empty the inherited Amulet layout to restart placement, keeping the 6-layer stack and board setup.|False|True

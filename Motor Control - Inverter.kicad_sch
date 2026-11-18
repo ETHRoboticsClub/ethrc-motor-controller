@@ -116,6 +116,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "0_diode:BAT41KFILM"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT41KFILM"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "0_diode_smd:D_SOD-523"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 1A Schottky Diode, SOD-523-2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?201AD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAT41KFILM_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAT41KFILM_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "0_power_symbols:+VBAT"
 			(power)
 			(pin_names
@@ -725,7 +875,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -12.7 0 0)
 					(length 2.54)
 					(name ""
@@ -743,7 +893,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -3.81 15.24 270)
 					(length 2.54)
 					(name ""
@@ -761,7 +911,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -2.54 -15.24 90)
 					(length 2.54)
 					(name ""
@@ -779,7 +929,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -1.27 15.24 270)
 					(length 2.54)
 					(name ""
@@ -797,7 +947,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -15.24 90)
 					(length 2.54)
 					(name ""
@@ -815,7 +965,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 1.27 15.24 270)
 					(length 2.54)
 					(name ""
@@ -833,7 +983,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 2.54 -15.24 90)
 					(length 2.54)
 					(name ""
@@ -851,7 +1001,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 3.81 15.24 270)
 					(length 2.54)
 					(name ""
@@ -862,156 +1012,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "BAT41KFILM_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BAT41KFILM"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "0_diode_smd:D_SOD-523"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "100V 1A Schottky Diode, SOD-523-2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?201AD*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BAT41KFILM_1_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BAT41KFILM_1_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1439,21 +1439,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1554,1278 +1552,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FDMT80080DC_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 6.096 10.414 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "FDMT80080DC"
-				(at 6.096 7.874 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "0_transistor_fet:FDMT80040DC"
-				(at 21.59 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf"
-				(at 21.59 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"
-				(at -0.254 -30.48 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 21.59 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "512-FDMT80080DC"
-				(at 21.59 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"
-				(at 21.59 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "onsemi"
-				(at 21.59 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "FDMT80080DC"
-				(at 21.59 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "FDMT80080DC_1_0_1"
-				(polyline
-					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -10.16 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 12.7) (xy -3.81 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy 0 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 3.175) (xy -3.81 4.445)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0.635) (xy -3.81 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0) (xy -2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0) (xy -2.54 0.635) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -3.175) (xy -3.81 -4.445)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.635) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -0.635) (xy -3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -10.16) (xy -2.54 -12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 10.16) (xy -1.27 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.35) (xy 2.54 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy -3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy -3.81 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -12.7) (xy 0 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 10.16) (xy 1.27 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0.635) (xy 3.175 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -0.635) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -0.635) (xy 2.54 0.635) (xy 3.175 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 6.35) (xy 2.54 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -6.35) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -10.16) (xy 2.54 -12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -0.635) (xy 1.905 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -0.635) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 12.7) (xy 3.81 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FDMT80080DC_1_1_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 7.62)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -10.16) (xy -2.54 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 10.16) (xy -3.81 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -3.81 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -2.54 -15.24 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -1.27 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -15.24 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 1.27 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 2.54 -15.24 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 3.81 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "FDMT80080DC_2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 6.096 10.414 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "FDMT80080DC"
-				(at 6.096 7.874 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "0_transistor_fet:FDMT80040DC"
-				(at 21.59 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDMT80080DC-D.pdf"
-				(at 21.59 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Max rDS(on) = 1.35 m at VGS = 10 V, ID = 36 A ; MSL1 robust package design ; Advanced Package and Silicon combination for low rDS(on) and high efficiency ; Next generation enhanced body diode technology, engineered for soft recovery ; 100% UIL tested ; Low profile 8x8mm MLP package ; Max rDS(on) = 1.82 m at VGS = 8 V, ID = 31 A ; RoHS Compliant"
-				(at -0.254 -30.48 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 21.59 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "512-FDMT80080DC"
-				(at 21.59 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDMT80080DC?qs=HNBw3F7vE2wScr8WdXWm%252Bg%3D%3D"
-				(at 21.59 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "onsemi"
-				(at 21.59 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "FDMT80080DC"
-				(at 21.59 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "FDMT80080DC_2_0_1"
-				(polyline
-					(pts
-						(xy -5.08 3.81) (xy -5.08 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -10.16 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 12.7) (xy -3.81 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy 0 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 3.175) (xy -3.81 4.445)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0.635) (xy -3.81 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0) (xy -2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0) (xy -2.54 0.635) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -3.175) (xy -3.81 -4.445)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.635) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -0.635) (xy -3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -10.16) (xy -2.54 -12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 10.16) (xy -1.27 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.35) (xy 2.54 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy -3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy -3.81 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -12.7) (xy 0 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 10.16) (xy 1.27 12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0.635) (xy 3.175 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -0.635) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -0.635) (xy 2.54 0.635) (xy 3.175 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 6.35) (xy 2.54 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -6.35) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -10.16) (xy 2.54 -12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -0.635) (xy 1.905 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -0.635) (xy 2.54 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 12.7) (xy 3.81 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FDMT80080DC_2_1_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 7.62)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -10.16) (xy -2.54 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 10.16) (xy -3.81 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -3.81 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -2.54 -15.24 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -1.27 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -15.24 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 1.27 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 2.54 -15.24 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 3.81 15.24 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2901,8 +1635,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2922,7 +1655,7 @@
 		)
 	)
 	(rectangle
-		(start 31.75 146.05)
+		(start 31.75 144.78)
 		(end 43.18 160.02)
 		(stroke
 			(width 0)
@@ -3004,7 +1737,7 @@
 		(at 223.266 255.778 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3018,7 +1751,7 @@
 		(at 223.266 260.858 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3032,7 +1765,7 @@
 		(at 223.266 250.698 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3056,7 +1789,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.4)
 				(bold yes)
@@ -3104,7 +1837,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.4)
 				(bold yes)
@@ -3129,7 +1862,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.4)
 				(bold yes)
@@ -3154,7 +1887,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3177,7 +1910,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3200,7 +1933,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3223,7 +1956,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3246,7 +1979,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -4463,7 +3196,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 80.01) (xy 35.56 97.79)
+			(xy 35.56 88.9) (xy 35.56 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4643,7 +3376,7 @@
 	)
 	(polyline
 		(pts
-			(xy 30.48 147.32) (xy 31.75 146.05)
+			(xy 30.48 149.86) (xy 31.75 151.13)
 		)
 		(stroke
 			(width 0)
@@ -4784,7 +3517,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 195.58) (xy 35.56 199.39)
+			(xy 35.56 195.58) (xy 35.56 203.2)
 		)
 		(stroke
 			(width 0)
@@ -5345,7 +4078,7 @@
 	)
 	(polyline
 		(pts
-			(xy 119.38 88.9) (xy 106.68 121.92)
+			(xy 119.38 88.9) (xy 106.68 114.3)
 		)
 		(stroke
 			(width 0)
@@ -6100,7 +4833,7 @@
 		(at 229.87 124.46 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.016 1.016)
 			)
 			(justify left bottom)
@@ -6111,7 +4844,7 @@
 		(at 213.36 134.62 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6122,7 +4855,7 @@
 		(at 361.95 123.19 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.016 1.016)
 			)
 			(justify left bottom)
@@ -6133,7 +4866,7 @@
 		(at 307.34 114.3 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6144,7 +4877,7 @@
 		(at 49.53 114.3 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6155,7 +4888,7 @@
 		(at 229.87 156.21 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.016 1.016)
 			)
 			(justify left bottom)
@@ -6166,7 +4899,7 @@
 		(at 104.14 123.19 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.016 1.016)
 			)
 			(justify left bottom)
@@ -6177,7 +4910,7 @@
 		(at 195.58 156.21 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6188,7 +4921,7 @@
 		(at 105.41 177.8 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -6199,7 +4932,7 @@
 		(at 363.22 176.53 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -6210,7 +4943,7 @@
 		(at 335.28 137.16 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6221,7 +4954,7 @@
 		(at 228.6 177.8 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -6232,7 +4965,7 @@
 		(at 50.8 157.48 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6243,7 +4976,7 @@
 		(at 361.95 154.94 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.016 1.016)
 			)
 			(justify left bottom)
@@ -6254,7 +4987,7 @@
 		(at 81.28 135.89 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -6265,7 +4998,7 @@
 		(at 104.14 154.94 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.016 1.016)
 			)
 			(justify left bottom)
@@ -6276,7 +5009,7 @@
 		(at 191.77 114.3 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6287,7 +5020,7 @@
 		(at 303.53 156.21 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6299,7 +5032,7 @@
 		(at 312.42 190.5 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6313,7 +5046,7 @@
 		(at 59.69 190.5 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6327,7 +5060,7 @@
 		(at 276.86 139.7 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6341,7 +5074,7 @@
 		(at 154.94 156.21 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6355,7 +5088,7 @@
 		(at 276.86 114.3 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6369,7 +5102,7 @@
 		(at 27.94 139.7 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6383,7 +5116,7 @@
 		(at 59.69 177.8 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6397,7 +5130,7 @@
 		(at 167.64 114.3 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6411,7 +5144,7 @@
 		(at 185.42 177.8 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6425,7 +5158,7 @@
 		(at 312.42 176.53 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6439,7 +5172,7 @@
 		(at 278.13 156.21 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6453,7 +5186,7 @@
 		(at 27.94 114.3 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6467,7 +5200,7 @@
 		(at 27.94 156.21 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6481,7 +5214,7 @@
 		(at 167.64 139.7 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6495,7 +5228,7 @@
 		(at 185.42 190.5 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -6510,7 +5243,7 @@
 		(at 119.38 177.8 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6521,7 +5254,7 @@
 			(show_name yes)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6536,7 +5269,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6546,7 +5279,7 @@
 			(at 187.3885 193.04 0)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6562,7 +5295,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6572,7 +5305,7 @@
 			(at 62.9285 193.04 0)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6587,7 +5320,7 @@
 		(at 81.28 137.16 270)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6598,7 +5331,7 @@
 			(show_name yes)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6612,7 +5345,7 @@
 		(at 242.57 177.8 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6623,7 +5356,7 @@
 			(show_name yes)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6637,7 +5370,7 @@
 		(at 373.38 176.53 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6648,7 +5381,7 @@
 			(show_name yes)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6662,7 +5395,7 @@
 		(at 331.47 138.43 270)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6673,7 +5406,7 @@
 			(show_name yes)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6688,7 +5421,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6698,7 +5431,7 @@
 			(at 314.3885 193.04 0)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6713,7 +5446,7 @@
 		(at 208.28 137.16 270)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6724,7 +5457,7 @@
 			(show_name yes)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6739,7 +5472,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6749,7 +5482,7 @@
 			(at 62.9285 180.34 0)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6765,7 +5498,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6775,7 +5508,7 @@
 			(at 188.0235 180.34 0)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6791,7 +5524,7 @@
 		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -6801,7 +5534,7 @@
 			(at 315.0235 179.07 0)
 			(effects
 				(font
-					(face "Arial")
+					(face "Times New Roman")
 					(size 1.27 1.27)
 					(italic yes)
 					(color 162 22 34 1)
@@ -6817,7 +5550,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0fec98a1-76f4-48ad-a8e7-8b12baa1fa5f")
 		(property "Reference" "R21"
 			(at 106.68 118.11 0)
@@ -6839,7 +5572,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
 			(at 104.14 119.38 0)
 			(effects
 				(font
@@ -6849,7 +5582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+		(property "Datasheet" "~"
 			(at 104.14 119.38 0)
 			(effects
 				(font
@@ -6859,7 +5592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film"
+		(property "Description" "Resistor, small symbol"
 			(at 104.14 119.38 0)
 			(effects
 				(font
@@ -6893,6 +5626,7 @@
 			(at 104.14 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -6902,6 +5636,7 @@
 			(at 104.14 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -6911,6 +5646,7 @@
 			(at 104.14 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -6920,6 +5656,7 @@
 			(at 104.14 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -6929,6 +5666,7 @@
 			(at 104.14 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -6950,7 +5688,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 294.64 182.88 270)
 		(unit 1)
@@ -6989,7 +5726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 294.64 182.88 0)
 			(effects
 				(font
@@ -6999,7 +5736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 294.64 182.88 0)
 			(effects
 				(font
@@ -7033,6 +5770,7 @@
 			(at 294.64 182.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7042,6 +5780,7 @@
 			(at 294.64 182.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7051,6 +5790,7 @@
 			(at 294.64 182.88 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7060,6 +5800,7 @@
 			(at 294.64 182.88 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7128,7 +5869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 316.23 139.7 0)
 			(effects
 				(font
@@ -7142,6 +5883,7 @@
 			(at 316.23 139.7 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7151,6 +5893,7 @@
 			(at 316.23 139.7 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7184,6 +5927,7 @@
 			(at 211.074 106.172 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -7193,6 +5937,7 @@
 			(at 208.788 123.19 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -7202,6 +5947,7 @@
 			(at 229.87 209.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7212,6 +5958,7 @@
 			(at 229.87 309.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7222,6 +5969,7 @@
 			(at 208.026 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7231,6 +5979,7 @@
 			(at 229.87 609.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7241,6 +5990,7 @@
 			(at 229.87 709.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7251,6 +6001,7 @@
 			(at 229.87 809.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7261,6 +6012,7 @@
 			(at 229.87 909.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7271,6 +6023,7 @@
 			(at 229.87 509.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7281,6 +6034,7 @@
 			(at 229.87 609.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7291,6 +6045,7 @@
 			(at 229.87 709.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7301,6 +6056,7 @@
 			(at 229.87 809.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7311,6 +6067,7 @@
 			(at 229.87 909.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7321,6 +6078,7 @@
 			(at 208.28 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7330,6 +6088,7 @@
 			(at 208.28 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7369,7 +6128,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 177.8 110.49 0)
 		(unit 1)
@@ -7406,7 +6164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 177.8 110.49 0)
 			(effects
 				(font
@@ -7416,7 +6174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 177.8 110.49 0)
 			(effects
 				(font
@@ -7450,6 +6208,7 @@
 			(at 177.8 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7459,6 +6218,7 @@
 			(at 177.8 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7468,6 +6228,7 @@
 			(at 177.8 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7477,6 +6238,7 @@
 			(at 177.8 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7545,7 +6307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 63.5 139.7 0)
 			(effects
 				(font
@@ -7559,6 +6321,7 @@
 			(at 63.5 139.7 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7568,6 +6331,7 @@
 			(at 63.5 139.7 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7595,7 +6359,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "15b75f36-d235-4b34-8918-491f5f7ae8db")
 		(property "Reference" "C102"
 			(at 232.41 127 0)
@@ -7627,7 +6391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
+		(property "Datasheet" "~"
 			(at 229.87 128.27 0)
 			(effects
 				(font
@@ -7637,7 +6401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 229.87 128.27 0)
 			(effects
 				(font
@@ -7671,6 +6435,7 @@
 			(at 229.87 128.27 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7680,6 +6445,7 @@
 			(at 229.87 128.27 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7689,6 +6455,7 @@
 			(at 229.87 128.27 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7698,6 +6465,7 @@
 			(at 229.87 128.27 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7707,6 +6475,7 @@
 			(at 229.87 128.27 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7740,6 +6509,7 @@
 			(at 332.994 106.172 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -7749,6 +6519,7 @@
 			(at 330.708 123.19 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -7758,6 +6529,7 @@
 			(at 351.79 209.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7768,6 +6540,7 @@
 			(at 351.79 309.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7778,6 +6551,7 @@
 			(at 329.946 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7787,6 +6561,7 @@
 			(at 351.79 609.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7797,6 +6572,7 @@
 			(at 351.79 709.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7807,6 +6583,7 @@
 			(at 351.79 809.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7817,6 +6594,7 @@
 			(at 351.79 909.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7827,6 +6605,7 @@
 			(at 351.79 509.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7837,6 +6616,7 @@
 			(at 351.79 609.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7847,6 +6627,7 @@
 			(at 351.79 709.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7857,6 +6638,7 @@
 			(at 351.79 809.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7867,6 +6649,7 @@
 			(at 351.79 909.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -7877,6 +6660,7 @@
 			(at 330.2 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7886,6 +6670,7 @@
 			(at 330.2 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -7963,7 +6748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
+		(property "Datasheet" "~"
 			(at 137.16 135.89 0)
 			(effects
 				(font
@@ -7973,7 +6758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "Unpolarized capacitor"
 			(at 137.16 135.89 0)
 			(effects
 				(font
@@ -8007,6 +6792,7 @@
 			(at 137.16 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8016,6 +6802,7 @@
 			(at 137.16 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8025,6 +6812,7 @@
 			(at 137.16 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8034,6 +6822,7 @@
 			(at 137.16 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8094,7 +6883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-hcs.pdf"
+		(property "Datasheet" "~"
 			(at 80.01 185.42 0)
 			(effects
 				(font
@@ -8104,7 +6893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5 mOhms ±1% 2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense, Moisture Resistant Metal Element"
+		(property "Description" "Resistor, small symbol"
 			(at 80.01 185.42 0)
 			(effects
 				(font
@@ -8138,6 +6927,7 @@
 			(at 80.01 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8147,6 +6937,7 @@
 			(at 80.01 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8156,6 +6947,7 @@
 			(at 80.01 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8165,6 +6957,7 @@
 			(at 80.01 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8186,7 +6979,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FDMT80080DC_1")
 		(lib_id "0_transistor_fet:FDMT80080DC")
 		(at 80.01 114.3 0)
 		(unit 1)
@@ -8199,6 +6991,7 @@
 			(at 82.296 106.172 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -8208,6 +7001,7 @@
 			(at 81.534 123.19 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -8217,6 +7011,7 @@
 			(at 101.6 209.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8227,6 +7022,7 @@
 			(at 101.6 309.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8237,6 +7033,7 @@
 			(at 79.756 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8246,6 +7043,7 @@
 			(at 101.6 609.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8256,6 +7054,7 @@
 			(at 101.6 709.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8266,6 +7065,7 @@
 			(at 101.6 809.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8276,6 +7076,7 @@
 			(at 101.6 909.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8286,6 +7087,7 @@
 			(at 101.6 509.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8296,6 +7098,7 @@
 			(at 101.6 609.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8306,6 +7109,7 @@
 			(at 101.6 709.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8316,6 +7120,7 @@
 			(at 101.6 809.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8326,6 +7131,7 @@
 			(at 101.6 909.22 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8336,6 +7142,7 @@
 			(at 80.01 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8345,6 +7152,7 @@
 			(at 80.01 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8431,7 +7239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 190.5 190.5 0)
 			(effects
 				(font
@@ -8445,6 +7253,7 @@
 			(at 190.5 190.5 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8454,6 +7263,7 @@
 			(at 190.5 190.5 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8512,7 +7322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 177.8 114.3 0)
 			(effects
 				(font
@@ -8522,7 +7332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 177.8 114.3 0)
 			(effects
 				(font
@@ -8556,6 +7366,7 @@
 			(at 177.8 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8565,6 +7376,7 @@
 			(at 177.8 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8574,6 +7386,7 @@
 			(at 177.8 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8583,6 +7396,7 @@
 			(at 177.8 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8604,7 +7418,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FDMT80080DC_2")
 		(lib_id "0_transistor_fet:FDMT80080DC")
 		(at 80.01 157.48 0)
 		(unit 1)
@@ -8617,6 +7430,7 @@
 			(at 83.058 148.844 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -8626,6 +7440,7 @@
 			(at 81.534 166.37 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -8635,6 +7450,7 @@
 			(at 101.6 252.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8645,6 +7461,7 @@
 			(at 101.6 352.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8655,6 +7472,7 @@
 			(at 79.756 187.96 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8664,6 +7482,7 @@
 			(at 101.6 652.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8674,6 +7493,7 @@
 			(at 101.6 752.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8684,6 +7504,7 @@
 			(at 101.6 852.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8694,6 +7515,7 @@
 			(at 101.6 952.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8704,6 +7526,7 @@
 			(at 101.6 552.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8714,6 +7537,7 @@
 			(at 101.6 652.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8724,6 +7548,7 @@
 			(at 101.6 752.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8734,6 +7559,7 @@
 			(at 101.6 852.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8744,6 +7570,7 @@
 			(at 101.6 952.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -8754,6 +7581,7 @@
 			(at 80.01 157.48 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8763,6 +7591,7 @@
 			(at 80.01 157.48 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8839,7 +7668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 287.02 156.21 0)
 			(effects
 				(font
@@ -8849,7 +7678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 287.02 156.21 0)
 			(effects
 				(font
@@ -8883,6 +7712,7 @@
 			(at 287.02 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8892,6 +7722,7 @@
 			(at 287.02 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8901,6 +7732,7 @@
 			(at 287.02 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8910,6 +7742,7 @@
 			(at 287.02 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8932,7 +7765,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 199.39 0)
+		(at 35.56 203.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8940,7 +7773,7 @@
 		(dnp no)
 		(uuid "49becba7-ceb6-404a-91ff-d4e54559c493")
 		(property "Reference" "#PWR045"
-			(at 35.56 205.74 0)
+			(at 35.56 209.55 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8950,6 +7783,15 @@
 			)
 		)
 		(property "Value" "GND"
+			(at 35.56 207.01 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
 			(at 35.56 203.2 0)
 			(effects
 				(font
@@ -8959,18 +7801,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 35.56 199.39 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Datasheet" ""
-			(at 35.56 199.39 0)
+			(at 35.56 203.2 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8979,8 +7811,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 35.56 199.39 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 203.2 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9008,7 +7840,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4fcc03b0-5f3d-4a66-bb0d-3b5d011ce3f4")
 		(property "Reference" "C99"
 			(at 106.68 149.86 0)
@@ -9040,7 +7872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
+		(property "Datasheet" "~"
 			(at 104.14 151.13 0)
 			(effects
 				(font
@@ -9050,7 +7882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 104.14 151.13 0)
 			(effects
 				(font
@@ -9084,6 +7916,7 @@
 			(at 104.14 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9093,6 +7926,7 @@
 			(at 104.14 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9102,6 +7936,7 @@
 			(at 104.14 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9111,6 +7946,7 @@
 			(at 104.14 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9120,6 +7956,7 @@
 			(at 104.14 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9187,7 +8024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Pad"
 			(at 364.49 138.43 0)
 			(effects
 				(font
@@ -9201,6 +8038,7 @@
 			(at 364.49 138.43 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9210,6 +8048,7 @@
 			(at 364.49 138.43 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9275,7 +8114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 190.5 177.8 0)
 			(effects
 				(font
@@ -9289,6 +8128,7 @@
 			(at 190.5 177.8 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9298,6 +8138,7 @@
 			(at 190.5 177.8 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9319,7 +8160,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 35.56 110.49 0)
 		(unit 1)
@@ -9356,7 +8196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 35.56 110.49 0)
 			(effects
 				(font
@@ -9366,7 +8206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 35.56 110.49 0)
 			(effects
 				(font
@@ -9400,6 +8240,7 @@
 			(at 35.56 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9409,6 +8250,7 @@
 			(at 35.56 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9418,6 +8260,7 @@
 			(at 35.56 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9427,6 +8270,7 @@
 			(at 35.56 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9454,7 +8298,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "63f73bb3-7ef0-47a7-b9ef-19fb23c4154e")
 		(property "Reference" "C98"
 			(at 106.68 125.73 0)
@@ -9486,7 +8330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
+		(property "Datasheet" "~"
 			(at 104.14 127 0)
 			(effects
 				(font
@@ -9496,7 +8340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 104.14 127 0)
 			(effects
 				(font
@@ -9530,6 +8374,7 @@
 			(at 104.14 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9539,6 +8384,7 @@
 			(at 104.14 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9548,6 +8394,7 @@
 			(at 104.14 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9557,6 +8404,7 @@
 			(at 104.14 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9566,6 +8414,7 @@
 			(at 104.14 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9626,7 +8475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-hcs.pdf"
+		(property "Datasheet" "~"
 			(at 330.2 185.42 0)
 			(effects
 				(font
@@ -9636,7 +8485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5 mOhms ±1% 2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense, Moisture Resistant Metal Element"
+		(property "Description" "Resistor, small symbol"
 			(at 330.2 185.42 0)
 			(effects
 				(font
@@ -9670,6 +8519,7 @@
 			(at 330.2 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9679,6 +8529,7 @@
 			(at 330.2 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9688,6 +8539,7 @@
 			(at 330.2 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9697,6 +8549,7 @@
 			(at 330.2 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9754,7 +8607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 35.56 114.3 0)
 			(effects
 				(font
@@ -9764,7 +8617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 35.56 114.3 0)
 			(effects
 				(font
@@ -9798,6 +8651,7 @@
 			(at 35.56 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9807,6 +8661,7 @@
 			(at 35.56 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9816,6 +8671,7 @@
 			(at 35.56 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9825,6 +8681,7 @@
 			(at 35.56 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9846,7 +8703,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 287.02 110.49 0)
 		(unit 1)
@@ -9883,7 +8739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 287.02 110.49 0)
 			(effects
 				(font
@@ -9893,7 +8749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 287.02 110.49 0)
 			(effects
 				(font
@@ -9927,6 +8783,7 @@
 			(at 287.02 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9936,6 +8793,7 @@
 			(at 287.02 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9945,6 +8803,7 @@
 			(at 287.02 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9954,6 +8813,7 @@
 			(at 287.02 110.49 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10022,7 +8882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 320.04 190.5 0)
 			(effects
 				(font
@@ -10036,6 +8896,7 @@
 			(at 320.04 190.5 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10045,6 +8906,7 @@
 			(at 320.04 190.5 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10104,7 +8966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO"
+		(property "Datasheet" "~"
 			(at 119.38 135.89 0)
 			(effects
 				(font
@@ -10114,7 +8976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 119.38 135.89 0)
 			(effects
 				(font
@@ -10148,6 +9010,7 @@
 			(at 119.38 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10157,6 +9020,7 @@
 			(at 119.38 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10166,6 +9030,7 @@
 			(at 119.38 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10175,6 +9040,7 @@
 			(at 119.38 135.89 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10233,7 +9099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 36.83 156.21 0)
 			(effects
 				(font
@@ -10243,7 +9109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 36.83 156.21 0)
 			(effects
 				(font
@@ -10277,6 +9143,7 @@
 			(at 36.83 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10286,6 +9153,7 @@
 			(at 36.83 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10295,6 +9163,7 @@
 			(at 36.83 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10304,6 +9173,7 @@
 			(at 36.83 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10331,7 +9201,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "96df38ca-3c57-4af9-9eb4-1b8786d34e6d")
 		(property "Reference" "R31"
 			(at 364.49 118.11 0)
@@ -10353,7 +9223,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
 			(at 361.95 119.38 0)
 			(effects
 				(font
@@ -10363,7 +9233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+		(property "Datasheet" "~"
 			(at 361.95 119.38 0)
 			(effects
 				(font
@@ -10373,7 +9243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film"
+		(property "Description" "Resistor, small symbol"
 			(at 361.95 119.38 0)
 			(effects
 				(font
@@ -10407,6 +9277,7 @@
 			(at 361.95 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10416,6 +9287,7 @@
 			(at 361.95 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10425,6 +9297,7 @@
 			(at 361.95 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10434,6 +9307,7 @@
 			(at 361.95 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10443,6 +9317,7 @@
 			(at 361.95 119.38 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10464,7 +9339,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 163.83 152.4 0)
 		(unit 1)
@@ -10501,7 +9375,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 163.83 152.4 0)
 			(effects
 				(font
@@ -10511,7 +9385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 163.83 152.4 0)
 			(effects
 				(font
@@ -10545,6 +9419,7 @@
 			(at 163.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10554,6 +9429,7 @@
 			(at 163.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10563,6 +9439,7 @@
 			(at 163.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10572,6 +9449,7 @@
 			(at 163.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10630,7 +9508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 163.83 156.21 0)
 			(effects
 				(font
@@ -10640,7 +9518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 163.83 156.21 0)
 			(effects
 				(font
@@ -10674,6 +9552,7 @@
 			(at 163.83 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10683,6 +9562,7 @@
 			(at 163.83 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10692,6 +9572,7 @@
 			(at 163.83 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10701,6 +9582,7 @@
 			(at 163.83 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10760,7 +9642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
+		(property "Datasheet" "~"
 			(at 391.16 144.78 0)
 			(effects
 				(font
@@ -10770,7 +9652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "Unpolarized capacitor"
 			(at 391.16 144.78 0)
 			(effects
 				(font
@@ -10804,6 +9686,7 @@
 			(at 391.16 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10813,6 +9696,7 @@
 			(at 391.16 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10822,6 +9706,7 @@
 			(at 391.16 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10831,6 +9716,7 @@
 			(at 391.16 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10898,7 +9784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 66.04 177.8 0)
 			(effects
 				(font
@@ -10912,6 +9798,7 @@
 			(at 66.04 177.8 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10921,6 +9808,7 @@
 			(at 66.04 177.8 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10948,7 +9836,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "aba30b94-ff1d-461f-91fa-bc6d4b8e8ed2")
 		(property "Reference" "C107"
 			(at 364.49 149.86 0)
@@ -10980,7 +9868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
+		(property "Datasheet" "~"
 			(at 361.95 151.13 0)
 			(effects
 				(font
@@ -10990,7 +9878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 361.95 151.13 0)
 			(effects
 				(font
@@ -11024,6 +9912,7 @@
 			(at 361.95 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11033,6 +9922,7 @@
 			(at 361.95 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11042,6 +9932,7 @@
 			(at 361.95 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11051,6 +9942,7 @@
 			(at 361.95 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11060,6 +9952,7 @@
 			(at 361.95 151.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11087,7 +9980,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b0ffa6f6-102b-4c81-92aa-72fc411c7ddb")
 		(property "Reference" "R32"
 			(at 364.49 157.48 0)
@@ -11109,7 +10002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
 			(at 361.95 158.75 0)
 			(effects
 				(font
@@ -11119,7 +10012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+		(property "Datasheet" "~"
 			(at 361.95 158.75 0)
 			(effects
 				(font
@@ -11129,7 +10022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film"
+		(property "Description" "Resistor, small symbol"
 			(at 361.95 158.75 0)
 			(effects
 				(font
@@ -11163,6 +10056,7 @@
 			(at 361.95 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11172,6 +10066,7 @@
 			(at 361.95 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11181,6 +10076,7 @@
 			(at 361.95 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11190,6 +10086,7 @@
 			(at 361.95 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11199,6 +10096,7 @@
 			(at 361.95 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11226,7 +10124,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b67188db-deac-44d6-a8ff-2b103e46fb73")
 		(property "Reference" "C103"
 			(at 232.41 151.13 0)
@@ -11258,7 +10156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
+		(property "Datasheet" "~"
 			(at 229.87 152.4 0)
 			(effects
 				(font
@@ -11268,7 +10166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 229.87 152.4 0)
 			(effects
 				(font
@@ -11302,6 +10200,7 @@
 			(at 229.87 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11311,6 +10210,7 @@
 			(at 229.87 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11320,6 +10220,7 @@
 			(at 229.87 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11329,6 +10230,7 @@
 			(at 229.87 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11338,6 +10240,7 @@
 			(at 229.87 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11406,7 +10309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 74.93 190.5 0)
 			(effects
 				(font
@@ -11420,6 +10323,7 @@
 			(at 74.93 190.5 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11429,6 +10333,7 @@
 			(at 74.93 190.5 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11496,7 +10401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Pad"
 			(at 106.68 138.43 0)
 			(effects
 				(font
@@ -11510,6 +10415,7 @@
 			(at 106.68 138.43 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11519,6 +10425,7 @@
 			(at 106.68 138.43 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11583,7 +10490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 191.77 139.7 0)
 			(effects
 				(font
@@ -11597,6 +10504,7 @@
 			(at 191.77 139.7 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11606,6 +10514,7 @@
 			(at 191.77 139.7 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11639,6 +10548,7 @@
 			(at 211.328 148.082 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -11648,6 +10558,7 @@
 			(at 209.042 165.1 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -11657,6 +10568,7 @@
 			(at 229.87 251.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11667,6 +10579,7 @@
 			(at 229.87 351.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11677,6 +10590,7 @@
 			(at 208.026 186.69 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11686,6 +10600,7 @@
 			(at 229.87 651.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11696,6 +10611,7 @@
 			(at 229.87 751.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11706,6 +10622,7 @@
 			(at 229.87 851.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11716,6 +10633,7 @@
 			(at 229.87 951.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11726,6 +10644,7 @@
 			(at 229.87 551.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11736,6 +10655,7 @@
 			(at 229.87 651.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11746,6 +10666,7 @@
 			(at 229.87 751.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11756,6 +10677,7 @@
 			(at 229.87 851.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11766,6 +10688,7 @@
 			(at 229.87 951.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -11776,6 +10699,7 @@
 			(at 208.28 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11785,6 +10709,7 @@
 			(at 208.28 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11830,7 +10755,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c0877f52-8385-4f3e-b00f-597c8d1b2046")
 		(property "Reference" "R26"
 			(at 232.41 119.38 0)
@@ -11852,7 +10777,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
 			(at 229.87 120.65 0)
 			(effects
 				(font
@@ -11862,7 +10787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+		(property "Datasheet" "~"
 			(at 229.87 120.65 0)
 			(effects
 				(font
@@ -11872,7 +10797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film"
+		(property "Description" "Resistor, small symbol"
 			(at 229.87 120.65 0)
 			(effects
 				(font
@@ -11906,6 +10831,7 @@
 			(at 229.87 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11915,6 +10841,7 @@
 			(at 229.87 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11924,6 +10851,7 @@
 			(at 229.87 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11933,6 +10861,7 @@
 			(at 229.87 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11942,6 +10871,7 @@
 			(at 229.87 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12010,7 +10940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Net tie, 2 pins"
 			(at 320.04 176.53 0)
 			(effects
 				(font
@@ -12024,6 +10954,7 @@
 			(at 320.04 176.53 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12033,6 +10964,7 @@
 			(at 320.04 176.53 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12060,7 +10992,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ca835fb3-1b31-496b-a3bb-f352eb1ea2de")
 		(property "Reference" "C106"
 			(at 364.49 125.73 0)
@@ -12092,7 +11024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
+		(property "Datasheet" "~"
 			(at 361.95 127 0)
 			(effects
 				(font
@@ -12102,7 +11034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 361.95 127 0)
 			(effects
 				(font
@@ -12136,6 +11068,7 @@
 			(at 361.95 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12145,6 +11078,7 @@
 			(at 361.95 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12154,6 +11088,7 @@
 			(at 361.95 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12163,6 +11098,7 @@
 			(at 361.95 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12172,6 +11108,7 @@
 			(at 361.95 127 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12232,7 +11169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-hcs.pdf"
+		(property "Datasheet" "~"
 			(at 208.28 185.42 0)
 			(effects
 				(font
@@ -12242,7 +11179,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.5 mOhms ±1% 2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense, Moisture Resistant Metal Element"
+		(property "Description" "Resistor, small symbol"
 			(at 208.28 185.42 0)
 			(effects
 				(font
@@ -12276,6 +11213,7 @@
 			(at 208.28 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12285,6 +11223,7 @@
 			(at 208.28 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12294,6 +11233,7 @@
 			(at 208.28 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12303,6 +11243,7 @@
 			(at 208.28 185.42 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12325,7 +11266,7 @@
 	)
 	(symbol
 		(lib_id "0_power_symbols:+VBAT")
-		(at 35.56 80.01 0)
+		(at 35.56 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12334,7 +11275,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce0bc7dc-04f3-4ed8-a3c3-35ae5e4d2e47")
 		(property "Reference" "#PWR044"
-			(at 35.56 83.82 0)
+			(at 35.56 92.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12344,7 +11285,7 @@
 			)
 		)
 		(property "Value" "+VBAT"
-			(at 35.56 74.93 0)
+			(at 35.56 83.82 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12353,7 +11294,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 80.01 0)
+			(at 35.56 88.9 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12363,7 +11304,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 80.01 0)
+			(at 35.56 88.9 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12372,8 +11313,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 35.56 80.01 0)
+		(property "Description" "Power symbol creates a global label with name \"+VBAT\""
+			(at 35.56 88.9 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12395,7 +11336,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 41.91 184.15 270)
 		(unit 1)
@@ -12434,7 +11374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 41.91 184.15 0)
 			(effects
 				(font
@@ -12444,7 +11384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 41.91 184.15 0)
 			(effects
 				(font
@@ -12478,6 +11418,7 @@
 			(at 41.91 184.15 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12487,6 +11428,7 @@
 			(at 41.91 184.15 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12496,6 +11438,7 @@
 			(at 41.91 184.15 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12505,6 +11448,7 @@
 			(at 41.91 184.15 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12532,7 +11476,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d5c1d79f-c4f4-4172-8e68-f539ea134cf0")
 		(property "Reference" "R27"
 			(at 232.41 158.75 0)
@@ -12554,7 +11498,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
 			(at 229.87 160.02 0)
 			(effects
 				(font
@@ -12564,7 +11508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+		(property "Datasheet" "~"
 			(at 229.87 160.02 0)
 			(effects
 				(font
@@ -12574,7 +11518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film"
+		(property "Description" "Resistor, small symbol"
 			(at 229.87 160.02 0)
 			(effects
 				(font
@@ -12608,6 +11552,7 @@
 			(at 229.87 160.02 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12617,6 +11562,7 @@
 			(at 229.87 160.02 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12626,6 +11572,7 @@
 			(at 229.87 160.02 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12635,6 +11582,7 @@
 			(at 229.87 160.02 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12644,6 +11592,7 @@
 			(at 229.87 160.02 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12671,7 +11620,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d7fe585d-3fd7-44bf-a6bc-8c0f8efdd03b")
 		(property "Reference" "R22"
 			(at 106.68 157.48 0)
@@ -12693,7 +11642,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
 			(at 104.14 158.75 0)
 			(effects
 				(font
@@ -12703,7 +11652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
+		(property "Datasheet" "~"
 			(at 104.14 158.75 0)
 			(effects
 				(font
@@ -12713,7 +11662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film"
+		(property "Description" "Resistor, small symbol"
 			(at 104.14 158.75 0)
 			(effects
 				(font
@@ -12747,6 +11696,7 @@
 			(at 104.14 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12756,6 +11706,7 @@
 			(at 104.14 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12765,6 +11716,7 @@
 			(at 104.14 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12774,6 +11726,7 @@
 			(at 104.14 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12783,6 +11736,7 @@
 			(at 104.14 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12842,7 +11796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO"
+		(property "Datasheet" "~"
 			(at 242.57 146.05 0)
 			(effects
 				(font
@@ -12852,7 +11806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 242.57 146.05 0)
 			(effects
 				(font
@@ -12886,6 +11840,7 @@
 			(at 242.57 146.05 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12895,6 +11850,7 @@
 			(at 242.57 146.05 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12904,6 +11860,7 @@
 			(at 242.57 146.05 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12913,6 +11870,7 @@
 			(at 242.57 146.05 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12972,7 +11930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
+		(property "Datasheet" "~"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -12982,7 +11940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4.7 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "Unpolarized capacitor"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -13016,6 +11974,7 @@
 			(at 255.27 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13025,6 +11984,7 @@
 			(at 255.27 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13034,6 +11994,7 @@
 			(at 255.27 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13043,6 +12004,7 @@
 			(at 255.27 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13064,7 +12026,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 287.02 152.4 0)
 		(unit 1)
@@ -13101,7 +12062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 287.02 152.4 0)
 			(effects
 				(font
@@ -13111,7 +12072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 287.02 152.4 0)
 			(effects
 				(font
@@ -13145,6 +12106,7 @@
 			(at 287.02 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13154,6 +12116,7 @@
 			(at 287.02 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13163,6 +12126,7 @@
 			(at 287.02 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13172,6 +12136,7 @@
 			(at 287.02 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13205,6 +12170,7 @@
 			(at 332.994 148.082 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -13214,6 +12180,7 @@
 			(at 330.708 165.1 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -13223,6 +12190,7 @@
 			(at 351.79 251.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13233,6 +12201,7 @@
 			(at 351.79 351.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13243,6 +12212,7 @@
 			(at 329.946 186.69 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13252,6 +12222,7 @@
 			(at 351.79 651.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13262,6 +12233,7 @@
 			(at 351.79 751.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13272,6 +12244,7 @@
 			(at 351.79 851.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13282,6 +12255,7 @@
 			(at 351.79 951.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13292,6 +12266,7 @@
 			(at 351.79 551.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13302,6 +12277,7 @@
 			(at 351.79 651.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13312,6 +12288,7 @@
 			(at 351.79 751.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13322,6 +12299,7 @@
 			(at 351.79 851.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13332,6 +12310,7 @@
 			(at 351.79 951.13 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify left top)
@@ -13342,6 +12321,7 @@
 			(at 330.2 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13351,6 +12331,7 @@
 			(at 330.2 156.21 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13390,7 +12371,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 36.83 152.4 0)
 		(unit 1)
@@ -13400,7 +12380,7 @@
 		(dnp no)
 		(uuid "e5ce4069-095b-4733-b0a4-7517644ba7ae")
 		(property "Reference" "D5"
-			(at 36.83 146.05 0)
+			(at 36.83 147.32 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13409,7 +12389,7 @@
 			)
 		)
 		(property "Value" "BAT41KFILM"
-			(at 36.83 148.59 0)
+			(at 37.338 149.352 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13427,7 +12407,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 36.83 152.4 0)
 			(effects
 				(font
@@ -13437,7 +12417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 36.83 152.4 0)
 			(effects
 				(font
@@ -13471,6 +12451,7 @@
 			(at 36.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13480,6 +12461,7 @@
 			(at 36.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13489,6 +12471,7 @@
 			(at 36.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13498,6 +12481,7 @@
 			(at 36.83 152.4 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13519,7 +12503,6 @@
 		)
 	)
 	(symbol
-		(lib_name "BAT41KFILM_1")
 		(lib_id "0_diode:BAT41KFILM")
 		(at 168.91 184.15 270)
 		(unit 1)
@@ -13558,7 +12541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf"
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/389/bat41-1848934.pdf"
 			(at 168.91 184.15 0)
 			(effects
 				(font
@@ -13568,7 +12551,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode 100 V 200mA Surface Mount SOD-523"
+		(property "Description" "100V 1A Schottky Diode, SOD-523-2"
 			(at 168.91 184.15 0)
 			(effects
 				(font
@@ -13602,6 +12585,7 @@
 			(at 168.91 184.15 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13611,6 +12595,7 @@
 			(at 168.91 184.15 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13620,6 +12605,7 @@
 			(at 168.91 184.15 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13629,6 +12615,7 @@
 			(at 168.91 184.15 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13688,7 +12675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO"
+		(property "Datasheet" "~"
 			(at 373.38 144.78 0)
 			(effects
 				(font
@@ -13698,7 +12685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 373.38 144.78 0)
 			(effects
 				(font
@@ -13732,6 +12719,7 @@
 			(at 373.38 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13741,6 +12729,7 @@
 			(at 373.38 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13750,6 +12739,7 @@
 			(at 373.38 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13759,6 +12749,7 @@
 			(at 373.38 144.78 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13817,7 +12808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 287.02 114.3 0)
 			(effects
 				(font
@@ -13827,7 +12818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 287.02 114.3 0)
 			(effects
 				(font
@@ -13861,6 +12852,7 @@
 			(at 287.02 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13870,6 +12862,7 @@
 			(at 287.02 114.3 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13879,6 +12872,7 @@
 			(at 287.02 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13888,6 +12882,7 @@
 			(at 287.02 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13955,7 +12950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Pad"
 			(at 232.41 139.7 0)
 			(effects
 				(font
@@ -13969,6 +12964,7 @@
 			(at 232.41 139.7 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13978,6 +12974,7 @@
 			(at 232.41 139.7 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)

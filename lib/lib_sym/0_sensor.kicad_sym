@@ -573,24 +573,6 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 0 -10.16 0)
-				(length 7.62)
-				(name "CS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
 				(at 0 -12.7 0)
 				(length 7.62)
@@ -699,24 +681,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 40.64 -7.62 180)
-				(length 7.62)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at 40.64 -10.16 180)
 				(length 7.62)
@@ -735,24 +699,6 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 40.64 -12.7 180)
-				(length 7.62)
-				(name "SCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
 				(at 40.64 -15.24 180)
 				(length 7.62)
@@ -764,24 +710,6 @@
 					)
 				)
 				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 40.64 -17.78 180)
-				(length 7.62)
-				(name "TEST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -914,6 +842,78 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(pin input line
+				(at 0 -10.16 0)
+				(length 7.62)
+				(name "CS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 40.64 -7.62 180)
+				(length 7.62)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 40.64 -12.7 180)
+				(length 7.62)
+				(name "SCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 40.64 -17.78 180)
+				(length 7.62)
+				(name "TEST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)

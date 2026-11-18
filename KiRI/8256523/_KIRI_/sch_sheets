@@ -1,0 +1,20 @@
+ethrc_motor_controller|ethrc_motor_controller.kicad_sch||ethrc_motor_controller|ethrc_motor_controller
+Block Diagram|Block Diagram.kicad_sch||Block Diagram|ethrc_motor_controller-Block Diagram
+Power - Sequencing|Power - Sequencing.kicad_sch||Power - Sequencing|ethrc_motor_controller-Power - Sequencing
+Project Architecture|Project Architecture.kicad_sch||Project Architecture|ethrc_motor_controller-Project Architecture
+Comms - EtherCat|Comms - EtherCat.kicad_sch||Comms - EtherCat|ethrc_motor_controller-Project Architecture-Comms - EtherCat
+Comms - FD-CAN|Comms - FD-CAN.kicad_sch||Comms - FD-CAN|ethrc_motor_controller-Project Architecture-Comms - FD-CAN
+Fan Control|Fan Control.kicad_sch||Fan Control|ethrc_motor_controller-Project Architecture-Fan Control
+MCU - IOs|MCU - IOs.kicad_sch||MCU - IOs|ethrc_motor_controller-Project Architecture-MCU - IOs
+MCU - Power|MCU - Power.kicad_sch||MCU - Power|ethrc_motor_controller-Project Architecture-MCU - Power
+Misc - Board Version DAC|Misc - Board Version DAC.kicad_sch||Misc - Board Version, DAC|ethrc_motor_controller-Project Architecture-Misc - Board Version, DAC
+Misc - Holes Fiducials|Misc - Holes Fiducials.kicad_sch||Misc - Holes, Fiducials|ethrc_motor_controller-Project Architecture-Misc - Holes, Fiducials
+Motor Control - Top Level|Motor Control - Top Level.kicad_sch||Motor Control - Top Level|ethrc_motor_controller-Project Architecture-Motor Control - Top Level
+Motor Control - Inverter|Motor Control - Inverter.kicad_sch||Motor Control - Inverter|ethrc_motor_controller-Project Architecture-Motor Control - Top Level-Motor Control - Inverter
+Power - Connectors|Power - Connectors.kicad_sch||Power - Connectors|ethrc_motor_controller-Project Architecture-Power - Connectors
+Power - Generation|Power - Generation.kicad_sch||Power - Generation|ethrc_motor_controller-Project Architecture-Power - Generation
+Sensing - Battery|Sensing - Battery.kicad_sch||Sensing - Battery|ethrc_motor_controller-Project Architecture-Sensing - Battery
+Sensing - Position|Sensing - Position.kicad_sch||Sensing - Position|ethrc_motor_controller-Project Architecture-Sensing - Position
+Sensing - Temperature|Sensing - Temperature.kicad_sch||Sensing - Temperature|ethrc_motor_controller-Project Architecture-Sensing - Temperature
+User - LED Indicators|User - LED Indicators.kicad_sch||User - LED Indicators|ethrc_motor_controller-Project Architecture-User - LED Indicators
+Revision History|Revision History.kicad_sch||Revision History|ethrc_motor_controller-Revision History

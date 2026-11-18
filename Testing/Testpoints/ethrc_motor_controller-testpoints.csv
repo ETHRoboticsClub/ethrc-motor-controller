@@ -38,10 +38,6 @@ TP38,,,-113.5000,125.0000,top,SMT,SENSE_VBAT,TestPoint_Pad_D0.5mm
 TP39,,,-113.5000,125.0000,top,SMT,+VBAT,TestPoint_Pad_D0.5mm
 TP40,,,-113.5000,125.0000,top,SMT,+VBAT,TestPoint_Pad_D0.5mm
 TP41,,,-113.5000,125.0000,top,SMT,+VBAT,TestPoint_Pad_D0.5mm
-TP42,,,-113.5000,125.0000,top,SMT,F_VIN_12V,TestPoint_Pad_D0.5mm
-TP43,,,-113.5000,125.0000,top,SMT,F_VIN_5V,TestPoint_Pad_D0.5mm
-TP44,,,-113.5000,125.0000,top,SMT,F_VIN_3V3,TestPoint_Pad_D0.5mm
-TP45,,,-113.5000,125.0000,top,SMT,+12V,TestPoint_Pad_D0.5mm
 TP46,,,-113.5000,125.0000,top,SMT,+5V,TestPoint_Pad_D0.5mm
 TP47,,,-113.5000,125.0000,top,SMT,+5V,TestPoint_Pad_D0.5mm
 TP48,,,-113.5000,125.0000,top,SMT,+3V3,TestPoint_Pad_D0.5mm

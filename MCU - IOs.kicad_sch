@@ -2513,22 +2513,20 @@
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
-			(property "Reference" "J15"
-				(at -6.35 -1.2701 0)
+			(property "Reference" "J"
+				(at 2.54 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
-				(at -6.35 1.2699 0)
+				(at 2.54 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
@@ -2580,24 +2578,6 @@
 				(pin power_in line
 					(at -2.54 10.16 270)
 					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -10.16 90)
-					(length 2.54)
 					(name "VCC"
 						(effects
 							(font
@@ -2613,8 +2593,26 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin open_collector line
-					(at 7.62 2.54 180)
+					(at 7.62 5.08 180)
 					(length 2.54)
 					(name "~{RESET}"
 						(effects
@@ -3087,21 +3085,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -3204,8 +3200,12 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3305,8 +3305,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+3V3"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3326,8 +3325,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3403,8 +3406,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3423,165 +3425,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(arc
-		(start 153.67 148.595)
-		(mid 152.7738 148.2227)
-		(end 152.4 147.325)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 005e67ed-05cc-4a1e-a414-c1d9c6929f33)
-	)
-	(arc
-		(start 152.4 170.18)
-		(mid 152.2087 170.6251)
-		(end 151.765 170.815)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 01720618-4555-4b96-9b0d-27f80d426bd2)
-	)
-	(arc
-		(start 152.405 119.375)
-		(mid 152.7784 118.4784)
-		(end 153.675 118.105)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 0aa53914-be2e-4889-8097-99daa3e668ec)
-	)
-	(arc
-		(start 152.405 122.55)
-		(mid 152.219 122.999)
-		(end 151.77 123.185)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 172cd39b-5b4e-4cf2-868f-acea4c3828c7)
-	)
-	(arc
-		(start 152.405 139.7)
-		(mid 152.7773 138.8038)
-		(end 153.675 138.43)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 1eaad4ee-d5d1-44da-a3b9-e3d7790a4db3)
-	)
-	(arc
-		(start 151.765 170.815)
-		(mid 152.2143 171.0021)
-		(end 152.4 171.45)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 27eeaaef-311d-4c52-a43b-7fef21f7b0f8)
-	)
-	(arc
-		(start 152.405 142.875)
-		(mid 152.2179 143.3243)
-		(end 151.77 143.51)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4a092b62-7272-4779-8dc4-b8de06f12893)
-	)
-	(arc
-		(start 151.77 143.51)
-		(mid 152.2172 143.6963)
-		(end 152.405 144.145)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 4e92e518-d0b4-40e0-bad6-e46b25935e93)
-	)
-	(arc
-		(start 153.665 175.9)
-		(mid 152.7667 175.5269)
-		(end 152.395 174.63)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 73800a9c-2ec1-4ef9-be6e-1edbc5d0a202)
-	)
-	(arc
-		(start 152.4 167.005)
-		(mid 152.7678 166.1043)
-		(end 153.67 165.735)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 843a5108-11f3-4031-91d5-197d82273ac7)
-	)
-	(arc
-		(start 151.77 123.185)
-		(mid 152.219 123.371)
-		(end 152.405 123.82)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 91a7a1a6-74ce-4c93-8dc7-2c6fd6d19021)
-	)
-	(arc
-		(start 153.67 128.27)
-		(mid 152.772 127.898)
-		(end 152.4 127)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9f2f7365-8d0e-4921-82e4-96875116e3a6)
-	)
 	(rectangle
-		(start 162.56 137.16)
-		(end 187.96 158.75)
+		(start 161.29 153.67)
+		(end 186.69 176.53)
 		(stroke
 			(width 0)
 			(type dot)
@@ -3597,7 +3443,7 @@
 		(at 265.43 254 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3611,6 +3457,7 @@
 		(at 109.22 105.41 0)
 		(effects
 			(font
+				(face "Times New Roman")
 				(size 0.508 0.508)
 				(italic yes)
 				(color 0 0 0 1)
@@ -3623,7 +3470,7 @@
 		(at 265.43 250.19 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -3638,7 +3485,7 @@
 		(at 265.43 256.54 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3649,8 +3496,8 @@
 	)
 	(text_box "DESIGN NOTE:\nIdeally TVS should be connected to chassis but makes it harder to route."
 		(exclude_from_sim no)
-		(at 152.4 227.33 0)
-		(size -19.05 12.7)
+		(at 40.64 240.03 0)
+		(size 19.05 12.7)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
 			(width 0.8)
@@ -3662,7 +3509,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -3670,9 +3517,33 @@
 		)
 		(uuid "07b3d7dd-f15c-49a8-bc84-559e82942d3a")
 	)
+	(text_box "EtherCAT Slave Controller"
+		(exclude_from_sim no)
+		(at 349.25 104.775 0)
+		(size 50.8 6.985)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e405c7b-ad51-4819-8ee3-ede95f9edda3")
+	)
 	(text_box "FD-CAN"
 		(exclude_from_sim no)
-		(at 349.25 185.42 0)
+		(at 349.25 161.29 0)
 		(size 45.72 6.985)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3696,7 +3567,7 @@
 	)
 	(text_box "LEDs"
 		(exclude_from_sim no)
-		(at 349.25 170.18 0)
+		(at 349.25 146.05 0)
 		(size 45.72 6.985)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3720,7 +3591,7 @@
 	)
 	(text_box "SWD (Debug) Port"
 		(exclude_from_sim no)
-		(at 135.89 226.06 0)
+		(at 19.05 229.235 0)
 		(size 86.36 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3768,7 +3639,7 @@
 	)
 	(text_box "Fan"
 		(exclude_from_sim no)
-		(at 349.25 200.66 0)
+		(at 349.25 176.53 0)
 		(size 45.72 6.985)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3792,7 +3663,7 @@
 	)
 	(text_box "Sense"
 		(exclude_from_sim no)
-		(at 349.25 213.36 0)
+		(at 349.25 189.23 0)
 		(size 45.72 6.985)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3816,7 +3687,7 @@
 	)
 	(text_box "Position Sense\n"
 		(exclude_from_sim no)
-		(at 238.76 173.355 0)
+		(at 236.22 174.625 0)
 		(size 80.01 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3840,7 +3711,7 @@
 	)
 	(text_box "LAYOUT NOTE:\nShunt amplifier output low-pass filters. Place near MCU ADC pins."
 		(exclude_from_sim no)
-		(at 191.77 149.86 0)
+		(at 190.5 166.37 0)
 		(size 26.67 11.43)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -3853,7 +3724,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.4)
 				(bold yes)
@@ -3865,7 +3736,7 @@
 	)
 	(text_box "Board Version Selection"
 		(exclude_from_sim no)
-		(at 237.49 200.025 0)
+		(at 233.68 189.865 0)
 		(size 82.55 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3910,55 +3781,9 @@
 		)
 		(uuid "524c500e-48b2-4d74-9c30-5c34bf6c2558")
 	)
-	(text_box "RS-422"
-		(exclude_from_sim no)
-		(at 349.25 154.94 0)
-		(size 45.72 6.985)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "59672896-44cd-4683-beeb-bb7884993aac")
-	)
-	(text_box "Half bridge PWMs"
-		(exclude_from_sim no)
-		(at 138.43 120.645 0)
-		(size 13.335 5.715)
-		(margins 0.9524 0.9524 0.9524 0.9524)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right top)
-		)
-		(uuid "64ff06c6-0785-430d-be33-3f2ca1d5b00d")
-	)
 	(text_box "User LEDs"
 		(exclude_from_sim no)
-		(at 234.95 229.235 0)
+		(at 231.14 219.075 0)
 		(size 86.36 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -3982,7 +3807,7 @@
 	)
 	(text_box "5Mbps FD-CAN Bus"
 		(exclude_from_sim no)
-		(at 237.49 52.07 0)
+		(at 236.22 68.58 0)
 		(size 80.01 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4004,28 +3829,6 @@
 		)
 		(uuid "6f0e7cec-e9a9-4ed8-be4f-ca4385163cfd")
 	)
-	(text_box "Shunt outputs filtered"
-		(exclude_from_sim no)
-		(at 138.43 139.7 0)
-		(size 13.335 6.985)
-		(margins 0.9524 0.9524 0.9524 0.9524)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right top)
-		)
-		(uuid "6f6dab2f-3595-4fce-87bf-244d62d21854")
-	)
 	(text_box "DESIGN NOTE:\nDo not forget to flash option bytes when flashing for the first time."
 		(exclude_from_sim no)
 		(at 57.15 165.1 0)
@@ -4041,7 +3844,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -4051,7 +3854,7 @@
 	)
 	(text_box "Low-Side Fan Control"
 		(exclude_from_sim no)
-		(at 236.22 125.73 0)
+		(at 234.95 136.525 0)
 		(size 80.01 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4072,28 +3875,6 @@
 			(justify bottom)
 		)
 		(uuid "7283beb6-c696-4e44-ac80-edfae78c644b")
-	)
-	(text_box "Motor enable and fault"
-		(exclude_from_sim no)
-		(at 138.43 167.64 0)
-		(size 13.335 6.985)
-		(margins 0.9524 0.9524 0.9524 0.9524)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right top)
-		)
-		(uuid "7424d610-614d-49f7-9679-ffff3a8d5461")
 	)
 	(text_box "Debug"
 		(exclude_from_sim no)
@@ -4134,7 +3915,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.4)
 				(bold yes)
@@ -4170,7 +3951,7 @@
 	)
 	(text_box "Temperature Sense"
 		(exclude_from_sim no)
-		(at 238.125 81.915 0)
+		(at 236.855 98.425 0)
 		(size 78.74 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4194,7 +3975,7 @@
 	)
 	(text_box "Battery Voltage Sense"
 		(exclude_from_sim no)
-		(at 237.49 105.41 0)
+		(at 236.22 121.92 0)
 		(size 80.01 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4218,7 +3999,7 @@
 	)
 	(text_box "Test Points"
 		(exclude_from_sim no)
-		(at 347.98 227.33 0)
+		(at 347.98 203.2 0)
 		(size 53.34 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4255,7 +4036,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -4265,8 +4046,8 @@
 	)
 	(text_box "DESIGN NOTE:\nOnly connect GND if connected device does not share ground!"
 		(exclude_from_sim no)
-		(at 152.4 242.57 0)
-		(size -19.05 12.7)
+		(at 62.23 240.03 0)
+		(size 19.05 12.7)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
 			(width 1)
@@ -4278,7 +4059,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.4)
 				(bold yes)
@@ -4290,7 +4071,7 @@
 	)
 	(text_box "Connection to Gate Driver"
 		(exclude_from_sim no)
-		(at 138.43 175.26 0)
+		(at 137.16 191.77 0)
 		(size 82.55 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4314,7 +4095,7 @@
 	)
 	(text_box "Connection to EtherCat Subdevice Controller"
 		(exclude_from_sim no)
-		(at 135.89 74.93 0)
+		(at 134.62 91.44 0)
 		(size 82.55 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
@@ -4337,107 +4118,111 @@
 		(uuid "ecf5157e-475d-4a65-bd27-3a388bb11ef0")
 	)
 	(junction
-		(at 196.85 208.28)
+		(at 77.47 212.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d3a5024-395d-4d33-af8c-20044a33b56f")
+		(uuid "0ce5841d-01f8-4757-bb53-ca7ac7332140")
 	)
 	(junction
-		(at 213.36 223.52)
+		(at 93.98 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "208e642d-8e26-4eb8-b67f-7d9e90cede81")
 	)
 	(junction
-		(at 167.64 154.94)
+		(at 166.37 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "31ee1526-ff8e-4cb9-977c-8910cf4205ff")
 	)
 	(junction
-		(at 177.8 147.32)
+		(at 176.53 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35476f92-ca3b-4642-8f6d-ab65b84681bf")
 	)
 	(junction
-		(at 172.72 144.78)
+		(at 171.45 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d93dcc1-ce12-404e-b463-367dd72c44bd")
 	)
 	(junction
-		(at 168.91 205.74)
+		(at 49.53 209.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6348fb34-3d6c-40a8-9b03-d121d9b27f6d")
 	)
 	(junction
-		(at 172.72 154.94)
+		(at 171.45 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1938368-ce8b-4801-b375-23e24ea558c6")
 	)
 	(junction
-		(at 173.99 208.28)
+		(at 54.61 212.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bac65ea1-6291-4904-8c74-ee013c22549d")
 	)
 	(junction
-		(at 167.64 142.24)
+		(at 166.37 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0d06582-e582-40cd-8280-c5c43af452f1")
 	)
 	(junction
-		(at 196.85 223.52)
+		(at 77.47 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6b7bfb6-fe4f-42cc-8edb-59b7ebe08d67")
 	)
 	(junction
-		(at 166.37 203.2)
+		(at 46.99 207.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebf954e6-fe7a-44ea-aabc-871ce0ddeb2c")
 	)
 	(junction
-		(at 224.79 190.5)
+		(at 105.41 194.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1bf7e50-af2f-4694-92e2-e49c91239b82")
 	)
 	(no_connect
-		(at 44.45 125.73)
-		(uuid "08a42f05-23fd-4a09-9c82-dca0a0ebdf6f")
-	)
-	(no_connect
-		(at 44.45 133.35)
+		(at 50.8 133.35)
 		(uuid "1619106b-2e10-444c-a527-ce510a74b474")
 	)
 	(no_connect
-		(at 105.41 143.51)
+		(at 86.36 143.51)
 		(uuid "161ac9a6-60a0-4299-90e3-aa37f974a062")
 	)
 	(no_connect
-		(at 44.45 128.27)
+		(at 50.8 128.27)
 		(uuid "3b6b191d-b506-4e4c-a72b-5be5555f348e")
 	)
 	(no_connect
-		(at 203.2 200.66)
+		(at 83.82 204.47)
 		(uuid "3e47aea8-6e58-4531-be87-32ef7f97b86c")
 	)
 	(no_connect
-		(at 171.45 210.82)
+		(at 86.36 138.43)
+		(uuid "4b7dfae0-9050-4d95-ae5b-f6d058fbbabd")
+	)
+	(no_connect
+		(at 86.36 107.95)
+		(uuid "595d2ff1-386d-433f-a858-d585b3d2dcf9")
+	)
+	(no_connect
+		(at 52.07 214.63)
 		(uuid "5c37040a-6a2e-41d5-acec-97069cab696b")
 	)
 	(no_connect
-		(at 105.41 140.97)
-		(uuid "77744bad-405b-4f90-ba12-542be91b88ed")
+		(at 86.36 110.49)
+		(uuid "741bf82e-b60c-4201-a186-3957d820e255")
 	)
 	(no_connect
-		(at 105.41 128.27)
+		(at 86.36 128.27)
 		(uuid "9ea0c36c-5397-4f35-86a9-892bd395fb59")
 	)
 	(no_connect
@@ -4445,23 +4230,19 @@
 		(uuid "a8d48124-73f9-4e24-8684-51a4f25ec49f")
 	)
 	(no_connect
-		(at 44.45 123.19)
-		(uuid "cee18810-389b-41b6-a257-e41a406f7b96")
-	)
-	(no_connect
-		(at 44.45 130.81)
+		(at 50.8 130.81)
 		(uuid "d3664d25-60f4-452c-8007-82fe51a8313c")
 	)
 	(no_connect
-		(at 35.56 105.41)
+		(at 50.8 105.41)
 		(uuid "d94ccd55-8d55-4722-97ad-8a5acfe878df")
 	)
 	(no_connect
-		(at 35.56 102.87)
+		(at 50.8 102.87)
 		(uuid "de7aeaf8-4306-4247-81ec-a102011768b3")
 	)
 	(bus_entry
-		(at 274.32 48.26)
+		(at 273.05 64.77)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4470,7 +4251,7 @@
 		(uuid "01244494-1f45-4ab7-a312-2700a280405c")
 	)
 	(bus_entry
-		(at 196.85 73.66)
+		(at 195.58 90.17)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -4479,7 +4260,7 @@
 		(uuid "030166b5-e054-4439-ae18-65949374bcc1")
 	)
 	(bus_entry
-		(at 292.1 144.78)
+		(at 290.83 161.29)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4488,7 +4269,7 @@
 		(uuid "0aedaca8-fd2a-4bdd-9995-a6bead4cd05d")
 	)
 	(bus_entry
-		(at 194.31 142.24)
+		(at 193.04 158.75)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4497,7 +4278,7 @@
 		(uuid "2d91851a-f47c-47c8-9479-4ef8215fe7f3")
 	)
 	(bus_entry
-		(at 292.1 149.86)
+		(at 290.83 166.37)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4506,7 +4287,7 @@
 		(uuid "39038624-af18-4f8a-9b71-829b6c23e9a6")
 	)
 	(bus_entry
-		(at 284.48 228.6)
+		(at 280.67 218.44)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4515,16 +4296,7 @@
 		(uuid "40f2a787-641f-4106-96c2-0f8becf99d7e")
 	)
 	(bus_entry
-		(at 294.64 171.45)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4424268f-a2dd-4095-ba00-4862f106a278")
-	)
-	(bus_entry
-		(at 194.31 49.53)
+		(at 193.04 66.04)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4533,7 +4305,7 @@
 		(uuid "446e596f-988d-4f73-a9ee-cdd6afdfbd56")
 	)
 	(bus_entry
-		(at 292.1 152.4)
+		(at 290.83 168.91)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4542,7 +4314,7 @@
 		(uuid "4c58e184-d1d6-4789-88ca-7a2debcc34fd")
 	)
 	(bus_entry
-		(at 274.32 80.01)
+		(at 273.05 96.52)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4551,16 +4323,7 @@
 		(uuid "5106b56a-cc23-467a-8085-3bd4d77f51f1")
 	)
 	(bus_entry
-		(at 294.64 168.91)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "572e208c-11e4-407c-a7ad-a6026093b796")
-	)
-	(bus_entry
-		(at 196.85 71.12)
+		(at 195.58 87.63)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -4569,7 +4332,7 @@
 		(uuid "5f80e22d-0b95-4145-886a-5a347dd49e6d")
 	)
 	(bus_entry
-		(at 194.31 124.46)
+		(at 193.04 140.97)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4578,7 +4341,7 @@
 		(uuid "5fb8945b-faeb-4fba-84fb-f9b400f77aef")
 	)
 	(bus_entry
-		(at 194.31 121.92)
+		(at 193.04 138.43)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4587,7 +4350,7 @@
 		(uuid "614dd045-f724-4fb3-ba99-6496d7565380")
 	)
 	(bus_entry
-		(at 194.31 111.76)
+		(at 193.04 128.27)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4596,7 +4359,7 @@
 		(uuid "63feace1-6430-4a7f-9a1f-853b8b74cc1a")
 	)
 	(bus_entry
-		(at 274.32 50.8)
+		(at 273.05 67.31)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4605,7 +4368,7 @@
 		(uuid "6eba3e64-3608-4370-ad24-f0a6ed502105")
 	)
 	(bus_entry
-		(at 284.48 231.14)
+		(at 280.67 220.98)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4614,7 +4377,7 @@
 		(uuid "7f06b42c-fc4c-497b-a8e5-6e4299d23d80")
 	)
 	(bus_entry
-		(at 194.31 57.15)
+		(at 193.04 73.66)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4623,7 +4386,7 @@
 		(uuid "8715dc4a-6e5e-4bea-87e6-235575e61700")
 	)
 	(bus_entry
-		(at 194.31 109.22)
+		(at 193.04 125.73)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4632,7 +4395,7 @@
 		(uuid "8ac51f2c-e790-45b0-b82f-fb25d659c7c9")
 	)
 	(bus_entry
-		(at 194.31 106.68)
+		(at 193.04 123.19)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4641,7 +4404,7 @@
 		(uuid "8c26bb8a-058c-4ffb-b3a0-3316ef00903b")
 	)
 	(bus_entry
-		(at 194.31 147.32)
+		(at 193.04 163.83)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4650,7 +4413,7 @@
 		(uuid "8e584df2-37e1-49fe-b0e3-31762d5eb523")
 	)
 	(bus_entry
-		(at 194.31 144.78)
+		(at 193.04 161.29)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4659,7 +4422,7 @@
 		(uuid "8f7d1733-ea0e-4cf1-9d83-d89c44269c73")
 	)
 	(bus_entry
-		(at 292.1 147.32)
+		(at 290.83 163.83)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4668,7 +4431,7 @@
 		(uuid "90fed6e0-0d36-4ebd-9c57-19bc455c84e4")
 	)
 	(bus_entry
-		(at 274.32 82.55)
+		(at 273.05 99.06)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4677,7 +4440,7 @@
 		(uuid "91bfd306-92c8-449f-bbc5-bed93f9ab711")
 	)
 	(bus_entry
-		(at 196.85 66.04)
+		(at 195.58 82.55)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -4686,16 +4449,7 @@
 		(uuid "a3bf77c3-38b2-4543-a99c-ba139f490fe9")
 	)
 	(bus_entry
-		(at 294.64 166.37)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2631528-1fb1-475a-a169-b24474c7d498")
-	)
-	(bus_entry
-		(at 194.31 52.07)
+		(at 193.04 68.58)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4704,7 +4458,7 @@
 		(uuid "b531d430-1fc0-4a49-9395-41ffff823886")
 	)
 	(bus_entry
-		(at 194.31 104.14)
+		(at 193.04 120.65)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4713,7 +4467,7 @@
 		(uuid "d1d5bd09-a823-4a4f-8ccb-88f0fd2d280d")
 	)
 	(bus_entry
-		(at 196.85 68.58)
+		(at 195.58 85.09)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -4722,7 +4476,7 @@
 		(uuid "d3fb465a-f3f6-47d7-9bb6-396f87ac239e")
 	)
 	(bus_entry
-		(at 194.31 54.61)
+		(at 193.04 71.12)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4731,7 +4485,7 @@
 		(uuid "d4ff2d45-7ecd-4971-898d-35eaae787673")
 	)
 	(bus_entry
-		(at 194.31 127)
+		(at 193.04 143.51)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4740,7 +4494,7 @@
 		(uuid "d6d6c627-6e7f-484d-9fb2-113dd15a7bfd")
 	)
 	(bus_entry
-		(at 292.1 154.94)
+		(at 290.83 171.45)
 		(size 2.54 -2.54)
 		(stroke
 			(width 0)
@@ -4750,7 +4504,7 @@
 	)
 	(bus
 		(pts
-			(xy 279.4 73.66) (xy 303.53 73.66)
+			(xy 278.13 90.17) (xy 302.26 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4760,7 +4514,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 186.69) (xy 224.79 190.5)
+			(xy 105.41 190.5) (xy 105.41 194.31)
 		)
 		(stroke
 			(width 0)
@@ -4770,7 +4524,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 152.4) (xy 292.1 152.4)
+			(xy 275.59 168.91) (xy 290.83 168.91)
 		)
 		(stroke
 			(width 0)
@@ -4780,7 +4534,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 223.52) (xy 196.85 219.71)
+			(xy 77.47 227.33) (xy 77.47 223.52)
 		)
 		(stroke
 			(width 0)
@@ -4790,7 +4544,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 48.26) (xy 276.86 49.53)
+			(xy 275.59 64.77) (xy 275.59 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4800,7 +4554,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 142.24) (xy 196.85 144.78)
+			(xy 195.58 158.75) (xy 195.58 161.29)
 		)
 		(stroke
 			(width 0)
@@ -4830,7 +4584,7 @@
 	)
 	(bus
 		(pts
-			(xy 199.39 115.57) (xy 207.01 115.57)
+			(xy 198.12 132.08) (xy 205.74 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4860,7 +4614,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 52.07) (xy 168.91 52.07)
+			(xy 147.32 68.58) (xy 167.64 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4870,7 +4624,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 147.32) (xy 177.8 148.59)
+			(xy 176.53 163.83) (xy 176.53 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4890,7 +4644,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 198.12) (xy 367.03 198.12)
+			(xy 351.79 173.99) (xy 367.03 173.99)
 		)
 		(stroke
 			(width 0)
@@ -4900,7 +4654,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 190.5) (xy 224.79 193.04)
+			(xy 105.41 194.31) (xy 105.41 196.85)
 		)
 		(stroke
 			(width 0)
@@ -4908,19 +4662,9 @@
 		)
 		(uuid "0d1ef055-6da7-41aa-a07c-d06b52832e8b")
 	)
-	(bus
-		(pts
-			(xy 294.64 168.91) (xy 294.64 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1004c4c8-7871-4a68-b74c-27ba326e1228")
-	)
 	(wire
 		(pts
-			(xy 351.79 180.34) (xy 367.03 180.34)
+			(xy 351.79 156.21) (xy 367.03 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4930,7 +4674,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 100.33) (xy 199.39 97.79)
+			(xy 195.58 116.84) (xy 198.12 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4940,7 +4684,7 @@
 	)
 	(bus
 		(pts
-			(xy 199.39 135.89) (xy 207.01 135.89)
+			(xy 198.12 152.4) (xy 205.74 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4950,7 +4694,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 45.72) (xy 276.86 48.26)
+			(xy 275.59 62.23) (xy 275.59 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4960,7 +4704,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 140.97) (xy 105.41 140.97)
+			(xy 86.36 140.97) (xy 118.11 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4980,17 +4724,17 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 168.91) (xy 292.1 168.91)
+			(xy 77.47 212.09) (xy 82.55 212.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14427812-b0ca-4601-a1c1-68c400f0c0c4")
+		(uuid "147cdf35-448a-4057-83e5-362209328e9e")
 	)
 	(bus
 		(pts
-			(xy 294.64 142.24) (xy 294.64 144.78)
+			(xy 293.37 158.75) (xy 293.37 161.29)
 		)
 		(stroke
 			(width 0)
@@ -5000,7 +4744,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 44.45) (xy 279.4 41.91)
+			(xy 275.59 60.96) (xy 278.13 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5010,7 +4754,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 104.14) (xy 196.85 106.68)
+			(xy 195.58 120.65) (xy 195.58 123.19)
 		)
 		(stroke
 			(width 0)
@@ -5020,7 +4764,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 144.78) (xy 172.72 148.59)
+			(xy 118.11 149.86) (xy 118.11 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1929f12a-07b5-48d9-89ea-b241ca76950c")
+	)
+	(wire
+		(pts
+			(xy 171.45 161.29) (xy 171.45 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5050,7 +4804,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 119.38) (xy 196.85 121.92)
+			(xy 195.58 135.89) (xy 195.58 138.43)
 		)
 		(stroke
 			(width 0)
@@ -5080,7 +4834,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 228.6) (xy 284.48 228.6)
+			(xy 259.08 218.44) (xy 280.67 218.44)
 		)
 		(stroke
 			(width 0)
@@ -5090,7 +4844,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 228.6) (xy 367.03 228.6)
+			(xy 351.79 204.47) (xy 367.03 204.47)
 		)
 		(stroke
 			(width 0)
@@ -5110,7 +4864,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 147.32) (xy 292.1 147.32)
+			(xy 275.59 163.83) (xy 290.83 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5120,7 +4874,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 71.12) (xy 194.31 71.12)
+			(xy 176.53 87.63) (xy 193.04 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5130,7 +4884,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 154.94) (xy 172.72 153.67)
+			(xy 171.45 171.45) (xy 171.45 170.18)
 		)
 		(stroke
 			(width 0)
@@ -5140,7 +4894,7 @@
 	)
 	(bus
 		(pts
-			(xy 287.02 224.79) (xy 289.56 222.25)
+			(xy 283.21 214.63) (xy 285.75 212.09)
 		)
 		(stroke
 			(width 0)
@@ -5150,7 +4904,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 142.24) (xy 167.64 148.59)
+			(xy 166.37 158.75) (xy 166.37 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5160,17 +4914,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 125.73) (xy 50.8 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "267afb50-e922-4c37-8e90-790a1503bc94")
-	)
-	(wire
-		(pts
-			(xy 254 50.8) (xy 274.32 50.8)
+			(xy 252.73 67.31) (xy 273.05 67.31)
 		)
 		(stroke
 			(width 0)
@@ -5180,7 +4924,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 124.46) (xy 196.85 125.73)
+			(xy 195.58 140.97) (xy 195.58 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5200,7 +4944,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 49.53) (xy 168.91 49.53)
+			(xy 147.32 66.04) (xy 167.64 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5210,7 +4954,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 149.86) (xy 292.1 149.86)
+			(xy 273.05 166.37) (xy 290.83 166.37)
 		)
 		(stroke
 			(width 0)
@@ -5220,7 +4964,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 138.43) (xy 196.85 139.7)
+			(xy 195.58 154.94) (xy 195.58 156.21)
 		)
 		(stroke
 			(width 0)
@@ -5230,7 +4974,7 @@
 	)
 	(bus
 		(pts
-			(xy 279.4 41.91) (xy 303.53 41.91)
+			(xy 278.13 58.42) (xy 302.26 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5240,7 +4984,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 82.55) (xy 274.32 82.55)
+			(xy 252.73 99.06) (xy 273.05 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5260,7 +5004,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 77.47) (xy 276.86 80.01)
+			(xy 275.59 93.98) (xy 275.59 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5270,7 +5014,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 52.07) (xy 196.85 49.53)
+			(xy 195.58 68.58) (xy 195.58 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5280,7 +5024,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 118.11) (xy 196.85 119.38)
+			(xy 195.58 134.62) (xy 195.58 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5300,17 +5044,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 143.51) (xy 105.41 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "392f1137-5ec0-47e6-a876-d248da2c5c74")
-	)
-	(wire
-		(pts
-			(xy 213.36 190.5) (xy 224.79 190.5)
+			(xy 93.98 194.31) (xy 105.41 194.31)
 		)
 		(stroke
 			(width 0)
@@ -5320,7 +5054,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 71.12) (xy 196.85 73.66)
+			(xy 195.58 87.63) (xy 195.58 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5330,7 +5064,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 109.22) (xy 194.31 109.22)
+			(xy 175.26 125.73) (xy 193.04 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5340,7 +5074,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 121.92) (xy 196.85 124.46)
+			(xy 195.58 138.43) (xy 195.58 140.97)
 		)
 		(stroke
 			(width 0)
@@ -5348,19 +5082,9 @@
 		)
 		(uuid "3ab94ce9-6b41-44c2-9168-ef9bc73e7a2e")
 	)
-	(polyline
-		(pts
-			(xy 152.395 171.455) (xy 152.395 174.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3db2d9f2-abba-4669-9bdd-84b18bfdf27c")
-	)
 	(bus
 		(pts
-			(xy 196.85 49.53) (xy 196.85 46.99)
+			(xy 195.58 66.04) (xy 195.58 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5370,33 +5094,13 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 182.88) (xy 367.03 182.88)
+			(xy 351.79 158.75) (xy 367.03 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "40c57134-077c-4f4f-ae4a-13cb1418814f")
-	)
-	(bus
-		(pts
-			(xy 294.64 163.83) (xy 295.91 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "410993dd-ed7d-4d3a-ace1-35dbea8f5644")
-	)
-	(wire
-		(pts
-			(xy 86.36 110.49) (xy 105.41 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "424d6e5a-8ff1-4038-9aa6-4c9513be9955")
 	)
 	(wire
 		(pts
@@ -5410,7 +5114,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 147.32) (xy 194.31 147.32)
+			(xy 184.15 163.83) (xy 193.04 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5427,16 +5131,6 @@
 			(type default)
 		)
 		(uuid "461fb5a0-03fd-4a52-9248-315a31e92e8c")
-	)
-	(bus
-		(pts
-			(xy 294.64 166.37) (xy 294.64 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4653dd24-533e-4830-8a42-f99ba0ddafb4")
 	)
 	(wire
 		(pts
@@ -5460,7 +5154,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 118.11) (xy 199.39 115.57)
+			(xy 195.58 134.62) (xy 198.12 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5470,7 +5164,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 68.58) (xy 196.85 71.12)
+			(xy 195.58 85.09) (xy 195.58 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5490,7 +5184,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 203.2) (xy 166.37 210.82)
+			(xy 46.99 207.01) (xy 46.99 214.63)
 		)
 		(stroke
 			(width 0)
@@ -5498,19 +5192,9 @@
 		)
 		(uuid "4c8f15be-46b9-4bd4-b483-69cfb87c9c10")
 	)
-	(wire
-		(pts
-			(xy 44.45 123.19) (xy 50.8 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e3cecb2-2321-41c9-9734-4854287830c0")
-	)
 	(bus
 		(pts
-			(xy 294.64 144.78) (xy 294.64 147.32)
+			(xy 293.37 161.29) (xy 293.37 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5520,7 +5204,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 226.06) (xy 213.36 223.52)
+			(xy 93.98 229.87) (xy 93.98 227.33)
 		)
 		(stroke
 			(width 0)
@@ -5530,17 +5214,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 105.41) (xy 50.8 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "511eae83-9ec7-4589-9e29-04b477a8c5a2")
-	)
-	(wire
-		(pts
-			(xy 351.79 142.24) (xy 367.03 142.24)
+			(xy 351.79 134.62) (xy 367.03 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5560,7 +5234,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 144.78) (xy 172.72 144.78)
+			(xy 153.67 161.29) (xy 171.45 161.29)
 		)
 		(stroke
 			(width 0)
@@ -5580,7 +5254,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 210.82) (xy 367.03 210.82)
+			(xy 351.79 186.69) (xy 367.03 186.69)
 		)
 		(stroke
 			(width 0)
@@ -5600,7 +5274,7 @@
 	)
 	(bus
 		(pts
-			(xy 287.02 224.79) (xy 287.02 226.06)
+			(xy 283.21 214.63) (xy 283.21 215.9)
 		)
 		(stroke
 			(width 0)
@@ -5610,7 +5284,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 45.72) (xy 198.12 44.45)
+			(xy 195.58 62.23) (xy 196.85 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5620,7 +5294,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 54.61) (xy 196.85 52.07)
+			(xy 195.58 71.12) (xy 195.58 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5630,7 +5304,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 152.4) (xy 367.03 152.4)
+			(xy 351.79 144.78) (xy 367.03 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5640,7 +5314,7 @@
 	)
 	(polyline
 		(pts
-			(xy 187.96 158.75) (xy 191.77 161.29)
+			(xy 186.69 176.53) (xy 190.5 177.8)
 		)
 		(stroke
 			(width 0)
@@ -5661,7 +5335,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 64.77) (xy 198.12 63.5)
+			(xy 195.58 81.28) (xy 196.85 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5671,7 +5345,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 66.04) (xy 196.85 68.58)
+			(xy 195.58 82.55) (xy 195.58 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5681,17 +5355,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 128.27) (xy 50.8 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60f0bed9-4cde-4d51-a591-1ecb29b183da")
-	)
-	(wire
-		(pts
-			(xy 172.72 154.94) (xy 177.8 154.94)
+			(xy 171.45 171.45) (xy 176.53 171.45)
 		)
 		(stroke
 			(width 0)
@@ -5701,27 +5365,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 102.87) (xy 50.8 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64976891-a04f-4968-ac51-1b6080752c93")
-	)
-	(polyline
-		(pts
-			(xy 152.405 142.875) (xy 152.405 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "671fbb46-4f14-4869-8f1f-fe333b93b865")
-	)
-	(wire
-		(pts
-			(xy 351.79 226.06) (xy 367.03 226.06)
+			(xy 351.79 201.93) (xy 367.03 201.93)
 		)
 		(stroke
 			(width 0)
@@ -5731,7 +5375,7 @@
 	)
 	(bus
 		(pts
-			(xy 294.64 147.32) (xy 294.64 149.86)
+			(xy 293.37 163.83) (xy 293.37 166.37)
 		)
 		(stroke
 			(width 0)
@@ -5741,7 +5385,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 138.43) (xy 199.39 135.89)
+			(xy 195.58 154.94) (xy 198.12 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5781,7 +5425,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 76.2) (xy 276.86 77.47)
+			(xy 275.59 92.71) (xy 275.59 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5791,7 +5435,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 139.7) (xy 196.85 142.24)
+			(xy 195.58 156.21) (xy 195.58 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5801,7 +5445,7 @@
 	)
 	(bus
 		(pts
-			(xy 198.12 63.5) (xy 207.01 63.5)
+			(xy 196.85 80.01) (xy 205.74 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5811,7 +5455,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 208.28) (xy 173.99 210.82)
+			(xy 54.61 212.09) (xy 54.61 214.63)
 		)
 		(stroke
 			(width 0)
@@ -5821,7 +5465,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 100.33) (xy 196.85 101.6)
+			(xy 195.58 116.84) (xy 195.58 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5831,7 +5475,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 171.45 109.22)
+			(xy 153.67 125.73) (xy 170.18 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5861,7 +5505,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 203.2) (xy 144.78 203.2)
+			(xy 46.99 207.01) (xy 35.56 207.01)
 		)
 		(stroke
 			(width 0)
@@ -5869,19 +5513,9 @@
 		)
 		(uuid "7f116f25-8654-4e35-9700-281328c3be62")
 	)
-	(polyline
-		(pts
-			(xy 152.4 144.15) (xy 152.4 147.325)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7faa88d3-a52d-4315-97ff-82d710e20bd3")
-	)
 	(wire
 		(pts
-			(xy 173.99 49.53) (xy 194.31 49.53)
+			(xy 172.72 66.04) (xy 193.04 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5901,7 +5535,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 57.15) (xy 194.31 57.15)
+			(xy 176.53 73.66) (xy 193.04 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5911,7 +5545,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 104.14) (xy 194.31 104.14)
+			(xy 175.26 120.65) (xy 193.04 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5931,23 +5565,23 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 231.14) (xy 284.48 231.14)
+			(xy 118.11 142.24) (xy 118.11 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85c1e5ef-251e-4346-b9f9-dc9cc630ae04")
+	)
+	(wire
+		(pts
+			(xy 259.08 220.98) (xy 280.67 220.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "867291f6-4481-4b03-abf6-cbb63ef71fbe")
-	)
-	(polyline
-		(pts
-			(xy 152.405 122.55) (xy 152.405 119.375)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8722ccbd-1447-4b77-9710-bfbbfad38c1a")
 	)
 	(wire
 		(pts
@@ -5961,27 +5595,17 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 133.35) (xy 50.8 133.35)
+			(xy 83.82 214.63) (xy 82.55 214.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f4de8cb-8fe7-481f-a181-9c7add002dda")
-	)
-	(wire
-		(pts
-			(xy 44.45 130.81) (xy 50.8 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91a08391-401f-4d89-96e9-5cf5273e4c53")
+		(uuid "8db2d731-164c-4b96-90d6-b872175ece8c")
 	)
 	(bus
 		(pts
-			(xy 276.86 76.2) (xy 279.4 73.66)
+			(xy 275.59 92.71) (xy 278.13 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5991,23 +5615,13 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 153.67) (xy 167.64 154.94)
+			(xy 166.37 170.18) (xy 166.37 171.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "93ef768c-f475-48cc-8237-a9234c2fe191")
-	)
-	(wire
-		(pts
-			(xy 276.86 171.45) (xy 292.1 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95a1195b-7bf2-4641-a0e8-8478484fb6d2")
 	)
 	(wire
 		(pts
@@ -6021,7 +5635,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 147.32) (xy 180.34 147.32)
+			(xy 35.56 125.73) (xy 50.8 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96fb1458-2c86-4193-ac5e-62760c0a2af5")
+	)
+	(wire
+		(pts
+			(xy 176.53 163.83) (xy 179.07 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6041,7 +5665,7 @@
 	)
 	(bus
 		(pts
-			(xy 289.56 222.25) (xy 304.8 222.25)
+			(xy 285.75 212.09) (xy 299.72 212.09)
 		)
 		(stroke
 			(width 0)
@@ -6051,7 +5675,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 127) (xy 194.31 127)
+			(xy 153.67 143.51) (xy 193.04 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6061,7 +5685,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 106.68) (xy 194.31 106.68)
+			(xy 177.8 123.19) (xy 193.04 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6091,7 +5715,7 @@
 	)
 	(bus
 		(pts
-			(xy 287.02 226.06) (xy 287.02 228.6)
+			(xy 283.21 215.9) (xy 283.21 218.44)
 		)
 		(stroke
 			(width 0)
@@ -6111,7 +5735,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 194.31 68.58)
+			(xy 176.53 85.09) (xy 193.04 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6141,17 +5765,7 @@
 	)
 	(bus
 		(pts
-			(xy 294.64 171.45) (xy 294.64 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3cfc363-5219-4cd1-a7ea-352ca7c16d73")
-	)
-	(bus
-		(pts
-			(xy 196.85 64.77) (xy 196.85 66.04)
+			(xy 195.58 81.28) (xy 195.58 82.55)
 		)
 		(stroke
 			(width 0)
@@ -6161,7 +5775,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 223.52) (xy 170.18 223.52)
+			(xy 77.47 227.33) (xy 50.8 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6171,7 +5785,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 198.12) (xy 224.79 200.66)
+			(xy 105.41 201.93) (xy 105.41 204.47)
 		)
 		(stroke
 			(width 0)
@@ -6181,7 +5795,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 215.9) (xy 213.36 223.52)
+			(xy 93.98 219.71) (xy 93.98 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6191,7 +5805,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 124.46) (xy 194.31 124.46)
+			(xy 153.67 140.97) (xy 193.04 140.97)
 		)
 		(stroke
 			(width 0)
@@ -6211,7 +5825,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 154.94) (xy 292.1 154.94)
+			(xy 275.59 171.45) (xy 290.83 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6221,7 +5835,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 73.66) (xy 194.31 73.66)
+			(xy 176.53 90.17) (xy 193.04 90.17)
 		)
 		(stroke
 			(width 0)
@@ -6241,7 +5855,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 73.66) (xy 196.85 76.2)
+			(xy 195.58 90.17) (xy 195.58 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6249,19 +5863,19 @@
 		)
 		(uuid "ae5a1de5-f5af-4030-a76a-5a1c20510f53")
 	)
-	(polyline
+	(wire
 		(pts
-			(xy 152.4 170.18) (xy 152.4 167.005)
+			(xy 35.56 123.19) (xy 50.8 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4c6a924-a3af-4cdb-835b-6c3e0f7d8061")
+		(uuid "b301d7a3-de1e-4688-a36f-4b0ecd431782")
 	)
 	(wire
 		(pts
-			(xy 351.79 149.86) (xy 367.03 149.86)
+			(xy 351.79 142.24) (xy 367.03 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6281,7 +5895,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 121.92) (xy 194.31 121.92)
+			(xy 153.67 138.43) (xy 193.04 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6291,7 +5905,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 109.22) (xy 196.85 110.49)
+			(xy 195.58 125.73) (xy 195.58 127)
 		)
 		(stroke
 			(width 0)
@@ -6301,7 +5915,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 54.61) (xy 194.31 54.61)
+			(xy 176.53 71.12) (xy 193.04 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6311,7 +5925,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 168.91) (xy 201.93 168.91)
+			(xy 153.67 185.42) (xy 200.66 185.42)
 		)
 		(stroke
 			(width 0)
@@ -6321,7 +5935,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 142.24) (xy 167.64 142.24)
+			(xy 153.67 158.75) (xy 166.37 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6331,7 +5945,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 120.65) (xy 289.56 120.65)
+			(xy 252.73 137.16) (xy 288.29 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6341,27 +5955,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 128.27) (xy 105.41 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be38b600-012d-48aa-971f-a4283ca814a5")
-	)
-	(wire
-		(pts
-			(xy 196.85 208.28) (xy 203.2 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf1328f6-cacc-405b-aa03-3ed2e59f0d93")
-	)
-	(wire
-		(pts
-			(xy 173.99 208.28) (xy 196.85 208.28)
+			(xy 54.61 212.09) (xy 77.47 212.09)
 		)
 		(stroke
 			(width 0)
@@ -6391,7 +5985,7 @@
 	)
 	(bus
 		(pts
-			(xy 287.02 228.6) (xy 287.02 229.87)
+			(xy 283.21 218.44) (xy 283.21 219.71)
 		)
 		(stroke
 			(width 0)
@@ -6401,7 +5995,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 173.99) (xy 201.93 173.99)
+			(xy 153.67 190.5) (xy 200.66 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6411,7 +6005,7 @@
 	)
 	(bus
 		(pts
-			(xy 199.39 97.79) (xy 207.01 97.79)
+			(xy 198.12 114.3) (xy 205.74 114.3)
 		)
 		(stroke
 			(width 0)
@@ -6451,7 +6045,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 80.01) (xy 276.86 81.28)
+			(xy 275.59 96.52) (xy 275.59 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6461,7 +6055,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 154.94) (xy 177.8 153.67)
+			(xy 176.53 171.45) (xy 176.53 170.18)
 		)
 		(stroke
 			(width 0)
@@ -6479,19 +6073,9 @@
 		)
 		(uuid "c8a20360-f4de-40c3-af7b-7a9fb4bdae0c")
 	)
-	(wire
-		(pts
-			(xy 276.86 173.99) (xy 292.1 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8ba5d0a-6577-49c8-94cc-c653c9ce449e")
-	)
 	(bus
 		(pts
-			(xy 294.64 140.97) (xy 294.64 142.24)
+			(xy 293.37 157.48) (xy 293.37 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6501,7 +6085,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 147.32) (xy 177.8 147.32)
+			(xy 153.67 163.83) (xy 176.53 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6521,7 +6105,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 142.24) (xy 194.31 142.24)
+			(xy 184.15 158.75) (xy 193.04 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6541,7 +6125,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 205.74) (xy 203.2 205.74)
+			(xy 49.53 209.55) (xy 83.82 209.55)
 		)
 		(stroke
 			(width 0)
@@ -6551,7 +6135,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 144.78) (xy 292.1 144.78)
+			(xy 273.05 161.29) (xy 290.83 161.29)
 		)
 		(stroke
 			(width 0)
@@ -6561,7 +6145,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 208.28) (xy 196.85 210.82)
+			(xy 77.47 212.09) (xy 77.47 214.63)
 		)
 		(stroke
 			(width 0)
@@ -6581,7 +6165,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 144.78) (xy 196.85 146.05)
+			(xy 195.58 161.29) (xy 195.58 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6591,7 +6175,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 219.71) (xy 196.85 215.9)
+			(xy 77.47 223.52) (xy 77.47 219.71)
 		)
 		(stroke
 			(width 0.381)
@@ -6610,19 +6194,9 @@
 		)
 		(uuid "da442eba-285a-478e-aa24-889c2b9b39f7")
 	)
-	(polyline
-		(pts
-			(xy 152.4 123.825) (xy 152.4 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da452a08-9128-40a0-b4d2-036deb882093")
-	)
 	(wire
 		(pts
-			(xy 173.99 208.28) (xy 144.78 208.28)
+			(xy 54.61 212.09) (xy 35.56 212.09)
 		)
 		(stroke
 			(width 0)
@@ -6632,7 +6206,7 @@
 	)
 	(bus
 		(pts
-			(xy 294.64 149.86) (xy 294.64 152.4)
+			(xy 293.37 166.37) (xy 293.37 168.91)
 		)
 		(stroke
 			(width 0)
@@ -6662,7 +6236,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 205.74) (xy 144.78 205.74)
+			(xy 49.53 209.55) (xy 35.56 209.55)
 		)
 		(stroke
 			(width 0)
@@ -6672,17 +6246,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 107.95) (xy 105.41 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de3f290c-a549-4acd-87b3-0cebe80c512c")
-	)
-	(wire
-		(pts
-			(xy 185.42 144.78) (xy 194.31 144.78)
+			(xy 184.15 161.29) (xy 193.04 161.29)
 		)
 		(stroke
 			(width 0)
@@ -6692,7 +6256,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 198.12) (xy 289.56 198.12)
+			(xy 256.54 187.96) (xy 285.75 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6702,7 +6266,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 144.78) (xy 367.03 144.78)
+			(xy 351.79 137.16) (xy 367.03 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6732,7 +6296,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 203.2) (xy 203.2 203.2)
+			(xy 82.55 214.63) (xy 82.55 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4527bd4-e2b9-4986-a8ed-1e1ad6cc3d10")
+	)
+	(wire
+		(pts
+			(xy 46.99 207.01) (xy 83.82 207.01)
 		)
 		(stroke
 			(width 0)
@@ -6742,7 +6316,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 223.52) (xy 170.18 220.98)
+			(xy 50.8 227.33) (xy 50.8 224.79)
 		)
 		(stroke
 			(width 0)
@@ -6762,7 +6336,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 76.2) (xy 194.31 76.2)
+			(xy 176.53 92.71) (xy 193.04 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6772,7 +6346,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 190.5) (xy 213.36 195.58)
+			(xy 93.98 194.31) (xy 93.98 199.39)
 		)
 		(stroke
 			(width 0)
@@ -6792,7 +6366,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 101.6) (xy 196.85 104.14)
+			(xy 195.58 118.11) (xy 195.58 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6812,7 +6386,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 147.32) (xy 367.03 147.32)
+			(xy 351.79 139.7) (xy 367.03 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6820,19 +6394,9 @@
 		)
 		(uuid "e94bedba-97dc-49f4-9d5c-78acee1bd031")
 	)
-	(bus
-		(pts
-			(xy 303.53 162.56) (xy 295.91 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e95520ec-55ed-4f77-9d0f-2d53d1389cd3")
-	)
 	(wire
 		(pts
-			(xy 168.91 210.82) (xy 168.91 205.74)
+			(xy 49.53 214.63) (xy 49.53 209.55)
 		)
 		(stroke
 			(width 0)
@@ -6852,7 +6416,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 144.78) (xy 180.34 144.78)
+			(xy 171.45 161.29) (xy 179.07 161.29)
 		)
 		(stroke
 			(width 0)
@@ -6862,7 +6426,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 149.86) (xy 266.7 149.86)
+			(xy 250.19 166.37) (xy 265.43 166.37)
 		)
 		(stroke
 			(width 0)
@@ -6872,17 +6436,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 138.43) (xy 105.41 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef57562e-52a8-4a76-b8c5-fbec5854afb5")
-	)
-	(wire
-		(pts
-			(xy 351.79 223.52) (xy 367.03 223.52)
+			(xy 351.79 199.39) (xy 367.03 199.39)
 		)
 		(stroke
 			(width 0)
@@ -6892,7 +6446,7 @@
 	)
 	(bus
 		(pts
-			(xy 294.64 140.97) (xy 295.91 139.7)
+			(xy 293.37 157.48) (xy 294.64 156.21)
 		)
 		(stroke
 			(width 0)
@@ -6902,7 +6456,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 106.68) (xy 196.85 109.22)
+			(xy 195.58 123.19) (xy 195.58 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6912,7 +6466,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 104.14) (xy 289.56 104.14)
+			(xy 252.73 120.65) (xy 288.29 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6922,7 +6476,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 223.52) (xy 213.36 223.52)
+			(xy 77.47 227.33) (xy 93.98 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6932,7 +6486,7 @@
 	)
 	(bus
 		(pts
-			(xy 295.91 139.7) (xy 303.53 139.7)
+			(xy 294.64 156.21) (xy 302.26 156.21)
 		)
 		(stroke
 			(width 0)
@@ -6952,7 +6506,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 144.78) (xy 266.7 144.78)
+			(xy 250.19 161.29) (xy 265.43 161.29)
 		)
 		(stroke
 			(width 0)
@@ -6962,7 +6516,7 @@
 	)
 	(bus
 		(pts
-			(xy 276.86 44.45) (xy 276.86 45.72)
+			(xy 275.59 60.96) (xy 275.59 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6972,7 +6526,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 48.26) (xy 274.32 48.26)
+			(xy 252.73 64.77) (xy 273.05 64.77)
 		)
 		(stroke
 			(width 0)
@@ -6992,7 +6546,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 195.58) (xy 367.03 195.58)
+			(xy 351.79 171.45) (xy 367.03 171.45)
 		)
 		(stroke
 			(width 0)
@@ -7002,7 +6556,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 52.07) (xy 194.31 52.07)
+			(xy 172.72 68.58) (xy 193.04 68.58)
 		)
 		(stroke
 			(width 0)
@@ -7010,19 +6564,9 @@
 		)
 		(uuid "f5bb50a1-e52f-4a55-834f-51a017a75e0e")
 	)
-	(bus
-		(pts
-			(xy 294.64 163.83) (xy 294.64 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f73d5556-07f8-4690-adfc-6432ddaaa824")
-	)
 	(wire
 		(pts
-			(xy 254 80.01) (xy 274.32 80.01)
+			(xy 252.73 96.52) (xy 273.05 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7032,7 +6576,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 57.15) (xy 196.85 54.61)
+			(xy 195.58 73.66) (xy 195.58 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7042,7 +6586,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 111.76) (xy 194.31 111.76)
+			(xy 177.8 128.27) (xy 193.04 128.27)
 		)
 		(stroke
 			(width 0)
@@ -7052,7 +6596,7 @@
 	)
 	(bus
 		(pts
-			(xy 198.12 44.45) (xy 207.01 44.45)
+			(xy 196.85 60.96) (xy 205.74 60.96)
 		)
 		(stroke
 			(width 0)
@@ -7062,7 +6606,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 142.24) (xy 180.34 142.24)
+			(xy 166.37 158.75) (xy 179.07 158.75)
 		)
 		(stroke
 			(width 0)
@@ -7072,7 +6616,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 171.45) (xy 201.93 171.45)
+			(xy 153.67 187.96) (xy 200.66 187.96)
 		)
 		(stroke
 			(width 0)
@@ -7092,7 +6636,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 104.14) (xy 171.45 104.14)
+			(xy 153.67 120.65) (xy 170.18 120.65)
 		)
 		(stroke
 			(width 0)
@@ -7102,7 +6646,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 154.94) (xy 172.72 154.94)
+			(xy 166.37 171.45) (xy 171.45 171.45)
 		)
 		(stroke
 			(width 0)
@@ -7112,7 +6656,7 @@
 	)
 	(bus
 		(pts
-			(xy 196.85 46.99) (xy 196.85 45.72)
+			(xy 195.58 63.5) (xy 195.58 62.23)
 		)
 		(stroke
 			(width 0)
@@ -7124,7 +6668,7 @@
 		(at 105.41 85.09 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7135,7 +6679,7 @@
 		(at 35.56 140.97 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7146,7 +6690,7 @@
 		(at 351.79 82.55 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7157,7 +6701,7 @@
 		(at 351.79 116.84 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7165,21 +6709,32 @@
 		(uuid "0db579b3-bef4-478e-8cd8-eca394694ade")
 	)
 	(label "ENC_SCLK"
-		(at 276.86 144.78 0)
+		(at 275.59 161.29 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "0e518dce-b069-4841-aa9c-afa1925d54c7")
 	)
-	(label "ENC_MOSI"
-		(at 351.79 147.32 0)
+	(label "MGL"
+		(at 35.56 125.73 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e97c3e9-bd37-42e0-8375-1bac67af45bb")
+	)
+	(label "ENC_MOSI"
+		(at 351.79 139.7 0)
+		(effects
+			(font
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7187,10 +6742,10 @@
 		(uuid "0fb8ab3c-5d28-40de-b0e2-0cb0d496cec3")
 	)
 	(label "ENC_BRD_CS"
-		(at 351.79 149.86 0)
+		(at 351.79 142.24 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7198,21 +6753,21 @@
 		(uuid "1042b795-a94f-469a-91a9-886e6f58048c")
 	)
 	(label "PWM_PHASEA"
-		(at 154.94 121.92 0)
+		(at 153.67 138.43 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "11f64577-c746-4903-9284-d733b6a44dcb")
 	)
-	(label "LED_PWR"
+	(label "LED_FAULT"
 		(at 35.56 135.89 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7220,10 +6775,10 @@
 		(uuid "1569da83-556f-4320-b4f9-61b2c5886c81")
 	)
 	(label "DRV_MOSI"
-		(at 179.07 109.22 0)
+		(at 177.8 125.73 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7234,29 +6789,18 @@
 		(at 351.79 67.31 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "1596f0d3-239c-4af3-b288-00ab3128a7ec")
 	)
-	(label "PC2"
-		(at 45.72 125.73 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "176e6e1e-5925-45c3-b917-f80fe2bcc401")
-	)
 	(label "ENC_SCLK_MCU"
-		(at 251.46 144.78 0)
+		(at 250.19 161.29 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7267,7 +6811,7 @@
 		(at 351.79 64.77 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7278,7 +6822,7 @@
 		(at 35.56 85.09 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7289,7 +6833,7 @@
 		(at 105.41 135.89 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7297,10 +6841,10 @@
 		(uuid "1fa9a13c-2b2e-4246-ab0b-b42e80f44abe")
 	)
 	(label "SWCLK"
-		(at 144.78 205.74 0)
+		(at 35.56 209.55 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7308,10 +6852,10 @@
 		(uuid "26f38a0b-bd58-483d-aaae-8395782fe3b2")
 	)
 	(label "FDCAN_RX"
-		(at 254 48.26 0)
+		(at 252.73 64.77 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7319,10 +6863,10 @@
 		(uuid "2c9715ca-ed56-4c97-975b-5559b415d746")
 	)
 	(label "ENC_SCLK"
-		(at 351.79 142.24 0)
+		(at 351.79 134.62 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7333,7 +6877,7 @@
 		(at 105.41 146.05 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7344,7 +6888,7 @@
 		(at 351.79 124.46 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7352,10 +6896,10 @@
 		(uuid "310ecea0-6c02-490a-b45f-5b29d3b21663")
 	)
 	(label "SENSE_TEMP_FET"
-		(at 254 82.55 0)
+		(at 252.73 99.06 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7363,10 +6907,10 @@
 		(uuid "31411c8e-3d5e-4d4a-ab60-c22d4b97ea20")
 	)
 	(label "DRV_SCLK_MCU"
-		(at 154.94 104.14 0)
+		(at 153.67 120.65 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7374,10 +6918,10 @@
 		(uuid "31d3fe52-dacf-4e1f-bff0-521b3facf126")
 	)
 	(label "SENSE_VBAT"
-		(at 254 104.14 0)
+		(at 252.73 120.65 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7385,10 +6929,10 @@
 		(uuid "33d95ed5-322a-4d66-989e-0f25d5007e14")
 	)
 	(label "FDCAN_RX"
-		(at 351.79 195.58 0)
+		(at 351.79 171.45 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7399,7 +6943,7 @@
 		(at 35.56 82.55 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7410,29 +6954,18 @@
 		(at 105.41 123.19 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
 		(uuid "3797711c-d211-4bf4-8798-d38a64862196")
 	)
-	(label "PC1"
-		(at 45.72 123.19 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "386f01d4-f6b1-415a-8eb5-0e9cd228133d")
-	)
 	(label "DRV_MISO"
 		(at 351.79 62.23 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7443,7 +6976,7 @@
 		(at 351.79 85.09 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7454,28 +6987,18 @@
 		(at 105.41 130.81 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
 		(uuid "39d59a9c-c5a1-42d1-ba71-0ff6440631ab")
 	)
-	(label "HALL_C"
-		(at 105.41 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3c0e03a8-4eec-4670-b294-8a0f2a3b55f6")
-	)
 	(label "ESC_RST"
-		(at 177.8 76.2 0)
+		(at 176.53 92.71 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7483,10 +7006,10 @@
 		(uuid "3d78d180-6ba1-4802-8f67-e214c8cf8192")
 	)
 	(label "FAN_CTRL"
-		(at 254 120.65 0)
+		(at 252.73 137.16 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7497,7 +7020,7 @@
 		(at 35.56 80.01 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7508,7 +7031,7 @@
 		(at 105.41 156.21 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7519,7 +7042,7 @@
 		(at 351.79 99.06 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7527,10 +7050,10 @@
 		(uuid "45b8907e-188a-4bbe-acd6-dcf88f95dd34")
 	)
 	(label "SENSE_VBAT"
-		(at 351.79 228.6 0)
+		(at 351.79 204.47 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7538,10 +7061,10 @@
 		(uuid "47f0e481-a071-40a1-811d-f770806da812")
 	)
 	(label "DRV_MISO"
-		(at 179.07 106.68 0)
+		(at 177.8 123.19 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7552,7 +7075,7 @@
 		(at 105.41 151.13 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7563,18 +7086,18 @@
 		(at 105.41 120.65 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
 		(uuid "5344da2a-8611-444c-a255-3981cf89cb8d")
 	)
-	(label "LED_PWR"
-		(at 351.79 182.88 0)
+	(label "LED_FAULT"
+		(at 351.79 158.75 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7582,10 +7105,10 @@
 		(uuid "547ad8d5-2bb8-4681-b0f1-1ec12c20e140")
 	)
 	(label "DRV_CS"
-		(at 179.07 111.76 0)
+		(at 177.8 128.27 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7596,7 +7119,7 @@
 		(at 105.41 92.71 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7604,10 +7127,10 @@
 		(uuid "587101fe-0270-44a9-bf75-b35857cd7d1a")
 	)
 	(label "SOC"
-		(at 194.31 147.32 180)
+		(at 193.04 163.83 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7618,7 +7141,7 @@
 		(at 35.56 148.59 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7629,28 +7152,18 @@
 		(at 105.41 105.41 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
 		(uuid "6206f57a-4353-4634-806b-37fecb2c4a77")
 	)
-	(label "HALL_A"
-		(at 276.86 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6498a318-0b80-4a88-b96d-d1f48a325b6f")
-	)
 	(label "ENC_EXT_CS"
-		(at 351.79 152.4 0)
+		(at 351.79 144.78 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7661,7 +7174,7 @@
 		(at 105.41 158.75 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7669,10 +7182,10 @@
 		(uuid "6824121a-5f5c-4b6f-8737-78ac15e5008e")
 	)
 	(label "FDCAN_TX"
-		(at 254 50.8 0)
+		(at 252.73 67.31 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7683,7 +7196,7 @@
 		(at 35.56 156.21 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7691,10 +7204,10 @@
 		(uuid "6b98acbe-d2fa-49e8-b155-6c453b87f47e")
 	)
 	(label "ESC_IRQ"
-		(at 177.8 68.58 0)
+		(at 176.53 85.09 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7705,7 +7218,7 @@
 		(at 105.41 153.67 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7713,10 +7226,10 @@
 		(uuid "6d9de87e-8c59-4d95-9d74-559565bf9fac")
 	)
 	(label "ESC_MOSI_MCU"
-		(at 148.59 52.07 0)
+		(at 147.32 68.58 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7724,64 +7237,43 @@
 		(uuid "6dc23945-f96b-499f-b001-a0b59b56f927")
 	)
 	(label "LED_DBG"
-		(at 351.79 180.34 0)
+		(at 351.79 156.21 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "6f15971b-edcf-40d5-bce9-52705f652ac1")
 	)
-	(label "LED_PWR"
-		(at 262.89 231.14 0)
+	(label "LED_FAULT"
+		(at 259.08 220.98 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "7258991d-fc70-4af1-9c4c-6db331d1c3b3")
 	)
-	(label "HALL_A"
-		(at 105.41 138.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "72d0901d-2710-4ff1-ad81-ec277ed168d8")
-	)
 	(label "ESC_SYNC0"
 		(at 35.56 138.43 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "7345e559-0ad0-48e8-8c75-c11ed437240a")
 	)
-	(label "PC3"
-		(at 45.72 128.27 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7875f70d-0181-49ab-bd93-66a16696c96f")
-	)
 	(label "ESC_SYNC0"
 		(at 351.79 129.54 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7792,7 +7284,7 @@
 		(at 35.56 143.51 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7803,7 +7295,7 @@
 		(at 351.79 96.52 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7814,7 +7306,7 @@
 		(at 351.79 127 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7825,7 +7317,7 @@
 		(at 105.41 100.33 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7836,7 +7328,7 @@
 		(at 105.41 80.01 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7844,10 +7336,10 @@
 		(uuid "84c8025a-00e7-4e43-976a-4f33f306d999")
 	)
 	(label "SENSE_TEMP_FET"
-		(at 351.79 226.06 0)
+		(at 351.79 201.93 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7858,28 +7350,18 @@
 		(at 351.79 50.8 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "882e2423-5daf-4f70-82b7-9d1121f0aa97")
 	)
-	(label "HALL_C"
-		(at 276.86 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8894298a-2e54-4b5c-bf91-6aad46559d14")
-	)
 	(label "MOTOR_HIZ"
 		(at 35.56 158.75 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7890,7 +7372,7 @@
 		(at 105.41 82.55 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -7898,10 +7380,10 @@
 		(uuid "8efa0c2b-b542-4619-95c6-9dbb7d0315f4")
 	)
 	(label "ESC_SYNC1"
-		(at 177.8 73.66 0)
+		(at 176.53 90.17 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7909,10 +7391,10 @@
 		(uuid "9112d977-9d41-4a1e-91c6-29a8393aa361")
 	)
 	(label "LED_DBG"
-		(at 262.89 228.6 0)
+		(at 259.08 218.44 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7920,10 +7402,10 @@
 		(uuid "913119a2-1bac-449e-845a-848614e86f46")
 	)
 	(label "MOTOR_ENABLE"
-		(at 154.94 168.91 0)
+		(at 153.67 185.42 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7931,10 +7413,10 @@
 		(uuid "955f7795-a97e-404a-9bab-f9e512b9aee6")
 	)
 	(label "ESC_CS"
-		(at 177.8 57.15 0)
+		(at 176.53 73.66 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7945,39 +7427,18 @@
 		(at 351.79 73.66 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "963b8ef1-fe1d-4533-a43b-a41f49cbf781")
 	)
-	(label "PC5"
-		(at 45.72 133.35 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "96a0342a-b408-4cf9-815d-905b01925867")
-	)
-	(label "HALL_B"
-		(at 105.41 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "96b1bdf6-3a21-4b31-9274-dd46c141d51b")
-	)
 	(label "ESC_MOSI"
 		(at 351.79 121.92 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7985,10 +7446,10 @@
 		(uuid "9b789c72-7c56-4711-aa6d-dba46752e3b6")
 	)
 	(label "MOTOR_FAULT"
-		(at 154.94 173.99 0)
+		(at 153.67 190.5 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -7999,7 +7460,7 @@
 		(at 351.79 80.01 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8010,7 +7471,7 @@
 		(at 105.41 148.59 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8021,7 +7482,7 @@
 		(at 105.41 90.17 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8032,7 +7493,7 @@
 		(at 351.79 53.34 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8043,7 +7504,7 @@
 		(at 35.56 120.65 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8054,7 +7515,7 @@
 		(at 351.79 119.38 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8062,10 +7523,10 @@
 		(uuid "a391b0df-fa48-4ce9-88ac-9d11b41b9bfa")
 	)
 	(label "SENSE_TEMP_MOT"
-		(at 351.79 223.52 0)
+		(at 351.79 199.39 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8076,7 +7537,7 @@
 		(at 105.41 133.35 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8084,10 +7545,10 @@
 		(uuid "a536b83c-faa3-4097-a53b-3c5303a6a22f")
 	)
 	(label "ESC_SYNC0"
-		(at 177.8 71.12 0)
+		(at 176.53 87.63 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8098,7 +7559,7 @@
 		(at 351.79 59.69 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8109,7 +7570,7 @@
 		(at 351.79 132.08 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8117,10 +7578,10 @@
 		(uuid "b07e557f-2b88-4f63-a93c-5a127f4f71f7")
 	)
 	(label "FDCAN_TX"
-		(at 351.79 198.12 0)
+		(at 351.79 173.99 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8131,7 +7592,7 @@
 		(at 35.56 113.03 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8139,10 +7600,10 @@
 		(uuid "b242313d-af80-486d-9529-a3e15c4effb0")
 	)
 	(label "SWDIO"
-		(at 144.78 203.2 0)
+		(at 35.56 207.01 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8153,7 +7614,7 @@
 		(at 351.79 71.12 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8161,10 +7622,10 @@
 		(uuid "b5f8efee-a80d-41ef-b2b1-06d8af74a65b")
 	)
 	(label "DRV_MOSI_MCU"
-		(at 154.94 109.22 0)
+		(at 153.67 125.73 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8172,21 +7633,32 @@
 		(uuid "b630bdb8-1426-4fc9-b74b-562da8c40580")
 	)
 	(label "ENC_MISO"
-		(at 276.86 147.32 0)
+		(at 275.59 163.83 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "b682e97b-5b97-4117-8a13-1e87954d0ad3")
 	)
+	(label "BOOT0"
+		(at 105.41 140.97 180)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b754fd07-0365-4170-a28a-93303afac717")
+	)
 	(label "ENC_MOSI_MCU"
 		(at 105.41 97.79 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8194,10 +7666,10 @@
 		(uuid "ba2681aa-1719-45a5-9a93-8cfb51ead50a")
 	)
 	(label "FAN_CTRL"
-		(at 351.79 210.82 0)
+		(at 351.79 186.69 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8205,10 +7677,10 @@
 		(uuid "bcd0fe0a-9c33-4c63-9dd9-057e61638937")
 	)
 	(label "MOTOR_HIZ"
-		(at 154.94 171.45 0)
+		(at 153.67 187.96 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8216,10 +7688,10 @@
 		(uuid "bd58fe18-1664-44f3-8c2f-02fb325dc684")
 	)
 	(label "ENC_MOSI_MCU"
-		(at 251.46 149.86 0)
+		(at 250.19 166.37 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8227,10 +7699,10 @@
 		(uuid "bf8ada0c-f303-4523-9a68-006a9ece213c")
 	)
 	(label "ESC_MOSI"
-		(at 177.8 52.07 0)
+		(at 176.53 68.58 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8238,10 +7710,10 @@
 		(uuid "c246004d-da5f-4fd6-9868-c5cc58cfa20f")
 	)
 	(label "FILTER_SOC"
-		(at 154.94 147.32 0)
+		(at 153.67 163.83 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8249,10 +7721,10 @@
 		(uuid "c359f56a-dda7-499f-8d2b-c636eca97a7c")
 	)
 	(label "ESC_SCLK"
-		(at 177.8 49.53 0)
+		(at 176.53 66.04 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8263,7 +7735,7 @@
 		(at 105.41 125.73 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.2446 1.2446)
 			)
 			(justify right bottom)
@@ -8271,10 +7743,10 @@
 		(uuid "cdb4c864-2425-4ce8-a5d0-dcdda18810a0")
 	)
 	(label "NRST"
-		(at 144.78 208.28 0)
+		(at 35.56 212.09 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8282,10 +7754,10 @@
 		(uuid "cf681bcf-dd32-4171-9d11-6a60886e7188")
 	)
 	(label "FILTER_SOA"
-		(at 154.94 142.24 0)
+		(at 153.67 158.75 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8296,7 +7768,7 @@
 		(at 351.79 101.6 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8307,7 +7779,7 @@
 		(at 105.41 95.25 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8318,7 +7790,7 @@
 		(at 35.56 146.05 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8326,10 +7798,10 @@
 		(uuid "d8d049f5-c491-43e1-af97-4c51438eab7f")
 	)
 	(label "ENC_MISO"
-		(at 351.79 144.78 0)
+		(at 351.79 137.16 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8337,10 +7809,10 @@
 		(uuid "dc6f000a-3fc5-47b1-9141-1cfb02a5713e")
 	)
 	(label "BOARD_VERSION"
-		(at 260.35 198.12 0)
+		(at 256.54 187.96 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8351,7 +7823,7 @@
 		(at 105.41 102.87 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8359,10 +7831,10 @@
 		(uuid "e1270caa-ab45-4019-a7e4-1e1f28ba3877")
 	)
 	(label "DRV_SCLK"
-		(at 179.07 104.14 0)
+		(at 177.8 120.65 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8370,10 +7842,10 @@
 		(uuid "e1982e2e-3ec8-47d9-ba5e-a117b9277be2")
 	)
 	(label "ESC_SCLK_MCU"
-		(at 148.59 49.53 0)
+		(at 147.32 66.04 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8384,28 +7856,18 @@
 		(at 35.56 151.13 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "e41e8fb2-f4db-4989-a569-7139226474cd")
 	)
-	(label "HALL_B"
-		(at 276.86 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4257820-d543-4eb7-b2ad-2ee19fe2220f")
-	)
 	(label "ESC_MISO"
-		(at 177.8 54.61 0)
+		(at 176.53 71.12 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8416,7 +7878,7 @@
 		(at 351.79 55.88 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8424,10 +7886,10 @@
 		(uuid "e717fe2c-5626-4a1e-a296-d84c62a7b8a0")
 	)
 	(label "SOA"
-		(at 194.31 142.24 180)
+		(at 193.04 158.75 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8438,7 +7900,7 @@
 		(at 105.41 113.03 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8446,10 +7908,10 @@
 		(uuid "eb73e516-66a2-433f-a427-c550c5ea29a1")
 	)
 	(label "PWM_PHASEC"
-		(at 154.94 127 0)
+		(at 153.67 143.51 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8457,10 +7919,10 @@
 		(uuid "ee0ed44d-e15e-43fb-9f53-b407dcb396dd")
 	)
 	(label "ENC_MOSI"
-		(at 276.86 149.86 0)
+		(at 275.59 166.37 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8468,21 +7930,32 @@
 		(uuid "ef00d84a-5766-4d4c-9b52-a0bcce599b19")
 	)
 	(label "ENC_BRD_CS"
-		(at 276.86 152.4 0)
+		(at 275.59 168.91 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "ef47d2fb-7af0-4d9f-b412-fc3b2248d93b")
 	)
-	(label "ENC_EXT_CS"
-		(at 276.86 154.94 0)
+	(label "MGH"
+		(at 35.56 123.19 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef98265b-7781-41a8-9adc-b3566388d222")
+	)
+	(label "ENC_EXT_CS"
+		(at 275.59 171.45 0)
+		(effects
+			(font
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8493,7 +7966,7 @@
 		(at 105.41 87.63 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8501,10 +7974,10 @@
 		(uuid "f3c8a200-80c0-45db-8ea7-f599f02f0255")
 	)
 	(label "SENSE_TEMP_MOT"
-		(at 254 80.01 0)
+		(at 252.73 96.52 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8512,10 +7985,10 @@
 		(uuid "f41ad6bc-a2ce-486b-b1b0-6b3d67c0805f")
 	)
 	(label "SOB"
-		(at 194.31 144.78 180)
+		(at 193.04 161.29 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -8526,7 +7999,7 @@
 		(at 351.79 114.3 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8534,10 +8007,10 @@
 		(uuid "f8b57a82-ad2a-4c77-8e8f-e9c244cc46a9")
 	)
 	(label "PWM_PHASEB"
-		(at 154.94 124.46 0)
+		(at 153.67 140.97 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8545,10 +8018,10 @@
 		(uuid "f950821b-b742-4c17-ab46-a2c9fb710335")
 	)
 	(label "FILTER_SOB"
-		(at 154.94 144.78 0)
+		(at 153.67 161.29 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8559,7 +8032,7 @@
 		(at 351.79 76.2 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -8568,10 +8041,10 @@
 	)
 	(hierarchical_label "MOTOR_FAULT"
 		(shape input)
-		(at 201.93 173.99 0)
+		(at 200.66 190.5 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -8582,9 +8055,10 @@
 	)
 	(hierarchical_label "{ENC_SPI}"
 		(shape bidirectional)
-		(at 303.53 139.7 0)
+		(at 302.26 156.21 0)
 		(effects
 			(font
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left)
@@ -8593,13 +8067,12 @@
 	)
 	(hierarchical_label "FAN_CTRL"
 		(shape output)
-		(at 289.56 120.65 0)
+		(at 288.29 137.16 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left)
 		)
@@ -8607,10 +8080,10 @@
 	)
 	(hierarchical_label "MOTOR_ENABLE"
 		(shape output)
-		(at 201.93 168.91 0)
+		(at 200.66 185.42 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -8621,12 +8094,11 @@
 	)
 	(hierarchical_label "{LED}"
 		(shape output)
-		(at 304.8 222.25 0)
+		(at 299.72 212.09 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(bold yes)
 			)
 			(justify left)
 		)
@@ -8634,9 +8106,10 @@
 	)
 	(hierarchical_label "{ESC_SPI}"
 		(shape bidirectional)
-		(at 207.01 44.45 0)
+		(at 205.74 60.96 0)
 		(effects
 			(font
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left)
@@ -8645,10 +8118,10 @@
 	)
 	(hierarchical_label "BOARD_VERSION"
 		(shape input)
-		(at 289.56 198.12 0)
+		(at 285.75 187.96 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left)
@@ -8657,12 +8130,11 @@
 	)
 	(hierarchical_label "{PWM_PHASE}"
 		(shape output)
-		(at 207.01 115.57 0)
+		(at 205.74 132.08 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(bold yes)
 			)
 			(justify left)
 		)
@@ -8670,24 +8142,36 @@
 	)
 	(hierarchical_label "{ESC_CTRL}"
 		(shape bidirectional)
-		(at 207.01 63.5 0)
+		(at 205.74 80.01 0)
 		(effects
 			(font
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
 		(uuid "511125c1-85b8-4023-93de-bff7b5ba7825")
 	)
-	(hierarchical_label "SENSE_VBAT"
+	(hierarchical_label "MGL"
 		(shape input)
-		(at 289.56 104.14 0)
+		(at 35.56 125.73 180)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "554fbe98-ddc8-434b-8bce-864c687222a5")
+	)
+	(hierarchical_label "SENSE_VBAT"
+		(shape input)
+		(at 288.29 120.65 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+				(thickness 0.1588)
 			)
 			(justify left)
 		)
@@ -8695,12 +8179,11 @@
 	)
 	(hierarchical_label "{DRV_SPI}"
 		(shape bidirectional)
-		(at 207.01 97.79 0)
+		(at 205.74 114.3 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(bold yes)
 			)
 			(justify left)
 		)
@@ -8708,12 +8191,11 @@
 	)
 	(hierarchical_label "{CURRENT_SENSE}"
 		(shape input)
-		(at 207.01 135.89 0)
+		(at 205.74 152.4 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(bold yes)
 			)
 			(justify left)
 		)
@@ -8721,12 +8203,11 @@
 	)
 	(hierarchical_label "{FDCAN_TTL}"
 		(shape bidirectional)
-		(at 303.53 41.91 0)
+		(at 302.26 58.42 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(bold yes)
 			)
 			(justify left)
 		)
@@ -8734,12 +8215,11 @@
 	)
 	(hierarchical_label "{SENSE_TEMP}"
 		(shape input)
-		(at 303.53 73.66 0)
+		(at 302.26 90.17 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
-				(bold yes)
 			)
 			(justify left)
 		)
@@ -8747,10 +8227,10 @@
 	)
 	(hierarchical_label "MOTOR_HIZ"
 		(shape output)
-		(at 201.93 171.45 0)
+		(at 200.66 187.96 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -8759,20 +8239,21 @@
 		)
 		(uuid "d9286f07-c06b-469e-a96b-771323c4cf67")
 	)
-	(hierarchical_label "{HALL}"
+	(hierarchical_label "MGH"
 		(shape input)
-		(at 303.53 162.56 0)
+		(at 35.56 123.19 180)
 		(effects
 			(font
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "f5153f41-fc12-4f94-a1a8-159135d24ff9")
+		(uuid "ebad83ec-79e7-4e3a-80e1-b3594695ce76")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 152.4 270)
+		(at 367.03 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8780,7 +8261,7 @@
 		(dnp no)
 		(uuid "026b9afd-4852-4658-a8a4-63989c6aceda")
 		(property "Reference" "TP28"
-			(at 372.11 152.4 90)
+			(at 372.11 144.78 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8790,7 +8271,7 @@
 			)
 		)
 		(property "Value" "ENC_EXT_CS"
-			(at 379.73 152.4 90)
+			(at 379.73 144.78 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8800,7 +8281,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 157.48 0)
+			(at 367.03 149.86 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8810,7 +8291,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 157.48 0)
+			(at 367.03 149.86 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8819,8 +8300,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 152.4 0)
+		(property "Description" "test point"
+			(at 367.03 144.78 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8830,18 +8311,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 152.4 90)
+			(at 367.03 144.78 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 152.4 90)
+			(at 367.03 144.78 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8861,7 +8344,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 180.34 270)
+		(at 367.03 156.21 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8869,7 +8352,7 @@
 		(dnp no)
 		(uuid "085e54a9-d536-4e52-82e3-82995ed82503")
 		(property "Reference" "TP31"
-			(at 372.11 180.34 90)
+			(at 372.11 156.21 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8879,7 +8362,7 @@
 			)
 		)
 		(property "Value" "LED_DBG"
-			(at 379.73 180.34 90)
+			(at 379.73 156.21 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8889,7 +8372,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 185.42 0)
+			(at 367.03 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8899,7 +8382,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 185.42 0)
+			(at 367.03 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8908,8 +8391,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 180.34 0)
+		(property "Description" "test point"
+			(at 367.03 156.21 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8919,18 +8402,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 180.34 90)
+			(at 367.03 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 180.34 90)
+			(at 367.03 156.21 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -8997,7 +8482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 101.6 0)
 			(effects
 				(font
@@ -9011,6 +8496,7 @@
 			(at 367.03 101.6 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9020,6 +8506,7 @@
 			(at 367.03 101.6 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9039,7 +8526,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 154.94 0)
+		(at 166.37 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9047,7 +8534,7 @@
 		(dnp no)
 		(uuid "0d9923de-ca93-4d91-9d24-f0b5d8ad48ed")
 		(property "Reference" "#PWR014"
-			(at 167.64 161.29 0)
+			(at 166.37 177.8 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9057,17 +8544,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 160.02 0)
+			(at 166.37 175.006 0)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 154.94 0)
+			(at 166.37 171.45 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9077,7 +8563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 154.94 0)
+			(at 166.37 171.45 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9086,8 +8572,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 167.64 154.94 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.37 171.45 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9157,7 +8643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 67.31 0)
 			(effects
 				(font
@@ -9171,6 +8657,7 @@
 			(at 367.03 67.31 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9180,6 +8667,7 @@
 			(at 367.03 67.31 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9199,7 +8687,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 270.51 149.86 90)
+		(at 269.24 166.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9207,133 +8695,148 @@
 		(dnp no)
 		(uuid "2120f3a1-ca9e-4f03-8745-69f045869051")
 		(property "Reference" "R9"
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Value" "22"
-			(at 270.51 152.146 90)
+			(at 269.24 168.656 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 270.51 149.86 90)
+		(property "Datasheet" "~"
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 22Ω ±1% 0402"
-			(at 270.51 149.86 0)
+		(property "Description" "Resistor"
+			(at 269.24 166.37 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 270.51 149.86 0)
+			(at 269.24 166.37 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-0722RL"
-			(at 270.51 149.86 0)
+			(at 269.24 166.37 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 270.51 149.86 0)
+			(at 269.24 166.37 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "603-RC0402FR-0722RL"
-			(at 270.51 149.86 0)
+			(at 269.24 166.37 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Config" ""
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "MPN" ""
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Mouser" ""
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 270.51 149.86 90)
+			(at 269.24 166.37 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9356,7 +8859,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 167.64 151.13 0)
+		(at 166.37 167.64 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9365,7 +8868,7 @@
 		(dnp no)
 		(uuid "24329ca2-5c88-4d16-b36b-3abcae69206b")
 		(property "Reference" "C14"
-			(at 165.1 151.13 0)
+			(at 165.608 165.862 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9374,8 +8877,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1n X7R 25V"
-			(at 165.1 153.67 0)
+		(property "Value" "1n"
+			(at 165.608 169.164 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9385,7 +8888,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9394,8 +8897,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/mlcc/upy-ac_np0x7rx7s_6_3v-to-2kv.pdf"
-			(at 167.64 151.13 0)
+		(property "Datasheet" "~"
+			(at 166.37 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9404,8 +8907,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 25V Ceramic Capacitor X7R 0402 (1005 Metric)"
-			(at 167.64 151.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 166.37 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9415,7 +8918,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9425,7 +8928,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "311-3065-1-ND"
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9435,36 +8938,40 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 167.64 151.13 0)
+			(at 166.37 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9534,7 +9041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 116.84 0)
 			(effects
 				(font
@@ -9548,6 +9055,7 @@
 			(at 367.03 116.84 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9557,6 +9065,7 @@
 			(at 367.03 116.84 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9576,7 +9085,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 173.99 104.14 270)
+		(at 172.72 120.65 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9585,7 +9094,7 @@
 		(dnp no)
 		(uuid "25694474-13fb-46a8-b4e9-6d5a444ff114")
 		(property "Reference" "R1"
-			(at 173.99 104.14 90)
+			(at 172.72 120.65 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9594,7 +9103,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 173.736 102.616 90)
+			(at 172.466 119.126 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9603,7 +9112,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 173.99 104.14 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9612,8 +9121,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 173.99 104.14 0)
+		(property "Datasheet" "~"
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9622,8 +9131,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 173.99 104.14 0)
+		(property "Description" "Resistor, small symbol"
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9633,7 +9142,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 173.99 104.14 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9643,7 +9152,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 173.99 104.14 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9653,36 +9162,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 173.99 104.14 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 173.99 104.14 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 173.99 104.14 90)
+			(at 172.72 120.65 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 173.99 104.14 90)
+			(at 172.72 120.65 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9752,7 +9265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 114.3 0)
 			(effects
 				(font
@@ -9766,6 +9279,7 @@
 			(at 367.03 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9775,6 +9289,7 @@
 			(at 367.03 114.3 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9794,7 +9309,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 224.79 200.66 0)
+		(at 105.41 204.47 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9803,7 +9318,7 @@
 		(dnp no)
 		(uuid "29643224-fd53-4260-9d35-17eda03b1872")
 		(property "Reference" "#PWR013"
-			(at 224.79 207.01 0)
+			(at 105.41 210.82 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9813,17 +9328,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 220.98 203.2 0)
+			(at 105.41 208.534 0)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 200.66 0)
+			(at 105.41 204.47 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9833,7 +9347,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 200.66 0)
+			(at 105.41 204.47 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9842,8 +9356,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 224.79 200.66 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 204.47 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9866,7 +9380,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 226.06 270)
+		(at 367.03 201.93 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9874,7 +9388,7 @@
 		(dnp no)
 		(uuid "2d3c7d51-9f46-482e-a634-78e0935b22d0")
 		(property "Reference" "TP37"
-			(at 372.11 226.06 90)
+			(at 372.11 201.93 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9884,7 +9398,7 @@
 			)
 		)
 		(property "Value" "SENSE_TEMP_FET"
-			(at 379.73 226.06 90)
+			(at 379.73 201.93 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9894,7 +9408,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 231.14 0)
+			(at 367.03 207.01 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9904,7 +9418,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 231.14 0)
+			(at 367.03 207.01 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9913,8 +9427,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 226.06 0)
+		(property "Description" "test point"
+			(at 367.03 201.93 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9924,18 +9438,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 226.06 90)
+			(at 367.03 201.93 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 226.06 90)
+			(at 367.03 201.93 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -9955,7 +9471,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 182.88 270)
+		(at 367.03 158.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9963,7 +9479,7 @@
 		(dnp no)
 		(uuid "399f09b9-7935-4305-8146-de24cd26bee2")
 		(property "Reference" "TP32"
-			(at 372.11 182.88 90)
+			(at 372.11 158.75 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9973,7 +9489,7 @@
 			)
 		)
 		(property "Value" "LED_PWR"
-			(at 379.73 182.88 90)
+			(at 379.73 158.75 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9983,7 +9499,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 187.96 0)
+			(at 367.03 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9993,7 +9509,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 187.96 0)
+			(at 367.03 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10002,8 +9518,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 182.88 0)
+		(property "Description" "test point"
+			(at 367.03 158.75 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10013,18 +9529,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 182.88 90)
+			(at 367.03 158.75 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 182.88 90)
+			(at 367.03 158.75 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10044,7 +9562,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 144.78 270)
+		(at 367.03 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10052,7 +9570,7 @@
 		(dnp no)
 		(uuid "3b826b40-af03-4718-bfce-a8c0e0e6d57a")
 		(property "Reference" "TP25"
-			(at 372.11 144.78 90)
+			(at 372.11 137.16 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10062,7 +9580,7 @@
 			)
 		)
 		(property "Value" "ENC_MISO"
-			(at 379.73 144.78 90)
+			(at 379.73 137.16 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10072,7 +9590,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 149.86 0)
+			(at 367.03 142.24 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10082,7 +9600,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 149.86 0)
+			(at 367.03 142.24 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10091,8 +9609,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 144.78 0)
+		(property "Description" "test point"
+			(at 367.03 137.16 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10102,18 +9620,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 144.78 90)
+			(at 367.03 137.16 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 144.78 90)
+			(at 367.03 137.16 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10180,7 +9700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 99.06 0)
 			(effects
 				(font
@@ -10194,6 +9714,7 @@
 			(at 367.03 99.06 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10203,6 +9724,7 @@
 			(at 367.03 99.06 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10222,7 +9744,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 198.12 270)
+		(at 367.03 173.99 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10230,7 +9752,7 @@
 		(dnp no)
 		(uuid "4288249c-6f74-4e6a-97ed-19869354dc73")
 		(property "Reference" "TP34"
-			(at 372.11 198.12 90)
+			(at 372.11 173.99 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10240,7 +9762,7 @@
 			)
 		)
 		(property "Value" "FDCAN_TX"
-			(at 379.73 198.12 90)
+			(at 379.73 173.99 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10250,7 +9772,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 203.2 0)
+			(at 367.03 179.07 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10260,7 +9782,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 203.2 0)
+			(at 367.03 179.07 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10269,8 +9791,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 198.12 0)
+		(property "Description" "test point"
+			(at 367.03 173.99 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10280,18 +9802,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 198.12 90)
+			(at 367.03 173.99 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 198.12 90)
+			(at 367.03 173.99 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10358,7 +9882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 80.01 0)
 			(effects
 				(font
@@ -10372,6 +9896,7 @@
 			(at 367.03 80.01 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10381,6 +9906,7 @@
 			(at 367.03 80.01 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10447,7 +9973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 82.55 0)
 			(effects
 				(font
@@ -10461,6 +9987,7 @@
 			(at 367.03 82.55 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10470,6 +9997,7 @@
 			(at 367.03 82.55 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10489,7 +10017,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 223.52 270)
+		(at 367.03 199.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10497,7 +10025,7 @@
 		(dnp no)
 		(uuid "4d3bf48b-4040-4ee9-b686-d001fb3d0f4e")
 		(property "Reference" "TP36"
-			(at 372.11 223.52 90)
+			(at 372.11 199.39 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10507,7 +10035,7 @@
 			)
 		)
 		(property "Value" "SENSE_TEMP_MOT"
-			(at 379.73 223.52 90)
+			(at 379.73 199.39 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10517,7 +10045,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 228.6 0)
+			(at 367.03 204.47 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10527,7 +10055,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 228.6 0)
+			(at 367.03 204.47 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10536,8 +10064,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 223.52 0)
+		(property "Description" "test point"
+			(at 367.03 199.39 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10547,18 +10075,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 223.52 90)
+			(at 367.03 199.39 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 223.52 90)
+			(at 367.03 199.39 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10625,7 +10155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 73.66 0)
 			(effects
 				(font
@@ -10639,6 +10169,7 @@
 			(at 367.03 73.66 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10648,6 +10179,7 @@
 			(at 367.03 73.66 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10714,7 +10246,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 62.23 0)
 			(effects
 				(font
@@ -10728,6 +10260,7 @@
 			(at 367.03 62.23 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10737,6 +10270,7 @@
 			(at 367.03 62.23 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10803,7 +10337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 85.09 0)
 			(effects
 				(font
@@ -10817,6 +10351,7 @@
 			(at 367.03 85.09 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10826,6 +10361,7 @@
 			(at 367.03 85.09 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10892,7 +10428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 50.8 0)
 			(effects
 				(font
@@ -10906,6 +10442,7 @@
 			(at 367.03 50.8 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10915,6 +10452,7 @@
 			(at 367.03 50.8 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -10934,7 +10472,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 224.79 186.69 0)
+		(at 105.41 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10942,7 +10480,7 @@
 		(dnp no)
 		(uuid "5eaf5d9c-1039-4b7d-a1ff-542ebbee42b5")
 		(property "Reference" "#PWR011"
-			(at 224.79 190.5 0)
+			(at 105.41 194.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10952,7 +10490,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 224.79 182.88 0)
+			(at 105.41 186.69 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10961,7 +10499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 186.69 0)
+			(at 105.41 190.5 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10971,7 +10509,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 186.69 0)
+			(at 105.41 190.5 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10980,8 +10518,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 224.79 186.69 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 105.41 190.5 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11004,7 +10542,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 142.24 270)
+		(at 367.03 134.62 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11012,7 +10550,7 @@
 		(dnp no)
 		(uuid "66d4bd0c-0586-4770-9957-ce04c6ab9aad")
 		(property "Reference" "TP24"
-			(at 372.11 142.24 90)
+			(at 372.11 134.62 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11022,7 +10560,7 @@
 			)
 		)
 		(property "Value" "ENC_SCLK"
-			(at 379.73 142.24 90)
+			(at 379.73 134.62 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11032,7 +10570,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 147.32 0)
+			(at 367.03 139.7 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11042,7 +10580,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 147.32 0)
+			(at 367.03 139.7 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11051,8 +10589,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 142.24 0)
+		(property "Description" "test point"
+			(at 367.03 134.62 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11062,18 +10600,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 142.24 90)
+			(at 367.03 134.62 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 142.24 90)
+			(at 367.03 134.62 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11093,7 +10633,7 @@
 	)
 	(symbol
 		(lib_id "0_power_protection:PESD4USB3U-TBSX")
-		(at 170.18 215.9 0)
+		(at 50.8 219.71 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11103,7 +10643,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c5bb99b-2a13-448d-8529-08bd87133e7a")
 		(property "Reference" "D1"
-			(at 162.56 214.63 0)
+			(at 43.18 218.44 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11113,7 +10653,7 @@
 			)
 		)
 		(property "Value" "PESD4USB3U-TBSX"
-			(at 162.56 217.17 0)
+			(at 43.18 220.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11123,7 +10663,7 @@
 			)
 		)
 		(property "Footprint" "0_package_DFN_QFN:SOT1176D"
-			(at 167.64 203.2 0)
+			(at 48.26 207.01 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11133,7 +10673,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD4USB3U-TBS.pdf"
-			(at 170.18 198.12 0)
+			(at 50.8 201.93 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11143,7 +10683,7 @@
 			)
 		)
 		(property "Description" "3.5V (Typ) Clamp 7A (8/20µs) Ipp Tvs Diode Surface Mount, Wettable Flank DFN2510D-10"
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11153,7 +10693,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11163,7 +10703,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "1727-PESD4USB3U-TBSXCT-ND"
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11173,36 +10713,40 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia USA Inc."
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "PESD4USB3U-TBSX"
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 170.18 215.9 0)
+			(at 50.8 219.71 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11242,6 +10786,81 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 118.11 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7178d46a-5ca5-4659-b543-32e72426f7a9")
+		(property "Reference" "R77"
+			(at 120.65 143.5099 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 120.65 146.0499 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4688008-ebe3-4845-a52d-8477bb4ded4e")
+		)
+		(pin "1"
+			(uuid "ce865c16-dc23-4414-90b3-b94698fae350")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
+					(reference "R77")
 					(unit 1)
 				)
 			)
@@ -11296,7 +10915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 71.12 0)
 			(effects
 				(font
@@ -11310,6 +10929,7 @@
 			(at 367.03 71.12 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11319,6 +10939,7 @@
 			(at 367.03 71.12 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11338,7 +10959,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL")
-		(at 210.82 205.74 180)
+		(at 91.44 209.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11346,18 +10967,20 @@
 		(dnp no)
 		(uuid "7d91ebbe-b982-410a-8a62-718e806ca41d")
 		(property "Reference" "J15"
-			(at 217.17 204.4699 0)
+			(at 97.79 208.2799 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
 		)
 		(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
-			(at 217.17 207.0099 0)
+			(at 97.79 210.8199 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -11365,45 +10988,50 @@
 			)
 		)
 		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
-			(at 210.82 187.96 0)
+			(at 91.44 191.77 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
-			(at 210.82 190.5 0)
+			(at 91.44 194.31 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
-			(at 210.82 205.74 0)
+			(at 91.44 209.55 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 210.82 205.74 0)
+			(at 91.44 209.55 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 210.82 205.74 0)
+			(at 91.44 209.55 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11438,7 +11066,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 224.79 195.58 0)
+		(at 105.41 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11446,7 +11074,7 @@
 		(dnp no)
 		(uuid "81187600-f337-4ab5-9981-9c57b8099ea0")
 		(property "Reference" "C12"
-			(at 227.33 194.3163 0)
+			(at 107.95 198.1263 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11456,7 +11084,7 @@
 			)
 		)
 		(property "Value" "100n X7R 50V"
-			(at 227.33 196.8563 0)
+			(at 107.95 200.6663 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11466,7 +11094,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11475,8 +11103,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
-			(at 224.79 195.58 0)
+		(property "Datasheet" "~"
+			(at 105.41 199.39 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11485,8 +11113,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
-			(at 224.79 195.58 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 199.39 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11496,7 +11124,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11506,7 +11134,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11516,36 +11144,40 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 224.79 195.58 0)
+			(at 105.41 199.39 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11568,7 +11200,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 182.88 142.24 90)
+		(at 181.61 158.75 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11576,7 +11208,7 @@
 		(dnp no)
 		(uuid "8608f756-842b-462c-8bbc-7548f451983f")
 		(property "Reference" "R5"
-			(at 186.69 140.97 90)
+			(at 185.42 157.48 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11585,7 +11217,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 177.8 140.97 90)
+			(at 176.53 157.48 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11594,7 +11226,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 182.88 142.24 0)
+			(at 181.61 158.75 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11603,8 +11235,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 182.88 142.24 0)
+		(property "Datasheet" "~"
+			(at 181.61 158.75 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11613,8 +11245,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 182.88 142.24 0)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 158.75 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11624,7 +11256,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 182.88 142.24 0)
+			(at 181.61 158.75 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11634,7 +11266,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 182.88 142.24 0)
+			(at 181.61 158.75 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11644,36 +11276,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 182.88 142.24 0)
+			(at 181.61 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 182.88 142.24 0)
+			(at 181.61 158.75 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 182.88 142.24 90)
+			(at 181.61 158.75 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 182.88 142.24 90)
+			(at 181.61 158.75 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11696,7 +11332,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 172.72 151.13 0)
+		(at 171.45 167.64 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11705,7 +11341,7 @@
 		(dnp no)
 		(uuid "8c22d6d1-22d7-4546-b2fe-d475803ffa6d")
 		(property "Reference" "C15"
-			(at 172.72 157.48 0)
+			(at 169.926 165.608 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11713,8 +11349,8 @@
 				)
 			)
 		)
-		(property "Value" "1n X7R 25V"
-			(at 172.72 160.02 0)
+		(property "Value" "1n"
+			(at 170.18 169.164 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11723,7 +11359,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11732,8 +11368,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/mlcc/upy-ac_np0x7rx7s_6_3v-to-2kv.pdf"
-			(at 172.72 151.13 0)
+		(property "Datasheet" "~"
+			(at 171.45 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11742,8 +11378,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 25V Ceramic Capacitor X7R 0402 (1005 Metric)"
-			(at 172.72 151.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 171.45 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11753,7 +11389,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11763,7 +11399,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "311-3065-1-ND"
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11773,36 +11409,40 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 172.72 151.13 0)
+			(at 171.45 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11825,7 +11465,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 173.99 109.22 270)
+		(at 172.72 125.73 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11834,7 +11474,7 @@
 		(dnp no)
 		(uuid "8c7681e9-2cef-4349-a061-65797158752a")
 		(property "Reference" "R2"
-			(at 173.99 109.22 90)
+			(at 172.72 125.73 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11843,7 +11483,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 173.736 107.696 90)
+			(at 172.466 124.206 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11852,7 +11492,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 173.99 109.22 0)
+			(at 172.72 125.73 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11861,8 +11501,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 173.99 109.22 0)
+		(property "Datasheet" "~"
+			(at 172.72 125.73 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11871,8 +11511,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 173.99 109.22 0)
+		(property "Description" "Resistor, small symbol"
+			(at 172.72 125.73 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11882,7 +11522,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 173.99 109.22 0)
+			(at 172.72 125.73 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11892,7 +11532,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 173.99 109.22 0)
+			(at 172.72 125.73 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11902,36 +11542,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 173.99 109.22 0)
+			(at 172.72 125.73 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 173.99 109.22 0)
+			(at 172.72 125.73 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 173.99 109.22 90)
+			(at 172.72 125.73 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 173.99 109.22 90)
+			(at 172.72 125.73 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -11954,7 +11598,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 149.86 270)
+		(at 367.03 142.24 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11962,7 +11606,7 @@
 		(dnp no)
 		(uuid "8de87029-5b4d-4791-80ee-bc7d81826715")
 		(property "Reference" "TP27"
-			(at 372.11 149.86 90)
+			(at 372.11 142.24 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11972,7 +11616,7 @@
 			)
 		)
 		(property "Value" "ENC_BRD_CS"
-			(at 379.73 149.86 90)
+			(at 379.73 142.24 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11982,7 +11626,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 154.94 0)
+			(at 367.03 147.32 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -11992,7 +11636,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 154.94 0)
+			(at 367.03 147.32 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12001,8 +11645,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 149.86 0)
+		(property "Description" "test point"
+			(at 367.03 142.24 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12012,18 +11656,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 149.86 90)
+			(at 367.03 142.24 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 149.86 90)
+			(at 367.03 142.24 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12043,7 +11689,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 213.36 226.06 0)
+		(at 93.98 229.87 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12053,7 +11699,7 @@
 		(fields_autoplaced yes)
 		(uuid "8ee11cbc-b7d7-4c74-a6e1-7d7ffe6daf62")
 		(property "Reference" "#PWR012"
-			(at 213.36 232.41 0)
+			(at 93.98 236.22 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12063,17 +11709,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 213.36 230.505 0)
+			(at 93.98 234.315 0)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 226.06 0)
+			(at 93.98 229.87 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12083,7 +11728,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 226.06 0)
+			(at 93.98 229.87 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12092,8 +11737,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 213.36 226.06 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 229.87 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12163,7 +11808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 132.08 0)
 			(effects
 				(font
@@ -12177,6 +11822,7 @@
 			(at 367.03 132.08 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12186,6 +11832,7 @@
 			(at 367.03 132.08 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12205,7 +11852,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 171.45 49.53 90)
+		(at 170.18 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12213,7 +11860,7 @@
 		(dnp no)
 		(uuid "a162108a-3e4c-4a9c-a33f-6cee50f9c301")
 		(property "Reference" "R4"
-			(at 174.498 48.768 90)
+			(at 173.228 65.278 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12222,7 +11869,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 166.624 48.768 90)
+			(at 165.354 65.278 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12231,7 +11878,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 171.45 49.53 0)
+			(at 170.18 66.04 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12240,8 +11887,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 171.45 49.53 0)
+		(property "Datasheet" "~"
+			(at 170.18 66.04 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12250,8 +11897,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 171.45 49.53 0)
+		(property "Description" "Resistor, small symbol"
+			(at 170.18 66.04 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12261,7 +11908,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 171.45 49.53 0)
+			(at 170.18 66.04 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12271,7 +11918,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 171.45 49.53 0)
+			(at 170.18 66.04 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12281,36 +11928,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 171.45 49.53 0)
+			(at 170.18 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 171.45 49.53 0)
+			(at 170.18 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 171.45 49.53 90)
+			(at 170.18 66.04 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 171.45 49.53 90)
+			(at 170.18 66.04 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12333,7 +11984,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 182.88 144.78 90)
+		(at 181.61 161.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12341,7 +11992,7 @@
 		(dnp no)
 		(uuid "a18ea79e-910c-4f84-aca3-6e465314923c")
 		(property "Reference" "R6"
-			(at 186.69 143.51 90)
+			(at 185.42 160.02 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12350,7 +12001,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 177.8 143.51 90)
+			(at 176.53 160.02 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12359,7 +12010,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 182.88 144.78 0)
+			(at 181.61 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12368,8 +12019,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 182.88 144.78 0)
+		(property "Datasheet" "~"
+			(at 181.61 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12378,8 +12029,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 182.88 144.78 0)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12389,7 +12040,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 182.88 144.78 0)
+			(at 181.61 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12399,7 +12050,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 182.88 144.78 0)
+			(at 181.61 161.29 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12409,36 +12060,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 182.88 144.78 0)
+			(at 181.61 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 182.88 144.78 0)
+			(at 181.61 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 182.88 144.78 90)
+			(at 181.61 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 182.88 144.78 90)
+			(at 181.61 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12461,7 +12116,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 147.32 270)
+		(at 367.03 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12469,7 +12124,7 @@
 		(dnp no)
 		(uuid "a2a7c783-ad68-44b6-b376-b50d6a15414d")
 		(property "Reference" "TP26"
-			(at 372.11 147.32 90)
+			(at 372.11 139.7 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12479,7 +12134,7 @@
 			)
 		)
 		(property "Value" "ENC_MOSI"
-			(at 379.73 147.32 90)
+			(at 379.73 139.7 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12489,7 +12144,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 152.4 0)
+			(at 367.03 144.78 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12499,7 +12154,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 152.4 0)
+			(at 367.03 144.78 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12508,8 +12163,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 147.32 0)
+		(property "Description" "test point"
+			(at 367.03 139.7 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12519,18 +12174,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 147.32 90)
+			(at 367.03 139.7 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 147.32 90)
+			(at 367.03 139.7 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12597,7 +12254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 55.88 0)
 			(effects
 				(font
@@ -12611,6 +12268,7 @@
 			(at 367.03 55.88 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12620,6 +12278,7 @@
 			(at 367.03 55.88 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12639,7 +12298,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 210.82 270)
+		(at 367.03 186.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12647,7 +12306,7 @@
 		(dnp no)
 		(uuid "af500184-61d8-45ee-9dec-f72f760cc469")
 		(property "Reference" "TP35"
-			(at 372.11 210.82 90)
+			(at 372.11 186.69 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12657,7 +12316,7 @@
 			)
 		)
 		(property "Value" "FAN_CTRL"
-			(at 379.73 210.82 90)
+			(at 379.73 186.69 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12667,7 +12326,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 215.9 0)
+			(at 367.03 191.77 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12677,7 +12336,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 215.9 0)
+			(at 367.03 191.77 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12686,8 +12345,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 210.82 0)
+		(property "Description" "test point"
+			(at 367.03 186.69 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12697,18 +12356,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 210.82 90)
+			(at 367.03 186.69 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 210.82 90)
+			(at 367.03 186.69 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12775,7 +12436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 53.34 0)
 			(effects
 				(font
@@ -12789,6 +12450,7 @@
 			(at 367.03 53.34 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12798,6 +12460,7 @@
 			(at 367.03 53.34 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12864,7 +12527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 129.54 0)
 			(effects
 				(font
@@ -12878,6 +12541,7 @@
 			(at 367.03 129.54 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12887,6 +12551,7 @@
 			(at 367.03 129.54 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12906,7 +12571,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 195.58 270)
+		(at 367.03 171.45 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12914,7 +12579,7 @@
 		(dnp no)
 		(uuid "bb90df68-a1e5-4188-8bd0-eb12125eab4a")
 		(property "Reference" "TP33"
-			(at 372.11 195.58 90)
+			(at 372.11 171.45 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12924,7 +12589,7 @@
 			)
 		)
 		(property "Value" "FD_CAN_RX"
-			(at 379.73 195.58 90)
+			(at 379.73 171.45 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12934,7 +12599,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 200.66 0)
+			(at 367.03 176.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12944,7 +12609,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 200.66 0)
+			(at 367.03 176.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12953,8 +12618,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 195.58 0)
+		(property "Description" "test point"
+			(at 367.03 171.45 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12964,18 +12629,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 195.58 90)
+			(at 367.03 171.45 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 195.58 90)
+			(at 367.03 171.45 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -12995,7 +12662,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 177.8 151.13 0)
+		(at 176.53 167.64 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13004,7 +12671,7 @@
 		(dnp no)
 		(uuid "c738152d-c4f0-4f32-98e1-9b9cdbdf0fdb")
 		(property "Reference" "C16"
-			(at 180.34 151.13 0)
+			(at 173.482 166.116 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13013,8 +12680,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n X7R 25V"
-			(at 180.34 153.67 0)
+		(property "Value" "1n"
+			(at 173.99 169.164 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13024,7 +12691,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13033,8 +12700,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/mlcc/upy-ac_np0x7rx7s_6_3v-to-2kv.pdf"
-			(at 177.8 151.13 0)
+		(property "Datasheet" "~"
+			(at 176.53 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13043,8 +12710,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 25V Ceramic Capacitor X7R 0402 (1005 Metric)"
-			(at 177.8 151.13 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 176.53 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13054,7 +12721,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13064,7 +12731,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "311-3065-1-ND"
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13074,36 +12741,40 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 177.8 151.13 0)
+			(at 176.53 167.64 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13173,7 +12844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 119.38 0)
 			(effects
 				(font
@@ -13187,6 +12858,7 @@
 			(at 367.03 119.38 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13196,6 +12868,7 @@
 			(at 367.03 119.38 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13261,7 +12934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Arm® Cortex®-M4 32-bit MCU+FPU, 170 MHz / 213 DMIPS, 128 KB SRAM, rich analog, math acc, 184 ps 12 chan Hi-res timer"
+		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 128KB RAM, 170 MHz, 1.71-3.6V, 58 GPIO, LQFP64"
 			(at 68.58 113.03 0)
 			(effects
 				(font
@@ -13295,6 +12968,7 @@
 			(at 68.58 113.03 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13304,6 +12978,7 @@
 			(at 68.58 113.03 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13313,6 +12988,7 @@
 			(at 68.58 113.03 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13322,6 +12998,7 @@
 			(at 68.58 113.03 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13577,7 +13254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 76.2 0)
 			(effects
 				(font
@@ -13591,6 +13268,7 @@
 			(at 367.03 76.2 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13600,6 +13278,7 @@
 			(at 367.03 76.2 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13666,7 +13345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 64.77 0)
 			(effects
 				(font
@@ -13680,6 +13359,7 @@
 			(at 367.03 64.77 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13689,6 +13369,7 @@
 			(at 367.03 64.77 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13708,7 +13389,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 270.51 144.78 90)
+		(at 269.24 161.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13716,133 +13397,148 @@
 		(dnp no)
 		(uuid "d7334698-202c-487a-9a0c-575c3d66cdbb")
 		(property "Reference" "R8"
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Value" "22"
-			(at 270.51 147.066 90)
+			(at 269.24 163.576 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 270.51 144.78 90)
+		(property "Datasheet" "~"
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick film resistor 22Ω ±1% 0402"
-			(at 270.51 144.78 0)
+		(property "Description" "Resistor"
+			(at 269.24 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 270.51 144.78 0)
+			(at 269.24 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-0722RL"
-			(at 270.51 144.78 0)
+			(at 269.24 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 270.51 144.78 0)
+			(at 269.24 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "603-RC0402FR-0722RL"
-			(at 270.51 144.78 0)
+			(at 269.24 161.29 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Config" ""
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "MPN" ""
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Mouser" ""
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 270.51 144.78 90)
+			(at 269.24 161.29 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -13865,7 +13561,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 171.45 52.07 90)
+		(at 170.18 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13873,7 +13569,7 @@
 		(dnp no)
 		(uuid "dd3a074e-87c8-418e-83dc-a9ed5a343e9e")
 		(property "Reference" "R3"
-			(at 174.498 51.308 90)
+			(at 173.228 67.818 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13882,7 +13578,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 166.624 51.308 90)
+			(at 165.354 67.818 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13891,7 +13587,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 171.45 52.07 0)
+			(at 170.18 68.58 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13900,8 +13596,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 171.45 52.07 0)
+		(property "Datasheet" "~"
+			(at 170.18 68.58 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13910,8 +13606,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 171.45 52.07 0)
+		(property "Description" "Resistor, small symbol"
+			(at 170.18 68.58 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13921,7 +13617,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 171.45 52.07 0)
+			(at 170.18 68.58 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13931,7 +13627,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 171.45 52.07 0)
+			(at 170.18 68.58 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -13941,36 +13637,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 171.45 52.07 0)
+			(at 170.18 68.58 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 171.45 52.07 0)
+			(at 170.18 68.58 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 171.45 52.07 90)
+			(at 170.18 68.58 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 171.45 52.07 90)
+			(at 170.18 68.58 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14040,7 +13740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 127 0)
 			(effects
 				(font
@@ -14054,6 +13754,7 @@
 			(at 367.03 127 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14063,6 +13764,7 @@
 			(at 367.03 127 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14129,7 +13831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 96.52 0)
 			(effects
 				(font
@@ -14143,6 +13845,7 @@
 			(at 367.03 96.52 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14152,6 +13855,7 @@
 			(at 367.03 96.52 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14218,7 +13922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 121.92 0)
 			(effects
 				(font
@@ -14232,6 +13936,7 @@
 			(at 367.03 121.92 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14241,6 +13946,7 @@
 			(at 367.03 121.92 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14260,7 +13966,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 196.85 213.36 0)
+		(at 77.47 217.17 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14270,7 +13976,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4221d50-9c0f-4d46-8277-549ef0baa2e8")
 		(property "Reference" "C13"
-			(at 194.31 212.0963 0)
+			(at 74.93 215.9063 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14280,7 +13986,7 @@
 			)
 		)
 		(property "Value" "100n X7R 50V"
-			(at 194.31 214.6363 0)
+			(at 74.93 218.4463 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14290,7 +13996,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14299,8 +14005,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
-			(at 196.85 213.36 0)
+		(property "Datasheet" "~"
+			(at 77.47 217.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14309,8 +14015,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
-			(at 196.85 213.36 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 77.47 217.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14320,7 +14026,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14330,7 +14036,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14340,36 +14046,40 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 196.85 213.36 0)
+			(at 77.47 217.17 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14392,7 +14102,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 367.03 228.6 270)
+		(at 367.03 204.47 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -14400,7 +14110,7 @@
 		(dnp no)
 		(uuid "e6f94f1c-25d7-4344-8025-e32be78a0cdd")
 		(property "Reference" "TP38"
-			(at 372.11 228.6 90)
+			(at 372.11 204.47 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14410,7 +14120,7 @@
 			)
 		)
 		(property "Value" "SENSE_VBAT"
-			(at 379.73 228.6 90)
+			(at 379.73 204.47 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14420,7 +14130,7 @@
 			)
 		)
 		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
-			(at 367.03 233.68 0)
+			(at 367.03 209.55 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14430,7 +14140,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 367.03 233.68 0)
+			(at 367.03 209.55 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14439,8 +14149,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 367.03 228.6 0)
+		(property "Description" "test point"
+			(at 367.03 204.47 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14450,18 +14160,20 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 367.03 228.6 90)
+			(at 367.03 204.47 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 367.03 228.6 90)
+			(at 367.03 204.47 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14481,7 +14193,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 182.88 147.32 90)
+		(at 181.61 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14489,7 +14201,7 @@
 		(dnp no)
 		(uuid "eb6f651c-c10e-4717-8a4e-db8670e4f073")
 		(property "Reference" "R7"
-			(at 186.69 146.05 90)
+			(at 185.42 162.56 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14498,7 +14210,7 @@
 			)
 		)
 		(property "Value" "22R 1%"
-			(at 177.8 146.05 90)
+			(at 176.53 162.56 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14507,7 +14219,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 182.88 147.32 0)
+			(at 181.61 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14516,8 +14228,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 182.88 147.32 0)
+		(property "Datasheet" "~"
+			(at 181.61 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14526,8 +14238,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
-			(at 182.88 147.32 0)
+		(property "Description" "Resistor, small symbol"
+			(at 181.61 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14537,7 +14249,7 @@
 			)
 		)
 		(property "Supplier 1" "Digikey"
-			(at 182.88 147.32 0)
+			(at 181.61 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14547,7 +14259,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "P22.0LCT-ND"
-			(at 182.88 147.32 0)
+			(at 181.61 163.83 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14557,36 +14269,40 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Electronic Components"
-			(at 182.88 147.32 0)
+			(at 181.61 163.83 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
-			(at 182.88 147.32 0)
+			(at 181.61 163.83 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "CREATOR" ""
-			(at 182.88 147.32 90)
+			(at 181.61 163.83 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "VERIFIER" ""
-			(at 182.88 147.32 90)
+			(at 181.61 163.83 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14656,7 +14372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 124.46 0)
 			(effects
 				(font
@@ -14670,6 +14386,7 @@
 			(at 367.03 124.46 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14679,6 +14396,7 @@
 			(at 367.03 124.46 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14691,6 +14409,76 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
 					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f51d751a-b695-4d53-aa67-0b888b0cafee")
+		(property "Reference" "#PWR0121"
+			(at 118.11 156.21 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 153.67 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 149.86 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 149.86 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 149.86 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e74ad387-05c3-4d4c-beeb-032179105298")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1"
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -14745,7 +14533,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 367.03 59.69 0)
 			(effects
 				(font
@@ -14759,6 +14547,7 @@
 			(at 367.03 59.69 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -14768,6 +14557,7 @@
 			(at 367.03 59.69 90)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)

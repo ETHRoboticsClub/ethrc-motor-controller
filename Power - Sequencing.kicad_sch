@@ -1030,7 +1030,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1270,7 +1270,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)

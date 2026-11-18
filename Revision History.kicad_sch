@@ -25,7 +25,6 @@
 		)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
@@ -70,7 +69,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
@@ -92,7 +91,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -115,7 +114,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
@@ -137,7 +136,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -160,7 +159,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
@@ -182,7 +181,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
@@ -204,7 +203,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -227,7 +226,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -250,7 +249,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)

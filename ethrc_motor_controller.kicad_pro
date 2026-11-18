@@ -1081,14 +1081,20 @@
           "label": "Manufacturer_Name",
           "name": "Manufacturer_Name",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
-      "filter_string": "Q1",
-      "group_symbols": true,
+      "filter_string": "",
+      "group_symbols": false,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

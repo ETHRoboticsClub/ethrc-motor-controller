@@ -259,8 +259,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -336,8 +340,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -632,7 +635,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -725,7 +728,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -976,7 +979,7 @@
 		(at 162.56 64.77 0)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 			)
 			(justify left)
@@ -1032,7 +1035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+A3V3\""
 			(at 149.86 45.72 0)
 			(effects
 				(font
@@ -1094,7 +1097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+		(property "Datasheet" "~"
 			(at 149.86 73.66 0)
 			(effects
 				(font
@@ -1104,7 +1107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film"
+		(property "Description" "Resistor"
 			(at 149.86 73.66 0)
 			(effects
 				(font
@@ -1138,6 +1141,7 @@
 			(at 149.86 73.66 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1147,6 +1151,7 @@
 			(at 149.86 73.66 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1156,6 +1161,7 @@
 			(at 149.86 73.66 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1165,6 +1171,7 @@
 			(at 149.86 73.66 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1225,7 +1232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+		(property "Datasheet" "~"
 			(at 149.86 55.88 0)
 			(effects
 				(font
@@ -1235,7 +1242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film"
+		(property "Description" "Resistor"
 			(at 149.86 55.88 0)
 			(effects
 				(font
@@ -1269,6 +1276,7 @@
 			(at 149.86 55.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1278,6 +1286,7 @@
 			(at 149.86 55.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1287,6 +1296,7 @@
 			(at 149.86 55.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1296,6 +1306,7 @@
 			(at 149.86 55.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1343,7 +1354,6 @@
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -1366,7 +1376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 149.86 81.28 0)
 			(effects
 				(font

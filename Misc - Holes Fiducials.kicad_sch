@@ -333,21 +333,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -450,7 +448,7 @@
 		)
 		(symbol "Mechanical:Fiducial"
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "FID"
 				(at 0 5.08 0)
@@ -537,7 +535,7 @@
 				(hide yes)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
 				(at 0 6.35 0)
@@ -637,8 +635,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -714,8 +716,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -802,7 +803,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -924,7 +925,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1018,7 +1019,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "Times New Roman")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1570,7 +1571,6 @@
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -1593,7 +1593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 99.06 101.6 0)
 			(effects
 				(font
@@ -1655,7 +1655,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867"
+		(property "Datasheet" "~"
 			(at 82.55 91.44 0)
 			(effects
 				(font
@@ -1665,7 +1665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 82.55 91.44 0)
 			(effects
 				(font
@@ -1699,6 +1699,7 @@
 			(at 82.55 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1708,6 +1709,7 @@
 			(at 82.55 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1717,6 +1719,7 @@
 			(at 82.55 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1726,6 +1729,7 @@
 			(at 82.55 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1795,7 +1799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 210.82 102.87 0)
 			(effects
 				(font
@@ -1809,6 +1813,7 @@
 			(at 210.82 102.87 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1818,6 +1823,7 @@
 			(at 210.82 102.87 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1881,7 +1887,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 223.52 74.93 0)
 			(effects
 				(font
@@ -1895,6 +1901,7 @@
 			(at 223.52 74.93 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1904,6 +1911,7 @@
 			(at 223.52 74.93 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -1944,7 +1952,6 @@
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -1967,7 +1974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 134.62 76.2 0)
 			(effects
 				(font
@@ -2029,7 +2036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -2039,7 +2046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -2073,6 +2080,7 @@
 			(at 179.07 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2082,6 +2090,7 @@
 			(at 179.07 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2091,6 +2100,7 @@
 			(at 179.07 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2100,6 +2110,7 @@
 			(at 179.07 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2160,7 +2171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867"
+		(property "Datasheet" "~"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -2170,7 +2181,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -2204,6 +2215,7 @@
 			(at 118.11 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2213,6 +2225,7 @@
 			(at 118.11 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2222,6 +2235,7 @@
 			(at 118.11 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2231,6 +2245,7 @@
 			(at 118.11 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2301,7 +2316,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 78.74 81.28 0)
 			(effects
 				(font
@@ -2315,6 +2330,7 @@
 			(at 78.74 81.28 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2324,6 +2340,7 @@
 			(at 78.74 81.28 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2391,7 +2408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 110.49 86.36 0)
 			(effects
 				(font
@@ -2462,7 +2479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
 			(at 71.12 101.6 0)
 			(effects
 				(font
@@ -2533,7 +2550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
 			(at 110.49 101.6 0)
 			(effects
 				(font
@@ -2595,7 +2612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867"
+		(property "Datasheet" "~"
 			(at 162.56 91.44 0)
 			(effects
 				(font
@@ -2605,7 +2622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 162.56 91.44 0)
 			(effects
 				(font
@@ -2639,6 +2656,7 @@
 			(at 162.56 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2648,6 +2666,7 @@
 			(at 162.56 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2657,6 +2676,7 @@
 			(at 162.56 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2666,6 +2686,7 @@
 			(at 162.56 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2735,7 +2756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 217.17 74.93 0)
 			(effects
 				(font
@@ -2749,6 +2770,7 @@
 			(at 217.17 74.93 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2758,6 +2780,7 @@
 			(at 217.17 74.93 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2821,7 +2844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
 			(at 151.13 101.6 0)
 			(effects
 				(font
@@ -2883,7 +2906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 134.62 66.04 0)
 			(effects
 				(font
@@ -2893,7 +2916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 134.62 66.04 0)
 			(effects
 				(font
@@ -2927,6 +2950,7 @@
 			(at 134.62 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2936,6 +2960,7 @@
 			(at 134.62 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2945,6 +2970,7 @@
 			(at 134.62 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -2954,6 +2980,7 @@
 			(at 134.62 66.04 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3000,7 +3027,6 @@
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -3023,7 +3049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 179.07 101.6 0)
 			(effects
 				(font
@@ -3085,7 +3111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 138.43 91.44 0)
 			(effects
 				(font
@@ -3095,7 +3121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 138.43 91.44 0)
 			(effects
 				(font
@@ -3129,6 +3155,7 @@
 			(at 138.43 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3138,6 +3165,7 @@
 			(at 138.43 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3147,6 +3175,7 @@
 			(at 138.43 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3156,6 +3185,7 @@
 			(at 138.43 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3225,7 +3255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
 			(at 106.68 76.2 0)
 			(effects
 				(font
@@ -3287,7 +3317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+		(property "Datasheet" "~"
 			(at 99.06 91.44 0)
 			(effects
 				(font
@@ -3297,7 +3327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small symbol"
 			(at 99.06 91.44 0)
 			(effects
 				(font
@@ -3331,6 +3361,7 @@
 			(at 99.06 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3340,6 +3371,7 @@
 			(at 99.06 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3349,6 +3381,7 @@
 			(at 99.06 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3358,6 +3391,7 @@
 			(at 99.06 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3418,7 +3452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867"
+		(property "Datasheet" "~"
 			(at 121.92 91.44 0)
 			(effects
 				(font
@@ -3428,7 +3462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 121.92 91.44 0)
 			(effects
 				(font
@@ -3462,6 +3496,7 @@
 			(at 121.92 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3471,6 +3506,7 @@
 			(at 121.92 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3480,6 +3516,7 @@
 			(at 121.92 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3489,6 +3526,7 @@
 			(at 121.92 91.44 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3535,7 +3573,6 @@
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -3558,7 +3595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 138.43 101.6 0)
 			(effects
 				(font
@@ -3630,7 +3667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 118.11 81.28 0)
 			(effects
 				(font
@@ -3644,6 +3681,7 @@
 			(at 118.11 81.28 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3653,6 +3691,7 @@
 			(at 118.11 81.28 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3719,7 +3758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 210.82 74.93 0)
 			(effects
 				(font
@@ -3733,6 +3772,7 @@
 			(at 210.82 74.93 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3742,6 +3782,7 @@
 			(at 210.82 74.93 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3806,7 +3847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 114.3 55.88 0)
 			(effects
 				(font
@@ -3820,6 +3861,7 @@
 			(at 114.3 55.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3829,6 +3871,7 @@
 			(at 114.3 55.88 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3895,7 +3938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 217.17 102.87 0)
 			(effects
 				(font
@@ -3909,6 +3952,7 @@
 			(at 217.17 102.87 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3918,6 +3962,7 @@
 			(at 217.17 102.87 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -3982,7 +4027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 158.75 81.28 0)
 			(effects
 				(font
@@ -3996,6 +4041,7 @@
 			(at 158.75 81.28 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -4005,6 +4051,7 @@
 			(at 158.75 81.28 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -4071,7 +4118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 223.52 102.87 0)
 			(effects
 				(font
@@ -4085,6 +4132,7 @@
 			(at 223.52 102.87 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
@@ -4094,6 +4142,7 @@
 			(at 223.52 102.87 0)
 			(effects
 				(font
+					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)

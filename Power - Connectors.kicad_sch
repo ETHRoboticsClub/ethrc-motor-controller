@@ -215,6 +215,176 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "0_power_protection:SMBJ60A"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 1.524 4.826 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SMBJ60A"
+				(at 1.524 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "0_diode_smd:DIOM5436X244N"
+				(at 10.16 -93.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf"
+				(at 10.16 -193.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Description" "Littelfuse SMBJ60A, Uni-Directional TVS Diode, 600W, 2-Pin DO-214AA"
+				(at 0 -3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "2.44"
+				(at 10.16 -393.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "576-SMBJ60A"
+				(at 10.16 -493.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/SMBJ60A?qs=JJML70Qc14s6J6TKMBRcAg%3D%3D"
+				(at 10.16 -593.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "LITTELFUSE"
+				(at 10.16 -693.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SMBJ60A"
+				(at 10.16 -793.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(symbol "SMBJ60A_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMBJ60A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "0_power_symbols:+VBAT"
 			(power)
 			(pin_names
@@ -497,685 +667,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "0_transistor_fet:FDMS86163P"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 3.81 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "FDMS86163P"
-				(at 3.81 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "0_transistor_fet:FDMS1D4N03S"
-				(at 11.43 -98.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdms86163p-d.pdf"
-				(at 11.43 -198.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "P-Channel MOSFET -100 V -50 A (Tc), RDS(on) 22 mOhm max at VGS -10 V, Power 56 (PQFN8 5x6)"
-				(at 2.794 -17.526 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "onsemi"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "FDMS86163P"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier 1" "LCSC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part Number 1" "C469176"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FDMS86163P_1_1"
-				(polyline
-					(pts
-						(xy -5.08 -1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 3.81) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 4.318) (xy -1.778 3.302)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0.762) (xy -1.778 1.778)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.778) (xy -1.778 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 1.27)
-					(radius 3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy -1.778 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.778 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.016 1.778) (xy -1.016 0.762) (xy 0 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at -7.62 -1.27 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 8.89 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -6.35 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -6.35 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -6.35 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Zener"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Zener diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Zener_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1529,20 +1020,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "replace with ideal diode controller for more additional protective features"
+	(text_box "DESIGN NOTE:\nDo not exceed absolute maximum ratings! Maximum input voltage is 48V"
 		(exclude_from_sim no)
-		(at 199.898 38.608 0)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7aa0757e-6244-4654-bbf1-285b9cdbef20")
-	)
-	(text_box "DESIGN NOTE:\nDo not exceed absolute maximum ratings! Maximum input voltage is 48V (13S)."
-		(exclude_from_sim no)
-		(at 68.58 107.95 0)
+		(at 109.22 107.95 0)
 		(size 30.48 12.7)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -1567,7 +1047,7 @@
 	)
 	(text_box "DESIGN NOTE:\nDo not hot-plug when powered!"
 		(exclude_from_sim no)
-		(at 49.53 107.95 0)
+		(at 90.17 107.95 0)
 		(size 16.51 12.7)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -1592,7 +1072,7 @@
 	)
 	(text_box "LAYOUT NOTE:\nPlace TVS diodes near input power connectors."
 		(exclude_from_sim no)
-		(at 106.68 102.87 0)
+		(at 146.05 109.22 0)
 		(size 26.67 8.89)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -1640,7 +1120,7 @@
 	)
 	(text_box "DESIGN NOTE:\nIt's best to power the controller through the male connector to always have a female connector at the end of the chain.\n"
 		(exclude_from_sim no)
-		(at 27.94 43.18 0)
+		(at 68.58 43.18 0)
 		(size 35.56 12.7)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
@@ -1663,7 +1143,7 @@
 	)
 	(text_box "LAYOUT NOTE:\nKeep sufficient clearance between power nets according to IPC-2221/IEC60664-1"
 		(exclude_from_sim no)
-		(at 106.68 114.3 0)
+		(at 175.26 107.95 0)
 		(size 26.67 12.7)
 		(margins 1.4525 1.4525 1.4525 1.4525)
 		(stroke
@@ -1687,98 +1167,40 @@
 		(uuid "fd496f31-b168-4103-81f4-28eb88502f0c")
 	)
 	(junction
-		(at 168.91 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1512bb96-0577-4d06-aaf9-b83a257673fb")
-	)
-	(junction
-		(at 196.85 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1db11dff-f5a8-4988-ad6d-26fb183af420")
-	)
-	(junction
-		(at 144.78 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "295b5ec9-3b00-4b26-8bd6-41b0368e40e2")
-	)
-	(junction
-		(at 168.91 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30ab8686-8252-4051-a94a-9024e2616d9f")
-	)
-	(junction
-		(at 167.64 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e0c7efe-f81c-4d81-8a02-7216bf2632be")
-	)
-	(junction
-		(at 181.61 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "923a9824-99d8-4b8b-9f5f-eadf8f73936d")
-	)
-	(junction
-		(at 168.91 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ac45c664-0731-4a2e-82d2-f3e5e55c3dc8")
-	)
-	(junction
-		(at 102.87 64.77)
+		(at 143.51 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b541fc91-8b1c-489b-b422-be6686c9e438")
 	)
 	(junction
-		(at 96.52 90.17)
+		(at 137.16 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b60d6e4d-9850-4ab1-874e-431b659b9636")
 	)
 	(junction
-		(at 90.17 64.77)
+		(at 130.81 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8823261-63e6-4d9d-b04a-3eeb9d15dffa")
 	)
 	(junction
-		(at 158.75 74.93)
+		(at 157.48 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eb1ee7c3-3b8b-4423-8878-ff0b68de0cd4")
-	)
-	(junction
-		(at 201.93 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ec532b6c-97d4-4b54-8e15-39316efa2f49")
+		(uuid "ed46a806-1de4-49ff-bbd9-a3a5d2aaeefa")
 	)
 	(no_connect
-		(at 81.28 73.66)
+		(at 121.92 73.66)
 		(uuid "2113099e-22d2-471b-b4a8-434d9164c6f8")
 	)
 	(no_connect
-		(at 81.28 96.52)
+		(at 121.92 96.52)
 		(uuid "50e4c065-7c5e-4be9-8464-017b1ae6f1b3")
 	)
 	(wire
 		(pts
-			(xy 205.74 64.77) (xy 201.93 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "065bc7fb-379b-493b-836a-9405b0b7ccb6")
-	)
-	(wire
-		(pts
-			(xy 96.52 90.17) (xy 102.87 90.17)
+			(xy 137.16 90.17) (xy 143.51 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1788,27 +1210,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 85.09) (xy 196.85 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b6bac91-1ebb-48ed-a315-74eb1bf1949f")
-	)
-	(wire
-		(pts
-			(xy 158.75 74.93) (xy 158.75 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "119bd566-1db5-46b9-8b0e-c7258e187a97")
-	)
-	(wire
-		(pts
-			(xy 81.28 77.47) (xy 81.28 81.28)
+			(xy 121.92 77.47) (xy 121.92 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1818,7 +1220,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 67.31) (xy 96.52 67.31)
+			(xy 128.27 67.31) (xy 137.16 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1828,17 +1230,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 107.95) (xy 168.91 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23983201-358c-48ef-95ad-ba33cc11a194")
-	)
-	(wire
-		(pts
-			(xy 73.66 55.88) (xy 73.66 54.61)
+			(xy 114.3 55.88) (xy 114.3 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1848,37 +1240,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 49.53) (xy 158.75 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24077b99-31e1-4acc-9578-dff0eb34eb88")
-	)
-	(wire
-		(pts
-			(xy 158.75 52.07) (xy 161.29 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "262c4bf2-044a-4dc8-a0a6-c97c8d80d798")
-	)
-	(wire
-		(pts
-			(xy 161.29 52.07) (xy 161.29 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cafa9cc-9a28-472e-9431-603e45381f20")
-	)
-	(wire
-		(pts
-			(xy 73.66 54.61) (xy 81.28 54.61)
+			(xy 114.3 54.61) (xy 121.92 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1888,7 +1250,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 90.17) (xy 96.52 90.17)
+			(xy 128.27 90.17) (xy 137.16 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1898,17 +1260,27 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 41.91) (xy 163.83 41.91)
+			(xy 175.26 58.42) (xy 175.26 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c58bf15-f9ea-4738-b0ee-ff3bfde30828")
+		(uuid "3bc49a61-192e-4d47-a4d1-d365830c56ed")
 	)
 	(wire
 		(pts
-			(xy 102.87 64.77) (xy 144.78 64.77)
+			(xy 157.48 80.01) (xy 157.48 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41a97500-a97c-40a2-a65a-d1a1e820fb33")
+	)
+	(wire
+		(pts
+			(xy 143.51 64.77) (xy 157.48 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1918,17 +1290,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 64.77) (xy 201.93 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bfc81f8-3066-48bb-be58-e1420f210fca")
-	)
-	(wire
-		(pts
-			(xy 102.87 90.17) (xy 102.87 92.71)
+			(xy 143.51 90.17) (xy 143.51 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1938,17 +1300,17 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 72.39) (xy 158.75 74.93)
+			(xy 157.48 64.77) (xy 175.26 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53b70c4a-5d3c-4674-8dbb-53f110900f14")
+		(uuid "509979f1-1298-4994-8a60-fda99f4d74d4")
 	)
 	(wire
 		(pts
-			(xy 102.87 63.5) (xy 102.87 64.77)
+			(xy 143.51 63.5) (xy 143.51 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1958,37 +1320,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 64.77) (xy 181.61 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f21a6c4-6404-4d83-ba13-5e46e8fcb876")
-	)
-	(wire
-		(pts
-			(xy 168.91 85.09) (xy 168.91 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63178c01-973e-4a11-9c37-c9fb883cb1ca")
-	)
-	(wire
-		(pts
-			(xy 181.61 64.77) (xy 196.85 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f3a1bbb-fc54-48c4-9f57-1d0201644242")
-	)
-	(wire
-		(pts
-			(xy 81.28 54.61) (xy 81.28 58.42)
+			(xy 121.92 54.61) (xy 121.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1998,7 +1330,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 87.63) (xy 90.17 87.63)
+			(xy 128.27 87.63) (xy 130.81 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2008,47 +1340,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 63.5) (xy 201.93 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78e43f43-edfe-4d18-8646-b37fbe6654d8")
-	)
-	(wire
-		(pts
-			(xy 144.78 41.91) (xy 148.59 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "821f4d13-f474-4b64-93d9-3c5d74ef064b")
-	)
-	(wire
-		(pts
-			(xy 181.61 64.77) (xy 181.61 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e5af2f2-9e06-44dd-8bba-f1564ed61e76")
-	)
-	(wire
-		(pts
-			(xy 144.78 64.77) (xy 148.59 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93d8d8ac-17aa-4c5d-9aa8-7613737ae4ba")
-	)
-	(wire
-		(pts
-			(xy 73.66 78.74) (xy 73.66 77.47)
+			(xy 114.3 78.74) (xy 114.3 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2058,67 +1350,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 41.91) (xy 144.78 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9eb91b56-235a-40c5-909d-2f2c7496caa4")
-	)
-	(wire
-		(pts
-			(xy 158.75 91.44) (xy 168.91 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2f73c07-7ee4-4293-94a1-4eb503e1b9ee")
-	)
-	(wire
-		(pts
-			(xy 161.29 74.93) (xy 158.75 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5dc8f6e-80c7-461e-91bd-ff5d116fbf3f")
-	)
-	(wire
-		(pts
-			(xy 168.91 91.44) (xy 168.91 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7a8995f-3511-4130-b602-7fe21d7e10ca")
-	)
-	(wire
-		(pts
-			(xy 167.64 41.91) (xy 167.64 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aef7e4e6-d22d-48ab-9a16-8ac9d9e76db1")
-	)
-	(wire
-		(pts
-			(xy 196.85 77.47) (xy 196.85 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b04467b8-d780-4e6c-adaf-7e88a5cfda60")
-	)
-	(wire
-		(pts
-			(xy 96.52 67.31) (xy 96.52 90.17)
+			(xy 137.16 67.31) (xy 137.16 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2128,27 +1360,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 64.77) (xy 167.64 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3f3a6fb-42c6-4c4f-8655-0697cb452009")
-	)
-	(wire
-		(pts
-			(xy 168.91 64.77) (xy 168.91 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5ade830-ce9a-4977-87a5-94ad453b238e")
-	)
-	(wire
-		(pts
-			(xy 87.63 64.77) (xy 90.17 64.77)
+			(xy 128.27 64.77) (xy 130.81 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2158,37 +1370,17 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 85.09) (xy 181.61 91.44)
+			(xy 157.48 64.77) (xy 157.48 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c44eb5ee-eed0-4dd7-8a0e-b709dd7b34c7")
+		(uuid "c070b3f9-b9d7-4bce-8462-64b41a6a148c")
 	)
 	(wire
 		(pts
-			(xy 168.91 101.6) (xy 168.91 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0e30045-237a-41b1-b5e2-b5f26632b1a3")
-	)
-	(wire
-		(pts
-			(xy 168.91 107.95) (xy 168.91 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3c5d853-34a0-4afc-b875-3539eb0c74f7")
-	)
-	(wire
-		(pts
-			(xy 90.17 64.77) (xy 90.17 87.63)
+			(xy 130.81 64.77) (xy 130.81 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2198,17 +1390,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 91.44) (xy 181.61 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1e83ef1-70ca-492c-9d71-99b37a4f4aac")
-	)
-	(wire
-		(pts
-			(xy 73.66 77.47) (xy 81.28 77.47)
+			(xy 114.3 77.47) (xy 121.92 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2218,7 +1400,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 64.77) (xy 102.87 64.77)
+			(xy 130.81 64.77) (xy 143.51 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2226,28 +1408,8 @@
 		)
 		(uuid "f3243dfe-27d9-4560-bf5b-24114f3ec15c")
 	)
-	(wire
-		(pts
-			(xy 205.74 54.61) (xy 205.74 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb799c8c-12dc-4152-a410-1f777b85cf3b")
-	)
-	(wire
-		(pts
-			(xy 168.91 64.77) (xy 167.64 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbf50766-6115-491b-bcec-84995872d588")
-	)
 	(image
-		(at 59.69 66.04)
+		(at 100.33 66.04)
 		(scale 0.157769)
 		(uuid "a9642b8f-32ee-4812-9428-cd1a6b4d2e4d")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAigAAAIcCAIAAABThMJpAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -5257,7 +4419,7 @@
 		)
 	)
 	(image
-		(at 59.69 88.9)
+		(at 100.33 88.9)
 		(scale 0.146392)
 		(uuid "d741bb41-5187-46af-8395-e3811f76260b")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAlYAAAJGCAIAAAAWEVzTAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -8453,20 +7615,9 @@
 			"oOM4jrNRXAIdx3GcjeIS6DiO42yU/wADxR0hpImf3QAAAABJRU5ErkJggg=="
 		)
 	)
-	(label "VBAT_IN"
-		(at 121.92 64.77 0)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "98ba1cb8-b4e7-4ed0-9f13-f778ca417cf4")
-	)
 	(symbol
 		(lib_id "0_power_symbols:CHASSIS")
-		(at 73.66 55.88 0)
+		(at 114.3 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8475,7 +7626,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b2ec2b6-1223-4de8-82e8-32d96d7b944c")
 		(property "Reference" "#PWR030"
-			(at 73.66 60.96 0)
+			(at 114.3 60.96 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8485,7 +7636,7 @@
 			)
 		)
 		(property "Value" "CHASSIS"
-			(at 73.533 59.69 0)
+			(at 114.173 59.69 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8494,7 +7645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 57.15 0)
+			(at 114.3 57.15 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8504,7 +7655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 57.15 0)
+			(at 114.3 57.15 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8514,7 +7665,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
-			(at 73.66 55.88 0)
+			(at 114.3 55.88 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8536,339 +7687,66 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 168.91 81.28 0)
+		(lib_id "0_power_symbols:CHASSIS")
+		(at 157.48 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0b8c7951-adc7-4458-bd94-c2fda22a09b3")
-		(property "Reference" "R83"
-			(at 171.45 80.01 0)
+		(fields_autoplaced yes)
+		(uuid "1b138bc4-92db-4538-bc1a-bce64914f421")
+		(property "Reference" "#PWR0124"
+			(at 157.48 97.79 0)
 			(effects
 				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 171.45 82.55 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 168.91 81.28 0)
+		(property "Value" "CHASSIS"
+			(at 157.353 96.52 0)
 			(effects
 				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Panasonic"
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "ERJ-3EKF1003V"
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "667-ERJ-3EKF1003V"
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 168.91 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0a0ad99-8dbd-4aa1-9fb1-f814d4178409")
-		)
-		(pin "2"
-			(uuid "9b50a818-1036-47a8-81c8-f9d2fd00cb41")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "R83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "0_power_symbols:+VBAT")
-		(at 205.74 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "0d322b43-749b-450f-b6e5-a5250924ece4")
-		(property "Reference" "#PWR901"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VBAT"
-			(at 205.74 50.8 0)
-			(effects
-				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 54.61 0)
+			(at 157.48 93.98 0)
 			(effects
 				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 54.61 0)
+			(at 157.48 93.98 0)
 			(effects
 				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+VBAT\""
-			(at 205.74 54.61 0)
+		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
+			(at 157.48 92.71 0)
 			(effects
 				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad7073a9-5640-43e0-9244-8d8f7d5b67a3")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#PWR901")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 196.85 81.28 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e143d37-f6d7-4b5f-a5d1-8a5f5f6ae3d3")
-		(property "Reference" "D2"
-			(at 199.39 80.01 270)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMBJ60A"
-			(at 199.39 82.55 270)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "0_diode_smd:D_SMB"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Littelfuse"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "SMBJ60A"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "576-SMBJ60A"
-			(at 196.85 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 196.85 81.28 270)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 196.85 81.28 270)
-			(effects
-				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "797d3611-e039-484d-96a3-00d66b6c87b2")
-		)
-		(pin "2"
-			(uuid "0d95ace5-2cf8-497d-a74c-868a0616bb55")
+			(uuid "d1847b11-5936-4a0c-9fcc-c7ffd6d80c8f")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "D2")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -8876,7 +7754,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 102.87 63.5 0)
+		(at 143.51 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8885,7 +7763,7 @@
 		(fields_autoplaced yes)
 		(uuid "31496926-e26a-4dfc-958a-a4857fb32aec")
 		(property "Reference" "#FLG011"
-			(at 102.87 61.595 0)
+			(at 143.51 61.595 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8895,7 +7773,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 102.87 58.42 0)
+			(at 143.51 58.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8905,7 +7783,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 63.5 0)
+			(at 143.51 63.5 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8915,7 +7793,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 63.5 0)
+			(at 143.51 63.5 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8925,7 +7803,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 102.87 63.5 0)
+			(at 143.51 63.5 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -8947,142 +7825,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 168.91 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "35c3f755-a715-41dd-8810-73f87c51b5ac")
-		(property "Reference" "R84"
-			(at 171.45 96.52 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220k"
-			(at 171.45 99.06 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "0_resistor_smd:R_0805_2012_DensityHigh"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Panasonic"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "ERJ-6ENF2203V"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "667-ERJ-6ENF2203V"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ceac0d5a-efc0-4837-a7e0-2169911e690f")
-		)
-		(pin "2"
-			(uuid "b7d13844-fecb-4eb4-af9b-2094a8e2400d")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "R84")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "0_power_symbols:CHASSIS")
-		(at 73.66 78.74 0)
+		(at 114.3 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9091,7 +7835,7 @@
 		(fields_autoplaced yes)
 		(uuid "378a6176-c85e-42c5-966c-3ff59a518131")
 		(property "Reference" "#PWR031"
-			(at 73.66 83.82 0)
+			(at 114.3 83.82 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9101,7 +7845,7 @@
 			)
 		)
 		(property "Value" "CHASSIS"
-			(at 73.533 82.55 0)
+			(at 114.173 82.55 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9110,7 +7854,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 80.01 0)
+			(at 114.3 80.01 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9120,7 +7864,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 80.01 0)
+			(at 114.3 80.01 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9130,7 +7874,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"CHASSIS\" , global ground"
-			(at 73.66 78.74 0)
+			(at 114.3 78.74 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9153,7 +7897,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 92.71 0)
+		(at 143.51 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9161,7 +7905,7 @@
 		(dnp no)
 		(uuid "50ff8d7c-eb64-4069-90a5-1ec8093eaa96")
 		(property "Reference" "#PWR032"
-			(at 102.87 99.06 0)
+			(at 143.51 99.06 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9171,7 +7915,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 96.52 0)
+			(at 143.51 96.52 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9180,7 +7924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 92.71 0)
+			(at 143.51 92.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9190,7 +7934,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 92.71 0)
+			(at 143.51 92.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9200,7 +7944,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 92.71 0)
+			(at 143.51 92.71 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9223,7 +7967,7 @@
 	)
 	(symbol
 		(lib_id "0_connectors:Conn_01x02_Mounting")
-		(at 82.55 90.17 180)
+		(at 123.19 90.17 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9231,7 +7975,7 @@
 		(dnp no)
 		(uuid "53bfc0c2-92ff-488e-b6c3-fb04674d1419")
 		(property "Reference" "J3"
-			(at 77.47 90.17 0)
+			(at 118.11 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9241,7 +7985,7 @@
 			)
 		)
 		(property "Value" "XT60PW-M"
-			(at 77.47 87.63 0)
+			(at 118.11 87.63 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9251,7 +7995,7 @@
 			)
 		)
 		(property "Footprint" "0_connectors:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9260,8 +8004,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 82.55 90.17 0)
+		(property "Datasheet" "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf"
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9271,7 +8015,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row with mounting pin"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9281,7 +8025,7 @@
 			)
 		)
 		(property "Supplier 1" "Transfer Multisort Elektronik"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9291,7 +8035,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "XT60PW-M"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9301,7 +8045,7 @@
 			)
 		)
 		(property "Config" "-NO_XT60,-NONE"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9311,7 +8055,7 @@
 			)
 		)
 		(property "Manufacturer" "AMASS"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9321,7 +8065,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "XT60PW-M"
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9331,7 +8075,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9341,7 +8085,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 82.55 90.17 0)
+			(at 123.19 90.17 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9372,164 +8116,8 @@
 		)
 	)
 	(symbol
-		(lib_id "0_transistor_fet:FDMS86163P")
-		(at 157.48 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "746215a3-acd2-48e2-8452-6573bbc5c890")
-		(property "Reference" "Q12"
-			(at 156.21 34.29 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FDMS86163P"
-			(at 156.21 36.83 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0_transistor_fet:FDMS1D4N03S"
-			(at 256.21 30.48 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdms86163p-d.pdf"
-			(at 356.21 30.48 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-Channel MOSFET -100 V -50 A (Tc), RDS(on) 22 mOhm max at VGS -10 V, Power 56 (PQFN8 5x6)"
-			(at 175.006 39.116 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 157.48 41.91 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 157.48 41.91 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "onsemi"
-			(at 157.48 41.91 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FDMS86163P"
-			(at 157.48 41.91 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "LCSC"
-			(at 157.48 41.91 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "C469176"
-			(at 157.48 41.91 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e139ed8-6013-49d0-a409-8c2335afead9")
-		)
-		(pin "2"
-			(uuid "631b28b5-8c0d-4f71-9ad4-3aa2332c2f66")
-		)
-		(pin "3"
-			(uuid "a2bb8ad0-b532-44e0-b6f6-1982af7f49b6")
-		)
-		(pin "4"
-			(uuid "0999e6e9-161a-4ec1-8914-e501e163a0b3")
-		)
-		(pin "5"
-			(uuid "25c43543-451d-4ee9-8872-bada2e63ab6f")
-		)
-		(pin "6"
-			(uuid "f1bab390-0b9e-4777-b7a0-53139331add5")
-		)
-		(pin "7"
-			(uuid "7b52931b-1c24-4c0e-98bb-62883f225af5")
-		)
-		(pin "8"
-			(uuid "13358b9e-2c0d-4a86-82d5-b66d2cbab6e9")
-		)
-		(pin "9"
-			(uuid "bca068b9-b6d5-4a13-b1d6-2b758db2b690")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "Q12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "0_connectors:Conn_01x02_Mounting")
-		(at 82.55 67.31 180)
+		(at 123.19 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9537,7 +8125,7 @@
 		(dnp no)
 		(uuid "8a7d6a6a-c539-4492-9323-3804a565cd6b")
 		(property "Reference" "J2"
-			(at 77.47 67.31 0)
+			(at 118.11 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9547,7 +8135,7 @@
 			)
 		)
 		(property "Value" "XT60PW-F"
-			(at 77.47 64.77 0)
+			(at 118.11 64.77 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9557,7 +8145,7 @@
 			)
 		)
 		(property "Footprint" "0_connectors:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9566,8 +8154,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 82.55 67.31 0)
+		(property "Datasheet" "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf"
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9577,7 +8165,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row with mounting pin"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9587,7 +8175,7 @@
 			)
 		)
 		(property "Supplier 1" "Transfer Multisort Elektronik"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9597,7 +8185,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "XT60PW-F"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9607,7 +8195,7 @@
 			)
 		)
 		(property "Config" "-NO_XT60,-NONE"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9617,7 +8205,7 @@
 			)
 		)
 		(property "Manufacturer" "AMASS"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9627,7 +8215,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "XT60PW-F"
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9637,7 +8225,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9647,7 +8235,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 82.55 67.31 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -9678,430 +8266,208 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
-		(at 181.61 81.28 270)
+		(lib_id "0_power_symbols:+VBAT")
+		(at 175.26 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bbaec51b-9206-4a88-bc8d-b2b1c1b7547a")
-		(property "Reference" "D23"
-			(at 184.15 80.01 270)
+		(fields_autoplaced yes)
+		(uuid "8cf5c6b1-6328-4739-8e08-ba91b9a19097")
+		(property "Reference" "#PWR0123"
+			(at 175.26 62.23 0)
 			(effects
 				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "BZT52C15"
-			(at 184.15 82.55 270)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 181.61 81.28 0)
+		(property "Value" "+VBAT"
+			(at 175.26 53.34 0)
 			(effects
 				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "BZT52C15-7-F"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "621-BZT52C15-F"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 181.61 81.28 270)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 181.61 81.28 270)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc665a3f-7741-4422-9f3e-e9b4adde2423")
-		)
-		(pin "2"
-			(uuid "7f332a9b-47ce-4e8c-a944-63140eba6a62")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "D23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 201.93 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "c4d459ed-1c7e-4dd9-880c-382a2903d10a")
-		(property "Reference" "#FLG902"
-			(at 204.47 62.23 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 204.47 64.77 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 63.5 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 63.5 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 201.93 63.5 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "98e61855-1395-45e7-8901-2f98bec84568")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#FLG902")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "0_transistor_fet:FDMS86163P")
-		(at 157.48 64.77 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ddac21e9-8185-4d2b-939a-cdaee6cbb351")
-		(property "Reference" "Q10"
-			(at 156.21 59.436 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FDMS86163P"
-			(at 155.956 61.214 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "0_transistor_fet:FDMS1D4N03S"
-			(at 256.21 53.34 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fdms86163p-d.pdf"
-			(at 356.21 53.34 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "P-Channel MOSFET -100 V -50 A (Tc), RDS(on) 22 mOhm max at VGS -10 V, Power 56 (PQFN8 5x6)"
-			(at 175.006 61.976 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CREATOR" ""
-			(at 157.48 64.77 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 157.48 64.77 90)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "onsemi"
-			(at 157.48 64.77 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "FDMS86163P"
-			(at 157.48 64.77 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "LCSC"
-			(at 157.48 64.77 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "C469176"
-			(at 157.48 64.77 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ee779672-ad27-42ca-94ff-40fcace5fcb9")
-		)
-		(pin "2"
-			(uuid "64df7a99-61a8-49ee-961b-51907618d1af")
-		)
-		(pin "3"
-			(uuid "ed4731bb-247f-45b3-9f5b-391eae54f2d8")
-		)
-		(pin "4"
-			(uuid "8749f7be-86a5-4905-af7a-9b53ef461491")
-		)
-		(pin "5"
-			(uuid "9da31340-646c-4887-9142-d221fd40bf34")
-		)
-		(pin "6"
-			(uuid "c762d4e5-5a77-43c7-bceb-5343f84ef2c6")
-		)
-		(pin "7"
-			(uuid "9065e0fe-57bf-485a-a112-f20c8e3fae0c")
-		)
-		(pin "8"
-			(uuid "451a69c1-14cb-408c-a130-b306dc625f56")
-		)
-		(pin "9"
-			(uuid "e6990d18-a5f4-4679-a97d-a1b1df6aafdf")
-		)
-		(instances
-			(project "ethrc_motor_controller"
-				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "Q10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 168.91 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "e56a79bc-a559-46d1-beaf-c4d53bec8ff0")
-		(property "Reference" "#PWR906"
-			(at 168.91 116.84 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 168.91 116.84 0)
-			(effects
-				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 113.03 0)
+			(at 175.26 58.42 0)
 			(effects
 				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 113.03 0)
+			(at 175.26 58.42 0)
 			(effects
 				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 113.03 0)
+		(property "Description" "Power symbol creates a global label with name \"+VBAT\""
+			(at 175.26 58.42 0)
 			(effects
 				(font
-					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "e2155273-dcae-4806-a0e7-78fa421c97ed")
+			(uuid "daeb64d4-20af-4d24-9817-473529f6c913")
 		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
-					(reference "#PWR906")
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_protection:SMBJ60A")
+		(at 157.48 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b68b1b1d-a882-4cc7-86b2-6c2c91c12e7b")
+		(property "Reference" "D2"
+			(at 160.02 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMBJ60A"
+			(at 160.02 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_diode_smd:DIOM5436X244N"
+			(at 63.83 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf"
+			(at -36.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Littelfuse SMBJ60A, Uni-Directional TVS Diode, 600W, 2-Pin DO-214AA"
+			(at 154.178 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.44"
+			(at -236.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "576-SMBJ60A"
+			(at -336.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Littelfuse/SMBJ60A?qs=JJML70Qc14s6J6TKMBRcAg%3D%3D"
+			(at -436.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "LITTELFUSE"
+			(at -536.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SMBJ60A"
+			(at -636.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at -736.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SMBJ60A"
+			(at -836.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "08463822-efd1-4351-8685-2325eed39b34")
+		)
+		(pin "1"
+			(uuid "cc6a3f51-71c1-4ee1-b005-2371048c6236")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2"
+					(reference "D2")
 					(unit 1)
 				)
 			)

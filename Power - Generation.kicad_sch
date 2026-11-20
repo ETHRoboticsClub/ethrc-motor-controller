@@ -8746,7 +8746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2249/TMK105B7224KV-FR_SS.pdf"
 			(at 119.38 127 0)
 			(effects
 				(font
@@ -8880,7 +8880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 336.55 200.66 0)
 			(effects
 				(font
@@ -9156,7 +9156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 295.91 184.15 0)
 			(effects
 				(font
@@ -9290,7 +9290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 377.19 217.17 0)
 			(effects
 				(font
@@ -9424,7 +9424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 316.23 200.66 0)
 			(effects
 				(font
@@ -9628,7 +9628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 326.39 217.17 0)
 			(effects
 				(font
@@ -9834,7 +9834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 255.27 217.17 0)
 			(effects
 				(font
@@ -10239,7 +10239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
 			(at 208.28 123.19 0)
 			(effects
 				(font
@@ -10464,7 +10464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155Z71A105KE01-01A.pdf"
 			(at 148.59 139.7 0)
 			(effects
 				(font
@@ -10733,7 +10733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 234.95 184.15 0)
 			(effects
 				(font
@@ -10867,7 +10867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 387.35 200.66 0)
 			(effects
 				(font
@@ -11001,7 +11001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 245.11 200.66 0)
 			(effects
 				(font
@@ -11205,7 +11205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 346.71 184.15 0)
 			(effects
 				(font
@@ -11339,7 +11339,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 336.55 217.17 0)
 			(effects
 				(font
@@ -11608,7 +11608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 346.71 200.66 0)
 			(effects
 				(font
@@ -11833,7 +11833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 295.91 217.17 0)
 			(effects
 				(font
@@ -12190,7 +12190,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 265.43 217.17 0)
 			(effects
 				(font
@@ -12324,7 +12324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 234.95 200.66 0)
 			(effects
 				(font
@@ -12529,7 +12529,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 377.19 184.15 0)
 			(effects
 				(font
@@ -13195,7 +13195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 326.39 184.15 0)
 			(effects
 				(font
@@ -13401,7 +13401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2615/HMR105B7103KV-F_SS.pdf"
 			(at 361.95 127 0)
 			(effects
 				(font
@@ -13626,7 +13626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 356.87 184.15 0)
 			(effects
 				(font
@@ -14056,7 +14056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 285.75 184.15 0)
 			(effects
 				(font
@@ -14190,7 +14190,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 346.71 217.17 0)
 			(effects
 				(font
@@ -14459,7 +14459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_midvoltage_en.pdf"
 			(at 72.39 127 0)
 			(effects
 				(font
@@ -14594,7 +14594,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
 			(at 208.28 133.35 0)
 			(effects
 				(font
@@ -14728,7 +14728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 367.03 200.66 0)
 			(effects
 				(font
@@ -14862,7 +14862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_midvoltage_en.pdf"
 			(at 57.15 127 0)
 			(effects
 				(font
@@ -15087,7 +15087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 326.39 200.66 0)
 			(effects
 				(font
@@ -15221,7 +15221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 285.75 217.17 0)
 			(effects
 				(font
@@ -15355,7 +15355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 105.41 127 0)
 			(effects
 				(font
@@ -15619,7 +15619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/katalog/datasheet/742792096.pdf"
 			(at 64.77 113.03 0)
 			(effects
 				(font
@@ -15856,41 +15856,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "595-LMR38020SDDAR"
-			(at 156.21 546.99 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMR38020SDDAR?qs=Rp5uXu7WBW%252BVq2PF2vRuwg%3D%3D"
 			(at 156.21 646.99 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 156.21 746.99 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "LMR38020SDDAR"
-			(at 156.21 846.99 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16217,7 +16184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 245.11 184.15 0)
 			(effects
 				(font
@@ -16868,7 +16835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 367.03 217.17 0)
 			(effects
 				(font
@@ -17137,7 +17104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
 			(at 223.52 127 0)
 			(effects
 				(font
@@ -17703,7 +17670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 265.43 200.66 0)
 			(effects
 				(font
@@ -17837,7 +17804,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 255.27 184.15 0)
 			(effects
 				(font
@@ -17971,7 +17938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2146/TMK107AB7105KAHT_SS.pdf"
 			(at 311.15 127 0)
 			(effects
 				(font
@@ -18105,7 +18072,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 275.59 184.15 0)
 			(effects
 				(font
@@ -18400,7 +18367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 367.03 184.15 0)
 			(effects
 				(font
@@ -18625,7 +18592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 285.75 200.66 0)
 			(effects
 				(font
@@ -18922,7 +18889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 234.95 217.17 0)
 			(effects
 				(font
@@ -19056,7 +19023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 306.07 217.17 0)
 			(effects
 				(font
@@ -19190,7 +19157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 194.31 119.38 0)
 			(effects
 				(font
@@ -19529,7 +19496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 387.35 217.17 0)
 			(effects
 				(font
@@ -19798,7 +19765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/31b05c96-4c4c-4498-8dbb-fe092de76bad/lps4018.pdf"
 			(at 201.93 113.03 0)
 			(effects
 				(font
@@ -19932,7 +19899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 356.87 200.66 0)
 			(effects
 				(font
@@ -20066,7 +20033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2249/TMK105B7224KV-FR_SS.pdf"
 			(at 134.62 127 0)
 			(effects
 				(font
@@ -20654,7 +20621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 356.87 217.17 0)
 			(effects
 				(font
@@ -20788,7 +20755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 275.59 217.17 0)
 			(effects
 				(font
@@ -20922,7 +20889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 316.23 217.17 0)
 			(effects
 				(font
@@ -21056,7 +21023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 316.23 184.15 0)
 			(effects
 				(font
@@ -21472,7 +21439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 90.17 127 0)
 			(effects
 				(font
@@ -21606,7 +21573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 336.55 184.15 0)
 			(effects
 				(font
@@ -21963,7 +21930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 255.27 200.66 0)
 			(effects
 				(font
@@ -22097,7 +22064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 306.07 184.15 0)
 			(effects
 				(font
@@ -22231,7 +22198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 275.59 200.66 0)
 			(effects
 				(font
@@ -22365,7 +22332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 265.43 184.15 0)
 			(effects
 				(font
@@ -22499,7 +22466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 245.11 217.17 0)
 			(effects
 				(font
@@ -22705,7 +22672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 377.19 200.66 0)
 			(effects
 				(font
@@ -22909,7 +22876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
 			(at 378.46 127 0)
 			(effects
 				(font
@@ -23043,7 +23010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 295.91 200.66 0)
 			(effects
 				(font
@@ -23177,7 +23144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 306.07 200.66 0)
 			(effects
 				(font
@@ -23311,7 +23278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 387.35 184.15 0)
 			(effects
 				(font
@@ -23445,7 +23412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
 			(at 238.76 127 0)
 			(effects
 				(font

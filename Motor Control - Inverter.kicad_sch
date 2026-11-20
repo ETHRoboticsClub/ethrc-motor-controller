@@ -5582,7 +5582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 104.14 119.38 0)
 			(effects
 				(font
@@ -6391,7 +6391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
 			(at 229.87 128.27 0)
 			(effects
 				(font
@@ -6748,7 +6748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 137.16 135.89 0)
 			(effects
 				(font
@@ -6883,7 +6883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-hcs.pdf"
 			(at 80.01 185.42 0)
 			(effects
 				(font
@@ -7322,7 +7322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 177.8 114.3 0)
 			(effects
 				(font
@@ -7668,7 +7668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 287.02 156.21 0)
 			(effects
 				(font
@@ -7872,7 +7872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
 			(at 104.14 151.13 0)
 			(effects
 				(font
@@ -8330,7 +8330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
 			(at 104.14 127 0)
 			(effects
 				(font
@@ -8475,7 +8475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-hcs.pdf"
 			(at 330.2 185.42 0)
 			(effects
 				(font
@@ -8607,7 +8607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 35.56 114.3 0)
 			(effects
 				(font
@@ -8966,7 +8966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO"
 			(at 119.38 135.89 0)
 			(effects
 				(font
@@ -9099,7 +9099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 36.83 156.21 0)
 			(effects
 				(font
@@ -9233,7 +9233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 361.95 119.38 0)
 			(effects
 				(font
@@ -9508,7 +9508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 163.83 156.21 0)
 			(effects
 				(font
@@ -9642,7 +9642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 391.16 144.78 0)
 			(effects
 				(font
@@ -9868,7 +9868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
 			(at 361.95 151.13 0)
 			(effects
 				(font
@@ -10012,7 +10012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 361.95 158.75 0)
 			(effects
 				(font
@@ -10156,7 +10156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
 			(at 229.87 152.4 0)
 			(effects
 				(font
@@ -10787,7 +10787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 229.87 120.65 0)
 			(effects
 				(font
@@ -11024,7 +11024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf"
 			(at 361.95 127 0)
 			(effects
 				(font
@@ -11169,7 +11169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-hcs.pdf"
 			(at 208.28 185.42 0)
 			(effects
 				(font
@@ -11508,7 +11508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 229.87 160.02 0)
 			(effects
 				(font
@@ -11652,7 +11652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-csrt.pdf"
 			(at 104.14 158.75 0)
 			(effects
 				(font
@@ -11796,7 +11796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO"
 			(at 242.57 146.05 0)
 			(effects
 				(font
@@ -11930,7 +11930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -12675,7 +12675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO"
 			(at 373.38 144.78 0)
 			(effects
 				(font
@@ -12808,7 +12808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
 			(at 287.02 114.3 0)
 			(effects
 				(font

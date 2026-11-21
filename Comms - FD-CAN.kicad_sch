@@ -2345,6 +2345,18 @@
 		(uuid "1eb9df66-79bf-4d65-b10a-e948f19e5147")
 	)
 	(junction
+		(at 223.52 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3287baf9-bc9a-4326-aa62-1a4a327f876e")
+	)
+	(junction
+		(at 234.95 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3edf9bce-1ef7-4990-9f22-d5a36eee6033")
+	)
+	(junction
 		(at 250.19 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2357,10 +2369,10 @@
 		(uuid "58f180f3-50a9-4cf0-9a89-513b341ff0a4")
 	)
 	(junction
-		(at 234.95 77.47)
+		(at 237.49 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7efeb617-0c74-46de-821f-ccf76701f4ac")
+		(uuid "6dc18128-99b4-4ce6-9074-551e732a2d1b")
 	)
 	(junction
 		(at 250.19 90.17)
@@ -2411,22 +2423,16 @@
 		(uuid "b1648edc-65c8-4e58-9290-904204014517")
 	)
 	(junction
-		(at 237.49 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b312220a-781d-4c1b-a395-013f330a34b5")
-	)
-	(junction
-		(at 228.6 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b5b1c0c7-2f24-4cb1-85a8-ff4728af5e97")
-	)
-	(junction
 		(at 195.58 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9b3649b-dbc4-402d-8aeb-04632d78652f")
+	)
+	(junction
+		(at 228.6 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7938098-610d-4bc8-9da8-69ff27794d40")
 	)
 	(junction
 		(at 213.36 106.68)
@@ -2439,12 +2445,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec7031ec-356f-4d6b-b524-7f1f4f1d655a")
-	)
-	(junction
-		(at 223.52 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f912949d-f21b-45bf-a8a1-759c952a7eab")
 	)
 	(no_connect
 		(at 170.18 97.79)
@@ -2504,26 +2504,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 80.01) (xy 228.6 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a61e9c4-b20a-4ae8-93ae-f0ee65ef1f3e")
-	)
-	(wire
-		(pts
-			(xy 234.95 77.47) (xy 223.52 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d1f9250-e069-462e-b31d-a3ca76615325")
-	)
-	(wire
-		(pts
 			(xy 135.89 88.9) (xy 135.89 77.47)
 		)
 		(stroke
@@ -2544,6 +2524,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 77.47) (xy 228.6 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10217eb9-db90-448f-8b31-d7cfba56cb6e")
+	)
+	(wire
+		(pts
 			(xy 260.35 107.95) (xy 260.35 129.54)
 		)
 		(stroke
@@ -2551,16 +2541,6 @@
 			(type default)
 		)
 		(uuid "125ee09b-9b75-476a-82c4-cb3ad86aaeb0")
-	)
-	(wire
-		(pts
-			(xy 243.84 119.38) (xy 233.68 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19cc0852-c47c-44d8-8d54-9b5ccae21461")
 	)
 	(wire
 		(pts
@@ -2614,6 +2594,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 116.84) (xy 243.84 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273c6506-c008-4f20-b8da-80662a7ac5dc")
+	)
+	(wire
+		(pts
 			(xy 190.5 105.41) (xy 186.69 105.41)
 		)
 		(stroke
@@ -2621,16 +2611,6 @@
 			(type default)
 		)
 		(uuid "2790c55d-d7bf-4844-84fb-3960d154916b")
-	)
-	(wire
-		(pts
-			(xy 228.6 80.01) (xy 195.58 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a8a20ef-cd00-480e-abcd-0262a5dc59aa")
 	)
 	(wire
 		(pts
@@ -2722,6 +2702,16 @@
 		)
 		(uuid "55a42cd0-963f-4f41-a7cc-7cadf0b8bb94")
 	)
+	(wire
+		(pts
+			(xy 250.19 110.49) (xy 250.19 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5990488f-34bb-4c47-97b8-4b09c262ef70")
+	)
 	(bus
 		(pts
 			(xy 76.2 82.55) (xy 76.2 83.82)
@@ -2774,7 +2764,17 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 77.47) (xy 198.12 77.47)
+			(xy 228.6 77.47) (xy 234.95 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eab053c-11a6-463a-b01b-558df227f463")
+	)
+	(wire
+		(pts
+			(xy 198.12 77.47) (xy 228.6 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2861,16 +2861,6 @@
 			(type default)
 		)
 		(uuid "6d25d96b-f56e-441a-ad9b-27d6c8771d39")
-	)
-	(wire
-		(pts
-			(xy 223.52 77.47) (xy 223.52 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d6bd68e-399a-4267-bc62-729f2fe89994")
 	)
 	(wire
 		(pts
@@ -2974,13 +2964,13 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 77.47) (xy 234.95 77.47)
+			(xy 223.52 80.01) (xy 223.52 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89b2d945-9cbb-4e2a-ae15-8ce1f5a2097a")
+		(uuid "8cc37232-a8ad-484d-b2cc-253f0465c533")
 	)
 	(wire
 		(pts
@@ -3035,16 +3025,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 80.01) (xy 237.49 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a34b76c6-364a-4bbd-b166-deb08f89a2d3")
-	)
-	(wire
-		(pts
 			(xy 203.2 86.36) (xy 195.58 86.36)
 		)
 		(stroke
@@ -3062,16 +3042,6 @@
 			(type default)
 		)
 		(uuid "aacc9d96-31dc-4f19-a52f-2851a5fec91c")
-	)
-	(wire
-		(pts
-			(xy 250.19 110.49) (xy 250.19 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad761339-f223-4602-beed-def3a217d25c")
 	)
 	(wire
 		(pts
@@ -3225,6 +3195,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 119.38) (xy 243.84 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d70f72c7-7c65-4764-b1c5-e370a4971fbf")
+	)
+	(wire
+		(pts
 			(xy 149.86 97.79) (xy 149.86 99.06)
 		)
 		(stroke
@@ -3242,6 +3222,16 @@
 			(type default)
 		)
 		(uuid "d954e7f1-e241-4d3a-9230-74adab937124")
+	)
+	(wire
+		(pts
+			(xy 234.95 77.47) (xy 243.84 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da831e01-f890-486c-b2cd-2192d2bb6411")
 	)
 	(wire
 		(pts
@@ -3315,13 +3305,13 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 116.84) (xy 236.22 116.84)
+			(xy 223.52 80.01) (xy 195.58 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5c45310-deab-423f-a21b-25dbefc4635a")
+		(uuid "e642f38e-0b95-453f-9eb0-756bee652aff")
 	)
 	(wire
 		(pts
@@ -3363,6 +3353,16 @@
 		)
 		(uuid "f2e83d19-e309-43b2-ad78-686a4248e33f")
 	)
+	(wire
+		(pts
+			(xy 237.49 80.01) (xy 243.84 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f332d081-bbc9-4310-9179-65589e4528b2")
+	)
 	(polyline
 		(pts
 			(xy 69.85 97.79) (xy 76.2 105.41)
@@ -3397,7 +3397,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 80.01) (xy 228.6 80.01)
+			(xy 223.52 80.01) (xy 237.49 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4118,16 +4118,16 @@
 	)
 	(symbol
 		(lib_id "0_connectors:Conn_01x03_Mounting")
-		(at 250.19 78.74 0)
+		(at 250.19 81.28 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "27e25aa5-2dd6-4bc3-aef6-315a6190901e")
 		(property "Reference" "J1"
-			(at 254 78.7399 0)
+			(at 254 81.2801 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4137,7 +4137,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Mounting"
-			(at 254 81.2799 0)
+			(at 254 78.7401 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4147,7 +4147,7 @@
 			)
 		)
 		(property "Footprint" "0_connectors:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal"
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4157,7 +4157,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ch/datasheet/3/1070/1/eGH.pdf"
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4167,7 +4167,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row with mounting pin"
-			(at 249.936 99.06 0)
+			(at 249.936 60.96 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4177,7 +4177,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4187,7 +4187,7 @@
 			)
 		)
 		(property "Manufacturer" "JST Sales America Inc."
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4197,7 +4197,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "SM03B-GHS-TB(LF)(SN) "
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4207,7 +4207,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4217,7 +4217,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" " 306-SM03BGHSTBLFSN "
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4227,7 +4227,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 250.19 78.74 0)
+			(at 250.19 81.28 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6100,16 +6100,16 @@
 	)
 	(symbol
 		(lib_id "0_connectors:Conn_01x03_Mounting")
-		(at 250.19 118.11 0)
+		(at 250.19 120.65 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fb99ba1f-da44-4b5d-a331-068b1388f700")
 		(property "Reference" "J12"
-			(at 254 118.1099 0)
+			(at 254 120.6501 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6119,7 +6119,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Mounting"
-			(at 254 120.6499 0)
+			(at 254 118.1101 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6129,7 +6129,7 @@
 			)
 		)
 		(property "Footprint" "0_connectors:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal"
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6139,7 +6139,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ch/datasheet/3/1070/1/eGH.pdf"
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6149,7 +6149,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row with mounting pin"
-			(at 249.936 138.43 0)
+			(at 249.936 100.33 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6159,7 +6159,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6169,7 +6169,7 @@
 			)
 		)
 		(property "Manufacturer" "JST Sales America Inc."
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6179,7 +6179,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "SM03B-GHS-TB(LF)(SN) "
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6189,7 +6189,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6199,7 +6199,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" " 306-SM03BGHSTBLFSN "
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6209,7 +6209,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 250.19 118.11 0)
+			(at 250.19 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")

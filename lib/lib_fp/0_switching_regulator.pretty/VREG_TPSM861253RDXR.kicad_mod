@@ -1323,13 +1323,13 @@
 	)
 	(pad "2" smd rect
 		(at -1.15 0.675)
-		(size 0.5 0.5)
+		(size 1.5 2.3)
 		(layers "F.Cu")
 		(uuid "2bf53ad6-7c90-467b-9538-543a0ad576fb")
 	)
 	(pad "3" smd rect
 		(at 1.15 0.675)
-		(size 0.5 0.5)
+		(size 1.5 2.3)
 		(layers "F.Cu")
 		(uuid "0aacfc24-cbeb-41aa-863f-5b6b847aad54")
 	)

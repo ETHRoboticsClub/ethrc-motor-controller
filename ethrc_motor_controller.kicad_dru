@@ -143,14 +143,21 @@
 
 # IPC-2221B B2 (51-100 V, external, uncoated) for bus and phase copper on L1/L6. Tracks and pads in the
 # pin fields of the DRV8353 (U6) and LMR38020 (U2) are exempt, their pitch cannot meet it. Zones are never
-# exempt (a board-wide GND zone always touches those courtyards).
+# exempt (a board-wide GND zone always touches those courtyards). The low-side source nets SRC_LS_x sit within
+# a shunt drop of GND, so they are not treated as high voltage; net-tie pads are excluded as well.
 (rule "HV outer clearance"
 (layer outer)
 (constraint clearance (min 0.5mm))
-(condition "A.NetClass == 'High Power' && A.Net != B.Net && !(A.Type == 'Pad' && B.Type == 'Pad') && !(A.Type != 'Zone' && (A.intersectsCourtyard('U6') || A.intersectsCourtyard('U2'))) && !(B.Type != 'Zone' && (B.intersectsCourtyard('U6') || B.intersectsCourtyard('U2')))"))
+(condition "A.NetClass == 'High Power' && !(A.NetName == '*SRC_LS_?') && A.Net != B.Net && !(A.Type == 'Pad' && B.Type == 'Pad') && !A.memberOfFootprint('NT*') && !B.memberOfFootprint('NT*') && !(A.Type != 'Zone' && (A.intersectsCourtyard('U6') || A.intersectsCourtyard('U2'))) && !(B.Type != 'Zone' && (B.intersectsCourtyard('U6') || B.intersectsCourtyard('U2')))"))
 
 # Pours connect solid to power-size pads (FETs, shunts, DC-link caps, connectors, IC pins);
 # small passives (0402/0603) keep the zone's thermal reliefs.
 (rule "Solid zone connection on power-size pads"
 (constraint zone_connection solid)
 (condition "A.Type == 'Pad' && (A.Size_X >= 1.2mm || A.Size_Y >= 1.2mm)"))
+
+
+# Kelvin net ties (under the shunts, at the high-side source pads) join pours of their own net solid.
+(rule "Net-tie pads connect solid to pours"
+(constraint zone_connection solid)
+(condition "A.Type == 'Pad' && A.memberOfFootprint('NT*')"))

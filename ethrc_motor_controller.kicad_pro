@@ -56,6 +56,16 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.35,
+          "via_gap": 0.35,
+          "width": 0.18
+        },
+        {
+          "gap": 0.3,
+          "via_gap": 0.3,
+          "width": 0.2
         }
       ],
       "drc_exclusions": [],
@@ -137,7 +147,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.25,
-        "min_track_width": 0.15,
+        "min_track_width": 0.18,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.55,
         "solder_mask_clearance": 0.0,
@@ -191,13 +201,14 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
+        0.18,
         0.2,
         0.25,
         0.3,
-        0.35,
         0.4,
-        0.5
+        0.5,
+        0.8,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -517,8 +528,8 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.28,
-        "diff_pair_width": 0.2032,
+        "diff_pair_gap": 0.3,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -551,8 +562,8 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.15,
+        "diff_pair_gap": 0.35,
+        "diff_pair_width": 0.18,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -560,7 +571,7 @@
         "pcb_color": "rgb(255, 240, 0)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.18,
         "via_diameter": 0.55,
         "via_drill": 0.25,
         "wire_width": 6
@@ -580,6 +591,23 @@
         "track_width": 0.2,
         "via_diameter": 0.55,
         "via_drill": 0.25,
+        "wire_width": 24
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Gate Drive",
+        "pcb_color": "rgb(255, 128, 0)",
+        "priority": 10,
+        "schematic_color": "rgb(212, 0, 32)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 24
       },
       {
@@ -754,44 +782,8 @@
         "pattern": "GND"
       },
       {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Generation/VIN_5V"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Generation/VIN_12V"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Generation/F_VBAT_12V"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Generation/F_VBAT_5V"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Generation/F_VIN_5V"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Generation/F_VIN_12V"
-      },
-      {
-        "netclass": "Power 12V",
-        "pattern": "+12V"
-      },
-      {
-        "netclass": "Power 12V",
-        "pattern": "/Project Architecture/Power - Generation/SW_12V"
-      },
-      {
         "netclass": "Power 3V3",
         "pattern": "+3V3"
-      },
-      {
-        "netclass": "Power 3V3",
-        "pattern": "/Project Architecture/Power - Generation/SW_3V3"
       },
       {
         "netclass": "Power 5V",
@@ -810,28 +802,28 @@
         "pattern": "/Project Architecture/MCU - Power/F_A3V3"
       },
       {
-        "netclass": "Power 3V3",
-        "pattern": "/Project Architecture/Sensing - Position/COMM_VDD"
-      },
-      {
-        "netclass": "Power 3V3",
-        "pattern": "/Project Architecture/Sensing - Position/DIS_VDD3V"
-      },
-      {
-        "netclass": "GND",
-        "pattern": "/Project Architecture/Fan Control/FAN_SW"
-      },
-      {
-        "netclass": "Power 5V",
-        "pattern": "/Project Architecture/Power - Generation/F_VIN_3V3"
-      },
-      {
         "netclass": "ECAT Diff Pair",
         "pattern": "/Project Architecture/Comms - EtherCat/ECAT_P*"
       },
       {
-        "netclass": "High Power",
-        "pattern": "/Project Architecture/Power - Connectors/VBAT_*"
+        "netclass": "Power 3V3",
+        "pattern": "+3V3_PHY"
+      },
+      {
+        "netclass": "Gate Drive",
+        "pattern": "/Project Architecture/Motor Control - Top Level/GH?"
+      },
+      {
+        "netclass": "Gate Drive",
+        "pattern": "/Project Architecture/Motor Control - Top Level/GL?"
+      },
+      {
+        "netclass": "Gate Drive",
+        "pattern": "/Project Architecture/Motor Control - Top Level/SH?"
+      },
+      {
+        "netclass": "Gate Drive",
+        "pattern": "/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/FET_G*"
       }
     ]
   },
@@ -1234,8 +1226,8 @@
     "RELEASE_BODY_1.1.0": "___________________________________\n\nAdded\n\n-   RC snubber passive values.\n\n___________________________________\n\nFixed\n\n-   More vias for VBUS and LMR36006 GND pads.\n\n-   Board version voltage reference from +3V3 to +A3V3.\n\n___________________________________\n\nChanged\n\n-   Motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.",
     "RELEASE_BODY_1.1.1": "___________________________________\n\nFixed\n\n-   Replace non-stocked components.",
     "RELEASE_BODY_UNRELEASED": "Version Unreleased not found.",
-    "RELEASE_DATE": "20-Nov-2026",
-    "RELEASE_DATE_NUM": "2026-11-20",
+    "RELEASE_DATE": "18-Nov-2026",
+    "RELEASE_DATE_NUM": "2026-11-18",
     "RELEASE_TITLE_1.0.0": "Version 1.0.0 - 2023-12-12",
     "RELEASE_TITLE_1.0.1": "Version 1.0.1 - 2024-01-25",
     "RELEASE_TITLE_1.0.2": "Version 1.0.2 - 2024-03-12",

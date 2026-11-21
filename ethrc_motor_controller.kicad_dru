@@ -18,11 +18,14 @@
 (layer inner)
 (condition "A.Type == 'track'"))
 
-# EtherCAT pairs: 0.15 mm width / 0.25 mm gap = 100 ohm differential on the outer layers.
-# Placed after the 0.2 mm rules because later rules take priority.
-(rule "ECAT diff pair track width"
-(constraint track_width (min 0.15mm))
-(condition "A.NetClass == 'ECAT Diff Pair'"))
+# EtherCAT pairs (2026-11-21): 0.18 mm width / 0.35 mm gap on L1/L6 over GND (L2/L5), PCBWay 6-layer
+# 2116 prepreg 0.1195 mm, er 4.45, 2 oz outer: about 95 ohm differential (100 ohm +-10 %).
+# 0.18 mm is the PCBWay 2 oz outer minimum (7 mil). Placed after the 0.2 mm rules because later rules take priority.
+(rule "ECAT diff pair geometry"
+(condition "A.NetClass == 'ECAT Diff Pair'")
+(constraint track_width (min 0.18mm) (opt 0.18mm) (max 0.2mm))
+(constraint diff_pair_gap (min 0.3mm) (opt 0.35mm) (max 0.4mm))
+(constraint diff_pair_uncoupled (max 3mm)))
 
 # ------------------------------------------------------------------------------------------------------
 
@@ -127,6 +130,20 @@
 (condition "A.Reference =='TP*'"))
 
 # ----------------------------------- Fiducials Courtyard -------------------------------------------
-(rule "Test Point Courtyard Exclusion"
+(rule "Fiducial Courtyard Exclusion"
 (constraint courtyard_clearance (min -1mm))
 (condition "A.Reference =='FM*'"))
+
+# ----------------------------------- Project rules (ethrc) -----------------------------------------
+# Fine-pitch pads inside one footprint (LAN9253 corner pads 0.157 mm, MA732 and TPSM861253 to EP 0.18-0.19 mm)
+# are below the 2 oz outer 8 mil spacing. Accepted; PCBWay to confirm in DFM.
+(rule "Fine-pitch pads inside one footprint"
+(constraint clearance (min 0.15mm))
+(condition "A.Type == 'Pad' && B.Type == 'Pad' && (A.memberOfFootprint('U9') || A.memberOfFootprint('U7') || A.memberOfFootprint('U5'))"))
+
+# IPC-2221B B2 (51-100 V, external, uncoated) for bus and phase copper on L1/L6. Pin fields of the
+# DRV8353 (U6) and LMR38020 (U2) are exempt, their pitch cannot meet it.
+(rule "HV outer clearance"
+(layer outer)
+(constraint clearance (min 0.5mm))
+(condition "A.NetClass == 'High Power' && A.Net != B.Net && !(A.Type == 'Pad' && B.Type == 'Pad') && !A.intersectsCourtyard('U6') && !A.intersectsCourtyard('U2') && !B.intersectsCourtyard('U6') && !B.intersectsCourtyard('U2')"))

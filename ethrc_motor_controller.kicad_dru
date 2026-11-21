@@ -147,10 +147,11 @@
 # a shunt drop of GND, so they are not treated as high voltage; net-tie pads are excluded as well.
 # Also excluded: each switch-node sense net SHx against its own phase (same potential) and the snubber
 # mid-point nets SNUB*, which exist only on the 1 mm link between each snubber's R and C.
+# +VBAT against the charge-pump nodes VCP and CPH is excluded too: they ride at most ~11 V above VM.
 (rule "HV outer clearance"
 (layer outer)
 (constraint clearance (min 0.5mm))
-(condition "A.NetClass == 'High Power' && !(A.NetName == '*SRC_LS_?') && A.Net != B.Net && !(A.Type == 'Pad' && B.Type == 'Pad') && !A.memberOfFootprint('NT*') && !B.memberOfFootprint('NT*') && !(A.NetName == '*PHA' && B.NetName == '*SHA') && !(A.NetName == '*PHB' && B.NetName == '*SHB') && !(A.NetName == '*PHC' && B.NetName == '*SHC') && !(B.NetName == '*SNUB*') && !(A.Type != 'Zone' && (A.intersectsCourtyard('U6') || A.intersectsCourtyard('U2'))) && !(B.Type != 'Zone' && (B.intersectsCourtyard('U6') || B.intersectsCourtyard('U2')))"))
+(condition "A.NetClass == 'High Power' && !(A.NetName == '*SRC_LS_?') && A.Net != B.Net && !(A.Type == 'Pad' && B.Type == 'Pad') && !A.memberOfFootprint('NT*') && !B.memberOfFootprint('NT*') && !(A.NetName == '*PHA' && B.NetName == '*SHA') && !(A.NetName == '*PHB' && B.NetName == '*SHB') && !(A.NetName == '*PHC' && B.NetName == '*SHC') && !(B.NetName == '*SNUB*') && !(A.NetName == '+VBAT' && (B.NetName == '*VCP' || B.NetName == '*CPH')) && !(A.Type != 'Zone' && (A.intersectsCourtyard('U6') || A.intersectsCourtyard('U2'))) && !(B.Type != 'Zone' && (B.intersectsCourtyard('U6') || B.intersectsCourtyard('U2')))"))
 
 # Pours connect solid to power-size pads (FETs, shunts, DC-link caps, connectors, IC pins);
 # small passives (0402/0603) keep the zone's thermal reliefs.

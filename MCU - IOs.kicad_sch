@@ -8722,7 +8722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 269.24 166.37 90)
 			(effects
 				(font
@@ -10831,7 +10831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 118.11 144.78 0)
 			(effects
 				(font
@@ -10841,7 +10841,47 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "10kOhm 63mW, ±1%, 100ppm/K, 0402, thick film"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW040210K0FKED"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "71-CRCW0402-10K-E3"
 			(at 118.11 144.78 0)
 			(effects
 				(font
@@ -13424,7 +13464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 269.24 161.29 90)
 			(effects
 				(font

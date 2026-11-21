@@ -8458,6 +8458,24 @@
 				(hide yes)
 			)
 		)
+		(property "Supplier 1" "Mouser"
+			(at 154.178 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "576-SMBJ60A"
+			(at 154.178 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "08463822-efd1-4351-8685-2325eed39b34")
 		)

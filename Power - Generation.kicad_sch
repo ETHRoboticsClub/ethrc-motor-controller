@@ -9969,7 +9969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/5926/1/KGM_X7R.pdf"
 			(at 297.18 66.04 0)
 			(effects
 				(font
@@ -10029,7 +10029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 297.18 66.04 0)
 			(effects
 				(font
@@ -10039,7 +10039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "581-08053C104K"
 			(at 297.18 66.04 0)
 			(effects
 				(font
@@ -10104,7 +10104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 198.12 60.96 0)
 			(effects
 				(font
@@ -10164,7 +10164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Digikey"
 			(at 198.12 60.96 0)
 			(effects
 				(font
@@ -10174,7 +10174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "541-40.2KLCT-ND"
 			(at 198.12 60.96 0)
 			(effects
 				(font
@@ -10599,7 +10599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM31CR61A476KE15_04A.pdf"
 			(at 210.82 66.04 0)
 			(effects
 				(font
@@ -10659,7 +10659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 210.82 66.04 0)
 			(effects
 				(font
@@ -10669,7 +10669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM31CR61A476KE5L"
 			(at 210.82 66.04 0)
 			(effects
 				(font
@@ -11474,7 +11474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
 			(at 105.41 66.04 0)
 			(effects
 				(font
@@ -11514,7 +11514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 105.41 66.04 0)
 			(effects
 				(font
@@ -11524,7 +11524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "810-C2012X7R2A104K"
 			(at 105.41 66.04 0)
 			(effects
 				(font
@@ -11965,7 +11965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 166.37 60.96 0)
 			(effects
 				(font
@@ -12025,7 +12025,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 166.37 60.96 90)
 			(effects
 				(font
@@ -12035,7 +12035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0603-100K-E3"
 			(at 166.37 60.96 90)
 			(effects
 				(font
@@ -12991,7 +12991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/KEM_C1006_X5R_SMD.pdf"
 			(at 285.75 66.04 0)
 			(effects
 				(font
@@ -13051,7 +13051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 285.75 66.04 0)
 			(effects
 				(font
@@ -13061,7 +13061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "80-C0805C106K8P"
 			(at 285.75 66.04 0)
 			(effects
 				(font
@@ -13922,7 +13922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -13982,7 +13982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -13992,7 +13992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0603-64.9K-E3"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -14325,7 +14325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 308.61 63.5 0)
 			(effects
 				(font
@@ -14385,7 +14385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 308.61 63.5 0)
 			(effects
 				(font
@@ -14395,7 +14395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0402-15.8K-E3"
 			(at 308.61 63.5 0)
 			(effects
 				(font
@@ -15487,7 +15487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/34192/lp40dz11.pdf"
 			(at 181.61 54.61 0)
 			(effects
 				(font
@@ -15547,7 +15547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 181.61 54.61 90)
 			(effects
 				(font
@@ -15557,7 +15557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "70-IHLP4040DZER220M1"
 			(at 181.61 54.61 90)
 			(effects
 				(font
@@ -16409,7 +16409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Tayio_Yuden_1102023_MS_mlcc_all_e.pdf"
 			(at 95.25 66.04 0)
 			(effects
 				(font
@@ -16746,7 +16746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 337.82 62.23 0)
 			(effects
 				(font
@@ -16756,7 +16756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "595-TPSM861253RDXR"
 			(at 337.82 62.23 0)
 			(effects
 				(font
@@ -16970,7 +16970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 198.12 74.93 0)
 			(effects
 				(font
@@ -17030,7 +17030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 198.12 74.93 0)
 			(effects
 				(font
@@ -17040,7 +17040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0402-10K-E3"
 			(at 198.12 74.93 0)
 			(effects
 				(font
@@ -17238,7 +17238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Tayio_Yuden_1102023_MS_mlcc_all_e.pdf"
 			(at 73.66 66.04 0)
 			(effects
 				(font
@@ -17536,7 +17536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM188R60J226MEA0_01A.pdf"
 			(at 378.46 64.77 0)
 			(effects
 				(font
@@ -17596,7 +17596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 378.46 64.77 0)
 			(effects
 				(font
@@ -17606,7 +17606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM188R60J226ME0D"
 			(at 378.46 64.77 0)
 			(effects
 				(font
@@ -19292,7 +19292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/GRM155R71C103KA01-01A.pdf"
 			(at 320.04 76.2 0)
 			(effects
 				(font
@@ -19352,7 +19352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 320.04 76.2 0)
 			(effects
 				(font
@@ -19362,7 +19362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM36X103K16"
 			(at 320.04 76.2 0)
 			(effects
 				(font
@@ -19631,7 +19631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM31CR61A476KE15_04A.pdf"
 			(at 222.25 66.04 0)
 			(effects
 				(font
@@ -19691,7 +19691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 222.25 66.04 0)
 			(effects
 				(font
@@ -19701,7 +19701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM31CR61A476KE5L"
 			(at 222.25 66.04 0)
 			(effects
 				(font
@@ -20353,7 +20353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 308.61 76.2 0)
 			(effects
 				(font
@@ -20413,7 +20413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 308.61 76.2 0)
 			(effects
 				(font
@@ -20423,7 +20423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0402-10K-E3"
 			(at 308.61 76.2 0)
 			(effects
 				(font
@@ -20487,7 +20487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Tayio_Yuden_1102023_MS_mlcc_all_e.pdf"
 			(at 85.09 66.04 0)
 			(effects
 				(font
@@ -21705,7 +21705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM155R71C104KA88_01A.pdf"
 			(at 165.1 45.72 0)
 			(effects
 				(font
@@ -21765,7 +21765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 165.1 45.72 90)
 			(effects
 				(font
@@ -21775,7 +21775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM155R71C104KA88"
 			(at 165.1 45.72 90)
 			(effects
 				(font

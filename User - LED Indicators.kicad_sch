@@ -2675,6 +2675,24 @@
 				(hide yes)
 			)
 		)
+		(property "Supplier 1" "Mouser"
+			(at 137.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "749-SM1206NHC-IL"
+			(at 137.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "acc166b0-db14-489d-826d-91a935844794")
 		)
@@ -4253,7 +4271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 137.16 62.23 0)
 			(effects
 				(font

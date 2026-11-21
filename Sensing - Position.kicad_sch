@@ -3595,7 +3595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "14-bit contactless magnetic angle sensor, SPI, ABZ incremental and PWM outputs, 3.3V, QFN-16 3x3mm"
 			(at 62.23 57.15 0)
 			(effects
 				(font
@@ -3616,6 +3616,46 @@
 			)
 		)
 		(property "VERIFIER" ""
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Monolithic Power Systems Inc."
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "MA732GQ-Z"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "LCSC"
+			(at 62.23 57.15 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "C3824836"
 			(at 62.23 57.15 0)
 			(effects
 				(font
@@ -3722,7 +3762,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 219.71 66.04 0)
 			(effects
 				(font
@@ -3855,7 +3895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM155Z71A105KE01-01A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 125.73 43.18 0)
 			(effects
 				(font
@@ -3865,7 +3905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1uF 10V, X7R, ±10%, 0402, MLCC"
 			(at 125.73 43.18 0)
 			(effects
 				(font
@@ -3887,6 +3927,46 @@
 		)
 		(property "VERIFIER" ""
 			(at 125.73 43.18 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 125.73 43.18 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GRM155Z71A105KE01J"
+			(at 125.73 43.18 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 125.73 43.18 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "490-GRM155Z71A105KE01JCT-ND"
+			(at 125.73 43.18 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4197,6 +4277,46 @@
 			)
 		)
 		(property "VERIFIER" ""
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "SM06B-GHS-TB(LF)(SN)"
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "306-SM06BGHSTBLFSN"
 			(at 237.49 63.5 0)
 			(effects
 				(font

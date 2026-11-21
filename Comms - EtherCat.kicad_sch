@@ -10669,7 +10669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 77.47 55.88 0)
 			(effects
 				(font
@@ -10983,7 +10983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 33.02 55.88 0)
 			(effects
 				(font
@@ -11227,7 +11227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 66.04 29.21 0)
 			(effects
 				(font
@@ -11402,7 +11402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 139.7 199.39 0)
 			(effects
 				(font
@@ -11899,7 +11899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 31.75 29.21 0)
 			(effects
 				(font
@@ -12319,7 +12319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 231.14 140.97 0)
 			(effects
 				(font
@@ -12628,7 +12628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H223KA55-01A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 326.39 88.9 0)
 			(effects
 				(font
@@ -13241,7 +13241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 118.11 148.59 0)
 			(effects
 				(font
@@ -13415,7 +13415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 313.69 151.13 0)
 			(effects
 				(font
@@ -13659,7 +13659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 82.55 156.21 0)
 			(effects
 				(font
@@ -13833,7 +13833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 110.49 148.59 0)
 			(effects
 				(font
@@ -14007,7 +14007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H223KA55-01A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 326.39 185.42 0)
 			(effects
 				(font
@@ -14276,7 +14276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 218.44 52.07 0)
 			(effects
 				(font
@@ -14480,7 +14480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 199.39 199.39 0)
 			(effects
 				(font
@@ -14615,7 +14615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 168.91 205.74 0)
 			(effects
 				(font
@@ -14789,7 +14789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 43.18 29.21 0)
 			(effects
 				(font
@@ -14963,7 +14963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 110.49 104.14 0)
 			(effects
 				(font
@@ -15138,7 +15138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 153.67 205.74 0)
 			(effects
 				(font
@@ -15272,7 +15272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 303.53 151.13 0)
 			(effects
 				(font
@@ -15446,7 +15446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 280.67 151.13 0)
 			(effects
 				(font
@@ -15905,7 +15905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 227.33 52.07 0)
 			(effects
 				(font
@@ -16243,7 +16243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 54.61 29.21 0)
 			(effects
 				(font
@@ -16557,7 +16557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
 			(at 100.33 104.14 0)
 			(effects
 				(font
@@ -16731,7 +16731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KGKT.pdf"
 			(at 168.91 195.58 90)
 			(effects
 				(font
@@ -16905,7 +16905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 22.86 207.01 0)
 			(effects
 				(font
@@ -17281,7 +17281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 40.64 209.55 0)
 			(effects
 				(font
@@ -17415,7 +17415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 219.71 199.39 0)
 			(effects
 				(font
@@ -17933,7 +17933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 137.16 29.21 0)
 			(effects
 				(font
@@ -18107,7 +18107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 129.54 199.39 0)
 			(effects
 				(font
@@ -18415,7 +18415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KGKT.pdf"
 			(at 199.39 209.55 90)
 			(effects
 				(font
@@ -18857,7 +18857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 67.31 55.88 0)
 			(effects
 				(font
@@ -19210,7 +19210,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 96.52 196.85 0)
 			(effects
 				(font
@@ -19384,7 +19384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 292.1 151.13 0)
 			(effects
 				(font
@@ -19558,7 +19558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
 			(at 21.59 29.21 0)
 			(effects
 				(font
@@ -19732,7 +19732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 55.88 55.88 0)
 			(effects
 				(font
@@ -19906,7 +19906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 314.96 49.53 0)
 			(effects
 				(font
@@ -20493,7 +20493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 303.53 49.53 0)
 			(effects
 				(font
@@ -20807,7 +20807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 292.1 49.53 0)
 			(effects
 				(font
@@ -21249,7 +21249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 280.67 49.53 0)
 			(effects
 				(font
@@ -21493,7 +21493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KGKT.pdf"
 			(at 219.71 209.55 90)
 			(effects
 				(font
@@ -21667,7 +21667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 73.66 147.32 0)
 			(effects
 				(font
@@ -22297,7 +22297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 77.47 29.21 0)
 			(effects
 				(font
@@ -22471,7 +22471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 44.45 55.88 0)
 			(effects
 				(font
@@ -22978,7 +22978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 125.73 29.21 0)
 			(effects
 				(font
@@ -23152,7 +23152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -23500,7 +23500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
 			(at 66.04 111.76 0)
 			(effects
 				(font
@@ -23744,7 +23744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
 			(at 22.86 55.88 0)
 			(effects
 				(font
@@ -23918,7 +23918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 88.9 29.21 0)
 			(effects
 				(font
@@ -24092,7 +24092,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 240.03 140.97 0)
 			(effects
 				(font
@@ -24336,7 +24336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 88.9 196.85 0)
 			(effects
 				(font
@@ -24510,7 +24510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
 			(at 81.28 111.76 0)
 			(effects
 				(font
@@ -24682,7 +24682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/ENFA0003.pdf"
 			(at 105.41 64.77 90)
 			(effects
 				(font
@@ -24856,7 +24856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KRKT.pdf"
 			(at 129.54 209.55 90)
 			(effects
 				(font

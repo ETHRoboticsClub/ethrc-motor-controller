@@ -1,4 +1,4 @@
-_local_|2026-11-20|root|Local changes not committed|False|True
+_local_|2026-11-21|root|Local changes not committed|False|True
+39ccc59|2026-11-21|Masiar Etemadi|[PCB] Apply the PCBWay 6-layer stackup and impedance rules, add the shunt net ties and update placement.|False|True
+adda6b6|2026-11-21|Masiar Etemadi|[Schematic] Switch the red fault LED to the 1206 SM1206NHC-IL and tidy the FD-CAN connector wiring.|True|False
 ed0d73e|2026-11-20|Masiar Etemadi|[Schematic] Restore the datasheet links lost in the library update and tidy leftover symbol fields.|True|False
-04b11e8|2026-11-20|Masiar Etemadi|[Schematic] Remove the reverse-polarity protection and connect the SMBJ60A bus TVS to CHASSIS.|True|False
-a47b968|2026-11-18|Masiar Etemadi|[PCB] Place the 5 V buck, 3.3 V module and LDO.|False|True

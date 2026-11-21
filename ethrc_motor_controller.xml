@@ -61,7 +61,7 @@
 10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:
 
 	BOARD SIZE				88.000 × 88.000 mm
-	BOARD THICKNESS		1.535 mm
+	BOARD THICKNESS		1.528 mm
 	TRACE WIDTH			N/A mm
 	TRACE TO TRACE		0.200 mm
 	MIN. HOLE (PTH)			0.250 mm
@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">a47b968</textvar>
+    <textvar name="GIT_HASH_PCB">39ccc59</textvar>
     <textvar name="GIT_HASH_SCH">9bdda3e</textvar>
     <textvar name="GIT_URL">https://github.com/ETHRoboticsClub/ethrc-motor-controller</textvar>
     <textvar name="PROJECT_NAME">BLDC Motor Controller</textvar>
@@ -180,8 +180,8 @@ Fixed
 
 -   Replace non-stocked components.</textvar>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="RELEASE_DATE">20-Nov-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-11-20</textvar>
+    <textvar name="RELEASE_DATE">21-Nov-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-11-21</textvar>
     <textvar name="RELEASE_TITLE_1.0.0">Version 1.0.0 - 2023-12-12</textvar>
     <textvar name="RELEASE_TITLE_1.0.1">Version 1.0.1 - 2024-01-25</textvar>
     <textvar name="RELEASE_TITLE_1.0.2">Version 1.0.2 - 2024-03-12</textvar>
@@ -7885,19 +7885,19 @@ Fixed
     </comp>
     <comp ref="D3">
       <value>Red</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <footprint>0_led_smd:LED_SM1206</footprint>
       <datasheet>https://www.bivar.com/parts_content/Datasheets/SM1206NHC-IL.pdf</datasheet>
-      <description>LED red 0603. Pin 1 = cathode, pin 2 = anode.</description>
+      <description>LED red 1206. Pin 1 = cathode, pin 2 = anode.</description>
       <fields>
-        <field name="Manufacturer Part Number">LTST-C191KRKT</field>
-        <field name="Manufacturer">Lite-On</field>
-        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Manufacturer Part Number">SM1206NHC-IL</field>
+        <field name="Manufacturer">Bivar Inc.</field>
+        <field name="Footprint">0_led_smd:LED_SM1206</field>
         <field name="Datasheet">https://www.bivar.com/parts_content/Datasheets/SM1206NHC-IL.pdf</field>
-        <field name="Description">LED red 0603. Pin 1 = cathode, pin 2 = anode.</field>
+        <field name="Description">LED red 1206. Pin 1 = cathode, pin 2 = anode.</field>
       </fields>
       <libsource lib="0_leds" part="LED_Red_0603" description="LED red 0603. Pin 1 = cathode, pin 2 = anode."/>
-      <property name="Manufacturer Part Number" value="LTST-C191KRKT"/>
-      <property name="Manufacturer" value="Lite-On"/>
+      <property name="Manufacturer Part Number" value="SM1206NHC-IL"/>
+      <property name="Manufacturer" value="Bivar Inc."/>
       <property name="Sheetname" value="User - LED Indicators"/>
       <property name="Sheetfile" value="User - LED Indicators.kicad_sch"/>
       <property name="ki_keywords" value="LED indicator"/>
@@ -14095,16 +14095,16 @@ Fixed
     </net>
     <net code="49" name="/Project Architecture/Comms - FD-CAN/FDCAN+" class="Default">
       <node ref="D20" pin="1" pinfunction="K1" pintype="passive"/>
-      <node ref="D21" pin="1" pinfunction="K1" pintype="passive"/>
-      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="D21" pin="2" pinfunction="K2" pintype="passive"/>
+      <node ref="J1" pin="3" pintype="passive"/>
       <node ref="J11" pin="3" pinfunction="Pin_3" pintype="passive"/>
-      <node ref="J12" pin="1" pintype="passive"/>
+      <node ref="J12" pin="3" pintype="passive"/>
       <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
       <node ref="U10" pin="7" pinfunction="CANH" pintype="bidirectional"/>
     </net>
     <net code="50" name="/Project Architecture/Comms - FD-CAN/FDCAN-" class="Default">
       <node ref="D20" pin="2" pinfunction="K2" pintype="passive"/>
-      <node ref="D21" pin="2" pinfunction="K2" pintype="passive"/>
+      <node ref="D21" pin="1" pinfunction="K1" pintype="passive"/>
       <node ref="J1" pin="2" pintype="passive"/>
       <node ref="J11" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J12" pin="2" pintype="passive"/>
@@ -14862,9 +14862,9 @@ Fixed
       <node ref="D26" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="J1" pin="3" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
       <node ref="J11" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J12" pin="3" pintype="passive"/>
+      <node ref="J12" pin="1" pintype="passive"/>
       <node ref="J15" pin="1" pinfunction="VCC" pintype="power_in"/>
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>

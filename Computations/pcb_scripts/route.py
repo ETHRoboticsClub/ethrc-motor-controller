@@ -126,8 +126,9 @@ class World:
             s=1 if p.num==num else -1; p.x,p.y=x+s*ux*l,y+s*uy*l
             p.box=[(p.x+ux*ca*a_len/2-uy*cc*c_len/2,p.y+uy*ca*a_len/2+ux*cc*c_len/2) for ca,cc in ((-1,-1),(1,-1),(1,1),(-1,1))]
             if bottom: p.layers=[q.replace('F.','B.') for q in p.layers]
+            else: p.layers=[q.replace('B.','F.') for q in p.layers]
         f.x,f.y=x,y
-        if bottom: f.layer='B.Cu'
+        f.layer='B.Cu' if bottom else 'F.Cu'
         self.plan['place'].append(dict(ref=ref,x=x,y=y,pad=num,px=at[0],py=at[1],bottom=bottom)); self.refresh(ref)
     def add_track(self,net,layer,w,pts):
         net=self.canon(net)
@@ -212,6 +213,14 @@ class World:
             if i0>=i1 or j0>=j1: continue
             B[j0:j1,i0:i1]|=(self._dist(o,X[j0:j1,i0:i1],Y[j0:j1,i0:i1])<m)
         return B
+    def _bbox(self,o):
+        b=o.get('_bb')
+        if b is None:
+            if o['k']=='c': b=(o['x']-o['r'],o['y']-o['r'],o['x']+o['r'],o['y']+o['r'])
+            elif o['k']=='s': b=(min(o['p'][0],o['p'][2])-o['r'],min(o['p'][1],o['p'][3])-o['r'],max(o['p'][0],o['p'][2])+o['r'],max(o['p'][1],o['p'][3])+o['r'])
+            else: xs=[q[0] for q in o['pts']]; ys=[q[1] for q in o['pts']]; b=(min(xs),min(ys),max(xs),max(ys))
+            o['_bb']=b
+        return b
     def margin(self,net,layer,hw,pts,allow=()):
         net=self.canon(net)
         """smallest (distance - required clearance) of a polyline of half-width hw; (value, culprit)."""
@@ -222,8 +231,11 @@ class World:
         e=RB-EDGE-hw-float(np.max(np.hypot(X-CX,Y-CY)))
         if e<best[0]: best=(e,'board edge')
         inner=float(np.max(np.hypot(X-CX,Y-CY)))<41.0           # polyline clear of the CHASSIS ring band
+        lx0,ly0,lx1,ly1=float(X.min())-2.5,float(Y.min())-2.5,float(X.max())+2.5,float(Y.max())+2.5
         for o in self.obs+self.zones:
             if o['ref'] in allow: continue
+            bb=self._bbox(o)
+            if bb[2]<lx0 or bb[0]>lx1 or bb[3]<ly0 or bb[1]>ly1: continue   # far away: cannot set the minimum
             if inner and len(o.get('rings',()))>1 and o['net']=='CHASSIS': continue
             c=self._need(o,net,layer)
             if c is None: continue

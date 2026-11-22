@@ -107,7 +107,7 @@ def main():
     for m in p.get('move',[]): R[m['ref']].SetPosition(P(m['x'],m['y']))
     for m in p.get('place',[]):
         fp=R[m['ref']]
-        if m.get('bottom') and not fp.IsFlipped(): fp.Flip(fp.GetPosition(),pcbnew.FLIP_DIRECTION_LEFT_RIGHT)
+        if bool(m.get('bottom'))!=fp.IsFlipped(): fp.Flip(fp.GetPosition(),pcbnew.FLIP_DIRECTION_LEFT_RIGHT)
         fp.SetPosition(P(m['x'],m['y'])); best=None
         for rot in (0,90,180,270,45,135,225,315):
             fp.SetOrientationDegrees(rot)

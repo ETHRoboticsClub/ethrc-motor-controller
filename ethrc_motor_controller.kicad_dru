@@ -30,10 +30,10 @@
 # 2026-11-22 (decision 101): T1/T2 put each pair's pins 2.54 mm apart with the centre tap between them and the
 # 49.9 ohm terminations at the pins, and port 1 needs a polarity hop per pair; that costs about 5 to 11 mm uncoupled.
 # At 100BASE-TX (3 to 5 ns edges, about 0.45 m electrical length) this is irrelevant, so: uncoupled 12 mm, and the
-# gap limit is lifted inside the named rule area ECAT_MAGNETICS (chip-side fan-in at T1/T2, L1 and L6).
+# gap limit is lifted inside the named rule area ECAT_MAGNETICS (chip- and cable-side fan-in at T1/T2, L1 and L6).
 (rule "ECAT fan-in at the magnetics"
 (condition "A.NetClass == 'ECAT Diff Pair' && A.intersectsArea('ECAT_MAGNETICS')")
-(constraint diff_pair_gap (min 0.3mm) (max 5mm)))
+(constraint diff_pair_gap (min 0.3mm) (max 8mm)))
 
 # ------------------------------------------------------------------------------------------------------
 

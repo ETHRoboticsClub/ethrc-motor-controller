@@ -73,10 +73,15 @@ class World:
         self.zones=[]
         for z in find(self.b,'zone'):
             net=one(z,'net_name'); n=short(net[1]) if net else ''
-            if n in('GND',''): continue
+            ko=one(z,'keepout')
+            if ko is not None:                                   # rule area: an obstacle only where it forbids tracks
+                tr=one(ko,'tracks')
+                if not (tr and tr[1]=='not_allowed'): continue
+                n='#KEEPOUT'
+            elif n in('GND',''): continue
             lay=one(z,'layer') or one(z,'layers'); nm=one(z,'name')
-            pts=[(float(q[1]),float(q[2])) for q in find(one(one(z,'polygon'),'pts'),'xy')]
-            self.zones.append(dict(k='p',pts=pts,net=n,lay=set(lay[1:]),ref='zone:'+(nm[1] if nm else '')))
+            rings=[[(float(q[1]),float(q[2])) for q in find(one(pl,'pts'),'xy')] for pl in find(z,'polygon')]   # outline, then holes
+            self.zones.append(dict(k='p',pts=rings[0],rings=rings,net=n,lay=set(lay[1:]),ref='zone:'+(nm[1] if nm else '')))
     def _fp_obs(self,f):
         for p in f.pads:
             lay=set()
@@ -137,11 +142,13 @@ class World:
             if m[0]<-1e-3: print('  !! via',net,(x,y),'margin',round(m[0],3),'against',m[1])
         self.obs.append(dict(k='c',x=x,y=y,r=d/2,net=net,lay=None,ref='newvia',hole=drill/2))
         self.plan['vias'].append(dict(net=self.full[net],x=round(x,4),y=round(y,4),d=d,drill=drill)); return (x,y)
-    def add_zone(self,name,net,layer,pts,priority=20,keepout=False):
-        """Plan a copper pour (or, keepout=True, a B/F.Cu rule area with no tracks, vias or pours)."""
+    def add_zone(self,name,net,layer,pts,priority=20,keepout=False,allow=()):
+        """Plan a copper pour, or (keepout=True) a one-layer rule area with no tracks, vias or pours;
+        allow may name 'vias' and/or 'pours' to permit them inside the rule area."""
         net=self.canon(net)
-        self.plan.setdefault('zones',[]).append(dict(name=name,net='' if keepout else self.full[net],layer=layer,pts=[[x,y] for x,y in pts],priority=priority,keepout=keepout))
-        self.zones.append(dict(k='p',pts=[tuple(p) for p in pts],net='#KEEPOUT' if keepout else net,lay={layer},ref='zone:'+name))
+        self.plan.setdefault('zones',[]).append(dict(name=name,net='' if keepout else self.full[net],layer=layer,pts=[[x,y] for x,y in pts],priority=priority,keepout=keepout,allow=list(allow)))
+        if not (keepout and 'tracks' in allow):
+            self.zones.append(dict(k='p',pts=[tuple(p) for p in pts],net='#KEEPOUT' if keepout else net,lay={layer},ref='zone:'+name))
     def drop_zone(self,name):
         """Plan the removal of an existing zone (outline and fill), given by its name."""
         n=len(self.zones); self.zones=[z for z in self.zones if z['ref']!='zone:'+name]
@@ -166,13 +173,15 @@ class World:
             ax,ay,bx,by=o['p']; dx,dy=bx-ax,by-ay; L=dx*dx+dy*dy
             t=np.zeros_like(X) if L==0 else np.clip(((X-ax)*dx+(Y-ay)*dy)/L,0,1)
             return np.hypot(X-(ax+t*dx),Y-(ay+t*dy))-o['r']
-        pts=o['pts']; n=len(pts); d=np.full(X.shape,1e9); ins=np.zeros(X.shape,bool)
-        for k in range(n):
-            ax,ay=pts[k]; bx,by=pts[(k+1)%n]; dx,dy=bx-ax,by-ay; L=dx*dx+dy*dy
-            t=np.zeros_like(X) if L==0 else np.clip(((X-ax)*dx+(Y-ay)*dy)/L,0,1)
-            d=np.minimum(d,np.hypot(X-(ax+t*dx),Y-(ay+t*dy)))
-            if ay!=by:
-                c=((ay>Y)!=(by>Y))&(X<(bx-ax)*(Y-ay)/(by-ay)+ax); ins^=c
+        d=np.full(X.shape,1e9); ins=np.zeros(X.shape,bool)
+        for pts in o.get('rings',[o['pts']]):                  # even-odd over outline and holes
+            n=len(pts)
+            for k in range(n):
+                ax,ay=pts[k]; bx,by=pts[(k+1)%n]; dx,dy=bx-ax,by-ay; L=dx*dx+dy*dy
+                t=np.zeros_like(X) if L==0 else np.clip(((X-ax)*dx+(Y-ay)*dy)/L,0,1)
+                d=np.minimum(d,np.hypot(X-(ax+t*dx),Y-(ay+t*dy)))
+                if ay!=by:
+                    c=((ay>Y)!=(by>Y))&(X<(bx-ax)*(Y-ay)/(by-ay)+ax); ins^=c
         return np.where(ins,-d,d)
     def _need(self,o,net,layer,pad_to_pad=False):
         """clearance this obstacle demands from copper of `net` on `layer` (None: not an obstacle)."""
@@ -188,8 +197,10 @@ class World:
         X=x0+g*np.arange(nx)[None,:]+np.zeros((ny,1)); Y=y0+g*np.arange(ny)[:,None]+np.zeros((1,nx))
         B=(np.hypot(X-CX,Y-CY)>RB-EDGE-hw-eps)
         x1,y1=x0+g*(nx-1),y0+g*(ny-1)
+        inner=max(math.hypot(x-CX,y-CY) for x in (x0,x1) for y in (y0,y1))<41.0    # window clear of the CHASSIS ring band
         for o in self.obs+self.zones+list(extra):
             if o['ref'] in allow: continue
+            if inner and len(o.get('rings',()))>1 and o['net']=='CHASSIS': continue
             c=self._need(o,net,layer)
             if c is None: continue
             m=c+hw+eps
@@ -210,8 +221,10 @@ class World:
         X=np.array([p[0] for p in P]); Y=np.array([p[1] for p in P])
         e=RB-EDGE-hw-float(np.max(np.hypot(X-CX,Y-CY)))
         if e<best[0]: best=(e,'board edge')
+        inner=float(np.max(np.hypot(X-CX,Y-CY)))<41.0           # polyline clear of the CHASSIS ring band
         for o in self.obs+self.zones:
             if o['ref'] in allow: continue
+            if inner and len(o.get('rings',()))>1 and o['net']=='CHASSIS': continue
             c=self._need(o,net,layer)
             if c is None: continue
             v=float(np.min(self._dist(o,X,Y)))-c-hw

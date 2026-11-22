@@ -62,10 +62,10 @@ KEEPOUT='''\t(zone
 \t\t(min_thickness 0.25)
 \t\t(filled_areas_thickness no)
 \t\t(keepout
-\t\t\t(tracks not_allowed)
-\t\t\t(vias not_allowed)
+\t\t\t(tracks {tracks})
+\t\t\t(vias {vias})
 \t\t\t(pads allowed)
-\t\t\t(copperpour not_allowed)
+\t\t\t(copperpour {pour})
 \t\t\t(footprints allowed)
 \t\t)
 \t\t(placement
@@ -88,9 +88,9 @@ def add_zones_in_file(path,zones):
     t=open(path).read(); codes={m.group(2):m.group(1) for m in re.finditer(r'\n\t\(net (\d+) "([^"]*)"\)',t)}
     blocks=''
     for z in zones:
-        if '(name "%s")'%z['name'] in t: sys.exit('zone exists already: '+z['name'])
+        if '(name "%s")'%z['name'] in t and not z.get('keepout'): sys.exit('zone exists already: '+z['name'])
         pts=' '.join('(xy %g %g)'%(x,y) for x,y in z['pts'])
-        if z.get('keepout'): blocks+=KEEPOUT.format(layer=z['layer'],uuid=uuid.uuid4(),name=z['name'],pts=pts)
+        if z.get('keepout'): ok=z.get('allow',[]); blocks+=KEEPOUT.format(layer=z['layer'],uuid=uuid.uuid4(),name=z['name'],pts=pts,tracks='allowed' if 'tracks' in ok else 'not_allowed',vias='allowed' if 'vias' in ok else 'not_allowed',pour='allowed' if 'pours' in ok else 'not_allowed')
         else: blocks+=ZONE.format(code=codes[z['net']],net=z['net'],layer=z['layer'],uuid=uuid.uuid4(),name=z['name'],prio=z['priority'],pts=pts)
     end='\t(embedded_fonts no)\n)'; assert t.rstrip().endswith(end),'unexpected board file ending'
     k=t.rstrip().rfind(end); t=t[:k]+blocks+t[k:]; open(path,'w').write(t); return len(zones)
@@ -114,6 +114,7 @@ def main():
             q=[d for d in fp.Pads() if d.GetNumber()==m['pad']][0].GetPosition(); d=math.hypot(q.x/1e6-m['px'],q.y/1e6-m['py'])
             if best is None or d<best[0]: best=(d,rot)
         fp.SetOrientationDegrees(best[1]); assert best[0]<0.05,(m,best)
+    for r in p.get('lock',[]): R[r].SetLocked(True)
     for v in p['vias']:
         o=pcbnew.PCB_VIA(b); o.SetViaType(pcbnew.VIATYPE_THROUGH); o.SetLayerPair(pcbnew.F_Cu,pcbnew.B_Cu); o.SetPosition(P(v['x'],v['y']))
         o.SetWidth(pcbnew.F_Cu,MM(v.get('d',0.55))); o.SetDrill(MM(v.get('drill',0.25))); o.SetNet(b.FindNet(v['net'])); o.SetIsFree(True); b.Add(o)

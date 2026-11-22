@@ -551,7 +551,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Chassis",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(250, 7, 255)",
         "priority": 2,
         "schematic_color": "rgb(139, 103, 213)",
         "track_width": 0.2,

@@ -3214,6 +3214,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -4903,7 +5010,7 @@
 	)
 	(text "25 MHz crystal"
 		(exclude_from_sim no)
-		(at 58.42 97.79 0)
+		(at 45.72 97.79 0)
 		(effects
 			(font
 				(face "Times New Roman")
@@ -5127,6 +5234,19 @@
 		)
 		(uuid "f867e82f-60e2-58e3-8142-554950af2557")
 	)
+	(text "EtherCAT test points (TP76/TP77 hooks on the BOM, the others are bare pads)"
+		(exclude_from_sim no)
+		(at 30.48 232.41 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9619e24-a626-4834-9b71-6b976ad8b3a7")
+	)
 	(text_box "LAYOUT NOTE: ETHERCAT\n* TX/RX pairs 100 ohm differential, matched in-pair, short; 49.9R at the U9 pins.\n* Keep PHY side and cable side of T1/T2 apart; no GND plane under the cable side and the GH connectors except the Bob Smith cap return; C155/C156 right at the centre taps, returned to CHASSIS.\n* Y1 + caps and R55 (RBIAS) tight to their pins; exposed pad via array to GND."
 		(exclude_from_sim no)
 		(at 241.08 217.17 0)
@@ -5198,17 +5318,40 @@
 		)
 		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
 	)
+	(text_box "DESIGN NOTE:\nT1/T2 chip side deliberately swapped (2026-11-22) so every pair routes on L1 without vias:\nport 0: U9 TX pair -> T1 RD pins 6/8, RX pair -> TD pins 1/3 (Auto-MDIX sorts TX/RX);\nport 1: P and N exchanged in both pairs at T2 (automatic polarity correction).\nMicrochip LAN9253 HW design checklist DS00003644B 4.8.1."
+		(exclude_from_sim no)
+		(at 335.28 26.67 0)
+		(size 64.77 19.05)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "b48f354f-f3e3-48a4-8c50-592f00147299")
+	)
+	(junction
+		(at 327.66 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "001c628d-2aa2-46d9-a1b3-9b510a9417ae")
+	)
 	(junction
 		(at 132.08 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "017d25db-7a87-4492-9edf-f8b13607d955")
-	)
-	(junction
-		(at 316.23 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "045336bc-ffdd-433d-a4a1-f3d076af92a5")
 	)
 	(junction
 		(at 67.31 49.53)
@@ -5223,19 +5366,25 @@
 		(uuid "05323fa1-a480-4663-a2cd-e7a680f4b758")
 	)
 	(junction
+		(at 68.58 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06dc722b-7f0c-4c1a-9c50-4da29cf23ac9")
+	)
+	(junction
+		(at 313.69 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06e65558-e537-48c9-8b0e-9a029f01f6c6")
+	)
+	(junction
 		(at 132.08 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09b6cca6-899d-4e3f-b12e-5650322bfaf4")
 	)
 	(junction
-		(at 81.28 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "157de6a6-6030-546b-bd35-f4f2fc70faaf")
-	)
-	(junction
-		(at 66.04 119.38)
+		(at 53.34 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16a2f442-0ada-4d09-abd0-a4abb5cea8b5")
@@ -5253,6 +5402,12 @@
 		(uuid "1789e52d-5d8d-4175-98be-ac07b62eeb16")
 	)
 	(junction
+		(at 303.53 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18e7e543-5f5f-434b-ba4c-f8ba1a2427a2")
+	)
+	(junction
 		(at 115.57 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5265,10 +5420,16 @@
 		(uuid "1b034b8c-f410-40cf-9d42-c36eb79ce9bb")
 	)
 	(junction
-		(at 306.07 101.6)
+		(at 313.69 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "27e0ea10-4acb-4150-87a2-20c6175a71a1")
+		(uuid "1c641825-881e-4d35-9d08-d2faa970a400")
+	)
+	(junction
+		(at 53.34 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2778ab52-c6ad-4d1c-a04f-4e545caf6879")
 	)
 	(junction
 		(at 55.88 62.23)
@@ -5295,12 +5456,6 @@
 		(uuid "2dbb2b72-02ba-4254-a8f8-ef4aaaacf958")
 	)
 	(junction
-		(at 316.23 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ebe7225-74ae-403b-a498-0f7a448b1c77")
-	)
-	(junction
 		(at 292.1 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5319,16 +5474,22 @@
 		(uuid "3a36f88c-7e3c-481c-8806-72866a63a356")
 	)
 	(junction
-		(at 66.04 107.95)
+		(at 303.53 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3bf272da-b7d4-544d-8c2d-990cd81e57b8")
+		(uuid "3c8192bd-c6e0-41d6-9e3d-c5bac6501e8f")
 	)
 	(junction
 		(at 292.1 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cd7f937-0d57-4698-8781-34309eb6d128")
+	)
+	(junction
+		(at 292.1 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f60c8ce-4e10-4793-8f37-140e91b200c8")
 	)
 	(junction
 		(at 313.69 176.53)
@@ -5343,10 +5504,10 @@
 		(uuid "41d100f0-b914-47a9-b380-b9892f0c1052")
 	)
 	(junction
-		(at 326.39 83.82)
+		(at 292.1 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "44e2271b-13fb-4240-a8ac-1b46b2833d42")
+		(uuid "4723f9d9-b216-4a91-a6a6-84b8edfda61b")
 	)
 	(junction
 		(at 31.75 35.56)
@@ -5361,28 +5522,10 @@
 		(uuid "4b481e4f-43f6-4716-86f2-f31ca8f95970")
 	)
 	(junction
-		(at 306.07 173.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4bead7bb-83fe-4853-baec-430eefb85409")
-	)
-	(junction
 		(at 33.02 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d68dcb1-8032-413a-8b71-7b97efa28333")
-	)
-	(junction
-		(at 326.39 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4d8b43f0-444c-49ba-9093-558c4a02e5e5")
-	)
-	(junction
-		(at 316.23 198.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "50a3e3dc-2eaf-4d69-a31b-017248c81584")
 	)
 	(junction
 		(at 303.53 76.2)
@@ -5403,10 +5546,10 @@
 		(uuid "5333680d-0836-43c5-9b84-a61fbba19a3d")
 	)
 	(junction
-		(at 314.96 40.64)
+		(at 313.69 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58a0cf19-8ce0-4afb-af32-85281b19ce4d")
+		(uuid "59f747a5-2997-4f2d-ac31-78a586703a41")
 	)
 	(junction
 		(at 331.47 181.61)
@@ -5443,12 +5586,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "670e5e37-d50d-41b9-99d2-03ed5911de7e")
-	)
-	(junction
-		(at 331.47 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6876d73e-eb51-40f5-b6c7-0b358bb3915b")
 	)
 	(junction
 		(at 363.22 106.68)
@@ -5511,18 +5648,6 @@
 		(uuid "77a1e69f-22c3-4125-9a1e-4a8e79e4dc5c")
 	)
 	(junction
-		(at 297.18 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "79a7700f-6aff-47c0-ba06-7f379261240d")
-	)
-	(junction
-		(at 297.18 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7bea92dc-1f67-433f-9d8e-b8d2e3e11e96")
-	)
-	(junction
 		(at 67.31 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5563,12 +5688,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "871c3620-c70a-418f-8533-1c6641e88e9f")
-	)
-	(junction
-		(at 306.07 198.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b425d2a-f7ee-44d5-a413-1669b0ae3413")
 	)
 	(junction
 		(at 22.86 49.53)
@@ -5619,18 +5738,6 @@
 		(uuid "9816a301-c372-44b1-8375-c4d678f18cba")
 	)
 	(junction
-		(at 314.96 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d31b322-0108-4d84-a5e9-15f35f8ada18")
-	)
-	(junction
-		(at 306.07 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a23743fb-5321-429d-a28e-4779bff4f25a")
-	)
-	(junction
 		(at 22.86 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5649,7 +5756,7 @@
 		(uuid "a8b62f3d-cf3e-4c41-8373-7078d1ffbb1d")
 	)
 	(junction
-		(at 73.66 119.38)
+		(at 60.96 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aab40594-440e-44c9-80ef-2f4797d835e3")
@@ -5665,6 +5772,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b824ad4f-b117-4b4d-91cf-456c83196057")
+	)
+	(junction
+		(at 313.69 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba1432d1-d484-4cb0-902e-beaf9b01d7d9")
 	)
 	(junction
 		(at 95.25 62.23)
@@ -5683,12 +5796,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c29dc8fe-8ccc-496f-9654-580ec7f99370")
-	)
-	(junction
-		(at 316.23 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2f6811c-d619-4e89-8bcf-0f3b9152d7e1")
 	)
 	(junction
 		(at 363.22 204.47)
@@ -5715,22 +5822,22 @@
 		(uuid "cd95a1a8-6efd-5577-9ec3-0bd40e4d247c")
 	)
 	(junction
-		(at 297.18 198.12)
+		(at 327.66 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cfd1c700-b1e8-47e3-a4f3-10592c3c1f58")
+		(uuid "d05429ff-8bfe-4e92-8cb1-45c4dd0dc945")
+	)
+	(junction
+		(at 331.47 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4542c44-c929-4ad4-8798-734d69b5b2e8")
 	)
 	(junction
 		(at 135.89 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d46c92c3-f1f3-4853-9b25-25e1ba312ab2")
-	)
-	(junction
-		(at 287.02 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5ca146a-a42c-4f7a-9107-15348f8e1190")
 	)
 	(junction
 		(at 54.61 35.56)
@@ -5779,18 +5886,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb52248d-baca-42ea-9e4e-dc681c628ed9")
-	)
-	(junction
-		(at 297.18 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eebe9b3c-5e43-4eb2-b9a4-9b887e9bec06")
-	)
-	(junction
-		(at 287.02 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eef3099b-50cd-4a92-b8d5-95400d04699c")
 	)
 	(junction
 		(at 30.48 212.09)
@@ -6075,16 +6170,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 101.6) (xy 326.39 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "056cce39-3a6b-4eb8-9aba-05be8b8ef738")
-	)
-	(wire
-		(pts
 			(xy 135.89 163.83) (xy 139.7 163.83)
 		)
 		(stroke
@@ -6105,16 +6190,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 107.95) (xy 66.04 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06cfe0f0-6d29-4e88-a5b6-753e529cb0d2")
-	)
-	(wire
-		(pts
 			(xy 200.66 110.49) (xy 265.43 110.49)
 		)
 		(stroke
@@ -6122,16 +6197,6 @@
 			(type default)
 		)
 		(uuid "06fc998b-9ac0-5c67-bf90-c3d65bfc74ae")
-	)
-	(wire
-		(pts
-			(xy 303.53 173.99) (xy 306.07 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ac1c67c-12a2-4288-bed1-606bbb058397")
 	)
 	(wire
 		(pts
@@ -6145,7 +6210,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 107.95) (xy 92.71 115.57)
+			(xy 83.82 107.95) (xy 83.82 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6325,7 +6390,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 119.38) (xy 73.66 119.38)
+			(xy 53.34 119.38) (xy 60.96 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6335,33 +6400,13 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 71.12) (xy 332.74 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "178f0dfb-10e4-4363-b9c1-6c6bc8bd42a5")
-	)
-	(wire
-		(pts
-			(xy 287.02 166.37) (xy 287.02 181.61)
+			(xy 280.67 166.37) (xy 280.67 181.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "181156f1-3b8b-4358-b77e-c910668916bf")
-	)
-	(wire
-		(pts
-			(xy 306.07 198.12) (xy 316.23 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18d445da-efe0-4cc8-aae5-70cc66e44234")
 	)
 	(wire
 		(pts
@@ -6375,6 +6420,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 107.95) (xy 44.45 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "193fec85-5278-4b8d-b87a-949053491843")
+	)
+	(wire
+		(pts
 			(xy 30.48 209.55) (xy 36.83 209.55)
 		)
 		(stroke
@@ -6385,17 +6440,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 168.91) (xy 297.18 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a7a8564-a483-4c29-b784-b4e1f90bc6ae")
-	)
-	(wire
-		(pts
-			(xy 326.39 83.82) (xy 326.39 85.09)
+			(xy 327.66 88.9) (xy 327.66 90.17)
 		)
 		(stroke
 			(width 0)
@@ -6515,6 +6560,26 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 270.51) (xy 190.5 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22a610b1-0e0a-4ada-94c2-94abff66135e")
+	)
+	(wire
+		(pts
+			(xy 331.47 86.36) (xy 331.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c5ab2f-f57c-424c-83f4-eaa1c538056c")
+	)
+	(wire
+		(pts
 			(xy 389.89 153.67) (xy 397.51 153.67)
 		)
 		(stroke
@@ -6562,6 +6627,16 @@
 			(type default)
 		)
 		(uuid "23fc5a3c-16e4-4fde-b7db-c2ce44b09408")
+	)
+	(wire
+		(pts
+			(xy 331.47 88.9) (xy 331.47 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25647b13-e573-4ea4-b5d9-30134ba74038")
 	)
 	(wire
 		(pts
@@ -6625,13 +6700,13 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 173.99) (xy 332.74 173.99)
+			(xy 313.69 198.12) (xy 326.39 198.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2706ae53-9a73-4d07-aba1-e73a3336b4ea")
+		(uuid "2701ff5f-43cb-4375-8dd0-00b05fd7647a")
 	)
 	(wire
 		(pts
@@ -6665,7 +6740,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 76.2) (xy 306.07 85.09)
+			(xy 303.53 76.2) (xy 303.53 90.17)
 		)
 		(stroke
 			(width 0)
@@ -6685,7 +6760,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 119.38) (xy 66.04 119.38)
+			(xy 40.64 119.38) (xy 53.34 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6705,7 +6780,17 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 53.34) (xy 314.96 78.74)
+			(xy 99.06 247.65) (xy 104.14 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bdb551b-2097-46d2-ac54-9fbcb3cf4ad8")
+	)
+	(wire
+		(pts
+			(xy 313.69 53.34) (xy 313.69 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6755,16 +6840,6 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 68.58) (xy 287.02 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "301046aa-dea0-465d-87af-2af08bd58720")
-	)
-	(wire
-		(pts
 			(xy 378.46 173.99) (xy 378.46 171.45)
 		)
 		(stroke
@@ -6795,7 +6870,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 189.23) (xy 297.18 198.12)
+			(xy 292.1 189.23) (xy 292.1 198.12)
 		)
 		(stroke
 			(width 0)
@@ -6855,7 +6930,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 118.11) (xy 139.7 118.11)
+			(xy 83.82 118.11) (xy 139.7 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6875,7 +6950,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 40.64) (xy 314.96 45.72)
+			(xy 313.69 40.64) (xy 313.69 45.72)
 		)
 		(stroke
 			(width 0)
@@ -6895,7 +6970,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 100.33) (xy 53.34 119.38)
+			(xy 40.64 100.33) (xy 40.64 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6925,7 +7000,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 176.53) (xy 316.23 181.61)
+			(xy 313.69 176.53) (xy 313.69 181.61)
 		)
 		(stroke
 			(width 0)
@@ -6965,7 +7040,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 125.73) (xy 92.71 125.73)
+			(xy 33.02 125.73) (xy 83.82 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6975,7 +7050,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 189.23) (xy 287.02 198.12)
+			(xy 280.67 189.23) (xy 280.67 198.12)
 		)
 		(stroke
 			(width 0)
@@ -6985,7 +7060,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 40.64) (xy 314.96 40.64)
+			(xy 303.53 40.64) (xy 313.69 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7055,7 +7130,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 100.33) (xy 53.34 100.33)
+			(xy 60.96 100.33) (xy 40.64 100.33)
 		)
 		(stroke
 			(width 0)
@@ -7132,16 +7207,6 @@
 			(type default)
 		)
 		(uuid "4629384e-cca8-45a9-b4f2-8e65deb169b9")
-	)
-	(wire
-		(pts
-			(xy 331.47 83.82) (xy 331.47 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4680f6b5-a84f-4504-8b60-71beeec156af")
 	)
 	(wire
 		(pts
@@ -7285,7 +7350,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 107.95) (xy 46.99 125.73)
+			(xy 33.02 107.95) (xy 33.02 125.73)
 		)
 		(stroke
 			(width 0)
@@ -7375,16 +7440,6 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 166.37) (xy 287.02 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52b18e30-1caa-4a52-9f00-59651173dd33")
-	)
-	(wire
-		(pts
 			(xy 17.78 21.59) (xy 21.59 21.59)
 		)
 		(stroke
@@ -7465,7 +7520,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 92.71) (xy 297.18 101.6)
+			(xy 292.1 97.79) (xy 292.1 106.68)
 		)
 		(stroke
 			(width 0)
@@ -7505,6 +7560,16 @@
 	)
 	(wire
 		(pts
+			(xy 292.1 106.68) (xy 303.53 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf90625-b49e-4606-9206-e1368a8f1bcc")
+	)
+	(wire
+		(pts
 			(xy 397.51 153.67) (xy 397.51 185.42)
 		)
 		(stroke
@@ -7515,13 +7580,13 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 101.6) (xy 316.23 101.6)
+			(xy 175.26 255.27) (xy 190.5 255.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c6a34bd-9340-4480-b6db-c89c9783a1b6")
+		(uuid "5c6eb7c1-fa7c-49c5-9bc0-eeb2fd1e1095")
 	)
 	(wire
 		(pts
@@ -7535,7 +7600,17 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 40.64) (xy 326.39 83.82)
+			(xy 135.89 247.65) (xy 147.32 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd023a6-ed5a-4a5d-adb9-862e2f5f35b6")
+	)
+	(wire
+		(pts
+			(xy 327.66 40.64) (xy 327.66 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7595,7 +7670,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 118.11) (xy 92.71 125.73)
+			(xy 83.82 118.11) (xy 83.82 125.73)
 		)
 		(stroke
 			(width 0)
@@ -7605,7 +7680,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 115.57) (xy 139.7 115.57)
+			(xy 83.82 115.57) (xy 139.7 115.57)
 		)
 		(stroke
 			(width 0)
@@ -7642,6 +7717,16 @@
 			(type default)
 		)
 		(uuid "67480e28-72bd-4253-b89c-c4e8c7583d53")
+	)
+	(wire
+		(pts
+			(xy 313.69 106.68) (xy 327.66 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6886da86-1fd4-4e18-9adc-2578073f0efc")
 	)
 	(wire
 		(pts
@@ -7725,6 +7810,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 262.89) (xy 190.5 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70f47e71-b312-4899-8a16-e6f415f084ac")
+	)
+	(wire
+		(pts
 			(xy 132.08 100.33) (xy 139.7 100.33)
 		)
 		(stroke
@@ -7753,6 +7848,16 @@
 		)
 		(uuid "723f65a4-c960-468b-8c76-f9359550f3c5")
 	)
+	(wire
+		(pts
+			(xy 327.66 88.9) (xy 331.47 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7244c899-372e-44d0-b6c3-2f8fab9279c2")
+	)
 	(bus
 		(pts
 			(xy 242.57 76.2) (xy 242.57 77.47)
@@ -7765,7 +7870,17 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 78.74) (xy 316.23 85.09)
+			(xy 332.74 71.12) (xy 314.96 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72e7f6c7-f66d-4411-9292-f08a280da6b2")
+	)
+	(wire
+		(pts
+			(xy 313.69 78.74) (xy 313.69 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7775,13 +7890,23 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 115.57) (xy 66.04 119.38)
+			(xy 53.34 115.57) (xy 53.34 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "74a595f8-f68e-49af-96dc-c9d4e0a34f71")
+	)
+	(wire
+		(pts
+			(xy 292.1 198.12) (xy 303.53 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74b1a719-2f44-4bf3-a731-e230fcd23980")
 	)
 	(wire
 		(pts
@@ -7855,6 +7980,26 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 76.2) (xy 314.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78419564-baf8-4d17-9972-c45d5ab9b0d9")
+	)
+	(wire
+		(pts
+			(xy 332.74 168.91) (xy 314.96 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7883ce1b-9605-4eaf-a284-0e9d58eff39a")
+	)
+	(wire
+		(pts
 			(xy 22.86 62.23) (xy 33.02 62.23)
 		)
 		(stroke
@@ -7895,7 +8040,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 92.71) (xy 326.39 101.6)
+			(xy 327.66 97.79) (xy 327.66 106.68)
 		)
 		(stroke
 			(width 0)
@@ -7915,7 +8060,17 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 71.12) (xy 297.18 85.09)
+			(xy 99.06 255.27) (xy 104.14 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cd89126-0efa-4607-a15d-287dff0a51ae")
+	)
+	(wire
+		(pts
+			(xy 292.1 71.12) (xy 292.1 90.17)
 		)
 		(stroke
 			(width 0)
@@ -7925,7 +8080,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 189.23) (xy 316.23 198.12)
+			(xy 313.69 189.23) (xy 313.69 198.12)
 		)
 		(stroke
 			(width 0)
@@ -8015,6 +8170,16 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 78.74) (xy 314.96 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83811d53-bf70-4d21-8f81-867cb87c9bd1")
+	)
+	(wire
+		(pts
 			(xy 139.7 189.23) (xy 139.7 195.58)
 		)
 		(stroke
@@ -8025,7 +8190,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 101.6) (xy 326.39 107.95)
+			(xy 327.66 106.68) (xy 327.66 113.03)
 		)
 		(stroke
 			(width 0)
@@ -8065,6 +8230,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 255.27) (xy 147.32 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "885fe8b4-d01e-40fb-8a0c-492f77ad2657")
+	)
+	(wire
+		(pts
 			(xy 265.43 68.58) (xy 265.43 110.49)
 		)
 		(stroke
@@ -8095,7 +8270,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 120.65) (xy 73.66 119.38)
+			(xy 60.96 120.65) (xy 60.96 119.38)
 		)
 		(stroke
 			(width 0)
@@ -8115,16 +8290,6 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 76.2) (xy 306.07 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d37fba3-629e-4d23-b738-0458ff50c64b")
-	)
-	(wire
-		(pts
 			(xy 125.73 21.59) (xy 125.73 25.4)
 		)
 		(stroke
@@ -8132,6 +8297,16 @@
 			(type default)
 		)
 		(uuid "8d3a5e7a-89ef-4220-b7c8-42fe1a6b0619")
+	)
+	(wire
+		(pts
+			(xy 332.74 166.37) (xy 314.96 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d647377-16e1-4025-b1c5-399d00d6e1cb")
 	)
 	(wire
 		(pts
@@ -8155,13 +8330,23 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 92.71) (xy 306.07 101.6)
+			(xy 303.53 97.79) (xy 303.53 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8e70ec5d-7633-4e56-8f88-d0201f96744b")
+	)
+	(wire
+		(pts
+			(xy 175.26 247.65) (xy 190.5 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e83b88a-2497-4cbd-b977-9c6093016e7c")
 	)
 	(wire
 		(pts
@@ -8225,16 +8410,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 78.74) (xy 332.74 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9142dceb-cea3-4576-a2a3-23d9e9343586")
-	)
-	(wire
-		(pts
 			(xy 200.66 118.11) (xy 273.05 118.11)
 		)
 		(stroke
@@ -8262,16 +8437,6 @@
 			(type default)
 		)
 		(uuid "92d84c95-c021-5f4e-91d1-23f1f7e2a01d")
-	)
-	(wire
-		(pts
-			(xy 287.02 166.37) (xy 332.74 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9329a701-c59a-4c21-9c8d-bf8d18467ccc")
 	)
 	(wire
 		(pts
@@ -8335,16 +8500,6 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 40.64) (xy 326.39 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9424f519-b628-4a18-9a68-fa808cec5252")
-	)
-	(wire
-		(pts
 			(xy 358.14 78.74) (xy 378.46 78.74)
 		)
 		(stroke
@@ -8405,6 +8560,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 270.51) (xy 104.14 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96383c64-ec71-4faf-bb2f-19c44692d064")
+	)
+	(wire
+		(pts
 			(xy 46.99 198.12) (xy 46.99 207.01)
 		)
 		(stroke
@@ -8415,7 +8580,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 92.71) (xy 316.23 101.6)
+			(xy 313.69 97.79) (xy 313.69 106.68)
 		)
 		(stroke
 			(width 0)
@@ -8455,7 +8620,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 78.74) (xy 314.96 78.74)
+			(xy 273.05 78.74) (xy 313.69 78.74)
 		)
 		(stroke
 			(width 0)
@@ -8482,16 +8647,6 @@
 			(type default)
 		)
 		(uuid "9a8ed031-4710-5d42-bf23-82b3e112bae3")
-	)
-	(wire
-		(pts
-			(xy 292.1 71.12) (xy 297.18 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b26807c-fbde-429b-a51e-2db6779c90fe")
 	)
 	(wire
 		(pts
@@ -8542,6 +8697,16 @@
 			(type default)
 		)
 		(uuid "9fa94809-2cbb-4402-b36c-59e6323ec14e")
+	)
+	(wire
+		(pts
+			(xy 332.74 176.53) (xy 314.96 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1196be3-59fd-48bd-b66e-ceac35a2da5a")
 	)
 	(wire
 		(pts
@@ -8605,7 +8770,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 198.12) (xy 297.18 198.12)
+			(xy 280.67 198.12) (xy 292.1 198.12)
 		)
 		(stroke
 			(width 0)
@@ -8622,26 +8787,6 @@
 			(type default)
 		)
 		(uuid "a3dfff66-56c3-454a-9aec-3cbd73c32651")
-	)
-	(wire
-		(pts
-			(xy 316.23 198.12) (xy 326.39 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4191bd7-583f-4476-ac7f-059fd0a930dd")
-	)
-	(wire
-		(pts
-			(xy 297.18 101.6) (xy 306.07 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a45ec8d3-f37b-4ab4-87e8-bc003c535920")
 	)
 	(wire
 		(pts
@@ -8755,7 +8900,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 92.71) (xy 287.02 101.6)
+			(xy 280.67 97.79) (xy 280.67 106.68)
 		)
 		(stroke
 			(width 0)
@@ -8805,7 +8950,17 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 189.23) (xy 306.07 198.12)
+			(xy 78.74 107.95) (xy 83.82 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b183109a-4a33-4223-9301-50c1012067d5")
+	)
+	(wire
+		(pts
+			(xy 303.53 189.23) (xy 303.53 198.12)
 		)
 		(stroke
 			(width 0)
@@ -8825,6 +8980,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 107.95) (xy 73.66 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2890469-d7dd-46b3-85e9-415fa82de728")
+	)
+	(wire
+		(pts
 			(xy 22.86 198.12) (xy 22.86 203.2)
 		)
 		(stroke
@@ -8835,7 +9000,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 173.99) (xy 306.07 181.61)
+			(xy 303.53 173.99) (xy 303.53 181.61)
 		)
 		(stroke
 			(width 0)
@@ -8852,16 +9017,6 @@
 			(type default)
 		)
 		(uuid "b44bc1c6-9a40-45f3-be0f-28d48cdd1ccb")
-	)
-	(wire
-		(pts
-			(xy 314.96 78.74) (xy 316.23 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b508de15-8731-4f7c-93e3-96c986c834f2")
 	)
 	(wire
 		(pts
@@ -8882,6 +9037,16 @@
 			(type default)
 		)
 		(uuid "b5ea08f0-daa6-40c1-a7ae-24ae4f3ae259")
+	)
+	(wire
+		(pts
+			(xy 91.44 240.03) (xy 104.14 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b629670e-de84-4847-8583-ecc0d3144109")
 	)
 	(wire
 		(pts
@@ -8935,17 +9100,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 198.12) (xy 306.07 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7ba9a5f-56d4-4b48-a3e3-1a964b69f428")
-	)
-	(wire
-		(pts
-			(xy 73.66 100.33) (xy 73.66 102.87)
+			(xy 60.96 100.33) (xy 60.96 102.87)
 		)
 		(stroke
 			(width 0)
@@ -8955,7 +9110,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 119.38) (xy 81.28 119.38)
+			(xy 60.96 119.38) (xy 68.58 119.38)
 		)
 		(stroke
 			(width 0)
@@ -8985,7 +9140,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 168.91) (xy 297.18 181.61)
+			(xy 292.1 168.91) (xy 292.1 181.61)
 		)
 		(stroke
 			(width 0)
@@ -9085,6 +9240,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 240.03) (xy 190.5 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf71044d-f3a9-41d6-b6f8-2c7f30a3b9ff")
+	)
+	(wire
+		(pts
 			(xy 82.55 160.02) (xy 82.55 162.56)
 		)
 		(stroke
@@ -9105,13 +9270,13 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 176.53) (xy 316.23 176.53)
+			(xy 303.53 198.12) (xy 313.69 198.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6554d78-7518-4750-a21f-1f6a4bd76691")
+		(uuid "c57a8847-b53f-45ef-abf9-ef5bb97f2ccb")
 	)
 	(wire
 		(pts
@@ -9122,6 +9287,16 @@
 			(type default)
 		)
 		(uuid "c6895742-7e8b-441b-97a7-4e3a3de9ee1b")
+	)
+	(wire
+		(pts
+			(xy 303.53 106.68) (xy 313.69 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7736b37-2b96-4934-97df-7e207b5f45f6")
 	)
 	(wire
 		(pts
@@ -9315,26 +9490,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 176.53) (xy 332.74 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3f25a1d-756e-4d9b-bb06-3f65d9d83683")
-	)
-	(wire
-		(pts
-			(xy 81.28 107.95) (xy 92.71 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4290d1f-ba54-5724-ae9e-b8203ca120e1")
-	)
-	(wire
-		(pts
 			(xy 292.1 53.34) (xy 292.1 71.12)
 		)
 		(stroke
@@ -9352,6 +9507,16 @@
 			(type default)
 		)
 		(uuid "d43e2fc6-1b34-4648-ac11-fbf0a15bafd5")
+	)
+	(wire
+		(pts
+			(xy 97.79 262.89) (xy 104.14 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5726a03-9ea1-4b28-8246-b72e86b19e9d")
 	)
 	(wire
 		(pts
@@ -9445,7 +9610,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 107.95) (xy 66.04 107.95)
+			(xy 57.15 107.95) (xy 53.34 107.95)
 		)
 		(stroke
 			(width 0)
@@ -9525,6 +9690,16 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 68.58) (xy 314.96 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc737313-5c73-414d-9196-80528db8ebe3")
+	)
+	(wire
+		(pts
 			(xy 139.7 77.47) (xy 115.57 77.47)
 		)
 		(stroke
@@ -9565,6 +9740,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 240.03) (xy 147.32 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de892a0c-12b6-49ce-a684-c3bd81d09cba")
+	)
+	(wire
+		(pts
 			(xy 270.51 76.2) (xy 303.53 76.2)
 		)
 		(stroke
@@ -9575,7 +9760,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 119.38) (xy 73.66 113.03)
+			(xy 60.96 119.38) (xy 60.96 113.03)
 		)
 		(stroke
 			(width 0)
@@ -9595,13 +9780,23 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 101.6) (xy 297.18 101.6)
+			(xy 280.67 106.68) (xy 292.1 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e0db17ee-3221-4f38-8f35-1916781852bc")
+	)
+	(wire
+		(pts
+			(xy 313.69 40.64) (xy 327.66 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1a9ce35-f0df-4960-a1de-c2edb71919de")
 	)
 	(wire
 		(pts
@@ -9615,7 +9810,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 115.57) (xy 81.28 119.38)
+			(xy 332.74 173.99) (xy 314.96 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c24839-15e4-4fab-9848-abf2a844863b")
+	)
+	(wire
+		(pts
+			(xy 68.58 115.57) (xy 68.58 119.38)
 		)
 		(stroke
 			(width 0)
@@ -9725,6 +9930,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 270.51) (xy 147.32 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7570bf-22cd-4ef5-b83a-c71cf55c1137")
+	)
+	(wire
+		(pts
 			(xy 200.66 82.55) (xy 240.03 82.55)
 		)
 		(stroke
@@ -9732,16 +9947,6 @@
 			(type default)
 		)
 		(uuid "ecc43332-d2bb-5516-92d8-54f4a2850c8f")
-	)
-	(wire
-		(pts
-			(xy 306.07 76.2) (xy 332.74 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eccb94f1-8131-47fe-aac0-e8741f8a9e4c")
 	)
 	(wire
 		(pts
@@ -9815,6 +10020,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 262.89) (xy 147.32 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3b02d3f-c558-4bc4-a59a-92dc4417bc55")
+	)
+	(wire
+		(pts
 			(xy 363.22 204.47) (xy 389.89 204.47)
 		)
 		(stroke
@@ -9855,16 +10070,6 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 83.82) (xy 331.47 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5b3766c-d96c-4e38-8ed4-a15e934d8d0c")
-	)
-	(wire
-		(pts
 			(xy 66.04 147.32) (xy 69.85 147.32)
 		)
 		(stroke
@@ -9885,7 +10090,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 68.58) (xy 287.02 85.09)
+			(xy 280.67 68.58) (xy 280.67 90.17)
 		)
 		(stroke
 			(width 0)
@@ -9902,16 +10107,6 @@
 			(type default)
 		)
 		(uuid "f7b16050-9119-5ffd-8cf8-92f5a840f10a")
-	)
-	(wire
-		(pts
-			(xy 287.02 68.58) (xy 332.74 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f86aa345-1208-4a4e-8240-74ac7ece935a")
 	)
 	(wire
 		(pts
@@ -9932,6 +10127,16 @@
 			(type default)
 		)
 		(uuid "f88e6eb8-bc0d-455f-86bd-824695620d45")
+	)
+	(wire
+		(pts
+			(xy 49.53 107.95) (xy 53.34 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8fdfd30-1e0b-4c32-91cd-03e688dde38c")
 	)
 	(wire
 		(pts
@@ -9985,7 +10190,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 107.95) (xy 81.28 107.95)
+			(xy 64.77 107.95) (xy 68.58 107.95)
 		)
 		(stroke
 			(width 0)
@@ -10002,16 +10207,6 @@
 			(type default)
 		)
 		(uuid "fe69b13d-5f32-4b42-a103-c32e5d7de5ad")
-	)
-	(wire
-		(pts
-			(xy 297.18 168.91) (xy 332.74 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe71d6e5-fe68-418c-b7f6-d4c09bda21eb")
 	)
 	(wire
 		(pts
@@ -10085,6 +10280,17 @@
 		)
 		(uuid "07198bd1-bfcb-4f01-bd40-d45dc1f0fe12")
 	)
+	(label "ECAT_P0_TX-"
+		(at 314.96 78.74 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "097c0000-df7c-4090-90ac-0ba46919ca16")
+	)
 	(label "ESC_ERR"
 		(at 217.17 100.33 180)
 		(effects
@@ -10107,6 +10313,17 @@
 		)
 		(uuid "10a16c27-3362-4456-9627-60d84d6d7ba4")
 	)
+	(label "ECAT_P1_RX+"
+		(at 175.26 262.89 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11ff36c8-597d-4d72-b12c-b50f83be75d8")
+	)
 	(label "EE_SCL"
 		(at 217.17 92.71 180)
 		(effects
@@ -10117,6 +10334,50 @@
 			(justify right bottom)
 		)
 		(uuid "17dd9d91-695a-49ae-b120-715b43df37e3")
+	)
+	(label "ECAT_P0_RX+"
+		(at 135.89 270.51 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "243544b4-31eb-4475-add2-bc6e03eb94ac")
+	)
+	(label "ECAT_P1_RX+"
+		(at 314.96 176.53 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2aeadcf2-75b0-4307-ab2d-86850cee474c")
+	)
+	(label "EE_SCL"
+		(at 135.89 240.03 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d1f9b46-1406-467b-9339-2c19c242b1b8")
+	)
+	(label "ECAT_P0_RX+"
+		(at 314.96 68.58 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e0e4406-4322-4167-84b2-18bb564b5d66")
 	)
 	(label "EE_SDA"
 		(at 217.17 90.17 180)
@@ -10206,6 +10467,39 @@
 		)
 		(uuid "3f2d2654-3ddf-4916-bdab-d90e1897c91c")
 	)
+	(label "ESC_XO_XTAL"
+		(at 91.44 240.03 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44d82e70-3e60-4651-bf87-d3cdcff4f107")
+	)
+	(label "ESC_OSCVDD12"
+		(at 92.71 270.51 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49c303ee-9251-4ade-af24-b25567437fcf")
+	)
+	(label "ECAT_P1_TX-"
+		(at 314.96 166.37 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bb53ca8-2fb6-4f0f-9af8-4f7ae4fe1af2")
+	)
 	(label "ECAT_P0_CBL_TX-"
 		(at 359.41 71.12 0)
 		(effects
@@ -10260,6 +10554,17 @@
 			(justify left bottom)
 		)
 		(uuid "613ac245-3656-4ac2-8540-f065da0a5537")
+	)
+	(label "ESC_XO_XTAL"
+		(at 49.53 107.95 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bb95af2-bc1c-4c90-ab15-8813808b10a8")
 	)
 	(label "ESC_CLK25"
 		(at 121.92 120.65 0)
@@ -10327,6 +10632,17 @@
 		)
 		(uuid "87cd8aa7-53bd-4f0b-a18c-641a2f56c49d")
 	)
+	(label "ECAT_P0_TX+"
+		(at 314.96 76.2 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "88f7e253-9fb4-496d-807b-ea3c218f2a2b")
+	)
 	(label "ESC_MISO_ESC"
 		(at 214.63 69.85 180)
 		(effects
@@ -10371,6 +10687,39 @@
 		)
 		(uuid "ae57ecd4-4d86-4ebe-bcc1-1838c9eb9621")
 	)
+	(label "ECAT_P1_RX-"
+		(at 314.96 173.99 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae65d38d-a5c7-455b-ab1b-79f58097502a")
+	)
+	(label "ECAT_P1_TX+"
+		(at 175.26 247.65 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2873dfb-d6ac-4bb4-a74d-68f60a5ad833")
+	)
+	(label "EE_SDA"
+		(at 135.89 247.65 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2e5ab61-236f-4266-9a7c-35836c782a8a")
+	)
 	(label "ESC_CS"
 		(at 240.03 72.39 180)
 		(effects
@@ -10381,6 +10730,17 @@
 			(justify right bottom)
 		)
 		(uuid "b40449d6-ccb1-4261-8ec7-14667c4114f7")
+	)
+	(label "ECAT_P0_RX-"
+		(at 175.26 240.03 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4df43c5-43df-452d-a496-0d32be6b24f2")
 	)
 	(label "ESC_MISO"
 		(at 240.03 69.85 180)
@@ -10415,6 +10775,17 @@
 		)
 		(uuid "c0a1012c-6fd2-4fc6-950c-0c41cd9fb713")
 	)
+	(label "ECAT_P1_TX+"
+		(at 314.96 168.91 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2257030-2d23-40bc-9195-d5df937aa7d6")
+	)
 	(label "ESC_ERR"
 		(at 120.65 189.23 0)
 		(effects
@@ -10425,6 +10796,28 @@
 			(justify left bottom)
 		)
 		(uuid "c4389875-f744-5403-8955-356035e53632")
+	)
+	(label "ECAT_P0_TX-"
+		(at 135.89 262.89 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d349c213-c4d2-4536-8301-e58238c8f4d9")
+	)
+	(label "ECAT_P0_TX+"
+		(at 135.89 255.27 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d394447a-9e9f-4bf0-95c8-edf9af553aa4")
 	)
 	(label "ESC_XI"
 		(at 121.92 115.57 0)
@@ -10458,6 +10851,39 @@
 			(justify left bottom)
 		)
 		(uuid "dbcfbd46-92b6-5587-995b-05b43fd6ea32")
+	)
+	(label "ECAT_P1_TX-"
+		(at 175.26 255.27 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc5bf1f9-cece-4900-970e-1ea9caba388c")
+	)
+	(label "ECAT_P0_RX-"
+		(at 314.96 71.12 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7351c93-6f39-4397-b40a-1608e70ab74f")
+	)
+	(label "ECAT_P1_RX-"
+		(at 175.26 270.51 0)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e916fbf9-c465-47b0-8a86-d06afb6801fe")
 	)
 	(label "ECAT_P1_CBL_TX-"
 		(at 359.41 168.91 0)
@@ -10562,7 +10988,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 120.65 0)
+		(at 60.96 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10570,7 +10996,7 @@
 		(dnp no)
 		(uuid "017c0955-3dfb-5319-924e-ffc6a4c6caf5")
 		(property "Reference" "#PWR070"
-			(at 73.66 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10580,7 +11006,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 123.952 0)
+			(at 60.96 123.952 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10589,7 +11015,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10599,7 +11025,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10609,7 +11035,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 120.65 0)
+			(at 60.96 120.65 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -10939,6 +11365,97 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 190.5 270.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "05a011d8-b450-49ff-928b-3ff34460daed")
+		(property "Reference" "TP90"
+			(at 195.58 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ECAT_P1_RX-"
+			(at 203.2 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 190.5 275.59 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 275.59 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 270.51 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 190.5 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 190.5 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e03d946-e126-4dd0-8f3d-8cde1dc0a96c")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP90")
 					(unit 1)
 				)
 			)
@@ -11492,6 +12009,97 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "089aea8d-5293-4227-b916-76bbe8255d0c")
+		(property "Reference" "TP82"
+			(at 152.4 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "EE_SDA"
+			(at 160.02 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
+			(at 147.32 252.73 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 252.73 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 147.32 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 147.32 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a020121-aa93-4e0d-84f2-616d7526f1dd")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP82")
 					(unit 1)
 				)
 			)
@@ -12456,7 +13064,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 297.18 185.42 0)
+		(at 292.1 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12464,7 +13072,7 @@
 		(dnp yes)
 		(uuid "141eb4a9-59c8-4c89-b599-f2e96a1781cc")
 		(property "Reference" "C139"
-			(at 298.958 183.642 0)
+			(at 293.878 183.642 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12475,7 +13083,7 @@
 			)
 		)
 		(property "Value" "10p"
-			(at 299.466 186.69 0)
+			(at 294.386 186.69 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12485,7 +13093,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 298.1452 189.23 0)
+			(at 293.0652 189.23 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12495,7 +13103,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12505,7 +13113,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12515,7 +13123,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12525,7 +13133,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12535,7 +13143,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12545,7 +13153,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12555,7 +13163,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12565,7 +13173,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 297.18 185.42 0)
+			(at 292.1 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12590,16 +13198,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 326.39 88.9 0)
+		(lib_id "Connector:TestPoint")
+		(at 104.14 255.27 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "1b236160-34ed-4381-8da1-35e0cabaf7ee")
-		(property "Reference" "C144"
-			(at 326.898 87.122 0)
+		(uuid "14cb5f0b-d776-449f-8952-0657fa356e41")
+		(property "Reference" "TP78"
+			(at 109.22 255.27 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12608,8 +13216,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.022u"
-			(at 326.898 90.678 0)
+		(property "Value" "+3V3_PHY"
+			(at 116.84 255.27 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12618,8 +13226,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 327.3552 92.71 0)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
+			(at 104.14 260.35 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12628,8 +13236,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H223KA55-01A-EN_PDF_CERAMICCAPACITORSMD"
-			(at 326.39 88.9 0)
+		(property "Datasheet" "~"
+			(at 104.14 260.35 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12638,48 +13246,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 326.39 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 326.39 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "GCM155R71H223KA55D"
-			(at 326.39 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 326.39 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "81-GCM155R71H223KA5D"
-			(at 326.39 88.9 0)
+		(property "Description" "test point"
+			(at 104.14 255.27 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12689,7 +13257,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 326.39 88.9 0)
+			(at 104.14 255.27 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12699,7 +13267,138 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 326.39 88.9 0)
+			(at 104.14 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea0026ec-29a3-4cfe-9585-523dfea9da5f")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 327.66 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b236160-34ed-4381-8da1-35e0cabaf7ee")
+		(property "Reference" "C144"
+			(at 328.168 92.202 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.022u"
+			(at 328.168 95.758 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 328.6252 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H223KA55-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "GCM155R71H223KA55D"
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "81-GCM155R71H223KA5D"
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 327.66 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 327.66 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -12789,6 +13488,76 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "#FLG08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f7be41a-0410-4d68-9388-740c0abbeb31")
+		(property "Reference" "#PWR125"
+			(at 99.06 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d798487-d644-451b-81d7-02ca86101eb1")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "#PWR125")
 					(unit 1)
 				)
 			)
@@ -13551,6 +14320,188 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 190.5 255.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2cd4f4bb-5fbd-4d9d-b21b-a9964c59f0e7")
+		(property "Reference" "TP88"
+			(at 195.58 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ECAT_P1_TX-"
+			(at 203.2 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 190.5 260.35 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 260.35 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 255.27 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 190.5 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 190.5 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ffbeb0e-330b-42a2-ae2e-5381592eb060")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 255.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3000d596-fa98-48fc-910a-698b788036eb")
+		(property "Reference" "TP83"
+			(at 152.4 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ECAT_P0_TX+"
+			(at 160.02 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 147.32 260.35 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 260.35 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 255.27 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 147.32 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 147.32 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1d52d0d-1cbc-4fe1-8513-909670a02b50")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "0_power_symbols_ethrc:+3V3_PHY")
 		(at 280.67 35.56 0)
 		(unit 1)
@@ -13789,6 +14740,224 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "C118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 104.14 270.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "35de86f8-9d72-4271-9616-9db15b56f17c")
+		(property "Reference" "TP80"
+			(at 109.22 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESC_OSCVDD12"
+			(at 116.84 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
+			(at 104.14 275.59 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 275.59 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 104.14 270.51 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 104.14 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 104.14 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3821d546-26bf-430b-9943-0d383211ac00")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 104.14 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3860c9e9-0932-45b0-82bc-0dad63010e6e")
+		(property "Reference" "TP77"
+			(at 109.22 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 104.14 252.73 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/5000_5004.pdf"
+			(at 104.14 252.73 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Miniature PC test point, black, probe ground beside TP76"
+			(at 104.14 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 104.14 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 104.14 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 104.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "5001"
+			(at 104.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 104.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "534-5001"
+			(at 104.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48a9aa4f-94f5-4d83-a4fb-72de1d98d208")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP77")
 					(unit 1)
 				)
 			)
@@ -14104,7 +15273,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 316.23 88.9 0)
+		(at 313.69 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14112,7 +15281,7 @@
 		(dnp yes)
 		(uuid "3b432c3c-1b3c-48ac-a8a5-c1816b133683")
 		(property "Reference" "C142"
-			(at 318.516 87.122 0)
+			(at 315.976 92.202 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14122,7 +15291,7 @@
 			)
 		)
 		(property "Value" "10p"
-			(at 318.516 90.17 0)
+			(at 315.976 95.25 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14132,7 +15301,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 317.1952 92.71 0)
+			(at 314.6552 97.79 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14142,7 +15311,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14152,7 +15321,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14162,7 +15331,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14172,7 +15341,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14182,7 +15351,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14192,7 +15361,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14202,7 +15371,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -14212,7 +15381,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 316.23 88.9 0)
+			(at 313.69 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15583,7 +16752,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 287.02 88.9 0)
+		(at 280.67 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15591,7 +16760,7 @@
 		(dnp yes)
 		(uuid "5438ae24-74bb-4d49-8c36-5dd55ab4ea97")
 		(property "Reference" "C136"
-			(at 288.798 87.122 0)
+			(at 282.448 92.202 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15601,7 +16770,7 @@
 			)
 		)
 		(property "Value" "10p"
-			(at 289.306 90.17 0)
+			(at 282.956 95.25 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15611,7 +16780,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 287.9852 92.71 0)
+			(at 281.6352 97.79 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15621,7 +16790,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15631,7 +16800,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15641,7 +16810,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15651,7 +16820,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15661,7 +16830,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15671,7 +16840,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15681,7 +16850,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -15691,7 +16860,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 287.02 88.9 0)
+			(at 280.67 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16002,7 +17171,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 306.07 88.9 0)
+		(at 303.53 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16010,7 +17179,7 @@
 		(dnp yes)
 		(uuid "59f03777-c7f3-4684-ae59-f740105f6c61")
 		(property "Reference" "C140"
-			(at 308.356 87.122 0)
+			(at 305.816 92.202 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16020,7 +17189,7 @@
 			)
 		)
 		(property "Value" "10p"
-			(at 308.356 90.17 0)
+			(at 305.816 95.25 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16030,7 +17199,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 307.0352 92.71 0)
+			(at 304.4952 97.79 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16040,7 +17209,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16050,7 +17219,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16060,7 +17229,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16070,7 +17239,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16080,7 +17249,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16090,7 +17259,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16100,7 +17269,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16110,7 +17279,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 306.07 88.9 0)
+			(at 303.53 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -16199,6 +17368,109 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 46.99 107.95 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64e36da5-670e-47ec-b0c5-2b046b8e04f4")
+		(property "Reference" "R83"
+			(at 44.958 105.918 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 48.514 106.172 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "541-0.0SBCT-ND"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW06030000Z0EAHP"
+			(at 46.99 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fe523c5-efe0-484e-b9db-6db26800ed36")
+		)
+		(pin "2"
+			(uuid "e996ffed-1459-4b49-9bcd-5035c591e4b9")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "R83")
 					(unit 1)
 				)
 			)
@@ -17245,6 +18517,133 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 104.14 240.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76badab0-ec1f-4539-a168-f2b7f3cc8d58")
+		(property "Reference" "TP76"
+			(at 109.22 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESC_XO_XTAL"
+			(at 116.84 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Keystone_5000-5004_Miniature"
+			(at 104.14 245.11 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/201/1/5000_5004.pdf"
+			(at 104.14 245.11 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Miniature PC test point, yellow, crystal output OSCO (probe with an active probe only)"
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 104.14 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 104.14 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "5004"
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "534-5004"
+			(at 104.14 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "889939ee-7743-4204-8158-0d22a1d59ab6")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 40.64 209.55 90)
 		(unit 1)
@@ -17686,7 +19085,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 326.39 107.95 0)
+		(at 327.66 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -17694,7 +19093,7 @@
 		(dnp no)
 		(uuid "7cdbb3d9-aca9-4daf-b3af-b9317e3bfec0")
 		(property "Reference" "#PWR089"
-			(at 326.39 107.95 0)
+			(at 327.66 113.03 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -17704,7 +19103,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 326.39 111.76 0)
+			(at 327.66 116.84 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -17713,7 +19112,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 326.39 107.95 0)
+			(at 327.66 113.03 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -17723,7 +19122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 326.39 107.95 0)
+			(at 327.66 113.03 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -17733,7 +19132,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 326.39 107.95 0)
+			(at 327.66 113.03 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -17889,6 +19288,270 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 76.2 107.95 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "88bb70e1-a55b-4590-913a-ef40e5b5836f")
+		(property "Reference" "R84"
+			(at 74.676 106.172 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 77.978 106.172 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "0_resistor_smd:R_0603_1608_DensityHigh"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "541-0.0SBCT-ND"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW06030000Z0EAHP"
+			(at 76.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "515711c4-f7a0-4b11-a6b2-f3ec20d9005a")
+		)
+		(pin "2"
+			(uuid "c4473cec-a3cb-4726-95d0-4dd29ba58b89")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "R84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0_power_symbols_ethrc:+3V3_PHY")
+		(at 99.06 255.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "897c7ba9-9f08-420b-807e-32b10b1e3291")
+		(property "Reference" "#PWR126"
+			(at 99.06 255.27 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_PHY"
+			(at 92.456 255.27 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 255.27 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 255.27 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3_PHY\""
+			(at 99.06 255.27 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74c8397c-e91f-468b-ac16-bba7d2d86af0")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "#PWR126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 190.5 240.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8aeda91e-2924-45f5-95b2-15fa950f98d7")
+		(property "Reference" "TP86"
+			(at 195.58 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ECAT_P0_RX-"
+			(at 203.2 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 190.5 245.11 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 245.11 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 240.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 190.5 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 190.5 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec81346c-b456-4159-9744-ab9b18250380")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP86")
 					(unit 1)
 				)
 			)
@@ -18244,7 +19907,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 306.07 185.42 0)
+		(at 303.53 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18252,7 +19915,7 @@
 		(dnp yes)
 		(uuid "93fb0bbf-2452-4f50-940c-426c851df363")
 		(property "Reference" "C141"
-			(at 308.356 183.642 0)
+			(at 305.816 183.642 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18262,7 +19925,7 @@
 			)
 		)
 		(property "Value" "10p"
-			(at 308.356 186.69 0)
+			(at 305.816 186.69 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18272,7 +19935,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 307.0352 189.23 0)
+			(at 304.4952 189.23 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18282,7 +19945,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18292,7 +19955,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18302,7 +19965,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18312,7 +19975,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18322,7 +19985,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18332,7 +19995,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18342,7 +20005,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18352,7 +20015,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 306.07 185.42 0)
+			(at 303.53 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18686,7 +20349,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 287.02 185.42 0)
+		(at 280.67 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18694,7 +20357,7 @@
 		(dnp yes)
 		(uuid "96ded96b-1a66-4877-a6b9-6df38e8a942f")
 		(property "Reference" "C137"
-			(at 288.798 183.642 0)
+			(at 282.448 183.642 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18704,7 +20367,7 @@
 			)
 		)
 		(property "Value" "10p"
-			(at 289.306 186.69 0)
+			(at 282.956 186.69 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18714,7 +20377,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 287.9852 189.23 0)
+			(at 281.6352 189.23 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18724,7 +20387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18734,7 +20397,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18744,7 +20407,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18754,7 +20417,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18764,7 +20427,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18774,7 +20437,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18784,7 +20447,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18794,7 +20457,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 287.02 185.42 0)
+			(at 280.67 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -18994,7 +20657,7 @@
 	)
 	(symbol
 		(lib_id "0_crystals:Crystal_25MHz_ABM8G")
-		(at 73.66 107.95 0)
+		(at 60.96 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19002,7 +20665,7 @@
 		(dnp no)
 		(uuid "980fded1-d218-5266-a28d-c0099c962f34")
 		(property "Reference" "Y1"
-			(at 76.2 101.6 0)
+			(at 63.5 101.6 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19012,7 +20675,7 @@
 			)
 		)
 		(property "Value" "25MHz 8pF"
-			(at 80.518 103.378 0)
+			(at 67.818 103.378 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19020,18 +20683,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 73.66 107.95 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/184/1/ABM8G.pdf"
-			(at 73.66 107.95 0)
+		(property "Footprint" "0_crystals:ABM8G_ABR"
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19040,8 +20693,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "25 MHz crystal, 8 pF load, +/-20 ppm tol, +/-20 ppm stab, -40 to 85 C, 3.2x2.5 mm 4-pad. Pins 1/3 = crystal, 2/4 = case (GND)."
-			(at 73.66 107.95 0)
+		(property "Datasheet" "https://abracon.com/Resonators/ABM8G.pdf"
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19050,8 +20703,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "ABM8G-25.000MHZ-8-D2X-T"
-			(at 73.66 107.95 0)
+		(property "Description" "25 MHz ±30ppm Crystal 10pF 60 Ohms 4-SMD, No Lead Pins 1/3 = crystal, 2/4 = case (GND)."
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19060,8 +20713,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Abracon"
-			(at 73.66 107.95 0)
+		(property "Manufacturer Part Number" "ABM8G-25.000MHZ-4Y-T3"
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19070,8 +20723,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier 1" "Mouser"
-			(at 73.66 107.95 0)
+		(property "Manufacturer" "Abracon LLC"
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19080,8 +20733,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part Number 1" "815-ABM8G-25-8-D2X-T"
-			(at 73.66 107.95 0)
+		(property "Supplier 1" "Digikey"
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19090,8 +20743,8 @@
 				(hide yes)
 			)
 		)
-		(property "Config" ""
-			(at 73.66 107.95 0)
+		(property "Supplier Part Number 1" "535-10915-2-ND"
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19101,27 +20754,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 73.66 107.95 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 73.66 107.95 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 73.66 107.95 0)
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19131,7 +20764,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 73.66 107.95 0)
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19141,7 +20774,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 73.66 107.95 0)
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19869,7 +21502,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 314.96 49.53 0)
+		(at 313.69 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19877,7 +21510,7 @@
 		(dnp no)
 		(uuid "9d81d7b6-aea8-553c-ae6c-be3dd4738e5f")
 		(property "Reference" "R65"
-			(at 316.86 48.895 0)
+			(at 315.59 48.895 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19887,7 +21520,7 @@
 			)
 		)
 		(property "Value" "49.9 1%"
-			(at 316.86 51.435 0)
+			(at 315.59 51.435 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19897,7 +21530,7 @@
 			)
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19907,7 +21540,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19917,7 +21550,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19927,7 +21560,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19937,7 +21570,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF49R9X"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19947,7 +21580,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19957,7 +21590,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "667-ERJ-2RKF49R9X"
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19967,7 +21600,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19977,7 +21610,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19987,7 +21620,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -19997,7 +21630,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20007,7 +21640,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20017,7 +21650,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 314.96 49.53 0)
+			(at 313.69 49.53 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20943,16 +22576,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 297.18 88.9 0)
+		(lib_id "Connector:TestPoint")
+		(at 147.32 270.51 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(uuid "b664b2c3-3319-4957-a537-c8e8041e5058")
-		(property "Reference" "C138"
-			(at 298.958 87.122 0)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4fad57c-22d7-484e-92d5-0a4a4c76de8e")
+		(property "Reference" "TP85"
+			(at 152.4 270.51 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20961,8 +22594,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10p"
-			(at 299.466 90.17 0)
+		(property "Value" "ECAT_P0_RX+"
+			(at 160.02 270.51 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20971,8 +22604,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 298.1452 92.71 0)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 147.32 275.59 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20982,7 +22615,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 297.18 88.9 0)
+			(at 147.32 275.59 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -20991,48 +22624,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 297.18 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 297.18 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 297.18 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 297.18 88.9 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 297.18 88.9 0)
+		(property "Description" "test point"
+			(at 147.32 270.51 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21042,7 +22635,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 297.18 88.9 0)
+			(at 147.32 270.51 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21052,7 +22645,138 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 297.18 88.9 0)
+			(at 147.32 270.51 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fae938da-2f2b-48b3-9deb-51aa9301fcc6")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 292.1 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(uuid "b664b2c3-3319-4957-a537-c8e8041e5058")
+		(property "Reference" "C138"
+			(at 293.878 92.202 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10p"
+			(at 294.386 95.25 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 293.0652 97.79 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 292.1 93.98 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 292.1 93.98 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21077,16 +22801,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 316.23 185.42 0)
+		(lib_id "Connector:TestPoint")
+		(at 190.5 262.89 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(dnp yes)
-		(uuid "bed244ba-2ab2-49c2-a8a0-7e7611cf3a51")
-		(property "Reference" "C143"
-			(at 318.516 183.642 0)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba568703-9f0b-4365-9c26-66327ca6413d")
+		(property "Reference" "TP89"
+			(at 195.58 262.89 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21095,8 +22819,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10p"
-			(at 318.516 186.69 0)
+		(property "Value" "ECAT_P1_RX+"
+			(at 203.2 262.89 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21105,8 +22829,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 317.1952 189.23 0)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 190.5 267.97 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21116,7 +22840,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 316.23 185.42 0)
+			(at 190.5 267.97 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21125,48 +22849,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 316.23 185.42 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 316.23 185.42 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 316.23 185.42 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 316.23 185.42 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 316.23 185.42 0)
+		(property "Description" "test point"
+			(at 190.5 262.89 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21176,7 +22860,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 316.23 185.42 0)
+			(at 190.5 262.89 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21186,7 +22870,138 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 316.23 185.42 0)
+			(at 190.5 262.89 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "674f005a-e407-47f3-9d87-75f12e28da70")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 313.69 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp yes)
+		(uuid "bed244ba-2ab2-49c2-a8a0-7e7611cf3a51")
+		(property "Reference" "C143"
+			(at 315.976 183.642 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10p"
+			(at 315.976 186.69 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 314.6552 189.23 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 313.69 185.42 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 313.69 185.42 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -21803,6 +23618,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 262.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7f1c530-3777-49dd-a34f-c06bb83f30f5")
+		(property "Reference" "TP84"
+			(at 152.4 262.89 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ECAT_P0_TX-"
+			(at 160.02 262.89 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 147.32 267.97 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 267.97 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 262.89 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 147.32 262.89 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 147.32 262.89 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63a76a8f-829e-45d7-a2c2-17d61fe98d44")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 30.48 224.79 0)
 		(unit 1)
@@ -22077,6 +23983,97 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 190.5 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6baa446-69a2-4b55-9598-9a61d84351a3")
+		(property "Reference" "TP87"
+			(at 195.58 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ECAT_P1_TX+"
+			(at 203.2 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.4mm"
+			(at 190.5 252.73 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 252.73 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 247.65 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 190.5 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 190.5 247.65 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7d6dd4a-efcf-46a5-af25-f3db5c692c31")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP87")
 					(unit 1)
 				)
 			)
@@ -23288,6 +25285,76 @@
 		)
 	)
 	(symbol
+		(lib_id "0_power_symbols_ethrc:+1V2_ESC")
+		(at 97.79 262.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7ebe347-171e-48e8-8eba-2ed11dc79799")
+		(property "Reference" "#PWR127"
+			(at 97.79 262.89 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V2_ESC"
+			(at 90.678 263.144 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 262.89 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 262.89 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V2_ESC\""
+			(at 97.79 262.89 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb11ba63-44f0-45c1-b9d5-2a1db57494c6")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "#PWR127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 363.22 101.6 0)
 		(unit 1)
@@ -23463,7 +25530,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 111.76 0)
+		(at 53.34 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23471,7 +25538,7 @@
 		(dnp no)
 		(uuid "ec08bc15-0ea7-5e27-a4cf-933ad768f847")
 		(property "Reference" "C116"
-			(at 63.246 110.998 0)
+			(at 50.546 110.998 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23481,7 +25548,7 @@
 			)
 		)
 		(property "Value" "10p C0G"
-			(at 63.754 113.03 0)
+			(at 51.054 113.03 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23491,7 +25558,7 @@
 			)
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23501,7 +25568,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23511,7 +25578,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23521,7 +25588,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23531,7 +25598,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23541,7 +25608,7 @@
 			)
 		)
 		(property "Supplier 1" "Mouser"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23551,7 +25618,7 @@
 			)
 		)
 		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23561,7 +25628,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23571,7 +25638,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23581,7 +25648,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23591,7 +25658,7 @@
 			)
 		)
 		(property "Supplier Part Number" ""
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23601,7 +25668,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -23611,7 +25678,7 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 66.04 111.76 0)
+			(at 53.34 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24472,16 +26539,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 81.28 111.76 0)
+		(lib_id "Connector:TestPoint")
+		(at 104.14 262.89 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "fba26d71-951f-5f53-abfc-9371f7138812")
-		(property "Reference" "C117"
-			(at 83.566 111.252 0)
+		(uuid "f92199c8-b080-47b9-b0be-cb7445ee1629")
+		(property "Reference" "TP79"
+			(at 109.22 262.89 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24490,8 +26557,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10p C0G"
-			(at 83.312 113.03 0)
+		(property "Value" "+1V2_ESC"
+			(at 116.84 262.89 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24500,8 +26567,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
-			(at 81.28 111.76 0)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
+			(at 104.14 267.97 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24510,8 +26577,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
-			(at 81.28 111.76 0)
+		(property "Datasheet" "~"
+			(at 104.14 267.97 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24520,88 +26587,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier 1" "Mouser"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Config" ""
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" ""
-			(at 81.28 111.76 0)
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part Number" ""
-			(at 81.28 111.76 0)
+		(property "Description" "test point"
+			(at 104.14 262.89 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24611,7 +26598,7 @@
 			)
 		)
 		(property "CREATOR" ""
-			(at 81.28 111.76 0)
+			(at 104.14 262.89 90)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24621,7 +26608,178 @@
 			)
 		)
 		(property "VERIFIER" ""
-			(at 81.28 111.76 0)
+			(at 104.14 262.89 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32aef83b-5450-4b0a-985e-75e984a4c308")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 68.58 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fba26d71-951f-5f53-abfc-9371f7138812")
+		(property "Reference" "C117"
+			(at 70.866 111.252 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10p C0G"
+			(at 70.612 113.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL05C100JB5NNNC"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number 1" "187-CL05C100JB5NNNC"
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" ""
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" ""
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part Number" ""
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 68.58 111.76 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 68.58 111.76 0)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -24812,6 +26970,97 @@
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
 					(reference "FB5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 240.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff3b4844-c00b-4ead-8e08-901c6daac895")
+		(property "Reference" "TP81"
+			(at 152.4 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "EE_SCL"
+			(at 160.02 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "0_testpoint:TestPoint_Pad_D0.5mm"
+			(at 147.32 245.11 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 245.11 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 240.03 0)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" ""
+			(at 147.32 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 147.32 240.03 90)
+			(effects
+				(font
+					(face "Times New Roman")
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4cbc3c5-7225-4d4f-ba7a-a3100a8a7f46")
+		)
+		(instances
+			(project "ethrc_motor_controller"
+				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202/d342497d-cef2-493b-b20b-1b91b7d9cc9b"
+					(reference "TP81")
 					(unit 1)
 				)
 			)

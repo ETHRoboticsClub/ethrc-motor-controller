@@ -18,6 +18,15 @@ def drop_segs_in_file(path,segs,tol=0.02):
             if (math.dist(a,(x1,y1))<tol and math.dist(b,(x2,y2))<tol) or (math.dist(a,(x2,y2))<tol and math.dist(b,(x1,y1))<tol): n+=1; return ''
         return m.group(0)
     t=re.sub(r'\t\(segment\n(?:\t\t[^\n]*\n)*?\t\)\n',rep,t); open(path,'w').write(t); return n
+def drop_vias_in_file(path,pts,tol=0.02):
+    """Remove vias at given points in the file text (removing them through pcbnew breaks the footprint wrappers)."""
+    t=open(path).read(); n=0
+    def rep(m):
+        nonlocal n
+        a=re.search(r'\(at ([-\d.]+) ([-\d.]+)\)',m.group(0)); x,y=float(a.group(1)),float(a.group(2))
+        if any(math.hypot(x-px,y-py)<tol for px,py in pts): n+=1; return ''
+        return m.group(0)
+    t=re.sub(r'\t\(via\n(?:\t\t[^\n]*\n)*?\t\)\n',rep,t); open(path,'w').write(t); return n
 def drop_zones_in_file(path,names):
     t=open(path).read(); n=0
     def rep(m):
@@ -94,14 +103,29 @@ def add_zones_in_file(path,zones):
         else: blocks+=ZONE.format(code=codes[z['net']],net=z['net'],layer=z['layer'],uuid=uuid.uuid4(),name=z['name'],prio=z['priority'],pts=pts)
     end='\t(embedded_fonts no)\n)'; assert t.rstrip().endswith(end),'unexpected board file ending'
     k=t.rstrip().rfind(end); t=t[:k]+blocks+t[k:]; open(path,'w').write(t); return len(zones)
+def set_zone_outline_in_file(path,name,pts):
+    """Replace the outline of one existing zone (given by name); its old fill is dropped and refilled later."""
+    t=open(path).read(); n=0
+    def rep(m):
+        nonlocal n
+        z=m.group(0)
+        if '\t\t(name "%s")\n'%name not in z: return z
+        n+=1; a=z.index('\t\t(polygon\n'); pe=z.index('\n\t\t\t)\n',a)+6; assert z[pe:pe+4]=='\t\t)\n'; e=pe+4
+        body='\t\t(polygon\n\t\t\t(pts\n\t\t\t\t'+' '.join('(xy %g %g)'%(x,y) for x,y in pts)+'\n\t\t\t)\n\t\t)\n'
+        z=z[:a]+body+z[e:]
+        k=z.find('\t\t(filled_polygon')
+        return z[:k]+'\t)\n' if k>=0 else z
+    t=re.sub(r'\t\(zone\n(?:\t\t[^\n]*\n)*?\t\)\n',rep,t); open(path,'w').write(t); return n
 def main():
     board,plan=sys.argv[1:3]; p=json.load(open(plan)); txt=open(board).read()
     for v in p['vias'][:3]:
         if re.search(r'\(via\s*\(at %s %s\)'%(re.escape('%g'%v['x']),re.escape('%g'%v['y'])),txt): sys.exit('plan looks applied already: via at %s %s exists'%(v['x'],v['y']))
     if p.get('drop_nets'): print('track segments removed',drop_tracks_in_file(board,p['drop_nets']))
     if p.get('drop_segs'): print('single segments removed',drop_segs_in_file(board,p['drop_segs']),'of',len(p['drop_segs']))
+    if p.get('drop_vias'): print('vias removed',drop_vias_in_file(board,p['drop_vias']),'of',len(p['drop_vias']))
     if p.get('drop_zones'): print('zones removed',drop_zones_in_file(board,p['drop_zones']),'of',len(p['drop_zones']))
     if p.get('zones'): print('zones added',add_zones_in_file(board,p['zones']))
+    for name,pts in p.get('zone_outline',{}).items(): print('zone outline replaced',name,set_zone_outline_in_file(board,name,pts))
     b=pcbnew.LoadBoard(board); R={f.GetReference():f for f in b.GetFootprints()}
     P=lambda x,y: pcbnew.VECTOR2I(MM(x),MM(y))
     for m in p.get('move',[]): R[m['ref']].SetPosition(P(m['x'],m['y']))

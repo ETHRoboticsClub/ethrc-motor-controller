@@ -1,6 +1,6 @@
 """Replace track corners of 90 degrees or sharper by a 45-degree chamfer (best practice: no right-angle corners).
 Only plain corners: exactly two segments of one net and layer meet, no pad or via at the point.
-Chamfer leg = min(cmax, 45 % of the shorter segment). Run DRC afterwards.
+Chamfer leg = min(cmax, 45 % of the shorter segment). Zones are refilled. Run DRC afterwards.
 usage (system python with pcbnew): chamfer_corners.py board.kicad_pcb [cmax_mm=0.4]"""
 import sys,math,collections,pcbnew
 M=pcbnew.ToMM; F=pcbnew.FromMM
@@ -30,4 +30,5 @@ for (code,lay,pt),lst in list(ends.items()):
     (t1.SetStart if w1=='s' else t1.SetEnd)(P1); (t2.SetStart if w2=='s' else t2.SetEnd)(P2)
     nt=pcbnew.PCB_TRACK(b); nt.SetStart(P1); nt.SetEnd(P2); nt.SetWidth(min(t1.GetWidth(),t2.GetWidth())); nt.SetLayer(lay); nt.SetNetCode(code); b.Add(nt)
     done.add(id(t1)); done.add(id(t2)); n+=1
+b.BuildConnectivity(); pcbnew.ZONE_FILLER(b).Fill(b.Zones())          # refill: old fills would clash with the new chamfers
 pcbnew.SaveBoard(sys.argv[1],b); print('chamfered',n,'corners')

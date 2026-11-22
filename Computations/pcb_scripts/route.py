@@ -155,6 +155,11 @@ class World:
         n=len(self.zones); self.zones=[z for z in self.zones if z['ref']!='zone:'+name]
         if len(self.zones)!=n-1: print('  !! drop_zone matched',n-len(self.zones),'zones for',name)
         self.plan.setdefault('drop_zones',[]).append(name)
+    def drop_via(self,x,y,tol=0.02):
+        """Plan the removal of one existing via at (x, y)."""
+        n=len(self.obs); self.obs=[o for o in self.obs if not (o['ref']=='via' and math.hypot(o['x']-x,o['y']-y)<tol)]
+        if len(self.obs)!=n-1: print('  !! drop_via matched',n-len(self.obs),'vias at',(x,y))
+        self.plan.setdefault('drop_vias',[]).append([x,y])
     def drop_net(self,suffix):
         self.plan['drop_nets'].append(suffix); self.obs=[o for o in self.obs if not (o['ref']=='trk' and o['net'].endswith(suffix))]
     def drop_seg(self,a,b,tol=0.02):

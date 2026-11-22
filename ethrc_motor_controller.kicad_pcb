@@ -820,6 +820,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/22ed7811-cfe6-49b9-9ea2-ac5d58c2e74b")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -864,6 +865,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 12 "+VBAT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "2670e8ed-01df-4756-87e1-d58413d60eeb")
 		)
 		(embedded_fonts no)
@@ -946,6 +949,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/e6f94f1c-25d7-4344-8025-e32be78a0cdd")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -990,6 +994,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 37 "/Project Architecture/MCU - IOs/SENSE_VBAT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "f1e7b35a-e858-4a1d-a873-2ee250677016")
 		)
 		(embedded_fonts no)
@@ -1283,7 +1289,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -1654,6 +1660,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/897d5c79-6b30-423f-b4d3-845a589ce1cf")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -1698,6 +1705,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "8902539a-238a-4a2d-9673-39b5c2a04008")
 		)
 		(embedded_fonts no)
@@ -2578,7 +2587,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -2901,7 +2910,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4138,7 +4147,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5026,6 +5035,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/71bd7dcf-4cea-4fc8-a49a-f265ec421c8d")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -5070,6 +5080,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "66b80a18-c101-4c83-b754-d29498ced16e")
 		)
 		(embedded_fonts no)
@@ -5670,6 +5682,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/54884e88-9e67-4ed9-bbb1-7404c849cc9d")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -5714,6 +5727,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 141 "/Project Architecture/MCU - IOs/PWM_PHASEB")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "60d65e74-7bef-459f-8831-6b3aec82ec82")
 		)
 		(embedded_fonts no)
@@ -5796,6 +5811,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/4a3c14e5-38a5-46c7-bac5-feab9e341b05")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -5840,6 +5856,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 108 "/Project Architecture/MCU - IOs/SOB")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "01a65704-4e9d-4cf2-9d39-c2071bf5452b")
 		)
 		(embedded_fonts no)
@@ -8472,6 +8490,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/af39376f-96a7-4741-bf40-b91e1925e90f")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -8516,6 +8535,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 1 "+3V3")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "3a74e3a8-e974-4d30-9b11-871eb4273b36")
 		)
 		(embedded_fonts no)
@@ -8549,7 +8570,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KGKT.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -9545,7 +9566,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9904,6 +9925,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/bb90df68-a1e5-4188-8bd0-eb12125eab4a")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -9948,6 +9970,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 147 "/Project Architecture/Comms - FD-CAN/FDCAN_RX")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "e186b803-a6ac-4420-bc74-30720830e38d")
 		)
 		(embedded_fonts no)
@@ -10946,7 +10970,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -13614,6 +13638,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/49ec465d-c057-44c3-aab7-848201e62dfb")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -13658,6 +13683,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 95 "/Project Architecture/Motor Control - Top Level/SC-")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "a9a22c3f-bbab-42e1-976a-ea0d58cffec8")
 		)
 		(embedded_fonts no)
@@ -14690,7 +14717,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -15012,7 +15039,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -15581,7 +15608,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15940,6 +15967,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/83cbb9b6-c5db-404a-a45c-467336926fb5")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -15984,6 +16012,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "d1e39d2d-de37-4b27-8760-e366d4ea8193")
 		)
 		(embedded_fonts no)
@@ -16066,6 +16096,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/b7ba47b2-0ad5-4310-9b06-44438ae1c99c")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -16110,6 +16141,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 65 "/Project Architecture/Motor Control - Top Level/GHB")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "3078e5e5-58f7-431a-b272-db1712389268")
 		)
 		(embedded_fonts no)
@@ -20230,6 +20263,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/a2a7c783-ad68-44b6-b376-b50d6a15414d")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -20274,6 +20308,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 74 "/Project Architecture/MCU - IOs/ENC_MOSI")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "b0f83aac-d7e0-4d51-8dea-992937015819")
 		)
 		(embedded_fonts no)
@@ -20356,6 +20392,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/24c04260-8f54-46d3-a645-fd1e8bf0760c")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -20400,6 +20437,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 105 "/Project Architecture/Comms - EtherCat/ESC_SCLK")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "e75c9a11-e8b6-4374-9cfe-a4612619d1fd")
 		)
 		(embedded_fonts no)
@@ -20753,6 +20792,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/73e1a502-c29c-4a71-8c54-893d7b835eaf")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -20797,6 +20837,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 66 "/Project Architecture/Motor Control - Top Level/GLC")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "2697df9a-2b9b-4aa7-b538-d83ffb3448f9")
 		)
 		(embedded_fonts no)
@@ -20831,7 +20873,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -22003,6 +22045,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/ae84843a-8892-4d1d-bd0d-7b3c5ba048f8")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -22047,6 +22090,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 61 "/Project Architecture/Motor Control - Top Level/GLA")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "be606b11-e0f8-4475-8b8b-9baf490ea0d7")
 		)
 		(embedded_fonts no)
@@ -22387,6 +22432,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/e43a76d1-4ed0-497e-b544-04e03884dc73")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -22431,6 +22477,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 58 "/Project Architecture/Motor Control - Top Level/GHA")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "53bf889f-4a98-4b6f-9794-5c663d96fd3d")
 		)
 		(embedded_fonts no)
@@ -22513,6 +22561,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/e0036e31-c59e-470f-acb8-c67949530a78")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -22557,6 +22606,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 56 "/Project Architecture/MCU - IOs/SWDIO")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "be714bb8-109a-444e-b7e8-b87ae0022777")
 		)
 		(embedded_fonts no)
@@ -22639,6 +22690,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/4755bde1-05d3-403a-8c0a-488d4d4abfc7")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -22683,6 +22735,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "8301b5ed-11bd-4549-8c81-7bc6e0e6bbee")
 		)
 		(embedded_fonts no)
@@ -22717,7 +22771,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H223KA55-01A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -24256,7 +24310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -24861,7 +24915,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/ENFA0003.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -25480,6 +25534,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/3c8ca30c-dac5-445f-a75d-38e088df8d8e")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -25524,6 +25579,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "6b68a34b-954b-4473-8861-11896a4c54c8")
 		)
 		(embedded_fonts no)
@@ -25557,7 +25614,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -25816,7 +25873,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -26187,6 +26244,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/d4d813a4-45ee-46db-b35d-70330e8963ee")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -26231,6 +26289,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 101 "/Project Architecture/MCU - IOs/DRV_MOSI")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "14937eb1-ae0c-4e43-b876-25cb583d0529")
 		)
 		(embedded_fonts no)
@@ -26313,6 +26373,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/d11fd7da-88fc-45c6-9a6c-90a17efc1a70")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -26357,6 +26418,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 88 "/Project Architecture/Motor Control - Top Level/SA+")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "4a61717d-edad-464f-89fe-c1ced4d17279")
 		)
 		(embedded_fonts no)
@@ -26390,7 +26453,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -27443,6 +27506,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/adfdbc53-6681-4e69-8445-cea05058c0e0")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -27487,6 +27551,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 69 "/Project Architecture/Motor Control - Top Level/GHC")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "21344f30-1aea-4c42-b3e5-dfb5e261c703")
 		)
 		(embedded_fonts no)
@@ -27569,6 +27635,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/11f8e89a-cfd2-43bb-ba04-9ef90bae1e94")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -27613,6 +27680,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 90 "/Project Architecture/Motor Control - Top Level/SA-")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "07e8f53b-d06b-4183-aa00-6aed0d4bc4f1")
 		)
 		(embedded_fonts no)
@@ -27647,7 +27716,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -28560,6 +28629,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/f864cbef-bc74-47ff-85e7-bc4e33d1da74")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -28604,6 +28674,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 96 "/Project Architecture/Motor Control - Top Level/SHC")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "c2d79db4-96cb-4380-a7e7-7dd7f2e611eb")
 		)
 		(embedded_fonts no)
@@ -29211,6 +29283,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "02540ef7-f41f-4593-ad68-cd52c193af7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1e70859-6a54-4ba6-ae5a-5763f302af99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "749-SM1206NHC-IL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6950be6c-3c70-437d-98cd-f137c3f82245")
 			(effects
 				(font
 					(size 1 1)
@@ -31371,6 +31469,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/1a37f94d-1be5-4a14-8fa7-6d09171af964")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -31415,6 +31514,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 94 "/Project Architecture/Motor Control - Top Level/SC+")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "dbaba66c-79a4-4d38-b7a5-276eace01e7d")
 		)
 		(embedded_fonts no)
@@ -33524,6 +33625,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/2722c3e9-5fd8-4df0-aeba-de1ed58565a4")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -33568,6 +33670,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 40 "/Project Architecture/Comms - EtherCat/ESC_RST")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "1978938e-3733-44d7-b378-3c5ec28358bc")
 		)
 		(embedded_fonts no)
@@ -33650,6 +33754,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/f0a65f34-950b-4b99-960b-6a6faecab9f6")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -33694,6 +33799,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 143 "/Project Architecture/Comms - EtherCat/ESC_CS")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "9089c49e-ee73-4934-ba4a-17bc8dff5336")
 		)
 		(embedded_fonts no)
@@ -35205,6 +35312,58 @@
 				)
 			)
 		)
+		(property "Manufacturer" "JST Sales America Inc."
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0711ff6e-dcb3-4224-97dd-7a05ad244d06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "SM06B-GHS-TB(LF)(SN)"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91722cb1-c855-4a09-81ab-b1380f32c330")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "790b0f70-bc39-4196-9550-6d2a0199defa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "306-SM06BGHSTBLFSN"
+			(at 0 0 315)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52659f12-2b3a-4ae8-bdc0-6f69a3b1a43b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/9d5dddd8-2f86-4eaa-a196-d6c612b385ec/5ae8aa59-c2a2-4a1e-83f6-e80e5027853d")
 		(sheetname "/Project Architecture/Sensing - Position/")
@@ -35574,6 +35733,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/fa25829a-7064-4e89-9e88-20b6aafa7e6d")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -35618,6 +35778,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 89 "/Project Architecture/Motor Control - Top Level/SHA")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "431b9f52-980b-4cd5-bcdc-9bfa0cec9568")
 		)
 		(embedded_fonts no)
@@ -35700,6 +35862,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/b916a5d2-f1b8-42b3-882a-82ffd356b6be")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -35744,6 +35907,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 138 "/Project Architecture/MCU - IOs/MOTOR_HIZ")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "02c4e6e0-56c3-411d-a55f-dd248945b30e")
 		)
 		(embedded_fonts no)
@@ -35826,6 +35991,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/a3593bea-838e-440d-94b2-ea89ca9e1484")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -35870,6 +36036,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 112 "/Project Architecture/MCU - IOs/MOTOR_FAULT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "ba920c62-ce5d-4af9-b602-2bf5e579acd7")
 		)
 		(embedded_fonts no)
@@ -36175,7 +36343,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -36187,7 +36355,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" "10kOhm 63mW, ±1%, 100ppm/K, 0402, thick film"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -36195,6 +36363,58 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd6024e2-4f63-4b06-889c-3170c956f6e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CRCW040210K0FKED"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b930e15-2fdb-4fd7-b94a-b7859c45e3aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier 1" "Mouser"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c8230a2-6580-42f4-87af-1cf24c5791a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Supplier Part Number 1" "71-CRCW0402-10K-E3"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85995d0b-e180-41b5-8371-93dac4bf1e78")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -36404,6 +36624,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/ba6f9ba7-b221-4c56-964a-0c925abf64ee")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -36448,6 +36669,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 145 "/Project Architecture/Comms - EtherCat/ESC_SYNC0")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "b5810e30-0323-4660-83d0-ba27c200a6e9")
 		)
 		(embedded_fonts no)
@@ -36481,7 +36704,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KGKT.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -36805,7 +37028,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05C100JB5NNNC_Spec.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -37386,7 +37609,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -37696,7 +37919,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -38003,6 +38226,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/c91051b3-9f71-438b-923b-9aa8c9996fbb")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -38047,6 +38271,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 126 "/Project Architecture/Comms - EtherCat/ESC_MISO")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "5956118b-f958-4642-ac2c-4de19260a154")
 		)
 		(embedded_fonts no)
@@ -38596,7 +38822,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20065/rcse3.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -38854,7 +39080,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KGKT.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -39226,6 +39452,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/d428bfd1-0390-40e4-9505-86d9941b623e")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -39270,6 +39497,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 142 "/Project Architecture/MCU - IOs/PWM_PHASEC")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "63e009ce-411e-47ef-8766-1a581ed79021")
 		)
 		(embedded_fonts no)
@@ -40103,7 +40332,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -40462,6 +40691,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/5b77d966-9211-4fbb-aedd-61b0dac912c8")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -40506,6 +40736,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 137 "/Project Architecture/MCU - IOs/MOTOR_ENABLE")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "48a2fc90-c756-4dc9-a9f6-3b536cc5240b")
 		)
 		(embedded_fonts no)
@@ -41437,6 +41669,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/b3053cca-49f8-407e-831e-7c651c552e02")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -41481,6 +41714,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 92 "/Project Architecture/Motor Control - Top Level/SB-")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "41111169-ffa5-4cde-ab58-6161d83e1144")
 		)
 		(embedded_fonts no)
@@ -42314,7 +42549,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -43775,6 +44010,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/3c83e0c9-700d-4e35-a9cb-b74ffb49eff8")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -43819,6 +44055,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 55 "/Project Architecture/MCU - IOs/SWCLK")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "50a46abd-1319-45e7-9ac0-8007064d815e")
 		)
 		(embedded_fonts no)
@@ -44159,6 +44397,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/5bfe51c9-41b9-4e26-b3a0-54182e128c81")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -44203,6 +44442,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "b9f38c76-42a9-4087-ba74-44eb26abdebb")
 		)
 		(embedded_fonts no)
@@ -44827,6 +45068,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/448e25a2-8bcf-4a2d-8a95-866a32b792b5")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -44871,6 +45113,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 15 "+5V")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "2b2995c0-69fc-4611-8fe0-1cdbff22539c")
 		)
 		(embedded_fonts no)
@@ -44905,7 +45149,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -47736,6 +47980,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/3b826b40-af03-4718-bfce-a8c0e0e6d57a")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -47780,6 +48025,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 76 "/Project Architecture/MCU - IOs/ENC_MISO")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "2ef49b47-d320-457d-98c3-5ed01423c2d8")
 		)
 		(embedded_fonts no)
@@ -48342,7 +48589,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -48908,6 +49155,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/ea7d3559-dd02-4a24-8c02-0a63360f8289")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -48952,6 +49200,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 12 "+VBAT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "ed91344d-5a1e-46fd-9b0d-1218b50c48f0")
 		)
 		(embedded_fonts no)
@@ -49409,7 +49659,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -49731,7 +49981,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/281/1/LTST_C191KRKT.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -50103,6 +50353,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/ed689295-6080-4a02-a3cc-a46ce9bbec04")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -50147,6 +50398,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 93 "/Project Architecture/Motor Control - Top Level/SHB")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "4cb0b61b-ae53-49d2-b3ba-1948b37c1830")
 		)
 		(embedded_fonts no)
@@ -50500,6 +50753,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/f72a0652-d5f6-4cd4-b78c-e7396c6628c5")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -50544,6 +50798,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 99 "/Project Architecture/MCU - IOs/DRV_SCLK")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "af9e0453-2ffd-414c-85e5-87cea6efa14b")
 		)
 		(embedded_fonts no)
@@ -50578,7 +50834,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -51159,7 +51415,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -51466,6 +51722,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/026b9afd-4852-4658-a8a4-63989c6aceda")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -51510,6 +51767,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 75 "/Project Architecture/MCU - IOs/ENC_EXT_CS")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "9f62d3b6-074e-41fe-889b-65ad6813be71")
 		)
 		(embedded_fonts no)
@@ -51712,6 +51971,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/5740377c-a518-4def-b6ef-ad608ea72514")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -51756,6 +52016,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 113 "/Project Architecture/MCU - IOs/DRV_MISO")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "222fe079-d15e-4e0c-99bd-9dc1a3a6dd58")
 		)
 		(embedded_fonts no)
@@ -51946,6 +52208,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/98287c2f-d368-4763-9ba2-f0b035d22339")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -51990,6 +52253,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 12 "+VBAT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "341dc921-c4a4-40ba-ba11-8de36c463c9f")
 		)
 		(embedded_fonts no)
@@ -52021,7 +52286,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -52431,6 +52696,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/2d3c7d51-9f46-482e-a634-78e0935b22d0")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -52475,6 +52741,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 35 "/Project Architecture/MCU - IOs/SENSE_TEMP_FET")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "3880324d-4d17-4dce-912b-ca9ce0e2910f")
 		)
 		(embedded_fonts no)
@@ -52557,6 +52825,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/7b00321e-30cd-451f-8924-99557ec96c2b")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -52601,6 +52870,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 140 "/Project Architecture/MCU - IOs/PWM_PHASEA")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "baf84153-4878-4c78-9a30-600e9614c76c")
 		)
 		(embedded_fonts no)
@@ -54155,6 +54426,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/de674c67-6ec4-4559-a09d-344d780548c5")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -54199,6 +54471,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 144 "/Project Architecture/Comms - EtherCat/ESC_IRQ")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "27008a1b-971f-431d-857d-8d6a29790d8e")
 		)
 		(embedded_fonts no)
@@ -54281,6 +54555,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/e80cdb8a-be19-47d3-a9ee-359680b276e5")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -54325,6 +54600,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 91 "/Project Architecture/Motor Control - Top Level/SB+")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "2a8f2a49-cdba-4ffa-b8da-93d30841c557")
 		)
 		(embedded_fonts no)
@@ -54359,7 +54636,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -54682,7 +54959,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GCM155R71H223KA55-01A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -55272,6 +55549,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/57bbd4c9-7e60-4fe4-96ef-4ff685a97c12")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -55316,6 +55594,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 109 "/Project Architecture/MCU - IOs/SOC")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "d0dd1366-1ce1-472d-8d58-bb2cddabc685")
 		)
 		(embedded_fonts no)
@@ -55398,6 +55678,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/440378de-77e8-4639-9d27-bf6319715899")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -55442,6 +55723,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 107 "/Project Architecture/MCU - IOs/SOA")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "f152eda6-84a4-4058-aafd-e645de105791")
 		)
 		(embedded_fonts no)
@@ -55901,6 +56184,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/c816a7df-d285-4f8e-8fe6-f18afa74e79c")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -55945,6 +56229,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 1 "+3V3")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "05e9e243-8f83-4886-a015-6bfb1616a85a")
 		)
 		(embedded_fonts no)
@@ -55979,7 +56265,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -56573,7 +56859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -56895,7 +57181,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -57202,6 +57488,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/93e97a94-6d80-477e-95c9-4528dbd65eed")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -57246,6 +57533,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 150 "/Project Architecture/Comms - EtherCat/ESC_SYNC1")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "9d73378d-8539-483a-b024-69f78dfc7e36")
 		)
 		(embedded_fonts no)
@@ -57718,6 +58007,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/8242572f-6382-4a6e-950d-e1920f4dfe9e")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -57762,6 +58052,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 3 "+A3V3")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "28b6f184-7116-49fa-bca6-788ccdeb8962")
 		)
 		(embedded_fonts no)
@@ -57844,6 +58136,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/4288249c-6f74-4e6a-97ed-19869354dc73")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -57888,6 +58181,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 148 "/Project Architecture/Comms - FD-CAN/FDCAN_TX")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "ce8fcfd9-5ad9-46e1-9583-ccddad25619a")
 		)
 		(embedded_fonts no)
@@ -58868,7 +59163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -59239,6 +59534,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/a3c22932-3875-4c89-9383-9fa471be6103")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -59283,6 +59579,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 1 "+3V3")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "8c7ff3ac-9e98-432d-8045-02fc8ec6c7aa")
 		)
 		(embedded_fonts no)
@@ -60412,7 +60710,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -60771,6 +61069,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/66d4bd0c-0586-4770-9957-ce04c6ab9aad")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -60815,6 +61114,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 77 "/Project Architecture/MCU - IOs/ENC_SCLK")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "751b0838-b83f-4b01-b712-fe2127ddac4b")
 		)
 		(embedded_fonts no)
@@ -60849,7 +61150,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -62595,6 +62896,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/e32b3804-b466-4b56-9f2c-ce6ca335a1aa")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -62639,6 +62941,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 103 "/Project Architecture/Comms - EtherCat/ESC_MOSI")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "6719e3c7-1ee9-4282-9c74-41c297d0583b")
 		)
 		(embedded_fonts no)
@@ -63552,7 +63856,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -64496,6 +64800,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/0bde66e0-d790-415c-8f90-9234a8e7cc6e")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -64540,6 +64845,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 5 "/Project Architecture/MCU - IOs/NRST")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "d4b97daa-a0c0-405e-92cd-0e9ee0ee494d")
 		)
 		(embedded_fonts no)
@@ -64880,6 +65187,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/1fd17c38-5e9a-4b32-8ec2-4d86c8af25b1")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -64924,6 +65232,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 139 "/Project Architecture/MCU - IOs/DRV_CS")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "ae2ac4eb-35bb-40bf-9e26-2d28fa04b713")
 		)
 		(embedded_fonts no)
@@ -65977,7 +66287,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -66300,7 +66610,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "F.Fab")
 			(hide yes)
@@ -68509,7 +68819,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -68816,6 +69126,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/5bcbc7e4-0942-415e-ab04-e1cd42538fc3/07cabfc7-6d7a-4442-aba8-31eb32c26d8e")
 		(sheetname "/Project Architecture/Motor Control - Top Level/")
 		(sheetfile "Motor Control - Top Level.kicad_sch")
@@ -68860,6 +69171,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 62 "/Project Architecture/Motor Control - Top Level/GLB")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "47c717e1-2e5d-41de-a3df-da1ae50bc25f")
 		)
 		(embedded_fonts no)
@@ -68894,7 +69207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3644/CL10B105KA8NNNC_spec.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -70085,6 +70398,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/4d3bf48b-4040-4ee9-b686-d001fb3d0f4e")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -70129,6 +70443,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 36 "/Project Architecture/MCU - IOs/SENSE_TEMP_MOT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "af1f6233-a7c6-4645-821b-a71c72462e5e")
 		)
 		(embedded_fonts no)
@@ -70211,6 +70527,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/af500184-61d8-45ee-9dec-f72f760cc469")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -70255,6 +70572,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 149 "/Project Architecture/MCU - IOs/FAN_CTRL")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "43a3bb89-980e-450b-8fb6-2ef2c3ec9756")
 		)
 		(embedded_fonts no)
@@ -70337,6 +70656,7 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/55949992-a506-4df5-a46a-2f5edd7c1687")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -70381,6 +70701,8 @@
 			(property pad_prop_testpoint)
 			(layers "F.Cu" "F.Mask")
 			(net 2 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "735488c9-040d-482e-aed9-580cdaedd7cb")
 		)
 		(embedded_fonts no)
@@ -70794,7 +71116,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -71633,7 +71955,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -73607,7 +73929,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/KEM_C1006_X5R_SMD.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -73689,7 +74011,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -73703,7 +74025,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "80-C0805C106K8P"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -73941,6 +74263,7 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/399f09b9-7935-4305-8146-de24cd26bee2")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -73986,6 +74309,8 @@
 			(property pad_prop_testpoint)
 			(layers "B.Cu" "B.Mask")
 			(net 10 "/Project Architecture/MCU - IOs/LED_FAULT")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "c58945bd-b975-49b8-814e-df758bced453")
 		)
 		(embedded_fonts no)
@@ -74302,7 +74627,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 45)
 			(layer "B.Fab")
 			(hide yes)
@@ -74852,7 +75177,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 135)
 			(layer "B.Fab")
 			(hide yes)
@@ -76020,7 +76345,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM155Z71A105KE01-01A-EN_PDF_CERAMICCAPACITORSMD"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -76033,7 +76358,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1uF 10V, X7R, ±10%, 0402, MLCC"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -76066,6 +76391,62 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6b9c865c-7ae1-4547-b2a5-bb5ba1db753c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d8026b28-c41f-4fe8-8585-65fe42eb1ec8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer Part Number" "GRM155Z71A105KE01J"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fbef96b8-97a6-4ed6-abe8-63169825960c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Supplier 1" "Digikey"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a74f9023-8022-45aa-a629-b9b62b5ef5d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Supplier Part Number 1" "490-GRM155Z71A105KE01JCT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f421ad97-e8d8-44b8-ba6f-3428b69e8183")
 			(effects
 				(font
 					(size 1 1)
@@ -77141,6 +77522,7 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/085e54a9-d536-4e52-82e3-82995ed82503")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -77186,6 +77568,8 @@
 			(property pad_prop_testpoint)
 			(layers "B.Cu" "B.Mask")
 			(net 115 "/Project Architecture/MCU - IOs/LED_DBG")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "35b4d984-69cb-4577-803a-de93b3792cd2")
 		)
 		(embedded_fonts no)
@@ -77221,7 +77605,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Tayio_Yuden_1102023_MS_mlcc_all_e.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -78875,7 +79259,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/34192/lp40dz11.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -78957,7 +79341,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -78971,7 +79355,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "70-IHLP4040DZER220M1"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -80020,7 +80404,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Tayio_Yuden_1102023_MS_mlcc_all_e.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -80610,7 +80994,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 135)
 			(layer "B.Fab")
 			(hide yes)
@@ -81486,7 +81870,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/5926/1/KGM_X7R.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -81568,7 +81952,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -81582,7 +81966,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "581-08053C104K"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -82318,7 +82702,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -82400,7 +82784,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -82414,7 +82798,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0603-64.9K-E3"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -83299,7 +83683,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "B.Fab")
 			(hide yes)
@@ -84477,7 +84861,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -84559,7 +84943,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -84573,7 +84957,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0402-10K-E3"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -85639,6 +86023,7 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/a7a72571-5668-47fa-9b3e-b97c6816a3b6/a107fae8-257e-4bf6-b76a-6abae13049d6")
 		(sheetname "/Project Architecture/Power - Generation/")
 		(sheetfile "Power - Generation.kicad_sch")
@@ -85684,6 +86069,8 @@
 			(property pad_prop_testpoint)
 			(layers "B.Cu" "B.Mask")
 			(net 15 "+5V")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "bd9283e5-85ef-490f-b290-b52d9dbecb56")
 		)
 		(embedded_fonts no)
@@ -86124,6 +86511,34 @@
 				(justify mirror)
 			)
 		)
+		(property "Supplier 1" "Mouser"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c1f6cad6-324b-440e-ab16-50273bd084a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Supplier Part Number 1" "576-SMBJ60A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3ff494b5-6dbe-4139-bed8-0c834901ddb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/957e9462-5e63-4479-b30f-86013896ffc2/b68b1b1d-a882-4cc7-86b2-6c2c91c12e7b")
 		(sheetname "/Project Architecture/Power - Connectors/")
 		(sheetfile "Power - Connectors.kicad_sch")
@@ -86365,6 +86780,7 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/fede4c36-00cc-4d3d-b71c-5243ba232202/e6015f1e-cbce-46f4-85e1-3d5463a17dc1/8de87029-5b4d-4791-80ee-bc7d81826715")
 		(sheetname "/Project Architecture/MCU - IOs/")
 		(sheetfile "MCU - IOs.kicad_sch")
@@ -86410,6 +86826,8 @@
 			(property pad_prop_testpoint)
 			(layers "B.Cu" "B.Mask")
 			(net 146 "/Project Architecture/MCU - IOs/ENC_BRD_CS")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "8e6da78e-f42b-4fd0-b124-a034e0499edb")
 		)
 		(embedded_fonts no)
@@ -88960,7 +89378,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -88974,7 +89392,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "595-TPSM861253RDXR"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -90490,7 +90908,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 0 0 45)
 			(layer "B.Fab")
 			(hide yes)
@@ -91674,7 +92092,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM155R71C104KA88_01A.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -91756,7 +92174,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -91770,7 +92188,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM155R71C104KA88"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -91969,7 +92387,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "14-bit contactless magnetic angle sensor, SPI, ABZ incremental and PWM outputs, 3.3V, QFN-16 3x3mm"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -92002,6 +92420,62 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "1ec8b4d6-ed79-4d16-9150-30f57a1b994f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "Monolithic Power Systems Inc."
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0bfef357-818d-416b-a1fe-c3178228e9fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer Part Number" "MA732GQ-Z"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "78ee57e8-cbbf-411d-b613-a41a5b46633e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Supplier 1" "LCSC"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3898c6f9-409f-4d83-859f-5979c704f63d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Supplier Part Number 1" "C3824836"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9b19314e-8fbf-4671-aa80-bfaf44addfb0")
 			(effects
 				(font
 					(size 1 1)
@@ -94384,7 +94858,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM31CR61A476KE15_04A.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -94466,7 +94940,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -94480,7 +94954,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM31CR61A476KE5L"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -94664,7 +95138,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Tayio_Yuden_1102023_MS_mlcc_all_e.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -96708,7 +97182,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -96790,7 +97264,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Digikey"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -96804,7 +97278,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "541-40.2KLCT-ND"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -100440,7 +100914,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -100522,7 +100996,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -100536,7 +101010,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0402-15.8K-E3"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -100989,7 +101463,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 135)
 			(layer "B.Fab")
 			(hide yes)
@@ -101978,7 +102452,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 45)
 			(layer "B.Fab")
 			(hide yes)
@@ -102600,7 +103074,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -102682,7 +103156,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -102696,7 +103170,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0402-10K-E3"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -103150,7 +103624,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 0 0 135)
 			(layer "B.Fab")
 			(hide yes)
@@ -103860,7 +104334,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/GRM155R71C103KA01-01A.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -103942,7 +104416,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -103956,7 +104430,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM36X103K16"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -104142,7 +104616,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM188R60J226MEA0_01A.pdf"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -104224,7 +104698,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -104238,7 +104712,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM188R60J226ME0D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -104423,7 +104897,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -104505,7 +104979,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -104519,7 +104993,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "71-CRCW0603-100K-E3"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -104693,7 +105167,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/2/GRM31CR61A476KE15_04A.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -104775,7 +105249,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -104789,7 +105263,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "81-GRM31CR61A476KE5L"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -105543,7 +106017,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 0 0 135)
 			(layer "B.Fab")
 			(hide yes)
@@ -106149,7 +106623,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_midvoltage_en.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -106203,7 +106677,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier 1" ""
+		(property "Supplier 1" "Mouser"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -106217,7 +106691,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Supplier Part Number 1" ""
+		(property "Supplier Part Number 1" "810-C2012X7R2A104K"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -106430,7 +106904,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 0 0 135)
 			(layer "B.Fab")
 			(hide yes)

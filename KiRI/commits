@@ -1,4 +1,4 @@
 _local_|2026-11-22|root|Local changes not committed|False|True
-249ac5c|2026-11-22|Masiar Etemadi|[PCB] Rework the EtherCAT front end to the Microchip checklist with via-free pairs, terminations at the LAN9253, a +3V3_PHY mini-plane, test points and no right-angle corners.|False|True
-dfffea1|2026-11-22|Masiar Etemadi|[Schematic] Swap the T1/T2 chip-side pairs, fit R83/R84 with 0R, use the eval-board crystal and add EtherCAT test points TP76 to TP90.|True|False
-2a07ed1|2026-11-22|Masiar Etemadi|[PCB] Route the EtherCAT cable side from T1/T2 to J9/J10 with the Bob Smith centre-tap network and the 2 kV caps and drains tied to CHASSIS.|False|True
+38f5d00|2026-11-22|Masiar Etemadi|[PCB] relocate TP80 and fix its DRC violation error|False|True
+59108c2|2026-11-22|Masiar Etemadi|[PCB] Refill all zones after the step 6 slice A review.|False|True
+76b3040|2026-11-22|Masiar Etemadi|[PCB] Route step 6 slice A, the U1 to DRV8353 control lines and DRV SPI, with the approved part moves and test points on their tracks.|False|True

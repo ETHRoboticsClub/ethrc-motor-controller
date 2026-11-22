@@ -118,7 +118,7 @@ def set_zone_outline_in_file(path,name,pts):
     t=re.sub(r'\t\(zone\n(?:\t\t[^\n]*\n)*?\t\)\n',rep,t); open(path,'w').write(t); return n
 def main():
     board,plan=sys.argv[1:3]; p=json.load(open(plan)); txt=open(board).read()
-    for v in p['vias'][:3]:
+    for v in p.get('vias',[])[:3]:
         if re.search(r'\(via\s*\(at %s %s\)'%(re.escape('%g'%v['x']),re.escape('%g'%v['y'])),txt): sys.exit('plan looks applied already: via at %s %s exists'%(v['x'],v['y']))
     if p.get('drop_nets'): print('track segments removed',drop_tracks_in_file(board,p['drop_nets']))
     if p.get('drop_segs'): print('single segments removed',drop_segs_in_file(board,p['drop_segs']),'of',len(p['drop_segs']))
@@ -128,6 +128,11 @@ def main():
     for name,pts in p.get('zone_outline',{}).items(): print('zone outline replaced',name,set_zone_outline_in_file(board,name,pts))
     b=pcbnew.LoadBoard(board); R={f.GetReference():f for f in b.GetFootprints()}
     P=lambda x,y: pcbnew.VECTOR2I(MM(x),MM(y))
+    for m in p.get('pad_nets',[]):                       # follow a schematic pin swap: {ref, pad, net}; creates the net if new
+        net=b.FindNet(m['net'])
+        if net is None: net=pcbnew.NETINFO_ITEM(b,m['net']); b.Add(net)
+        pads=[d for d in R[m['ref']].Pads() if d.GetNumber()==m['pad']]; assert len(pads)==1,m
+        pads[0].SetNet(net); print('pad net',m['ref'],m['pad'],'->',m['net'])
     for m in p.get('move',[]): R[m['ref']].SetPosition(P(m['x'],m['y']))
     for m in p.get('place',[]):
         fp=R[m['ref']]

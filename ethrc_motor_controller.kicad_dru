@@ -165,3 +165,8 @@
 (rule "Net-tie pads connect solid to pours"
 (constraint zone_connection solid)
 (condition "A.Type == 'Pad' && A.memberOfFootprint('NT*')"))
+
+# TPSM861253 (U5): pads 1-4 are solder-mask defined (RDX0007A land pattern), so pours join them without thermal spokes.
+(rule "U5 pads connect solid"
+(constraint zone_connection solid)
+(condition "A.Type == 'Pad' && A.memberOfFootprint('U5')"))

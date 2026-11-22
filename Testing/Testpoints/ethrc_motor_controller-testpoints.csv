@@ -1,70 +1,85 @@
 Testpoint Ref.,Net,Net Class,X,Y,Side,Pad Type,Value,Footprint
-TP1,,,-113.5000,125.0000,top,SMT,MOTOR_ENABLE,TestPoint_Pad_D0.5mm
-TP2,,,-113.5000,125.0000,top,SMT,MOTOR_HIZ,TestPoint_Pad_D0.5mm
-TP3,,,-113.5000,125.0000,top,SMT,MOTOR_FAULT,TestPoint_Pad_D0.5mm
-TP4,,,-113.5000,125.0000,top,SMT,DRV_SCLK,TestPoint_Pad_D0.5mm
-TP5,,,-113.5000,125.0000,top,SMT,DRV_MISO,TestPoint_Pad_D0.5mm
-TP6,,,-113.5000,125.0000,top,SMT,DRV_MOSI,TestPoint_Pad_D0.5mm
-TP7,,,-113.5000,125.0000,top,SMT,DRV_CS,TestPoint_Pad_D0.5mm
-TP8,,,-113.5000,125.0000,top,SMT,PWM_PHASEA,TestPoint_Pad_D0.5mm
-TP9,,,-113.5000,125.0000,top,SMT,PWM_PHASEB,TestPoint_Pad_D0.5mm
-TP10,,,-113.5000,125.0000,top,SMT,PWM_PHASEC,TestPoint_Pad_D0.5mm
-TP11,,,-113.5000,125.0000,top,SMT,SOA,TestPoint_Pad_D0.5mm
-TP12,,,-113.5000,125.0000,top,SMT,SOB,TestPoint_Pad_D0.5mm
-TP13,,,-113.5000,125.0000,top,SMT,SOC,TestPoint_Pad_D0.5mm
-TP14,,,-113.5000,125.0000,top,SMT,SWDIO,TestPoint_Pad_D0.5mm
-TP15,,,-113.5000,125.0000,top,SMT,SWCLK,TestPoint_Pad_D0.5mm
-TP16,,,-113.5000,125.0000,top,SMT,NRST,TestPoint_Pad_D0.5mm
-TP17,,,-113.5000,125.0000,top,SMT,ESC_RST,TestPoint_Pad_D0.5mm
-TP18,,,-113.5000,125.0000,top,SMT,ESC_SCLK,TestPoint_Pad_D0.5mm
-TP19,,,-113.5000,125.0000,top,SMT,ESC_MISO,TestPoint_Pad_D0.5mm
-TP20,,,-113.5000,125.0000,top,SMT,ESC_MOSI,TestPoint_Pad_D0.5mm
-TP21,,,-113.5000,125.0000,top,SMT,ESC_CS,TestPoint_Pad_D0.5mm
-TP22,,,-113.5000,125.0000,top,SMT,ESC_IRQ,TestPoint_Pad_D0.5mm
-TP23,,,-113.5000,125.0000,top,SMT,ESC_SYNC0,TestPoint_Pad_D0.5mm
-TP24,,,-113.5000,125.0000,top,SMT,ENC_SCLK,TestPoint_Pad_D0.5mm
-TP25,,,-113.5000,125.0000,top,SMT,ENC_MISO,TestPoint_Pad_D0.5mm
-TP26,,,-113.5000,125.0000,top,SMT,ENC_MOSI,TestPoint_Pad_D0.5mm
-TP27,,,-113.5000,125.0000,top,SMT,ENC_BRD_CS,TestPoint_Pad_D0.5mm
-TP28,,,-113.5000,125.0000,top,SMT,ENC_EXT_CS,TestPoint_Pad_D0.5mm
-TP31,,,-113.5000,125.0000,top,SMT,LED_DBG,TestPoint_Pad_D0.5mm
-TP32,,,-113.5000,125.0000,top,SMT,LED_PWR,TestPoint_Pad_D0.5mm
-TP33,,,-113.5000,125.0000,top,SMT,FD_CAN_RX,TestPoint_Pad_D0.5mm
-TP34,,,-113.5000,125.0000,top,SMT,FDCAN_TX,TestPoint_Pad_D0.5mm
-TP35,,,-113.5000,125.0000,top,SMT,FAN_CTRL,TestPoint_Pad_D0.5mm
-TP36,,,-113.5000,125.0000,top,SMT,SENSE_TEMP_MOT,TestPoint_Pad_D0.5mm
-TP37,,,-113.5000,125.0000,top,SMT,SENSE_TEMP_FET,TestPoint_Pad_D0.5mm
-TP38,,,-113.5000,125.0000,top,SMT,SENSE_VBAT,TestPoint_Pad_D0.5mm
-TP39,,,-113.5000,125.0000,top,SMT,+VBAT,TestPoint_Pad_D0.5mm
-TP40,,,-113.5000,125.0000,top,SMT,+VBAT,TestPoint_Pad_D0.5mm
-TP41,,,-113.5000,125.0000,top,SMT,+VBAT,TestPoint_Pad_D0.5mm
-TP46,,,-113.5000,125.0000,top,SMT,+5V,TestPoint_Pad_D0.5mm
-TP47,,,-113.5000,125.0000,top,SMT,+5V,TestPoint_Pad_D0.5mm
-TP48,,,-113.5000,125.0000,top,SMT,+3V3,TestPoint_Pad_D0.5mm
-TP49,,,-113.5000,125.0000,top,SMT,+3V3,TestPoint_Pad_D0.5mm
-TP50,,,-113.5000,125.0000,top,SMT,+3V3,TestPoint_Pad_D0.5mm
-TP51,,,-113.5000,125.0000,top,SMT,+A3V3,TestPoint_Pad_D0.5mm
-TP52,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP53,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP54,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP55,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP56,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP57,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP58,,,-113.5000,125.0000,top,SMT,GND,TestPoint_Pad_D0.5mm
-TP59,,,-113.5000,125.0000,top,SMT,GHA,TestPoint_Pad_D0.4mm
-TP60,,,-113.5000,125.0000,top,SMT,GLA,TestPoint_Pad_D0.4mm
-TP61,,,-113.5000,125.0000,top,SMT,SHA,TestPoint_Pad_D0.4mm
-TP62,,,-113.5000,125.0000,top,SMT,GHB,TestPoint_Pad_D0.4mm
-TP63,,,-113.5000,125.0000,top,SMT,GLB,TestPoint_Pad_D0.4mm
-TP64,,,-113.5000,125.0000,top,SMT,SHB,TestPoint_Pad_D0.4mm
-TP65,,,-113.5000,125.0000,top,SMT,GHC,TestPoint_Pad_D0.4mm
-TP66,,,-113.5000,125.0000,top,SMT,GLC,TestPoint_Pad_D0.4mm
-TP67,,,-113.5000,125.0000,top,SMT,SHC,TestPoint_Pad_D0.4mm
-TP68,,,-113.5000,125.0000,top,SMT,SA_P,TestPoint_Pad_D0.5mm
-TP69,,,-113.5000,125.0000,top,SMT,SA_N,TestPoint_Pad_D0.5mm
-TP70,,,-113.5000,125.0000,top,SMT,SB_P,TestPoint_Pad_D0.5mm
-TP71,,,-113.5000,125.0000,top,SMT,SB_N,TestPoint_Pad_D0.5mm
-TP72,,,-113.5000,125.0000,top,SMT,SC_P,TestPoint_Pad_D0.5mm
-TP73,,,-113.5000,125.0000,top,SMT,SC_N,TestPoint_Pad_D0.5mm
+TP1,/Project Architecture/MCU - IOs/MOTOR_ENABLE,Default,37.3500,27.4800,top,,MOTOR_ENABLE,TestPoint_Pad_D0.5mm
+TP2,/Project Architecture/MCU - IOs/MOTOR_HIZ,Default,42.3700,14.8300,top,,MOTOR_HIZ,TestPoint_Pad_D0.5mm
+TP3,/Project Architecture/MCU - IOs/MOTOR_FAULT,Default,43.7800,13.4200,top,,MOTOR_FAULT,TestPoint_Pad_D0.5mm
+TP4,/Project Architecture/MCU - IOs/DRV_SCLK,Default,45.1600,26.6900,top,,DRV_SCLK,TestPoint_Pad_D0.5mm
+TP5,/Project Architecture/MCU - IOs/DRV_MISO,Default,45.0000,24.7600,top,,DRV_MISO,TestPoint_Pad_D0.5mm
+TP6,/Project Architecture/MCU - IOs/DRV_MOSI,Default,43.3800,24.6800,top,,DRV_MOSI,TestPoint_Pad_D0.5mm
+TP7,/Project Architecture/MCU - IOs/DRV_CS,Default,35.3800,27.5800,top,,DRV_CS,TestPoint_Pad_D0.5mm
+TP8,/Project Architecture/MCU - IOs/PWM_PHASEA,Default,38.4500,26.8300,top,,PWM_PHASEA,TestPoint_Pad_D0.5mm
+TP9,/Project Architecture/MCU - IOs/PWM_PHASEB,Default,45.6000,11.6000,top,,PWM_PHASEB,TestPoint_Pad_D0.5mm
+TP10,/Project Architecture/MCU - IOs/PWM_PHASEC,Default,39.3200,29.6500,top,,PWM_PHASEC,TestPoint_Pad_D0.5mm
+TP11,/Project Architecture/MCU - IOs/SOA,Default,51.5400,8.4400,top,,SOA,TestPoint_Pad_D0.5mm
+TP12,/Project Architecture/MCU - IOs/SOB,Default,53.0400,9.9400,top,,SOB,TestPoint_Pad_D0.5mm
+TP13,/Project Architecture/MCU - IOs/SOC,Default,54.0400,11.9400,top,,SOC,TestPoint_Pad_D0.5mm
+TP14,/Project Architecture/MCU - IOs/SWDIO,Default,47.0800,6.5000,top,,SWDIO,TestPoint_Pad_D0.5mm
+TP15,/Project Architecture/MCU - IOs/SWCLK,Default,46.3500,7.5500,top,,SWCLK,TestPoint_Pad_D0.5mm
+TP16,/Project Architecture/MCU - IOs/NRST,Default,48.1600,1.8300,top,,NRST,TestPoint_Pad_D0.5mm
+TP17,/Project Architecture/Comms - EtherCat/ESC_RST,Default,29.4000,8.5700,top,,ESC_RST,TestPoint_Pad_D0.5mm
+TP18,/Project Architecture/Comms - EtherCat/ESC_SCLK,Default,56.9600,23.3100,top,,ESC_SCLK,TestPoint_Pad_D0.5mm
+TP19,/Project Architecture/Comms - EtherCat/ESC_MISO,Default,55.4800,21.5800,top,,ESC_MISO,TestPoint_Pad_D0.5mm
+TP20,/Project Architecture/Comms - EtherCat/ESC_MOSI,Default,55.8400,24.0900,top,,ESC_MOSI,TestPoint_Pad_D0.5mm
+TP21,/Project Architecture/Comms - EtherCat/ESC_CS,Default,26.4300,25.2700,top,,ESC_CS,TestPoint_Pad_D0.5mm
+TP22,/Project Architecture/Comms - EtherCat/ESC_IRQ,Default,26.4200,22.9700,top,,ESC_IRQ,TestPoint_Pad_D0.5mm
+TP23,/Project Architecture/Comms - EtherCat/ESC_SYNC0,Default,54.7700,23.0400,top,,ESC_SYNC0,TestPoint_Pad_D0.5mm
+TP24,/Project Architecture/MCU - IOs/ENC_SCLK,Default,10.2300,4.1300,top,,ENC_SCLK,TestPoint_Pad_D0.5mm
+TP25,/Project Architecture/MCU - IOs/ENC_MISO,Default,9.3300,1.5200,top,,ENC_MISO,TestPoint_Pad_D0.5mm
+TP26,/Project Architecture/MCU - IOs/ENC_MOSI,Default,11.7900,2.8700,top,,ENC_MOSI,TestPoint_Pad_D0.5mm
+TP27,/Project Architecture/MCU - IOs/ENC_BRD_CS,Default,38.1300,22.7800,bottom,,ENC_BRD_CS,TestPoint_Pad_D0.5mm
+TP28,/Project Architecture/MCU - IOs/ENC_EXT_CS,Default,12.5400,1.8100,top,,ENC_EXT_CS,TestPoint_Pad_D0.5mm
+TP31,/Project Architecture/MCU - IOs/LED_DBG,Default,23.5300,27.5700,bottom,,LED_DBG,TestPoint_Pad_D0.5mm
+TP32,/Project Architecture/MCU - IOs/LED_FAULT,Default,27.2200,27.4700,bottom,,LED_PWR,TestPoint_Pad_D0.5mm
+TP33,/Project Architecture/Comms - FD-CAN/FDCAN_RX,Default,43.1800,23.0400,top,,FD_CAN_RX,TestPoint_Pad_D0.5mm
+TP34,/Project Architecture/Comms - FD-CAN/FDCAN_TX,Default,59.0800,30.5000,top,,FDCAN_TX,TestPoint_Pad_D0.5mm
+TP35,/Project Architecture/MCU - IOs/FAN_CTRL,Default,42.3400,25.5500,top,,FAN_CTRL,TestPoint_Pad_D0.5mm
+TP36,/Project Architecture/MCU - IOs/SENSE_TEMP_MOT,Default,57.4900,3.7100,top,,SENSE_TEMP_MOT,TestPoint_Pad_D0.5mm
+TP37,/Project Architecture/MCU - IOs/SENSE_TEMP_FET,Default,39.1200,38.0800,top,,SENSE_TEMP_FET,TestPoint_Pad_D0.5mm
+TP38,/Project Architecture/MCU - IOs/SENSE_VBAT,Default,39.8800,2.1200,top,,SENSE_VBAT,TestPoint_Pad_D0.5mm
+TP39,+VBAT,High Power,32.4700,-2.8800,top,,+VBAT,TestPoint_Pad_D0.5mm
+TP40,+VBAT,High Power,18.0700,41.4300,top,,+VBAT,TestPoint_Pad_D0.5mm
+TP41,+VBAT,High Power,48.7000,33.2000,top,,+VBAT,TestPoint_Pad_D0.5mm
+TP46,+5V,Power 5V,57.9700,28.2700,top,,+5V,TestPoint_Pad_D0.5mm
+TP47,+5V,Power 5V,65.1800,25.0500,bottom,,+5V,TestPoint_Pad_D0.5mm
+TP48,+3V3,Power 3V3,40.0800,22.8000,top,,+3V3,TestPoint_Pad_D0.5mm
+TP49,+3V3,Power 3V3,35.0600,8.6600,top,,+3V3,TestPoint_Pad_D0.5mm
+TP50,+3V3,Power 3V3,26.4200,7.3000,top,,+3V3,TestPoint_Pad_D0.5mm
+TP51,+A3V3,Power A3V3,57.3600,11.2900,top,,+A3V3,TestPoint_Pad_D0.5mm
+TP52,GND,GND,42.9700,27.5300,top,,GND,TestPoint_Pad_D0.5mm
+TP53,GND,GND,58.4700,13.0300,top,,GND,TestPoint_Pad_D0.5mm
+TP54,GND,GND,23.4700,18.0300,top,,GND,TestPoint_Pad_D0.5mm
+TP55,GND,GND,38.4700,3.0800,top,,GND,TestPoint_Pad_D0.5mm
+TP56,GND,GND,69.4700,15.7800,top,,GND,TestPoint_Pad_D0.5mm
+TP57,GND,GND,69.7000,49.7000,top,,GND,TestPoint_Pad_D0.5mm
+TP58,GND,GND,2.6500,47.8000,top,,GND,TestPoint_Pad_D0.5mm
+TP59,/Project Architecture/Motor Control - Top Level/GHA,Gate Drive,62.9950,56.8500,top,,GHA,TestPoint_Pad_D0.4mm
+TP60,/Project Architecture/Motor Control - Top Level/GLA,Gate Drive,47.2800,37.9200,top,,GLA,TestPoint_Pad_D0.4mm
+TP61,/Project Architecture/Motor Control - Top Level/SHA,Gate Drive,67.4000,50.1500,top,,SHA,TestPoint_Pad_D0.4mm
+TP62,/Project Architecture/Motor Control - Top Level/GHB,Gate Drive,28.7200,54.1700,top,,GHB,TestPoint_Pad_D0.4mm
+TP63,/Project Architecture/Motor Control - Top Level/GLB,Gate Drive,36.1200,38.4700,top,,GLB,TestPoint_Pad_D0.4mm
+TP64,/Project Architecture/Motor Control - Top Level/SHB,Gate Drive,26.1500,50.1800,top,,SHB,TestPoint_Pad_D0.4mm
+TP65,/Project Architecture/Motor Control - Top Level/GHC,Gate Drive,25.6200,54.3300,top,,GHC,TestPoint_Pad_D0.4mm
+TP66,/Project Architecture/Motor Control - Top Level/GLC,Gate Drive,4.9700,40.0200,top,,GLC,TestPoint_Pad_D0.4mm
+TP67,/Project Architecture/Motor Control - Top Level/SHC,Gate Drive,23.8000,50.1800,top,,SHC,TestPoint_Pad_D0.4mm
+TP68,/Project Architecture/Motor Control - Top Level/SA+,Kelvin Diff Pair,37.8800,37.2400,top,,SA_P,TestPoint_Pad_D0.5mm
+TP69,/Project Architecture/Motor Control - Top Level/SA-,Kelvin Diff Pair,36.7500,37.3100,top,,SA_N,TestPoint_Pad_D0.5mm
+TP70,/Project Architecture/Motor Control - Top Level/SB+,Kelvin Diff Pair,34.7500,37.2400,top,,SB_P,TestPoint_Pad_D0.5mm
+TP71,/Project Architecture/Motor Control - Top Level/SB-,Kelvin Diff Pair,35.8800,37.3100,top,,SB_N,TestPoint_Pad_D0.5mm
+TP72,/Project Architecture/Motor Control - Top Level/SC+,Kelvin Diff Pair,27.2500,32.6000,top,,SC_P,TestPoint_Pad_D0.5mm
+TP73,/Project Architecture/Motor Control - Top Level/SC-,Kelvin Diff Pair,27.2500,30.9500,top,,SC_N,TestPoint_Pad_D0.5mm
 TP74,,,-113.5000,125.0000,top,SMT,FAN_SW,TestPoint_Pad_D0.5mm
-TP75,,,-113.5000,125.0000,top,SMT,ESC_SYNC1,TestPoint_Pad_D0.5mm
+TP75,/Project Architecture/Comms - EtherCat/ESC_SYNC1,Default,56.1700,25.3500,top,,ESC_SYNC1,TestPoint_Pad_D0.5mm
+TP76,/Project Architecture/Comms - EtherCat/ESC_XO_XTAL,Default,21.6943,4.2522,top,THRU,ESC_XO_XTAL,TestPoint_Keystone_5000-5004_Miniature
+TP77,GND,GND,19.2194,5.0300,top,THRU,GND,TestPoint_Keystone_5000-5004_Miniature
+TP78,+3V3_PHY,Power 3V3,29.3670,20.4170,top,,+3V3_PHY,TestPoint_Pad_D0.5mm
+TP79,+1V2_ESC,Default,25.7270,16.8430,top,,+1V2_ESC,TestPoint_Pad_D0.5mm
+TP80,/Project Architecture/Comms - EtherCat/ESC_OSCVDD12,Default,25.9850,9.8840,top,,ESC_OSCVDD12,TestPoint_Pad_D0.5mm
+TP81,/Project Architecture/Comms - EtherCat/EE_SCL,Default,25.2330,1.6740,top,,EE_SCL,TestPoint_Pad_D0.5mm
+TP82,/Project Architecture/Comms - EtherCat/EE_SDA,Default,27.8260,4.2670,top,,EE_SDA,TestPoint_Pad_D0.5mm
+TP83,/Project Architecture/Comms - EtherCat/ECAT_P0_TX+,ECAT Diff Pair,25.8000,21.0830,top,,ECAT_P0_TX+,TestPoint_Pad_D0.4mm
+TP84,/Project Architecture/Comms - EtherCat/ECAT_P0_TX-,ECAT Diff Pair,26.5000,21.5829,top,,ECAT_P0_TX-,TestPoint_Pad_D0.4mm
+TP85,/Project Architecture/Comms - EtherCat/ECAT_P0_RX+,ECAT Diff Pair,25.8000,20.0831,top,,ECAT_P0_RX+,TestPoint_Pad_D0.4mm
+TP86,/Project Architecture/Comms - EtherCat/ECAT_P0_RX-,ECAT Diff Pair,25.1000,20.5831,top,,ECAT_P0_RX-,TestPoint_Pad_D0.4mm
+TP87,/Project Architecture/Comms - EtherCat/ECAT_P1_TX+,ECAT Diff Pair,24.3000,13.9383,top,,ECAT_P1_TX+,TestPoint_Pad_D0.4mm
+TP88,/Project Architecture/Comms - EtherCat/ECAT_P1_TX-,ECAT Diff Pair,23.6000,13.4384,top,,ECAT_P1_TX-,TestPoint_Pad_D0.4mm
+TP89,/Project Architecture/Comms - EtherCat/ECAT_P1_RX+,ECAT Diff Pair,25.5000,16.1382,top,,ECAT_P1_RX+,TestPoint_Pad_D0.4mm
+TP90,/Project Architecture/Comms - EtherCat/ECAT_P1_RX-,ECAT Diff Pair,24.8000,15.6383,top,,ECAT_P1_RX-,TestPoint_Pad_D0.4mm

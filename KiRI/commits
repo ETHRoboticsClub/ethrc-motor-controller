@@ -1,4 +1,4 @@
-_local_|2026-11-21|root|Local changes not committed|False|True
-39ccc59|2026-11-21|Masiar Etemadi|[PCB] Apply the PCBWay 6-layer stackup and impedance rules, add the shunt net ties and update placement.|False|True
-adda6b6|2026-11-21|Masiar Etemadi|[Schematic] Switch the red fault LED to the 1206 SM1206NHC-IL and tidy the FD-CAN connector wiring.|True|False
-ed0d73e|2026-11-20|Masiar Etemadi|[Schematic] Restore the datasheet links lost in the library update and tidy leftover symbol fields.|True|False
+_local_|2026-11-22|root|Local changes not committed|False|True
+249ac5c|2026-11-22|Masiar Etemadi|[PCB] Rework the EtherCAT front end to the Microchip checklist with via-free pairs, terminations at the LAN9253, a +3V3_PHY mini-plane, test points and no right-angle corners.|False|True
+dfffea1|2026-11-22|Masiar Etemadi|[Schematic] Swap the T1/T2 chip-side pairs, fit R83/R84 with 0R, use the eval-board crystal and add EtherCAT test points TP76 to TP90.|True|False
+2a07ed1|2026-11-22|Masiar Etemadi|[PCB] Route the EtherCAT cable side from T1/T2 to J9/J10 with the Bob Smith centre-tap network and the 2 kV caps and drains tied to CHASSIS.|False|True

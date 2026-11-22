@@ -4069,14 +4069,14 @@
 		)
 		(uuid "c39a502f-436d-44e5-8f6d-f7226ac2ffb5")
 	)
-	(text_box "Connection to Gate Driver"
+	(text_box "Connections to Gate Driver"
 		(exclude_from_sim no)
 		(at 137.16 191.77 0)
 		(size 82.55 9.525)
 		(margins 1.9049 1.9049 1.9049 1.9049)
 		(stroke
 			(width -0.0001)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -4206,6 +4206,10 @@
 		(uuid "3e47aea8-6e58-4531-be87-32ef7f97b86c")
 	)
 	(no_connect
+		(at 50.8 123.19)
+		(uuid "482896c6-ed59-4a05-a054-a6bbc3267fba")
+	)
+	(no_connect
 		(at 86.36 138.43)
 		(uuid "4b7dfae0-9050-4d95-ae5b-f6d058fbbabd")
 	)
@@ -4222,7 +4226,7 @@
 		(uuid "741bf82e-b60c-4201-a186-3957d820e255")
 	)
 	(no_connect
-		(at 86.36 128.27)
+		(at 86.36 120.65)
 		(uuid "9ea0c36c-5397-4f35-86a9-892bd395fb59")
 	)
 	(no_connect
@@ -4240,6 +4244,10 @@
 	(no_connect
 		(at 50.8 102.87)
 		(uuid "de7aeaf8-4306-4247-81ec-a102011768b3")
+	)
+	(no_connect
+		(at 50.8 125.73)
+		(uuid "e3ef2386-7fb8-4482-9b2c-df909bddd915")
 	)
 	(bus_entry
 		(at 273.05 64.77)
@@ -4794,7 +4802,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 120.65) (xy 105.41 120.65)
+			(xy 86.36 128.27) (xy 105.41 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5635,16 +5643,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 125.73) (xy 50.8 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96fb1458-2c86-4193-ac5e-62760c0a2af5")
-	)
-	(wire
-		(pts
 			(xy 176.53 163.83) (xy 179.07 163.83)
 		)
 		(stroke
@@ -5862,16 +5860,6 @@
 			(type default)
 		)
 		(uuid "ae5a1de5-f5af-4030-a76a-5a1c20510f53")
-	)
-	(wire
-		(pts
-			(xy 35.56 123.19) (xy 50.8 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b301d7a3-de1e-4688-a36f-4b0ecd431782")
 	)
 	(wire
 		(pts
@@ -6719,17 +6707,6 @@
 		)
 		(uuid "0e518dce-b069-4841-aa9c-afa1925d54c7")
 	)
-	(label "MGL"
-		(at 35.56 125.73 0)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e97c3e9-bd37-42e0-8375-1bac67af45bb")
-	)
 	(label "ENC_MOSI"
 		(at 351.79 139.7 0)
 		(effects
@@ -7083,7 +7060,7 @@
 		(uuid "4b8eb398-be0b-4239-8496-c20c827f489d")
 	)
 	(label "DRV_CS"
-		(at 105.41 120.65 180)
+		(at 105.41 128.27 180)
 		(effects
 			(font
 				(face "Times New Roman")
@@ -7940,17 +7917,6 @@
 		)
 		(uuid "ef47d2fb-7af0-4d9f-b412-fc3b2248d93b")
 	)
-	(label "MGH"
-		(at 35.56 123.19 0)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ef98265b-7781-41a8-9adc-b3566388d222")
-	)
 	(label "ENC_EXT_CS"
 		(at 275.59 171.45 0)
 		(effects
@@ -8152,18 +8118,6 @@
 		)
 		(uuid "511125c1-85b8-4023-93de-bff7b5ba7825")
 	)
-	(hierarchical_label "MGL"
-		(shape input)
-		(at 35.56 125.73 180)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "554fbe98-ddc8-434b-8bce-864c687222a5")
-	)
 	(hierarchical_label "SENSE_VBAT"
 		(shape input)
 		(at 288.29 120.65 0)
@@ -8238,18 +8192,6 @@
 			(justify left)
 		)
 		(uuid "d9286f07-c06b-469e-a96b-771323c4cf67")
-	)
-	(hierarchical_label "MGH"
-		(shape input)
-		(at 35.56 123.19 180)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ebad83ec-79e7-4e3a-80e1-b3594695ce76")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")

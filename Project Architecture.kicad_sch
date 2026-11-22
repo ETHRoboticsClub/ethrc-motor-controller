@@ -228,16 +228,6 @@
 		)
 		(uuid "51c9632f-070e-4870-8ee5-be3a029b61f4")
 	)
-	(wire
-		(pts
-			(xy 181.61 132.08) (xy 200.66 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a0f59fa-21ed-438d-9266-d07369b067bb")
-	)
 	(bus
 		(pts
 			(xy 237.49 86.36) (xy 248.92 86.36)
@@ -287,16 +277,6 @@
 			(type default)
 		)
 		(uuid "77fa60fc-8b71-4dea-86f5-e72261336ac8")
-	)
-	(wire
-		(pts
-			(xy 181.61 134.62) (xy 200.66 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d44461a-b35a-4c1a-8607-12a5392a650b")
 	)
 	(bus
 		(pts
@@ -879,28 +859,6 @@
 				(justify right)
 			)
 		)
-		(pin "MGH" output
-			(at 181.61 132.08 0)
-			(uuid "7c56205b-c06f-4c1a-ba00-cdc408b585ee")
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MGL" output
-			(at 181.61 134.62 0)
-			(uuid "3752ec29-b28b-4453-96e3-a0be208356b1")
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "ethrc_motor_controller"
 				(path "/0650c7a8-acba-429c-9f8e-eec0baf0bc1c/fede4c36-00cc-4d3d-b71c-5243ba232202"
@@ -1342,28 +1300,6 @@
 		(pin "{ENC_SPI}" bidirectional
 			(at 200.66 124.46 180)
 			(uuid "dfe96a83-59c8-47e0-9b1e-0859934cf7ad")
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MGL" input
-			(at 200.66 134.62 180)
-			(uuid "67705753-392a-41e5-aad4-d38205aece4a")
-			(effects
-				(font
-					(face "Times New Roman")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "MGH" input
-			(at 200.66 132.08 180)
-			(uuid "ca7eb440-cbce-492b-8a56-3d9d25c8d878")
 			(effects
 				(font
 					(face "Times New Roman")

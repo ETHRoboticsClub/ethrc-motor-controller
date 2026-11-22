@@ -18,6 +18,13 @@ def drop_segs_in_file(path,segs,tol=0.02):
             if (math.dist(a,(x1,y1))<tol and math.dist(b,(x2,y2))<tol) or (math.dist(a,(x2,y2))<tol and math.dist(b,(x1,y1))<tol): n+=1; return ''
         return m.group(0)
     t=re.sub(r'\t\(segment\n(?:\t\t[^\n]*\n)*?\t\)\n',rep,t); open(path,'w').write(t); return n
+def drop_zones_in_file(path,names):
+    t=open(path).read(); n=0
+    def rep(m):
+        nonlocal n
+        if any('\t\t(name "%s")\n'%nm in m.group(0) for nm in names): n+=1; return ''
+        return m.group(0)
+    t=re.sub(r'\t\(zone\n(?:\t\t[^\n]*\n)*?\t\)\n',rep,t); open(path,'w').write(t); return n
 ZONE='''\t(zone
 \t\t(net {code})
 \t\t(net_name "{net}")
@@ -93,6 +100,7 @@ def main():
         if re.search(r'\(via\s*\(at %s %s\)'%(re.escape('%g'%v['x']),re.escape('%g'%v['y'])),txt): sys.exit('plan looks applied already: via at %s %s exists'%(v['x'],v['y']))
     if p.get('drop_nets'): print('track segments removed',drop_tracks_in_file(board,p['drop_nets']))
     if p.get('drop_segs'): print('single segments removed',drop_segs_in_file(board,p['drop_segs']),'of',len(p['drop_segs']))
+    if p.get('drop_zones'): print('zones removed',drop_zones_in_file(board,p['drop_zones']),'of',len(p['drop_zones']))
     if p.get('zones'): print('zones added',add_zones_in_file(board,p['zones']))
     b=pcbnew.LoadBoard(board); R={f.GetReference():f for f in b.GetFootprints()}
     P=lambda x,y: pcbnew.VECTOR2I(MM(x),MM(y))

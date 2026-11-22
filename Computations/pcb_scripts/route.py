@@ -142,6 +142,11 @@ class World:
         net=self.canon(net)
         self.plan.setdefault('zones',[]).append(dict(name=name,net='' if keepout else self.full[net],layer=layer,pts=[[x,y] for x,y in pts],priority=priority,keepout=keepout))
         self.zones.append(dict(k='p',pts=[tuple(p) for p in pts],net='#KEEPOUT' if keepout else net,lay={layer},ref='zone:'+name))
+    def drop_zone(self,name):
+        """Plan the removal of an existing zone (outline and fill), given by its name."""
+        n=len(self.zones); self.zones=[z for z in self.zones if z['ref']!='zone:'+name]
+        if len(self.zones)!=n-1: print('  !! drop_zone matched',n-len(self.zones),'zones for',name)
+        self.plan.setdefault('drop_zones',[]).append(name)
     def drop_net(self,suffix):
         self.plan['drop_nets'].append(suffix); self.obs=[o for o in self.obs if not (o['ref']=='trk' and o['net'].endswith(suffix))]
     def drop_seg(self,a,b,tol=0.02):

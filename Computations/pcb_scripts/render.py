@@ -78,4 +78,4 @@ def main():
         o.append(f'<circle cx="{X}" cy="{Y}" r="{rr}" fill="#ffee00" stroke="#0000ff" stroke-width="1.2"/>')
         o.append(f'<text x="{X+rr+2}" y="{Y-rr}" font-size="{max(8,s*0.3)}" fill="#0000cc" font-weight="bold">{m["ref"]} {m.get("net","").split("/")[-1]}</text>')
     o.append('</svg>'); svg=out.replace('.png','.svg'); open(svg,'w').write('\n'.join(o)); subprocess.run(['rsvg-convert',svg,'-o',out],check=True)
-main()
+if __name__=="__main__": main()
